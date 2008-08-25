@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-08-25 21:16+0100\n"
+"POT-Creation-Date: 2008-08-25 22:03+0100\n"
 "PO-Revision-Date: 2008-08-25 12:48-0800\n"
 "Last-Translator: Jean-Baptiste Kempf <jb@videolan.org>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -549,8 +549,8 @@ msgid "&About..."
 msgstr "À &propos..."
 
 #: include/vlc_intf_strings.h:53 modules/control/rc.c:75
-#: modules/gui/macosx/embeddedwindow.m:51
-#: modules/gui/macosx/embeddedwindow.m:141 modules/gui/macosx/intf.m:487
+#: modules/gui/macosx/embeddedwindow.m:77
+#: modules/gui/macosx/embeddedwindow.m:167 modules/gui/macosx/intf.m:487
 #: modules/gui/macosx/intf.m:531 modules/gui/macosx/intf.m:610
 #: modules/gui/macosx/intf.m:617 modules/gui/macosx/intf.m:1799
 #: modules/gui/macosx/intf.m:1800 modules/gui/macosx/intf.m:1801
@@ -3610,7 +3610,7 @@ msgstr "Réglages des raccourcis clavier (« hotkeys »)."
 #: src/libvlc-module.c:1156 src/video_output/vout_intf.c:414
 #: modules/gui/beos/VideoOutput.cpp:1058 modules/gui/macosx/controls.m:435
 #: modules/gui/macosx/controls.m:489 modules/gui/macosx/controls.m:938
-#: modules/gui/macosx/controls.m:969 modules/gui/macosx/embeddedwindow.m:50
+#: modules/gui/macosx/controls.m:969 modules/gui/macosx/embeddedwindow.m:76
 #: modules/gui/macosx/intf.m:491 modules/gui/macosx/intf.m:568
 #: modules/gui/macosx/intf.m:624 modules/gui/macosx/simple_prefs.m:286
 #: modules/gui/qt4/ui/sprefs_video.ui:61
@@ -3726,7 +3726,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1176 modules/gui/fbosd.c:129 modules/gui/fbosd.c:197
 #: modules/gui/macosx/bookmarks.m:96 modules/gui/macosx/bookmarks.m:105
-#: modules/gui/macosx/embeddedwindow.m:52 modules/gui/macosx/intf.m:493
+#: modules/gui/macosx/embeddedwindow.m:78 modules/gui/macosx/intf.m:493
 #: modules/gui/qt4/ui/video_effects.ui:731 modules/video_filter/marq.c:153
 #: modules/video_filter/rss.c:197
 msgid "Position"
@@ -11178,7 +11178,7 @@ msgstr "Ouvrir thème"
 msgid "Buffer"
 msgstr "Buffer VBV"
 
-#: modules/control/rc.c:76 modules/gui/macosx/embeddedwindow.m:135
+#: modules/control/rc.c:76 modules/gui/macosx/embeddedwindow.m:161
 #: modules/gui/macosx/intf.m:1789 modules/gui/macosx/intf.m:1790
 #: modules/gui/macosx/intf.m:1791 modules/gui/macosx/intf.m:1792
 #: modules/gui/pda/pda_interface.c:248 modules/gui/pda/pda_interface.c:249
@@ -13423,12 +13423,12 @@ msgstr "Avancer"
 msgid "Step Backward"
 msgstr "Reculer"
 
-#: modules/gui/macosx/embeddedwindow.m:48 modules/gui/macosx/intf.m:486
+#: modules/gui/macosx/embeddedwindow.m:74 modules/gui/macosx/intf.m:486
 #: modules/gui/pda/pda_interface.c:236 modules/gui/pda/pda_interface.c:237
 msgid "Rewind"
 msgstr "Retour arrière"
 
-#: modules/gui/macosx/embeddedwindow.m:49 modules/gui/macosx/intf.m:489
+#: modules/gui/macosx/embeddedwindow.m:75 modules/gui/macosx/intf.m:489
 msgid "Fast Forward"
 msgstr "Avance rapide"
 
