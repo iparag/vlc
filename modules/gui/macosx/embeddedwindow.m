@@ -44,26 +44,15 @@
 - (id)initWithContentRect:(NSRect)contentRect styleMask:(unsigned int)windowStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)deferCreation
 {
     if(MACOS_VERSION < 10.5f)
-    {
-        self = [super initWithContentRect:contentRect styleMask:windowStyle backing:bufferingType defer:deferCreation];
-    } else {
-        SEL theSelector;
-        NSMethodSignature *aSignature;
-        NSInvocation *anInvocation;
-        float f_value = 32.0f;
-        NSRectEdge ouredge = NSMinYEdge;
+        return [super initWithContentRect:contentRect styleMask:windowStyle backing:bufferingType defer:deferCreation];
 
-        windowStyle ^= NSTexturedBackgroundWindowMask;
-        self = [super initWithContentRect:contentRect styleMask:windowStyle backing:bufferingType defer:deferCreation];
+#ifdef __ppc__
+    return [super initWithContentRect:contentRect styleMask:windowStyle backing:bufferingType defer:deferCreation];
+#endif
 
-        theSelector = @selector(setContentBorderThickness:forEdge:);
-        aSignature = [VLCEmbeddedWindow instanceMethodSignatureForSelector:theSelector];
-        anInvocation = [NSInvocation invocationWithMethodSignature:aSignature];
-        [anInvocation setSelector:theSelector];
-        [anInvocation setTarget:self];
-        [anInvocation setArgument:&f_value atIndex:2]; /* FIXME it's actually CGFLoat */
-        [anInvocation setArgument:&ouredge atIndex:3];
-    }
+    windowStyle ^= NSTexturedBackgroundWindowMask;
+    self = [super initWithContentRect:contentRect styleMask:windowStyle backing:bufferingType defer:deferCreation];
+    [self setContentBorderThickness:32.0 forEdge:NSMinYEdge];
     return self;
 }
 
