@@ -1,14 +1,4 @@
-Changes between 0.9.0 and 0.9.1
--------------------------------
-
-Bugfixes:
- * QT4 fixes
- * Fix crash on MacOSX ppc
- * Fix crash in MPEG audio demuxing
-
-
-
-Changes between 0.8.6i and 0.9.0:
+Changes between 0.8.6i and 0.9.1:
 ---------------------------------
 
 Important notes:
