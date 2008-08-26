@@ -765,7 +765,7 @@ void MainInterface::togglePlaylist()
     {
     /* toggle the visibility of the playlist */
        TOGGLEV( playlistWidget );
-       resize( sizeHint() );
+       //resize( sizeHint() );
        playlistVisible = !playlistVisible;
     }
 }
