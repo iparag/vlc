@@ -33,6 +33,7 @@
 #include <stdio.h>
 #include <stdlib.h>                                                /* free() */
 #include <sys/types.h>                                          /* opendir() */
+#include <sys/stat.h>
 #include <dirent.h>                                             /* opendir() */
 #include <assert.h>
 
@@ -659,7 +660,8 @@ int vout_Snapshot( vout_thread_t *p_vout, picture_t *p_pic )
         if( var_GetBool( p_vout, "snapshot-sequential" ) == true )
         {
             int i_num = var_GetInteger( p_vout, "snapshot-num" );
-            FILE *p_file;
+            struct stat st;
+
             do
             {
                 if( asprintf( &psz_filename, "%s" DIR_SEP "%s%05d.%s",
@@ -671,7 +673,8 @@ int vout_Snapshot( vout_thread_t *p_vout, picture_t *p_pic )
                     return VLC_EGENERIC;
                 }
             }
-            while( ( p_file = utf8_fopen( psz_filename, "r" ) ) && !fclose( p_file ) );
+            while( utf8_stat( psz_filename, &st ) == 0 );
+
             var_SetInteger( p_vout, "snapshot-num", i_num );
         }
         else
