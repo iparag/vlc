@@ -664,6 +664,7 @@ int vout_Snapshot( vout_thread_t *p_vout, picture_t *p_pic )
 
             do
             {
+                free( psz_filename );
                 if( asprintf( &psz_filename, "%s" DIR_SEP "%s%05d.%s",
                               val.psz_string, psz_prefix, i_num++,
                               format.psz_string ) == -1 )
