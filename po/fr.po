@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-08-31 13:03+0200\n"
-"PO-Revision-Date: 2008-08-30 12:28+0100\n"
+"POT-Creation-Date: 2008-09-02 19:53+0200\n"
+"PO-Revision-Date: 2008-09-01 21:53+0100\n"
 "Last-Translator: Rémi Duraffort <ivoire@videolan.org>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -862,15 +862,15 @@ msgstr "Touche"
 msgid "boolean"
 msgstr "Booléen"
 
-#: src/config/file.c:593 src/libvlc.c:1578
+#: src/config/file.c:593 src/libvlc.c:1582
 msgid "integer"
 msgstr "Entier"
 
-#: src/config/file.c:602 src/libvlc.c:1607
+#: src/config/file.c:602 src/libvlc.c:1611
 msgid "float"
 msgstr "Flottant"
 
-#: src/config/file.c:625 src/libvlc.c:1557
+#: src/config/file.c:625 src/libvlc.c:1561
 msgid "string"
 msgstr "Chaîne"
 
@@ -1078,7 +1078,7 @@ msgid "VLC can't recognize the input's format"
 msgstr "Impossible de reconnaitre le format du média d'entrée"
 
 #: src/input/input.c:2318
-#, fuzzy, c-format
+#, c-format
 msgid "The format of '%s' cannot be detected. Have a look the log for details."
 msgstr ""
 "Le format de '%s’ n’a pu être détecté. Vérifiez les messages pour plus de "
@@ -1299,44 +1299,44 @@ msgstr ""
 msgid "To get exhaustive help, use '-H'."
 msgstr "Pour obtenir l'aide complete, utilisez '-H'"
 
-#: src/libvlc.c:1622
+#: src/libvlc.c:1626
 msgid " (default enabled)"
 msgstr " (activé par défaut)"
 
-#: src/libvlc.c:1623
+#: src/libvlc.c:1627
 msgid " (default disabled)"
 msgstr " (désactivé par défaut)"
 
-#: src/libvlc.c:1782 src/libvlc.c:1785
+#: src/libvlc.c:1786 src/libvlc.c:1789
 msgid "Note:"
 msgstr "Note:"
 
-#: src/libvlc.c:1783 src/libvlc.c:1786
+#: src/libvlc.c:1787 src/libvlc.c:1790
 msgid "add --advanced to your command line to see advanced options."
 msgstr ""
 "ajoutez --advanced à la ligne de commande pour voir les options avancées."
 
-#: src/libvlc.c:1890
+#: src/libvlc.c:1894
 #, c-format
 msgid "VLC version %s\n"
 msgstr "VLC %s\n"
 
-#: src/libvlc.c:1891
+#: src/libvlc.c:1895
 #, c-format
 msgid "Compiled by %s@%s.%s\n"
 msgstr "Compilé par %s@%s.%s\n"
 
-#: src/libvlc.c:1893
+#: src/libvlc.c:1897
 #, c-format
 msgid "Compiler: %s\n"
 msgstr "Compilateur: %s\n"
 
-#: src/libvlc.c:1895
+#: src/libvlc.c:1899
 #, c-format
 msgid "Based upon Git commit [%s]\n"
 msgstr "Basé sur les changements git [%s]\n"
 
-#: src/libvlc.c:1931
+#: src/libvlc.c:1935
 msgid ""
 "\n"
 "Dumped content to vlc-help.txt file.\n"
@@ -1344,7 +1344,7 @@ msgstr ""
 "\n"
 "Contenu transféré dans le fichier vlc-help.txt\n"
 
-#: src/libvlc.c:1951
+#: src/libvlc.c:1955
 msgid ""
 "\n"
 "Press the RETURN key to continue...\n"
@@ -2720,7 +2720,6 @@ msgid "Subpictures filter module"
 msgstr "Module d’incrustations"
 
 #: src/libvlc-module.c:699
-#, fuzzy
 msgid ""
 "This adds so-called \"subpicture filters\". These filters overlay some "
 "images or text over the video (like a logo, arbitrary text...)."
@@ -3436,7 +3435,6 @@ msgstr ""
 "à la file."
 
 #: src/libvlc-module.c:1054
-#, fuzzy
 msgid ""
 "Allowing only one running instance of VLC can sometimes be useful, for "
 "example if you associated VLC with some media types and you don't want a new "
@@ -10367,18 +10365,16 @@ msgid "QP factor between I and P"
 msgstr "Facteur de QP entre I et P"
 
 #: modules/codec/x264.c:185
-#, fuzzy
 msgid "QP factor between I and P. Range 1.0 to 2.0."
-msgstr "Facteur de QP entre I et P."
+msgstr "Facteur de QP entre I et P, de 1.0 à 2.0."
 
 #: modules/codec/x264.c:188
 msgid "QP factor between P and B"
 msgstr "Facteur de QP entre P et B"
 
 #: modules/codec/x264.c:189
-#, fuzzy
 msgid "QP factor between P and B. Range 1.0 to 2.0."
-msgstr "Facteur de QP entre P et B."
+msgstr "Facteur de QP entre P et B, de 1.0 à 2.0."
 
 #: modules/codec/x264.c:191
 msgid "QP difference between chroma and luma"
@@ -10669,11 +10665,12 @@ msgid ""
 msgstr ""
 
 #: modules/codec/x264.c:325
-#, fuzzy
 msgid ""
 "Dct-domain noise reduction. Adaptive pseudo-deadzone. 10 to 1000 seems to be "
 "a useful range."
-msgstr "Réduction de bruit DCT. Pseudo zone morte adaptative."
+msgstr ""
+"Réduction de bruit DCT. Pseudo zone morte adaptative. Des valeurs de 10 à "
+"1000 semblent adaptées."
 
 #: modules/codec/x264.c:329
 #, fuzzy
@@ -10873,14 +10870,12 @@ msgid "Output teletext subtitles as text instead of as RGBA"
 msgstr ""
 
 #: modules/codec/zvbi.c:82
-#, fuzzy
 msgid "VBI and Teletext decoder"
-msgstr "Décodeur de sous-titres texte"
+msgstr "Décodeur VBI et Télétexte."
 
 #: modules/codec/zvbi.c:83
-#, fuzzy
 msgid "VBI & Teletext"
-msgstr "Décodeur de sous-titres texte"
+msgstr "VBI & Télétexte"
 
 #: modules/control/dbus.c:111
 msgid "dbus"
@@ -11056,9 +11051,8 @@ msgid "HTTP SSL"
 msgstr "HTTP SSL"
 
 #: modules/control/lirc.c:41
-#, fuzzy
 msgid "Change the lirc configuration file."
-msgstr "Fichier de configuration"
+msgstr "Change le fichier de configuration de lirc."
 
 #: modules/control/lirc.c:43
 msgid ""
@@ -11083,9 +11077,8 @@ msgid "motion"
 msgstr "mouvement"
 
 #: modules/control/motion.c:80
-#, fuzzy
 msgid "motion control interface"
-msgstr "Interface de commande à distance"
+msgstr "Interface de commande par mouvements"
 
 #: modules/control/motion.c:81
 msgid ""
@@ -12412,9 +12405,8 @@ msgid "Secure RTP requires a (non-secret) master salt value."
 msgstr ""
 
 #: modules/demux/rtp.c:57
-#, fuzzy
 msgid "Maximum RTP sources"
-msgstr "Taille maximale du GOP"
+msgstr "Nombre maximum de sources RTP"
 
 #: modules/demux/rtp.c:59
 msgid "How many distinct active RTP sources are allowed at a time."
@@ -12465,13 +12457,12 @@ msgid "Apply a delay to all subtitles (in 1/10s, eg 100 means 10s)."
 msgstr "Ajouter un délai à tous les sous-titres (en 1/10s, 100 = 10 secondes)."
 
 #: modules/demux/subtitle_asa.c:58
-#, fuzzy
 msgid ""
 "Override the normal frames per second settings. This will only affect frame-"
 "based subtitle formats without a fixed value."
 msgstr ""
-"Remplacer le nombre d’images par seconde. Ne fonctionne qu’avec les sous-"
-"titres MicroDVD et SubRIP."
+"Remplacer le nombre d’images par seconde. Ceci ne fonctionne uniquement avec "
+"les sous-titres basé sur les frames sans valeur fixe."
 
 #: modules/demux/subtitle_asa.c:61
 msgid ""
@@ -12499,13 +12490,12 @@ msgid "Subtitles format"
 msgstr "Format de sous-titres"
 
 #: modules/demux/subtitle.c:56
-#, fuzzy
 msgid ""
 "Override the normal frames per second settings. This will only work with "
 "MicroDVD and SubRIP (SRT) subtitles."
 msgstr ""
-"Remplacer le nombre d’images par seconde. Ne fonctionne qu’avec les sous-"
-"titres MicroDVD et SubRIP."
+"Remplacer le nombre d’images par seconde. Ceci fonctionne uniquement avec "
+"les sous-titres MicroDVD et SubRIP (SRT)."
 
 #: modules/demux/subtitle.c:59
 msgid ""
@@ -12711,9 +12701,8 @@ msgid "TY Stream audio/video demux"
 msgstr "Décodeur de flux TY audio/vidéo"
 
 #: modules/demux/vc1.c:44
-#, fuzzy
 msgid "Desired frame rate for the VC-1 stream."
-msgstr "Débit d’images pour le flux H264."
+msgstr "Débit d’images pour le flux VC-1."
 
 #: modules/demux/vc1.c:50
 msgid "VC1 video demuxer"
@@ -12980,9 +12969,8 @@ msgid "X coordinate"
 msgstr "Position X"
 
 #: modules/gui/fbosd.c:124
-#, fuzzy
 msgid "X coordinate of the rendered image"
-msgstr "Position X de l’incrustation encodée"
+msgstr "Position X de l’image après rendu"
 
 #: modules/gui/fbosd.c:126 modules/video_filter/erase.c:60
 #: modules/video_filter/logo.c:84 modules/video_filter/osdmenu.c:54
@@ -12990,9 +12978,8 @@ msgid "Y coordinate"
 msgstr "Position Y"
 
 #: modules/gui/fbosd.c:127
-#, fuzzy
 msgid "Y coordinate of the rendered image"
-msgstr "Position Y de l’incrustation encodée"
+msgstr "Position Y de l’image après rendu"
 
 #: modules/gui/fbosd.c:131
 #, fuzzy
@@ -13186,9 +13173,8 @@ msgid "Commands"
 msgstr "Commandes"
 
 #: modules/gui/fbosd.c:219
-#, fuzzy
 msgid "GNU/Linux osd/overlay framebuffer interface"
-msgstr "Sortie vidéo pour le framebuffer de GNU/Linux"
+msgstr "Interface OSD/incrustation pour le framebuffer de GNU/Linux"
 
 #: modules/gui/macosx/about.m:86 modules/gui/macosx/intf.m:501
 msgid "About VLC media player"
@@ -13859,9 +13845,9 @@ msgid "Show Fullscreen controller"
 msgstr "Afficher le contrôleur plein écran"
 
 #: modules/gui/macosx/macosx.m:78
-#, fuzzy
 msgid "Shows a lucent controller when moving the mouse in fullscreen mode."
-msgstr "Choisissez l’écran à utiliser pour le mode plein écran"
+msgstr ""
+"Afficher un contrôleur lors d'un mouvement de la souris en mode plein écran"
 
 #: modules/gui/macosx/macosx.m:81
 msgid "Auto-playback of new items"
@@ -13872,9 +13858,8 @@ msgid "Start playback of new items immediately once they were added."
 msgstr ""
 
 #: modules/gui/macosx/macosx.m:85
-#, fuzzy
 msgid "Keep Recent Items"
-msgstr "Répéter l’élément actuel"
+msgstr "Garder les derniers éléments"
 
 #: modules/gui/macosx/macosx.m:86
 msgid ""
@@ -13883,9 +13868,8 @@ msgid ""
 msgstr ""
 
 #: modules/gui/macosx/macosx.m:89
-#, fuzzy
 msgid "Keep current Equalizer settings"
-msgstr "Paramètres vidéo généraux"
+msgstr "Conserver les paramètres de l'égaliseur"
 
 #: modules/gui/macosx/macosx.m:90
 msgid ""
@@ -14361,7 +14345,7 @@ msgid "Basic"
 msgstr "Basique"
 
 #: modules/gui/macosx/prefs.m:147 modules/gui/macosx/simple_prefs.m:627
-#: modules/gui/qt4/dialogs/preferences.cpp:352
+#: modules/gui/qt4/dialogs/preferences.cpp:353
 msgid "Reset Preferences"
 msgstr "Rétablir"
 
@@ -14493,9 +14477,8 @@ msgid "Repair AVI Files"
 msgstr "Réparer les fichiers AVI"
 
 #: modules/gui/macosx/simple_prefs.m:248
-#, fuzzy
 msgid "Default Caching Level"
-msgstr "Angle DVD par défaut."
+msgstr "Niveau de cache par défaut."
 
 #: modules/gui/macosx/simple_prefs.m:249 modules/gui/qt4/ui/open.ui:51
 #: modules/gui/qt4/ui/sprefs_input.ui:97
@@ -14519,7 +14502,7 @@ msgstr "Mot de passe du porxy HTTP"
 #: modules/gui/macosx/simple_prefs.m:254
 #: modules/gui/qt4/ui/sprefs_input.ui:119
 msgid "Codecs / Muxers"
-msgstr ""
+msgstr "Codecs / Multiplexeurs"
 
 #: modules/gui/macosx/simple_prefs.m:256
 msgid "Post-Processing Quality"
@@ -14535,9 +14518,8 @@ msgid "Album art download policy"
 msgstr "Politique de téléchargement des couvertures"
 
 #: modules/gui/macosx/simple_prefs.m:264
-#, fuzzy
 msgid "Add controls to the video window"
-msgstr "Contraste de la vidéo"
+msgstr "Ajouter un contrôle à la fenêtre vidéo"
 
 #: modules/gui/macosx/simple_prefs.m:265
 msgid "Show Fullscreen Controller"
@@ -14545,9 +14527,8 @@ msgstr "Afficher le contrôleur plein écran"
 
 #: modules/gui/macosx/simple_prefs.m:267
 #: modules/gui/qt4/ui/sprefs_interface.ui:244
-#, fuzzy
 msgid "Privacy / Network Interaction"
-msgstr "Interaction avec l’utilisateur"
+msgstr "Politique de confidentialité / Accès internet"
 
 #: modules/gui/macosx/simple_prefs.m:270
 msgid "Default Encoding"
@@ -14618,7 +14599,7 @@ msgstr "Préfixe"
 #: modules/gui/macosx/simple_prefs.m:295
 #: modules/gui/qt4/ui/sprefs_video.ui:211
 msgid "Sequential numbering"
-msgstr ""
+msgstr "Numérotation séquentielle"
 
 #: modules/gui/macosx/simple_prefs.m:516 modules/gui/macosx/simple_prefs.m:560
 #: modules/gui/macosx/simple_prefs.m:1128
@@ -14689,7 +14670,7 @@ msgstr "Choisir"
 
 #: modules/gui/macosx/simple_prefs.m:1106
 msgid "Choose the font to display your Subtitles with."
-msgstr ""
+msgstr "Choisir la police de caractère pour afficher les sous-titres."
 
 #: modules/gui/macosx/simple_prefs.m:1146
 msgid ""
@@ -14705,11 +14686,11 @@ msgstr "Combinaison invalide"
 
 #: modules/gui/macosx/simple_prefs.m:1221
 msgid "Regrettably, these keys cannot be assigned as hotkey shortcuts."
-msgstr ""
+msgstr "Malheureusement, cette touche ne peux pas servir de raccourci."
 
 #: modules/gui/macosx/simple_prefs.m:1239
 msgid "This combination is already taken by \"%@\"."
-msgstr ""
+msgstr "Cette combinaison est déjà utilisée par \"%@\"."
 
 #: modules/gui/macosx/update.m:63
 msgid "Check for Updates"
@@ -14730,6 +14711,8 @@ msgstr "Voulez vous que VLC cherche des mises à jour automatiquement ?"
 #: modules/gui/macosx/update.m:94
 msgid "You can change this option in VLC's update window later on."
 msgstr ""
+"Vous pourrez changer cette option dans le panneau de configuration des mises "
+"à jour de VLC."
 
 #: modules/gui/macosx/update.m:94
 msgid "Yes"
@@ -14750,7 +14733,7 @@ msgstr "Cette version de VLC n’est pas à jour."
 #: modules/gui/macosx/update.m:185
 #, c-format
 msgid "The current release is %d.%d.%d%c."
-msgstr ""
+msgstr "La dernière version de VLC est la %d.%d.%d%c."
 
 #: modules/gui/macosx/wizard.m:113
 msgid "MPEG-1 Video codec (usable with MPEG PS, MPEG TS, MPEG1, OGG and RAW)"
@@ -15172,6 +15155,8 @@ msgid ""
 "Adds available subtitles directly to the video. These cannot be disabled by "
 "the receiving user as they become part of the image."
 msgstr ""
+"Ajouter les sous-titres directement à la vidéo. Ceux-ci ne pourront pas être "
+"enlevés par le client car ils feront partie intégrante de l'image."
 
 #: modules/gui/macosx/wizard.m:422
 msgid ""
@@ -16844,7 +16829,7 @@ msgstr "&Enregistrer"
 msgid "&Reset Preferences"
 msgstr "&Rétablir les préférences"
 
-#: modules/gui/qt4/dialogs/preferences.cpp:353
+#: modules/gui/qt4/dialogs/preferences.cpp:354
 msgid ""
 "This will reset your VLC media player preferences.\n"
 "Are you sure you want to continue?"
@@ -17066,7 +17051,6 @@ msgid "Ctrl+L"
 msgstr "Ctrl+L"
 
 #: modules/gui/qt4/menus.cpp:369
-#, fuzzy
 msgid "Mi&nimal View..."
 msgstr "Interface mi&nimale..."
 
@@ -17199,7 +17183,6 @@ msgid "Show Playlist"
 msgstr "Montrer la liste de lecture"
 
 #: modules/gui/qt4/menus.cpp:846
-#, fuzzy
 msgid "Minimal View..."
 msgstr "Interface minimale..."
 
@@ -17363,6 +17346,10 @@ msgid ""
 "Default is '255;255;255;20;226;20;255;176;15;235;30;20'\n"
 "An alternative can be '30;30;50;40;40;100;50;50;160;150;150;255' "
 msgstr ""
+"Définie la couleur du contrôleur de volume\n"
+"En spécifiant 12 nombres séparés par ';'\n"
+"LA valeur par défaut est '255;255;255;20;226;20;255;176;15;235;30;20'\n"
+"Une valeur alternative peut-être '30;30;50;40;40;100;50;50;160;150;150;255'"
 
 #: modules/gui/qt4/qt4.cpp:127
 msgid "Selection of the starting mode and look "
@@ -18507,11 +18494,11 @@ msgstr ""
 "relancez VLC.\n"
 "Allez sur http://www.last.fm/join/ pour créer un compte."
 
-#: modules/misc/audioscrobbler.c:793
+#: modules/misc/audioscrobbler.c:814
 msgid "last.fm: Authentication failed"
 msgstr "last.fm: échec de l'authentification"
 
-#: modules/misc/audioscrobbler.c:794
+#: modules/misc/audioscrobbler.c:815
 msgid ""
 "last.fm username or password is incorrect. Please verify your settings and "
 "relaunch VLC."
@@ -18753,9 +18740,8 @@ msgid "Gtk+ GUI helper"
 msgstr "Aide Gtk+"
 
 #: modules/misc/inhibit.c:66
-#, fuzzy
 msgid "Power Management Inhibitor"
-msgstr "Interface de combinaisons de touches"
+msgstr "Désactive le gestionnaire d'alimentation"
 
 #: modules/misc/logger.c:125
 msgid "Log format"
@@ -18816,6 +18802,8 @@ msgid ""
 "Lua interface configuration string. Format is: '[\"<interface module name>"
 "\"] = { <option> = <value>, ...}, ...'."
 msgstr ""
+"Chaîne pour l'interface de configuration Lua. Format : '[\"<interface nom du "
+"module>\"] = { <option> = <valeur>, ...}, ...'."
 
 #: modules/misc/lua/vlc.c:61
 msgid "Lua Art"
@@ -19881,6 +19869,7 @@ msgstr "Flux de sortie élémentaire"
 #, c-format
 msgid "There is no suitable stream-output access module for \"%s/%s://%s\"."
 msgstr ""
+"Il n'y a pas de module permettant de réaliser le flux sortant \"%s/%s://%s\"."
 
 #: modules/stream_out/gather.c:44
 msgid "Gathering stream output"
@@ -20079,7 +20068,7 @@ msgstr ""
 
 #: modules/stream_out/rtp.c:124
 msgid "RTP/RTCP multiplexing"
-msgstr ""
+msgstr "Multiplexage RTP/RTCP"
 
 #: modules/stream_out/rtp.c:126
 msgid ""
@@ -20548,14 +20537,12 @@ msgid "Alpha blending transparency mask. Uses a png alpha channel."
 msgstr ""
 
 #: modules/video_filter/alphamask.c:63
-#, fuzzy
 msgid "Alpha mask video filter"
-msgstr "Filtre vidéo effet mur"
+msgstr "Filtre vidéo ajoutant un masque alpha"
 
 #: modules/video_filter/alphamask.c:64
-#, fuzzy
 msgid "Alpha mask"
-msgstr "Ajustement d’image"
+msgstr "Masque alpha"
 
 #: modules/video_filter/atmo/atmo.cpp:120
 msgid ""
@@ -20574,9 +20561,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:134
-#, fuzzy
 msgid "Save Debug Frames"
-msgstr "Image par Image"
+msgstr "Enregistrer les Frames de Debug"
 
 #: modules/video_filter/atmo/atmo.cpp:135
 msgid "Write every 128th miniframe to a folder."
@@ -20591,18 +20577,16 @@ msgid "The path where the debugframes should be saved"
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:141
-#, fuzzy
 msgid "Extracted Image Width"
-msgstr "Ajustement d’image"
+msgstr "Extraire la largeur de l'image"
 
 #: modules/video_filter/atmo/atmo.cpp:142
 msgid "The width of the mini image for further processing (64 is default)"
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:145
-#, fuzzy
 msgid "Extracted Image Height"
-msgstr "Hauteur du pic"
+msgstr "Extraire la hauteur de l'image"
 
 #: modules/video_filter/atmo/atmo.cpp:146
 msgid "The height of the mini image for further processing (48 is default)"
@@ -20763,9 +20747,8 @@ msgstr "fenêtre1"
 
 #: modules/video_filter/atmo/atmo.cpp:203
 #: modules/video_filter/atmo/atmo.cpp:205
-#, fuzzy
 msgid "Used for statistics."
-msgstr "Collecter des statistiques"
+msgstr "Utilisé pour les statistiques"
 
 #: modules/video_filter/atmo/atmo.cpp:204
 #, fuzzy
@@ -21028,9 +21011,8 @@ msgid "blendbench"
 msgstr ""
 
 #: modules/video_filter/blendbench.c:80
-#, fuzzy
 msgid "Benchmarking"
-msgstr "Masquage de bordure"
+msgstr "Mesure de performances"
 
 #: modules/video_filter/blendbench.c:86
 msgid "Base image"
@@ -21258,16 +21240,19 @@ msgstr "Nombre de pixels vides entre les bandes"
 msgid ""
 "The maximum of non-black pixels in a line to consider that the line is black."
 msgstr ""
+"Nombre maximum de pixel non noir avant de considérer la line comme noir."
 
 #: modules/video_filter/crop.c:96
 msgid "Skip percentage (%)"
 msgstr ""
 
 #: modules/video_filter/crop.c:97
+#, fuzzy
 msgid ""
 "Percentage of the line to consider while checking for black lines. This "
 "allows to skip logos in black borders and crop them anyway."
 msgstr ""
+"Pourcentage de la ligne à inspecter lors de la recherche de lignes blanche."
 
 #: modules/video_filter/crop.c:99
 #, fuzzy
@@ -21276,7 +21261,7 @@ msgstr "Seuil de luminosité"
 
 #: modules/video_filter/crop.c:100
 msgid "Maximum luminance to consider a pixel as black (0-255)."
-msgstr ""
+msgstr "Luminance maximale avant de considérer un pixel comme noir (0-255)."
 
 #: modules/video_filter/crop.c:104
 msgid "Crop video filter"
@@ -21418,9 +21403,8 @@ msgid "Dynamic video overlay"
 msgstr "Décodeur vidéo Dirac"
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:66
-#, fuzzy
 msgid "Overlay"
-msgstr "Overlays"
+msgstr "Sur-impression"
 
 #: modules/video_filter/erase.c:55
 msgid "Image mask"
@@ -21454,6 +21438,7 @@ msgstr "Composante RGB à extraire"
 #: modules/video_filter/extract.c:64
 msgid "RGB component to extract. 0 for Red, 1 for Green and 2 for Blue."
 msgstr ""
+"Composante RGB à extraire. 0 pour le Rouge, 1 pour le Vert et 2 pour le Bleu."
 
 #: modules/video_filter/extract.c:75
 msgid "Extract RGB component video filter"
@@ -21466,7 +21451,7 @@ msgstr "Filtre vidéo"
 
 #: modules/video_filter/gaussianblur.c:47
 msgid "Gaussian's std deviation"
-msgstr ""
+msgstr "Déviation standard de la Gaussienne"
 
 #: modules/video_filter/gaussianblur.c:49
 msgid ""
@@ -21936,7 +21921,7 @@ msgstr "Afficher pendant la diffusion"
 
 #: modules/video_filter/opencv_wrapper.c:78
 msgid "Show only errors"
-msgstr ""
+msgstr "N'afficher que les erreurs"
 
 #: modules/video_filter/opencv_wrapper.c:79
 msgid "Show errors and warnings"
@@ -22310,7 +22295,7 @@ msgstr "Option de Xinerama"
 
 #: modules/video_filter/panoramix.c:193
 msgid "Uncheck if you have not used xinerama"
-msgstr ""
+msgstr "Désélectionnez si vous n'avez pas utilisés xinarama"
 
 #: modules/video_filter/postproc.c:59
 msgid "Post processing quality"
@@ -22425,7 +22410,7 @@ msgstr ""
 
 #: modules/video_filter/remoteosd.c:98
 msgid "Key events"
-msgstr ""
+msgstr "Evénements clavier"
 
 #: modules/video_filter/remoteosd.c:100
 msgid "Send key events to VNC host."
@@ -22533,10 +22518,11 @@ msgid "Title display mode"
 msgstr "Mode d'affichage du titre"
 
 #: modules/video_filter/rss.c:167
+#, fuzzy
 msgid ""
 "Title display mode. Default is 0 (hidden) if the feed has an image and feed "
 "images are enabled, 1 otherwise."
-msgstr ""
+msgstr "Mode d'affichage du titre. Valeur par défaut 0 (désactivé)."
 
 #: modules/video_filter/rss.c:182
 msgid "Don't show"
@@ -22568,7 +22554,7 @@ msgstr "Fixe le contraste de l’image, entre 0 et 2. 0,05 par défaut."
 
 #: modules/video_filter/sharpen.c:66
 msgid "Augment contrast between contours."
-msgstr ""
+msgstr "Augmente le contraste des contours."
 
 #: modules/video_filter/sharpen.c:67
 #, fuzzy
@@ -22719,6 +22705,8 @@ msgid ""
 "Run framebuffer on current TTY device (default enabled). (disable tty "
 "handling with caution)"
 msgstr ""
+"Exécute le framebuffer dans la tty courante (désactivé par défaut). "
+"(désactivez le contrôle de la tty avec précaution)"
 
 #: modules/video_output/fb.c:95
 msgid "Framebuffer resolution to use."
@@ -22729,6 +22717,9 @@ msgid ""
 "Select the resolution for the framebuffer. Currently it supports the values "
 "0=QCIF 1=CIF 2=NTSC 3=PAL, 4=auto (default 4=auto)"
 msgstr ""
+"Sélectionne la résolution du framebuffer. Actuellement les valeurs acceptées "
+"sont 0=QCIF, 1=CIF, 2=NTSC, 3=PAL, 4=automatique (par défaut la valeur est "
+"4=automatique)"
 
 #: modules/video_output/fb.c:100
 msgid "Framebuffer uses hw acceleration."
@@ -22740,6 +22731,9 @@ msgid ""
 "in hardware then you must disable this option. It then does double buffering "
 "in software."
 msgstr ""
+"Si le framebuffer de votre ordinateur supporte l'accélération matériel ou "
+"utilise le matériel pour le double tampon vidéo, désactivez cette option, "
+"sinon utilisez là pour traiter le double tampon vidéo logiciellement."
 
 #: modules/video_output/fb.c:121
 msgid "GNU/Linux console framebuffer video output"
@@ -23140,6 +23134,8 @@ msgid ""
 "Address of the locking callback function. This function must return a valid "
 "memory address for use by the video renderer."
 msgstr ""
+"Adresse de la fonction de lock. Cette fonction dois retourner une adresse "
+"mémoire valide qui sera utilisé par le module de rendu vidéo."
 
 #: modules/video_output/vmem.c:68
 msgid "Unlock function"
@@ -23147,11 +23143,11 @@ msgstr "Fonction de déverrouillage"
 
 #: modules/video_output/vmem.c:69
 msgid "Address of the unlocking callback function"
-msgstr ""
+msgstr "Adresse de la fonction de callback"
 
 #: modules/video_output/vmem.c:71
 msgid "Callback data"
-msgstr ""
+msgstr "Données pour le callback"
 
 #: modules/video_output/vmem.c:72
 msgid "Data for the locking and unlocking functions"
