@@ -945,6 +945,17 @@ CFLAGS="${CFLAGS_save}"
 RDC_PROG_CC_WFLAGS([all extra sign-compare undef pointer-arith bad-function-cast cast-align write-strings missing-prototypes volatile-register-var])
 RDC_PROG_CC_FLAGS_IFELSE([-pipe])
 
+dnl
+dnl  Debugging mode
+dnl
+AC_ARG_ENABLE(debug,
+[  --enable-debug          debug mode (default disabled)])
+test "${enable_debug}" != "yes" && enable_debug="no"
+AH_TEMPLATE(NDEBUG,
+            [Define to 1 if debug code should NOT be compiled])
+AS_IF([test "x${enable_debug}" = "xno"], [AC_DEFINE(NDEBUG)])
+
+
 dnl Check for various optimization flags
 AC_CACHE_CHECK([if \$CC accepts -Os],
     [ac_cv_c_os],
@@ -1335,7 +1346,7 @@ AC_ARG_ENABLE(sse,
 [  --disable-sse           disable SSE (1 and 2) optimizations (default auto)]
 ,, [
   case "${host_cpu}" in
-    i686|x86_64)
+    i*86|x86_64)
       enable_sse=yes
       ;;
     *)
@@ -1568,16 +1579,6 @@ if test "${enable_optimizations}" != "no"; then
       enable_optimizations="speed"
    fi
 fi
-
-dnl
-dnl  Debugging mode
-dnl
-AC_ARG_ENABLE(debug,
-[  --enable-debug          debug mode (default disabled)])
-test "${enable_debug}" != "yes" && enable_debug="no"
-AH_TEMPLATE(NDEBUG,
-            [Define to 1 if debug code should NOT be compiled])
-AS_IF([test "x${enable_debug}" = "xno"], [AC_DEFINE(NDEBUG)])
 
 dnl
 dnl  Test coverage
