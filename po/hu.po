@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: Videolan\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
 "POT-Creation-Date: 2008-09-02 20:33+0100\n"
-"PO-Revision-Date: 2008-09-02 22:23+0200\n"
+"PO-Revision-Date: 2008-09-02 23:33+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <gnome@fsf.hu>\n"
 "MIME-Version: 1.0\n"
@@ -1101,7 +1101,7 @@ msgid "VLC can't recognize the input's format"
 msgstr "A VLC nem ismerte fel a bemenet formátumát"
 
 #: src/input/input.c:2318
-#, fuzzy, c-format
+#, c-format
 msgid "The format of '%s' cannot be detected. Have a look the log for details."
 msgstr ""
 "A(z) „%s” formátuma nem ismerhető fel. A részletekért nézze meg a naplót."
@@ -2136,12 +2136,10 @@ msgid "Display the title of the video on top of the movie."
 msgstr "A videó címének megjelenítése a film tetején."
 
 #: src/libvlc-module.c:408
-#, fuzzy
 msgid "Show video title for x miliseconds"
 msgstr "A videó címének megjelenítése x ezredmásodpercre"
 
 #: src/libvlc-module.c:410
-#, fuzzy
 msgid "Show the video title for n miliseconds, default is 5000 ms (5 sec.)"
 msgstr ""
 "A videó címének megjelenítése n ezredmásodpercre, az alapértelmezett 5000 em "
@@ -2157,12 +2155,10 @@ msgstr ""
 "A cím megjelenítése a videó ezen részén (alapértelmezésben lent középen)."
 
 #: src/libvlc-module.c:416
-#, fuzzy
 msgid "Hide cursor and fullscreen controller after x miliseconds"
 msgstr "A kurzor és a teljesméret-vezérlő elrejtése x ezredmásodperc után"
 
 #: src/libvlc-module.c:419
-#, fuzzy
 msgid ""
 "Hide mouse cursor and fullscreen controller after n miliseconds, default is "
 "3000 ms (3 sec.)"
@@ -2755,7 +2751,6 @@ msgid "Subpictures filter module"
 msgstr "Alkép szűrő modul"
 
 #: src/libvlc-module.c:699
-#, fuzzy
 msgid ""
 "This adds so-called \"subpicture filters\". These filters overlay some "
 "images or text over the video (like a logo, arbitrary text...)."
@@ -3485,7 +3480,6 @@ msgstr ""
 "állítását."
 
 #: src/libvlc-module.c:1054
-#, fuzzy
 msgid ""
 "Allowing only one running instance of VLC can sometimes be useful, for "
 "example if you associated VLC with some media types and you don't want a new "
@@ -3495,7 +3489,7 @@ msgid ""
 "active and the running instance of VLC to use D-Bus control interface."
 msgstr ""
 "A VLC egyetlen példányának engedélyezése néha hasznos lehet, ha például a "
-"VLC-t társította néhány médiatípushoz és nem akar egy új VLC példányt nyitni "
+"VLC-t társította néhány médiatípushoz és nem akar új VLC példányt nyitni "
 "minden alkalommal, amikor megnyit egy fájlt a fájlkezelőben. Ez a beállítás "
 "lehetővé teszi a fájl lejátszását a már futó példányban, vagy a sorba "
 "állítását. Ez a beállítás megköveteli a D-Bus munkamenetdémon jelenlétét, "
@@ -4616,13 +4610,12 @@ msgid "print a list of available modules with extra detail"
 msgstr "az elérhető modulok kilistázása extra részletességgel"
 
 #: src/libvlc-module.c:2486
-#, fuzzy
 msgid ""
 "print help on a specific module (can be combined with --advanced and --help-"
 "verbose)"
 msgstr ""
-"a VLC súgójának és az összes moduljának kiírása (kombinálható az --advanced "
-"és a --help-verbose kapcsolókkal)"
+"adott modul súgójának kiírása (kombinálható az --advanced és a --help-"
+"verbose kapcsolókkal)"
 
 #: src/libvlc-module.c:2489
 msgid "no configuration option will be loaded nor saved to config file"
@@ -4684,13 +4677,13 @@ msgid "File not verifiable"
 msgstr "A fájl nem ellenőrizhető"
 
 #: src/misc/update.c:1658
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "It was not possible to securely verify the downloaded file \"%s\". Thus, it "
 "was VLC deleted."
 msgstr ""
-"Nem volt lehetséges a letöltött „%s” fájl biztonságos ellenőrzése. Emiatt "
-"törlésre került."
+"Nem volt lehetséges a letöltött „%s” fájl biztonságos ellenőrzése. Emiatt a "
+"VLC törölte azt."
 
 #: src/misc/update.c:1669 src/misc/update.c:1681
 msgid "File corrupted"
@@ -5436,28 +5429,25 @@ msgid "Antenna lnb_lof1 (kHz)"
 msgstr "lnb_lof1 antenna (kHz)"
 
 #: modules/access/bda/bda.c:100
-#, fuzzy
 msgid "Low Band Local Osc Freq in kHz usually 9.75GHz"
-msgstr "Alacsony sávú helyi Osc frekvencia kHz-ben (általában 9,75 GHz)"
+msgstr "Alacsony sávú helyi Osc frekvencia kHz-ben, általában 9,75 GHz"
 
 #: modules/access/bda/bda.c:102 modules/access/dvb/access.c:124
 msgid "Antenna lnb_lof2 (kHz)"
 msgstr "lnb_lof2 antenna (kHz)"
 
 #: modules/access/bda/bda.c:103
-#, fuzzy
 msgid "High Band Local Osc Freq in kHz usually 10.6GHz"
-msgstr "Magas sávú helyi Osc frekvencia kHz-ben (általában 10,6 GHz)"
+msgstr "Magas sávú helyi Osc frekvencia kHz-ben, általában 10,6 GHz"
 
 #: modules/access/bda/bda.c:105 modules/access/dvb/access.c:127
 msgid "Antenna lnb_slof (kHz)"
 msgstr "lnb_slof antenna (kHz)"
 
 #: modules/access/bda/bda.c:107
-#, fuzzy
 msgid "Low Noise Block switch freq in kHz usually 11.7GHz"
 msgstr ""
-"Alacsony zajszintű blokk kapcsolófrekvenciája kHz-ben (általában 11,7 GHz)"
+"Alacsony zajszintű blokk kapcsolófrekvenciája kHz-ben, általában 11,7 GHz"
 
 #: modules/access/bda/bda.c:110 modules/access/dvb/access.c:131
 msgid "Modulation type"
@@ -6724,14 +6714,12 @@ msgstr ""
 "megabájt kiírása után."
 
 #: modules/access_filter/record.c:48
-#, fuzzy
 msgid "Record directory"
-msgstr "Forráskönyvtár"
+msgstr "Felvételkönyvtár"
 
 #: modules/access_filter/record.c:50
-#, fuzzy
 msgid "Directory where the record will be stored."
-msgstr "Az a könyvtár vagy fájlnév, amelyben a felvételek tárolásra kerülnek"
+msgstr "Az a könyvtár, amelyben a felvétel tárolásra kerül."
 
 #: modules/access_filter/record.c:339
 msgid "Recording"
@@ -6919,7 +6907,6 @@ msgid "Forward Cookies"
 msgstr "Sütik továbbítása"
 
 #: modules/access/http.c:96
-#, fuzzy
 msgid "Forward Cookies Across http redirections "
 msgstr "Sütik továbbítása HTTP átirányításokon át."
 
@@ -6943,7 +6930,6 @@ msgid "HTTP authentication"
 msgstr "HTTP hitelesítés"
 
 #: modules/access/jack.c:64
-#, fuzzy
 msgid ""
 "Make VLC buffer audio data capturer from jack for the specified length in "
 "milliseconds."
@@ -9646,9 +9632,8 @@ msgid "CDG video decoder"
 msgstr "CDG videodekódoló"
 
 #: modules/codec/cinepak.c:43
-#, fuzzy
 msgid "Cinepak video decoder"
-msgstr "Hamis video dekóder"
+msgstr "Cinepak video dekóder"
 
 #: modules/codec/cmml/cmml.c:73
 msgid "CMML annotations decoder"
@@ -17285,9 +17270,8 @@ msgid "Ctrl+L"
 msgstr "Ctrl+L"
 
 #: modules/gui/qt4/menus.cpp:369
-#, fuzzy
 msgid "Mi&nimal View..."
-msgstr "&Minimális nézet"
+msgstr "&Minimális nézet..."
 
 #: modules/gui/qt4/menus.cpp:370
 msgid "Ctrl+H"
@@ -17418,9 +17402,8 @@ msgid "Show Playlist"
 msgstr "Lejátszólista megjelenítése"
 
 #: modules/gui/qt4/menus.cpp:846
-#, fuzzy
 msgid "Minimal View..."
-msgstr "Minimális nézet"
+msgstr "Minimális nézet..."
 
 #: modules/gui/qt4/menus.cpp:851
 msgid "Toggle Fullscreen Interface"
@@ -23797,126 +23780,3 @@ msgstr "Vizualizáló szűrő"
 #: modules/visualization/visual/visual.c:123
 msgid "Spectrum analyser"
 msgstr "Spektrumanalizátor"
-
-#~ msgid ""
-#~ "%d module(s) were not displayed because they only have advanced options.\n"
-#~ msgstr ""
-#~ "%d modul nem jelenik meg, mivel csak speciális beállításaik vannak.\n"
-
-#~ msgid ""
-#~ "No matching module found. Use --list or--list-verbose to list available "
-#~ "modules."
-#~ msgstr ""
-#~ "Nem található megfelelő modul. Használja a --list vagy --list-verbose "
-#~ "kapcsolókat az elérhető modulok felsorolásához."
-
-#~ msgid "Choose which objects should print debug message"
-#~ msgstr "Válassza ki, melyik objektumok írjanak ki hibakeresési üzeneteket"
-
-#~ msgid ""
-#~ "This is a ',' separated string, each objects should be prefixed by a '+' "
-#~ "or a '-' to respectively enable or disable it. The keyword 'all' refers "
-#~ "to all objects. Objects can be refered to by their type or module name. "
-#~ "Rules applying to named objects take precendence over rules applying to "
-#~ "object types. Note that you still need to use -vvv to actually display "
-#~ "debug message."
-#~ msgstr ""
-#~ "Ez egy vesszőkkel (,) elválasztott karakterlánc, minden objektumot egy + "
-#~ "vagy - jelnek kell megelőznie, annak engedélyezéséhez vagy tiltásához. Az "
-#~ "„all” kulcsszó az összes objektumot jelöli. Az objektumokra típusukkal "
-#~ "vagy nevükkel lehet hivatkozni. A megnevezett objektumokra vonatkozó "
-#~ "szabályok elsőbbséget élveznek az objektumtípusokra érvényes szabályokkal "
-#~ "szemben. A hibakeresési üzenetek megjelenítéséhez továbbra is a -vvv "
-#~ "használata szükséges."
-
-#~ msgid "Enable time streching audio"
-#~ msgstr "Hangnyújtás engedélyezése"
-
-#~ msgid ""
-#~ "This allows to play audio at lower or higher speed withoutaffecting the "
-#~ "audio pitch"
-#~ msgstr ""
-#~ "Ez lehetővé teszi a hang alacsonyabb vagy magasabb sebességen történő "
-#~ "lejátszását a hangmagasság befolyásolása nélkül."
-
-#~ msgid "Record directory or filename"
-#~ msgstr "Felvétel könyvtára vagy fájlneve"
-
-#~ msgid "Prefer native stream recording"
-#~ msgstr "Natív műsorfelvétel előnyben részesítése"
-
-#~ msgid ""
-#~ "When possible, the input stream will be recorded instead of usingthe "
-#~ "stream output module"
-#~ msgstr ""
-#~ "Ha lehetséges, a bemeneti műsor kerül rögzítésre a műsorkimeneti modul "
-#~ "használata helyett"
-
-#~ msgid ""
-#~ "print help on a specific module (can be combined with --advanced and --"
-#~ "help-verbose). Prefix the module name with = for strictmatches."
-#~ msgstr ""
-#~ "adott modul súgójának kiírása (kombinálható az --advanced és a --help-"
-#~ "verbose kapcsolókkal). A modul nevét megelőző = jel pontos egyezést "
-#~ "követel meg."
-
-#~ msgid "%.1f GB"
-#~ msgstr "%.1f GB"
-
-#~ msgid "%.1f MB"
-#~ msgstr "%.1f MB"
-
-#~ msgid "%.1f kB"
-#~ msgstr "%.1f kB"
-
-#~ msgid "%ld B"
-#~ msgstr "%ld B"
-
-#~ msgid ""
-#~ "%s\n"
-#~ "Downloading... %s/%s %.1f%% done"
-#~ msgstr ""
-#~ "%s\n"
-#~ "Letöltés... %s/%s %.1f%% kész"
-
-#~ msgid "Downloading ..."
-#~ msgstr "Letöltés..."
-
-#~ msgid ""
-#~ "%s\n"
-#~ "Done %s (100.0%%)"
-#~ msgstr ""
-#~ "%s\n"
-#~ "Kész %s (100 %%)"
-
-#~ msgid "Cancelled"
-#~ msgstr "Megszakítva"
-
-#~ msgid "Destination prefix"
-#~ msgstr "Célelőtag"
-
-#~ msgid "Prefix of the destination file automatically generated"
-#~ msgstr "A célfájl előtagja automatikusan kerül előállításra"
-
-#~ msgid "Record stream output"
-#~ msgstr "Műsorkimenet rögzítése"
-
-#, fuzzy
-#~ msgid ""
-#~ "New target video bitrate. Quality is ok for -10/15\\% of the "
-#~ "originalbitrate."
-#~ msgstr ""
-#~ "Új célvideó bitsebessége. A minőség még elfogadható az eredeti "
-#~ "bitsebesség -10/15 százaléka esetén."
-
-#~ msgid "Shaping delay"
-#~ msgstr "Alakítási késleltetés"
-
-#~ msgid "Amount of data used for transrating in ms."
-#~ msgstr "A sebességmódosításhoz használandó adatmennyiség ezredmásodpercben."
-
-#~ msgid "Use MPEG4 matrix"
-#~ msgstr "MPEG4 mátrix használata"
-
-#~ msgid "Use the MPEG4 quantification matrix."
-#~ msgstr "Az MPEG4 kvantálási mátrix használata."
