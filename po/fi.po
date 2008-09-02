@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.86\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-08-25 22:03+0100\n"
-"PO-Revision-Date: 2008-08-24 21:46+0200\n"
+"POT-Creation-Date: 2008-09-02 20:33+0100\n"
+"PO-Revision-Date: 2008-09-02 07:52+0200\n"
 "Last-Translator: Otto Kekäläinen <otto@sange.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -96,7 +96,7 @@ msgid "General audio settings"
 msgstr "Yleiset ääniasetukset"
 
 #: include/vlc_config_cat.h:60 include/vlc_config_cat.h:85
-#: src/video_output/video_output.c:416
+#: src/video_output/video_output.c:422
 msgid "Filters"
 msgstr "Suodattimet"
 
@@ -472,27 +472,24 @@ msgid "Select one or more files to open"
 msgstr "Valitse ainakin yksi avattava tiedosto"
 
 #: include/vlc_intf_strings.h:42
-#, fuzzy
 msgid "Media &Information..."
-msgstr "Tietovälineen tiedot..."
+msgstr "T&ietovälineen tiedot..."
 
 #: include/vlc_intf_strings.h:43
 msgid "&Codec Information..."
 msgstr "&Koodekin tiedot..."
 
 #: include/vlc_intf_strings.h:44
-#, fuzzy
 msgid "&Messages..."
-msgstr "Viestit"
+msgstr "&Viestit..."
 
 #: include/vlc_intf_strings.h:45
 msgid "&Extended Settings..."
 msgstr "Lisä&asetukset..."
 
 #: include/vlc_intf_strings.h:46
-#, fuzzy
 msgid "Go to Specific &Time..."
-msgstr "Siirry määrättyyn ajankohtaan..."
+msgstr "Siirry &tiettyyn kohtaan..."
 
 #: include/vlc_intf_strings.h:47
 msgid "&Bookmarks..."
@@ -507,8 +504,8 @@ msgid "&About..."
 msgstr "Tietoj&a..."
 
 #: include/vlc_intf_strings.h:53 modules/control/rc.c:75
-#: modules/gui/macosx/embeddedwindow.m:77
-#: modules/gui/macosx/embeddedwindow.m:167 modules/gui/macosx/intf.m:487
+#: modules/gui/macosx/embeddedwindow.m:66
+#: modules/gui/macosx/embeddedwindow.m:156 modules/gui/macosx/intf.m:487
 #: modules/gui/macosx/intf.m:531 modules/gui/macosx/intf.m:610
 #: modules/gui/macosx/intf.m:617 modules/gui/macosx/intf.m:1799
 #: modules/gui/macosx/intf.m:1800 modules/gui/macosx/intf.m:1801
@@ -575,9 +572,8 @@ msgid "Random"
 msgstr "Satunnaistoisto"
 
 #: include/vlc_intf_strings.h:70
-#, fuzzy
 msgid "Random off"
-msgstr "Satunnaistoisto pois"
+msgstr "Ei satunnaistoistoa"
 
 #: include/vlc_intf_strings.h:72
 msgid "Add to playlist"
@@ -612,7 +608,6 @@ msgid "Search"
 msgstr "Hae"
 
 #: include/vlc_intf_strings.h:83
-#, fuzzy
 msgid "Search Filter"
 msgstr "Hakusuodatin"
 
@@ -735,7 +730,7 @@ msgstr "Suodattimia ei voi tuota enempää (%d) lisätä."
 
 #: src/audio_output/input.c:98 src/audio_output/input.c:144
 #: src/input/es_out.c:459 src/libvlc-module.c:562
-#: src/video_output/video_output.c:393 modules/video_filter/postproc.c:222
+#: src/video_output/video_output.c:399 modules/video_filter/postproc.c:222
 msgid "Disable"
 msgstr "Poista käytöstä"
 
@@ -778,10 +773,10 @@ msgstr "Äänikanavat"
 #: src/audio_output/output.c:105 src/audio_output/output.c:140
 #: modules/access/v4l2/v4l2.c:208 modules/access/v4l2/v4l2.c:259
 #: modules/access/v4l.c:129 modules/audio_output/alsa.c:195
-#: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:518
-#: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:407
+#: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:519
+#: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:402
 #: modules/audio_output/sdl.c:184 modules/audio_output/sdl.c:201
-#: modules/audio_output/waveout.c:517 modules/codec/twolame.c:71
+#: modules/audio_output/waveout.c:518 modules/codec/twolame.c:71
 msgid "Stereo"
 msgstr "Stereo"
 
@@ -825,15 +820,15 @@ msgstr "avain"
 msgid "boolean"
 msgstr "totuusarvo"
 
-#: src/config/file.c:593 src/libvlc.c:1578
+#: src/config/file.c:593 src/libvlc.c:1582
 msgid "integer"
 msgstr "kokonaisluku"
 
-#: src/config/file.c:602 src/libvlc.c:1607
+#: src/config/file.c:602 src/libvlc.c:1611
 msgid "float"
 msgstr "liukuluku"
 
-#: src/config/file.c:625 src/libvlc.c:1557
+#: src/config/file.c:625 src/libvlc.c:1561
 msgid "string"
 msgstr "merkkijono"
 
@@ -1214,7 +1209,7 @@ msgstr "Peruuta"
 #: modules/gui/macosx/wizard.m:1889
 #: modules/gui/qt4/components/open_panels.cpp:1153
 #: modules/gui/qt4/components/preferences_widgets.cpp:1293
-#: modules/gui/qt4/main_interface.cpp:532
+#: modules/gui/qt4/main_interface.cpp:534
 msgid "OK"
 msgstr "OK"
 
@@ -1259,50 +1254,50 @@ msgstr ""
 msgid "To get exhaustive help, use '-H'."
 msgstr ""
 
-#: src/libvlc.c:1622
+#: src/libvlc.c:1626
 msgid " (default enabled)"
 msgstr " (oletusarvo käytössä)"
 
-#: src/libvlc.c:1623
+#: src/libvlc.c:1627
 msgid " (default disabled)"
 msgstr " (oletusarvo pois käytöstä)"
 
-#: src/libvlc.c:1782 src/libvlc.c:1785
+#: src/libvlc.c:1786 src/libvlc.c:1789
 #, fuzzy
 msgid "Note:"
 msgstr "Ei mikään"
 
-#: src/libvlc.c:1783 src/libvlc.c:1786
+#: src/libvlc.c:1787 src/libvlc.c:1790
 msgid "add --advanced to your command line to see advanced options."
 msgstr ""
 
-#: src/libvlc.c:1890
+#: src/libvlc.c:1894
 #, c-format
 msgid "VLC version %s\n"
 msgstr "VLC, versio %s\n"
 
-#: src/libvlc.c:1891
+#: src/libvlc.c:1895
 #, c-format
 msgid "Compiled by %s@%s.%s\n"
 msgstr "Sovelluskäännös: %s@%s.%s\n"
 
-#: src/libvlc.c:1893
+#: src/libvlc.c:1897
 #, c-format
 msgid "Compiler: %s\n"
 msgstr "Kääntäjä: %s\n"
 
-#: src/libvlc.c:1895
+#: src/libvlc.c:1899
 #, c-format
 msgid "Based upon Git commit [%s]\n"
 msgstr ""
 
-#: src/libvlc.c:1931
+#: src/libvlc.c:1935
 msgid ""
 "\n"
 "Dumped content to vlc-help.txt file.\n"
 msgstr ""
 
-#: src/libvlc.c:1951
+#: src/libvlc.c:1955
 msgid ""
 "\n"
 "Press the RETURN key to continue...\n"
@@ -3352,7 +3347,7 @@ msgstr ""
 #: src/libvlc-module.c:1156 src/video_output/vout_intf.c:414
 #: modules/gui/beos/VideoOutput.cpp:1058 modules/gui/macosx/controls.m:435
 #: modules/gui/macosx/controls.m:489 modules/gui/macosx/controls.m:938
-#: modules/gui/macosx/controls.m:969 modules/gui/macosx/embeddedwindow.m:76
+#: modules/gui/macosx/controls.m:969 modules/gui/macosx/embeddedwindow.m:65
 #: modules/gui/macosx/intf.m:491 modules/gui/macosx/intf.m:568
 #: modules/gui/macosx/intf.m:624 modules/gui/macosx/simple_prefs.m:286
 #: modules/gui/qt4/ui/sprefs_video.ui:61
@@ -3460,7 +3455,7 @@ msgstr "Valitse pikanäppäin toiston keskeyttämistä varten."
 
 #: src/libvlc-module.c:1176 modules/gui/fbosd.c:129 modules/gui/fbosd.c:197
 #: modules/gui/macosx/bookmarks.m:96 modules/gui/macosx/bookmarks.m:105
-#: modules/gui/macosx/embeddedwindow.m:78 modules/gui/macosx/intf.m:493
+#: modules/gui/macosx/embeddedwindow.m:67 modules/gui/macosx/intf.m:493
 #: modules/gui/qt4/ui/video_effects.ui:731 modules/video_filter/marq.c:153
 #: modules/video_filter/rss.c:197
 msgid "Position"
@@ -4232,9 +4227,8 @@ msgid "Track settings"
 msgstr "Asetusten arvo"
 
 #: src/libvlc-module.c:1650
-#, fuzzy
 msgid "Playback control"
-msgstr "Etähallinta"
+msgstr "Toistonhallinta"
 
 #: src/libvlc-module.c:1671
 msgid "Default devices"
@@ -4963,28 +4957,28 @@ msgstr "zhuang"
 msgid "Zulu"
 msgstr "zulu"
 
-#: src/video_output/video_output.c:391 modules/gui/macosx/intf.m:581
+#: src/video_output/video_output.c:397 modules/gui/macosx/intf.m:581
 #: modules/gui/macosx/intf.m:582 modules/video_filter/deinterlace.c:127
 msgid "Deinterlace"
 msgstr "Lomituksenpoisto"
 
-#: src/video_output/video_output.c:395 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:401 modules/video_filter/deinterlace.c:123
 msgid "Discard"
 msgstr "Hylkää"
 
-#: src/video_output/video_output.c:397 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:403 modules/video_filter/deinterlace.c:123
 msgid "Blend"
 msgstr "Sekoita"
 
-#: src/video_output/video_output.c:399 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:405 modules/video_filter/deinterlace.c:123
 msgid "Mean"
 msgstr "Keskiarvo"
 
-#: src/video_output/video_output.c:401 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:407 modules/video_filter/deinterlace.c:123
 msgid "Bob"
 msgstr ""
 
-#: src/video_output/video_output.c:403 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:409 modules/video_filter/deinterlace.c:123
 msgid "Linear"
 msgstr "Lineaarinen"
 
@@ -5978,7 +5972,6 @@ msgstr "Syöteparametrit"
 #: modules/access/dshow/dshow.cpp:195 modules/access/dshow/dshow.cpp:200
 #: modules/audio_output/alsa.c:114 modules/audio_output/waveout.c:177
 #: modules/video_output/msw/directx.c:177
-#, fuzzy
 msgid "Refresh list"
 msgstr "Virkistä lista"
 
@@ -6154,12 +6147,12 @@ msgstr "DVD, jossa valikot"
 msgid "DVDnav Input"
 msgstr "Syöteparametrit"
 
-#: modules/access/dvdnav.c:304 modules/access/dvdread.c:251
+#: modules/access/dvdnav.c:306 modules/access/dvdread.c:251
 #: modules/access/dvdread.c:511 modules/access/dvdread.c:573
 msgid "Playback failure"
 msgstr "Toistovirhe"
 
-#: modules/access/dvdnav.c:305
+#: modules/access/dvdnav.c:307
 msgid ""
 "VLC cannot set the DVD's title. It possibly cannot decrypt the entire disk."
 msgstr ""
@@ -7614,9 +7607,9 @@ msgid "USERPTR"
 msgstr ""
 
 #: modules/access/v4l2/v4l2.c:258 modules/audio_output/alsa.c:189
-#: modules/audio_output/directx.c:536 modules/audio_output/oss.c:227
-#: modules/audio_output/portaudio.c:399 modules/audio_output/sdl.c:185
-#: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:532
+#: modules/audio_output/directx.c:537 modules/audio_output/oss.c:227
+#: modules/audio_output/portaudio.c:394 modules/audio_output/sdl.c:185
+#: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:533
 msgid "Mono"
 msgstr "Mono"
 
@@ -8094,12 +8087,12 @@ msgstr "PCM-muunnoksen äänisuodatus"
 msgid "Audio filter for trivial channel mixing"
 msgstr ""
 
-#: modules/audio_filter/converter/a52tofloat32.c:97
+#: modules/audio_filter/converter/a52tofloat32.c:93
 msgid "A/52 dynamic range compression"
 msgstr ""
 
-#: modules/audio_filter/converter/a52tofloat32.c:99
-#: modules/audio_filter/converter/dtstofloat32.c:86
+#: modules/audio_filter/converter/a52tofloat32.c:95
+#: modules/audio_filter/converter/dtstofloat32.c:85
 msgid ""
 "Dynamic range compression makes the loud sounds softer, and the soft sounds "
 "louder, so you can more easily listen to the stream in a noisy environment "
@@ -8107,17 +8100,17 @@ msgid ""
 "playback will be more adapted to a movie theater or a listening room."
 msgstr ""
 
-#: modules/audio_filter/converter/a52tofloat32.c:104
+#: modules/audio_filter/converter/a52tofloat32.c:100
 #, fuzzy
 msgid "Enable internal upmixing"
 msgstr "Virheellinen sisäinen kahva"
 
-#: modules/audio_filter/converter/a52tofloat32.c:106
+#: modules/audio_filter/converter/a52tofloat32.c:102
 msgid "Enable the internal upmixing algorithm (not recommended)."
 msgstr ""
 
-#: modules/audio_filter/converter/a52tofloat32.c:110
-#: modules/audio_filter/converter/a52tofloat32.c:119
+#: modules/audio_filter/converter/a52tofloat32.c:106
+#: modules/audio_filter/converter/a52tofloat32.c:115
 msgid "ATSC A/52 (AC-3) audio decoder"
 msgstr ""
 
@@ -8125,12 +8118,12 @@ msgstr ""
 msgid "Audio filter for A/52->S/PDIF encapsulation"
 msgstr "A/52->S/PDIF-kapseloinnin äänisuodatus"
 
-#: modules/audio_filter/converter/dtstofloat32.c:84
+#: modules/audio_filter/converter/dtstofloat32.c:83
 msgid "DTS dynamic range compression"
 msgstr ""
 
-#: modules/audio_filter/converter/dtstofloat32.c:96
-#: modules/audio_filter/converter/dtstofloat32.c:102
+#: modules/audio_filter/converter/dtstofloat32.c:95
+#: modules/audio_filter/converter/dtstofloat32.c:101
 msgid "DTS Coherent Acoustics audio decoder"
 msgstr ""
 
@@ -8457,23 +8450,23 @@ msgid "ALSA Device Name"
 msgstr "ALSA-laitteen nimi"
 
 #: modules/audio_output/alsa.c:132 modules/audio_output/auhal.c:131
-#: modules/audio_output/auhal.c:968 modules/audio_output/directx.c:421
-#: modules/audio_output/oss.c:134 modules/audio_output/portaudio.c:393
+#: modules/audio_output/auhal.c:968 modules/audio_output/directx.c:422
+#: modules/audio_output/oss.c:134 modules/audio_output/portaudio.c:388
 #: modules/audio_output/sdl.c:179 modules/audio_output/sdl.c:197
-#: modules/audio_output/waveout.c:462 modules/gui/macosx/intf.m:558
+#: modules/audio_output/waveout.c:463 modules/gui/macosx/intf.m:558
 #: modules/gui/macosx/intf.m:559
 msgid "Audio Device"
 msgstr "Äänilaite"
 
-#: modules/audio_output/alsa.c:202 modules/audio_output/directx.c:499
-#: modules/audio_output/oss.c:183 modules/audio_output/portaudio.c:418
-#: modules/audio_output/waveout.c:500
+#: modules/audio_output/alsa.c:202 modules/audio_output/directx.c:500
+#: modules/audio_output/oss.c:183 modules/audio_output/portaudio.c:413
+#: modules/audio_output/waveout.c:501
 #, fuzzy
 msgid "2 Front 2 Rear"
 msgstr "takana vasen"
 
-#: modules/audio_output/alsa.c:250 modules/audio_output/directx.c:592
-#: modules/audio_output/oss.c:251 modules/audio_output/waveout.c:550
+#: modules/audio_output/alsa.c:250 modules/audio_output/directx.c:593
+#: modules/audio_output/oss.c:251 modules/audio_output/waveout.c:551
 msgid "A/52 over S/PDIF"
 msgstr "A/52-koodekki S/PDIF:n päällä"
 
@@ -8543,11 +8536,11 @@ msgstr ""
 msgid "%s (Encoded Output)"
 msgstr "%s (Pakattu ulostulo)"
 
-#: modules/audio_output/directx.c:219 modules/audio_output/portaudio.c:110
+#: modules/audio_output/directx.c:220 modules/audio_output/portaudio.c:105
 msgid "Output device"
 msgstr "Ulostulolaite"
 
-#: modules/audio_output/directx.c:221
+#: modules/audio_output/directx.c:222
 msgid ""
 "DirectX device number: 0 default device, 1..N device by number(Note that the "
 "default device appears as 0 AND another number)."
@@ -8555,21 +8548,21 @@ msgstr ""
 "DirectX-laitteen numero: 0 oletuslaite, 1..N laite numeron mukaan (Huomaa "
 "että oletuslaite näkyy nollana (0) sekä muunakin numerona)."
 
-#: modules/audio_output/directx.c:223 modules/audio_output/waveout.c:155
+#: modules/audio_output/directx.c:224 modules/audio_output/waveout.c:155
 msgid "Use float32 output"
 msgstr "Käytä float32-ulostuloa"
 
-#: modules/audio_output/directx.c:225 modules/audio_output/waveout.c:157
+#: modules/audio_output/directx.c:226 modules/audio_output/waveout.c:157
 msgid ""
 "The option allows you to enable or disable the high-quality float32 audio "
 "output mode (which is not well supported by some soundcards)."
 msgstr ""
 
-#: modules/audio_output/directx.c:229
+#: modules/audio_output/directx.c:230
 msgid "DirectX audio output"
 msgstr "DirectX-äänen ulostulo"
 
-#: modules/audio_output/directx.c:476 modules/audio_output/portaudio.c:426
+#: modules/audio_output/directx.c:477 modules/audio_output/portaudio.c:421
 #, fuzzy
 msgid "3 Front 2 Rear"
 msgstr "takana vasen"
@@ -8677,25 +8670,25 @@ msgstr "UNIX OSS -äänen ulostulo"
 msgid "OSS DSP device"
 msgstr "OSS DSP -laite"
 
-#: modules/audio_output/portaudio.c:111
+#: modules/audio_output/portaudio.c:106
 msgid "Portaudio identifier for the output device"
 msgstr "Ulostulolaitteen Portaudio-tunniste"
 
-#: modules/audio_output/portaudio.c:115
+#: modules/audio_output/portaudio.c:110
 msgid "PORTAUDIO audio output"
 msgstr "PORTAUDIO-äänen ulostulo"
 
 #: modules/audio_output/pulse.c:61 modules/gui/macosx/intf.m:481
 #: modules/gui/macosx/intf.m:482 modules/gui/macosx/intf.m:1779
 #: modules/gui/pda/pda_interface.c:210 modules/gui/pda/pda_interface.c:1353
-#: modules/gui/qt4/main_interface.cpp:364
-#: modules/gui/qt4/main_interface.cpp:368
-#: modules/gui/qt4/main_interface.cpp:937
-#: modules/gui/qt4/main_interface.cpp:939
-#: modules/gui/qt4/main_interface.cpp:1003
-#: modules/gui/qt4/main_interface.cpp:1018
-#: modules/gui/qt4/main_interface.cpp:1025
-#: modules/gui/qt4/main_interface.cpp:1042
+#: modules/gui/qt4/main_interface.cpp:366
+#: modules/gui/qt4/main_interface.cpp:370
+#: modules/gui/qt4/main_interface.cpp:941
+#: modules/gui/qt4/main_interface.cpp:943
+#: modules/gui/qt4/main_interface.cpp:1007
+#: modules/gui/qt4/main_interface.cpp:1022
+#: modules/gui/qt4/main_interface.cpp:1029
+#: modules/gui/qt4/main_interface.cpp:1046
 msgid "VLC media player"
 msgstr "VLC-mediasoitin"
 
@@ -8732,7 +8725,7 @@ msgstr "Oletuslaitteet"
 msgid "Win32 waveOut extension output"
 msgstr "Win32 waveOut -laajennuksen ulostulo"
 
-#: modules/audio_output/waveout.c:479
+#: modules/audio_output/waveout.c:480
 msgid "5.1"
 msgstr "5.1"
 
@@ -9240,7 +9233,7 @@ msgid "Chaoji VCD subtitle packetizer"
 msgstr ""
 
 #: modules/codec/dirac.c:72 modules/codec/theora.c:95
-#: modules/codec/twolame.c:55 modules/codec/vorbis.c:173
+#: modules/codec/twolame.c:55 modules/codec/vorbis.c:168
 msgid "Encoding quality"
 msgstr "Pakkauksen laatu"
 
@@ -9472,7 +9465,7 @@ msgstr "Tyhjennä kommentti"
 msgid "Subtitle renderers using libass"
 msgstr "Tekstityksen kanavoinninpurkuasetukset"
 
-#: modules/codec/libmpeg2.c:102
+#: modules/codec/libmpeg2.c:96
 msgid "MPEG I/II video decoder (using libmpeg2)"
 msgstr ""
 
@@ -9700,7 +9693,7 @@ msgstr ""
 msgid "Teletext subtitles decoder"
 msgstr "Purkaja epäonnistui: virhe %d"
 
-#: modules/codec/theora.c:97 modules/codec/vorbis.c:175
+#: modules/codec/theora.c:97 modules/codec/vorbis.c:170
 msgid ""
 "Enforce a quality between 1 (low) and 10 (high), instead of specifying a "
 "particular bitrate. This will produce a VBR stream."
@@ -9773,48 +9766,48 @@ msgstr "Joint-stereo"
 msgid "Libtwolame audio encoder"
 msgstr "Tuntematon kodekkielementti"
 
-#: modules/codec/vorbis.c:177
+#: modules/codec/vorbis.c:172
 msgid "Maximum encoding bitrate"
 msgstr "Pakkauksen enimmäisbittinopeus"
 
-#: modules/codec/vorbis.c:179
+#: modules/codec/vorbis.c:174
 msgid "Maximum bitrate in kbps. This is useful for streaming applications."
 msgstr ""
 
-#: modules/codec/vorbis.c:180
+#: modules/codec/vorbis.c:175
 msgid "Minimum encoding bitrate"
 msgstr "Pakkauksen vähimmäisbittinopeus"
 
-#: modules/codec/vorbis.c:182
+#: modules/codec/vorbis.c:177
 msgid ""
 "Minimum bitrate in kbps. This is useful for encoding for a fixed-size "
 "channel."
 msgstr ""
 
-#: modules/codec/vorbis.c:183
+#: modules/codec/vorbis.c:178
 msgid "CBR encoding"
 msgstr "CBR-koodaus"
 
-#: modules/codec/vorbis.c:185
+#: modules/codec/vorbis.c:180
 msgid "Force a constant bitrate encoding (CBR)."
 msgstr ""
 
-#: modules/codec/vorbis.c:189
+#: modules/codec/vorbis.c:184
 #, fuzzy
 msgid "Vorbis audio decoder"
 msgstr "Purkaja epäonnistui: virhe %d"
 
-#: modules/codec/vorbis.c:200
+#: modules/codec/vorbis.c:195
 #, fuzzy
 msgid "Vorbis audio packetizer"
 msgstr "Serpentine-audiomasterointi"
 
-#: modules/codec/vorbis.c:207
+#: modules/codec/vorbis.c:202
 #, fuzzy
 msgid "Vorbis audio encoder"
 msgstr "Tuntematon kodekkielementti"
 
-#: modules/codec/vorbis.c:643
+#: modules/codec/vorbis.c:638
 #, fuzzy
 msgid "Vorbis comment"
 msgstr "Tyhjennä kommentti"
@@ -10877,7 +10870,7 @@ msgstr "Avaa"
 msgid "Buffer"
 msgstr "(Nimeämätön leike)"
 
-#: modules/control/rc.c:76 modules/gui/macosx/embeddedwindow.m:161
+#: modules/control/rc.c:76 modules/gui/macosx/embeddedwindow.m:150
 #: modules/gui/macosx/intf.m:1789 modules/gui/macosx/intf.m:1790
 #: modules/gui/macosx/intf.m:1791 modules/gui/macosx/intf.m:1792
 #: modules/gui/pda/pda_interface.c:248 modules/gui/pda/pda_interface.c:249
@@ -12516,7 +12509,7 @@ msgstr "Asetukset"
 #: modules/gui/qt4/dialogs/messages.cpp:48
 #: modules/gui/qt4/dialogs/messages.cpp:66
 msgid "Messages"
-msgstr "Sanomat"
+msgstr "Viestit"
 
 #: modules/gui/beos/InterfaceWindow.cpp:266
 #: modules/gui/beos/PlayListWindow.cpp:90 modules/gui/macosx/open.m:499
@@ -12957,9 +12950,8 @@ msgid "License"
 msgstr "Lisenssi"
 
 #: modules/gui/macosx/about.m:189
-#, fuzzy
 msgid "VLC media player Help"
-msgstr "VLC-mediasoitin"
+msgstr "VLC-mediasoittimen ohjeet"
 
 #: modules/gui/macosx/about.m:192 modules/gui/pda/pda.c:285
 msgid "Index"
@@ -12977,7 +12969,7 @@ msgstr "Lisää"
 
 #: modules/gui/macosx/bookmarks.m:89 modules/gui/macosx/intf.m:527
 #: modules/gui/macosx/simple_prefs.m:239
-#: modules/gui/qt4/components/playlist/standardpanel.cpp:172
+#: modules/gui/qt4/components/playlist/standardpanel.cpp:173
 #: modules/gui/qt4/components/preferences_widgets.cpp:1133
 #: modules/gui/qt4/dialogs/bookmarks.cpp:48 modules/gui/qt4/ui/vlm.ui:202
 msgid "Clear"
@@ -13107,12 +13099,12 @@ msgstr "Siirry seuraavaan"
 msgid "Step Backward"
 msgstr "Siirry edelliseen"
 
-#: modules/gui/macosx/embeddedwindow.m:74 modules/gui/macosx/intf.m:486
+#: modules/gui/macosx/embeddedwindow.m:63 modules/gui/macosx/intf.m:486
 #: modules/gui/pda/pda_interface.c:236 modules/gui/pda/pda_interface.c:237
 msgid "Rewind"
 msgstr "Kelaa taaksepäin"
 
-#: modules/gui/macosx/embeddedwindow.m:75 modules/gui/macosx/intf.m:489
+#: modules/gui/macosx/embeddedwindow.m:64 modules/gui/macosx/intf.m:489
 msgid "Fast Forward"
 msgstr "Pikakelaus eteenpäin"
 
@@ -13447,11 +13439,11 @@ msgstr "Soittolista..."
 
 #: modules/gui/macosx/intf.m:594
 msgid "Media Information..."
-msgstr "Tietovälineen tiedot..."
+msgstr "Mediatiedot..."
 
 #: modules/gui/macosx/intf.m:595
 msgid "Messages..."
-msgstr "Sanomat..."
+msgstr "Viestit..."
 
 #: modules/gui/macosx/intf.m:596
 #, fuzzy
@@ -13703,7 +13695,6 @@ msgid "Treat as a pipe rather than as a file"
 msgstr "Käsittele putkena äläkä tiedostona"
 
 #: modules/gui/macosx/open.m:182 modules/gui/qt4/ui/open_disk.ui:94
-#, fuzzy
 msgid "No DVD menus"
 msgstr "Ei DVD-valikkoja"
 
@@ -13939,14 +13930,12 @@ msgstr "Tallenna tiedosto"
 
 #: modules/gui/macosx/playlistinfo.m:70
 #: modules/gui/qt4/dialogs/mediainfo.cpp:55
-#, fuzzy
 msgid "Media Information"
-msgstr "Median tietoja"
+msgstr "Mediatiedot"
 
 #: modules/gui/macosx/playlistinfo.m:71
-#, fuzzy
 msgid "Location"
-msgstr "Sijainti :"
+msgstr "Sijainti"
 
 #: modules/gui/macosx/playlistinfo.m:74
 #, fuzzy
@@ -14128,7 +14117,7 @@ msgid "Basic"
 msgstr "Perus"
 
 #: modules/gui/macosx/prefs.m:147 modules/gui/macosx/simple_prefs.m:627
-#: modules/gui/qt4/dialogs/preferences.cpp:352
+#: modules/gui/qt4/dialogs/preferences.cpp:353
 msgid "Reset Preferences"
 msgstr "Nollaa asetukset"
 
@@ -15140,19 +15129,16 @@ msgid "Ncurses interface"
 msgstr "Ncurses-käyttöliittymä"
 
 #: modules/gui/ncurses.c:1542
-#, fuzzy
 msgid "[Repeat] "
-msgstr "Toista kaikki"
+msgstr "[Toista uudestaan]"
 
 #: modules/gui/ncurses.c:1543
-#, fuzzy
 msgid "[Random] "
-msgstr "Satunnaistoisto"
+msgstr "[Satunnaistoisto]"
 
 #: modules/gui/ncurses.c:1544
-#, fuzzy
 msgid "[Loop]"
-msgstr "Silmukka"
+msgstr "[Silmukka]"
 
 #: modules/gui/ncurses.c:1556
 #, c-format
@@ -15190,9 +15176,9 @@ msgid " Position : %s/%s (%.2f%%)"
 msgstr ""
 
 #: modules/gui/ncurses.c:1597
-#, fuzzy, c-format
+#, c-format
 msgid " Volume   : %i%%"
-msgstr "Voimakkuus: %d%%"
+msgstr "Äänenvoimakkuus: %i%%"
 
 #: modules/gui/ncurses.c:1605
 #, c-format
@@ -15200,9 +15186,9 @@ msgid " Title    : %d/%d"
 msgstr ""
 
 #: modules/gui/ncurses.c:1616
-#, fuzzy, c-format
+#, c-format
 msgid " Chapter  : %d/%d"
-msgstr "Luku %i"
+msgstr " Kappale  : %d/%d"
 
 #: modules/gui/ncurses.c:1628
 #, c-format
@@ -15215,14 +15201,12 @@ msgid " [ h for help ]"
 msgstr "Tietoja/Ohje"
 
 #: modules/gui/ncurses.c:1652
-#, fuzzy
 msgid " Help "
 msgstr "Ohje"
 
 #: modules/gui/ncurses.c:1656
-#, fuzzy
 msgid "[Display]"
-msgstr "Näyttö"
+msgstr "[Näyttö]"
 
 #: modules/gui/ncurses.c:1659
 msgid "     h,H         Show/Hide help box"
@@ -15415,7 +15399,6 @@ msgid "     Ctrl-l          Refresh the screen"
 msgstr ""
 
 #: modules/gui/ncurses.c:1760
-#, fuzzy
 msgid " Information "
 msgstr "Tietoja"
 
@@ -15435,23 +15418,20 @@ msgid "No item currently playing"
 msgstr "Soittolistassa ei ole kohteita"
 
 #: modules/gui/ncurses.c:1897
-#, fuzzy
 msgid " Logs "
-msgstr "Kuvake"
+msgstr "Lokit"
 
 #: modules/gui/ncurses.c:1940
-#, fuzzy
 msgid " Browse "
-msgstr "Selaa..."
+msgstr "Selaa"
 
 #: modules/gui/ncurses.c:1995
 msgid " Objects "
 msgstr ""
 
 #: modules/gui/ncurses.c:2009
-#, fuzzy
 msgid " Stats "
-msgstr "Til&astot"
+msgstr "Tilastot"
 
 #: modules/gui/ncurses.c:2098
 #, c-format
@@ -15988,7 +15968,7 @@ msgstr ""
 
 #: modules/gui/qt4/components/info_panels.cpp:498
 msgid "Statistics about the currently playing media or stream."
-msgstr ""
+msgstr "Tilastoja toistettavasta mediasta tai tietovirrasta."
 
 #: modules/gui/qt4/components/info_panels.cpp:546
 #, fuzzy
@@ -16000,6 +15980,8 @@ msgid ""
 "Play\n"
 "If the playlist is empty, open a media"
 msgstr ""
+"Toista\n"
+"Jos soittolista on tyhjä, avaa tietoväline"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:266
 #, fuzzy
@@ -16011,6 +15993,8 @@ msgid ""
 "Loop from point A to point B continuously.\n"
 "Click to set point A"
 msgstr ""
+"Toista pisteestä A pisteeseen B silmukkana.\n"
+"Napsauta asettaaksesi piste A"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:346
 #, fuzzy
@@ -16026,14 +16010,16 @@ msgid ""
 "Loop from point A to point B continuously\n"
 "Click to set point A"
 msgstr ""
+"Toista pisteestä A pisteeseen B silmukkana\n"
+"Napsauta asettaaksesi piste A"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:441
 msgid "Click to set point B"
-msgstr ""
+msgstr "Napsauta asettaaksesi piste B"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:446
 msgid "Stop the A to B loop"
-msgstr ""
+msgstr "Pysäytä A:sta B:hen -silmukka"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:551
 msgid "Menu"
@@ -16051,31 +16037,26 @@ msgid "Teletext"
 msgstr "Sivukoko"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:662
-#, fuzzy
 msgid "Previous media in the playlist"
-msgstr "Soittolistassa ei ole kohteita"
+msgstr "Edellinen kohde soittolistassa"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:664
-#, fuzzy
 msgid "Next media in the playlist"
-msgstr "Soittolistassa ei ole kohteita"
+msgstr "Seuraava kohde soittolistassa"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:665
-#, fuzzy
 msgid "Stop playback"
-msgstr "Paikallinen toisto"
+msgstr "Pysäytä toisto"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:673
-#, fuzzy
 msgid "Toggle the video in fullscreen"
-msgstr "Käynnistä video koko näytön tilassa"
+msgstr "Vaihda kokoruututilaa"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:681
 msgid "Show playlist"
 msgstr "Näytä soittolista"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:687
-#, fuzzy
 msgid "Show extended settings"
 msgstr "Näytä laajennetut asetukset"
 
@@ -16085,14 +16066,12 @@ msgid "Transparent"
 msgstr "Läpinäkyvyys"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:876
-#, fuzzy
 msgid "Unmute"
-msgstr "Vaimenna"
+msgstr "Älä vaimenna"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:916
-#, fuzzy
 msgid "Pause the playback"
-msgstr "Paikallinen toisto"
+msgstr "Keskeytä toisto"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:1387
 msgid "Revert to normal play speed"
@@ -16100,7 +16079,7 @@ msgstr ""
 
 #: modules/gui/qt4/components/open_panels.cpp:48
 msgid "Select the device or the VIDEO_TS directory"
-msgstr ""
+msgstr "Valitse laite tai hakemisto, jossa VIDEO_TS sijaitsee"
 
 #: modules/gui/qt4/components/open_panels.cpp:88
 #, fuzzy
@@ -16116,7 +16095,7 @@ msgid "Filter:"
 msgstr "Suodatin:"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:622
+#: modules/gui/qt4/dialogs_provider.cpp:624
 msgid "Open subtitles file"
 msgstr "Avaa tekstitystiedosto"
 
@@ -16180,10 +16159,9 @@ msgid "Double click to get media information"
 msgstr ""
 "Valitse videokoodekki. Napsauta koodekkia saadaksesi siitä lisätietoja."
 
-#: modules/gui/qt4/components/playlist/standardpanel.cpp:155
-#, fuzzy
+#: modules/gui/qt4/components/playlist/standardpanel.cpp:156
 msgid "Show the current item"
-msgstr "Toista koko ajan nykyistä kohdetta"
+msgstr "Näytä nykyinen kohde"
 
 #: modules/gui/qt4/components/preferences_widgets.cpp:305
 msgid "Select File"
@@ -16325,7 +16303,6 @@ msgid "&Close"
 msgstr "&Sulje"
 
 #: modules/gui/qt4/dialogs/bookmarks.cpp:67
-#, fuzzy
 msgid "Bytes"
 msgstr "Tavua"
 
@@ -16373,9 +16350,8 @@ msgid "v4l2 controls"
 msgstr "v4l2-säätimet"
 
 #: modules/gui/qt4/dialogs/gototime.cpp:46
-#, fuzzy
 msgid "Go to Time"
-msgstr "Siirry ajankohtaan"
+msgstr "Siirry kohtaan"
 
 #: modules/gui/qt4/dialogs/gototime.cpp:51
 msgid "&Go"
@@ -16404,6 +16380,11 @@ msgid ""
 "This version of VLC was compiled by:\n"
 " "
 msgstr "Tämä VLC-versio on vanhentunut."
+
+#: modules/gui/qt4/dialogs/help.cpp:125 modules/gui/wince/interface.cpp:507
+#, fuzzy
+msgid "Compiler: "
+msgstr "Kääntäjä: g++ %s\n"
 
 #: modules/gui/qt4/dialogs/help.cpp:126 modules/gui/wince/interface.cpp:508
 msgid "Based on Git commit: "
@@ -16439,9 +16420,8 @@ msgid "Thanks"
 msgstr "Kiitokset"
 
 #: modules/gui/qt4/dialogs/help.cpp:207
-#, fuzzy
 msgid "VLC media player updates"
-msgstr "VLC-mediasoitin"
+msgstr "VLC-mediasoittimen päivitykset"
 
 #: modules/gui/qt4/dialogs/help.cpp:212
 msgid "&Recheck version"
@@ -16481,9 +16461,8 @@ msgid ") is available."
 msgstr "Ohjetta ei ole saatavilla."
 
 #: modules/gui/qt4/dialogs/help.cpp:335
-#, fuzzy
 msgid "You have the latest version of VLC media player."
-msgstr "Tietoja VLC-mediasoittimesta"
+msgstr "Sinulla on uusin versio VLC-mediasoittimesta."
 
 #: modules/gui/qt4/dialogs/help.cpp:339
 #, fuzzy
@@ -16507,18 +16486,16 @@ msgid "&Codec Details"
 msgstr "&Koodekin lisätiedot"
 
 #: modules/gui/qt4/dialogs/mediainfo.cpp:68
-#, fuzzy
 msgid "&Statistics"
-msgstr "Tilastot"
+msgstr "Tila&stot"
 
 #: modules/gui/qt4/dialogs/mediainfo.cpp:74
 msgid "&Save Metadata"
 msgstr "&Tallenna metatiedot"
 
 #: modules/gui/qt4/dialogs/mediainfo.cpp:80
-#, fuzzy
 msgid "Location:"
-msgstr "Sijainti :"
+msgstr "Sijainti:"
 
 #: modules/gui/qt4/dialogs/messages.cpp:78
 #, fuzzy
@@ -16629,7 +16606,7 @@ msgstr "&Tallenna"
 msgid "&Reset Preferences"
 msgstr "&Nollaa asetukset"
 
-#: modules/gui/qt4/dialogs/preferences.cpp:353
+#: modules/gui/qt4/dialogs/preferences.cpp:354
 msgid ""
 "This will reset your VLC media player preferences.\n"
 "Are you sure you want to continue?"
@@ -16637,23 +16614,23 @@ msgstr ""
 "Tämä asettaa VLC-mediasoittimen asetukset alkuarvoilleen.\n"
 "Haluatko jatkaa?"
 
-#: modules/gui/qt4/dialogs_provider.cpp:415
+#: modules/gui/qt4/dialogs_provider.cpp:417
 msgid "Open Directory"
 msgstr "Avaa hakemisto"
 
-#: modules/gui/qt4/dialogs_provider.cpp:451
+#: modules/gui/qt4/dialogs_provider.cpp:453
 msgid "Open playlist file"
 msgstr "Avaa soittolistatiedosto"
 
-#: modules/gui/qt4/dialogs_provider.cpp:462
+#: modules/gui/qt4/dialogs_provider.cpp:464
 msgid "Choose a filename to save playlist"
 msgstr "Valitse tiedostonimi soittolistan tallentamiseksi"
 
-#: modules/gui/qt4/dialogs_provider.cpp:464
+#: modules/gui/qt4/dialogs_provider.cpp:466
 msgid "XSPF playlist (*.xspf);; "
 msgstr "XSPF-soittolista (*.xspf);; "
 
-#: modules/gui/qt4/dialogs_provider.cpp:465
+#: modules/gui/qt4/dialogs_provider.cpp:467
 msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr "M3U-soittolista (*.m3u);; Mikä tahansa (*.*) "
 
@@ -16741,25 +16718,27 @@ msgstr ""
 msgid "Open a VLM Configuration File"
 msgstr "Vedosasetustiedosto"
 
-#: modules/gui/qt4/main_interface.cpp:302
+#: modules/gui/qt4/main_interface.cpp:304
 msgid "Toggle between elapsed and remaining time"
-msgstr ""
+msgstr "Vaihda kuluneen ja jäljellä olevan ajan näytön välillä"
 
-#: modules/gui/qt4/main_interface.cpp:308
+#: modules/gui/qt4/main_interface.cpp:310
 msgid ""
 "Current playback speed.\n"
 "Right click to adjust"
 msgstr ""
+"Soittonopeus\n"
+"Napsauta hiiren kakkospainikkeella säätääksesi"
 
-#: modules/gui/qt4/main_interface.cpp:478
+#: modules/gui/qt4/main_interface.cpp:480
 msgid "Privacy and Network Policies"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:482
+#: modules/gui/qt4/main_interface.cpp:484
 msgid "Privacy and Network Warning"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:485
+#: modules/gui/qt4/main_interface.cpp:487
 msgid ""
 "<p>The <i>VideoLAN Team</i> doesn't like when an application goes online "
 "without authorization.</p>\n"
@@ -16771,11 +16750,11 @@ msgid ""
 "access on the web.</p>\n"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:1004
+#: modules/gui/qt4/main_interface.cpp:1008
 msgid "Control menu for the player"
 msgstr "Soittimen säädinvalikko"
 
-#: modules/gui/qt4/main_interface.cpp:1053
+#: modules/gui/qt4/main_interface.cpp:1057
 msgid "Paused"
 msgstr "Tauko"
 
@@ -16939,7 +16918,7 @@ msgstr "&Kirjanmerkit"
 
 #: modules/gui/qt4/menus.cpp:545
 msgid "T&itle"
-msgstr "N%imi"
+msgstr "N&imi"
 
 #: modules/gui/qt4/menus.cpp:546
 msgid "&Chapter"
@@ -16990,9 +16969,8 @@ msgid "Toggle Fullscreen Interface"
 msgstr "Kokoruututila päälle/pois"
 
 #: modules/gui/qt4/menus.cpp:911
-#, fuzzy
 msgid "Hide VLC media player in taskbar"
-msgstr "Kätke VLC-mediasoitin"
+msgstr "Piilota VLC-mediasoitin tehtäväpalkista"
 
 #: modules/gui/qt4/menus.cpp:917
 msgid "Show VLC media player"
@@ -17179,7 +17157,6 @@ msgid "Preset"
 msgstr "Esiasetus"
 
 #: modules/gui/qt4/ui/open_capture.ui:17
-#, fuzzy
 msgid "Capture mode"
 msgstr "Kaappaustila"
 
@@ -17973,11 +17950,6 @@ msgstr ""
 msgid "Compiled by "
 msgstr "Kirjoittanut %s.\n"
 
-#: modules/gui/wince/interface.cpp:507
-#, fuzzy
-msgid "Compiler: "
-msgstr "Kääntäjä: g++ %s\n"
-
 #: modules/gui/wince/interface.cpp:509
 msgid ""
 "The VideoLAN team <videolan@videolan.org>\n"
@@ -18355,11 +18327,11 @@ msgid ""
 "Visit http://www.last.fm/join/ to get an account."
 msgstr ""
 
-#: modules/misc/audioscrobbler.c:793
+#: modules/misc/audioscrobbler.c:814
 msgid "last.fm: Authentication failed"
 msgstr ""
 
-#: modules/misc/audioscrobbler.c:794
+#: modules/misc/audioscrobbler.c:815
 msgid ""
 "last.fm username or password is incorrect. Please verify your settings and "
 "relaunch VLC."
