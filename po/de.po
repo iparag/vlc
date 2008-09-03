@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-03 20:11+0200\n"
+"POT-Creation-Date: 2008-09-03 22:59+0100\n"
 "PO-Revision-Date: 2007-12-10 19:23+0100\n"
 "Last-Translator: Philipp Weissenbacher <philipp.weissenbacher@gmail.com>\n"
 "Language-Team: German\n"
@@ -107,7 +107,7 @@ msgid "General audio settings"
 msgstr "Allgemeine Audioeinstellungen"
 
 #: include/vlc_config_cat.h:60 include/vlc_config_cat.h:85
-#: src/video_output/video_output.c:422
+#: src/video_output/video_output.c:427
 msgid "Filters"
 msgstr "Filter"
 
@@ -810,7 +810,7 @@ msgstr "Die Maximalanzahl an Filtern (%d) wurde erreicht."
 
 #: src/audio_output/input.c:98 src/audio_output/input.c:144
 #: src/input/es_out.c:459 src/libvlc-module.c:562
-#: src/video_output/video_output.c:399 modules/video_filter/postproc.c:222
+#: src/video_output/video_output.c:404 modules/video_filter/postproc.c:222
 msgid "Disable"
 msgstr "Deaktivieren"
 
@@ -1884,13 +1884,12 @@ msgid "Replay preamp"
 msgstr "Vorverstärker"
 
 #: src/libvlc-module.c:305
-#, fuzzy
 msgid ""
 "This allows you to change the default target level (89 dB) for stream with "
 "replay gain information"
 msgstr ""
-"Dies erlaubt ihnen den standardmäßigen Audio-Port für das RTP-Streaming "
-"festzulegen."
+"Dies erlaubt Ihnen, den standardmäßigen Ziellevel (89 dB) für Streams mit "
+"Replay-Gain-Information einzustellen."
 
 #: src/libvlc-module.c:308
 msgid "Default replay gain"
@@ -2510,13 +2509,12 @@ msgid "MTU of the network interface"
 msgstr "MTU des Netzwerk-Interfaces"
 
 #: src/libvlc-module.c:570
-#, fuzzy
 msgid ""
 "This is the maximum application-layer packet size that can be transmitted "
 "over the network (in bytes)."
 msgstr ""
-"Dies ist die maximal über die Netzwerkschnittstelle verschickte Paketgröße. "
-"Bei Ethernet sind dies normalerweise 1500 Bytes."
+"Dies ist die Maximalgröße der Pakete auf der Anwendungsebene (application "
+"layer), die über das Netzwerk gesendet werden können (in Bytes)."
 
 #: src/libvlc-module.c:575 modules/stream_out/rtp.c:118
 msgid "Hop limit (TTL)"
@@ -2618,7 +2616,6 @@ msgid "Subtitle language"
 msgstr "Untertitelsprache"
 
 #: src/libvlc-module.c:626
-#, fuzzy
 msgid ""
 "Language of the subtitle track you want to use (comma separated, two or "
 "three letters country code)."
@@ -4429,7 +4426,7 @@ msgid "Cycle through available audio devices"
 msgstr "Durch die verfügbaren Audiogeräte wechseln"
 
 #: src/libvlc-module.c:1379
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Usage: %s [options] [stream] ...\n"
 "You can specify multiple streams on the commandline. They will be enqueued "
@@ -4464,8 +4461,8 @@ msgid ""
 "certain time\n"
 "  vlc://quit                     Special item to quit VLC\n"
 msgstr ""
-"Benutzung: %s [Optionen] [Stream]...\n"
-"Sie können mehrere Streams auf der Befehlszeile angeben. Sie werden der "
+"Benutzung: %s [Optionen] [Stream] ...\n"
+"Sie können mehrere Streams auf der Befehlszeile angeben. Sie werden an die "
 "Wiedergabeliste angehängt.\n"
 "Das zuerst angegebene Objekt wird zuerst gespielt.\n"
 "\n"
@@ -4478,6 +4475,7 @@ msgstr ""
 "Stream-MRL-Syntax:\n"
 "  [[access][/demux]://]URL[@[Titel][:Kapitel][-[Titel][:Kapitel]]] [:"
 "Option=Wert ...]\n"
+"\n"
 "  Viele der globalen --Optionen können auch als MRL-spezifische :Optionen   "
 "benutzt werden. Mehrere :Option=Wert-Paare können angegeben werden.\n"
 "\n"
@@ -4490,12 +4488,12 @@ msgstr ""
 "  [dvd://][Device][@raw_device]  DVD-Gerät/Device\n"
 "  [vcd://][Device]               VCD-Gerät/Device\n"
 "  [cdda://][Device]              Audio-CD-Gerät/Device\n"
-"  udp:[[<quelladresse>]@[<Bind-Adresse>][:<Bind-Port>]]\n"
+"  udp://[[<quelladresse>]@[<Bind-Adresse>][:<Bind-Port>]]\n"
 "                                 UDP-Stream gesendet von "
 "einem                                    Streamingserver\n"
-"  vlc:pause:<Sekunden>           Spezialobjekt zum Anhalten der "
+"  vlc://pause:<Sekunden>         Spezialobjekt zum Anhalten der "
 "Wiedergabe                                   für eine gewisse Zeit\n"
-"  vlc:quit                       VLC beenden\n"
+"  vlc://quit                     VLC beenden\n"
 
 #: src/libvlc-module.c:1521 src/video_output/vout_intf.c:420
 #: modules/gui/macosx/controls.m:473 modules/gui/macosx/controls.m:937
@@ -5262,28 +5260,28 @@ msgstr "Zhuang"
 msgid "Zulu"
 msgstr "Zulu"
 
-#: src/video_output/video_output.c:397 modules/gui/macosx/intf.m:581
+#: src/video_output/video_output.c:402 modules/gui/macosx/intf.m:581
 #: modules/gui/macosx/intf.m:582 modules/video_filter/deinterlace.c:127
 msgid "Deinterlace"
 msgstr "Deinterlace"
 
-#: src/video_output/video_output.c:401 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:406 modules/video_filter/deinterlace.c:123
 msgid "Discard"
 msgstr "Verwerfen"
 
-#: src/video_output/video_output.c:403 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:408 modules/video_filter/deinterlace.c:123
 msgid "Blend"
 msgstr "Angleichen"
 
-#: src/video_output/video_output.c:405 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:410 modules/video_filter/deinterlace.c:123
 msgid "Mean"
 msgstr "Mittelwert"
 
-#: src/video_output/video_output.c:407 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:412 modules/video_filter/deinterlace.c:123
 msgid "Bob"
 msgstr "Bob"
 
-#: src/video_output/video_output.c:409 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:414 modules/video_filter/deinterlace.c:123
 msgid "Linear"
 msgstr "Linear"
 
@@ -5603,43 +5601,36 @@ msgid "4"
 msgstr "4"
 
 #: modules/access/bda/bda.c:157
-#, fuzzy
 msgid "Satellite Azimuth"
-msgstr "Satelliten-Input"
+msgstr "Satelliten-Horizontalwinkel"
 
 #: modules/access/bda/bda.c:158
-#, fuzzy
 msgid "Satellite Azimuth in tenths of degree"
-msgstr "Satelliten-Input"
+msgstr "Satelliten-Horizontalwinkel (Azimut) in Zehntelgrad"
 
 #: modules/access/bda/bda.c:159
-#, fuzzy
 msgid "Satellite Elevation"
-msgstr "Satelliten-Input"
+msgstr "Satelliten-Höhenwinkel"
 
 #: modules/access/bda/bda.c:160
-#, fuzzy
 msgid "Satellite Elevation in tenths of degree"
-msgstr "Satelliten-Input"
+msgstr "Satelliten-Höhenwinkel (Elevation) in Zehntelgrad"
 
 #: modules/access/bda/bda.c:161
-#, fuzzy
 msgid "Satellite Longitude"
-msgstr "Satelliten-Input"
+msgstr "Satelliten-Längengrad"
 
 #: modules/access/bda/bda.c:163
 msgid "Satellite Longitude in 10ths of degree, -ve=West"
-msgstr ""
+msgstr "Satelliten-Längengrad in Zehntelgrad, -ve=West"
 
 #: modules/access/bda/bda.c:164
-#, fuzzy
 msgid "Satellite Polarisation"
-msgstr "Lautstärkennormalisierung"
+msgstr "Satelliten-Polarisation"
 
 #: modules/access/bda/bda.c:165
-#, fuzzy
 msgid "Satellite Polarisation [H/V/L/R]"
-msgstr "Lautstärkennormalisierung"
+msgstr "Satelliten-Polarisation [H/V/L/R]"
 
 #: modules/access/bda/bda.c:168
 msgid "Horizontal"
@@ -5651,11 +5642,11 @@ msgstr "Vertikal"
 
 #: modules/access/bda/bda.c:169
 msgid "Circular Left"
-msgstr ""
+msgstr "Zirkulär links"
 
 #: modules/access/bda/bda.c:169
 msgid "Circular Right"
-msgstr ""
+msgstr "Zirkulär rechts"
 
 #: modules/access/bda/bda.c:172 modules/access/dvb/access.c:188
 msgid "DVB"
@@ -6232,7 +6223,6 @@ msgid "Video input pin"
 msgstr "Video-Input-Pin"
 
 #: modules/access/dshow/dshow.cpp:145
-#, fuzzy
 msgid ""
 "Select the video input source, such as composite, s-video, or tuner. Since "
 "these settings are hardware-specific, you should find good settings in the "
@@ -6242,8 +6232,7 @@ msgstr ""
 "Wählen Sie den Videoeingang, wie z.B. Composite, S-Video oder Tuner. Da "
 "diese Einstellungen abhängig von der Hardware sind, sollten Sie im Bereich "
 "\"Geräte-Einstellungen\" passende Zahlen finden und diese dann hier "
-"eintragen. -1 bedeutet, dass der Videoeingang nicht initialisiert oder "
-"geändert wird."
+"eintragen. -1 bedeutet, dass der Videoeingang nicht geändert wird."
 
 #: modules/access/dshow/dshow.cpp:149
 msgid "Audio input pin"
@@ -6299,9 +6288,8 @@ msgid "Select audio input format with the given sample rate (if non 0)"
 msgstr ""
 
 #: modules/access/dshow/dshow.cpp:172
-#, fuzzy
 msgid "Audio bits per sample"
-msgstr "Bits pro Sample"
+msgstr "Audiobits pro Sample"
 
 #: modules/access/dshow/dshow.cpp:174
 msgid "Select audio input format with the given bits/sample (if non 0)"
@@ -7663,11 +7651,8 @@ msgid ""
 msgstr ""
 
 #: modules/access/v4l2/v4l2.c:94
-#, fuzzy
 msgid "Input of the card to use (see debug)."
-msgstr ""
-"Zubenutzender Kanal der Karte (üblicherweise: 0 = Tuner, 1 = Composite, 2 = "
-"svideo)."
+msgstr "Input der zu benutzenden Karte (siehe Debug)."
 
 #: modules/access/v4l2/v4l2.c:95 modules/access/v4l2/v4l2.c:301
 msgid "Audio input"
@@ -7675,7 +7660,7 @@ msgstr "Audio-Input"
 
 #: modules/access/v4l2/v4l2.c:97
 msgid "Audio input of the card to use (see debug)."
-msgstr ""
+msgstr "Audio-Input der zu benutzenden Karte (siehe Debug)."
 
 #: modules/access/v4l2/v4l2.c:98
 msgid "IO Method"
@@ -7696,11 +7681,13 @@ msgstr "Höhe erzwingen (-1 für automatische Erkennung)."
 #: modules/access/v4l2/v4l2.c:111
 #, fuzzy
 msgid "Reset v4l2 controls"
-msgstr "Erweiterte Steuerung"
+msgstr "v4l2-Steuerung zurücksetzen"
 
 #: modules/access/v4l2/v4l2.c:113
+#, fuzzy
 msgid "Reset controls to defaults provided by the v4l2 driver."
 msgstr ""
+"Steuerung auf die vom v4l2-Treiber angegebenen Standardwerte zurücksetzen."
 
 #: modules/access/v4l2/v4l2.c:114 modules/access/v4l.c:112
 #: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:197
@@ -7741,49 +7728,52 @@ msgid "Hue of the video input (if supported by the v4l2 driver)."
 msgstr "Farbton des Video-Inputs (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:126
-#, fuzzy
 msgid "Black level"
-msgstr "Maximales Niveau"
+msgstr "Schwarzlevel"
 
 #: modules/access/v4l2/v4l2.c:128
 msgid "Black level of the video input (if supported by the v4l2 driver)."
-msgstr ""
+msgstr "Schwarzlevel des Video-Inputs (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:129
 msgid "Auto white balance"
-msgstr ""
+msgstr "Automatischer Weißabgleich"
 
 #: modules/access/v4l2/v4l2.c:131
 msgid ""
 "Automatically set the white balance of the video input (if supported by the "
 "v4l2 driver)."
 msgstr ""
+"Weißabgleich für den Video-Input automatisch einstellen (falls vom v412-"
+"Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:133
 msgid "Do white balance"
-msgstr ""
+msgstr "Weißabgleich anwenden"
 
 #: modules/access/v4l2/v4l2.c:135
 msgid ""
 "Trigger a white balancing action, useless if auto white balance is activated "
 "(if supported by the v4l2 driver)."
 msgstr ""
+"Weißabgleichsaktion auslösen, außer automatischer Weißabgleich ist aktiviert "
+"(falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:137
 msgid "Red balance"
-msgstr ""
+msgstr "Rotabgleich"
 
 #: modules/access/v4l2/v4l2.c:139
 msgid "Red balance of the video input (if supported by the v4l2 driver)."
-msgstr ""
+msgstr "Rotabgleich des Video-Inputs (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:140
 msgid "Blue balance"
-msgstr ""
+msgstr "Blauabgleich"
 
 #: modules/access/v4l2/v4l2.c:142
 msgid "Blue balance of the video input (if supported by the v4l2 driver)."
-msgstr ""
+msgstr "Blauabgleich des Video-Inputs (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:143 modules/gui/macosx/extended.m:99
 #: modules/gui/qt4/ui/video_effects.ui:183
@@ -7805,21 +7795,25 @@ msgstr ""
 #: modules/access/v4l2/v4l2.c:149
 #, fuzzy
 msgid "Auto gain"
-msgstr "Automatisch"
+msgstr "Automatische Verstärkung"
 
 #: modules/access/v4l2/v4l2.c:151
+#, fuzzy
 msgid ""
 "Automatically set the video input's gain (if supported by the v4l2 driver)."
 msgstr ""
+"Verstärkung des Video-Inputs automatisch einstellen (falls vom v412-Treiber "
+"unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:153
 #, fuzzy
 msgid "Gain"
-msgstr "Körnung"
+msgstr "Verstärkung"
 
 #: modules/access/v4l2/v4l2.c:155
+#, fuzzy
 msgid "Video input's gain (if supported by the v4l2 driver)."
-msgstr ""
+msgstr "Verstärkung des Video-Inputs (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:156
 msgid "Horizontal flip"
@@ -7838,115 +7832,109 @@ msgid "Flip the video vertically (if supported by the v4l2 driver)."
 msgstr "Das Video vertikal spiegeln (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:162
-#, fuzzy
 msgid "Horizontal centering"
-msgstr "Horizontal"
+msgstr "Horizontale Zentrierung"
 
 #: modules/access/v4l2/v4l2.c:164
 msgid ""
 "Set the camera's horizontal centering (if supported by the v4l2 driver)."
 msgstr ""
+"Horizontale Zentrierung der Kamera einstellen (falls vom v412-Treiber "
+"unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:165
-#, fuzzy
 msgid "Vertical centering"
-msgstr "Vertikaler Versatz"
+msgstr "Vertikale Zentrierung"
 
 #: modules/access/v4l2/v4l2.c:167
 msgid "Set the camera's vertical centering (if supported by the v4l2 driver)."
 msgstr ""
+"Vertikale Zentrierung der Kamera einstellen (falls vom v412-Treiber "
+"unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:172
-#, fuzzy
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS."
 msgstr ""
-"Name des zu benutzenden Videodevices. Wenn Sie nichts angeben, wird kein "
-"Videodevice benutzt."
+"Name des zu benutzenden Audiodevices. Wenn Sie nichts angeben, wird \"/dev/"
+"dsp\" für OSS benutzt."
 
 #: modules/access/v4l2/v4l2.c:176
-#, fuzzy
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS, \"hw\" for Alsa."
 msgstr ""
-"Name des zu benutzenden Videodevices. Wenn Sie nichts angeben, wird kein "
-"Videodevice benutzt."
+"Name des zu benutzenden Audiodevices. Wenn Sie nichts angeben, wird \"/dev/"
+"dsp\" für OSS benutzt, \"hw\" for Alsa."
 
 #: modules/access/v4l2/v4l2.c:180
-#, fuzzy
 msgid "Audio method"
-msgstr "Audioencoder"
+msgstr "Audiomethode"
 
 #: modules/access/v4l2/v4l2.c:183
 msgid "Audio method to use: 0 to disable audio, 1 for OSS."
-msgstr ""
+msgstr "Zu verwendende Audiomethode: 0 um Audio zu deaktivieren, 1 für OSS"
 
 #: modules/access/v4l2/v4l2.c:186
 msgid ""
 "Audio method to use: 0 to disable audio, 1 for OSS, 2 for ALSA, 3 for ALSA "
 "or OSS (ALSA is preferred)."
 msgstr ""
+"Zu verwendende Audiomethode: 0 um Audio zu deaktivieren, 1 für OSS, 2 für "
+"ALSA, 3 für ALSA oder OSS (ALSA wird bevorzugt)."
 
 #: modules/access/v4l2/v4l2.c:191
-#, fuzzy
 msgid "Volume of the audio input (if supported by the v4l2 driver)."
-msgstr "Kontrast des Video-Inputs."
+msgstr "Lautstärke des Audio-Inputs (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:192
 msgid "Balance"
 msgstr "Balance"
 
 #: modules/access/v4l2/v4l2.c:194
-#, fuzzy
 msgid "Balance of the audio input (if supported by the v4l2 driver)."
-msgstr "Helligkeit des Video-Inputs."
+msgstr "Balance des Audio-Inputs (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:197
-#, fuzzy
 msgid "Mute audio input (if supported by the v4l2 driver)."
-msgstr "Kontrast des Video-Inputs."
+msgstr "Audio-Input stummschalten (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:198 modules/meta_engine/id3genres.h:69
 msgid "Bass"
 msgstr "Bass"
 
 #: modules/access/v4l2/v4l2.c:200
-#, fuzzy
 msgid "Bass level of the audio input (if supported by the v4l2 driver)."
-msgstr "Helligkeit des Video-Inputs."
+msgstr "Bass-Level des Audio-Inputs (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:201
-#, fuzzy
 msgid "Treble"
-msgstr "Aktivieren"
+msgstr "Höhen"
 
 #: modules/access/v4l2/v4l2.c:203
-#, fuzzy
 msgid "Treble level of the audio input (if supported by the v4l2 driver)."
-msgstr "Helligkeit des Video-Inputs."
+msgstr "Höhen-Level des Audio-Inputs (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:204
 msgid "Loudness"
-msgstr ""
+msgstr "Lautheit"
 
 #: modules/access/v4l2/v4l2.c:206
-#, fuzzy
 msgid "Loudness of the audio input (if supported by the v4l2 driver)."
-msgstr "Helligkeit des Video-Inputs."
+msgstr "Lautheit des Audio-Inputs (falls vom v412-Treiber unterstützt)."
 
 #: modules/access/v4l2/v4l2.c:210 modules/access/v4l.c:131
 msgid "Capture the audio stream in stereo."
 msgstr "Den Audiostream in Stereo aufnehmen."
 
 #: modules/access/v4l2/v4l2.c:213
-#, fuzzy
 msgid ""
 "Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100, "
 "48000)"
 msgstr ""
-"Samplerate des aufgenommenen Audiostreams in Hz (z.B. 11025, 22050, 44100)"
+"Samplerate des aufgenommenen Audiostreams in Hz (z.B. 11025, 22050, 44100, "
+"48000)"
 
 #: modules/access/v4l2/v4l2.c:217
 msgid ""
@@ -7958,7 +7946,7 @@ msgstr ""
 #: modules/access/v4l2/v4l2.c:219
 #, fuzzy
 msgid "v4l2 driver controls"
-msgstr "Steuerung"
+msgstr "v412-Treibersteuerung"
 
 #: modules/access/v4l2/v4l2.c:221
 msgid ""
@@ -7981,9 +7969,8 @@ msgid "Tuner frequency in Hz or kHz (see debug output)"
 msgstr "Tunerfrequenz in Hz oder kHz (siehe Debug-Ausgabe)"
 
 #: modules/access/v4l2/v4l2.c:233
-#, fuzzy
 msgid "Audio mode"
-msgstr "Audiocodec"
+msgstr "Audiomodus"
 
 #: modules/access/v4l2/v4l2.c:235
 msgid "Tuner audio mono/stereo and track selection."
@@ -8050,14 +8037,13 @@ msgid "v4l2 driver controls, if supported by your v4l2 driver."
 msgstr ""
 
 #: modules/access/v4l2/v4l2.c:382
-#, fuzzy
 msgid "Video4Linux2 Compressed A/V"
-msgstr "Video4Linux2 input"
+msgstr "Video4Linux2 Compressed A/V"
 
 #: modules/access/v4l2/v4l2.c:3136
 #, fuzzy
 msgid "Reset controls to default"
-msgstr "Remote-Control-Interface"
+msgstr "Steuerung auf Standardwerte zurücksetzen"
 
 #: modules/access/v4l.c:79
 msgid ""
@@ -8554,22 +8540,21 @@ msgstr "Equalizervoreinstellung"
 
 #: modules/audio_filter/equalizer.c:57
 msgid "Preset to use for the equalizer."
-msgstr "Vorlagen für die Benutzung mit dem Equalizer."
+msgstr "Vorgaben für die Benutzung mit dem Equalizer."
 
 #: modules/audio_filter/equalizer.c:59
 msgid "Bands gain"
 msgstr "Bänderverstärkung"
 
 #: modules/audio_filter/equalizer.c:61
-#, fuzzy
 msgid ""
 "Don't use presets, but manually specified bands. You need to provide 10 "
 "values between -20dB and 20dB, separated by spaces, e.g. \"0 2 4 2 0 -2 -4 -"
 "2 0\"."
 msgstr ""
-"Benutzt keine Vorlagen, sondern die per Hand eingestellten Werte. Man muss "
-"10 Werte zwischen -20dB und 20dB angeben, getrennt durch Leerzeichen, z.B. "
-"\"0 2 4 2 0 -2 -4 -2 0\"."
+"Keine Vorgaben, sondern per Hand eingestellte Werte verwenden. Sie müssen 10 "
+"Werte zwischen -20dB und 20dB angeben, getrennt durch Leerzeichen, z.B. \"0 "
+"2 4 2 0 -2 -4 -2 0\"."
 
 #: modules/audio_filter/equalizer.c:65
 msgid "Two pass"
@@ -9042,7 +9027,6 @@ msgstr ""
 "schreibbbaren JACK-Clients leiten."
 
 #: modules/audio_output/jack.c:74
-#, fuzzy
 msgid "Connect to clients matching"
 msgstr "Mit Clients verbinden, auf die ... passt"
 
@@ -9299,7 +9283,6 @@ msgid "Skip idct (default=0)"
 msgstr "Idct überspringen (Standard=0)"
 
 #: modules/codec/avcodec/avcodec.h:91
-#, fuzzy
 msgid ""
 "Force skipping of idct to speed up decoding for frame types(-1=None, "
 "0=Default, 1=B-frames, 2=P-frames, 3=B+P frames, 4=all frames)."
@@ -10346,7 +10329,7 @@ msgid ""
 "appropriately."
 msgstr ""
 "Erlaubt B-Frames als Referenz für die Voraussage anderer Frames zu benutzen. "
-"Behält normalerweise mehr als 2 aufeinander folgende B-Frames als Referenz, "
+"Behält die Mitte von mehr als 2 aufeinander folgenden B-Frames als Referenz, "
 "und fordert entsprechende Frames nach."
 
 #: modules/codec/x264.c:101
@@ -10465,7 +10448,6 @@ msgid "Average bitrate tolerance"
 msgstr "Durchschnittliche Bitratentoleranz"
 
 #: modules/codec/x264.c:155
-#, fuzzy
 msgid "Allowed variance in average bitrate (in kbits/s)."
 msgstr "Erlaubte Abweichung der durchschnittlichen Bitrate (in kbit/s)."
 
@@ -10491,7 +10473,6 @@ msgid "Initial VBV buffer occupancy"
 msgstr "Anfängliche VBV-Pufferbelegung"
 
 #: modules/codec/x264.c:166
-#, fuzzy
 msgid ""
 "Sets the initial buffer occupancy as a fraction of the buffer size. Range "
 "0.0 to 1.0."
@@ -10678,7 +10659,6 @@ msgid "Maximum motion vector search range"
 msgstr "Maximaler Suchbereich des Bewegungsvektors"
 
 #: modules/codec/x264.c:254
-#, fuzzy
 msgid ""
 "Maximum distance to search for motion estimation, measured from predicted "
 "position(s). Default of 16 is good for most footage, high motion sequences "
@@ -10687,17 +10667,18 @@ msgstr ""
 "Maximaler Abstand für die Bewegungsvorhersage, ausgehend von geschätzten "
 "Position(en). Der Standard 16 reicht für die meisten Anwendungen, stark "
 "bewegte Sequenzen könnten von einer Einstellung zwischen 24 und 32 "
-"profitieren. Werte von 0-64."
+"profitieren. Werte von 0 bis 64."
 
 #: modules/codec/x264.c:259
 msgid "Maximum motion vector length"
 msgstr "Maximale Länge des Bewegungsvektors"
 
 #: modules/codec/x264.c:260
-#, fuzzy
 msgid ""
 "Maximum motion vector length in pixels. -1 is automatic, based on level."
-msgstr "Maximale Länge des Bewegungsvektors in Pixeln."
+msgstr ""
+"Maximale Bewegungsvektorlänge in Pixeln. -1 ist automatisch, basierend auf "
+"dem Level."
 
 #: modules/codec/x264.c:265
 #, fuzzy
@@ -12277,7 +12258,6 @@ msgid "Megabass mode level (from 0 to 100, default value is 0)."
 msgstr "Megabass-Niveau (von 0 bis 100, standardmäßig 0)."
 
 #: modules/demux/mod.c:60
-#, fuzzy
 msgid ""
 "Megabass mode cutoff frequency, in Hz. This is the maximum frequency for "
 "which the megabass effect applies. Valid values are from 10 to 100 Hz."
@@ -12920,7 +12900,7 @@ msgstr "Dateien auch aus allen Unterverzeichnissen öffnen?"
 
 #: modules/gui/beos/InterfaceWindow.cpp:161 modules/gui/macosx/open.m:500
 #: modules/gui/macosx/open.m:691 modules/gui/macosx/open.m:804
-#: modules/gui/macosx/open.m:1028 modules/gui/qt4/dialogs/open.cpp:78
+#: modules/gui/macosx/open.m:1028 modules/gui/qt4/dialogs/open.cpp:82
 #: modules/gui/qt4/menus.cpp:676
 msgid "Open"
 msgstr "Öffnen"
@@ -13360,9 +13340,8 @@ msgid "Commands"
 msgstr "Befehle"
 
 #: modules/gui/fbosd.c:219
-#, fuzzy
 msgid "GNU/Linux osd/overlay framebuffer interface"
-msgstr "GNU/Linux framebuffer Ausgabe (auf der Konsole)"
+msgstr "GNU/Linux osd/overlay framebuffer-Interface"
 
 #: modules/gui/macosx/about.m:86 modules/gui/macosx/intf.m:501
 msgid "About VLC media player"
@@ -16707,7 +16686,7 @@ msgstr "&Anwenden"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:806
 #: modules/gui/qt4/dialogs/gototime.cpp:52
-#: modules/gui/qt4/dialogs/help.cpp:211 modules/gui/qt4/dialogs/open.cpp:105
+#: modules/gui/qt4/dialogs/help.cpp:211 modules/gui/qt4/dialogs/open.cpp:109
 #: modules/gui/qt4/dialogs/podcast_configuration.cpp:39
 #: modules/gui/qt4/dialogs/preferences.cpp:87
 #: modules/gui/qt4/dialogs/sout.cpp:199
@@ -16986,44 +16965,44 @@ msgstr ""
 "Kann Datei %1 nicht schreiben:\n"
 "%2."
 
-#: modules/gui/qt4/dialogs/open.cpp:89
+#: modules/gui/qt4/dialogs/open.cpp:93
 msgid "&File"
 msgstr "&Datei"
 
-#: modules/gui/qt4/dialogs/open.cpp:90
+#: modules/gui/qt4/dialogs/open.cpp:94
 msgid "&Disc"
 msgstr "&Volume"
 
-#: modules/gui/qt4/dialogs/open.cpp:91
+#: modules/gui/qt4/dialogs/open.cpp:95
 msgid "&Network"
 msgstr "&Netzwerk"
 
-#: modules/gui/qt4/dialogs/open.cpp:93
+#: modules/gui/qt4/dialogs/open.cpp:97
 msgid "Capture &Device"
 msgstr "Aufnahme&gerät öffnen"
 
-#: modules/gui/qt4/dialogs/open.cpp:108
+#: modules/gui/qt4/dialogs/open.cpp:112
 msgid "&Select"
 msgstr "Au&swählen"
 
-#: modules/gui/qt4/dialogs/open.cpp:112 modules/gui/qt4/dialogs/open.cpp:197
+#: modules/gui/qt4/dialogs/open.cpp:116 modules/gui/qt4/dialogs/open.cpp:201
 msgid "&Enqueue"
 msgstr "Anhäng&en"
 
-#: modules/gui/qt4/dialogs/open.cpp:114 modules/gui/qt4/dialogs/open.cpp:201
+#: modules/gui/qt4/dialogs/open.cpp:118 modules/gui/qt4/dialogs/open.cpp:205
 msgid "&Play"
 msgstr "&Wiedergabe"
 
-#: modules/gui/qt4/dialogs/open.cpp:116 modules/gui/qt4/dialogs/open.cpp:191
+#: modules/gui/qt4/dialogs/open.cpp:120 modules/gui/qt4/dialogs/open.cpp:195
 #: modules/gui/qt4/dialogs/sout.cpp:198
 msgid "&Stream"
 msgstr "&Stream"
 
-#: modules/gui/qt4/dialogs/open.cpp:118
+#: modules/gui/qt4/dialogs/open.cpp:122
 msgid "&Convert"
 msgstr "&Konvertieren"
 
-#: modules/gui/qt4/dialogs/open.cpp:194
+#: modules/gui/qt4/dialogs/open.cpp:198
 msgid "&Convert / Save"
 msgstr "&Konvertieren/Speichern"
 
@@ -17928,8 +17907,6 @@ msgstr "Automatisch nach Updates suchen"
 msgid ""
 "This is VLC's skinnable interface. You can download skins at &lt;a href="
 msgstr ""
-"Das ist VLCs skinnbares Interface. Skins können von &lt;a href= "
-"heruntergeladen werden"
 
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:50
 msgid "Subtitles Language"
@@ -18125,7 +18102,7 @@ msgstr "Cartoon"
 
 #: modules/gui/qt4/ui/video_effects.ui:664
 msgid "Vout/Overlay"
-msgstr "Videoausgabe/Überlagert"
+msgstr "Videoausgabe/Overlay"
 
 #: modules/gui/qt4/ui/video_effects.ui:670
 msgid "Wall"
@@ -18175,7 +18152,7 @@ msgstr "Erweiterte Videofiltersteuerungen"
 
 #: modules/gui/qt4/ui/video_effects.ui:965
 msgid "Subpicture filters"
-msgstr "Unterbilder-Filter"
+msgstr "Unterbild-Filter"
 
 #: modules/gui/qt4/ui/video_effects.ui:975
 msgid "Video filters"
@@ -19600,7 +19577,7 @@ msgid ""
 "Enforces alignment of all access units on PES boundaries. Disabling this "
 "might save some bandwidth but introduce incompatibilities."
 msgstr ""
-"Erzwingt die Ausrichtung aller Access-Einheiten bei PES Grenzen. Die "
+"Erzwingt die Ausrichtung aller Access-Einheiten an PES-Grenzen. Die "
 "Deaktivierung kann Bandbreite sparen, sorgt aber für Inkompatibilitäten."
 
 #: modules/mux/mpeg/ts.c:130
@@ -20944,7 +20921,6 @@ msgstr ""
 "dauert 40 ms)"
 
 #: modules/video_filter/atmo/atmo.cpp:174
-#, fuzzy
 msgid "Use Software White adjust"
 msgstr "Software-Weißanpassung verwenden"
 
@@ -21042,9 +21018,8 @@ msgstr ""
 "Die Zeit, die ein kompletter Farbwechsel benötigt. Verhindert Flackern."
 
 #: modules/video_filter/atmo/atmo.cpp:210
-#, fuzzy
 msgid "Filter threshold"
-msgstr "Grenzbereich"
+msgstr "Filterschwelle"
 
 #: modules/video_filter/atmo/atmo.cpp:211
 msgid "How much a color has to be changed for an immediate color change."
@@ -21519,7 +21494,6 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/crop.c:92
-#, fuzzy
 msgid "Number of non black pixels "
 msgstr "Anzahl der nicht schwarzen Pixel"
 
@@ -21694,7 +21668,7 @@ msgstr "Dirac Videodecoder"
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:66
 #, fuzzy
 msgid "Overlay"
-msgstr "Überlagert"
+msgstr "Overlay"
 
 #: modules/video_filter/erase.c:55
 msgid "Image mask"
@@ -22052,16 +22026,15 @@ msgstr "Positionierungsmethode"
 
 # Offset = Abstand zwischen den Bildern???
 #: modules/video_filter/mosaic.c:121
-#, fuzzy
 msgid ""
 "Positioning method for the mosaic. auto: automatically choose the best "
 "number of rows and columns. fixed: use the user-defined number of rows and "
 "columns. offsets: use the user-defined offsets for each image."
 msgstr ""
 "Positionierungsmethode für das Mosaik. auto: automatische die beste Anzahl "
-"von Reihen und Spalten wählen. fixed: die benutzerdefinierte Anzahl von "
-"Reihen und Spalten benutzen. offsets: die Benutzerdefinierten Abstände für "
-"jedes Bild benützen."
+"von Zeilen und Spalten wählen. fixed: die benutzerdefinierte Anzahl von "
+"Zeilen und Spalten benutzen. offsets: die benutzerdefinierten Abstände für "
+"jedes Bild benutzen."
 
 #: modules/video_filter/mosaic.c:126 modules/video_filter/panoramix.c:85
 #: modules/video_filter/wall.c:60
@@ -22237,14 +22210,12 @@ msgid "Show everything including debug messages"
 msgstr "Alles anzeigen (auch Debugmeldungen)"
 
 #: modules/video_filter/opencv_wrapper.c:82
-#, fuzzy
 msgid "OpenCV video filter wrapper"
-msgstr "FFmpeg-Videofilter"
+msgstr "OpenCV-Videofilter-Wrapper"
 
 #: modules/video_filter/opencv_wrapper.c:83
-#, fuzzy
 msgid "OpenCV"
-msgstr "Öffnen"
+msgstr "OpenCV"
 
 #: modules/video_filter/opencv_wrapper.c:90
 msgid "Scale factor (0.1-2.0)"
@@ -23046,13 +23017,12 @@ msgid "Framebuffer resolution to use."
 msgstr "Zu benutzende Framebufferauflösung."
 
 #: modules/video_output/fb.c:97
-#, fuzzy
 msgid ""
 "Select the resolution for the framebuffer. Currently it supports the values "
 "0=QCIF 1=CIF 2=NTSC 3=PAL, 4=auto (default 4=auto)"
 msgstr ""
 "Wählen Sie die Auflösung des Framebuffers. Zur Zeit werden folgende Werte "
-"unterstützt: 0=QCIF, 1=2CIF, 2=NTSC, 3=PAL (Voreinstellung ist 3=PAL)"
+"unterstützt: 0=QCIF, 1=CIF, 2=NTSC, 3=PAL, 4=auto (Standard ist 4=auto)"
 
 #: modules/video_output/fb.c:100
 msgid "Framebuffer uses hw acceleration."
@@ -23835,6 +23805,15 @@ msgstr "Visualisierungsfilter"
 #: modules/visualization/visual/visual.c:123
 msgid "Spectrum analyser"
 msgstr "Spektrum-Analysierer"
+
+#~ msgid ""
+#~ "This is VLC's skinnable interface. You can download skins at <a href="
+#~ "\"http://www.videolan.org/vlc/skins.php\">http://www.videolan.org/vlc/"
+#~ "skins.php</a> to customize your player."
+#~ msgstr ""
+#~ "Dies ist VLCs skinbares Interface. Sie können Skins von <a href=\"http://"
+#~ "www.videolan.org/vlc/skins.php\">http://www.videolan.org/vlc/skins.php</"
+#~ "a> herunterladen, um ihren Player anzupassen."
 
 #~ msgid ""
 #~ "This adds post-processing filters to enhance the picture quality, for "
