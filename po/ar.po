@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-08-25 22:03+0100\n"
+"POT-Creation-Date: 2008-09-03 20:11+0200\n"
 "PO-Revision-Date: 2007-07-01 15:39+0100\n"
 "Last-Translator: Bourai Fouzia <bouraifouzia@hotmail.com>\n"
 "Language-Team: Arabic <ar@li.org>\n"
@@ -98,7 +98,7 @@ msgid "General audio settings"
 msgstr "إعدادات الصوت العامّة"
 
 #: include/vlc_config_cat.h:60 include/vlc_config_cat.h:85
-#: src/video_output/video_output.c:416
+#: src/video_output/video_output.c:422
 msgid "Filters"
 msgstr "مرشّحات"
 
@@ -540,8 +540,8 @@ msgid "&About..."
 msgstr "...حول"
 
 #: include/vlc_intf_strings.h:53 modules/control/rc.c:75
-#: modules/gui/macosx/embeddedwindow.m:77
-#: modules/gui/macosx/embeddedwindow.m:167 modules/gui/macosx/intf.m:487
+#: modules/gui/macosx/embeddedwindow.m:66
+#: modules/gui/macosx/embeddedwindow.m:156 modules/gui/macosx/intf.m:487
 #: modules/gui/macosx/intf.m:531 modules/gui/macosx/intf.m:610
 #: modules/gui/macosx/intf.m:617 modules/gui/macosx/intf.m:1799
 #: modules/gui/macosx/intf.m:1800 modules/gui/macosx/intf.m:1801
@@ -768,7 +768,7 @@ msgstr ".تمّ التوصل إليه (%d) أقصى عدد المُرشحات"
 
 #: src/audio_output/input.c:98 src/audio_output/input.c:144
 #: src/input/es_out.c:459 src/libvlc-module.c:562
-#: src/video_output/video_output.c:393 modules/video_filter/postproc.c:222
+#: src/video_output/video_output.c:399 modules/video_filter/postproc.c:222
 msgid "Disable"
 msgstr "تعطيل"
 
@@ -812,10 +812,10 @@ msgstr "قنوات الصوت"
 #: src/audio_output/output.c:105 src/audio_output/output.c:140
 #: modules/access/v4l2/v4l2.c:208 modules/access/v4l2/v4l2.c:259
 #: modules/access/v4l.c:129 modules/audio_output/alsa.c:195
-#: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:518
-#: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:407
+#: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:519
+#: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:402
 #: modules/audio_output/sdl.c:184 modules/audio_output/sdl.c:201
-#: modules/audio_output/waveout.c:517 modules/codec/twolame.c:71
+#: modules/audio_output/waveout.c:518 modules/codec/twolame.c:71
 msgid "Stereo"
 msgstr "ستيريو"
 
@@ -859,15 +859,15 @@ msgstr "مفتاح"
 msgid "boolean"
 msgstr "بولياني"
 
-#: src/config/file.c:593 src/libvlc.c:1578
+#: src/config/file.c:593 src/libvlc.c:1582
 msgid "integer"
 msgstr "عدد صحيح"
 
-#: src/config/file.c:602 src/libvlc.c:1607
+#: src/config/file.c:602 src/libvlc.c:1611
 msgid "float"
 msgstr "تعويم"
 
-#: src/config/file.c:625 src/libvlc.c:1557
+#: src/config/file.c:625 src/libvlc.c:1561
 msgid "string"
 msgstr "وتر"
 
@@ -1252,7 +1252,7 @@ msgstr "الغاء"
 #: modules/gui/macosx/wizard.m:1889
 #: modules/gui/qt4/components/open_panels.cpp:1153
 #: modules/gui/qt4/components/preferences_widgets.cpp:1293
-#: modules/gui/qt4/main_interface.cpp:532
+#: modules/gui/qt4/main_interface.cpp:534
 msgid "OK"
 msgstr "نعم"
 
@@ -1296,44 +1296,44 @@ msgstr ""
 msgid "To get exhaustive help, use '-H'."
 msgstr ""
 
-#: src/libvlc.c:1622
+#: src/libvlc.c:1626
 msgid " (default enabled)"
 msgstr "(تمكين الوضع الإفتراضي)"
 
-#: src/libvlc.c:1623
+#: src/libvlc.c:1627
 msgid " (default disabled)"
 msgstr "(تعطيل الوضع الإفتراضي)"
 
-#: src/libvlc.c:1782 src/libvlc.c:1785
+#: src/libvlc.c:1786 src/libvlc.c:1789
 #, fuzzy
 msgid "Note:"
 msgstr "لا شي"
 
-#: src/libvlc.c:1783 src/libvlc.c:1786
+#: src/libvlc.c:1787 src/libvlc.c:1790
 msgid "add --advanced to your command line to see advanced options."
 msgstr ""
 
-#: src/libvlc.c:1890
+#: src/libvlc.c:1894
 #, c-format
 msgid "VLC version %s\n"
 msgstr "VLC نسخة %s\n"
 
-#: src/libvlc.c:1891
+#: src/libvlc.c:1895
 #, c-format
 msgid "Compiled by %s@%s.%s\n"
 msgstr "تأليف بواسطة %s@%s.%s\n"
 
-#: src/libvlc.c:1893
+#: src/libvlc.c:1897
 #, c-format
 msgid "Compiler: %s\n"
 msgstr "المؤلف: %s\n"
 
-#: src/libvlc.c:1895
+#: src/libvlc.c:1899
 #, fuzzy, c-format
 msgid "Based upon Git commit [%s]\n"
 msgstr "يعتمد على تغيُّرات svn [%s]\n"
 
-#: src/libvlc.c:1931
+#: src/libvlc.c:1935
 msgid ""
 "\n"
 "Dumped content to vlc-help.txt file.\n"
@@ -1341,7 +1341,7 @@ msgstr ""
 "\n"
 "vlc-help.txt محتوى محوّل إلى الملف.\n"
 
-#: src/libvlc.c:1951
+#: src/libvlc.c:1955
 msgid ""
 "\n"
 "Press the RETURN key to continue...\n"
@@ -3549,7 +3549,7 @@ msgstr " (« hotkeys ») إعداد الإختصارات"
 #: src/libvlc-module.c:1156 src/video_output/vout_intf.c:414
 #: modules/gui/beos/VideoOutput.cpp:1058 modules/gui/macosx/controls.m:435
 #: modules/gui/macosx/controls.m:489 modules/gui/macosx/controls.m:938
-#: modules/gui/macosx/controls.m:969 modules/gui/macosx/embeddedwindow.m:76
+#: modules/gui/macosx/controls.m:969 modules/gui/macosx/embeddedwindow.m:65
 #: modules/gui/macosx/intf.m:491 modules/gui/macosx/intf.m:568
 #: modules/gui/macosx/intf.m:624 modules/gui/macosx/simple_prefs.m:286
 #: modules/gui/qt4/ui/sprefs_video.ui:61
@@ -3655,7 +3655,7 @@ msgstr ". للإستعمال لإيقاف القراءة  hotkey حدد  "
 
 #: src/libvlc-module.c:1176 modules/gui/fbosd.c:129 modules/gui/fbosd.c:197
 #: modules/gui/macosx/bookmarks.m:96 modules/gui/macosx/bookmarks.m:105
-#: modules/gui/macosx/embeddedwindow.m:78 modules/gui/macosx/intf.m:493
+#: modules/gui/macosx/embeddedwindow.m:67 modules/gui/macosx/intf.m:493
 #: modules/gui/qt4/ui/video_effects.ui:731 modules/video_filter/marq.c:153
 #: modules/video_filter/rss.c:197
 msgid "Position"
@@ -5066,28 +5066,28 @@ msgstr "زهونغ"
 msgid "Zulu"
 msgstr "زولو"
 
-#: src/video_output/video_output.c:391 modules/gui/macosx/intf.m:581
+#: src/video_output/video_output.c:397 modules/gui/macosx/intf.m:581
 #: modules/gui/macosx/intf.m:582 modules/video_filter/deinterlace.c:127
 msgid "Deinterlace"
 msgstr "الغاء التشويش"
 
-#: src/video_output/video_output.c:395 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:401 modules/video_filter/deinterlace.c:123
 msgid "Discard"
 msgstr "تجاهل"
 
-#: src/video_output/video_output.c:397 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:403 modules/video_filter/deinterlace.c:123
 msgid "Blend"
 msgstr "مزج"
 
-#: src/video_output/video_output.c:399 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:405 modules/video_filter/deinterlace.c:123
 msgid "Mean"
 msgstr "وسيط"
 
-#: src/video_output/video_output.c:401 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:407 modules/video_filter/deinterlace.c:123
 msgid "Bob"
 msgstr "تمايل"
 
-#: src/video_output/video_output.c:403 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:409 modules/video_filter/deinterlace.c:123
 msgid "Linear"
 msgstr "خطي"
 
@@ -6264,12 +6264,12 @@ msgstr "DVD بقوائم"
 msgid "DVDnav Input"
 msgstr "مدخل DVDnav"
 
-#: modules/access/dvdnav.c:304 modules/access/dvdread.c:251
+#: modules/access/dvdnav.c:306 modules/access/dvdread.c:251
 #: modules/access/dvdread.c:511 modules/access/dvdread.c:573
 msgid "Playback failure"
 msgstr "فشل اعادة التشغيل "
 
-#: modules/access/dvdnav.c:305
+#: modules/access/dvdnav.c:307
 msgid ""
 "VLC cannot set the DVD's title. It possibly cannot decrypt the entire disk."
 msgstr ""
@@ -7737,9 +7737,9 @@ msgid "USERPTR"
 msgstr ""
 
 #: modules/access/v4l2/v4l2.c:258 modules/audio_output/alsa.c:189
-#: modules/audio_output/directx.c:536 modules/audio_output/oss.c:227
-#: modules/audio_output/portaudio.c:399 modules/audio_output/sdl.c:185
-#: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:532
+#: modules/audio_output/directx.c:537 modules/audio_output/oss.c:227
+#: modules/audio_output/portaudio.c:394 modules/audio_output/sdl.c:185
+#: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:533
 msgid "Mono"
 msgstr "مونو"
 
@@ -8207,12 +8207,12 @@ msgstr "مرشح سمعي لمخلط القنوات البسيطة"
 msgid "Audio filter for trivial channel mixing"
 msgstr "مرشح سمعي لمخلط القنوات البديهية"
 
-#: modules/audio_filter/converter/a52tofloat32.c:97
+#: modules/audio_filter/converter/a52tofloat32.c:93
 msgid "A/52 dynamic range compression"
 msgstr "ضغط ديناميكي A/52"
 
-#: modules/audio_filter/converter/a52tofloat32.c:99
-#: modules/audio_filter/converter/dtstofloat32.c:86
+#: modules/audio_filter/converter/a52tofloat32.c:95
+#: modules/audio_filter/converter/dtstofloat32.c:85
 msgid ""
 "Dynamic range compression makes the loud sounds softer, and the soft sounds "
 "louder, so you can more easily listen to the stream in a noisy environment "
@@ -8224,16 +8224,16 @@ msgstr ""
 "كنت تشل دينامكية مجموعة ضغط على الاسترجاع ستكون اكثر ملاءمة للسينما اوقاعة "
 "إستماع للمسرح . "
 
-#: modules/audio_filter/converter/a52tofloat32.c:104
+#: modules/audio_filter/converter/a52tofloat32.c:100
 msgid "Enable internal upmixing"
 msgstr "الداخلي upmixing  تمكين "
 
-#: modules/audio_filter/converter/a52tofloat32.c:106
+#: modules/audio_filter/converter/a52tofloat32.c:102
 msgid "Enable the internal upmixing algorithm (not recommended)."
 msgstr ".(لا يوص بها)\"upmixing\" تمكين الخوارزمية الداخلية "
 
-#: modules/audio_filter/converter/a52tofloat32.c:110
-#: modules/audio_filter/converter/a52tofloat32.c:119
+#: modules/audio_filter/converter/a52tofloat32.c:106
+#: modules/audio_filter/converter/a52tofloat32.c:115
 msgid "ATSC A/52 (AC-3) audio decoder"
 msgstr "كاشف الرموز السمعي ATSC A/52 (AC-3)"
 
@@ -8241,12 +8241,12 @@ msgstr "كاشف الرموز السمعي ATSC A/52 (AC-3)"
 msgid "Audio filter for A/52->S/PDIF encapsulation"
 msgstr "A/52->S/PDIF مُرشح  الصوت المغلف "
 
-#: modules/audio_filter/converter/dtstofloat32.c:84
+#: modules/audio_filter/converter/dtstofloat32.c:83
 msgid "DTS dynamic range compression"
 msgstr "ضغط ديناميكي DTS"
 
-#: modules/audio_filter/converter/dtstofloat32.c:96
-#: modules/audio_filter/converter/dtstofloat32.c:102
+#: modules/audio_filter/converter/dtstofloat32.c:95
+#: modules/audio_filter/converter/dtstofloat32.c:101
 msgid "DTS Coherent Acoustics audio decoder"
 msgstr "كاشف الرموز السمعي DTS Coherent Acoustics"
 
@@ -8569,22 +8569,22 @@ msgid "ALSA Device Name"
 msgstr "إسم الجهاز ALSA"
 
 #: modules/audio_output/alsa.c:132 modules/audio_output/auhal.c:131
-#: modules/audio_output/auhal.c:968 modules/audio_output/directx.c:421
-#: modules/audio_output/oss.c:134 modules/audio_output/portaudio.c:393
+#: modules/audio_output/auhal.c:968 modules/audio_output/directx.c:422
+#: modules/audio_output/oss.c:134 modules/audio_output/portaudio.c:388
 #: modules/audio_output/sdl.c:179 modules/audio_output/sdl.c:197
-#: modules/audio_output/waveout.c:462 modules/gui/macosx/intf.m:558
+#: modules/audio_output/waveout.c:463 modules/gui/macosx/intf.m:558
 #: modules/gui/macosx/intf.m:559
 msgid "Audio Device"
 msgstr "جهاز الصوت"
 
-#: modules/audio_output/alsa.c:202 modules/audio_output/directx.c:499
-#: modules/audio_output/oss.c:183 modules/audio_output/portaudio.c:418
-#: modules/audio_output/waveout.c:500
+#: modules/audio_output/alsa.c:202 modules/audio_output/directx.c:500
+#: modules/audio_output/oss.c:183 modules/audio_output/portaudio.c:413
+#: modules/audio_output/waveout.c:501
 msgid "2 Front 2 Rear"
 msgstr " إلى الأمام 2 إلى  الخلف2  "
 
-#: modules/audio_output/alsa.c:250 modules/audio_output/directx.c:592
-#: modules/audio_output/oss.c:251 modules/audio_output/waveout.c:550
+#: modules/audio_output/alsa.c:250 modules/audio_output/directx.c:593
+#: modules/audio_output/oss.c:251 modules/audio_output/waveout.c:551
 msgid "A/52 over S/PDIF"
 msgstr "S/PDIFعلى A/52 "
 
@@ -8656,11 +8656,11 @@ msgstr ""
 msgid "%s (Encoded Output)"
 msgstr "%s  (خرج مشفر)"
 
-#: modules/audio_output/directx.c:219 modules/audio_output/portaudio.c:110
+#: modules/audio_output/directx.c:220 modules/audio_output/portaudio.c:105
 msgid "Output device"
 msgstr "جهاز الخروج"
 
-#: modules/audio_output/directx.c:221
+#: modules/audio_output/directx.c:222
 msgid ""
 "DirectX device number: 0 default device, 1..N device by number(Note that the "
 "default device appears as 0 AND another number)."
@@ -8668,11 +8668,11 @@ msgstr ""
 "..فرضًا 0 جهاز1 :DirectX  عدد أجهزه\n"
 ".(ن  عددالأجهزة (نلاحظ انه فرضًا الجهاز يبدو على شكل 0  وعدد آخر."
 
-#: modules/audio_output/directx.c:223 modules/audio_output/waveout.c:155
+#: modules/audio_output/directx.c:224 modules/audio_output/waveout.c:155
 msgid "Use float32 output"
 msgstr "float32  استخدام الناتج"
 
-#: modules/audio_output/directx.c:225 modules/audio_output/waveout.c:157
+#: modules/audio_output/directx.c:226 modules/audio_output/waveout.c:157
 msgid ""
 "The option allows you to enable or disable the high-quality float32 audio "
 "output mode (which is not well supported by some soundcards)."
@@ -8680,11 +8680,11 @@ msgstr ""
 ".(السمعيه طريقة الانتاج (الذي لا وأيده بعض بطاقات الصوت  float32 الخيار يسمح "
 "لك تمكين او تعطيل عالية الجوده"
 
-#: modules/audio_output/directx.c:229
+#: modules/audio_output/directx.c:230
 msgid "DirectX audio output"
 msgstr "خرج سمعي DirectX"
 
-#: modules/audio_output/directx.c:476 modules/audio_output/portaudio.c:426
+#: modules/audio_output/directx.c:477 modules/audio_output/portaudio.c:421
 msgid "3 Front 2 Rear"
 msgstr "3 إلى الأمام؛ 2 إلى  الخلف"
 
@@ -8790,25 +8790,25 @@ msgstr "خرج سمعي UNIX OSS"
 msgid "OSS DSP device"
 msgstr "جهاز سمعي OSS DSP "
 
-#: modules/audio_output/portaudio.c:111
+#: modules/audio_output/portaudio.c:106
 msgid "Portaudio identifier for the output device"
 msgstr " معرَف المنفذ السمعي للجهاز"
 
-#: modules/audio_output/portaudio.c:115
+#: modules/audio_output/portaudio.c:110
 msgid "PORTAUDIO audio output"
 msgstr "الخروج السمعي لمنفذ الجهاز"
 
 #: modules/audio_output/pulse.c:61 modules/gui/macosx/intf.m:481
 #: modules/gui/macosx/intf.m:482 modules/gui/macosx/intf.m:1779
 #: modules/gui/pda/pda_interface.c:210 modules/gui/pda/pda_interface.c:1353
-#: modules/gui/qt4/main_interface.cpp:364
-#: modules/gui/qt4/main_interface.cpp:368
-#: modules/gui/qt4/main_interface.cpp:937
-#: modules/gui/qt4/main_interface.cpp:939
-#: modules/gui/qt4/main_interface.cpp:1003
-#: modules/gui/qt4/main_interface.cpp:1018
-#: modules/gui/qt4/main_interface.cpp:1025
-#: modules/gui/qt4/main_interface.cpp:1042
+#: modules/gui/qt4/main_interface.cpp:366
+#: modules/gui/qt4/main_interface.cpp:370
+#: modules/gui/qt4/main_interface.cpp:941
+#: modules/gui/qt4/main_interface.cpp:943
+#: modules/gui/qt4/main_interface.cpp:1007
+#: modules/gui/qt4/main_interface.cpp:1022
+#: modules/gui/qt4/main_interface.cpp:1029
+#: modules/gui/qt4/main_interface.cpp:1046
 msgid "VLC media player"
 msgstr "مشغل الوسائط  VLC"
 
@@ -8845,7 +8845,7 @@ msgstr "الأجهزة الإفتراضية"
 msgid "Win32 waveOut extension output"
 msgstr "خرج سمعي Win32 waveOut"
 
-#: modules/audio_output/waveout.c:479
+#: modules/audio_output/waveout.c:480
 msgid "5.1"
 msgstr "5.1"
 
@@ -9377,7 +9377,7 @@ msgid "Chaoji VCD subtitle packetizer"
 msgstr "Chaoji VCD محزَّم العناوين الثانوية ل "
 
 #: modules/codec/dirac.c:72 modules/codec/theora.c:95
-#: modules/codec/twolame.c:55 modules/codec/vorbis.c:173
+#: modules/codec/twolame.c:55 modules/codec/vorbis.c:168
 msgid "Encoding quality"
 msgstr "نوعية الترميز"
 
@@ -9612,7 +9612,7 @@ msgstr "تعليق Speex"
 msgid "Subtitle renderers using libass"
 msgstr "إعدادات العناوين الثانوية"
 
-#: modules/codec/libmpeg2.c:102
+#: modules/codec/libmpeg2.c:96
 msgid "MPEG I/II video decoder (using libmpeg2)"
 msgstr "(libmpeg2 يستعمل ) MPEG I/II  كاشف الرموز للفديو   "
 
@@ -9825,7 +9825,7 @@ msgstr ""
 msgid "Teletext subtitles decoder"
 msgstr "فك تشفير نص الترجمة"
 
-#: modules/codec/theora.c:97 modules/codec/vorbis.c:175
+#: modules/codec/theora.c:97 modules/codec/vorbis.c:170
 msgid ""
 "Enforce a quality between 1 (low) and 10 (high), instead of specifying a "
 "particular bitrate. This will produce a VBR stream."
@@ -9893,45 +9893,45 @@ msgstr "ستيريو مشترك"
 msgid "Libtwolame audio encoder"
 msgstr "مرمز سمعي  Libtwolame"
 
-#: modules/codec/vorbis.c:177
+#: modules/codec/vorbis.c:172
 msgid "Maximum encoding bitrate"
 msgstr "أقصى معدل بت للترميز"
 
-#: modules/codec/vorbis.c:179
+#: modules/codec/vorbis.c:174
 msgid "Maximum bitrate in kbps. This is useful for streaming applications."
 msgstr ".أقصى معدّل بت بالكيلوبت. صالح في تطبيقات النشر"
 
-#: modules/codec/vorbis.c:180
+#: modules/codec/vorbis.c:175
 msgid "Minimum encoding bitrate"
 msgstr "أدنى معدل بت للترميز"
 
-#: modules/codec/vorbis.c:182
+#: modules/codec/vorbis.c:177
 msgid ""
 "Minimum bitrate in kbps. This is useful for encoding for a fixed-size "
 "channel."
 msgstr ".أقصى معدّل بت بالكيلوبت. صالح لقناة بحجم ثابت"
 
-#: modules/codec/vorbis.c:183
+#: modules/codec/vorbis.c:178
 msgid "CBR encoding"
 msgstr "الترميز CBR"
 
-#: modules/codec/vorbis.c:185
+#: modules/codec/vorbis.c:180
 msgid "Force a constant bitrate encoding (CBR)."
 msgstr "(CBR)أجبر الترميز بمعدّل بت ثابت  "
 
-#: modules/codec/vorbis.c:189
+#: modules/codec/vorbis.c:184
 msgid "Vorbis audio decoder"
 msgstr "كاشف الرموز السمعي Vorbis"
 
-#: modules/codec/vorbis.c:200
+#: modules/codec/vorbis.c:195
 msgid "Vorbis audio packetizer"
 msgstr "المحزِّم السمعي Vorbis"
 
-#: modules/codec/vorbis.c:207
+#: modules/codec/vorbis.c:202
 msgid "Vorbis audio encoder"
 msgstr "المرمز السمعي Vorbis"
 
-#: modules/codec/vorbis.c:643
+#: modules/codec/vorbis.c:638
 msgid "Vorbis comment"
 msgstr "التعليقات Vorbis"
 
@@ -11032,7 +11032,7 @@ msgstr "فتح"
 msgid "Buffer"
 msgstr "صِوان VBV"
 
-#: modules/control/rc.c:76 modules/gui/macosx/embeddedwindow.m:161
+#: modules/control/rc.c:76 modules/gui/macosx/embeddedwindow.m:150
 #: modules/gui/macosx/intf.m:1789 modules/gui/macosx/intf.m:1790
 #: modules/gui/macosx/intf.m:1791 modules/gui/macosx/intf.m:1792
 #: modules/gui/pda/pda_interface.c:248 modules/gui/pda/pda_interface.c:249
@@ -13174,7 +13174,7 @@ msgstr "اضافة"
 
 #: modules/gui/macosx/bookmarks.m:89 modules/gui/macosx/intf.m:527
 #: modules/gui/macosx/simple_prefs.m:239
-#: modules/gui/qt4/components/playlist/standardpanel.cpp:172
+#: modules/gui/qt4/components/playlist/standardpanel.cpp:173
 #: modules/gui/qt4/components/preferences_widgets.cpp:1133
 #: modules/gui/qt4/dialogs/bookmarks.cpp:48 modules/gui/qt4/ui/vlm.ui:202
 msgid "Clear"
@@ -13302,12 +13302,12 @@ msgstr "تقديم للأمام"
 msgid "Step Backward"
 msgstr "تقديم للخلف "
 
-#: modules/gui/macosx/embeddedwindow.m:74 modules/gui/macosx/intf.m:486
+#: modules/gui/macosx/embeddedwindow.m:63 modules/gui/macosx/intf.m:486
 #: modules/gui/pda/pda_interface.c:236 modules/gui/pda/pda_interface.c:237
 msgid "Rewind"
 msgstr "ارجاع"
 
-#: modules/gui/macosx/embeddedwindow.m:75 modules/gui/macosx/intf.m:489
+#: modules/gui/macosx/embeddedwindow.m:64 modules/gui/macosx/intf.m:489
 msgid "Fast Forward"
 msgstr "تقديم للأمام"
 
@@ -14327,7 +14327,7 @@ msgid "Basic"
 msgstr "باشكير "
 
 #: modules/gui/macosx/prefs.m:147 modules/gui/macosx/simple_prefs.m:627
-#: modules/gui/qt4/dialogs/preferences.cpp:352
+#: modules/gui/qt4/dialogs/preferences.cpp:353
 msgid "Reset Preferences"
 msgstr "اعادة التفضيلات"
 
@@ -16372,7 +16372,7 @@ msgid "Filter:"
 msgstr "مرشّحات"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:622
+#: modules/gui/qt4/dialogs_provider.cpp:624
 msgid "Open subtitles file"
 msgstr "فتح ملف الترجمة"
 
@@ -16438,7 +16438,7 @@ msgid "Double click to get media information"
 msgstr ""
 "إختر برنامج مشفّر وفاك للشفرة البصري ،انقر للحصول على مزيد من المعلومات."
 
-#: modules/gui/qt4/components/playlist/standardpanel.cpp:155
+#: modules/gui/qt4/components/playlist/standardpanel.cpp:156
 #, fuzzy
 msgid "Show the current item"
 msgstr "اعادة تشغيل العنصر الحالي"
@@ -16674,6 +16674,10 @@ msgid ""
 "This version of VLC was compiled by:\n"
 " "
 msgstr ".هذه النسخة من VLC  قديمة"
+
+#: modules/gui/qt4/dialogs/help.cpp:125 modules/gui/wince/interface.cpp:507
+msgid "Compiler: "
+msgstr "المؤلف: "
 
 #: modules/gui/qt4/dialogs/help.cpp:126 modules/gui/wince/interface.cpp:508
 msgid "Based on Git commit: "
@@ -16919,7 +16923,7 @@ msgstr " حفظ &"
 msgid "&Reset Preferences"
 msgstr "اعادة التفضيلات"
 
-#: modules/gui/qt4/dialogs/preferences.cpp:353
+#: modules/gui/qt4/dialogs/preferences.cpp:354
 msgid ""
 "This will reset your VLC media player preferences.\n"
 "Are you sure you want to continue?"
@@ -16927,27 +16931,27 @@ msgstr ""
 "يجب الإعادة للوضع الإبتدائي لأفضليات مشغل الوسائط.\n"
 "هل انت متأكد من انك تريد الاستمرار؟  "
 
-#: modules/gui/qt4/dialogs_provider.cpp:415
+#: modules/gui/qt4/dialogs_provider.cpp:417
 #, fuzzy
 msgid "Open Directory"
 msgstr "فتح مجلد"
 
-#: modules/gui/qt4/dialogs_provider.cpp:451
+#: modules/gui/qt4/dialogs_provider.cpp:453
 #, fuzzy
 msgid "Open playlist file"
 msgstr "فتح قائمة التشغيل"
 
-#: modules/gui/qt4/dialogs_provider.cpp:462
+#: modules/gui/qt4/dialogs_provider.cpp:464
 #, fuzzy
 msgid "Choose a filename to save playlist"
 msgstr "عليك ان تختار ملف الحفظ"
 
-#: modules/gui/qt4/dialogs_provider.cpp:464
+#: modules/gui/qt4/dialogs_provider.cpp:466
 #, fuzzy
 msgid "XSPF playlist (*.xspf);; "
 msgstr "XSPF مصدر  قائمة التشغيل"
 
-#: modules/gui/qt4/dialogs_provider.cpp:465
+#: modules/gui/qt4/dialogs_provider.cpp:467
 msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr ""
 
@@ -17036,27 +17040,27 @@ msgstr ""
 msgid "Open a VLM Configuration File"
 msgstr "VLM ملف تشكيلة"
 
-#: modules/gui/qt4/main_interface.cpp:302
+#: modules/gui/qt4/main_interface.cpp:304
 msgid "Toggle between elapsed and remaining time"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:308
+#: modules/gui/qt4/main_interface.cpp:310
 msgid ""
 "Current playback speed.\n"
 "Right click to adjust"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:478
+#: modules/gui/qt4/main_interface.cpp:480
 #, fuzzy
 msgid "Privacy and Network Policies"
 msgstr " واجهة التفاعل"
 
-#: modules/gui/qt4/main_interface.cpp:482
+#: modules/gui/qt4/main_interface.cpp:484
 #, fuzzy
 msgid "Privacy and Network Warning"
 msgstr " واجهة التفاعل"
 
-#: modules/gui/qt4/main_interface.cpp:485
+#: modules/gui/qt4/main_interface.cpp:487
 msgid ""
 "<p>The <i>VideoLAN Team</i> doesn't like when an application goes online "
 "without authorization.</p>\n"
@@ -17068,11 +17072,11 @@ msgid ""
 "access on the web.</p>\n"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:1004
+#: modules/gui/qt4/main_interface.cpp:1008
 msgid "Control menu for the player"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:1053
+#: modules/gui/qt4/main_interface.cpp:1057
 msgid "Paused"
 msgstr "إيقاف مؤقت"
 
@@ -18344,10 +18348,6 @@ msgstr ""
 msgid "Compiled by "
 msgstr "تكوين بواسطة"
 
-#: modules/gui/wince/interface.cpp:507
-msgid "Compiler: "
-msgstr "المؤلف: "
-
 #: modules/gui/wince/interface.cpp:509
 msgid ""
 "The VideoLAN team <videolan@videolan.org>\n"
@@ -18720,11 +18720,11 @@ msgstr ""
 "استأنف ثم , \"audioscrobbler \"  يرجى وضع إسم المستعمل او  يعطل لبرنامج    / "
 "n .VLC  المساعد    للحصول على التقرير  https://www.last.fm/join/ زر "
 
-#: modules/misc/audioscrobbler.c:793
+#: modules/misc/audioscrobbler.c:814
 msgid "last.fm: Authentication failed"
 msgstr ""
 
-#: modules/misc/audioscrobbler.c:794
+#: modules/misc/audioscrobbler.c:815
 #, fuzzy
 msgid ""
 "last.fm username or password is incorrect. Please verify your settings and "

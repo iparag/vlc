@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-08-31 12:31+0100\n"
+"POT-Creation-Date: 2008-09-03 20:11+0200\n"
 "PO-Revision-Date: 2008-08-30 20:20+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
 "Language-Team: Italian <kde-i18n-it@mail.kde.org>\n"
@@ -888,15 +888,15 @@ msgstr "tasto"
 msgid "boolean"
 msgstr "booleana"
 
-#: src/config/file.c:593 src/libvlc.c:1578
+#: src/config/file.c:593 src/libvlc.c:1582
 msgid "integer"
 msgstr "intero"
 
-#: src/config/file.c:602 src/libvlc.c:1607
+#: src/config/file.c:602 src/libvlc.c:1611
 msgid "float"
 msgstr "virgola mobile"
 
-#: src/config/file.c:625 src/libvlc.c:1557
+#: src/config/file.c:625 src/libvlc.c:1561
 msgid "string"
 msgstr "stringa"
 
@@ -1324,43 +1324,43 @@ msgstr ""
 msgid "To get exhaustive help, use '-H'."
 msgstr "Per ottenere un aiuto dettagliato, utilizza '-H'."
 
-#: src/libvlc.c:1622
+#: src/libvlc.c:1626
 msgid " (default enabled)"
 msgstr " (predefinito abilitato)"
 
-#: src/libvlc.c:1623
+#: src/libvlc.c:1627
 msgid " (default disabled)"
 msgstr " (predefinito disabilitato)"
 
-#: src/libvlc.c:1782 src/libvlc.c:1785
+#: src/libvlc.c:1786 src/libvlc.c:1789
 msgid "Note:"
 msgstr "Nota:"
 
-#: src/libvlc.c:1783 src/libvlc.c:1786
+#: src/libvlc.c:1787 src/libvlc.c:1790
 msgid "add --advanced to your command line to see advanced options."
 msgstr ""
 
-#: src/libvlc.c:1890
+#: src/libvlc.c:1894
 #, c-format
 msgid "VLC version %s\n"
 msgstr "VLC versione %s\n"
 
-#: src/libvlc.c:1891
+#: src/libvlc.c:1895
 #, c-format
 msgid "Compiled by %s@%s.%s\n"
 msgstr "Compilato da %s@%s.%s\n"
 
-#: src/libvlc.c:1893
+#: src/libvlc.c:1897
 #, c-format
 msgid "Compiler: %s\n"
 msgstr "Compilatore: %s\n"
 
-#: src/libvlc.c:1895
+#: src/libvlc.c:1899
 #, c-format
 msgid "Based upon Git commit [%s]\n"
 msgstr "Basato sul deposito Git [%s]\n"
 
-#: src/libvlc.c:1931
+#: src/libvlc.c:1935
 msgid ""
 "\n"
 "Dumped content to vlc-help.txt file.\n"
@@ -1368,7 +1368,7 @@ msgstr ""
 "\n"
 "contenuto copiato nel file vlc-help.txt.\n"
 
-#: src/libvlc.c:1951
+#: src/libvlc.c:1955
 msgid ""
 "\n"
 "Press the RETURN key to continue...\n"
@@ -14391,7 +14391,7 @@ msgid "Basic"
 msgstr "Di base"
 
 #: modules/gui/macosx/prefs.m:147 modules/gui/macosx/simple_prefs.m:627
-#: modules/gui/qt4/dialogs/preferences.cpp:352
+#: modules/gui/qt4/dialogs/preferences.cpp:353
 msgid "Reset Preferences"
 msgstr "Ripristina preferenze"
 
@@ -16861,7 +16861,7 @@ msgstr "Registra"
 msgid "&Reset Preferences"
 msgstr "&Ripristina preferenze"
 
-#: modules/gui/qt4/dialogs/preferences.cpp:353
+#: modules/gui/qt4/dialogs/preferences.cpp:354
 msgid ""
 "This will reset your VLC media player preferences.\n"
 "Are you sure you want to continue?"
@@ -18503,11 +18503,11 @@ msgid ""
 "Visit http://www.last.fm/join/ to get an account."
 msgstr ""
 
-#: modules/misc/audioscrobbler.c:793
+#: modules/misc/audioscrobbler.c:814
 msgid "last.fm: Authentication failed"
 msgstr "last.fm: Autenticazione non riuscita"
 
-#: modules/misc/audioscrobbler.c:794
+#: modules/misc/audioscrobbler.c:815
 msgid ""
 "last.fm username or password is incorrect. Please verify your settings and "
 "relaunch VLC."

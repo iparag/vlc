@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.8.6-svn20061012\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-08-25 22:03+0100\n"
+"POT-Creation-Date: 2008-09-03 20:11+0200\n"
 "PO-Revision-Date: 2007-11-22 18:10+0900\n"
 "Last-Translator: Namhyung Kim <namhyung@gmail.com>\n"
 "Language-Team: Korean Linux User Group <ko@li.org>\n"
@@ -99,7 +99,7 @@ msgid "General audio settings"
 msgstr "음성 일반 설정"
 
 #: include/vlc_config_cat.h:60 include/vlc_config_cat.h:85
-#: src/video_output/video_output.c:416
+#: src/video_output/video_output.c:422
 msgid "Filters"
 msgstr "필터"
 
@@ -539,8 +539,8 @@ msgid "&About..."
 msgstr "VideoLAN에 대해(_A)..."
 
 #: include/vlc_intf_strings.h:53 modules/control/rc.c:75
-#: modules/gui/macosx/embeddedwindow.m:77
-#: modules/gui/macosx/embeddedwindow.m:167 modules/gui/macosx/intf.m:487
+#: modules/gui/macosx/embeddedwindow.m:66
+#: modules/gui/macosx/embeddedwindow.m:156 modules/gui/macosx/intf.m:487
 #: modules/gui/macosx/intf.m:531 modules/gui/macosx/intf.m:610
 #: modules/gui/macosx/intf.m:617 modules/gui/macosx/intf.m:1799
 #: modules/gui/macosx/intf.m:1800 modules/gui/macosx/intf.m:1801
@@ -794,7 +794,7 @@ msgstr "필터의 최대 개수(%d)에 도달하였습니다."
 
 #: src/audio_output/input.c:98 src/audio_output/input.c:144
 #: src/input/es_out.c:459 src/libvlc-module.c:562
-#: src/video_output/video_output.c:393 modules/video_filter/postproc.c:222
+#: src/video_output/video_output.c:399 modules/video_filter/postproc.c:222
 msgid "Disable"
 msgstr "사용 안함"
 
@@ -837,10 +837,10 @@ msgstr "음성 채널"
 #: src/audio_output/output.c:105 src/audio_output/output.c:140
 #: modules/access/v4l2/v4l2.c:208 modules/access/v4l2/v4l2.c:259
 #: modules/access/v4l.c:129 modules/audio_output/alsa.c:195
-#: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:518
-#: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:407
+#: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:519
+#: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:402
 #: modules/audio_output/sdl.c:184 modules/audio_output/sdl.c:201
-#: modules/audio_output/waveout.c:517 modules/codec/twolame.c:71
+#: modules/audio_output/waveout.c:518 modules/codec/twolame.c:71
 msgid "Stereo"
 msgstr "스테레오"
 
@@ -884,15 +884,15 @@ msgstr "키"
 msgid "boolean"
 msgstr "참/거짓"
 
-#: src/config/file.c:593 src/libvlc.c:1578
+#: src/config/file.c:593 src/libvlc.c:1582
 msgid "integer"
 msgstr "정수"
 
-#: src/config/file.c:602 src/libvlc.c:1607
+#: src/config/file.c:602 src/libvlc.c:1611
 msgid "float"
 msgstr "실수"
 
-#: src/config/file.c:625 src/libvlc.c:1557
+#: src/config/file.c:625 src/libvlc.c:1561
 msgid "string"
 msgstr "문자열"
 
@@ -1273,7 +1273,7 @@ msgstr "취소"
 #: modules/gui/macosx/wizard.m:1889
 #: modules/gui/qt4/components/open_panels.cpp:1153
 #: modules/gui/qt4/components/preferences_widgets.cpp:1293
-#: modules/gui/qt4/main_interface.cpp:532
+#: modules/gui/qt4/main_interface.cpp:534
 msgid "OK"
 msgstr "확인"
 
@@ -1318,44 +1318,44 @@ msgstr ""
 msgid "To get exhaustive help, use '-H'."
 msgstr ""
 
-#: src/libvlc.c:1622
+#: src/libvlc.c:1626
 msgid " (default enabled)"
 msgstr " (기본으로 사용)"
 
-#: src/libvlc.c:1623
+#: src/libvlc.c:1627
 msgid " (default disabled)"
 msgstr " (기본으로 사용 안함)"
 
-#: src/libvlc.c:1782 src/libvlc.c:1785
+#: src/libvlc.c:1786 src/libvlc.c:1789
 #, fuzzy
 msgid "Note:"
 msgstr "없음"
 
-#: src/libvlc.c:1783 src/libvlc.c:1786
+#: src/libvlc.c:1787 src/libvlc.c:1790
 msgid "add --advanced to your command line to see advanced options."
 msgstr ""
 
-#: src/libvlc.c:1890
+#: src/libvlc.c:1894
 #, c-format
 msgid "VLC version %s\n"
 msgstr "VLC 버전 %s\n"
 
-#: src/libvlc.c:1891
+#: src/libvlc.c:1895
 #, c-format
 msgid "Compiled by %s@%s.%s\n"
 msgstr "컴파일 : %s@%s.%s\n"
 
-#: src/libvlc.c:1893
+#: src/libvlc.c:1897
 #, c-format
 msgid "Compiler: %s\n"
 msgstr "컴파일러: %s\n"
 
-#: src/libvlc.c:1895
+#: src/libvlc.c:1899
 #, fuzzy, c-format
 msgid "Based upon Git commit [%s]\n"
 msgstr "SVN 체인지셋 [%s] 기반\n"
 
-#: src/libvlc.c:1931
+#: src/libvlc.c:1935
 msgid ""
 "\n"
 "Dumped content to vlc-help.txt file.\n"
@@ -1363,7 +1363,7 @@ msgstr ""
 "\n"
 "vlc-help.txt 파일로 내용 덤프.\n"
 
-#: src/libvlc.c:1951
+#: src/libvlc.c:1955
 msgid ""
 "\n"
 "Press the RETURN key to continue...\n"
@@ -3416,7 +3416,7 @@ msgstr ""
 #: src/libvlc-module.c:1156 src/video_output/vout_intf.c:414
 #: modules/gui/beos/VideoOutput.cpp:1058 modules/gui/macosx/controls.m:435
 #: modules/gui/macosx/controls.m:489 modules/gui/macosx/controls.m:938
-#: modules/gui/macosx/controls.m:969 modules/gui/macosx/embeddedwindow.m:76
+#: modules/gui/macosx/controls.m:969 modules/gui/macosx/embeddedwindow.m:65
 #: modules/gui/macosx/intf.m:491 modules/gui/macosx/intf.m:568
 #: modules/gui/macosx/intf.m:624 modules/gui/macosx/simple_prefs.m:286
 #: modules/gui/qt4/ui/sprefs_video.ui:61
@@ -3520,7 +3520,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1176 modules/gui/fbosd.c:129 modules/gui/fbosd.c:197
 #: modules/gui/macosx/bookmarks.m:96 modules/gui/macosx/bookmarks.m:105
-#: modules/gui/macosx/embeddedwindow.m:78 modules/gui/macosx/intf.m:493
+#: modules/gui/macosx/embeddedwindow.m:67 modules/gui/macosx/intf.m:493
 #: modules/gui/qt4/ui/video_effects.ui:731 modules/video_filter/marq.c:153
 #: modules/video_filter/rss.c:197
 msgid "Position"
@@ -4960,28 +4960,28 @@ msgstr ""
 msgid "Zulu"
 msgstr "줄루어"
 
-#: src/video_output/video_output.c:391 modules/gui/macosx/intf.m:581
+#: src/video_output/video_output.c:397 modules/gui/macosx/intf.m:581
 #: modules/gui/macosx/intf.m:582 modules/video_filter/deinterlace.c:127
 msgid "Deinterlace"
 msgstr "디인터레이스"
 
-#: src/video_output/video_output.c:395 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:401 modules/video_filter/deinterlace.c:123
 msgid "Discard"
 msgstr "버림"
 
-#: src/video_output/video_output.c:397 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:403 modules/video_filter/deinterlace.c:123
 msgid "Blend"
 msgstr "블렌드"
 
-#: src/video_output/video_output.c:399 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:405 modules/video_filter/deinterlace.c:123
 msgid "Mean"
 msgstr "평균"
 
-#: src/video_output/video_output.c:401 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:407 modules/video_filter/deinterlace.c:123
 msgid "Bob"
 msgstr "Bob"
 
-#: src/video_output/video_output.c:403 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:409 modules/video_filter/deinterlace.c:123
 msgid "Linear"
 msgstr "선형"
 
@@ -6065,12 +6065,12 @@ msgstr "메뉴있는 DVD"
 msgid "DVDnav Input"
 msgstr "DVDnav 입력"
 
-#: modules/access/dvdnav.c:304 modules/access/dvdread.c:251
+#: modules/access/dvdnav.c:306 modules/access/dvdread.c:251
 #: modules/access/dvdread.c:511 modules/access/dvdread.c:573
 msgid "Playback failure"
 msgstr "재생 실패"
 
-#: modules/access/dvdnav.c:305
+#: modules/access/dvdnav.c:307
 msgid ""
 "VLC cannot set the DVD's title. It possibly cannot decrypt the entire disk."
 msgstr ""
@@ -7464,9 +7464,9 @@ msgid "USERPTR"
 msgstr "USERPTR"
 
 #: modules/access/v4l2/v4l2.c:258 modules/audio_output/alsa.c:189
-#: modules/audio_output/directx.c:536 modules/audio_output/oss.c:227
-#: modules/audio_output/portaudio.c:399 modules/audio_output/sdl.c:185
-#: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:532
+#: modules/audio_output/directx.c:537 modules/audio_output/oss.c:227
+#: modules/audio_output/portaudio.c:394 modules/audio_output/sdl.c:185
+#: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:533
 msgid "Mono"
 msgstr "모노"
 
@@ -7914,12 +7914,12 @@ msgstr "단순한 채널 믹싱을 위한 음성 필터"
 msgid "Audio filter for trivial channel mixing"
 msgstr "간단한 채널·믹싱을 위한 음성·필터"
 
-#: modules/audio_filter/converter/a52tofloat32.c:97
+#: modules/audio_filter/converter/a52tofloat32.c:93
 msgid "A/52 dynamic range compression"
 msgstr "A/52 다이나믹·레인지 압축"
 
-#: modules/audio_filter/converter/a52tofloat32.c:99
-#: modules/audio_filter/converter/dtstofloat32.c:86
+#: modules/audio_filter/converter/a52tofloat32.c:95
+#: modules/audio_filter/converter/dtstofloat32.c:85
 msgid ""
 "Dynamic range compression makes the loud sounds softer, and the soft sounds "
 "louder, so you can more easily listen to the stream in a noisy environment "
@@ -7927,16 +7927,16 @@ msgid ""
 "playback will be more adapted to a movie theater or a listening room."
 msgstr ""
 
-#: modules/audio_filter/converter/a52tofloat32.c:104
+#: modules/audio_filter/converter/a52tofloat32.c:100
 msgid "Enable internal upmixing"
 msgstr "인터널 업믹싱 사용"
 
-#: modules/audio_filter/converter/a52tofloat32.c:106
+#: modules/audio_filter/converter/a52tofloat32.c:102
 msgid "Enable the internal upmixing algorithm (not recommended)."
 msgstr ""
 
-#: modules/audio_filter/converter/a52tofloat32.c:110
-#: modules/audio_filter/converter/a52tofloat32.c:119
+#: modules/audio_filter/converter/a52tofloat32.c:106
+#: modules/audio_filter/converter/a52tofloat32.c:115
 msgid "ATSC A/52 (AC-3) audio decoder"
 msgstr "ATSC A/52(AC-3) 오디오·디코더"
 
@@ -7944,12 +7944,12 @@ msgstr "ATSC A/52(AC-3) 오디오·디코더"
 msgid "Audio filter for A/52->S/PDIF encapsulation"
 msgstr "A/52->S/PDIF의 캡슐화를 위한 음성·필터"
 
-#: modules/audio_filter/converter/dtstofloat32.c:84
+#: modules/audio_filter/converter/dtstofloat32.c:83
 msgid "DTS dynamic range compression"
 msgstr "DTS 다이나믹·레인지 압축"
 
-#: modules/audio_filter/converter/dtstofloat32.c:96
-#: modules/audio_filter/converter/dtstofloat32.c:102
+#: modules/audio_filter/converter/dtstofloat32.c:95
+#: modules/audio_filter/converter/dtstofloat32.c:101
 msgid "DTS Coherent Acoustics audio decoder"
 msgstr "DTS Coherent Acoustics 오디오 디코더"
 
@@ -8258,22 +8258,22 @@ msgid "ALSA Device Name"
 msgstr "ALSA 장치 이름"
 
 #: modules/audio_output/alsa.c:132 modules/audio_output/auhal.c:131
-#: modules/audio_output/auhal.c:968 modules/audio_output/directx.c:421
-#: modules/audio_output/oss.c:134 modules/audio_output/portaudio.c:393
+#: modules/audio_output/auhal.c:968 modules/audio_output/directx.c:422
+#: modules/audio_output/oss.c:134 modules/audio_output/portaudio.c:388
 #: modules/audio_output/sdl.c:179 modules/audio_output/sdl.c:197
-#: modules/audio_output/waveout.c:462 modules/gui/macosx/intf.m:558
+#: modules/audio_output/waveout.c:463 modules/gui/macosx/intf.m:558
 #: modules/gui/macosx/intf.m:559
 msgid "Audio Device"
 msgstr "음성 장치"
 
-#: modules/audio_output/alsa.c:202 modules/audio_output/directx.c:499
-#: modules/audio_output/oss.c:183 modules/audio_output/portaudio.c:418
-#: modules/audio_output/waveout.c:500
+#: modules/audio_output/alsa.c:202 modules/audio_output/directx.c:500
+#: modules/audio_output/oss.c:183 modules/audio_output/portaudio.c:413
+#: modules/audio_output/waveout.c:501
 msgid "2 Front 2 Rear"
 msgstr "전면부 2, 후면부 2"
 
-#: modules/audio_output/alsa.c:250 modules/audio_output/directx.c:592
-#: modules/audio_output/oss.c:251 modules/audio_output/waveout.c:550
+#: modules/audio_output/alsa.c:250 modules/audio_output/directx.c:593
+#: modules/audio_output/oss.c:251 modules/audio_output/waveout.c:551
 msgid "A/52 over S/PDIF"
 msgstr "A/52 over S/PDIF"
 
@@ -8339,31 +8339,31 @@ msgstr ""
 msgid "%s (Encoded Output)"
 msgstr "%s (인코딩된 출력)"
 
-#: modules/audio_output/directx.c:219 modules/audio_output/portaudio.c:110
+#: modules/audio_output/directx.c:220 modules/audio_output/portaudio.c:105
 msgid "Output device"
 msgstr "출력 장치"
 
-#: modules/audio_output/directx.c:221
+#: modules/audio_output/directx.c:222
 msgid ""
 "DirectX device number: 0 default device, 1..N device by number(Note that the "
 "default device appears as 0 AND another number)."
 msgstr ""
 
-#: modules/audio_output/directx.c:223 modules/audio_output/waveout.c:155
+#: modules/audio_output/directx.c:224 modules/audio_output/waveout.c:155
 msgid "Use float32 output"
 msgstr "float32 출력 사용"
 
-#: modules/audio_output/directx.c:225 modules/audio_output/waveout.c:157
+#: modules/audio_output/directx.c:226 modules/audio_output/waveout.c:157
 msgid ""
 "The option allows you to enable or disable the high-quality float32 audio "
 "output mode (which is not well supported by some soundcards)."
 msgstr ""
 
-#: modules/audio_output/directx.c:229
+#: modules/audio_output/directx.c:230
 msgid "DirectX audio output"
 msgstr "DirectX 음성 출력"
 
-#: modules/audio_output/directx.c:476 modules/audio_output/portaudio.c:426
+#: modules/audio_output/directx.c:477 modules/audio_output/portaudio.c:421
 msgid "3 Front 2 Rear"
 msgstr "전면부 3, 후면부 2"
 
@@ -8465,25 +8465,25 @@ msgstr "UNIX OSS 음성 출력"
 msgid "OSS DSP device"
 msgstr "OSS DSP 장치"
 
-#: modules/audio_output/portaudio.c:111
+#: modules/audio_output/portaudio.c:106
 msgid "Portaudio identifier for the output device"
 msgstr "출력 장치에 대한 Portaudio ID"
 
-#: modules/audio_output/portaudio.c:115
+#: modules/audio_output/portaudio.c:110
 msgid "PORTAUDIO audio output"
 msgstr "PORTAUDIO 음성·출력"
 
 #: modules/audio_output/pulse.c:61 modules/gui/macosx/intf.m:481
 #: modules/gui/macosx/intf.m:482 modules/gui/macosx/intf.m:1779
 #: modules/gui/pda/pda_interface.c:210 modules/gui/pda/pda_interface.c:1353
-#: modules/gui/qt4/main_interface.cpp:364
-#: modules/gui/qt4/main_interface.cpp:368
-#: modules/gui/qt4/main_interface.cpp:937
-#: modules/gui/qt4/main_interface.cpp:939
-#: modules/gui/qt4/main_interface.cpp:1003
-#: modules/gui/qt4/main_interface.cpp:1018
-#: modules/gui/qt4/main_interface.cpp:1025
-#: modules/gui/qt4/main_interface.cpp:1042
+#: modules/gui/qt4/main_interface.cpp:366
+#: modules/gui/qt4/main_interface.cpp:370
+#: modules/gui/qt4/main_interface.cpp:941
+#: modules/gui/qt4/main_interface.cpp:943
+#: modules/gui/qt4/main_interface.cpp:1007
+#: modules/gui/qt4/main_interface.cpp:1022
+#: modules/gui/qt4/main_interface.cpp:1029
+#: modules/gui/qt4/main_interface.cpp:1046
 msgid "VLC media player"
 msgstr "VLC 미디어 플레이어"
 
@@ -8520,7 +8520,7 @@ msgstr "기본 장치"
 msgid "Win32 waveOut extension output"
 msgstr "Win32 waveOut 확장 출력"
 
-#: modules/audio_output/waveout.c:479
+#: modules/audio_output/waveout.c:480
 msgid "5.1"
 msgstr "5.1"
 
@@ -8998,7 +8998,7 @@ msgid "Chaoji VCD subtitle packetizer"
 msgstr "Chaoji VCD 자막 패킷타이저"
 
 #: modules/codec/dirac.c:72 modules/codec/theora.c:95
-#: modules/codec/twolame.c:55 modules/codec/vorbis.c:173
+#: modules/codec/twolame.c:55 modules/codec/vorbis.c:168
 msgid "Encoding quality"
 msgstr "인코딩 품질"
 
@@ -9224,7 +9224,7 @@ msgstr "Speex 코멘트"
 msgid "Subtitle renderers using libass"
 msgstr "자막 디먹서 설정"
 
-#: modules/codec/libmpeg2.c:102
+#: modules/codec/libmpeg2.c:96
 msgid "MPEG I/II video decoder (using libmpeg2)"
 msgstr "MPEG 1/2 비디오·디코더·(libmpeg2 사용)"
 
@@ -9423,7 +9423,7 @@ msgstr ""
 msgid "Teletext subtitles decoder"
 msgstr "Teletext 자막 디코더"
 
-#: modules/codec/theora.c:97 modules/codec/vorbis.c:175
+#: modules/codec/theora.c:97 modules/codec/vorbis.c:170
 msgid ""
 "Enforce a quality between 1 (low) and 10 (high), instead of specifying a "
 "particular bitrate. This will produce a VBR stream."
@@ -9487,45 +9487,45 @@ msgstr "조인트 스테레오"
 msgid "Libtwolame audio encoder"
 msgstr "Libtwolame 오디오 인코더"
 
-#: modules/codec/vorbis.c:177
+#: modules/codec/vorbis.c:172
 msgid "Maximum encoding bitrate"
 msgstr "최대 인코딩 비트레이트"
 
-#: modules/codec/vorbis.c:179
+#: modules/codec/vorbis.c:174
 msgid "Maximum bitrate in kbps. This is useful for streaming applications."
 msgstr ""
 
-#: modules/codec/vorbis.c:180
+#: modules/codec/vorbis.c:175
 msgid "Minimum encoding bitrate"
 msgstr "최소 인코딩 비트레이트"
 
-#: modules/codec/vorbis.c:182
+#: modules/codec/vorbis.c:177
 msgid ""
 "Minimum bitrate in kbps. This is useful for encoding for a fixed-size "
 "channel."
 msgstr ""
 
-#: modules/codec/vorbis.c:183
+#: modules/codec/vorbis.c:178
 msgid "CBR encoding"
 msgstr "CBR 인코딩"
 
-#: modules/codec/vorbis.c:185
+#: modules/codec/vorbis.c:180
 msgid "Force a constant bitrate encoding (CBR)."
 msgstr ""
 
-#: modules/codec/vorbis.c:189
+#: modules/codec/vorbis.c:184
 msgid "Vorbis audio decoder"
 msgstr "Vorbis 오디오 디코더"
 
-#: modules/codec/vorbis.c:200
+#: modules/codec/vorbis.c:195
 msgid "Vorbis audio packetizer"
 msgstr "Vorbis 오디오 패킷타이저"
 
-#: modules/codec/vorbis.c:207
+#: modules/codec/vorbis.c:202
 msgid "Vorbis audio encoder"
 msgstr "Vorbis 오디오 인코더"
 
-#: modules/codec/vorbis.c:643
+#: modules/codec/vorbis.c:638
 msgid "Vorbis comment"
 msgstr "Vorbis 코멘트"
 
@@ -10520,7 +10520,7 @@ msgstr "열기"
 msgid "Buffer"
 msgstr "VBV 버퍼"
 
-#: modules/control/rc.c:76 modules/gui/macosx/embeddedwindow.m:161
+#: modules/control/rc.c:76 modules/gui/macosx/embeddedwindow.m:150
 #: modules/gui/macosx/intf.m:1789 modules/gui/macosx/intf.m:1790
 #: modules/gui/macosx/intf.m:1791 modules/gui/macosx/intf.m:1792
 #: modules/gui/pda/pda_interface.c:248 modules/gui/pda/pda_interface.c:249
@@ -12494,7 +12494,7 @@ msgstr "추가"
 
 #: modules/gui/macosx/bookmarks.m:89 modules/gui/macosx/intf.m:527
 #: modules/gui/macosx/simple_prefs.m:239
-#: modules/gui/qt4/components/playlist/standardpanel.cpp:172
+#: modules/gui/qt4/components/playlist/standardpanel.cpp:173
 #: modules/gui/qt4/components/preferences_widgets.cpp:1133
 #: modules/gui/qt4/dialogs/bookmarks.cpp:48 modules/gui/qt4/ui/vlm.ui:202
 msgid "Clear"
@@ -12617,12 +12617,12 @@ msgstr ""
 msgid "Step Backward"
 msgstr ""
 
-#: modules/gui/macosx/embeddedwindow.m:74 modules/gui/macosx/intf.m:486
+#: modules/gui/macosx/embeddedwindow.m:63 modules/gui/macosx/intf.m:486
 #: modules/gui/pda/pda_interface.c:236 modules/gui/pda/pda_interface.c:237
 msgid "Rewind"
 msgstr "뒤로감기"
 
-#: modules/gui/macosx/embeddedwindow.m:75 modules/gui/macosx/intf.m:489
+#: modules/gui/macosx/embeddedwindow.m:64 modules/gui/macosx/intf.m:489
 msgid "Fast Forward"
 msgstr "빨리감기"
 
@@ -13612,7 +13612,7 @@ msgid "Basic"
 msgstr "기본"
 
 #: modules/gui/macosx/prefs.m:147 modules/gui/macosx/simple_prefs.m:627
-#: modules/gui/qt4/dialogs/preferences.cpp:352
+#: modules/gui/qt4/dialogs/preferences.cpp:353
 msgid "Reset Preferences"
 msgstr "설정 초기화"
 
@@ -15581,7 +15581,7 @@ msgid "Filter:"
 msgstr "필터:"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:622
+#: modules/gui/qt4/dialogs_provider.cpp:624
 msgid "Open subtitles file"
 msgstr "자막 파일 열기"
 
@@ -15641,7 +15641,7 @@ msgstr "고급 옵션"
 msgid "Double click to get media information"
 msgstr "영상 코덱을 선택하세요. 클릭하면 자세한 정보를 볼 수 있습니다."
 
-#: modules/gui/qt4/components/playlist/standardpanel.cpp:155
+#: modules/gui/qt4/components/playlist/standardpanel.cpp:156
 #, fuzzy
 msgid "Show the current item"
 msgstr "현재 항목 반복"
@@ -15875,6 +15875,10 @@ msgid ""
 " "
 msgstr "현재 VLC 버전은 최신이 아닙니다."
 
+#: modules/gui/qt4/dialogs/help.cpp:125 modules/gui/wince/interface.cpp:507
+msgid "Compiler: "
+msgstr "컴파일러: "
+
 #: modules/gui/qt4/dialogs/help.cpp:126 modules/gui/wince/interface.cpp:508
 msgid "Based on Git commit: "
 msgstr ""
@@ -16103,30 +16107,30 @@ msgstr "저장(&S)"
 msgid "&Reset Preferences"
 msgstr "설정 초기화(&R)"
 
-#: modules/gui/qt4/dialogs/preferences.cpp:353
+#: modules/gui/qt4/dialogs/preferences.cpp:354
 msgid ""
 "This will reset your VLC media player preferences.\n"
 "Are you sure you want to continue?"
 msgstr ""
 
-#: modules/gui/qt4/dialogs_provider.cpp:415
+#: modules/gui/qt4/dialogs_provider.cpp:417
 #, fuzzy
 msgid "Open Directory"
 msgstr "디렉토리 열기"
 
-#: modules/gui/qt4/dialogs_provider.cpp:451
+#: modules/gui/qt4/dialogs_provider.cpp:453
 msgid "Open playlist file"
 msgstr "재생목록 파일 열기"
 
-#: modules/gui/qt4/dialogs_provider.cpp:462
+#: modules/gui/qt4/dialogs_provider.cpp:464
 msgid "Choose a filename to save playlist"
 msgstr "재생목록을 저장할 파일 이름 선택"
 
-#: modules/gui/qt4/dialogs_provider.cpp:464
+#: modules/gui/qt4/dialogs_provider.cpp:466
 msgid "XSPF playlist (*.xspf);; "
 msgstr "XSPF 재생목록 (*.xspf);; "
 
-#: modules/gui/qt4/dialogs_provider.cpp:465
+#: modules/gui/qt4/dialogs_provider.cpp:467
 msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr "M3U 재생목록 (*.m3u);; 모두 (*.*) "
 
@@ -16215,27 +16219,27 @@ msgstr ""
 msgid "Open a VLM Configuration File"
 msgstr "VLM 설정 파일"
 
-#: modules/gui/qt4/main_interface.cpp:302
+#: modules/gui/qt4/main_interface.cpp:304
 msgid "Toggle between elapsed and remaining time"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:308
+#: modules/gui/qt4/main_interface.cpp:310
 msgid ""
 "Current playback speed.\n"
 "Right click to adjust"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:478
+#: modules/gui/qt4/main_interface.cpp:480
 #, fuzzy
 msgid "Privacy and Network Policies"
 msgstr "프라이버시 / 네트워크 상호작용"
 
-#: modules/gui/qt4/main_interface.cpp:482
+#: modules/gui/qt4/main_interface.cpp:484
 #, fuzzy
 msgid "Privacy and Network Warning"
 msgstr "프라이버시 / 네트워크 상호작용"
 
-#: modules/gui/qt4/main_interface.cpp:485
+#: modules/gui/qt4/main_interface.cpp:487
 msgid ""
 "<p>The <i>VideoLAN Team</i> doesn't like when an application goes online "
 "without authorization.</p>\n"
@@ -16247,11 +16251,11 @@ msgid ""
 "access on the web.</p>\n"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:1004
+#: modules/gui/qt4/main_interface.cpp:1008
 msgid "Control menu for the player"
 msgstr "플레이어 제어 메뉴"
 
-#: modules/gui/qt4/main_interface.cpp:1053
+#: modules/gui/qt4/main_interface.cpp:1057
 msgid "Paused"
 msgstr "일시정지"
 
@@ -17438,10 +17442,6 @@ msgstr ""
 msgid "Compiled by "
 msgstr "컴파일 : "
 
-#: modules/gui/wince/interface.cpp:507
-msgid "Compiler: "
-msgstr "컴파일러: "
-
 #: modules/gui/wince/interface.cpp:509
 msgid ""
 "The VideoLAN team <videolan@videolan.org>\n"
@@ -17809,11 +17809,11 @@ msgid ""
 "Visit http://www.last.fm/join/ to get an account."
 msgstr ""
 
-#: modules/misc/audioscrobbler.c:793
+#: modules/misc/audioscrobbler.c:814
 msgid "last.fm: Authentication failed"
 msgstr "last.fm: 인증 실패"
 
-#: modules/misc/audioscrobbler.c:794
+#: modules/misc/audioscrobbler.c:815
 msgid ""
 "last.fm username or password is incorrect. Please verify your settings and "
 "relaunch VLC."
