@@ -801,7 +801,6 @@ static int DvdReadSetArea( demux_t *p_demux, int i_title, int i_chapter,
         /* Title position inside the selected vts */
         p_sys->i_ttn = p_vmg->tt_srpt->title[i_title].vts_ttn;
 
-        msg_Dbg( p_demux, "%i", p_sys->i_ttn );
         if( p_sys->i_ttn < 1 )
             return VLC_EGENERIC; /* Couldn't set title */
 
