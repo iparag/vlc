@@ -16632,7 +16632,7 @@ msgstr "Copyright ©"
 
 #: modules/gui/qt4/dialogs/help.cpp:129
 msgid " by the VideoLAN Team.\n"
-msgstr "par l'équipe VideoLAN.\n"
+msgstr " par l'équipe VideoLAN.\n"
 
 #: modules/gui/qt4/dialogs/help.cpp:150
 msgid ""
