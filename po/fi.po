@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.86\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-03 20:11+0200\n"
+"POT-Creation-Date: 2008-09-03 22:59+0100\n"
 "PO-Revision-Date: 2008-09-02 07:52+0200\n"
 "Last-Translator: Otto Kekäläinen <otto@sange.fi>\n"
 "Language-Team: Finnish <fi@li.org>\n"
@@ -96,7 +96,7 @@ msgid "General audio settings"
 msgstr "Yleiset ääniasetukset"
 
 #: include/vlc_config_cat.h:60 include/vlc_config_cat.h:85
-#: src/video_output/video_output.c:422
+#: src/video_output/video_output.c:427
 msgid "Filters"
 msgstr "Suodattimet"
 
@@ -730,7 +730,7 @@ msgstr "Suodattimia ei voi tuota enempää (%d) lisätä."
 
 #: src/audio_output/input.c:98 src/audio_output/input.c:144
 #: src/input/es_out.c:459 src/libvlc-module.c:562
-#: src/video_output/video_output.c:399 modules/video_filter/postproc.c:222
+#: src/video_output/video_output.c:404 modules/video_filter/postproc.c:222
 msgid "Disable"
 msgstr "Poista käytöstä"
 
@@ -4957,28 +4957,28 @@ msgstr "zhuang"
 msgid "Zulu"
 msgstr "zulu"
 
-#: src/video_output/video_output.c:397 modules/gui/macosx/intf.m:581
+#: src/video_output/video_output.c:402 modules/gui/macosx/intf.m:581
 #: modules/gui/macosx/intf.m:582 modules/video_filter/deinterlace.c:127
 msgid "Deinterlace"
 msgstr "Lomituksenpoisto"
 
-#: src/video_output/video_output.c:401 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:406 modules/video_filter/deinterlace.c:123
 msgid "Discard"
 msgstr "Hylkää"
 
-#: src/video_output/video_output.c:403 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:408 modules/video_filter/deinterlace.c:123
 msgid "Blend"
 msgstr "Sekoita"
 
-#: src/video_output/video_output.c:405 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:410 modules/video_filter/deinterlace.c:123
 msgid "Mean"
 msgstr "Keskiarvo"
 
-#: src/video_output/video_output.c:407 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:412 modules/video_filter/deinterlace.c:123
 msgid "Bob"
 msgstr ""
 
-#: src/video_output/video_output.c:409 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:414 modules/video_filter/deinterlace.c:123
 msgid "Linear"
 msgstr "Lineaarinen"
 
@@ -12492,7 +12492,7 @@ msgstr "Avataanko alikansioidenkin tiedostot?"
 
 #: modules/gui/beos/InterfaceWindow.cpp:161 modules/gui/macosx/open.m:500
 #: modules/gui/macosx/open.m:691 modules/gui/macosx/open.m:804
-#: modules/gui/macosx/open.m:1028 modules/gui/qt4/dialogs/open.cpp:78
+#: modules/gui/macosx/open.m:1028 modules/gui/qt4/dialogs/open.cpp:82
 #: modules/gui/qt4/menus.cpp:676
 msgid "Open"
 msgstr "Avaa"
@@ -16259,7 +16259,7 @@ msgstr "Käytä"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:806
 #: modules/gui/qt4/dialogs/gototime.cpp:52
-#: modules/gui/qt4/dialogs/help.cpp:211 modules/gui/qt4/dialogs/open.cpp:105
+#: modules/gui/qt4/dialogs/help.cpp:211 modules/gui/qt4/dialogs/open.cpp:109
 #: modules/gui/qt4/dialogs/podcast_configuration.cpp:39
 #: modules/gui/qt4/dialogs/preferences.cpp:87
 #: modules/gui/qt4/dialogs/sout.cpp:199
@@ -16537,45 +16537,45 @@ msgstr ""
 "En voi kirjoittaa tiedostoon %1:\n"
 "%2."
 
-#: modules/gui/qt4/dialogs/open.cpp:89
+#: modules/gui/qt4/dialogs/open.cpp:93
 msgid "&File"
 msgstr "&Tiedosto"
 
-#: modules/gui/qt4/dialogs/open.cpp:90
+#: modules/gui/qt4/dialogs/open.cpp:94
 msgid "&Disc"
 msgstr "&Levy"
 
-#: modules/gui/qt4/dialogs/open.cpp:91
+#: modules/gui/qt4/dialogs/open.cpp:95
 msgid "&Network"
 msgstr "&Verkko"
 
-#: modules/gui/qt4/dialogs/open.cpp:93
+#: modules/gui/qt4/dialogs/open.cpp:97
 msgid "Capture &Device"
 msgstr "Kaappaa &laite"
 
-#: modules/gui/qt4/dialogs/open.cpp:108
+#: modules/gui/qt4/dialogs/open.cpp:112
 #, fuzzy
 msgid "&Select"
 msgstr "Valitse"
 
-#: modules/gui/qt4/dialogs/open.cpp:112 modules/gui/qt4/dialogs/open.cpp:197
+#: modules/gui/qt4/dialogs/open.cpp:116 modules/gui/qt4/dialogs/open.cpp:201
 msgid "&Enqueue"
 msgstr "&Lisää jonoon"
 
-#: modules/gui/qt4/dialogs/open.cpp:114 modules/gui/qt4/dialogs/open.cpp:201
+#: modules/gui/qt4/dialogs/open.cpp:118 modules/gui/qt4/dialogs/open.cpp:205
 msgid "&Play"
 msgstr "&Toista"
 
-#: modules/gui/qt4/dialogs/open.cpp:116 modules/gui/qt4/dialogs/open.cpp:191
+#: modules/gui/qt4/dialogs/open.cpp:120 modules/gui/qt4/dialogs/open.cpp:195
 #: modules/gui/qt4/dialogs/sout.cpp:198
 msgid "&Stream"
 msgstr "&Suoratoista"
 
-#: modules/gui/qt4/dialogs/open.cpp:118
+#: modules/gui/qt4/dialogs/open.cpp:122
 msgid "&Convert"
 msgstr "&Muunna"
 
-#: modules/gui/qt4/dialogs/open.cpp:194
+#: modules/gui/qt4/dialogs/open.cpp:198
 msgid "&Convert / Save"
 msgstr "&Muunna / tallenna"
 
@@ -16771,7 +16771,6 @@ msgid "&Video"
 msgstr "&Video"
 
 #: modules/gui/qt4/menus.cpp:270
-#, fuzzy
 msgid "P&layback"
 msgstr "Toisto"
 
