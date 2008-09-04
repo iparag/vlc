@@ -122,7 +122,7 @@ void InputManager::delInput()
         emit positionUpdated( -1.0, 0 ,0 );
         emit statusChanged( END_S );
         emit nameChanged( "" );
-        emit artChanged( "" );
+        emit artChanged( NULL );
         emit rateChanged( INPUT_RATE_DEFAULT );
         emit voutChanged( false );
         vlc_object_release( p_input );
@@ -383,18 +383,7 @@ void InputManager::UpdateVout()
 void InputManager::UpdateArt()
 {
     /* Update Art meta */
-    QString url;
-    char *psz_art = input_item_GetArtURL( input_GetItem( p_input ) );
-    url.sprintf("%s", psz_art );
-    free( psz_art );
-    if( artUrl != url )
-    {
-        artUrl = url.replace( "file://",QString("" ) );
-        /* Taglib seems to define a attachment://, It won't work yet */
-        artUrl = url.replace( "attachment://",QString("" ) );
-        emit artChanged( artUrl );
-        msg_Dbg( p_intf, "Art:  %s", qtu( artUrl ) );
-    }
+    emit artChanged( input_GetItem( p_input ) );
 }
 
 /* User update of the slider */

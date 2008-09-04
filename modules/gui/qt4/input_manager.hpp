@@ -124,7 +124,7 @@ signals:
     void navigationChanged( int );
     /// Play/pause status
     void statusChanged( int );
-    void artChanged( QString );
+    void artChanged( input_item_t* );
     /// Teletext
     void teletextEnabled( bool );
     void toggleTelexButtons();
