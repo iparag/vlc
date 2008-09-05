@@ -124,6 +124,7 @@ SoundSlider::SoundSlider( QWidget *_parent, int _i_step, bool b_hard,
     setRange( SOUNDMIN, b_hard ? (2 * SOUNDMAX) : SOUNDMAX  );
     setMouseTracking( true );
     b_sliding = false;
+    b_outside = false;
 
     pixOutside = QPixmap( ":/volslide-outside" );
 
