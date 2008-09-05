@@ -249,6 +249,15 @@ MainInterface::~MainInterface()
 {
     msg_Dbg( p_intf, "Destroying the main interface" );
 
+    /* Saving volume */
+    if( config_GetInt( p_intf, "qt-autosave-volume" ) )
+    {
+        audio_volume_t i_volume;
+        aout_VolumeGet( p_intf, &i_volume );
+        config_PutInt( p_intf, "volume", i_volume );
+        config_SaveConfigFile( p_intf, NULL );
+    }
+
     if( playlistWidget )
     {
         if( !isDocked() )
