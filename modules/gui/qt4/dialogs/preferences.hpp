@@ -57,6 +57,8 @@ public:
     void showModulePrefs( char* );
 #endif
 
+protected:
+    virtual void closeEvent( QCloseEvent *e ){ instance = NULL; close(); }
 private:
     PrefsDialog( QWidget *, intf_thread_t * );
     QGridLayout *main_layout;
