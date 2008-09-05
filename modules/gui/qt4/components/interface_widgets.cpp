@@ -671,6 +671,9 @@ ControlsWidget::ControlsWidget( intf_thread_t *_p_i,
     /*
      * Other first Line buttons
      */
+    /* */
+    CONNECT( THEMIM->getIM(), voutChanged(bool), this, enableVideo(bool) );
+
     /** Fullscreen/Visualisation **/
     fullscreenButton = new QPushButton;
     BUTTON_SET_ACT_I( fullscreenButton, "", fullscreen,
@@ -909,7 +912,7 @@ void ControlsWidget::updateInput()
 {
     /* Activate the interface buttons according to the presence of the input */
     enableInput( THEMIM->getIM()->hasInput() );
-    enableVideo( THEMIM->getIM()->hasVideo() && THEMIM->getIM()->hasInput() );
+    enableVideo( THEMIM->getIM()->hasVideo() );
 }
 
 void ControlsWidget::setStatus( int status )
@@ -992,7 +995,6 @@ void ControlsWidget::toggleAdvanced()
     }
     emit advancedControlsToggled( b_advancedVisible );
 }
-
 
 /**********************************************************************
  * Fullscrenn control widget
