@@ -3377,9 +3377,8 @@ static void PMTCallBack( demux_t *p_demux, dvbpsi_pmt_t *p_pmt )
                         for( n = 0; n < sub->i_pages_number; n++ )
                         {
                             dvbpsi_teletextpage_t *p_page = &sub->p_pages[n];
-                            if( p_page->i_teletext_type == 0x1 ||
-                                p_page->i_teletext_type == 0x2 ||
-                                p_page->i_teletext_type == 0x5 )
+                            if( p_page->i_teletext_type > 0x0 &&
+                                p_page->i_teletext_type < 0x6 )
                             {
                                 ts_es_t *p_es;
 
@@ -3419,9 +3418,9 @@ static void PMTCallBack( demux_t *p_demux, dvbpsi_pmt_t *p_pmt )
                                 {
                                 case 0x1:
                                     p_es->fmt.psz_description =
-                                        strdup(_("Teletext initial page"));
+                                        strdup(_("Teletext"));
                                     msg_Dbg( p_demux,
-                                             "    * sub lan=%s page=%d%x",
+                                             "    * ttxt lan=%s page=%d%02x",
                                              p_es->fmt.psz_language,
                                              p_page->i_teletext_magazine_number,
                                              p_page->i_teletext_page_number );
@@ -3431,7 +3430,27 @@ static void PMTCallBack( demux_t *p_demux, dvbpsi_pmt_t *p_pmt )
                                     p_es->fmt.psz_description =
                                         strdup(_("Teletext subtitles"));
                                     msg_Dbg( p_demux,
-                                             "    * sub lan=%s page=%d%x",
+                                             "    * sub lan=%s page=%d%02x",
+                                             p_es->fmt.psz_language,
+                                             p_page->i_teletext_magazine_number,
+                                             p_page->i_teletext_page_number );
+                                    break;
+
+                                case 0x3:
+                                    p_es->fmt.psz_description =
+                                        strdup(_("Teletext additional information"));
+                                    msg_Dbg( p_demux,
+                                             "    * info lan=%s page=%d%02x",
+                                             p_es->fmt.psz_language,
+                                             p_page->i_teletext_magazine_number,
+                                             p_page->i_teletext_page_number );
+                                    break;
+
+                                case 0x4:
+                                    p_es->fmt.psz_description =
+                                        strdup(_("Teletext programme schedule"));
+                                    msg_Dbg( p_demux,
+                                             "    * sched lan=%s page=%d%02x",
                                              p_es->fmt.psz_language,
                                              p_page->i_teletext_magazine_number,
                                              p_page->i_teletext_page_number );
@@ -3441,7 +3460,7 @@ static void PMTCallBack( demux_t *p_demux, dvbpsi_pmt_t *p_pmt )
                                     p_es->fmt.psz_description =
                                         strdup(_("Teletext hearing impaired subtitles"));
                                     msg_Dbg( p_demux,
-                                             "    * hearing impaired lan=%s page=%d%x",
+                                             "    * hearing impaired lan=%s page=%d%02x",
                                              p_es->fmt.psz_language,
                                              p_page->i_teletext_magazine_number,
                                              p_page->i_teletext_page_number );
