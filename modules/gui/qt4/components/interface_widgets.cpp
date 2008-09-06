@@ -965,7 +965,7 @@ void ControlsWidget::enableInput( bool enable )
 {
     slowerButton->setEnabled( enable );
     slider->setEnabled( enable );
-    slider->setSliderPosition ( 0 );
+    if( !enable ) slider->setSliderPosition ( -1 );
     fasterButton->setEnabled( enable );
 
     /* Advanced Buttons too */

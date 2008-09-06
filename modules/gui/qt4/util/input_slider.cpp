@@ -56,7 +56,10 @@ InputSlider::InputSlider( Qt::Orientation q,QWidget *_parent ) :
 void InputSlider::setPosition( float pos, int a, int b )
 {
     if( pos == -1.0 )
+    {
         setEnabled( false );
+        b_sliding = false;
+    }
     else
         setEnabled( true );
 
