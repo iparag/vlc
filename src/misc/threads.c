@@ -250,7 +250,7 @@ int vlc_mutex_init( vlc_mutex_t *p_mutex )
     return 0;
 
 #elif defined( WIN32 )
-    *p_mutex = CreateMutex( 0, FALSE, 0 );
+    *p_mutex = CreateMutex( NULL, FALSE, NULL );
     return (*p_mutex != NULL) ? 0 : ENOMEM;
 
 #elif defined( HAVE_KERNEL_SCHEDULER_H )
