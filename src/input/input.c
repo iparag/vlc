@@ -494,8 +494,6 @@ static void* Run( vlc_object_t *p_this )
     if( Init( p_input ) )
     {
         /* If we failed, wait before we are killed, and exit */
-        p_input->b_error = true;
-
         WaitDie( p_input );
 
         /* Tell we're dead */
@@ -520,7 +518,6 @@ static void* Run( vlc_object_t *p_this )
         }
 
         /* We have finished */
-        p_input->b_eof = true;
         input_ChangeState( p_input, END_S );
     }
 
@@ -566,7 +563,7 @@ static void* RunAndDestroy( vlc_object_t *p_this )
         }
 
         /* We have finished */
-        p_input->b_eof = true;
+        input_ChangeState( p_input, END_S );
     }
 
     /* Clean up */
@@ -680,7 +677,7 @@ static void MainLoop( input_thread_t *p_input )
             }
             else if( i_ret < 0 )
             {
-                p_input->b_error = true;
+                input_ChangeState( p_input, ERROR_S );
             }
 
             if( i_ret > 0 && p_input->p->i_slave > 0 )
