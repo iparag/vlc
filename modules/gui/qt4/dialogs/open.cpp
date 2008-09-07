@@ -364,7 +364,7 @@ void OpenDialog::stream( bool b_transcode_only )
         for( int i = 1; i < listMRL.size(); i++ )
         {
             if( listMRL[i].at( 0 ) == ':' )
-                soutMRL.append( listMRL[i] );
+                soutMRL.append( " " + listMRL[i] );
             else
                 break;
         }
