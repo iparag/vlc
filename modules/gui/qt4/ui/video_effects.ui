@@ -10,9 +10,17 @@
    </rect>
   </property>
   <property name="currentIndex" >
-   <number>0</number>
+   <number>7</number>
   </property>
   <widget class="QWidget" name="tab" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>468</width>
+     <height>262</height>
+    </rect>
+   </property>
    <attribute name="title" >
     <string>_("Basic")</string>
    </attribute>
@@ -225,6 +233,14 @@
    </layout>
   </widget>
   <widget class="QWidget" name="tab_2" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
    <attribute name="title" >
     <string>_("Color fun")</string>
    </attribute>
@@ -325,6 +341,14 @@
    </layout>
   </widget>
   <widget class="QWidget" name="tab_3" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
    <attribute name="title" >
     <string>_("Crop")</string>
    </attribute>
@@ -419,7 +443,7 @@
       <property name="sizeType" >
        <enum>QSizePolicy::Expanding</enum>
       </property>
-      <property name="sizeHint" >
+      <property name="sizeHint" stdset="0" >
        <size>
         <width>20</width>
         <height>40</height>
@@ -430,6 +454,14 @@
    </layout>
   </widget>
   <widget class="QWidget" name="tab_5" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
    <attribute name="title" >
     <string>_("Geometry")</string>
    </attribute>
@@ -535,6 +567,14 @@
    </layout>
   </widget>
   <widget class="QWidget" name="tab_7" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
    <attribute name="title" >
     <string>_("Image modification")</string>
    </attribute>
@@ -660,6 +700,14 @@
    </layout>
   </widget>
   <widget class="QWidget" name="tab_9" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
    <attribute name="title" >
     <string>_("Vout/Overlay")</string>
    </attribute>
@@ -832,6 +880,14 @@
    </layout>
   </widget>
   <widget class="QWidget" name="tab_8" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
    <attribute name="title" >
     <string>_("Logo")</string>
    </attribute>
@@ -952,6 +1008,14 @@
    </layout>
   </widget>
   <widget class="QWidget" name="tab_6" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>468</width>
+     <height>262</height>
+    </rect>
+   </property>
    <attribute name="title" >
     <string>_("Advanced video filter controls")</string>
    </attribute>
@@ -980,20 +1044,6 @@
      <widget class="QLabel" name="label_32" >
       <property name="text" >
        <string>_("Vout filters")</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="0" colspan="2" >
-     <widget class="QPushButton" name="filtersResetButton" >
-      <property name="text" >
-       <string>_("Reset")</string>
-      </property>
-     </widget>
-    </item>
-    <item row="3" column="2" >
-     <widget class="QPushButton" name="filtersUpdateButton" >
-      <property name="text" >
-       <string>_("Update")</string>
       </property>
      </widget>
     </item>
