@@ -1091,7 +1091,8 @@ void MainInterface::dropEvent(QDropEvent *event)
         if( THEMIM->getIM()->hasInput() )
         {
             if( input_AddSubtitles( THEMIM->getInput(),
-                                    qtu( mimeData->urls()[0].toString() ),
+                                    qtu( toNativeSeparators(
+                                         mimeData->urls()[0].toLocalFile() ) ),
                                     true ) )
             {
                 event->acceptProposedAction();
@@ -1102,7 +1103,8 @@ void MainInterface::dropEvent(QDropEvent *event)
      bool first = true;
      foreach( QUrl url, mimeData->urls() )
      {
-        QString s = url.toLocalFile();
+        QString s = toNativeSeparators( url.toLocalFile() );
+
         if( s.length() > 0 ) {
             playlist_Add( THEPL, qtu(s), NULL,
                           PLAYLIST_APPEND | (first ? PLAYLIST_GO:0),
