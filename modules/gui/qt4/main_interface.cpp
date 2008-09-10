@@ -1240,5 +1240,5 @@ static int IntfShowCB( vlc_object_t *p_this, const char *psz_variable,
     p_intf->p_sys->p_mi->toggleFSC();
 
     /* Show event */
-     return VLC_SUCCESS;
+    return VLC_SUCCESS;
 }
