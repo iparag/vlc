@@ -1027,15 +1027,15 @@ void CaptureOpenPanel::updateMRL()
     case JACK_DEVICE:
         mrl = "jack://";
         mrl += "channels=" + QString("%1").arg( jackChannels->value() );
-        mrl += ":ports=" + jackPortsSelected->text();
-        mrl += " --jack-input-caching=" + QString("%1").arg( jackCaching->value() );
+        mrl += " :ports=" + jackPortsSelected->text();
+        mrl += " :jack-input-caching=" + QString("%1").arg( jackCaching->value() );
         if ( jackPace->isChecked() )
         {
-                mrl += " --jack-input-use-vlc-pace";
+                mrl += " :jack-input-use-vlc-pace";
         }
         if ( jackConnect->isChecked() )
         {
-                mrl += " --jack-input-auto-connect";
+                mrl += " :jack-input-auto-connect";
         }
         break;
     case PVR_DEVICE:
