@@ -41,21 +41,6 @@
 
 @implementation VLCEmbeddedWindow
 
-- (id)initWithContentRect:(NSRect)contentRect styleMask:(unsigned int)windowStyle backing:(NSBackingStoreType)bufferingType defer:(BOOL)deferCreation
-{
-    if(MACOS_VERSION < 10.5f)
-        return [super initWithContentRect:contentRect styleMask:windowStyle backing:bufferingType defer:deferCreation];
-
-#ifdef __ppc__
-    return [super initWithContentRect:contentRect styleMask:windowStyle backing:bufferingType defer:deferCreation];
-#endif
-
-    windowStyle ^= NSTexturedBackgroundWindowMask;
-    self = [super initWithContentRect:contentRect styleMask:windowStyle backing:bufferingType defer:deferCreation];
-    [self setContentBorderThickness:32.0 forEdge:NSMinYEdge];
-    return self;
-}
-
 - (void)awakeFromNib
 {
     [self setDelegate: self];
