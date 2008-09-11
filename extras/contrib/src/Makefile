@@ -1744,6 +1744,9 @@ zvbi-$(ZVBI_VERSION).tar.bz2:
 
 zvbi: zvbi-$(ZVBI_VERSION).tar.bz2
 	$(EXTRACT_BZ2)
+ifdef HAVE_WIN32
+	(cd $@; patch -p1 < ../Patches/zvbi-win32.patch; autoreconf)
+endif
 
 ifdef HAVE_WIN32
 .zvbi: zvbi .pthreads
@@ -1753,7 +1756,7 @@ endif
 ifdef HAVE_DARWIN_OS
 	(cd $<; ./configure $(HOSTCONF) --prefix=$(PREFIX) CFLAGS="$(CFLAGS) -fnested-functions" && make && make install)
 else
-	(cd $<; ./configure $(HOSTCONF) --prefix=$(PREFIX) CFLAGS="$(CFLAGS)" && make && make install)
+	(cd $<; ./configure $(HOSTCONF) --prefix=$(PREFIX) CFLAGS="$(CFLAGS)" && make -C src && make -C src install)
 endif
 	$(INSTALL_NAME)
 	touch $@
