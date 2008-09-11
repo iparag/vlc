@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-11 17:25+0200\n"
-"PO-Revision-Date: 2008-08-30 20:20+0100\n"
+"POT-Creation-Date: 2008-09-11 23:33+0100\n"
+"PO-Revision-Date: 2008-09-11 20:22+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
 "Language-Team: Italian <kde-i18n-it@mail.kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -521,7 +521,7 @@ msgstr "&Informazioni media..."
 
 #: include/vlc_intf_strings.h:43
 msgid "&Codec Information..."
-msgstr "Informazioni &codec..."
+msgstr "Informazioni &codificatore..."
 
 #: include/vlc_intf_strings.h:44
 msgid "&Messages..."
@@ -983,11 +983,11 @@ msgstr "Trasmissione / Transcodifica non riuscita"
 
 #: src/input/decoder.c:168
 msgid "VLC could not open the packetizer module."
-msgstr ""
+msgstr "VLC non è in grado di aprire il modulo del pacchettizzatore."
 
 #: src/input/decoder.c:181 src/input/decoder.c:383
 msgid "VLC could not open the decoder module."
-msgstr ""
+msgstr "VLC non è in grado di aprire il modulo di decodifica."
 
 #: src/input/es_out.c:480 src/input/es_out.c:485 src/libvlc-module.c:319
 #: modules/access/cdda/info.c:392 modules/access/vcdx/access.c:477
@@ -1111,6 +1111,8 @@ msgstr "VLC non può riconoscere il formato d'ingresso"
 #, c-format
 msgid "The format of '%s' cannot be detected. Have a look the log for details."
 msgstr ""
+"Il formato di '%s' non può essere rilevato. Dai un'occhiata al registro per "
+"i dettagli."
 
 #: src/input/meta.c:52 src/input/var.c:171
 #: modules/gui/beos/MediaControlView.cpp:1237 modules/gui/macosx/intf.m:545
@@ -1574,7 +1576,6 @@ msgid "Interface interaction"
 msgstr "Interazione con l'interfaccia"
 
 #: src/libvlc-module.c:200
-#, fuzzy
 msgid ""
 "When this is enabled, the interface will show a dialog box each time some "
 "user input is required."
@@ -2061,7 +2062,6 @@ msgid "Show the video title for n miliseconds, default is 5000 ms (5 sec.)"
 msgstr ""
 
 #: src/libvlc-module.c:412
-#, fuzzy
 msgid "Position of video title"
 msgstr "Posizione del titolo del video"
 
@@ -4268,7 +4268,7 @@ msgstr "Elimina Errori Successivi"
 
 #: src/libvlc-module.c:1360
 msgid "Highlight widget on the right"
-msgstr ""
+msgstr "Evidenzia oggetto a destra"
 
 #: src/libvlc-module.c:1362
 msgid "Move OSD menu highlight to the widget on the right"
@@ -4276,7 +4276,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1363
 msgid "Highlight widget on the left"
-msgstr ""
+msgstr "Evidenzia oggetto a sinistra"
 
 #: src/libvlc-module.c:1365
 msgid "Move OSD menu highlight to the widget on the left"
@@ -4284,7 +4284,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1366
 msgid "Highlight widget on top"
-msgstr ""
+msgstr "Evidenzia oggetto in alto"
 
 #: src/libvlc-module.c:1368
 msgid "Move OSD menu highlight to the widget on top"
@@ -4292,7 +4292,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1369
 msgid "Highlight widget below"
-msgstr ""
+msgstr "Evidenzia oggetto in basso"
 
 #: src/libvlc-module.c:1371
 msgid "Move OSD menu highlight to the widget below"
@@ -4552,6 +4552,8 @@ msgid ""
 "Running vlc with the default interface. Use 'cvlc' to use vlc without "
 "interface."
 msgstr ""
+"Esecuzione di vlc con l'interfaccia predefinita. Utilizza 'cvlc' per avviare "
+"vlc senza interfaccia."
 
 #: src/libvlc.c:1278
 msgid "To get exhaustive help, use '-H'."
@@ -5573,7 +5575,7 @@ msgstr "Longitudine del satellite"
 
 #: modules/access/bda/bda.c:163
 msgid "Satellite Longitude in 10ths of degree, -ve=West"
-msgstr ""
+msgstr "Longitudine del satellite in decimi di grado, -ve=Ovest"
 
 #: modules/access/bda/bda.c:164
 msgid "Satellite Polarisation"
@@ -13577,9 +13579,8 @@ msgid ""
 msgstr ""
 
 #: modules/gui/macosx/fspanel.m:406
-#, fuzzy
 msgid "(no item is being played)"
-msgstr "%i elementi nella playlist"
+msgstr "(nessun elemento è in riproduzione)"
 
 #: modules/gui/macosx/interaction.m:131
 msgid "Login:"
@@ -13612,12 +13613,11 @@ msgstr ""
 
 #: modules/gui/macosx/intf.m:452
 msgid "VLC media player requires Mac OS X 10.4 or higher."
-msgstr ""
+msgstr "Il lettore multimediale VLC richiede Mac OS X 10.4 o superiore."
 
 #: modules/gui/macosx/intf.m:498
-#, fuzzy
 msgid "Open CrashLog..."
-msgstr "Apri Rapporto d'Errore"
+msgstr "Apri registro d'errore..."
 
 #: modules/gui/macosx/intf.m:503
 msgid "Check for Update..."
@@ -13668,9 +13668,8 @@ msgid "Open Network..."
 msgstr "Apri rete..."
 
 #: modules/gui/macosx/intf.m:518
-#, fuzzy
 msgid "Open Capture Device..."
-msgstr "Apri periferi&ca di acquisizione..."
+msgstr "Apri dispositivo di acquisizione..."
 
 #: modules/gui/macosx/intf.m:519
 msgid "Open Recent"
@@ -13770,9 +13769,8 @@ msgid "Help"
 msgstr "Aiuto"
 
 #: modules/gui/macosx/intf.m:601
-#, fuzzy
 msgid "VLC media player Help..."
-msgstr "Lettore multimediale VLC"
+msgstr "Guida del lettore multimediale VLC..."
 
 #: modules/gui/macosx/intf.m:602
 msgid "ReadMe / FAQ..."
@@ -14145,9 +14143,8 @@ msgid ""
 msgstr ""
 
 #: modules/gui/macosx/open.m:974
-#, fuzzy
 msgid "Composite input"
-msgstr "Scegli ingresso"
+msgstr "Ingresso composito"
 
 #: modules/gui/macosx/open.m:977
 msgid "S-Video input"
@@ -14306,9 +14303,8 @@ msgstr "Cartella vuota"
 
 #: modules/gui/macosx/playlistinfo.m:70
 #: modules/gui/qt4/dialogs/mediainfo.cpp:55
-#, fuzzy
 msgid "Media Information"
-msgstr "Metainformazioni"
+msgstr "Informazioni media"
 
 #: modules/gui/macosx/playlistinfo.m:71
 msgid "Location"
@@ -15571,9 +15567,8 @@ msgid "     <space>     Pause/Play"
 msgstr "     <spazio>     Pausa/Riproduci"
 
 #: modules/gui/ncurses.c:1679
-#, fuzzy
 msgid "     f           Toggle Fullscreen"
-msgstr "| f [on|off] . . . . . . . . . . commuta la modalità schermo intero"
+msgstr "     f          Commuta la modalità schermo intero"
 
 #: modules/gui/ncurses.c:1680
 msgid "     n, p        Next/Previous playlist item"
@@ -15610,9 +15605,8 @@ msgid "[Playlist]"
 msgstr "[Playlist]"
 
 #: modules/gui/ncurses.c:1694
-#, fuzzy
 msgid "     r           Toggle Random playing"
-msgstr "| f  . . . . . . . . . . . . . . . . . . . . . . . schermo intero"
+msgstr "     r           Commuta la riproduzione casuale"
 
 #: modules/gui/ncurses.c:1695
 msgid "     l           Toggle Loop Playlist"
@@ -16349,9 +16343,8 @@ msgid "Transparent"
 msgstr "Trasparente"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:894
-#, fuzzy
 msgid "Unmute"
-msgstr "Silenzio"
+msgstr "Rimuovi silenzio"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:934
 msgid "Pause the playback"
@@ -16704,7 +16697,7 @@ msgstr "Ringraziamenti"
 
 #: modules/gui/qt4/dialogs/help.cpp:206
 msgid "VLC media player updates"
-msgstr "Aggiornamenti di VLC media player"
+msgstr "Aggiornamenti del lettore multimediale VLC"
 
 #: modules/gui/qt4/dialogs/help.cpp:211
 msgid "&Recheck version"
@@ -16744,7 +16737,7 @@ msgstr ") è disponibile."
 
 #: modules/gui/qt4/dialogs/help.cpp:334
 msgid "You have the latest version of VLC media player."
-msgstr "Stai utilizzando l'ultima versione di VLC media player."
+msgstr "Stai utilizzando l'ultima versione del lettore multimediale VLC."
 
 #: modules/gui/qt4/dialogs/help.cpp:338
 msgid "An error occurred while checking for updates..."
@@ -17248,122 +17241,122 @@ msgstr "Apri ca&rtella..."
 msgid "Open D&irectory..."
 msgstr "Apr&i cartella..."
 
-#: modules/gui/qt4/qt4.cpp:66
+#: modules/gui/qt4/qt4.cpp:71
 msgid "Show advanced preferences over simple ones"
 msgstr "Mostra opzioni avanzate al posto di quelle semplici"
 
-#: modules/gui/qt4/qt4.cpp:67
+#: modules/gui/qt4/qt4.cpp:72
 msgid ""
 "Show advanced preferences and not simple preferences when opening the "
 "preferences dialog."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:71 modules/gui/skins2/src/skin_main.cpp:437
+#: modules/gui/qt4/qt4.cpp:76 modules/gui/skins2/src/skin_main.cpp:437
 msgid "Systray icon"
 msgstr "Icona nel systray"
 
-#: modules/gui/qt4/qt4.cpp:72
+#: modules/gui/qt4/qt4.cpp:77
 msgid ""
 "Show an icon in the systray allowing you to control VLC media player for "
 "basic actions."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:76
+#: modules/gui/qt4/qt4.cpp:81
 msgid "Start VLC with only a systray icon"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:77
+#: modules/gui/qt4/qt4.cpp:82
 msgid "VLC will start with just an icon in your taskbar"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:80
+#: modules/gui/qt4/qt4.cpp:85
 msgid "Show playing item name in window title"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:81
+#: modules/gui/qt4/qt4.cpp:86
 msgid "Show the name of the song or video in the controler window title."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:84
+#: modules/gui/qt4/qt4.cpp:89
 #, fuzzy
 msgid "Path to use in openfile dialog"
 msgstr "percorso del file ui.rc"
 
-#: modules/gui/qt4/qt4.cpp:86
+#: modules/gui/qt4/qt4.cpp:91
 msgid "Show notification popup on track change"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:88
+#: modules/gui/qt4/qt4.cpp:93
 msgid ""
 "Show a notification popup with the artist and track name when the current "
 "playlist item changes, when VLC is minimized or hidden."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:91
+#: modules/gui/qt4/qt4.cpp:96
 msgid "Advanced options"
 msgstr "Opzioni avanzate"
 
-#: modules/gui/qt4/qt4.cpp:92
+#: modules/gui/qt4/qt4.cpp:97
 msgid "Show all the advanced options in the dialogs."
 msgstr "Mostra tutte le opzioni avanzate nelle finestre."
 
-#: modules/gui/qt4/qt4.cpp:95
+#: modules/gui/qt4/qt4.cpp:100
 msgid "Windows opacity between 0.1 and 1."
 msgstr "Opacità delle finestre compresa tra 0.1 e1."
 
-#: modules/gui/qt4/qt4.cpp:96
+#: modules/gui/qt4/qt4.cpp:101
 msgid ""
 "Sets the windows opacity between 0.1 and 1 for main interface, playlist and "
 "extended panel. This option only works with Windows and X11 with composite "
 "extensions."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:101
+#: modules/gui/qt4/qt4.cpp:106
 #, fuzzy
 msgid "Show unimportant error and warnings dialogs"
 msgstr "Mostra gli errori e gli avvisi"
 
-#: modules/gui/qt4/qt4.cpp:103
+#: modules/gui/qt4/qt4.cpp:108
 msgid "Activate the updates availability notification"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:104
+#: modules/gui/qt4/qt4.cpp:109
 msgid ""
 "Activate the automatic notification of new versions of the software. It runs "
 "once every two weeks."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:107
+#: modules/gui/qt4/qt4.cpp:112
 msgid "Number of days between two update checks"
 msgstr "Numero di giorni tra i controlli degli aggiornamenti"
 
-#: modules/gui/qt4/qt4.cpp:109
+#: modules/gui/qt4/qt4.cpp:114
 msgid "Allow the volume to be set to 400%"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:110
+#: modules/gui/qt4/qt4.cpp:115
 msgid ""
 "Allow the volume to have range from 0% to 400%, instead of 0% to 200%. This "
 "option can distort the audio, since it uses software amplification."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:115
+#: modules/gui/qt4/qt4.cpp:120
 msgid "Automatically save the volume on exit"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:117
+#: modules/gui/qt4/qt4.cpp:122
 msgid "Use non native buttons and volume slider"
 msgstr "Utilizza pulsanti e cursore del volume non nativi"
 
-#: modules/gui/qt4/qt4.cpp:119
+#: modules/gui/qt4/qt4.cpp:124
 msgid "Ask for network policy at start"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:121
+#: modules/gui/qt4/qt4.cpp:126
 msgid "Define the colors of the volume slider "
 msgstr "Definisci i colori del cursore del volume"
 
-#: modules/gui/qt4/qt4.cpp:122
+#: modules/gui/qt4/qt4.cpp:127
 msgid ""
 "Define the colors of the volume slider\n"
 "By specifying the 12 numbers separated by a ';'\n"
@@ -17371,11 +17364,11 @@ msgid ""
 "An alternative can be '30;30;50;40;40;100;50;50;160;150;150;255' "
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:127
+#: modules/gui/qt4/qt4.cpp:132
 msgid "Selection of the starting mode and look "
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:128
+#: modules/gui/qt4/qt4.cpp:133
 msgid ""
 "Start VLC with:\n"
 " - normal mode\n"
@@ -17383,24 +17376,24 @@ msgid ""
 " - minimal mode with limited controls"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:134
+#: modules/gui/qt4/qt4.cpp:139
 msgid "Classic look"
 msgstr "Aspetto classico"
 
-#: modules/gui/qt4/qt4.cpp:135
+#: modules/gui/qt4/qt4.cpp:140
 msgid "Complete look with information area"
 msgstr "Aspetto completo con area informativa"
 
-#: modules/gui/qt4/qt4.cpp:136
+#: modules/gui/qt4/qt4.cpp:141
 msgid "Minimal look with no menus"
 msgstr "Aspetto minimale senza menu"
 
-#: modules/gui/qt4/qt4.cpp:138
+#: modules/gui/qt4/qt4.cpp:143
 #, fuzzy
 msgid "Show a controller in fullscreen mode"
 msgstr "scelta dello schermo per il modo a schermo intero."
 
-#: modules/gui/qt4/qt4.cpp:147
+#: modules/gui/qt4/qt4.cpp:152
 msgid "Qt interface"
 msgstr "Interfaccia Qt"
 
@@ -18019,14 +18012,12 @@ msgid "Select Output"
 msgstr "Seleziona uscita"
 
 #: modules/gui/qt4/ui/vlm.ui:120
-#, fuzzy
 msgid "Time Control"
-msgstr "Controllo"
+msgstr "Controllo del tempo"
 
 #: modules/gui/qt4/ui/vlm.ui:127
-#, fuzzy
 msgid "Mux Control"
-msgstr "Controllo"
+msgstr "Controllo mux"
 
 #: modules/gui/qt4/ui/vlm.ui:169
 msgid "Loop"
@@ -18986,9 +18977,8 @@ msgid "XOSD interface"
 msgstr "Interfaccia XOSD"
 
 #: modules/misc/osd/parser.c:60
-#, fuzzy
 msgid "OSD configuration importer"
-msgstr "Nessuna opzione configurazione disponibile."
+msgstr "Importatore configurazione OSD"
 
 #: modules/misc/osd/parser.c:66
 #, fuzzy
@@ -23541,6 +23531,14 @@ msgstr "Filtro visualizzatore"
 msgid "Spectrum analyser"
 msgstr "Analizzatore di spettro"
 
+#~ msgid ""
+#~ "This adds post-processing filters to enhance the picture quality, for "
+#~ "instance deinterlacing, or to clone or distort the video window."
+#~ msgstr ""
+#~ "Aggiungere filtri di post-elaborazione per migliorare la qualità "
+#~ "dell'immagine, per esempio deinterlacciando, clonando o distorcendo la "
+#~ "finestra video."
+
 #~ msgid "Reset"
 #~ msgstr "Ripristina"
 
@@ -23549,14 +23547,6 @@ msgstr "Analizzatore di spettro"
 
 #~ msgid "MusicBrainz meta data"
 #~ msgstr "Metadati MusicBrainz"
-
-#~ msgid ""
-#~ "This adds post-processing filters to enhance the picture quality, for "
-#~ "instance deinterlacing, or to clone or distort the video window."
-#~ msgstr ""
-#~ "Aggiungere filtri di post-elaborazione per migliorare la qualità "
-#~ "dell'immagine, per esempio deinterlacciando, clonando o distorcendo la "
-#~ "finestra video."
 
 #, fuzzy
 #~ msgid "Seam Carving video filter"
