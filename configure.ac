@@ -2262,6 +2262,7 @@ dnl  libdvbpsi ts demux/mux
 dnl
 AC_ARG_ENABLE(dvbpsi,
   [  --enable-dvbpsi         dvbpsi ts mux and demux module (default enabled)])
+have_dvbpsi=no
 if test "${enable_dvbpsi}" != "no"
 then
   AC_ARG_WITH(dvbpsi,
@@ -2277,7 +2278,8 @@ then
           if test "${enable_sout}" != "no"; then
             VLC_ADD_PLUGIN([mux_ts])
           fi
-          VLC_ADD_LIBS([mux_ts ts dvb],[-ldvbpsi]) ],
+          VLC_ADD_LIBS([mux_ts ts dvb],[-ldvbpsi])
+	  have_dvbpsi=yes],
         [  AC_MSG_WARN([cannot find libdvbpsi headers]) ],
         [#if defined( HAVE_STDINT_H )
 #   include <stdint.h>
@@ -2307,6 +2309,7 @@ then
         fi
         VLC_ADD_CPPFLAGS([mux_ts ts dvb],[-I${real_dvbpsi_tree}/src])
         VLC_ADD_LIBS([mux_ts ts dvb],[${real_dvbpsi_tree}/src/.libs/libdvbpsi.a])
+	have_dvbpsi=yes
       else
         dnl  The given libdvbpsi wasn't built
         AC_MSG_RESULT(no)
@@ -2335,7 +2338,7 @@ then
       fi
       VLC_ADD_CPPFLAGS([mux_ts ts dvb],[${CPPFLAGS_test}])
       VLC_ADD_LIBS([mux_ts ts dvb],[${LDFLAGS_test} -ldvbpsi])
-
+      have_dvbpsi=yes
     ],[
       if test -n "${enable_dvbpsi}"
       then
@@ -2624,17 +2627,21 @@ AC_ARG_ENABLE(dvb,
 
 if test "${enable_dvb}" != "no"
 then
-  AC_ARG_WITH(dvb,
-  [    --with-dvb=PATH       path to a dvb- and v4l2-enabled kernel tree],[],[])
-  if test "${with_dvb}" != "no" -a -n "${with_dvb}"
-  then
-    VLC_ADD_CFLAGS([dvb],[-I${with_dvb}/include])
-  fi
-  CPPFLAGS="${CPPFLAGS_save} -I${with_dvb}/include"
-  AC_CHECK_HEADERS(linux/dvb/version.h linux/dvb/frontend.h, [
-  VLC_ADD_PLUGIN([dvb])
-  ],[AC_MSG_WARN(linux-dvb headers not found, dvb disabled)])
-  CPPFLAGS="${CPPFLAGS_save}"
+    AS_IF([test "${have_dvbpsi}" = "yes" ],[  
+    AC_ARG_WITH(dvb,
+     [    --with-dvb=PATH       path to a dvb- and v4l2-enabled kernel tree],[],[])
+     if test "${with_dvb}" != "no" -a -n "${with_dvb}"
+     then
+       VLC_ADD_CFLAGS([dvb],[-I${with_dvb}/include])
+     fi
+     CPPFLAGS="${CPPFLAGS_save} -I${with_dvb}/include"
+     AC_CHECK_HEADERS(linux/dvb/version.h linux/dvb/frontend.h, [
+     VLC_ADD_PLUGIN([dvb])
+     ],[AC_MSG_WARN(linux-dvb headers not found, dvb disabled)])
+     CPPFLAGS="${CPPFLAGS_save}"
+   ],[
+     AC_MSG_WARN([the dvb access module requires libdvbpsi])
+    ]) 
 fi
 
 dnl
