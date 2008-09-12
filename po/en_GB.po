@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-11 17:25+0200\n"
+"POT-Creation-Date: 2008-09-11 17:27-0700\n"
 "PO-Revision-Date: 2002-04-22 09:56+0200\n"
 "Last-Translator: Sam Hocevar <sam@zoy.org>\n"
 "Language-Team: \n"
@@ -826,8 +826,8 @@ msgid "Audio Channels"
 msgstr "Audio Channels"
 
 #: src/audio_output/output.c:105 src/audio_output/output.c:140
-#: modules/access/v4l.c:129 modules/access/v4l2/v4l2.c:208
-#: modules/access/v4l2/v4l2.c:259 modules/audio_output/alsa.c:195
+#: modules/access/v4l2/v4l2.c:208 modules/access/v4l2/v4l2.c:259
+#: modules/access/v4l.c:129 modules/audio_output/alsa.c:195
 #: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:519
 #: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:402
 #: modules/audio_output/sdl.c:184 modules/audio_output/sdl.c:201
@@ -1050,9 +1050,8 @@ msgstr "%d Hz"
 msgid "Bits per sample"
 msgstr "Bits per sample"
 
-#: src/input/es_out.c:2083 modules/access/pvr.c:97
-#: modules/access_output/shout.c:91
-#: modules/gui/qt4/components/open_panels.cpp:865
+#: src/input/es_out.c:2083 modules/access_output/shout.c:91
+#: modules/access/pvr.c:97 modules/gui/qt4/components/open_panels.cpp:865
 msgid "Bitrate"
 msgstr "Bitrate"
 
@@ -1104,8 +1103,8 @@ msgstr ""
 msgid "Title"
 msgstr "Title"
 
-#: src/input/meta.c:53 modules/gui/macosx/playlist.m:1121
-#: modules/gui/macosx/playlistinfo.m:73
+#: src/input/meta.c:53 modules/gui/macosx/playlistinfo.m:73
+#: modules/gui/macosx/playlist.m:1121
 msgid "Artist"
 msgstr "Artist"
 
@@ -1302,6 +1301,93 @@ msgstr "File logging interface"
 #, fuzzy
 msgid "Mouse Gestures"
 msgstr "Genre"
+
+#: src/libvlc.c:280 src/libvlc.c:413 src/modules/cache.c:213
+#: src/modules/cache.c:532
+msgid "C"
+msgstr "en_GB"
+
+#: src/libvlc.c:1133
+msgid ""
+"Running vlc with the default interface. Use 'cvlc' to use vlc without "
+"interface."
+msgstr ""
+
+#: src/libvlc.c:1278
+msgid "To get exhaustive help, use '-H'."
+msgstr ""
+
+#: src/libvlc.c:1614
+msgid " (default enabled)"
+msgstr ""
+
+#: src/libvlc.c:1615
+msgid " (default disabled)"
+msgstr ""
+
+#: src/libvlc.c:1774 src/libvlc.c:1777
+#, fuzzy
+msgid "Note:"
+msgstr "Add Interface"
+
+#: src/libvlc.c:1775 src/libvlc.c:1778
+msgid "add --advanced to your command line to see advanced options."
+msgstr ""
+
+#: src/libvlc.c:1882
+#, fuzzy, c-format
+msgid "VLC version %s\n"
+msgstr "Stereo"
+
+#: src/libvlc.c:1883
+#, c-format
+msgid "Compiled by %s@%s.%s\n"
+msgstr ""
+
+#: src/libvlc.c:1885
+#, c-format
+msgid "Compiler: %s\n"
+msgstr ""
+
+#: src/libvlc.c:1887
+#, c-format
+msgid "Based upon Git commit [%s]\n"
+msgstr ""
+
+#: src/libvlc.c:1923
+msgid ""
+"\n"
+"Dumped content to vlc-help.txt file.\n"
+msgstr ""
+
+#: src/libvlc.c:1943
+msgid ""
+"\n"
+"Press the RETURN key to continue...\n"
+msgstr ""
+"\n"
+"Press the RETURN key to continue…\n"
+
+#: src/libvlc.h:199 src/libvlc-module.c:1325 src/libvlc-module.c:1326
+#: src/libvlc-module.c:2385 src/video_output/vout_intf.c:274
+msgid "Zoom"
+msgstr ""
+
+#: src/libvlc.h:200 src/libvlc-module.c:1251 src/video_output/vout_intf.c:169
+msgid "1:4 Quarter"
+msgstr ""
+
+#: src/libvlc.h:201 src/libvlc-module.c:1252 src/video_output/vout_intf.c:170
+msgid "1:2 Half"
+msgstr ""
+
+#: src/libvlc.h:202 src/libvlc-module.c:1253 src/video_output/vout_intf.c:171
+msgid "1:1 Original"
+msgstr ""
+
+#: src/libvlc.h:203 src/libvlc-module.c:1254 src/video_output/vout_intf.c:172
+msgid "2:1 Double"
+msgstr ""
 
 #: src/libvlc-module.c:88 src/libvlc-module.c:285 modules/access/bda/bda.c:63
 msgid "Auto"
@@ -3995,22 +4081,6 @@ msgstr "Subtitle delay down"
 msgid "Select the key to decrease the audio delay."
 msgstr ""
 
-#: src/libvlc-module.c:1251 src/libvlc.h:200 src/video_output/vout_intf.c:169
-msgid "1:4 Quarter"
-msgstr ""
-
-#: src/libvlc-module.c:1252 src/libvlc.h:201 src/video_output/vout_intf.c:170
-msgid "1:2 Half"
-msgstr ""
-
-#: src/libvlc-module.c:1253 src/libvlc.h:202 src/video_output/vout_intf.c:171
-msgid "1:1 Original"
-msgstr ""
-
-#: src/libvlc-module.c:1254 src/libvlc.h:203 src/video_output/vout_intf.c:172
-msgid "2:1 Double"
-msgstr ""
-
 #: src/libvlc-module.c:1256
 msgid "Play playlist bookmark 1"
 msgstr ""
@@ -4272,11 +4342,6 @@ msgstr ""
 
 #: src/libvlc-module.c:1323
 msgid "Toggle random playlist playback"
-msgstr ""
-
-#: src/libvlc-module.c:1325 src/libvlc-module.c:1326 src/libvlc-module.c:2385
-#: src/libvlc.h:199 src/video_output/vout_intf.c:274
-msgid "Zoom"
 msgstr ""
 
 #: src/libvlc-module.c:1328 src/libvlc-module.c:1329
@@ -4596,72 +4661,6 @@ msgstr ""
 #: src/libvlc-module.c:2556
 msgid "main program"
 msgstr "main program"
-
-#: src/libvlc.c:280 src/libvlc.c:413 src/modules/cache.c:213
-#: src/modules/cache.c:532
-msgid "C"
-msgstr "en_GB"
-
-#: src/libvlc.c:1133
-msgid ""
-"Running vlc with the default interface. Use 'cvlc' to use vlc without "
-"interface."
-msgstr ""
-
-#: src/libvlc.c:1278
-msgid "To get exhaustive help, use '-H'."
-msgstr ""
-
-#: src/libvlc.c:1614
-msgid " (default enabled)"
-msgstr ""
-
-#: src/libvlc.c:1615
-msgid " (default disabled)"
-msgstr ""
-
-#: src/libvlc.c:1774 src/libvlc.c:1777
-#, fuzzy
-msgid "Note:"
-msgstr "Add Interface"
-
-#: src/libvlc.c:1775 src/libvlc.c:1778
-msgid "add --advanced to your command line to see advanced options."
-msgstr ""
-
-#: src/libvlc.c:1882
-#, fuzzy, c-format
-msgid "VLC version %s\n"
-msgstr "Stereo"
-
-#: src/libvlc.c:1883
-#, c-format
-msgid "Compiled by %s@%s.%s\n"
-msgstr ""
-
-#: src/libvlc.c:1885
-#, c-format
-msgid "Compiler: %s\n"
-msgstr ""
-
-#: src/libvlc.c:1887
-#, c-format
-msgid "Based upon Git commit [%s]\n"
-msgstr ""
-
-#: src/libvlc.c:1923
-msgid ""
-"\n"
-"Dumped content to vlc-help.txt file.\n"
-msgstr ""
-
-#: src/libvlc.c:1943
-msgid ""
-"\n"
-"Press the RETURN key to continue...\n"
-msgstr ""
-"\n"
-"Press the RETURN key to continue…\n"
 
 #: src/misc/update.c:1620
 #, fuzzy
@@ -5309,16 +5308,17 @@ msgid "Aspect-ratio"
 msgstr "Codec setting"
 
 #: modules/access/bda/bda.c:40 modules/access/cdda.c:66
-#: modules/access/dshow/dshow.cpp:98 modules/access/dv.c:71
-#: modules/access/dvb/access.c:78 modules/access/dvdnav.c:72
+#: modules/access/dshow/dshow.cpp:98 modules/access/dvb/access.c:78
+#: modules/access/dv.c:71 modules/access/dvdnav.c:72
 #: modules/access/dvdread.c:76 modules/access/eyetv.m:61
 #: modules/access/fake.c:43 modules/access/file.c:84 modules/access/ftp.c:57
 #: modules/access/gnomevfs.c:47 modules/access/http.c:75
 #: modules/access/jack.c:62 modules/access/mms/mms.c:49
 #: modules/access/pvr.c:60 modules/access/rtmp/access.c:43
 #: modules/access/screen/screen.c:39 modules/access/smb.c:64
-#: modules/access/tcp.c:41 modules/access/udp.c:49 modules/access/v4l.c:77
-#: modules/access/v4l2/v4l2.c:215 modules/access/vcd/vcd.c:46
+#: modules/access/tcp.c:41 modules/access/udp.c:49
+#: modules/access/v4l2/v4l2.c:215 modules/access/v4l.c:77
+#: modules/access/vcd/vcd.c:46
 msgid "Caching value in ms"
 msgstr ""
 
@@ -5677,6 +5677,16 @@ msgstr ""
 msgid "DirectShow DVB input"
 msgstr "HD1000 audio output"
 
+#: modules/access/cdda/access.c:285
+#, fuzzy
+msgid "CD reading failed"
+msgstr "Video title"
+
+#: modules/access/cdda/access.c:286
+#, c-format
+msgid "VLC could not get a new block of size: %i."
+msgstr ""
+
 #: modules/access/cdda.c:68
 #, fuzzy
 msgid ""
@@ -5725,16 +5735,6 @@ msgstr "Genre"
 #, fuzzy, c-format
 msgid "Audio CD - Track %i"
 msgstr "Subtitle track: %s"
-
-#: modules/access/cdda/access.c:285
-#, fuzzy
-msgid "CD reading failed"
-msgstr "Video title"
-
-#: modules/access/cdda/access.c:286
-#, c-format
-msgid "VLC could not get a new block of size: %i."
-msgstr ""
 
 #: modules/access/cdda/cdda.c:43 modules/access/directory.c:86
 #: modules/codec/x264.c:392 modules/codec/x264.c:398 modules/codec/x264.c:403
@@ -6145,9 +6145,8 @@ msgstr ""
 "Name of the video device that will be used by the DirectShow plugin. If you "
 "don’t specify anything, the default device will be used."
 
-#: modules/access/dshow/dshow.cpp:107 modules/access/v4l.c:85
-#: modules/access/v4l2/v4l2.c:169
-#: modules/gui/qt4/components/open_panels.cpp:708
+#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:169
+#: modules/access/v4l.c:85 modules/gui/qt4/components/open_panels.cpp:708
 #: modules/gui/qt4/components/open_panels.cpp:743
 #, fuzzy
 msgid "Audio device name"
@@ -6179,8 +6178,8 @@ msgstr ""
 "don’t specify anything, the default device will be used. You can specify a "
 "standard size (cif, d1, ...) or <width>x<height>"
 
-#: modules/access/dshow/dshow.cpp:117 modules/access/v4l.c:89
-#: modules/access/v4l2/v4l2.c:86
+#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:86
+#: modules/access/v4l.c:89
 #, fuzzy
 msgid "Video input chroma format"
 msgstr "Video crop left"
@@ -6373,21 +6372,6 @@ msgstr ""
 msgid "The capture device \"%s\" does not support the required parameters."
 msgstr ""
 
-#: modules/access/dv.c:73
-#, fuzzy
-msgid "Caching value for DV streams. Thisvalue should be set in milliseconds."
-msgstr ""
-"Allows you to modify the default caching value for UDP streams. This value "
-"should be set in millisecond units."
-
-#: modules/access/dv.c:77
-msgid "Digital Video (Firewire/ieee1394)  input"
-msgstr ""
-
-#: modules/access/dv.c:78
-msgid "dv"
-msgstr ""
-
 #: modules/access/dvb/access.c:132
 msgid "Modulation type for front-end device."
 msgstr ""
@@ -6496,6 +6480,21 @@ msgstr "Visualisations"
 #: modules/access/dvb/access.c:781
 #, c-format
 msgid "The provided polarization \"%c\" is not valid."
+msgstr ""
+
+#: modules/access/dv.c:73
+#, fuzzy
+msgid "Caching value for DV streams. Thisvalue should be set in milliseconds."
+msgstr ""
+"Allows you to modify the default caching value for UDP streams. This value "
+"should be set in millisecond units."
+
+#: modules/access/dv.c:77
+msgid "Digital Video (Firewire/ieee1394)  input"
+msgstr ""
+
+#: modules/access/dv.c:78
+msgid "dv"
 msgstr ""
 
 #: modules/access/dvdnav.c:68 modules/access/dvdread.c:72
@@ -6640,8 +6639,8 @@ msgstr ""
 "Allows you to modify the default caching value for file streams. This value "
 "should be set in millisecond units."
 
-#: modules/access/fake.c:47 modules/access/pvr.c:86 modules/access/v4l.c:140
-#: modules/access/v4l2/v4l2.c:107
+#: modules/access/fake.c:47 modules/access/pvr.c:86
+#: modules/access/v4l2/v4l2.c:107 modules/access/v4l.c:140
 #, fuzzy
 msgid "Framerate"
 msgstr "Sample rate"
@@ -6721,6 +6720,106 @@ msgstr "List of video output modules"
 #, fuzzy, c-format
 msgid "VLC could not open the file \"%s\"."
 msgstr "List of video output modules"
+
+#: modules/access_filter/bandwidth.c:34
+msgid "Bandwidth limit (bytes/s)"
+msgstr ""
+
+#: modules/access_filter/bandwidth.c:36
+msgid ""
+"The bandwidth module will drop any data in excess of that many bytes per "
+"seconds."
+msgstr ""
+
+#: modules/access_filter/bandwidth.c:45
+#: modules/gui/qt4/components/open_panels.cpp:670
+#, fuzzy
+msgid "Bandwidth"
+msgstr "Next file"
+
+#: modules/access_filter/bandwidth.c:46 modules/gui/macosx/simple_prefs.m:247
+#: modules/gui/qt4/ui/sprefs_input.ui:208
+#, fuzzy
+msgid "Bandwidth limiter"
+msgstr "Next file"
+
+#: modules/access_filter/dump.c:42
+msgid "Force use of dump module"
+msgstr ""
+
+#: modules/access_filter/dump.c:43
+msgid "Activate the dump module even for media with fast seeking."
+msgstr ""
+
+#: modules/access_filter/dump.c:46
+msgid "Maximum size of temporary file (Mb)"
+msgstr ""
+
+#: modules/access_filter/dump.c:47
+msgid ""
+"The dump module will abort dumping of the media if more than this much "
+"megabyte were performed."
+msgstr ""
+
+#: modules/access_filter/record.c:48
+#, fuzzy
+msgid "Record directory"
+msgstr "Choose directory"
+
+#: modules/access_filter/record.c:50
+#, fuzzy
+msgid "Directory where the record will be stored."
+msgstr ""
+"Allows you to modify the user name that will be used for the connection."
+
+#: modules/access_filter/record.c:339
+#, fuzzy
+msgid "Recording"
+msgstr "Append to file"
+
+#: modules/access_filter/record.c:341
+#, fuzzy
+msgid "Recording done"
+msgstr "Append to file"
+
+#: modules/access_filter/timeshift.c:53
+#, fuzzy
+msgid "Timeshift granularity"
+msgstr "Options"
+
+#: modules/access_filter/timeshift.c:55
+#, fuzzy
+msgid ""
+"This is the size of the temporary files that will be used to store the "
+"timeshifted streams."
+msgstr ""
+"Allows you to modify the user name that will be used for the connection."
+
+#: modules/access_filter/timeshift.c:57
+#, fuzzy
+msgid "Timeshift directory"
+msgstr "Choose directory"
+
+#: modules/access_filter/timeshift.c:58
+msgid "Directory used to store the timeshift temporary files."
+msgstr ""
+
+#: modules/access_filter/timeshift.c:60
+msgid "Force use of the timeshift module"
+msgstr ""
+
+#: modules/access_filter/timeshift.c:61
+msgid ""
+"Force use of the timeshift module even if the access declares that it can "
+"control pace or pause."
+msgstr ""
+
+#: modules/access_filter/timeshift.c:65 modules/access_filter/timeshift.c:66
+#: modules/gui/macosx/simple_prefs.m:260
+#: modules/gui/qt4/ui/sprefs_input.ui:187
+#, fuzzy
+msgid "Timeshift"
+msgstr "Options"
 
 #: modules/access/ftp.c:59
 #, fuzzy
@@ -7008,6 +7107,260 @@ msgstr ""
 msgid "Microsoft Media Server (MMS) input"
 msgstr ""
 
+#: modules/access_output/dummy.c:45 modules/stream_out/dummy.c:51
+#, fuzzy
+msgid "Dummy stream output"
+msgstr "UDP stream output"
+
+#: modules/access_output/dummy.c:46 modules/misc/dummy/dummy.c:61
+msgid "Dummy"
+msgstr ""
+
+#: modules/access_output/file.c:64
+msgid "Append to file"
+msgstr "Append to file"
+
+#: modules/access_output/file.c:65
+msgid "Append to file if it exists instead of replacing it."
+msgstr ""
+
+#: modules/access_output/file.c:69
+msgid "File stream output"
+msgstr "File stream output"
+
+#: modules/access_output/http.c:65 modules/gui/qt4/ui/sprefs_audio.ui:309
+#: modules/misc/audioscrobbler.c:132
+msgid "Username"
+msgstr ""
+
+#: modules/access_output/http.c:66
+#, fuzzy
+msgid "User name that will be requested to access the stream."
+msgstr ""
+"Allows you to give a user name that will be requested to access the stream."
+
+#: modules/access_output/http.c:68 modules/control/telnet.c:87
+#: modules/gui/macosx/simple_prefs.m:227
+#: modules/gui/qt4/dialogs/interaction.cpp:99
+#: modules/gui/qt4/ui/sprefs_audio.ui:319 modules/misc/audioscrobbler.c:134
+#: modules/misc/notify/growl_udp.c:64
+msgid "Password"
+msgstr ""
+
+#: modules/access_output/http.c:69
+#, fuzzy
+msgid "Password that will be requested to access the stream."
+msgstr ""
+"Allows you to give a user name that will be requested to access the stream."
+
+#: modules/access_output/http.c:71
+#, fuzzy
+msgid "Mime"
+msgstr "Title"
+
+#: modules/access_output/http.c:72
+msgid "MIME returned by the server (autodetected if not specified)."
+msgstr ""
+
+#: modules/access_output/http.c:75
+#, fuzzy
+msgid "Path to the x509 PEM certificate file that will be used for HTTPS."
+msgstr ""
+"Path to the x509 PEM private key file that will be used for HTTPS. Leave "
+"empty if you don’t have one."
+
+#: modules/access_output/http.c:78
+#, fuzzy
+msgid ""
+"Path to the x509 PEM private key file that will be used for HTTPS. Leave "
+"empty if you don't have one."
+msgstr ""
+"Path to the x509 PEM private key file that will be used for HTTPS. Leave "
+"empty if you don’t have one."
+
+#: modules/access_output/http.c:82
+#, fuzzy
+msgid ""
+"Path to the x509 PEM trusted root CA certificates (certificate authority) "
+"file that will be used for HTTPS. Leave empty if you don't have one."
+msgstr ""
+"Path to the x509 PEM trusted root CA certificates (certificate authority) "
+"file that will be used for HTTPS. Leave empty if you don’t have one."
+
+#: modules/access_output/http.c:87
+msgid ""
+"Path to the x509 PEM Certificates Revocation List file that will be used for "
+"SSL. Leave empty if you don't have one."
+msgstr ""
+"Path to the x509 PEM Certificates Revocation List file that will be used for "
+"SSL. Leave empty if you don’t have one."
+
+#: modules/access_output/http.c:90
+msgid "Advertise with Bonjour"
+msgstr ""
+
+#: modules/access_output/http.c:91
+msgid "Advertise the stream with the Bonjour protocol."
+msgstr ""
+
+#: modules/access_output/http.c:95
+msgid "HTTP stream output"
+msgstr "HTTP stream output"
+
+#: modules/access_output/rtmp.c:44
+#, fuzzy
+msgid "Active TCP connection"
+msgstr "Settings…"
+
+#: modules/access_output/rtmp.c:46
+msgid ""
+"If enabled, VLC will connect to a remote destination instead of waiting for "
+"an incoming connection."
+msgstr ""
+
+#: modules/access_output/rtmp.c:55
+#, fuzzy
+msgid "RTMP stream output"
+msgstr "HTTP stream output"
+
+#: modules/access_output/rtmp.c:56 modules/access/rtmp/access.c:53
+#, fuzzy
+msgid "RTMP"
+msgstr "TCP"
+
+#: modules/access_output/shout.c:63
+#, fuzzy
+msgid "Stream name"
+msgstr "Codec setting"
+
+#: modules/access_output/shout.c:64
+msgid "Name to give to this stream/channel on the shoutcast/icecast server."
+msgstr ""
+
+#: modules/access_output/shout.c:67
+#, fuzzy
+msgid "Stream description"
+msgstr "Codec Description"
+
+#: modules/access_output/shout.c:68
+msgid "Description of the stream content or information about your channel."
+msgstr ""
+
+#: modules/access_output/shout.c:71
+#, fuzzy
+msgid "Stream MP3"
+msgstr "Stream %d"
+
+#: modules/access_output/shout.c:72
+msgid ""
+"You normally have to feed the shoutcast module with Ogg streams. It is also "
+"possible to stream MP3 instead, so you can forward MP3 streams to the "
+"shoutcast/icecast server."
+msgstr ""
+
+#: modules/access_output/shout.c:81
+#, fuzzy
+msgid "Genre description"
+msgstr "Codec Description"
+
+#: modules/access_output/shout.c:82
+msgid "Genre of the content. "
+msgstr ""
+
+#: modules/access_output/shout.c:84
+#, fuzzy
+msgid "URL description"
+msgstr "Description"
+
+#: modules/access_output/shout.c:85
+msgid "URL with information about the stream or your channel. "
+msgstr ""
+
+#: modules/access_output/shout.c:92
+#, fuzzy
+msgid "Bitrate information of the transcoded stream. "
+msgstr ""
+"Allows you to modify the user name that will be used for the connection."
+
+#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:211
+#: modules/access/v4l.c:126
+#, fuzzy
+msgid "Samplerate"
+msgstr "Sample rate"
+
+#: modules/access_output/shout.c:95
+#, fuzzy
+msgid "Samplerate information of the transcoded stream. "
+msgstr ""
+"Allows you to modify the user name that will be used for the connection."
+
+#: modules/access_output/shout.c:97
+#, fuzzy
+msgid "Number of channels"
+msgstr "Number of threads"
+
+#: modules/access_output/shout.c:98
+#, fuzzy
+msgid "Number of channels information of the transcoded stream. "
+msgstr ""
+"Allows you to modify the user name that will be used for the connection."
+
+#: modules/access_output/shout.c:100
+msgid "Ogg Vorbis Quality"
+msgstr ""
+
+#: modules/access_output/shout.c:101
+#, fuzzy
+msgid "Ogg Vorbis Quality information of the transcoded stream. "
+msgstr ""
+"Allows you to modify the user name that will be used for the connection."
+
+#: modules/access_output/shout.c:103
+#, fuzzy
+msgid "Stream public"
+msgstr "Video bitrate"
+
+#: modules/access_output/shout.c:104
+msgid ""
+"Make the server publicly available on the 'Yellow Pages' (directory listing "
+"of streams) on the icecast/shoutcast website. Requires the bitrate "
+"information specified for shoutcast. Requires Ogg streaming for icecast."
+msgstr ""
+
+#: modules/access_output/shout.c:110
+#, fuzzy
+msgid "IceCAST output"
+msgstr "UDP stream output"
+
+#: modules/access_output/udp.c:67 modules/access/rtsp/access.c:46
+#: modules/demux/live555.cpp:74
+msgid "Caching value (ms)"
+msgstr ""
+
+#: modules/access_output/udp.c:69
+#, fuzzy
+msgid ""
+"Default caching value for outbound UDP streams. This value should be set in "
+"milliseconds."
+msgstr ""
+"Allows you to modify the default caching value for UDP streams. This value "
+"should be set in millisecond units."
+
+#: modules/access_output/udp.c:72
+msgid "Group packets"
+msgstr "Group packets"
+
+#: modules/access_output/udp.c:73
+msgid ""
+"Packets can be sent one by one at the right time or by groups. You can "
+"choose the number of packets that will be sent at a time. It helps reducing "
+"the scheduling load on heavily-loaded systems."
+msgstr ""
+
+#: modules/access_output/udp.c:80
+msgid "UDP stream output"
+msgstr "UDP stream output"
+
 #: modules/access/pvr.c:62
 #, fuzzy
 msgid ""
@@ -7048,8 +7401,8 @@ msgstr "Random"
 msgid "Norm of the stream (Automatic, SECAM, PAL, or NTSC)."
 msgstr ""
 
-#: modules/access/pvr.c:75 modules/access/v4l.c:106
-#: modules/access/v4l2/v4l2.c:101 modules/demux/rawvid.c:48
+#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:101
+#: modules/access/v4l.c:106 modules/demux/rawvid.c:48
 #: modules/video_filter/mosaic.c:96 modules/video_output/vmem.c:50
 msgid "Width"
 msgstr ""
@@ -7058,8 +7411,8 @@ msgstr ""
 msgid "Width of the stream to capture (-1 for autodetection)."
 msgstr ""
 
-#: modules/access/pvr.c:79 modules/access/v4l.c:109
-#: modules/access/v4l2/v4l2.c:104 modules/demux/rawvid.c:52
+#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:104
+#: modules/access/v4l.c:109 modules/demux/rawvid.c:52
 #: modules/video_filter/mosaic.c:94 modules/video_output/vmem.c:53
 #, fuzzy
 msgid "Height"
@@ -7069,9 +7422,8 @@ msgstr "Right"
 msgid "Height of the stream to capture (-1 for autodetection)."
 msgstr ""
 
-#: modules/access/pvr.c:83 modules/access/v4l.c:93
-#: modules/access/v4l2/v4l2.c:230
-#: modules/gui/qt4/components/open_panels.cpp:757
+#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:230
+#: modules/access/v4l.c:93 modules/gui/qt4/components/open_panels.cpp:757
 #: modules/gui/qt4/components/open_panels.cpp:856
 msgid "Frequency"
 msgstr ""
@@ -7080,8 +7432,8 @@ msgstr ""
 msgid "Frequency to capture (in kHz), if applicable."
 msgstr ""
 
-#: modules/access/pvr.c:87 modules/access/v4l.c:141
-#: modules/access/v4l2/v4l2.c:108
+#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:108
+#: modules/access/v4l.c:141
 msgid "Framerate to capture, if applicable (-1 for autodetect)."
 msgstr ""
 
@@ -7161,18 +7513,18 @@ msgstr ""
 msgid "Automatic"
 msgstr "Author"
 
-#: modules/access/pvr.c:120 modules/access/v4l.c:147
-#: modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/v4l.c:147
 msgid "SECAM"
 msgstr ""
 
-#: modules/access/pvr.c:120 modules/access/v4l.c:147
-#: modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/v4l.c:147
 msgid "PAL"
 msgstr ""
 
-#: modules/access/pvr.c:120 modules/access/v4l.c:147
-#: modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/v4l.c:147
 msgid "NTSC"
 msgstr ""
 
@@ -7219,16 +7571,6 @@ msgstr ""
 #, fuzzy
 msgid "RTMP input"
 msgstr "TCP input"
-
-#: modules/access/rtmp/access.c:53 modules/access_output/rtmp.c:56
-#, fuzzy
-msgid "RTMP"
-msgstr "TCP"
-
-#: modules/access/rtsp/access.c:46 modules/access_output/udp.c:67
-#: modules/demux/live555.cpp:74
-msgid "Caching value (ms)"
-msgstr ""
 
 #: modules/access/rtsp/access.c:48
 #, fuzzy
@@ -7397,173 +7739,6 @@ msgstr "UDP"
 msgid "UDP input"
 msgstr "UDP/RTP input"
 
-#: modules/access/v4l.c:79
-#, fuzzy
-msgid ""
-"Caching value for V4L captures. This value should be set in milliseconds."
-msgstr ""
-"Allows you to modify the default caching value for v4l streams. This value "
-"should be set in millisecond units."
-
-#: modules/access/v4l.c:83
-msgid ""
-"Name of the video device to use. If you don't specify anything, no video "
-"device will be used."
-msgstr ""
-"Name of the video device to use. If you don’t specify anything, no video "
-"device will be used."
-
-#: modules/access/v4l.c:87
-msgid ""
-"Name of the audio device to use. If you don't specify anything, no audio "
-"device will be used."
-msgstr ""
-"Name of the audio device to use. If you don’t specify anything, no audio "
-"device will be used."
-
-#: modules/access/v4l.c:91
-msgid ""
-"Force the Video4Linux video device to use a specific chroma format (eg. I420 "
-"(default), RV24, etc.)"
-msgstr ""
-"Force the Video4Linux video device to use a specific chroma format (eg. I420 "
-"(default), RV24, etc.)"
-
-#: modules/access/v4l.c:98
-msgid ""
-"Channel of the card to use (Usually, 0 = tuner, 1 = composite, 2 = svideo)."
-msgstr ""
-
-#: modules/access/v4l.c:103
-#, fuzzy
-msgid "Audio Channel"
-msgstr "Audio Channels"
-
-#: modules/access/v4l.c:105
-msgid "Audio Channel to use, if there are several audio inputs."
-msgstr ""
-
-#: modules/access/v4l.c:107
-msgid "Width of the stream to capture (-1 for autodetect)."
-msgstr ""
-
-#: modules/access/v4l.c:110
-msgid "Height of the stream to capture (-1 for autodetect)."
-msgstr ""
-
-#: modules/access/v4l.c:112 modules/access/v4l2/v4l2.c:114
-#: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:205
-#: modules/video_filter/atmo/atmo.cpp:196
-#, fuzzy
-msgid "Brightness"
-msgstr "Enable interlaced encoding"
-
-#: modules/access/v4l.c:114
-#, fuzzy
-msgid "Brightness of the video input."
-msgstr "colour ASCII art video output"
-
-#: modules/access/v4l.c:115 modules/access/v4l2/v4l2.c:123
-#: modules/gui/macosx/extended.m:100 modules/gui/qt4/ui/video_effects.ui:219
-msgid "Hue"
-msgstr ""
-
-#: modules/access/v4l.c:117
-#, fuzzy
-msgid "Hue of the video input."
-msgstr "colour ASCII art video output"
-
-#: modules/access/v4l.c:118 modules/gui/fbosd.c:143
-#: modules/gui/qt4/ui/video_effects.ui:263
-#: modules/gui/qt4/ui/video_effects.ui:327
-#: modules/gui/qt4/ui/video_effects.ui:683 modules/misc/notify/xosd.c:83
-#: modules/video_filter/colorthres.c:54 modules/video_filter/marq.c:122
-#: modules/video_filter/rss.c:154
-#, fuzzy
-msgid "Color"
-msgstr "Stereo"
-
-#: modules/access/v4l.c:120
-#, fuzzy
-msgid "Color of the video input."
-msgstr "colour ASCII art video output"
-
-#: modules/access/v4l.c:121 modules/access/v4l2/v4l2.c:117
-#: modules/gui/macosx/extended.m:98 modules/gui/qt4/ui/video_effects.ui:198
-#, fuzzy
-msgid "Contrast"
-msgstr "Codec"
-
-#: modules/access/v4l.c:123
-#, fuzzy
-msgid "Contrast of the video input."
-msgstr "colour ASCII art video output"
-
-#: modules/access/v4l.c:124 modules/access/v4l2/v4l2.c:313
-msgid "Tuner"
-msgstr ""
-
-#: modules/access/v4l.c:125
-#, fuzzy
-msgid "Tuner to use, if there are several ones."
-msgstr ""
-"Allows you to modify the user name that will be used for the connection."
-
-#: modules/access/v4l.c:126 modules/access/v4l2/v4l2.c:211
-#: modules/access_output/shout.c:94
-#, fuzzy
-msgid "Samplerate"
-msgstr "Sample rate"
-
-#: modules/access/v4l.c:128
-msgid ""
-"Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100)"
-msgstr ""
-
-#: modules/access/v4l.c:131 modules/access/v4l2/v4l2.c:210
-#, fuzzy
-msgid "Capture the audio stream in stereo."
-msgstr ""
-"Give the default type of audio you want to use in a DVD. (Developers only)"
-
-#: modules/access/v4l.c:132
-msgid "MJPEG"
-msgstr ""
-
-#: modules/access/v4l.c:134
-#, fuzzy
-msgid "Set this option if the capture device outputs MJPEG"
-msgstr "Choose directory"
-
-#: modules/access/v4l.c:135
-#, fuzzy
-msgid "Decimation"
-msgstr "Description"
-
-#: modules/access/v4l.c:137
-msgid "Decimation level for MJPEG streams"
-msgstr ""
-
-#: modules/access/v4l.c:138
-msgid "Quality"
-msgstr ""
-
-#: modules/access/v4l.c:139
-#, fuzzy
-msgid "Quality of the stream."
-msgstr ""
-"Allows you to modify the user name that will be used for the connection."
-
-#: modules/access/v4l.c:150
-#, fuzzy
-msgid "Video4Linux"
-msgstr "Video"
-
-#: modules/access/v4l.c:151
-#, fuzzy
-msgid "Video4Linux input"
-msgstr "Video"
-
 #: modules/access/v4l2/v4l2.c:79 modules/gui/macosx/open.m:178
 #: modules/gui/qt4/components/open_panels.cpp:836
 #, fuzzy
@@ -7636,10 +7811,23 @@ msgstr "Text renderer settings"
 msgid "Reset controls to defaults provided by the v4l2 driver."
 msgstr ""
 
+#: modules/access/v4l2/v4l2.c:114 modules/access/v4l.c:112
+#: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:205
+#: modules/video_filter/atmo/atmo.cpp:196
+#, fuzzy
+msgid "Brightness"
+msgstr "Enable interlaced encoding"
+
 #: modules/access/v4l2/v4l2.c:116
 #, fuzzy
 msgid "Brightness of the video input (if supported by the v4l2 driver)."
 msgstr "colour ASCII art video output"
+
+#: modules/access/v4l2/v4l2.c:117 modules/access/v4l.c:121
+#: modules/gui/macosx/extended.m:98 modules/gui/qt4/ui/video_effects.ui:198
+#, fuzzy
+msgid "Contrast"
+msgstr "Codec"
 
 #: modules/access/v4l2/v4l2.c:119
 #, fuzzy
@@ -7655,6 +7843,11 @@ msgstr "Polarisation"
 
 #: modules/access/v4l2/v4l2.c:122
 msgid "Saturation of the video input (if supported by the v4l2 driver)."
+msgstr ""
+
+#: modules/access/v4l2/v4l2.c:123 modules/access/v4l.c:115
+#: modules/gui/macosx/extended.m:100 modules/gui/qt4/ui/video_effects.ui:219
+msgid "Hue"
 msgstr ""
 
 #: modules/access/v4l2/v4l2.c:125
@@ -7859,6 +8052,12 @@ msgstr ""
 msgid "Loudness of the audio input (if supported by the v4l2 driver)."
 msgstr "colour ASCII art video output"
 
+#: modules/access/v4l2/v4l2.c:210 modules/access/v4l.c:131
+#, fuzzy
+msgid "Capture the audio stream in stereo."
+msgstr ""
+"Give the default type of audio you want to use in a DVD. (Developers only)"
+
 #: modules/access/v4l2/v4l2.c:213
 msgid ""
 "Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100, "
@@ -7958,6 +8157,10 @@ msgstr "Video"
 msgid "Video input"
 msgstr "Options"
 
+#: modules/access/v4l2/v4l2.c:313 modules/access/v4l.c:124
+msgid "Tuner"
+msgstr ""
+
 #: modules/access/v4l2/v4l2.c:323
 #, fuzzy
 msgid "Controls"
@@ -7976,6 +8179,139 @@ msgstr "Video"
 #, fuzzy
 msgid "Reset controls to default"
 msgstr "Remote control interface"
+
+#: modules/access/v4l.c:79
+#, fuzzy
+msgid ""
+"Caching value for V4L captures. This value should be set in milliseconds."
+msgstr ""
+"Allows you to modify the default caching value for v4l streams. This value "
+"should be set in millisecond units."
+
+#: modules/access/v4l.c:83
+msgid ""
+"Name of the video device to use. If you don't specify anything, no video "
+"device will be used."
+msgstr ""
+"Name of the video device to use. If you don’t specify anything, no video "
+"device will be used."
+
+#: modules/access/v4l.c:87
+msgid ""
+"Name of the audio device to use. If you don't specify anything, no audio "
+"device will be used."
+msgstr ""
+"Name of the audio device to use. If you don’t specify anything, no audio "
+"device will be used."
+
+#: modules/access/v4l.c:91
+msgid ""
+"Force the Video4Linux video device to use a specific chroma format (eg. I420 "
+"(default), RV24, etc.)"
+msgstr ""
+"Force the Video4Linux video device to use a specific chroma format (eg. I420 "
+"(default), RV24, etc.)"
+
+#: modules/access/v4l.c:98
+msgid ""
+"Channel of the card to use (Usually, 0 = tuner, 1 = composite, 2 = svideo)."
+msgstr ""
+
+#: modules/access/v4l.c:103
+#, fuzzy
+msgid "Audio Channel"
+msgstr "Audio Channels"
+
+#: modules/access/v4l.c:105
+msgid "Audio Channel to use, if there are several audio inputs."
+msgstr ""
+
+#: modules/access/v4l.c:107
+msgid "Width of the stream to capture (-1 for autodetect)."
+msgstr ""
+
+#: modules/access/v4l.c:110
+msgid "Height of the stream to capture (-1 for autodetect)."
+msgstr ""
+
+#: modules/access/v4l.c:114
+#, fuzzy
+msgid "Brightness of the video input."
+msgstr "colour ASCII art video output"
+
+#: modules/access/v4l.c:117
+#, fuzzy
+msgid "Hue of the video input."
+msgstr "colour ASCII art video output"
+
+#: modules/access/v4l.c:118 modules/gui/fbosd.c:143
+#: modules/gui/qt4/ui/video_effects.ui:263
+#: modules/gui/qt4/ui/video_effects.ui:327
+#: modules/gui/qt4/ui/video_effects.ui:683 modules/misc/notify/xosd.c:83
+#: modules/video_filter/colorthres.c:54 modules/video_filter/marq.c:122
+#: modules/video_filter/rss.c:154
+#, fuzzy
+msgid "Color"
+msgstr "Stereo"
+
+#: modules/access/v4l.c:120
+#, fuzzy
+msgid "Color of the video input."
+msgstr "colour ASCII art video output"
+
+#: modules/access/v4l.c:123
+#, fuzzy
+msgid "Contrast of the video input."
+msgstr "colour ASCII art video output"
+
+#: modules/access/v4l.c:125
+#, fuzzy
+msgid "Tuner to use, if there are several ones."
+msgstr ""
+"Allows you to modify the user name that will be used for the connection."
+
+#: modules/access/v4l.c:128
+msgid ""
+"Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100)"
+msgstr ""
+
+#: modules/access/v4l.c:132
+msgid "MJPEG"
+msgstr ""
+
+#: modules/access/v4l.c:134
+#, fuzzy
+msgid "Set this option if the capture device outputs MJPEG"
+msgstr "Choose directory"
+
+#: modules/access/v4l.c:135
+#, fuzzy
+msgid "Decimation"
+msgstr "Description"
+
+#: modules/access/v4l.c:137
+msgid "Decimation level for MJPEG streams"
+msgstr ""
+
+#: modules/access/v4l.c:138
+msgid "Quality"
+msgstr ""
+
+#: modules/access/v4l.c:139
+#, fuzzy
+msgid "Quality of the stream."
+msgstr ""
+"Allows you to modify the user name that will be used for the connection."
+
+#: modules/access/v4l.c:150
+#, fuzzy
+msgid "Video4Linux"
+msgstr "Video"
+
+#: modules/access/v4l.c:151
+#, fuzzy
+msgid "Video4Linux input"
+msgstr "Video"
 
 #: modules/access/vcd/vcd.c:48
 #, fuzzy
@@ -8172,344 +8508,6 @@ msgstr "Format to use in the playlist’s “author” field."
 #: modules/access/vcdx/vcd.c:149
 msgid "Format to use in the playlist's \"title\" field."
 msgstr "Format to use in the playlist’s “title” field."
-
-#: modules/access_filter/bandwidth.c:34
-msgid "Bandwidth limit (bytes/s)"
-msgstr ""
-
-#: modules/access_filter/bandwidth.c:36
-msgid ""
-"The bandwidth module will drop any data in excess of that many bytes per "
-"seconds."
-msgstr ""
-
-#: modules/access_filter/bandwidth.c:45
-#: modules/gui/qt4/components/open_panels.cpp:670
-#, fuzzy
-msgid "Bandwidth"
-msgstr "Next file"
-
-#: modules/access_filter/bandwidth.c:46 modules/gui/macosx/simple_prefs.m:247
-#: modules/gui/qt4/ui/sprefs_input.ui:208
-#, fuzzy
-msgid "Bandwidth limiter"
-msgstr "Next file"
-
-#: modules/access_filter/dump.c:42
-msgid "Force use of dump module"
-msgstr ""
-
-#: modules/access_filter/dump.c:43
-msgid "Activate the dump module even for media with fast seeking."
-msgstr ""
-
-#: modules/access_filter/dump.c:46
-msgid "Maximum size of temporary file (Mb)"
-msgstr ""
-
-#: modules/access_filter/dump.c:47
-msgid ""
-"The dump module will abort dumping of the media if more than this much "
-"megabyte were performed."
-msgstr ""
-
-#: modules/access_filter/record.c:48
-#, fuzzy
-msgid "Record directory"
-msgstr "Choose directory"
-
-#: modules/access_filter/record.c:50
-#, fuzzy
-msgid "Directory where the record will be stored."
-msgstr ""
-"Allows you to modify the user name that will be used for the connection."
-
-#: modules/access_filter/record.c:339
-#, fuzzy
-msgid "Recording"
-msgstr "Append to file"
-
-#: modules/access_filter/record.c:341
-#, fuzzy
-msgid "Recording done"
-msgstr "Append to file"
-
-#: modules/access_filter/timeshift.c:53
-#, fuzzy
-msgid "Timeshift granularity"
-msgstr "Options"
-
-#: modules/access_filter/timeshift.c:55
-#, fuzzy
-msgid ""
-"This is the size of the temporary files that will be used to store the "
-"timeshifted streams."
-msgstr ""
-"Allows you to modify the user name that will be used for the connection."
-
-#: modules/access_filter/timeshift.c:57
-#, fuzzy
-msgid "Timeshift directory"
-msgstr "Choose directory"
-
-#: modules/access_filter/timeshift.c:58
-msgid "Directory used to store the timeshift temporary files."
-msgstr ""
-
-#: modules/access_filter/timeshift.c:60
-msgid "Force use of the timeshift module"
-msgstr ""
-
-#: modules/access_filter/timeshift.c:61
-msgid ""
-"Force use of the timeshift module even if the access declares that it can "
-"control pace or pause."
-msgstr ""
-
-#: modules/access_filter/timeshift.c:65 modules/access_filter/timeshift.c:66
-#: modules/gui/macosx/simple_prefs.m:260
-#: modules/gui/qt4/ui/sprefs_input.ui:187
-#, fuzzy
-msgid "Timeshift"
-msgstr "Options"
-
-#: modules/access_output/dummy.c:45 modules/stream_out/dummy.c:51
-#, fuzzy
-msgid "Dummy stream output"
-msgstr "UDP stream output"
-
-#: modules/access_output/dummy.c:46 modules/misc/dummy/dummy.c:61
-msgid "Dummy"
-msgstr ""
-
-#: modules/access_output/file.c:64
-msgid "Append to file"
-msgstr "Append to file"
-
-#: modules/access_output/file.c:65
-msgid "Append to file if it exists instead of replacing it."
-msgstr ""
-
-#: modules/access_output/file.c:69
-msgid "File stream output"
-msgstr "File stream output"
-
-#: modules/access_output/http.c:65 modules/gui/qt4/ui/sprefs_audio.ui:309
-#: modules/misc/audioscrobbler.c:132
-msgid "Username"
-msgstr ""
-
-#: modules/access_output/http.c:66
-#, fuzzy
-msgid "User name that will be requested to access the stream."
-msgstr ""
-"Allows you to give a user name that will be requested to access the stream."
-
-#: modules/access_output/http.c:68 modules/control/telnet.c:87
-#: modules/gui/macosx/simple_prefs.m:227
-#: modules/gui/qt4/dialogs/interaction.cpp:99
-#: modules/gui/qt4/ui/sprefs_audio.ui:319 modules/misc/audioscrobbler.c:134
-#: modules/misc/notify/growl_udp.c:64
-msgid "Password"
-msgstr ""
-
-#: modules/access_output/http.c:69
-#, fuzzy
-msgid "Password that will be requested to access the stream."
-msgstr ""
-"Allows you to give a user name that will be requested to access the stream."
-
-#: modules/access_output/http.c:71
-#, fuzzy
-msgid "Mime"
-msgstr "Title"
-
-#: modules/access_output/http.c:72
-msgid "MIME returned by the server (autodetected if not specified)."
-msgstr ""
-
-#: modules/access_output/http.c:75
-#, fuzzy
-msgid "Path to the x509 PEM certificate file that will be used for HTTPS."
-msgstr ""
-"Path to the x509 PEM private key file that will be used for HTTPS. Leave "
-"empty if you don’t have one."
-
-#: modules/access_output/http.c:78
-#, fuzzy
-msgid ""
-"Path to the x509 PEM private key file that will be used for HTTPS. Leave "
-"empty if you don't have one."
-msgstr ""
-"Path to the x509 PEM private key file that will be used for HTTPS. Leave "
-"empty if you don’t have one."
-
-#: modules/access_output/http.c:82
-#, fuzzy
-msgid ""
-"Path to the x509 PEM trusted root CA certificates (certificate authority) "
-"file that will be used for HTTPS. Leave empty if you don't have one."
-msgstr ""
-"Path to the x509 PEM trusted root CA certificates (certificate authority) "
-"file that will be used for HTTPS. Leave empty if you don’t have one."
-
-#: modules/access_output/http.c:87
-msgid ""
-"Path to the x509 PEM Certificates Revocation List file that will be used for "
-"SSL. Leave empty if you don't have one."
-msgstr ""
-"Path to the x509 PEM Certificates Revocation List file that will be used for "
-"SSL. Leave empty if you don’t have one."
-
-#: modules/access_output/http.c:90
-msgid "Advertise with Bonjour"
-msgstr ""
-
-#: modules/access_output/http.c:91
-msgid "Advertise the stream with the Bonjour protocol."
-msgstr ""
-
-#: modules/access_output/http.c:95
-msgid "HTTP stream output"
-msgstr "HTTP stream output"
-
-#: modules/access_output/rtmp.c:44
-#, fuzzy
-msgid "Active TCP connection"
-msgstr "Settings…"
-
-#: modules/access_output/rtmp.c:46
-msgid ""
-"If enabled, VLC will connect to a remote destination instead of waiting for "
-"an incoming connection."
-msgstr ""
-
-#: modules/access_output/rtmp.c:55
-#, fuzzy
-msgid "RTMP stream output"
-msgstr "HTTP stream output"
-
-#: modules/access_output/shout.c:63
-#, fuzzy
-msgid "Stream name"
-msgstr "Codec setting"
-
-#: modules/access_output/shout.c:64
-msgid "Name to give to this stream/channel on the shoutcast/icecast server."
-msgstr ""
-
-#: modules/access_output/shout.c:67
-#, fuzzy
-msgid "Stream description"
-msgstr "Codec Description"
-
-#: modules/access_output/shout.c:68
-msgid "Description of the stream content or information about your channel."
-msgstr ""
-
-#: modules/access_output/shout.c:71
-#, fuzzy
-msgid "Stream MP3"
-msgstr "Stream %d"
-
-#: modules/access_output/shout.c:72
-msgid ""
-"You normally have to feed the shoutcast module with Ogg streams. It is also "
-"possible to stream MP3 instead, so you can forward MP3 streams to the "
-"shoutcast/icecast server."
-msgstr ""
-
-#: modules/access_output/shout.c:81
-#, fuzzy
-msgid "Genre description"
-msgstr "Codec Description"
-
-#: modules/access_output/shout.c:82
-msgid "Genre of the content. "
-msgstr ""
-
-#: modules/access_output/shout.c:84
-#, fuzzy
-msgid "URL description"
-msgstr "Description"
-
-#: modules/access_output/shout.c:85
-msgid "URL with information about the stream or your channel. "
-msgstr ""
-
-#: modules/access_output/shout.c:92
-#, fuzzy
-msgid "Bitrate information of the transcoded stream. "
-msgstr ""
-"Allows you to modify the user name that will be used for the connection."
-
-#: modules/access_output/shout.c:95
-#, fuzzy
-msgid "Samplerate information of the transcoded stream. "
-msgstr ""
-"Allows you to modify the user name that will be used for the connection."
-
-#: modules/access_output/shout.c:97
-#, fuzzy
-msgid "Number of channels"
-msgstr "Number of threads"
-
-#: modules/access_output/shout.c:98
-#, fuzzy
-msgid "Number of channels information of the transcoded stream. "
-msgstr ""
-"Allows you to modify the user name that will be used for the connection."
-
-#: modules/access_output/shout.c:100
-msgid "Ogg Vorbis Quality"
-msgstr ""
-
-#: modules/access_output/shout.c:101
-#, fuzzy
-msgid "Ogg Vorbis Quality information of the transcoded stream. "
-msgstr ""
-"Allows you to modify the user name that will be used for the connection."
-
-#: modules/access_output/shout.c:103
-#, fuzzy
-msgid "Stream public"
-msgstr "Video bitrate"
-
-#: modules/access_output/shout.c:104
-msgid ""
-"Make the server publicly available on the 'Yellow Pages' (directory listing "
-"of streams) on the icecast/shoutcast website. Requires the bitrate "
-"information specified for shoutcast. Requires Ogg streaming for icecast."
-msgstr ""
-
-#: modules/access_output/shout.c:110
-#, fuzzy
-msgid "IceCAST output"
-msgstr "UDP stream output"
-
-#: modules/access_output/udp.c:69
-#, fuzzy
-msgid ""
-"Default caching value for outbound UDP streams. This value should be set in "
-"milliseconds."
-msgstr ""
-"Allows you to modify the default caching value for UDP streams. This value "
-"should be set in millisecond units."
-
-#: modules/access_output/udp.c:72
-msgid "Group packets"
-msgstr "Group packets"
-
-#: modules/access_output/udp.c:73
-msgid ""
-"Packets can be sent one by one at the right time or by groups. You can "
-"choose the number of packets that will be sent at a time. It helps reducing "
-"the scheduling load on heavily-loaded systems."
-msgstr ""
-
-#: modules/access_output/udp.c:80
-msgid "UDP stream output"
-msgstr "UDP stream output"
 
 #: modules/audio_filter/channel_mixer/dolby.c:49
 msgid "Simple decoder for Dolby Surround encoded streams"
@@ -12857,43 +12855,9 @@ msgstr ""
 msgid "SMF demuxer"
 msgstr "PS demuxer"
 
-#: modules/demux/subtitle.c:54 modules/demux/subtitle_asa.c:56
+#: modules/demux/subtitle_asa.c:56 modules/demux/subtitle.c:54
 msgid "Apply a delay to all subtitles (in 1/10s, eg 100 means 10s)."
 msgstr ""
-
-#: modules/demux/subtitle.c:56
-msgid ""
-"Override the normal frames per second settings. This will only work with "
-"MicroDVD and SubRIP (SRT) subtitles."
-msgstr ""
-
-#: modules/demux/subtitle.c:59
-msgid ""
-"Force the subtiles format. Valid values are : \"microdvd\", \"subrip\", "
-"\"subviewer\", \"ssa1\", \"ssa2-4\", \"ass\", \"vplayer\", \"sami\", "
-"\"dvdsubtitle\", \"mpl2\", \"aqt\", \"pjs\", \"mpsub\", \"jacosub\", \"psb"
-"\", \"realtext\", \"dks\", \"subviewer1\",  and \"auto\" (meaning "
-"autodetection, this should always work)."
-msgstr ""
-
-#: modules/demux/subtitle.c:75 modules/demux/subtitle_asa.c:65
-#, fuzzy
-msgid "Text subtitles parser"
-msgstr "DVB subtitles decoder"
-
-#: modules/demux/subtitle.c:80 modules/demux/subtitle_asa.c:70
-msgid "Frames per second"
-msgstr ""
-
-#: modules/demux/subtitle.c:83 modules/demux/subtitle_asa.c:73
-#, fuzzy
-msgid "Subtitles delay"
-msgstr "Subtitle delay up"
-
-#: modules/demux/subtitle.c:85 modules/demux/subtitle_asa.c:75
-#, fuzzy
-msgid "Subtitles format"
-msgstr "Subtitle delay up"
 
 #: modules/demux/subtitle_asa.c:58
 msgid ""
@@ -12910,6 +12874,40 @@ msgstr ""
 #, fuzzy
 msgid "Subtitles (asa demuxer)"
 msgstr "Subtitle demuxer settings"
+
+#: modules/demux/subtitle_asa.c:65 modules/demux/subtitle.c:75
+#, fuzzy
+msgid "Text subtitles parser"
+msgstr "DVB subtitles decoder"
+
+#: modules/demux/subtitle_asa.c:70 modules/demux/subtitle.c:80
+msgid "Frames per second"
+msgstr ""
+
+#: modules/demux/subtitle_asa.c:73 modules/demux/subtitle.c:83
+#, fuzzy
+msgid "Subtitles delay"
+msgstr "Subtitle delay up"
+
+#: modules/demux/subtitle_asa.c:75 modules/demux/subtitle.c:85
+#, fuzzy
+msgid "Subtitles format"
+msgstr "Subtitle delay up"
+
+#: modules/demux/subtitle.c:56
+msgid ""
+"Override the normal frames per second settings. This will only work with "
+"MicroDVD and SubRIP (SRT) subtitles."
+msgstr ""
+
+#: modules/demux/subtitle.c:59
+msgid ""
+"Force the subtiles format. Valid values are : \"microdvd\", \"subrip\", "
+"\"subviewer\", \"ssa1\", \"ssa2-4\", \"ass\", \"vplayer\", \"sami\", "
+"\"dvdsubtitle\", \"mpl2\", \"aqt\", \"pjs\", \"mpsub\", \"jacosub\", \"psb"
+"\", \"realtext\", \"dks\", \"subviewer1\",  and \"auto\" (meaning "
+"autodetection, this should always work)."
+msgstr ""
 
 #: modules/demux/ts.c:110
 msgid "Extra PMT"
@@ -13161,7 +13159,7 @@ msgstr ""
 
 #: modules/gui/beos/InterfaceWindow.cpp:161 modules/gui/macosx/open.m:500
 #: modules/gui/macosx/open.m:691 modules/gui/macosx/open.m:804
-#: modules/gui/macosx/open.m:1028 modules/gui/qt4/dialogs/open.cpp:82
+#: modules/gui/macosx/open.m:1028 modules/gui/qt4/dialogs/open.cpp:86
 #: modules/gui/qt4/menus.cpp:676
 #, fuzzy
 msgid "Open"
@@ -14423,8 +14421,8 @@ msgstr "Stereo"
 #: modules/gui/macosx/simple_prefs.m:272 modules/gui/macosx/simple_prefs.m:291
 #: modules/gui/qt4/components/preferences_widgets.cpp:260
 #: modules/gui/qt4/components/simple_preferences.cpp:237
-#: modules/gui/qt4/ui/open.ui:155 modules/gui/qt4/ui/open_disk.ui:141
-#: modules/gui/qt4/ui/open_file.ui:181 modules/gui/qt4/ui/sout.ui:71
+#: modules/gui/qt4/ui/open_disk.ui:141 modules/gui/qt4/ui/open_file.ui:181
+#: modules/gui/qt4/ui/open.ui:155 modules/gui/qt4/ui/sout.ui:71
 #: modules/gui/qt4/ui/sprefs_audio.ui:237
 #: modules/gui/qt4/ui/sprefs_input.ui:39
 #: modules/gui/qt4/ui/sprefs_interface.ui:184
@@ -14699,99 +14697,6 @@ msgstr "SDP"
 msgid "Save File"
 msgstr "Next file"
 
-#: modules/gui/macosx/playlist.m:127 modules/gui/macosx/wizard.m:350
-#: modules/gui/wince/playlist.cpp:671 modules/mux/asf.c:54
-msgid "Author"
-msgstr "Author"
-
-#: modules/gui/macosx/playlist.m:438
-msgid "Save Playlist..."
-msgstr "Save Playlist…"
-
-#: modules/gui/macosx/playlist.m:441
-#, fuzzy
-msgid "Expand Node"
-msgstr "Audio encoder"
-
-#: modules/gui/macosx/playlist.m:444
-#, fuzzy
-msgid "Fetch Meta Data"
-msgstr "Video settings"
-
-#: modules/gui/macosx/playlist.m:445
-#, fuzzy
-msgid "Sort Node by Name"
-msgstr "Reverse stereo"
-
-#: modules/gui/macosx/playlist.m:446
-#, fuzzy
-msgid "Sort Node by Author"
-msgstr "Reverse stereo"
-
-#: modules/gui/macosx/playlist.m:449 modules/gui/macosx/playlist.m:487
-#: modules/gui/macosx/playlist.m:1409
-#, fuzzy
-msgid "No items in the playlist"
-msgstr "&Shuffle Playlist"
-
-#: modules/gui/macosx/playlist.m:451
-#, fuzzy
-msgid "Search in Playlist"
-msgstr "&Shuffle Playlist"
-
-#: modules/gui/macosx/playlist.m:452
-#, fuzzy
-msgid "Add Folder to Playlist"
-msgstr "&Shuffle Playlist"
-
-#: modules/gui/macosx/playlist.m:454
-#, fuzzy
-msgid "File Format:"
-msgstr "Subtitle delay up"
-
-#: modules/gui/macosx/playlist.m:455
-#, fuzzy
-msgid "Extended M3U"
-msgstr "Text renderer settings"
-
-#: modules/gui/macosx/playlist.m:456
-msgid "XML Shareable Playlist Format (XSPF)"
-msgstr ""
-
-#: modules/gui/macosx/playlist.m:481 modules/gui/macosx/playlist.m:1402
-#: modules/gui/macosx/wizard.m:1356
-#, fuzzy, c-format
-msgid "%i items"
-msgstr "Video title"
-
-#: modules/gui/macosx/playlist.m:489 modules/gui/macosx/playlist.m:1413
-#, fuzzy
-msgid "1 item"
-msgstr "Video title"
-
-#: modules/gui/macosx/playlist.m:678
-#, fuzzy
-msgid "Save Playlist"
-msgstr "&Shuffle Playlist"
-
-#: modules/gui/macosx/playlist.m:1121 modules/gui/ncurses.c:1808
-msgid "Meta-information"
-msgstr ""
-
-#: modules/gui/macosx/playlist.m:1368
-#, fuzzy
-msgid "New Node"
-msgstr "Audio encoder"
-
-#: modules/gui/macosx/playlist.m:1369
-msgid "Please enter a name for the new node."
-msgstr ""
-
-#: modules/gui/macosx/playlist.m:1380
-#, fuzzy
-msgid "Empty Folder"
-msgstr "Title"
-
 #: modules/gui/macosx/playlistinfo.m:70
 #: modules/gui/qt4/dialogs/mediainfo.cpp:55
 #, fuzzy
@@ -14902,6 +14807,99 @@ msgstr ""
 #, fuzzy
 msgid "Information"
 msgstr "Visualisations"
+
+#: modules/gui/macosx/playlist.m:127 modules/gui/macosx/wizard.m:350
+#: modules/gui/wince/playlist.cpp:671 modules/mux/asf.c:54
+msgid "Author"
+msgstr "Author"
+
+#: modules/gui/macosx/playlist.m:438
+msgid "Save Playlist..."
+msgstr "Save Playlist…"
+
+#: modules/gui/macosx/playlist.m:441
+#, fuzzy
+msgid "Expand Node"
+msgstr "Audio encoder"
+
+#: modules/gui/macosx/playlist.m:444
+#, fuzzy
+msgid "Fetch Meta Data"
+msgstr "Video settings"
+
+#: modules/gui/macosx/playlist.m:445
+#, fuzzy
+msgid "Sort Node by Name"
+msgstr "Reverse stereo"
+
+#: modules/gui/macosx/playlist.m:446
+#, fuzzy
+msgid "Sort Node by Author"
+msgstr "Reverse stereo"
+
+#: modules/gui/macosx/playlist.m:449 modules/gui/macosx/playlist.m:487
+#: modules/gui/macosx/playlist.m:1409
+#, fuzzy
+msgid "No items in the playlist"
+msgstr "&Shuffle Playlist"
+
+#: modules/gui/macosx/playlist.m:451
+#, fuzzy
+msgid "Search in Playlist"
+msgstr "&Shuffle Playlist"
+
+#: modules/gui/macosx/playlist.m:452
+#, fuzzy
+msgid "Add Folder to Playlist"
+msgstr "&Shuffle Playlist"
+
+#: modules/gui/macosx/playlist.m:454
+#, fuzzy
+msgid "File Format:"
+msgstr "Subtitle delay up"
+
+#: modules/gui/macosx/playlist.m:455
+#, fuzzy
+msgid "Extended M3U"
+msgstr "Text renderer settings"
+
+#: modules/gui/macosx/playlist.m:456
+msgid "XML Shareable Playlist Format (XSPF)"
+msgstr ""
+
+#: modules/gui/macosx/playlist.m:481 modules/gui/macosx/playlist.m:1402
+#: modules/gui/macosx/wizard.m:1356
+#, fuzzy, c-format
+msgid "%i items"
+msgstr "Video title"
+
+#: modules/gui/macosx/playlist.m:489 modules/gui/macosx/playlist.m:1413
+#, fuzzy
+msgid "1 item"
+msgstr "Video title"
+
+#: modules/gui/macosx/playlist.m:678
+#, fuzzy
+msgid "Save Playlist"
+msgstr "&Shuffle Playlist"
+
+#: modules/gui/macosx/playlist.m:1121 modules/gui/ncurses.c:1808
+msgid "Meta-information"
+msgstr ""
+
+#: modules/gui/macosx/playlist.m:1368
+#, fuzzy
+msgid "New Node"
+msgstr "Audio encoder"
+
+#: modules/gui/macosx/playlist.m:1369
+msgid "Please enter a name for the new node."
+msgstr ""
+
+#: modules/gui/macosx/playlist.m:1380
+#, fuzzy
+msgid "Empty Folder"
+msgstr "Title"
 
 #: modules/gui/macosx/prefs.m:127 modules/gui/macosx/simple_prefs.m:301
 #, fuzzy
@@ -16985,7 +16983,7 @@ msgid "Filter:"
 msgstr "Filters"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:626
+#: modules/gui/qt4/dialogs_provider.cpp:629
 #, fuzzy
 msgid "Open subtitles file"
 msgstr "DVB subtitles decoder"
@@ -17153,7 +17151,7 @@ msgstr ""
 
 #: modules/gui/qt4/components/simple_preferences.cpp:805
 #: modules/gui/qt4/dialogs/gototime.cpp:51
-#: modules/gui/qt4/dialogs/help.cpp:210 modules/gui/qt4/dialogs/open.cpp:109
+#: modules/gui/qt4/dialogs/help.cpp:210 modules/gui/qt4/dialogs/open.cpp:113
 #: modules/gui/qt4/dialogs/podcast_configuration.cpp:39
 #: modules/gui/qt4/dialogs/preferences.cpp:87
 #: modules/gui/qt4/dialogs/sout.cpp:200
@@ -17451,52 +17449,52 @@ msgid ""
 "%2."
 msgstr ""
 
-#: modules/gui/qt4/dialogs/open.cpp:93
+#: modules/gui/qt4/dialogs/open.cpp:97
 #, fuzzy
 msgid "&File"
 msgstr "Title"
 
-#: modules/gui/qt4/dialogs/open.cpp:94
+#: modules/gui/qt4/dialogs/open.cpp:98
 #, fuzzy
 msgid "&Disc"
 msgstr "Disable"
 
-#: modules/gui/qt4/dialogs/open.cpp:95
+#: modules/gui/qt4/dialogs/open.cpp:99
 #, fuzzy
 msgid "&Network"
 msgstr "Decoder modules settings"
 
-#: modules/gui/qt4/dialogs/open.cpp:97
+#: modules/gui/qt4/dialogs/open.cpp:101
 #, fuzzy
 msgid "Capture &Device"
 msgstr "Open &Capture Device…"
 
-#: modules/gui/qt4/dialogs/open.cpp:112
+#: modules/gui/qt4/dialogs/open.cpp:116
 #, fuzzy
 msgid "&Select"
 msgstr "Resolution"
 
-#: modules/gui/qt4/dialogs/open.cpp:116 modules/gui/qt4/dialogs/open.cpp:201
+#: modules/gui/qt4/dialogs/open.cpp:120 modules/gui/qt4/dialogs/open.cpp:205
 msgid "&Enqueue"
 msgstr ""
 
-#: modules/gui/qt4/dialogs/open.cpp:118 modules/gui/qt4/dialogs/open.cpp:205
+#: modules/gui/qt4/dialogs/open.cpp:122 modules/gui/qt4/dialogs/open.cpp:209
 #, fuzzy
 msgid "&Play"
 msgstr "Rating"
 
-#: modules/gui/qt4/dialogs/open.cpp:120 modules/gui/qt4/dialogs/open.cpp:195
+#: modules/gui/qt4/dialogs/open.cpp:124 modules/gui/qt4/dialogs/open.cpp:199
 #: modules/gui/qt4/dialogs/sout.cpp:199
 #, fuzzy
 msgid "&Stream"
 msgstr "Stream info…"
 
-#: modules/gui/qt4/dialogs/open.cpp:122
+#: modules/gui/qt4/dialogs/open.cpp:126
 #, fuzzy
 msgid "&Convert"
 msgstr "Stereo"
 
-#: modules/gui/qt4/dialogs/open.cpp:198
+#: modules/gui/qt4/dialogs/open.cpp:202
 #, fuzzy
 msgid "&Convert / Save"
 msgstr "Stereo"
@@ -17536,6 +17534,45 @@ msgid ""
 "This will reset your VLC media player preferences.\n"
 "Are you sure you want to continue?"
 msgstr ""
+
+#: modules/gui/qt4/dialogs_provider.cpp:422
+#, fuzzy
+msgid "Open Directory"
+msgstr "Open &File…\tCtrl-F"
+
+#: modules/gui/qt4/dialogs_provider.cpp:458
+#, fuzzy
+msgid "Open playlist file"
+msgstr "&Shuffle Playlist"
+
+#: modules/gui/qt4/dialogs_provider.cpp:469
+#, fuzzy
+msgid "Choose a filename to save playlist"
+msgstr "&Shuffle Playlist"
+
+#: modules/gui/qt4/dialogs_provider.cpp:471
+#, fuzzy
+msgid "XSPF playlist (*.xspf);; "
+msgstr "&Shuffle Playlist"
+
+#: modules/gui/qt4/dialogs_provider.cpp:472
+msgid "M3U playlist (*.m3u);; Any (*.*) "
+msgstr ""
+
+#: modules/gui/qt4/dialogs_provider.hpp:45
+#, fuzzy
+msgid "Media Files"
+msgstr "Title"
+
+#: modules/gui/qt4/dialogs_provider.hpp:65
+#, fuzzy
+msgid "Subtitles Files"
+msgstr "Subtitles Track"
+
+#: modules/gui/qt4/dialogs_provider.hpp:70
+#, fuzzy
+msgid "All Files"
+msgstr "Title"
 
 #: modules/gui/qt4/dialogs/sout.cpp:103 modules/gui/qt4/ui/sout.ui:14
 #, fuzzy
@@ -17608,45 +17645,6 @@ msgstr ""
 #, fuzzy
 msgid "Open a VLM Configuration File"
 msgstr "Advanced options..."
-
-#: modules/gui/qt4/dialogs_provider.cpp:419
-#, fuzzy
-msgid "Open Directory"
-msgstr "Open &File…\tCtrl-F"
-
-#: modules/gui/qt4/dialogs_provider.cpp:455
-#, fuzzy
-msgid "Open playlist file"
-msgstr "&Shuffle Playlist"
-
-#: modules/gui/qt4/dialogs_provider.cpp:466
-#, fuzzy
-msgid "Choose a filename to save playlist"
-msgstr "&Shuffle Playlist"
-
-#: modules/gui/qt4/dialogs_provider.cpp:468
-#, fuzzy
-msgid "XSPF playlist (*.xspf);; "
-msgstr "&Shuffle Playlist"
-
-#: modules/gui/qt4/dialogs_provider.cpp:469
-msgid "M3U playlist (*.m3u);; Any (*.*) "
-msgstr ""
-
-#: modules/gui/qt4/dialogs_provider.hpp:45
-#, fuzzy
-msgid "Media Files"
-msgstr "Title"
-
-#: modules/gui/qt4/dialogs_provider.hpp:65
-#, fuzzy
-msgid "Subtitles Files"
-msgstr "Subtitles Track"
-
-#: modules/gui/qt4/dialogs_provider.hpp:70
-#, fuzzy
-msgid "All Files"
-msgstr "Title"
 
 #: modules/gui/qt4/main_interface.cpp:313
 msgid "Toggle between elapsed and remaining time"
@@ -17960,123 +17958,123 @@ msgstr "Open File…"
 msgid "Open D&irectory..."
 msgstr "Open &File…\tCtrl-F"
 
-#: modules/gui/qt4/qt4.cpp:66
+#: modules/gui/qt4/qt4.cpp:71
 msgid "Show advanced preferences over simple ones"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:67
+#: modules/gui/qt4/qt4.cpp:72
 msgid ""
 "Show advanced preferences and not simple preferences when opening the "
 "preferences dialog."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:71 modules/gui/skins2/src/skin_main.cpp:437
+#: modules/gui/qt4/qt4.cpp:76 modules/gui/skins2/src/skin_main.cpp:437
 #, fuzzy
 msgid "Systray icon"
 msgstr "Polarisation"
 
-#: modules/gui/qt4/qt4.cpp:72
+#: modules/gui/qt4/qt4.cpp:77
 msgid ""
 "Show an icon in the systray allowing you to control VLC media player for "
 "basic actions."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:76
+#: modules/gui/qt4/qt4.cpp:81
 msgid "Start VLC with only a systray icon"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:77
+#: modules/gui/qt4/qt4.cpp:82
 msgid "VLC will start with just an icon in your taskbar"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:80
+#: modules/gui/qt4/qt4.cpp:85
 msgid "Show playing item name in window title"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:81
+#: modules/gui/qt4/qt4.cpp:86
 msgid "Show the name of the song or video in the controler window title."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:84
+#: modules/gui/qt4/qt4.cpp:89
 msgid "Path to use in openfile dialog"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:86
+#: modules/gui/qt4/qt4.cpp:91
 msgid "Show notification popup on track change"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:88
+#: modules/gui/qt4/qt4.cpp:93
 msgid ""
 "Show a notification popup with the artist and track name when the current "
 "playlist item changes, when VLC is minimized or hidden."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:91
+#: modules/gui/qt4/qt4.cpp:96
 msgid "Advanced options"
 msgstr "Advanced options"
 
-#: modules/gui/qt4/qt4.cpp:92
+#: modules/gui/qt4/qt4.cpp:97
 #, fuzzy
 msgid "Show all the advanced options in the dialogs."
 msgstr "Select \"Advanced Options\" to see all options."
 
-#: modules/gui/qt4/qt4.cpp:95
+#: modules/gui/qt4/qt4.cpp:100
 msgid "Windows opacity between 0.1 and 1."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:96
+#: modules/gui/qt4/qt4.cpp:101
 msgid ""
 "Sets the windows opacity between 0.1 and 1 for main interface, playlist and "
 "extended panel. This option only works with Windows and X11 with composite "
 "extensions."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:101
+#: modules/gui/qt4/qt4.cpp:106
 msgid "Show unimportant error and warnings dialogs"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:103
+#: modules/gui/qt4/qt4.cpp:108
 msgid "Activate the updates availability notification"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:104
+#: modules/gui/qt4/qt4.cpp:109
 msgid ""
 "Activate the automatic notification of new versions of the software. It runs "
 "once every two weeks."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:107
+#: modules/gui/qt4/qt4.cpp:112
 #, fuzzy
 msgid "Number of days between two update checks"
 msgstr "Number of threads"
 
-#: modules/gui/qt4/qt4.cpp:109
+#: modules/gui/qt4/qt4.cpp:114
 msgid "Allow the volume to be set to 400%"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:110
+#: modules/gui/qt4/qt4.cpp:115
 msgid ""
 "Allow the volume to have range from 0% to 400%, instead of 0% to 200%. This "
 "option can distort the audio, since it uses software amplification."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:115
+#: modules/gui/qt4/qt4.cpp:120
 msgid "Automatically save the volume on exit"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:117
+#: modules/gui/qt4/qt4.cpp:122
 msgid "Use non native buttons and volume slider"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:119
+#: modules/gui/qt4/qt4.cpp:124
 msgid "Ask for network policy at start"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:121
+#: modules/gui/qt4/qt4.cpp:126
 msgid "Define the colors of the volume slider "
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:122
+#: modules/gui/qt4/qt4.cpp:127
 msgid ""
 "Define the colors of the volume slider\n"
 "By specifying the 12 numbers separated by a ';'\n"
@@ -18084,11 +18082,11 @@ msgid ""
 "An alternative can be '30;30;50;40;40;100;50;50;160;150;150;255' "
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:127
+#: modules/gui/qt4/qt4.cpp:132
 msgid "Selection of the starting mode and look "
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:128
+#: modules/gui/qt4/qt4.cpp:133
 msgid ""
 "Start VLC with:\n"
 " - normal mode\n"
@@ -18096,26 +18094,26 @@ msgid ""
 " - minimal mode with limited controls"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:134
+#: modules/gui/qt4/qt4.cpp:139
 msgid "Classic look"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:135
+#: modules/gui/qt4/qt4.cpp:140
 msgid "Complete look with information area"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:136
+#: modules/gui/qt4/qt4.cpp:141
 msgid "Minimal look with no menus"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:138
+#: modules/gui/qt4/qt4.cpp:143
 #, fuzzy
 msgid "Show a controller in fullscreen mode"
 msgstr ""
 "Select the key to go back (to the previous media item) in the browsing "
 "history."
 
-#: modules/gui/qt4/qt4.cpp:147
+#: modules/gui/qt4/qt4.cpp:152
 #, fuzzy
 msgid "Qt interface"
 msgstr "Switch interface"
@@ -18124,59 +18122,6 @@ msgstr "Switch interface"
 #, fuzzy
 msgid "Preset"
 msgstr "Date"
-
-#: modules/gui/qt4/ui/open.ui:38
-#, fuzzy
-msgid "Show extended options"
-msgstr "Text renderer settings"
-
-#: modules/gui/qt4/ui/open.ui:41
-#, fuzzy
-msgid "Show &more options"
-msgstr "Text renderer settings"
-
-#: modules/gui/qt4/ui/open.ui:61
-#, fuzzy
-msgid "Change the caching for the media"
-msgstr ""
-"Allows you to give a user name that will be requested to access the stream."
-
-#: modules/gui/qt4/ui/open.ui:90
-#, fuzzy
-msgid "Start Time"
-msgstr "Codec setting"
-
-#: modules/gui/qt4/ui/open.ui:100
-#, fuzzy
-msgid "Change the start time for the media"
-msgstr ""
-"Allows you to give a user name that will be requested to access the stream."
-
-#: modules/gui/qt4/ui/open.ui:132
-msgid "Play another media synchronously (extra audio file, ...)"
-msgstr ""
-
-#: modules/gui/qt4/ui/open.ui:139
-msgid "Extra media"
-msgstr ""
-
-#: modules/gui/qt4/ui/open.ui:152
-#, fuzzy
-msgid "Select the file"
-msgstr "Next file"
-
-#: modules/gui/qt4/ui/open.ui:165
-msgid "Customize"
-msgstr ""
-
-#: modules/gui/qt4/ui/open.ui:175
-msgid "Complete MRL for VLC internal"
-msgstr ""
-
-#: modules/gui/qt4/ui/open.ui:216
-#, fuzzy
-msgid "Select play mode"
-msgstr "Next file"
 
 #: modules/gui/qt4/ui/open_capture.ui:17
 #, fuzzy
@@ -18276,6 +18221,59 @@ msgstr "Next file"
 #: modules/gui/qt4/ui/open_net.ui:85
 msgid "Enter the URL of the network stream here, with or without the protocol."
 msgstr ""
+
+#: modules/gui/qt4/ui/open.ui:38
+#, fuzzy
+msgid "Show extended options"
+msgstr "Text renderer settings"
+
+#: modules/gui/qt4/ui/open.ui:41
+#, fuzzy
+msgid "Show &more options"
+msgstr "Text renderer settings"
+
+#: modules/gui/qt4/ui/open.ui:61
+#, fuzzy
+msgid "Change the caching for the media"
+msgstr ""
+"Allows you to give a user name that will be requested to access the stream."
+
+#: modules/gui/qt4/ui/open.ui:90
+#, fuzzy
+msgid "Start Time"
+msgstr "Codec setting"
+
+#: modules/gui/qt4/ui/open.ui:100
+#, fuzzy
+msgid "Change the start time for the media"
+msgstr ""
+"Allows you to give a user name that will be requested to access the stream."
+
+#: modules/gui/qt4/ui/open.ui:132
+msgid "Play another media synchronously (extra audio file, ...)"
+msgstr ""
+
+#: modules/gui/qt4/ui/open.ui:139
+msgid "Extra media"
+msgstr ""
+
+#: modules/gui/qt4/ui/open.ui:152
+#, fuzzy
+msgid "Select the file"
+msgstr "Next file"
+
+#: modules/gui/qt4/ui/open.ui:165
+msgid "Customize"
+msgstr ""
+
+#: modules/gui/qt4/ui/open.ui:175
+msgid "Complete MRL for VLC internal"
+msgstr ""
+
+#: modules/gui/qt4/ui/open.ui:216
+#, fuzzy
+msgid "Select play mode"
+msgstr "Next file"
 
 #: modules/gui/qt4/ui/podcast_configuration.ui:19
 #: modules/services_discovery/podcast.c:58
@@ -19687,6 +19685,10 @@ msgstr ""
 msgid "Lua Interface Module"
 msgstr "Windows Service interface"
 
+#: modules/misc/memcpy/memcpyaltivec.c:59
+msgid "AltiVec memcpy"
+msgstr ""
+
 #: modules/misc/memcpy/memcpy.c:82
 msgid "libc memcpy"
 msgstr ""
@@ -19701,10 +19703,6 @@ msgstr ""
 
 #: modules/misc/memcpy/memcpy.c:98
 msgid "MMX EXT memcpy"
-msgstr ""
-
-#: modules/misc/memcpy/memcpyaltivec.c:59
-msgid "AltiVec memcpy"
 msgstr ""
 
 #: modules/misc/notify/growl.m:96
@@ -21927,11 +21925,6 @@ msgstr ""
 msgid "Change gradients"
 msgstr ""
 
-#: modules/video_filter/blend.c:45
-#, fuzzy
-msgid "Video pictures blending"
-msgstr "Video filters settings"
-
 #: modules/video_filter/blendbench.c:52
 #, fuzzy
 msgid "Number of time to blend"
@@ -22006,6 +21999,11 @@ msgstr "ffmpeg demuxer"
 #, fuzzy
 msgid "Blend image"
 msgstr "ffmpeg demuxer"
+
+#: modules/video_filter/blend.c:45
+#, fuzzy
+msgid "Video pictures blending"
+msgstr "Video filters settings"
 
 #: modules/video_filter/bluescreen.c:39
 msgid ""

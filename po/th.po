@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-11 17:25+0200\n"
+"POT-Creation-Date: 2008-09-11 17:27-0700\n"
 "PO-Revision-Date: 2006-11-27 21:50+0700\n"
 "Last-Translator: devleop5 <devleop5@datawiz.co.th>\n"
 "Language-Team: Thai <thailang@buraphalinux.org>\n"
@@ -768,8 +768,8 @@ msgid "Audio Channels"
 msgstr ""
 
 #: src/audio_output/output.c:105 src/audio_output/output.c:140
-#: modules/access/v4l.c:129 modules/access/v4l2/v4l2.c:208
-#: modules/access/v4l2/v4l2.c:259 modules/audio_output/alsa.c:195
+#: modules/access/v4l2/v4l2.c:208 modules/access/v4l2/v4l2.c:259
+#: modules/access/v4l.c:129 modules/audio_output/alsa.c:195
 #: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:519
 #: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:402
 #: modules/audio_output/sdl.c:184 modules/audio_output/sdl.c:201
@@ -991,9 +991,8 @@ msgstr "%d Hz"
 msgid "Bits per sample"
 msgstr ""
 
-#: src/input/es_out.c:2083 modules/access/pvr.c:97
-#: modules/access_output/shout.c:91
-#: modules/gui/qt4/components/open_panels.cpp:865
+#: src/input/es_out.c:2083 modules/access_output/shout.c:91
+#: modules/access/pvr.c:97 modules/gui/qt4/components/open_panels.cpp:865
 msgid "Bitrate"
 msgstr ""
 
@@ -1045,8 +1044,8 @@ msgstr ""
 msgid "Title"
 msgstr "ชื่อเรื่อง"
 
-#: src/input/meta.c:53 modules/gui/macosx/playlist.m:1121
-#: modules/gui/macosx/playlistinfo.m:73
+#: src/input/meta.c:53 modules/gui/macosx/playlistinfo.m:73
+#: modules/gui/macosx/playlist.m:1121
 msgid "Artist"
 msgstr "ศิลปิน"
 
@@ -1236,6 +1235,93 @@ msgstr ""
 #: src/interface/interface.c:221
 msgid "Mouse Gestures"
 msgstr ""
+
+#: src/libvlc.c:280 src/libvlc.c:413 src/modules/cache.c:213
+#: src/modules/cache.c:532
+msgid "C"
+msgstr "th"
+
+#: src/libvlc.c:1133
+msgid ""
+"Running vlc with the default interface. Use 'cvlc' to use vlc without "
+"interface."
+msgstr ""
+
+#: src/libvlc.c:1278
+msgid "To get exhaustive help, use '-H'."
+msgstr ""
+
+#: src/libvlc.c:1614
+msgid " (default enabled)"
+msgstr " (ค่าตั้งต้นคือเปิดใช้)"
+
+#: src/libvlc.c:1615
+msgid " (default disabled)"
+msgstr " (ค่าตั้งต้นคือปิดใช้)"
+
+#: src/libvlc.c:1774 src/libvlc.c:1777
+#, fuzzy
+msgid "Note:"
+msgstr "ไม่มี"
+
+#: src/libvlc.c:1775 src/libvlc.c:1778
+msgid "add --advanced to your command line to see advanced options."
+msgstr ""
+
+#: src/libvlc.c:1882
+#, c-format
+msgid "VLC version %s\n"
+msgstr "เวอร์ชั่น VLC %s\n"
+
+#: src/libvlc.c:1883
+#, c-format
+msgid "Compiled by %s@%s.%s\n"
+msgstr "คอมไพล์โดย %s@%s.%s\n"
+
+#: src/libvlc.c:1885
+#, c-format
+msgid "Compiler: %s\n"
+msgstr "ผู้คอมไพล์: %s\n"
+
+#: src/libvlc.c:1887
+#, fuzzy, c-format
+msgid "Based upon Git commit [%s]\n"
+msgstr "ขึ้นกับ svn changeset [%s]\n"
+
+#: src/libvlc.c:1923
+msgid ""
+"\n"
+"Dumped content to vlc-help.txt file.\n"
+msgstr ""
+
+#: src/libvlc.c:1943
+msgid ""
+"\n"
+"Press the RETURN key to continue...\n"
+msgstr ""
+"\n"
+"กดปุ่ม RETURN เพื่อทำงานต่อ...\n"
+
+#: src/libvlc.h:199 src/libvlc-module.c:1325 src/libvlc-module.c:1326
+#: src/libvlc-module.c:2385 src/video_output/vout_intf.c:274
+msgid "Zoom"
+msgstr "ซูม"
+
+#: src/libvlc.h:200 src/libvlc-module.c:1251 src/video_output/vout_intf.c:169
+msgid "1:4 Quarter"
+msgstr "1:4 Quarter"
+
+#: src/libvlc.h:201 src/libvlc-module.c:1252 src/video_output/vout_intf.c:170
+msgid "1:2 Half"
+msgstr "1:2 Half"
+
+#: src/libvlc.h:202 src/libvlc-module.c:1253 src/video_output/vout_intf.c:171
+msgid "1:1 Original"
+msgstr "1:1 Original"
+
+#: src/libvlc.h:203 src/libvlc-module.c:1254 src/video_output/vout_intf.c:172
+msgid "2:1 Double"
+msgstr "2:1 Double"
 
 #: src/libvlc-module.c:88 src/libvlc-module.c:285 modules/access/bda/bda.c:63
 msgid "Auto"
@@ -3584,22 +3670,6 @@ msgstr ""
 msgid "Select the key to decrease the audio delay."
 msgstr ""
 
-#: src/libvlc-module.c:1251 src/libvlc.h:200 src/video_output/vout_intf.c:169
-msgid "1:4 Quarter"
-msgstr "1:4 Quarter"
-
-#: src/libvlc-module.c:1252 src/libvlc.h:201 src/video_output/vout_intf.c:170
-msgid "1:2 Half"
-msgstr "1:2 Half"
-
-#: src/libvlc-module.c:1253 src/libvlc.h:202 src/video_output/vout_intf.c:171
-msgid "1:1 Original"
-msgstr "1:1 Original"
-
-#: src/libvlc-module.c:1254 src/libvlc.h:203 src/video_output/vout_intf.c:172
-msgid "2:1 Double"
-msgstr "2:1 Double"
-
 #: src/libvlc-module.c:1256
 msgid "Play playlist bookmark 1"
 msgstr "เล่น playlist bookmark 1"
@@ -3849,11 +3919,6 @@ msgstr ""
 #: src/libvlc-module.c:1323
 msgid "Toggle random playlist playback"
 msgstr ""
-
-#: src/libvlc-module.c:1325 src/libvlc-module.c:1326 src/libvlc-module.c:2385
-#: src/libvlc.h:199 src/video_output/vout_intf.c:274
-msgid "Zoom"
-msgstr "ซูม"
 
 #: src/libvlc-module.c:1328 src/libvlc-module.c:1329
 msgid "Un-Zoom"
@@ -4147,72 +4212,6 @@ msgstr "พิมพ์ข้อมูลของเวอร์ชั่น"
 #: src/libvlc-module.c:2556
 msgid "main program"
 msgstr "โปรแกรมหลัก"
-
-#: src/libvlc.c:280 src/libvlc.c:413 src/modules/cache.c:213
-#: src/modules/cache.c:532
-msgid "C"
-msgstr "th"
-
-#: src/libvlc.c:1133
-msgid ""
-"Running vlc with the default interface. Use 'cvlc' to use vlc without "
-"interface."
-msgstr ""
-
-#: src/libvlc.c:1278
-msgid "To get exhaustive help, use '-H'."
-msgstr ""
-
-#: src/libvlc.c:1614
-msgid " (default enabled)"
-msgstr " (ค่าตั้งต้นคือเปิดใช้)"
-
-#: src/libvlc.c:1615
-msgid " (default disabled)"
-msgstr " (ค่าตั้งต้นคือปิดใช้)"
-
-#: src/libvlc.c:1774 src/libvlc.c:1777
-#, fuzzy
-msgid "Note:"
-msgstr "ไม่มี"
-
-#: src/libvlc.c:1775 src/libvlc.c:1778
-msgid "add --advanced to your command line to see advanced options."
-msgstr ""
-
-#: src/libvlc.c:1882
-#, c-format
-msgid "VLC version %s\n"
-msgstr "เวอร์ชั่น VLC %s\n"
-
-#: src/libvlc.c:1883
-#, c-format
-msgid "Compiled by %s@%s.%s\n"
-msgstr "คอมไพล์โดย %s@%s.%s\n"
-
-#: src/libvlc.c:1885
-#, c-format
-msgid "Compiler: %s\n"
-msgstr "ผู้คอมไพล์: %s\n"
-
-#: src/libvlc.c:1887
-#, fuzzy, c-format
-msgid "Based upon Git commit [%s]\n"
-msgstr "ขึ้นกับ svn changeset [%s]\n"
-
-#: src/libvlc.c:1923
-msgid ""
-"\n"
-"Dumped content to vlc-help.txt file.\n"
-msgstr ""
-
-#: src/libvlc.c:1943
-msgid ""
-"\n"
-"Press the RETURN key to continue...\n"
-msgstr ""
-"\n"
-"กดปุ่ม RETURN เพื่อทำงานต่อ...\n"
 
 #: src/misc/update.c:1620
 #, fuzzy
@@ -4859,16 +4858,17 @@ msgid "Aspect-ratio"
 msgstr "แอสเป็กต์เรโช"
 
 #: modules/access/bda/bda.c:40 modules/access/cdda.c:66
-#: modules/access/dshow/dshow.cpp:98 modules/access/dv.c:71
-#: modules/access/dvb/access.c:78 modules/access/dvdnav.c:72
+#: modules/access/dshow/dshow.cpp:98 modules/access/dvb/access.c:78
+#: modules/access/dv.c:71 modules/access/dvdnav.c:72
 #: modules/access/dvdread.c:76 modules/access/eyetv.m:61
 #: modules/access/fake.c:43 modules/access/file.c:84 modules/access/ftp.c:57
 #: modules/access/gnomevfs.c:47 modules/access/http.c:75
 #: modules/access/jack.c:62 modules/access/mms/mms.c:49
 #: modules/access/pvr.c:60 modules/access/rtmp/access.c:43
 #: modules/access/screen/screen.c:39 modules/access/smb.c:64
-#: modules/access/tcp.c:41 modules/access/udp.c:49 modules/access/v4l.c:77
-#: modules/access/v4l2/v4l2.c:215 modules/access/vcd/vcd.c:46
+#: modules/access/tcp.c:41 modules/access/udp.c:49
+#: modules/access/v4l2/v4l2.c:215 modules/access/v4l.c:77
+#: modules/access/vcd/vcd.c:46
 #, fuzzy
 msgid "Caching value in ms"
 msgstr "ค่าแคชในไมโครวินาที"
@@ -5219,6 +5219,16 @@ msgstr "DVB"
 msgid "DirectShow DVB input"
 msgstr "DirectShow"
 
+#: modules/access/cdda/access.c:285
+#, fuzzy
+msgid "CD reading failed"
+msgstr "ไฟล์คอนฟิกกูเรชั่น"
+
+#: modules/access/cdda/access.c:286
+#, c-format
+msgid "VLC could not get a new block of size: %i."
+msgstr ""
+
 #: modules/access/cdda.c:68
 #, fuzzy
 msgid ""
@@ -5260,16 +5270,6 @@ msgstr "พอร์ตของเซิร์ฟเวอร์ CDDB ที่
 #: modules/access/cdda.c:466
 #, c-format
 msgid "Audio CD - Track %i"
-msgstr ""
-
-#: modules/access/cdda/access.c:285
-#, fuzzy
-msgid "CD reading failed"
-msgstr "ไฟล์คอนฟิกกูเรชั่น"
-
-#: modules/access/cdda/access.c:286
-#, c-format
-msgid "VLC could not get a new block of size: %i."
 msgstr ""
 
 #: modules/access/cdda/cdda.c:43 modules/access/directory.c:86
@@ -5613,9 +5613,8 @@ msgid ""
 "don't specify anything, the default device will be used."
 msgstr "ชื่อเครื่องวิดีโอที่ใช้โดยโปรแกรม DirectShow ถ้าคุณไม่ระบุค่า จะใช้เครื่องตั้งต้นแทน"
 
-#: modules/access/dshow/dshow.cpp:107 modules/access/v4l.c:85
-#: modules/access/v4l2/v4l2.c:169
-#: modules/gui/qt4/components/open_panels.cpp:708
+#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:169
+#: modules/access/v4l.c:85 modules/gui/qt4/components/open_panels.cpp:708
 #: modules/gui/qt4/components/open_panels.cpp:743
 msgid "Audio device name"
 msgstr "ชื่อเครื่องเสียง"
@@ -5642,8 +5641,8 @@ msgstr ""
 "ชื่อเครื่องเสียงที่ใช้โดยโปรแกรม DirectShow ถ้าคุณไม่ระบุค่า จะใช้เครื่องตั้งต้นแทน "
 "คุณอาจระบุค่ามาตรฐาน (cif, d1, ...) หรือ<กว้าง>x<สูง>"
 
-#: modules/access/dshow/dshow.cpp:117 modules/access/v4l.c:89
-#: modules/access/v4l2/v4l2.c:86
+#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:86
+#: modules/access/v4l.c:89
 #, fuzzy
 msgid "Video input chroma format"
 msgstr "รูปแบบ Log"
@@ -5824,19 +5823,6 @@ msgstr ""
 msgid "The capture device \"%s\" does not support the required parameters."
 msgstr ""
 
-#: modules/access/dv.c:73
-#, fuzzy
-msgid "Caching value for DV streams. Thisvalue should be set in milliseconds."
-msgstr "ค่าแคชสำหรับกระแสข้อมูล UDP ค่านี้จะกำหนดเป็นมิลลิวินาที"
-
-#: modules/access/dv.c:77
-msgid "Digital Video (Firewire/ieee1394)  input"
-msgstr ""
-
-#: modules/access/dv.c:78
-msgid "dv"
-msgstr "dv"
-
 #: modules/access/dvb/access.c:132
 msgid "Modulation type for front-end device."
 msgstr ""
@@ -5940,6 +5926,19 @@ msgstr ""
 #, c-format
 msgid "The provided polarization \"%c\" is not valid."
 msgstr ""
+
+#: modules/access/dv.c:73
+#, fuzzy
+msgid "Caching value for DV streams. Thisvalue should be set in milliseconds."
+msgstr "ค่าแคชสำหรับกระแสข้อมูล UDP ค่านี้จะกำหนดเป็นมิลลิวินาที"
+
+#: modules/access/dv.c:77
+msgid "Digital Video (Firewire/ieee1394)  input"
+msgstr ""
+
+#: modules/access/dv.c:78
+msgid "dv"
+msgstr "dv"
 
 #: modules/access/dvdnav.c:68 modules/access/dvdread.c:72
 msgid "DVD angle"
@@ -6063,8 +6062,8 @@ msgid ""
 "Caching value for fake streams. This value should be set in milliseconds."
 msgstr "ค่าแคชสำหรับกระแสข้อมูล TCP ค่านี้จะกำหนดเป็นมิลลิวินาที"
 
-#: modules/access/fake.c:47 modules/access/pvr.c:86 modules/access/v4l.c:140
-#: modules/access/v4l2/v4l2.c:107
+#: modules/access/fake.c:47 modules/access/pvr.c:86
+#: modules/access/v4l2/v4l2.c:107 modules/access/v4l.c:140
 #, fuzzy
 msgid "Framerate"
 msgstr "ปกติ"
@@ -6139,6 +6138,101 @@ msgstr "โมดูลเอาต์พุตวิดีโอ"
 #, fuzzy, c-format
 msgid "VLC could not open the file \"%s\"."
 msgstr "โมดูลเอาต์พุตวิดีโอ"
+
+#: modules/access_filter/bandwidth.c:34
+msgid "Bandwidth limit (bytes/s)"
+msgstr ""
+
+#: modules/access_filter/bandwidth.c:36
+msgid ""
+"The bandwidth module will drop any data in excess of that many bytes per "
+"seconds."
+msgstr ""
+
+#: modules/access_filter/bandwidth.c:45
+#: modules/gui/qt4/components/open_panels.cpp:670
+#, fuzzy
+msgid "Bandwidth"
+msgstr "ความกว้างของขอบ"
+
+#: modules/access_filter/bandwidth.c:46 modules/gui/macosx/simple_prefs.m:247
+#: modules/gui/qt4/ui/sprefs_input.ui:208
+#, fuzzy
+msgid "Bandwidth limiter"
+msgstr "ความกว้างของขอบ"
+
+#: modules/access_filter/dump.c:42
+msgid "Force use of dump module"
+msgstr ""
+
+#: modules/access_filter/dump.c:43
+msgid "Activate the dump module even for media with fast seeking."
+msgstr ""
+
+#: modules/access_filter/dump.c:46
+msgid "Maximum size of temporary file (Mb)"
+msgstr ""
+
+#: modules/access_filter/dump.c:47
+msgid ""
+"The dump module will abort dumping of the media if more than this much "
+"megabyte were performed."
+msgstr ""
+
+#: modules/access_filter/record.c:48
+#, fuzzy
+msgid "Record directory"
+msgstr "ไดเรกทรอรีต้นทาง"
+
+#: modules/access_filter/record.c:50
+msgid "Directory where the record will be stored."
+msgstr ""
+
+#: modules/access_filter/record.c:339
+#, fuzzy
+msgid "Recording"
+msgstr "บันทึก"
+
+#: modules/access_filter/record.c:341
+#, fuzzy
+msgid "Recording done"
+msgstr "บันทึก"
+
+#: modules/access_filter/timeshift.c:53
+#, fuzzy
+msgid "Timeshift granularity"
+msgstr "เวลาที่เลื่อนออกไป"
+
+#: modules/access_filter/timeshift.c:55
+msgid ""
+"This is the size of the temporary files that will be used to store the "
+"timeshifted streams."
+msgstr ""
+
+#: modules/access_filter/timeshift.c:57
+#, fuzzy
+msgid "Timeshift directory"
+msgstr "เปิด &ไดเรกทรอรี..."
+
+#: modules/access_filter/timeshift.c:58
+msgid "Directory used to store the timeshift temporary files."
+msgstr ""
+
+#: modules/access_filter/timeshift.c:60
+msgid "Force use of the timeshift module"
+msgstr ""
+
+#: modules/access_filter/timeshift.c:61
+msgid ""
+"Force use of the timeshift module even if the access declares that it can "
+"control pace or pause."
+msgstr ""
+
+#: modules/access_filter/timeshift.c:65 modules/access_filter/timeshift.c:66
+#: modules/gui/macosx/simple_prefs.m:260
+#: modules/gui/qt4/ui/sprefs_input.ui:187
+msgid "Timeshift"
+msgstr "เวลาที่เลื่อนออกไป"
 
 #: modules/access/ftp.c:59
 #, fuzzy
@@ -6398,6 +6492,236 @@ msgstr ""
 msgid "Microsoft Media Server (MMS) input"
 msgstr ""
 
+#: modules/access_output/dummy.c:45 modules/stream_out/dummy.c:51
+#, fuzzy
+msgid "Dummy stream output"
+msgstr "Dummy Video output"
+
+#: modules/access_output/dummy.c:46 modules/misc/dummy/dummy.c:61
+msgid "Dummy"
+msgstr "Dummy"
+
+#: modules/access_output/file.c:64
+msgid "Append to file"
+msgstr "เพิ่มไฟล์"
+
+#: modules/access_output/file.c:65
+msgid "Append to file if it exists instead of replacing it."
+msgstr ""
+
+#: modules/access_output/file.c:69
+#, fuzzy
+msgid "File stream output"
+msgstr "เปิดใช้เอาต์พุตกระแสข้อมูล SPU "
+
+#: modules/access_output/http.c:65 modules/gui/qt4/ui/sprefs_audio.ui:309
+#: modules/misc/audioscrobbler.c:132
+msgid "Username"
+msgstr "ชื่อผู้ใช้"
+
+#: modules/access_output/http.c:66
+msgid "User name that will be requested to access the stream."
+msgstr "ชื่อผู้ใช้จะถูกใช้เมื่อเข้าใช้กระแสข้อมูล"
+
+#: modules/access_output/http.c:68 modules/control/telnet.c:87
+#: modules/gui/macosx/simple_prefs.m:227
+#: modules/gui/qt4/dialogs/interaction.cpp:99
+#: modules/gui/qt4/ui/sprefs_audio.ui:319 modules/misc/audioscrobbler.c:134
+#: modules/misc/notify/growl_udp.c:64
+msgid "Password"
+msgstr "รหัสผ่าน"
+
+#: modules/access_output/http.c:69
+msgid "Password that will be requested to access the stream."
+msgstr "รหัสผ่านจะถูกใช้เมื่อเข้าใช้กระแสข้อมูล"
+
+#: modules/access_output/http.c:71
+msgid "Mime"
+msgstr "Mime"
+
+#: modules/access_output/http.c:72
+msgid "MIME returned by the server (autodetected if not specified)."
+msgstr ""
+
+#: modules/access_output/http.c:75
+#, fuzzy
+msgid "Path to the x509 PEM certificate file that will be used for HTTPS."
+msgstr "นี่เป็น muxer ที่ใช้สำหรับเสียง"
+
+#: modules/access_output/http.c:78
+msgid ""
+"Path to the x509 PEM private key file that will be used for HTTPS. Leave "
+"empty if you don't have one."
+msgstr ""
+
+#: modules/access_output/http.c:82
+msgid ""
+"Path to the x509 PEM trusted root CA certificates (certificate authority) "
+"file that will be used for HTTPS. Leave empty if you don't have one."
+msgstr ""
+
+#: modules/access_output/http.c:87
+msgid ""
+"Path to the x509 PEM Certificates Revocation List file that will be used for "
+"SSL. Leave empty if you don't have one."
+msgstr ""
+
+#: modules/access_output/http.c:90
+msgid "Advertise with Bonjour"
+msgstr ""
+
+#: modules/access_output/http.c:91
+msgid "Advertise the stream with the Bonjour protocol."
+msgstr ""
+
+#: modules/access_output/http.c:95
+#, fuzzy
+msgid "HTTP stream output"
+msgstr "เปิดใช้เอาต์พุตกระแสข้อมูล SPU "
+
+#: modules/access_output/rtmp.c:44
+#, fuzzy
+msgid "Active TCP connection"
+msgstr "ทำการเชื่อมต่อใหม่อัติโนมัติ"
+
+#: modules/access_output/rtmp.c:46
+msgid ""
+"If enabled, VLC will connect to a remote destination instead of waiting for "
+"an incoming connection."
+msgstr ""
+
+#: modules/access_output/rtmp.c:55
+#, fuzzy
+msgid "RTMP stream output"
+msgstr "ส่งไบต์"
+
+#: modules/access_output/rtmp.c:56 modules/access/rtmp/access.c:53
+#, fuzzy
+msgid "RTMP"
+msgstr "RTP"
+
+#: modules/access_output/shout.c:63
+msgid "Stream name"
+msgstr "ชื่อกระแสข้อมูล"
+
+#: modules/access_output/shout.c:64
+msgid "Name to give to this stream/channel on the shoutcast/icecast server."
+msgstr ""
+
+#: modules/access_output/shout.c:67
+msgid "Stream description"
+msgstr "คำอธิบายกระแสข้อมูล"
+
+#: modules/access_output/shout.c:68
+msgid "Description of the stream content or information about your channel."
+msgstr ""
+
+#: modules/access_output/shout.c:71
+msgid "Stream MP3"
+msgstr "กระแสข้อมูล MP3"
+
+#: modules/access_output/shout.c:72
+msgid ""
+"You normally have to feed the shoutcast module with Ogg streams. It is also "
+"possible to stream MP3 instead, so you can forward MP3 streams to the "
+"shoutcast/icecast server."
+msgstr ""
+
+#: modules/access_output/shout.c:81
+#, fuzzy
+msgid "Genre description"
+msgstr "คำอธิบาย"
+
+#: modules/access_output/shout.c:82
+msgid "Genre of the content. "
+msgstr ""
+
+#: modules/access_output/shout.c:84
+#, fuzzy
+msgid "URL description"
+msgstr "คำอธิบาย"
+
+#: modules/access_output/shout.c:85
+msgid "URL with information about the stream or your channel. "
+msgstr ""
+
+#: modules/access_output/shout.c:92
+msgid "Bitrate information of the transcoded stream. "
+msgstr ""
+
+#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:211
+#: modules/access/v4l.c:126
+#, fuzzy
+msgid "Samplerate"
+msgstr "ส่งไบต์"
+
+#: modules/access_output/shout.c:95
+msgid "Samplerate information of the transcoded stream. "
+msgstr ""
+
+#: modules/access_output/shout.c:97
+#, fuzzy
+msgid "Number of channels"
+msgstr "จำนวนคอลัมน์"
+
+#: modules/access_output/shout.c:98
+msgid "Number of channels information of the transcoded stream. "
+msgstr ""
+
+#: modules/access_output/shout.c:100
+msgid "Ogg Vorbis Quality"
+msgstr ""
+
+#: modules/access_output/shout.c:101
+msgid "Ogg Vorbis Quality information of the transcoded stream. "
+msgstr ""
+
+#: modules/access_output/shout.c:103
+#, fuzzy
+msgid "Stream public"
+msgstr "ส่งไบต์"
+
+#: modules/access_output/shout.c:104
+msgid ""
+"Make the server publicly available on the 'Yellow Pages' (directory listing "
+"of streams) on the icecast/shoutcast website. Requires the bitrate "
+"information specified for shoutcast. Requires Ogg streaming for icecast."
+msgstr ""
+
+#: modules/access_output/shout.c:110
+msgid "IceCAST output"
+msgstr ""
+
+#: modules/access_output/udp.c:67 modules/access/rtsp/access.c:46
+#: modules/demux/live555.cpp:74
+#, fuzzy
+msgid "Caching value (ms)"
+msgstr "ค่าแคชในไมโครวินาที"
+
+#: modules/access_output/udp.c:69
+#, fuzzy
+msgid ""
+"Default caching value for outbound UDP streams. This value should be set in "
+"milliseconds."
+msgstr "ค่าแคชสำหรับกระแสข้อมูล UDP ค่านี้จะกำหนดเป็นมิลลิวินาที"
+
+#: modules/access_output/udp.c:72
+#, fuzzy
+msgid "Group packets"
+msgstr "ชื่อกลุ่ม"
+
+#: modules/access_output/udp.c:73
+msgid ""
+"Packets can be sent one by one at the right time or by groups. You can "
+"choose the number of packets that will be sent at a time. It helps reducing "
+"the scheduling load on heavily-loaded systems."
+msgstr ""
+
+#: modules/access_output/udp.c:80
+#, fuzzy
+msgid "UDP stream output"
+msgstr "ส่งไบต์"
+
 #: modules/access/pvr.c:62
 #, fuzzy
 msgid ""
@@ -6432,8 +6756,8 @@ msgstr "ปกติ"
 msgid "Norm of the stream (Automatic, SECAM, PAL, or NTSC)."
 msgstr ""
 
-#: modules/access/pvr.c:75 modules/access/v4l.c:106
-#: modules/access/v4l2/v4l2.c:101 modules/demux/rawvid.c:48
+#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:101
+#: modules/access/v4l.c:106 modules/demux/rawvid.c:48
 #: modules/video_filter/mosaic.c:96 modules/video_output/vmem.c:50
 msgid "Width"
 msgstr "ความกว้าง"
@@ -6442,8 +6766,8 @@ msgstr "ความกว้าง"
 msgid "Width of the stream to capture (-1 for autodetection)."
 msgstr ""
 
-#: modules/access/pvr.c:79 modules/access/v4l.c:109
-#: modules/access/v4l2/v4l2.c:104 modules/demux/rawvid.c:52
+#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:104
+#: modules/access/v4l.c:109 modules/demux/rawvid.c:52
 #: modules/video_filter/mosaic.c:94 modules/video_output/vmem.c:53
 msgid "Height"
 msgstr "ความสูง"
@@ -6452,9 +6776,8 @@ msgstr "ความสูง"
 msgid "Height of the stream to capture (-1 for autodetection)."
 msgstr ""
 
-#: modules/access/pvr.c:83 modules/access/v4l.c:93
-#: modules/access/v4l2/v4l2.c:230
-#: modules/gui/qt4/components/open_panels.cpp:757
+#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:230
+#: modules/access/v4l.c:93 modules/gui/qt4/components/open_panels.cpp:757
 #: modules/gui/qt4/components/open_panels.cpp:856
 msgid "Frequency"
 msgstr "ความถี่"
@@ -6463,8 +6786,8 @@ msgstr "ความถี่"
 msgid "Frequency to capture (in kHz), if applicable."
 msgstr ""
 
-#: modules/access/pvr.c:87 modules/access/v4l.c:141
-#: modules/access/v4l2/v4l2.c:108
+#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:108
+#: modules/access/v4l.c:141
 msgid "Framerate to capture, if applicable (-1 for autodetect)."
 msgstr ""
 
@@ -6540,18 +6863,18 @@ msgstr "ช่องการ์ดที่ใช้ (โดยทั่วไ�
 msgid "Automatic"
 msgstr "อัติโนมัติ"
 
-#: modules/access/pvr.c:120 modules/access/v4l.c:147
-#: modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/v4l.c:147
 msgid "SECAM"
 msgstr "SECAM"
 
-#: modules/access/pvr.c:120 modules/access/v4l.c:147
-#: modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/v4l.c:147
 msgid "PAL"
 msgstr "PAL"
 
-#: modules/access/pvr.c:120 modules/access/v4l.c:147
-#: modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/v4l.c:147
 msgid "NTSC"
 msgstr "NTSC"
 
@@ -6596,17 +6919,6 @@ msgstr "ค่าแคชสำหรับกระแสข้อมูล TC
 #, fuzzy
 msgid "RTMP input"
 msgstr "สิ่งนำเข้า TCP "
-
-#: modules/access/rtmp/access.c:53 modules/access_output/rtmp.c:56
-#, fuzzy
-msgid "RTMP"
-msgstr "RTP"
-
-#: modules/access/rtsp/access.c:46 modules/access_output/udp.c:67
-#: modules/demux/live555.cpp:74
-#, fuzzy
-msgid "Caching value (ms)"
-msgstr "ค่าแคชในไมโครวินาที"
 
 #: modules/access/rtsp/access.c:48
 #, fuzzy
@@ -6751,157 +7063,6 @@ msgstr "UDP"
 msgid "UDP input"
 msgstr "สิ่งนำเข้า UDP/RTP "
 
-#: modules/access/v4l.c:79
-#, fuzzy
-msgid ""
-"Caching value for V4L captures. This value should be set in milliseconds."
-msgstr "ค่าแคชของดีวีดี ซึ่งกำหนดเป็นมิลลิวินาที"
-
-#: modules/access/v4l.c:83
-#, fuzzy
-msgid ""
-"Name of the video device to use. If you don't specify anything, no video "
-"device will be used."
-msgstr "ชื่อเครื่องวิดีโอจะถูกใช้ใน DirectShow plugin .จะใช้ค่าดีฟอลต์ ถ้าคุณไม่ระบุค่า"
-
-#: modules/access/v4l.c:87
-#, fuzzy
-msgid ""
-"Name of the audio device to use. If you don't specify anything, no audio "
-"device will be used."
-msgstr "ชื่อเครื่องวิดีโอจะถูกใช้ใน DirectShow plugin .จะใช้ค่าดีฟอลต์ ถ้าคุณไม่ระบุค่า"
-
-#: modules/access/v4l.c:91
-msgid ""
-"Force the Video4Linux video device to use a specific chroma format (eg. I420 "
-"(default), RV24, etc.)"
-msgstr ""
-
-#: modules/access/v4l.c:98
-#, fuzzy
-msgid ""
-"Channel of the card to use (Usually, 0 = tuner, 1 = composite, 2 = svideo)."
-msgstr "ช่องการ์ดที่ใช้ (โดยทั่วไป, 0 = tuner, 1 = composite, 2 = svideo)"
-
-#: modules/access/v4l.c:103
-msgid "Audio Channel"
-msgstr "ช่องเสียง"
-
-#: modules/access/v4l.c:105
-msgid "Audio Channel to use, if there are several audio inputs."
-msgstr "ช่องเสียงที่ใช้ถ้ามีสิ่งนำเข้าเสียงหลายตัว"
-
-#: modules/access/v4l.c:107
-msgid "Width of the stream to capture (-1 for autodetect)."
-msgstr ""
-
-#: modules/access/v4l.c:110
-msgid "Height of the stream to capture (-1 for autodetect)."
-msgstr ""
-
-#: modules/access/v4l.c:112 modules/access/v4l2/v4l2.c:114
-#: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:205
-#: modules/video_filter/atmo/atmo.cpp:196
-msgid "Brightness"
-msgstr ""
-
-#: modules/access/v4l.c:114
-msgid "Brightness of the video input."
-msgstr ""
-
-#: modules/access/v4l.c:115 modules/access/v4l2/v4l2.c:123
-#: modules/gui/macosx/extended.m:100 modules/gui/qt4/ui/video_effects.ui:219
-#, fuzzy
-msgid "Hue"
-msgstr "House"
-
-#: modules/access/v4l.c:117
-#, fuzzy
-msgid "Hue of the video input."
-msgstr "บันทึกลงไฟล์"
-
-#: modules/access/v4l.c:118 modules/gui/fbosd.c:143
-#: modules/gui/qt4/ui/video_effects.ui:263
-#: modules/gui/qt4/ui/video_effects.ui:327
-#: modules/gui/qt4/ui/video_effects.ui:683 modules/misc/notify/xosd.c:83
-#: modules/video_filter/colorthres.c:54 modules/video_filter/marq.c:122
-#: modules/video_filter/rss.c:154
-msgid "Color"
-msgstr "สี"
-
-#: modules/access/v4l.c:120
-msgid "Color of the video input."
-msgstr ""
-
-#: modules/access/v4l.c:121 modules/access/v4l2/v4l2.c:117
-#: modules/gui/macosx/extended.m:98 modules/gui/qt4/ui/video_effects.ui:198
-#, fuzzy
-msgid "Contrast"
-msgstr "VLC - Controller"
-
-#: modules/access/v4l.c:123
-msgid "Contrast of the video input."
-msgstr ""
-
-#: modules/access/v4l.c:124 modules/access/v4l2/v4l2.c:313
-#, fuzzy
-msgid "Tuner"
-msgstr "เจ้าของ"
-
-#: modules/access/v4l.c:125
-#, fuzzy
-msgid "Tuner to use, if there are several ones."
-msgstr "ช่องเสียงที่ใช้ถ้ามีสิ่งนำเข้าเสียงหลายตัว"
-
-#: modules/access/v4l.c:126 modules/access/v4l2/v4l2.c:211
-#: modules/access_output/shout.c:94
-#, fuzzy
-msgid "Samplerate"
-msgstr "ส่งไบต์"
-
-#: modules/access/v4l.c:128
-msgid ""
-"Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100)"
-msgstr ""
-
-#: modules/access/v4l.c:131 modules/access/v4l2/v4l2.c:210
-msgid "Capture the audio stream in stereo."
-msgstr ""
-
-#: modules/access/v4l.c:132
-msgid "MJPEG"
-msgstr "MJPEG"
-
-#: modules/access/v4l.c:134
-#, fuzzy
-msgid "Set this option if the capture device outputs MJPEG"
-msgstr "เลือกไดเรกทรอรีที่บันทึก"
-
-#: modules/access/v4l.c:135
-#, fuzzy
-msgid "Decimation"
-msgstr "คำอธิบาย"
-
-#: modules/access/v4l.c:137
-msgid "Decimation level for MJPEG streams"
-msgstr ""
-
-#: modules/access/v4l.c:138
-msgid "Quality"
-msgstr "คุณภาพ"
-
-#: modules/access/v4l.c:139
-msgid "Quality of the stream."
-msgstr "คุณภาพของกระแสข้อมูล"
-
-#: modules/access/v4l.c:150
-msgid "Video4Linux"
-msgstr "Video4Linux"
-
-#: modules/access/v4l.c:151
-msgid "Video4Linux input"
-msgstr "สิ่งนำเข้า Video4Linux"
-
 #: modules/access/v4l2/v4l2.c:79 modules/gui/macosx/open.m:178
 #: modules/gui/qt4/components/open_panels.cpp:836
 msgid "Device name"
@@ -6971,9 +7132,21 @@ msgstr "หน้าจอส่วนขยาย\tCtrl-G"
 msgid "Reset controls to defaults provided by the v4l2 driver."
 msgstr ""
 
+#: modules/access/v4l2/v4l2.c:114 modules/access/v4l.c:112
+#: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:205
+#: modules/video_filter/atmo/atmo.cpp:196
+msgid "Brightness"
+msgstr ""
+
 #: modules/access/v4l2/v4l2.c:116
 msgid "Brightness of the video input (if supported by the v4l2 driver)."
 msgstr ""
+
+#: modules/access/v4l2/v4l2.c:117 modules/access/v4l.c:121
+#: modules/gui/macosx/extended.m:98 modules/gui/qt4/ui/video_effects.ui:198
+#, fuzzy
+msgid "Contrast"
+msgstr "VLC - Controller"
 
 #: modules/access/v4l2/v4l2.c:119
 msgid "Contrast of the video input (if supported by the v4l2 driver)."
@@ -6989,6 +7162,12 @@ msgstr "ช่วงเวลา"
 #: modules/access/v4l2/v4l2.c:122
 msgid "Saturation of the video input (if supported by the v4l2 driver)."
 msgstr ""
+
+#: modules/access/v4l2/v4l2.c:123 modules/access/v4l.c:115
+#: modules/gui/macosx/extended.m:100 modules/gui/qt4/ui/video_effects.ui:219
+#, fuzzy
+msgid "Hue"
+msgstr "House"
 
 #: modules/access/v4l2/v4l2.c:125
 msgid "Hue of the video input (if supported by the v4l2 driver)."
@@ -7182,6 +7361,10 @@ msgstr ""
 msgid "Loudness of the audio input (if supported by the v4l2 driver)."
 msgstr ""
 
+#: modules/access/v4l2/v4l2.c:210 modules/access/v4l.c:131
+msgid "Capture the audio stream in stereo."
+msgstr ""
+
 #: modules/access/v4l2/v4l2.c:213
 msgid ""
 "Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100, "
@@ -7279,6 +7462,11 @@ msgstr "สิ่งนำเข้า Video4Linux"
 msgid "Video input"
 msgstr "ออปชั่นวิดีโอ"
 
+#: modules/access/v4l2/v4l2.c:313 modules/access/v4l.c:124
+#, fuzzy
+msgid "Tuner"
+msgstr "เจ้าของ"
+
 #: modules/access/v4l2/v4l2.c:323
 #, fuzzy
 msgid "Controls"
@@ -7297,6 +7485,124 @@ msgstr "สิ่งนำเข้า Video4Linux"
 #, fuzzy
 msgid "Reset controls to default"
 msgstr "ส่วนติดต่อ Remote control"
+
+#: modules/access/v4l.c:79
+#, fuzzy
+msgid ""
+"Caching value for V4L captures. This value should be set in milliseconds."
+msgstr "ค่าแคชของดีวีดี ซึ่งกำหนดเป็นมิลลิวินาที"
+
+#: modules/access/v4l.c:83
+#, fuzzy
+msgid ""
+"Name of the video device to use. If you don't specify anything, no video "
+"device will be used."
+msgstr "ชื่อเครื่องวิดีโอจะถูกใช้ใน DirectShow plugin .จะใช้ค่าดีฟอลต์ ถ้าคุณไม่ระบุค่า"
+
+#: modules/access/v4l.c:87
+#, fuzzy
+msgid ""
+"Name of the audio device to use. If you don't specify anything, no audio "
+"device will be used."
+msgstr "ชื่อเครื่องวิดีโอจะถูกใช้ใน DirectShow plugin .จะใช้ค่าดีฟอลต์ ถ้าคุณไม่ระบุค่า"
+
+#: modules/access/v4l.c:91
+msgid ""
+"Force the Video4Linux video device to use a specific chroma format (eg. I420 "
+"(default), RV24, etc.)"
+msgstr ""
+
+#: modules/access/v4l.c:98
+#, fuzzy
+msgid ""
+"Channel of the card to use (Usually, 0 = tuner, 1 = composite, 2 = svideo)."
+msgstr "ช่องการ์ดที่ใช้ (โดยทั่วไป, 0 = tuner, 1 = composite, 2 = svideo)"
+
+#: modules/access/v4l.c:103
+msgid "Audio Channel"
+msgstr "ช่องเสียง"
+
+#: modules/access/v4l.c:105
+msgid "Audio Channel to use, if there are several audio inputs."
+msgstr "ช่องเสียงที่ใช้ถ้ามีสิ่งนำเข้าเสียงหลายตัว"
+
+#: modules/access/v4l.c:107
+msgid "Width of the stream to capture (-1 for autodetect)."
+msgstr ""
+
+#: modules/access/v4l.c:110
+msgid "Height of the stream to capture (-1 for autodetect)."
+msgstr ""
+
+#: modules/access/v4l.c:114
+msgid "Brightness of the video input."
+msgstr ""
+
+#: modules/access/v4l.c:117
+#, fuzzy
+msgid "Hue of the video input."
+msgstr "บันทึกลงไฟล์"
+
+#: modules/access/v4l.c:118 modules/gui/fbosd.c:143
+#: modules/gui/qt4/ui/video_effects.ui:263
+#: modules/gui/qt4/ui/video_effects.ui:327
+#: modules/gui/qt4/ui/video_effects.ui:683 modules/misc/notify/xosd.c:83
+#: modules/video_filter/colorthres.c:54 modules/video_filter/marq.c:122
+#: modules/video_filter/rss.c:154
+msgid "Color"
+msgstr "สี"
+
+#: modules/access/v4l.c:120
+msgid "Color of the video input."
+msgstr ""
+
+#: modules/access/v4l.c:123
+msgid "Contrast of the video input."
+msgstr ""
+
+#: modules/access/v4l.c:125
+#, fuzzy
+msgid "Tuner to use, if there are several ones."
+msgstr "ช่องเสียงที่ใช้ถ้ามีสิ่งนำเข้าเสียงหลายตัว"
+
+#: modules/access/v4l.c:128
+msgid ""
+"Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100)"
+msgstr ""
+
+#: modules/access/v4l.c:132
+msgid "MJPEG"
+msgstr "MJPEG"
+
+#: modules/access/v4l.c:134
+#, fuzzy
+msgid "Set this option if the capture device outputs MJPEG"
+msgstr "เลือกไดเรกทรอรีที่บันทึก"
+
+#: modules/access/v4l.c:135
+#, fuzzy
+msgid "Decimation"
+msgstr "คำอธิบาย"
+
+#: modules/access/v4l.c:137
+msgid "Decimation level for MJPEG streams"
+msgstr ""
+
+#: modules/access/v4l.c:138
+msgid "Quality"
+msgstr "คุณภาพ"
+
+#: modules/access/v4l.c:139
+msgid "Quality of the stream."
+msgstr "คุณภาพของกระแสข้อมูล"
+
+#: modules/access/v4l.c:150
+msgid "Video4Linux"
+msgstr "Video4Linux"
+
+#: modules/access/v4l.c:151
+msgid "Video4Linux input"
+msgstr "สิ่งนำเข้า Video4Linux"
 
 #: modules/access/vcd/vcd.c:48
 #, fuzzy
@@ -7487,314 +7793,6 @@ msgstr ""
 #: modules/access/vcdx/vcd.c:149
 msgid "Format to use in the playlist's \"title\" field."
 msgstr ""
-
-#: modules/access_filter/bandwidth.c:34
-msgid "Bandwidth limit (bytes/s)"
-msgstr ""
-
-#: modules/access_filter/bandwidth.c:36
-msgid ""
-"The bandwidth module will drop any data in excess of that many bytes per "
-"seconds."
-msgstr ""
-
-#: modules/access_filter/bandwidth.c:45
-#: modules/gui/qt4/components/open_panels.cpp:670
-#, fuzzy
-msgid "Bandwidth"
-msgstr "ความกว้างของขอบ"
-
-#: modules/access_filter/bandwidth.c:46 modules/gui/macosx/simple_prefs.m:247
-#: modules/gui/qt4/ui/sprefs_input.ui:208
-#, fuzzy
-msgid "Bandwidth limiter"
-msgstr "ความกว้างของขอบ"
-
-#: modules/access_filter/dump.c:42
-msgid "Force use of dump module"
-msgstr ""
-
-#: modules/access_filter/dump.c:43
-msgid "Activate the dump module even for media with fast seeking."
-msgstr ""
-
-#: modules/access_filter/dump.c:46
-msgid "Maximum size of temporary file (Mb)"
-msgstr ""
-
-#: modules/access_filter/dump.c:47
-msgid ""
-"The dump module will abort dumping of the media if more than this much "
-"megabyte were performed."
-msgstr ""
-
-#: modules/access_filter/record.c:48
-#, fuzzy
-msgid "Record directory"
-msgstr "ไดเรกทรอรีต้นทาง"
-
-#: modules/access_filter/record.c:50
-msgid "Directory where the record will be stored."
-msgstr ""
-
-#: modules/access_filter/record.c:339
-#, fuzzy
-msgid "Recording"
-msgstr "บันทึก"
-
-#: modules/access_filter/record.c:341
-#, fuzzy
-msgid "Recording done"
-msgstr "บันทึก"
-
-#: modules/access_filter/timeshift.c:53
-#, fuzzy
-msgid "Timeshift granularity"
-msgstr "เวลาที่เลื่อนออกไป"
-
-#: modules/access_filter/timeshift.c:55
-msgid ""
-"This is the size of the temporary files that will be used to store the "
-"timeshifted streams."
-msgstr ""
-
-#: modules/access_filter/timeshift.c:57
-#, fuzzy
-msgid "Timeshift directory"
-msgstr "เปิด &ไดเรกทรอรี..."
-
-#: modules/access_filter/timeshift.c:58
-msgid "Directory used to store the timeshift temporary files."
-msgstr ""
-
-#: modules/access_filter/timeshift.c:60
-msgid "Force use of the timeshift module"
-msgstr ""
-
-#: modules/access_filter/timeshift.c:61
-msgid ""
-"Force use of the timeshift module even if the access declares that it can "
-"control pace or pause."
-msgstr ""
-
-#: modules/access_filter/timeshift.c:65 modules/access_filter/timeshift.c:66
-#: modules/gui/macosx/simple_prefs.m:260
-#: modules/gui/qt4/ui/sprefs_input.ui:187
-msgid "Timeshift"
-msgstr "เวลาที่เลื่อนออกไป"
-
-#: modules/access_output/dummy.c:45 modules/stream_out/dummy.c:51
-#, fuzzy
-msgid "Dummy stream output"
-msgstr "Dummy Video output"
-
-#: modules/access_output/dummy.c:46 modules/misc/dummy/dummy.c:61
-msgid "Dummy"
-msgstr "Dummy"
-
-#: modules/access_output/file.c:64
-msgid "Append to file"
-msgstr "เพิ่มไฟล์"
-
-#: modules/access_output/file.c:65
-msgid "Append to file if it exists instead of replacing it."
-msgstr ""
-
-#: modules/access_output/file.c:69
-#, fuzzy
-msgid "File stream output"
-msgstr "เปิดใช้เอาต์พุตกระแสข้อมูล SPU "
-
-#: modules/access_output/http.c:65 modules/gui/qt4/ui/sprefs_audio.ui:309
-#: modules/misc/audioscrobbler.c:132
-msgid "Username"
-msgstr "ชื่อผู้ใช้"
-
-#: modules/access_output/http.c:66
-msgid "User name that will be requested to access the stream."
-msgstr "ชื่อผู้ใช้จะถูกใช้เมื่อเข้าใช้กระแสข้อมูล"
-
-#: modules/access_output/http.c:68 modules/control/telnet.c:87
-#: modules/gui/macosx/simple_prefs.m:227
-#: modules/gui/qt4/dialogs/interaction.cpp:99
-#: modules/gui/qt4/ui/sprefs_audio.ui:319 modules/misc/audioscrobbler.c:134
-#: modules/misc/notify/growl_udp.c:64
-msgid "Password"
-msgstr "รหัสผ่าน"
-
-#: modules/access_output/http.c:69
-msgid "Password that will be requested to access the stream."
-msgstr "รหัสผ่านจะถูกใช้เมื่อเข้าใช้กระแสข้อมูล"
-
-#: modules/access_output/http.c:71
-msgid "Mime"
-msgstr "Mime"
-
-#: modules/access_output/http.c:72
-msgid "MIME returned by the server (autodetected if not specified)."
-msgstr ""
-
-#: modules/access_output/http.c:75
-#, fuzzy
-msgid "Path to the x509 PEM certificate file that will be used for HTTPS."
-msgstr "นี่เป็น muxer ที่ใช้สำหรับเสียง"
-
-#: modules/access_output/http.c:78
-msgid ""
-"Path to the x509 PEM private key file that will be used for HTTPS. Leave "
-"empty if you don't have one."
-msgstr ""
-
-#: modules/access_output/http.c:82
-msgid ""
-"Path to the x509 PEM trusted root CA certificates (certificate authority) "
-"file that will be used for HTTPS. Leave empty if you don't have one."
-msgstr ""
-
-#: modules/access_output/http.c:87
-msgid ""
-"Path to the x509 PEM Certificates Revocation List file that will be used for "
-"SSL. Leave empty if you don't have one."
-msgstr ""
-
-#: modules/access_output/http.c:90
-msgid "Advertise with Bonjour"
-msgstr ""
-
-#: modules/access_output/http.c:91
-msgid "Advertise the stream with the Bonjour protocol."
-msgstr ""
-
-#: modules/access_output/http.c:95
-#, fuzzy
-msgid "HTTP stream output"
-msgstr "เปิดใช้เอาต์พุตกระแสข้อมูล SPU "
-
-#: modules/access_output/rtmp.c:44
-#, fuzzy
-msgid "Active TCP connection"
-msgstr "ทำการเชื่อมต่อใหม่อัติโนมัติ"
-
-#: modules/access_output/rtmp.c:46
-msgid ""
-"If enabled, VLC will connect to a remote destination instead of waiting for "
-"an incoming connection."
-msgstr ""
-
-#: modules/access_output/rtmp.c:55
-#, fuzzy
-msgid "RTMP stream output"
-msgstr "ส่งไบต์"
-
-#: modules/access_output/shout.c:63
-msgid "Stream name"
-msgstr "ชื่อกระแสข้อมูล"
-
-#: modules/access_output/shout.c:64
-msgid "Name to give to this stream/channel on the shoutcast/icecast server."
-msgstr ""
-
-#: modules/access_output/shout.c:67
-msgid "Stream description"
-msgstr "คำอธิบายกระแสข้อมูล"
-
-#: modules/access_output/shout.c:68
-msgid "Description of the stream content or information about your channel."
-msgstr ""
-
-#: modules/access_output/shout.c:71
-msgid "Stream MP3"
-msgstr "กระแสข้อมูล MP3"
-
-#: modules/access_output/shout.c:72
-msgid ""
-"You normally have to feed the shoutcast module with Ogg streams. It is also "
-"possible to stream MP3 instead, so you can forward MP3 streams to the "
-"shoutcast/icecast server."
-msgstr ""
-
-#: modules/access_output/shout.c:81
-#, fuzzy
-msgid "Genre description"
-msgstr "คำอธิบาย"
-
-#: modules/access_output/shout.c:82
-msgid "Genre of the content. "
-msgstr ""
-
-#: modules/access_output/shout.c:84
-#, fuzzy
-msgid "URL description"
-msgstr "คำอธิบาย"
-
-#: modules/access_output/shout.c:85
-msgid "URL with information about the stream or your channel. "
-msgstr ""
-
-#: modules/access_output/shout.c:92
-msgid "Bitrate information of the transcoded stream. "
-msgstr ""
-
-#: modules/access_output/shout.c:95
-msgid "Samplerate information of the transcoded stream. "
-msgstr ""
-
-#: modules/access_output/shout.c:97
-#, fuzzy
-msgid "Number of channels"
-msgstr "จำนวนคอลัมน์"
-
-#: modules/access_output/shout.c:98
-msgid "Number of channels information of the transcoded stream. "
-msgstr ""
-
-#: modules/access_output/shout.c:100
-msgid "Ogg Vorbis Quality"
-msgstr ""
-
-#: modules/access_output/shout.c:101
-msgid "Ogg Vorbis Quality information of the transcoded stream. "
-msgstr ""
-
-#: modules/access_output/shout.c:103
-#, fuzzy
-msgid "Stream public"
-msgstr "ส่งไบต์"
-
-#: modules/access_output/shout.c:104
-msgid ""
-"Make the server publicly available on the 'Yellow Pages' (directory listing "
-"of streams) on the icecast/shoutcast website. Requires the bitrate "
-"information specified for shoutcast. Requires Ogg streaming for icecast."
-msgstr ""
-
-#: modules/access_output/shout.c:110
-msgid "IceCAST output"
-msgstr ""
-
-#: modules/access_output/udp.c:69
-#, fuzzy
-msgid ""
-"Default caching value for outbound UDP streams. This value should be set in "
-"milliseconds."
-msgstr "ค่าแคชสำหรับกระแสข้อมูล UDP ค่านี้จะกำหนดเป็นมิลลิวินาที"
-
-#: modules/access_output/udp.c:72
-#, fuzzy
-msgid "Group packets"
-msgstr "ชื่อกลุ่ม"
-
-#: modules/access_output/udp.c:73
-msgid ""
-"Packets can be sent one by one at the right time or by groups. You can "
-"choose the number of packets that will be sent at a time. It helps reducing "
-"the scheduling load on heavily-loaded systems."
-msgstr ""
-
-#: modules/access_output/udp.c:80
-#, fuzzy
-msgid "UDP stream output"
-msgstr "ส่งไบต์"
 
 #: modules/audio_filter/channel_mixer/dolby.c:49
 msgid "Simple decoder for Dolby Surround encoded streams"
@@ -11931,43 +11929,9 @@ msgstr ""
 msgid "SMF demuxer"
 msgstr "ASF muxer"
 
-#: modules/demux/subtitle.c:54 modules/demux/subtitle_asa.c:56
+#: modules/demux/subtitle_asa.c:56 modules/demux/subtitle.c:54
 msgid "Apply a delay to all subtitles (in 1/10s, eg 100 means 10s)."
 msgstr ""
-
-#: modules/demux/subtitle.c:56
-msgid ""
-"Override the normal frames per second settings. This will only work with "
-"MicroDVD and SubRIP (SRT) subtitles."
-msgstr ""
-
-#: modules/demux/subtitle.c:59
-msgid ""
-"Force the subtiles format. Valid values are : \"microdvd\", \"subrip\", "
-"\"subviewer\", \"ssa1\", \"ssa2-4\", \"ass\", \"vplayer\", \"sami\", "
-"\"dvdsubtitle\", \"mpl2\", \"aqt\", \"pjs\", \"mpsub\", \"jacosub\", \"psb"
-"\", \"realtext\", \"dks\", \"subviewer1\",  and \"auto\" (meaning "
-"autodetection, this should always work)."
-msgstr ""
-
-#: modules/demux/subtitle.c:75 modules/demux/subtitle_asa.c:65
-#, fuzzy
-msgid "Text subtitles parser"
-msgstr "Vobsub subtitles parser"
-
-#: modules/demux/subtitle.c:80 modules/demux/subtitle_asa.c:70
-msgid "Frames per second"
-msgstr "เฟรมต่อวินาที"
-
-#: modules/demux/subtitle.c:83 modules/demux/subtitle_asa.c:73
-#, fuzzy
-msgid "Subtitles delay"
-msgstr "บทพากย์"
-
-#: modules/demux/subtitle.c:85 modules/demux/subtitle_asa.c:75
-#, fuzzy
-msgid "Subtitles format"
-msgstr "คำบรรยาย"
 
 #: modules/demux/subtitle_asa.c:58
 msgid ""
@@ -11984,6 +11948,40 @@ msgstr ""
 #, fuzzy
 msgid "Subtitles (asa demuxer)"
 msgstr "การเข้ารหัสชื่อเรื่องย่อย"
+
+#: modules/demux/subtitle_asa.c:65 modules/demux/subtitle.c:75
+#, fuzzy
+msgid "Text subtitles parser"
+msgstr "Vobsub subtitles parser"
+
+#: modules/demux/subtitle_asa.c:70 modules/demux/subtitle.c:80
+msgid "Frames per second"
+msgstr "เฟรมต่อวินาที"
+
+#: modules/demux/subtitle_asa.c:73 modules/demux/subtitle.c:83
+#, fuzzy
+msgid "Subtitles delay"
+msgstr "บทพากย์"
+
+#: modules/demux/subtitle_asa.c:75 modules/demux/subtitle.c:85
+#, fuzzy
+msgid "Subtitles format"
+msgstr "คำบรรยาย"
+
+#: modules/demux/subtitle.c:56
+msgid ""
+"Override the normal frames per second settings. This will only work with "
+"MicroDVD and SubRIP (SRT) subtitles."
+msgstr ""
+
+#: modules/demux/subtitle.c:59
+msgid ""
+"Force the subtiles format. Valid values are : \"microdvd\", \"subrip\", "
+"\"subviewer\", \"ssa1\", \"ssa2-4\", \"ass\", \"vplayer\", \"sami\", "
+"\"dvdsubtitle\", \"mpl2\", \"aqt\", \"pjs\", \"mpsub\", \"jacosub\", \"psb"
+"\", \"realtext\", \"dks\", \"subviewer1\",  and \"auto\" (meaning "
+"autodetection, this should always work)."
+msgstr ""
 
 #: modules/demux/ts.c:110
 #, fuzzy
@@ -12225,7 +12223,7 @@ msgstr ""
 
 #: modules/gui/beos/InterfaceWindow.cpp:161 modules/gui/macosx/open.m:500
 #: modules/gui/macosx/open.m:691 modules/gui/macosx/open.m:804
-#: modules/gui/macosx/open.m:1028 modules/gui/qt4/dialogs/open.cpp:82
+#: modules/gui/macosx/open.m:1028 modules/gui/qt4/dialogs/open.cpp:86
 #: modules/gui/qt4/menus.cpp:676
 msgid "Open"
 msgstr "เปิด"
@@ -13434,8 +13432,8 @@ msgstr "ฉาก"
 #: modules/gui/macosx/simple_prefs.m:272 modules/gui/macosx/simple_prefs.m:291
 #: modules/gui/qt4/components/preferences_widgets.cpp:260
 #: modules/gui/qt4/components/simple_preferences.cpp:237
-#: modules/gui/qt4/ui/open.ui:155 modules/gui/qt4/ui/open_disk.ui:141
-#: modules/gui/qt4/ui/open_file.ui:181 modules/gui/qt4/ui/sout.ui:71
+#: modules/gui/qt4/ui/open_disk.ui:141 modules/gui/qt4/ui/open_file.ui:181
+#: modules/gui/qt4/ui/open.ui:155 modules/gui/qt4/ui/sout.ui:71
 #: modules/gui/qt4/ui/sprefs_audio.ui:237
 #: modules/gui/qt4/ui/sprefs_input.ui:39
 #: modules/gui/qt4/ui/sprefs_interface.ui:184
@@ -13697,90 +13695,6 @@ msgstr "SDP URL"
 msgid "Save File"
 msgstr "บันทึกไฟล์"
 
-#: modules/gui/macosx/playlist.m:127 modules/gui/macosx/wizard.m:350
-#: modules/gui/wince/playlist.cpp:671 modules/mux/asf.c:54
-msgid "Author"
-msgstr "ผู้เขียน"
-
-#: modules/gui/macosx/playlist.m:438
-msgid "Save Playlist..."
-msgstr "บันทึก Playlist..."
-
-#: modules/gui/macosx/playlist.m:441
-msgid "Expand Node"
-msgstr "ขยายโหนด"
-
-#: modules/gui/macosx/playlist.m:444
-#, fuzzy
-msgid "Fetch Meta Data"
-msgstr "การตั้งค่าวิดีโอ"
-
-#: modules/gui/macosx/playlist.m:445
-msgid "Sort Node by Name"
-msgstr "เรียงโหนดตามชื่อ"
-
-#: modules/gui/macosx/playlist.m:446
-msgid "Sort Node by Author"
-msgstr "เรียงโหนดตามผู้แต่ง"
-
-#: modules/gui/macosx/playlist.m:449 modules/gui/macosx/playlist.m:487
-#: modules/gui/macosx/playlist.m:1409
-msgid "No items in the playlist"
-msgstr "No items in the playlist"
-
-#: modules/gui/macosx/playlist.m:451
-msgid "Search in Playlist"
-msgstr "ค้นหาใน Playlist"
-
-#: modules/gui/macosx/playlist.m:452
-msgid "Add Folder to Playlist"
-msgstr "เพิ่มโฟล์เดอร์ไปที่ Playlist"
-
-#: modules/gui/macosx/playlist.m:454
-msgid "File Format:"
-msgstr "รูปแบบไฟล์:"
-
-#: modules/gui/macosx/playlist.m:455
-#, fuzzy
-msgid "Extended M3U"
-msgstr "หน้าจอส่วนขยาย"
-
-#: modules/gui/macosx/playlist.m:456
-msgid "XML Shareable Playlist Format (XSPF)"
-msgstr ""
-
-#: modules/gui/macosx/playlist.m:481 modules/gui/macosx/playlist.m:1402
-#: modules/gui/macosx/wizard.m:1356
-#, c-format
-msgid "%i items"
-msgstr ""
-
-#: modules/gui/macosx/playlist.m:489 modules/gui/macosx/playlist.m:1413
-msgid "1 item"
-msgstr ""
-
-#: modules/gui/macosx/playlist.m:678
-msgid "Save Playlist"
-msgstr "บันทึก Playlist"
-
-#: modules/gui/macosx/playlist.m:1121 modules/gui/ncurses.c:1808
-msgid "Meta-information"
-msgstr ""
-
-#: modules/gui/macosx/playlist.m:1368
-#, fuzzy
-msgid "New Node"
-msgstr "โหนดใหม่"
-
-#: modules/gui/macosx/playlist.m:1369
-#, fuzzy
-msgid "Please enter a name for the new node."
-msgstr "กรุณาใส่ที่อยู่"
-
-#: modules/gui/macosx/playlist.m:1380
-msgid "Empty Folder"
-msgstr "โฟล์เดอร์ว่าง"
-
 #: modules/gui/macosx/playlistinfo.m:70
 #: modules/gui/qt4/dialogs/mediainfo.cpp:55
 #, fuzzy
@@ -13889,6 +13803,90 @@ msgstr ""
 #: modules/gui/macosx/playlistinfo.m:442
 msgid "Information"
 msgstr "ข้อมูล"
+
+#: modules/gui/macosx/playlist.m:127 modules/gui/macosx/wizard.m:350
+#: modules/gui/wince/playlist.cpp:671 modules/mux/asf.c:54
+msgid "Author"
+msgstr "ผู้เขียน"
+
+#: modules/gui/macosx/playlist.m:438
+msgid "Save Playlist..."
+msgstr "บันทึก Playlist..."
+
+#: modules/gui/macosx/playlist.m:441
+msgid "Expand Node"
+msgstr "ขยายโหนด"
+
+#: modules/gui/macosx/playlist.m:444
+#, fuzzy
+msgid "Fetch Meta Data"
+msgstr "การตั้งค่าวิดีโอ"
+
+#: modules/gui/macosx/playlist.m:445
+msgid "Sort Node by Name"
+msgstr "เรียงโหนดตามชื่อ"
+
+#: modules/gui/macosx/playlist.m:446
+msgid "Sort Node by Author"
+msgstr "เรียงโหนดตามผู้แต่ง"
+
+#: modules/gui/macosx/playlist.m:449 modules/gui/macosx/playlist.m:487
+#: modules/gui/macosx/playlist.m:1409
+msgid "No items in the playlist"
+msgstr "No items in the playlist"
+
+#: modules/gui/macosx/playlist.m:451
+msgid "Search in Playlist"
+msgstr "ค้นหาใน Playlist"
+
+#: modules/gui/macosx/playlist.m:452
+msgid "Add Folder to Playlist"
+msgstr "เพิ่มโฟล์เดอร์ไปที่ Playlist"
+
+#: modules/gui/macosx/playlist.m:454
+msgid "File Format:"
+msgstr "รูปแบบไฟล์:"
+
+#: modules/gui/macosx/playlist.m:455
+#, fuzzy
+msgid "Extended M3U"
+msgstr "หน้าจอส่วนขยาย"
+
+#: modules/gui/macosx/playlist.m:456
+msgid "XML Shareable Playlist Format (XSPF)"
+msgstr ""
+
+#: modules/gui/macosx/playlist.m:481 modules/gui/macosx/playlist.m:1402
+#: modules/gui/macosx/wizard.m:1356
+#, c-format
+msgid "%i items"
+msgstr ""
+
+#: modules/gui/macosx/playlist.m:489 modules/gui/macosx/playlist.m:1413
+msgid "1 item"
+msgstr ""
+
+#: modules/gui/macosx/playlist.m:678
+msgid "Save Playlist"
+msgstr "บันทึก Playlist"
+
+#: modules/gui/macosx/playlist.m:1121 modules/gui/ncurses.c:1808
+msgid "Meta-information"
+msgstr ""
+
+#: modules/gui/macosx/playlist.m:1368
+#, fuzzy
+msgid "New Node"
+msgstr "โหนดใหม่"
+
+#: modules/gui/macosx/playlist.m:1369
+#, fuzzy
+msgid "Please enter a name for the new node."
+msgstr "กรุณาใส่ที่อยู่"
+
+#: modules/gui/macosx/playlist.m:1380
+msgid "Empty Folder"
+msgstr "โฟล์เดอร์ว่าง"
 
 #: modules/gui/macosx/prefs.m:127 modules/gui/macosx/simple_prefs.m:301
 msgid "Reset All"
@@ -15904,7 +15902,7 @@ msgid "Filter:"
 msgstr "ตัวกรอง"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:626
+#: modules/gui/qt4/dialogs_provider.cpp:629
 #, fuzzy
 msgid "Open subtitles file"
 msgstr "ใช้ไฟล์บทพากย์"
@@ -16074,7 +16072,7 @@ msgstr "สมัคร"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:805
 #: modules/gui/qt4/dialogs/gototime.cpp:51
-#: modules/gui/qt4/dialogs/help.cpp:210 modules/gui/qt4/dialogs/open.cpp:109
+#: modules/gui/qt4/dialogs/help.cpp:210 modules/gui/qt4/dialogs/open.cpp:113
 #: modules/gui/qt4/dialogs/podcast_configuration.cpp:39
 #: modules/gui/qt4/dialogs/preferences.cpp:87
 #: modules/gui/qt4/dialogs/sout.cpp:200
@@ -16373,51 +16371,51 @@ msgid ""
 "%2."
 msgstr ""
 
-#: modules/gui/qt4/dialogs/open.cpp:93
+#: modules/gui/qt4/dialogs/open.cpp:97
 msgid "&File"
 msgstr "&ไฟล์"
 
-#: modules/gui/qt4/dialogs/open.cpp:94
+#: modules/gui/qt4/dialogs/open.cpp:98
 #, fuzzy
 msgid "&Disc"
 msgstr "ดิสค์"
 
-#: modules/gui/qt4/dialogs/open.cpp:95
+#: modules/gui/qt4/dialogs/open.cpp:99
 #, fuzzy
 msgid "&Network"
 msgstr "เครือข่าย"
 
-#: modules/gui/qt4/dialogs/open.cpp:97
+#: modules/gui/qt4/dialogs/open.cpp:101
 #, fuzzy
 msgid "Capture &Device"
 msgstr "เครื่องวิดีโอ"
 
-#: modules/gui/qt4/dialogs/open.cpp:112
+#: modules/gui/qt4/dialogs/open.cpp:116
 #, fuzzy
 msgid "&Select"
 msgstr "เลือก"
 
-#: modules/gui/qt4/dialogs/open.cpp:116 modules/gui/qt4/dialogs/open.cpp:201
+#: modules/gui/qt4/dialogs/open.cpp:120 modules/gui/qt4/dialogs/open.cpp:205
 msgid "&Enqueue"
 msgstr ""
 
-#: modules/gui/qt4/dialogs/open.cpp:118 modules/gui/qt4/dialogs/open.cpp:205
+#: modules/gui/qt4/dialogs/open.cpp:122 modules/gui/qt4/dialogs/open.cpp:209
 #, fuzzy
 msgid "&Play"
 msgstr "เล่น"
 
-#: modules/gui/qt4/dialogs/open.cpp:120 modules/gui/qt4/dialogs/open.cpp:195
+#: modules/gui/qt4/dialogs/open.cpp:124 modules/gui/qt4/dialogs/open.cpp:199
 #: modules/gui/qt4/dialogs/sout.cpp:199
 #, fuzzy
 msgid "&Stream"
 msgstr "กระแสข้อมูล"
 
-#: modules/gui/qt4/dialogs/open.cpp:122
+#: modules/gui/qt4/dialogs/open.cpp:126
 #, fuzzy
 msgid "&Convert"
 msgstr "เ&รียง"
 
-#: modules/gui/qt4/dialogs/open.cpp:198
+#: modules/gui/qt4/dialogs/open.cpp:202
 #, fuzzy
 msgid "&Convert / Save"
 msgstr "เ&รียง"
@@ -16455,6 +16453,45 @@ msgid ""
 "This will reset your VLC media player preferences.\n"
 "Are you sure you want to continue?"
 msgstr ""
+
+#: modules/gui/qt4/dialogs_provider.cpp:422
+#, fuzzy
+msgid "Open Directory"
+msgstr "เปิด &ไดเรกทรอรี..."
+
+#: modules/gui/qt4/dialogs_provider.cpp:458
+#, fuzzy
+msgid "Open playlist file"
+msgstr "เปิด playlist"
+
+#: modules/gui/qt4/dialogs_provider.cpp:469
+#, fuzzy
+msgid "Choose a filename to save playlist"
+msgstr "คุณต้องเลือกไฟล์ที่จะบันทึก"
+
+#: modules/gui/qt4/dialogs_provider.cpp:471
+#, fuzzy
+msgid "XSPF playlist (*.xspf);; "
+msgstr "XSPF playlist"
+
+#: modules/gui/qt4/dialogs_provider.cpp:472
+msgid "M3U playlist (*.m3u);; Any (*.*) "
+msgstr ""
+
+#: modules/gui/qt4/dialogs_provider.hpp:45
+#, fuzzy
+msgid "Media Files"
+msgstr "ไฟล์"
+
+#: modules/gui/qt4/dialogs_provider.hpp:65
+#, fuzzy
+msgid "Subtitles Files"
+msgstr "ไฟล์ชื่อเรื่องย่อย"
+
+#: modules/gui/qt4/dialogs_provider.hpp:70
+#, fuzzy
+msgid "All Files"
+msgstr "ไฟล์"
 
 #: modules/gui/qt4/dialogs/sout.cpp:103 modules/gui/qt4/ui/sout.ui:14
 #, fuzzy
@@ -16526,45 +16563,6 @@ msgstr ""
 #, fuzzy
 msgid "Open a VLM Configuration File"
 msgstr "ไฟล์คอนฟิกกูเรชั่นของ VLM "
-
-#: modules/gui/qt4/dialogs_provider.cpp:419
-#, fuzzy
-msgid "Open Directory"
-msgstr "เปิด &ไดเรกทรอรี..."
-
-#: modules/gui/qt4/dialogs_provider.cpp:455
-#, fuzzy
-msgid "Open playlist file"
-msgstr "เปิด playlist"
-
-#: modules/gui/qt4/dialogs_provider.cpp:466
-#, fuzzy
-msgid "Choose a filename to save playlist"
-msgstr "คุณต้องเลือกไฟล์ที่จะบันทึก"
-
-#: modules/gui/qt4/dialogs_provider.cpp:468
-#, fuzzy
-msgid "XSPF playlist (*.xspf);; "
-msgstr "XSPF playlist"
-
-#: modules/gui/qt4/dialogs_provider.cpp:469
-msgid "M3U playlist (*.m3u);; Any (*.*) "
-msgstr ""
-
-#: modules/gui/qt4/dialogs_provider.hpp:45
-#, fuzzy
-msgid "Media Files"
-msgstr "ไฟล์"
-
-#: modules/gui/qt4/dialogs_provider.hpp:65
-#, fuzzy
-msgid "Subtitles Files"
-msgstr "ไฟล์ชื่อเรื่องย่อย"
-
-#: modules/gui/qt4/dialogs_provider.hpp:70
-#, fuzzy
-msgid "All Files"
-msgstr "ไฟล์"
 
 #: modules/gui/qt4/main_interface.cpp:313
 msgid "Toggle between elapsed and remaining time"
@@ -16884,123 +16882,123 @@ msgstr "เปิดไฟล์..."
 msgid "Open D&irectory..."
 msgstr "เปิด&ไดเรกทรอรี..."
 
-#: modules/gui/qt4/qt4.cpp:66
+#: modules/gui/qt4/qt4.cpp:71
 #, fuzzy
 msgid "Show advanced preferences over simple ones"
 msgstr "แสดงออปชั่นขั้นสูง"
 
-#: modules/gui/qt4/qt4.cpp:67
+#: modules/gui/qt4/qt4.cpp:72
 msgid ""
 "Show advanced preferences and not simple preferences when opening the "
 "preferences dialog."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:71 modules/gui/skins2/src/skin_main.cpp:437
+#: modules/gui/qt4/qt4.cpp:76 modules/gui/skins2/src/skin_main.cpp:437
 msgid "Systray icon"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:72
+#: modules/gui/qt4/qt4.cpp:77
 msgid ""
 "Show an icon in the systray allowing you to control VLC media player for "
 "basic actions."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:76
+#: modules/gui/qt4/qt4.cpp:81
 msgid "Start VLC with only a systray icon"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:77
+#: modules/gui/qt4/qt4.cpp:82
 msgid "VLC will start with just an icon in your taskbar"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:80
+#: modules/gui/qt4/qt4.cpp:85
 msgid "Show playing item name in window title"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:81
+#: modules/gui/qt4/qt4.cpp:86
 msgid "Show the name of the song or video in the controler window title."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:84
+#: modules/gui/qt4/qt4.cpp:89
 msgid "Path to use in openfile dialog"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:86
+#: modules/gui/qt4/qt4.cpp:91
 msgid "Show notification popup on track change"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:88
+#: modules/gui/qt4/qt4.cpp:93
 msgid ""
 "Show a notification popup with the artist and track name when the current "
 "playlist item changes, when VLC is minimized or hidden."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:91
+#: modules/gui/qt4/qt4.cpp:96
 msgid "Advanced options"
 msgstr "ออปชั่นขั้นสูง"
 
-#: modules/gui/qt4/qt4.cpp:92
+#: modules/gui/qt4/qt4.cpp:97
 #, fuzzy
 msgid "Show all the advanced options in the dialogs."
 msgstr "แสดงออปชั่นขั้นสูง"
 
-#: modules/gui/qt4/qt4.cpp:95
+#: modules/gui/qt4/qt4.cpp:100
 #, fuzzy
 msgid "Windows opacity between 0.1 and 1."
 msgstr "QP factor ระหว่าง I และ P"
 
-#: modules/gui/qt4/qt4.cpp:96
+#: modules/gui/qt4/qt4.cpp:101
 msgid ""
 "Sets the windows opacity between 0.1 and 1 for main interface, playlist and "
 "extended panel. This option only works with Windows and X11 with composite "
 "extensions."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:101
+#: modules/gui/qt4/qt4.cpp:106
 msgid "Show unimportant error and warnings dialogs"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:103
+#: modules/gui/qt4/qt4.cpp:108
 msgid "Activate the updates availability notification"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:104
+#: modules/gui/qt4/qt4.cpp:109
 msgid ""
 "Activate the automatic notification of new versions of the software. It runs "
 "once every two weeks."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:107
+#: modules/gui/qt4/qt4.cpp:112
 msgid "Number of days between two update checks"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:109
+#: modules/gui/qt4/qt4.cpp:114
 msgid "Allow the volume to be set to 400%"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:110
+#: modules/gui/qt4/qt4.cpp:115
 msgid ""
 "Allow the volume to have range from 0% to 400%, instead of 0% to 200%. This "
 "option can distort the audio, since it uses software amplification."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:115
+#: modules/gui/qt4/qt4.cpp:120
 msgid "Automatically save the volume on exit"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:117
+#: modules/gui/qt4/qt4.cpp:122
 msgid "Use non native buttons and volume slider"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:119
+#: modules/gui/qt4/qt4.cpp:124
 msgid "Ask for network policy at start"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:121
+#: modules/gui/qt4/qt4.cpp:126
 msgid "Define the colors of the volume slider "
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:122
+#: modules/gui/qt4/qt4.cpp:127
 msgid ""
 "Define the colors of the volume slider\n"
 "By specifying the 12 numbers separated by a ';'\n"
@@ -17008,11 +17006,11 @@ msgid ""
 "An alternative can be '30;30;50;40;40;100;50;50;160;150;150;255' "
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:127
+#: modules/gui/qt4/qt4.cpp:132
 msgid "Selection of the starting mode and look "
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:128
+#: modules/gui/qt4/qt4.cpp:133
 msgid ""
 "Start VLC with:\n"
 " - normal mode\n"
@@ -17020,25 +17018,25 @@ msgid ""
 " - minimal mode with limited controls"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:134
+#: modules/gui/qt4/qt4.cpp:139
 #, fuzzy
 msgid "Classic look"
 msgstr "Classic rock"
 
-#: modules/gui/qt4/qt4.cpp:135
+#: modules/gui/qt4/qt4.cpp:140
 msgid "Complete look with information area"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:136
+#: modules/gui/qt4/qt4.cpp:141
 msgid "Minimal look with no menus"
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:138
+#: modules/gui/qt4/qt4.cpp:143
 #, fuzzy
 msgid "Show a controller in fullscreen mode"
 msgstr "เริ่มใช้วิดีโอในโหมดเต็มจอ"
 
-#: modules/gui/qt4/qt4.cpp:147
+#: modules/gui/qt4/qt4.cpp:152
 #, fuzzy
 msgid "Qt interface"
 msgstr "เปลี่ยนส่วนติดต่อ"
@@ -17047,57 +17045,6 @@ msgstr "เปลี่ยนส่วนติดต่อ"
 #, fuzzy
 msgid "Preset"
 msgstr "ตั้งค่าใหม่ทั้งหมด"
-
-#: modules/gui/qt4/ui/open.ui:38
-#, fuzzy
-msgid "Show extended options"
-msgstr "แสดงออปชั่นขั้นสูง"
-
-#: modules/gui/qt4/ui/open.ui:41
-#, fuzzy
-msgid "Show &more options"
-msgstr "แสดงออปชั่นขั้นสูง"
-
-#: modules/gui/qt4/ui/open.ui:61
-#, fuzzy
-msgid "Change the caching for the media"
-msgstr "เปลี่ยนชื่อของบริการ"
-
-#: modules/gui/qt4/ui/open.ui:90
-#, fuzzy
-msgid "Start Time"
-msgstr "เวลาเริ่มต้น"
-
-#: modules/gui/qt4/ui/open.ui:100
-#, fuzzy
-msgid "Change the start time for the media"
-msgstr "เปลี่ยนชื่อของบริการ"
-
-#: modules/gui/qt4/ui/open.ui:132
-msgid "Play another media synchronously (extra audio file, ...)"
-msgstr ""
-
-#: modules/gui/qt4/ui/open.ui:139
-msgid "Extra media"
-msgstr ""
-
-#: modules/gui/qt4/ui/open.ui:152
-#, fuzzy
-msgid "Select the file"
-msgstr "เลือกไฟล์"
-
-#: modules/gui/qt4/ui/open.ui:165
-msgid "Customize"
-msgstr ""
-
-#: modules/gui/qt4/ui/open.ui:175
-msgid "Complete MRL for VLC internal"
-msgstr ""
-
-#: modules/gui/qt4/ui/open.ui:216
-#, fuzzy
-msgid "Select play mode"
-msgstr "เลือกไฟล์"
 
 #: modules/gui/qt4/ui/open_capture.ui:17
 #, fuzzy
@@ -17197,6 +17144,57 @@ msgstr "เลือกไฟล์"
 #: modules/gui/qt4/ui/open_net.ui:85
 msgid "Enter the URL of the network stream here, with or without the protocol."
 msgstr ""
+
+#: modules/gui/qt4/ui/open.ui:38
+#, fuzzy
+msgid "Show extended options"
+msgstr "แสดงออปชั่นขั้นสูง"
+
+#: modules/gui/qt4/ui/open.ui:41
+#, fuzzy
+msgid "Show &more options"
+msgstr "แสดงออปชั่นขั้นสูง"
+
+#: modules/gui/qt4/ui/open.ui:61
+#, fuzzy
+msgid "Change the caching for the media"
+msgstr "เปลี่ยนชื่อของบริการ"
+
+#: modules/gui/qt4/ui/open.ui:90
+#, fuzzy
+msgid "Start Time"
+msgstr "เวลาเริ่มต้น"
+
+#: modules/gui/qt4/ui/open.ui:100
+#, fuzzy
+msgid "Change the start time for the media"
+msgstr "เปลี่ยนชื่อของบริการ"
+
+#: modules/gui/qt4/ui/open.ui:132
+msgid "Play another media synchronously (extra audio file, ...)"
+msgstr ""
+
+#: modules/gui/qt4/ui/open.ui:139
+msgid "Extra media"
+msgstr ""
+
+#: modules/gui/qt4/ui/open.ui:152
+#, fuzzy
+msgid "Select the file"
+msgstr "เลือกไฟล์"
+
+#: modules/gui/qt4/ui/open.ui:165
+msgid "Customize"
+msgstr ""
+
+#: modules/gui/qt4/ui/open.ui:175
+msgid "Complete MRL for VLC internal"
+msgstr ""
+
+#: modules/gui/qt4/ui/open.ui:216
+#, fuzzy
+msgid "Select play mode"
+msgstr "เลือกไฟล์"
 
 #: modules/gui/qt4/ui/podcast_configuration.ui:19
 #: modules/services_discovery/podcast.c:58
@@ -18544,6 +18542,10 @@ msgstr ""
 msgid "Lua Interface Module"
 msgstr "โมดูลส่วนติดต่อ"
 
+#: modules/misc/memcpy/memcpyaltivec.c:59
+msgid "AltiVec memcpy"
+msgstr "AltiVec memcpy"
+
 #: modules/misc/memcpy/memcpy.c:82
 msgid "libc memcpy"
 msgstr "libc memcpy"
@@ -18559,10 +18561,6 @@ msgstr "MMX memcpy"
 #: modules/misc/memcpy/memcpy.c:98
 msgid "MMX EXT memcpy"
 msgstr "MMX EXT memcpy"
-
-#: modules/misc/memcpy/memcpyaltivec.c:59
-msgid "AltiVec memcpy"
-msgstr "AltiVec memcpy"
 
 #: modules/misc/notify/growl.m:96
 msgid "Growl Notification Plugin"
@@ -20687,11 +20685,6 @@ msgstr ""
 msgid "Change gradients"
 msgstr ""
 
-#: modules/video_filter/blend.c:45
-#, fuzzy
-msgid "Video pictures blending"
-msgstr "การตั้งค่าตัวกรองวิดีโอ"
-
 #: modules/video_filter/blendbench.c:52
 #, fuzzy
 msgid "Number of time to blend"
@@ -20763,6 +20756,11 @@ msgstr ""
 #, fuzzy
 msgid "Blend image"
 msgstr "ส่งไบต์"
+
+#: modules/video_filter/blend.c:45
+#, fuzzy
+msgid "Video pictures blending"
+msgstr "การตั้งค่าตัวกรองวิดีโอ"
 
 #: modules/video_filter/bluescreen.c:39
 msgid ""
