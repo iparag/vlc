@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-11 17:27-0700\n"
-"PO-Revision-Date: 2008-09-10 07:22+0100\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2008-09-13 22:45+0100\n"
+"PO-Revision-Date: 2008-09-13 05:46+0100\n"
+"Last-Translator: Antonio J. Varela Calvo <tonxabar@gmail.com>\n"
 "Language-Team: Spanish-English\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -103,7 +103,7 @@ msgstr "Filtros"
 
 #: include/vlc_config_cat.h:62
 msgid "Audio filters are used to postprocess the audio stream."
-msgstr "Los filtros de audio se usan para postprocesar el volcado de audio."
+msgstr "Los filtros de audio se usan para postprocesar la emisión de audio."
 
 #: include/vlc_config_cat.h:64 src/audio_output/input.c:96
 #: modules/gui/macosx/intf.m:560 modules/gui/macosx/intf.m:561
@@ -156,7 +156,7 @@ msgstr "Elige tu salida de vídeo deseada y configúrala aquí."
 
 #: include/vlc_config_cat.h:87
 msgid "Video filters are used to postprocess the video stream."
-msgstr "Los filtros de vídeo se usan para postprocesar el volcado de vídeo."
+msgstr "Los filtros de vídeo se usan para postprocesar la emisión de vídeo."
 
 #: include/vlc_config_cat.h:89
 msgid "Subtitles/OSD"
@@ -215,7 +215,7 @@ msgstr "Demuxores"
 
 #: include/vlc_config_cat.h:116
 msgid "Demuxers are used to separate audio and video streams."
-msgstr "Los demuxores se usan para separar volcados de audio y vídeo."
+msgstr "Los demuxores se usan para separar emisiones de audio y vídeo."
 
 #: include/vlc_config_cat.h:118
 msgid "Video codecs"
@@ -247,7 +247,7 @@ msgstr "Ajustes de entrada general. Usar con cuidado."
 
 #: include/vlc_config_cat.h:131 src/libvlc-module.c:1760
 msgid "Stream output"
-msgstr "Volcado de salida"
+msgstr "Salida de emisión"
 
 #: include/vlc_config_cat.h:133
 msgid ""
@@ -259,17 +259,17 @@ msgid ""
 "Sout streams modules allow advanced stream processing (transcoding, "
 "duplicating...)."
 msgstr ""
-"La salida de volcado es lo que permite a VLC actuar como servidor de volcado "
-"o guardar volcados entrantes.\n"
-"Los volcados son primero muxados y luego enviadso a través de un módulo de "
-"\"salida de acceso\" que puede o salvar el volcado a un archivo, o enviarlo "
+"La salida de emisión es lo que permite a VLC actuar como servidor de emisión "
+"o guardar emisiones entrantes.\n"
+"Las emisiones son muxadas primero y luego enviadas a través de un módulo de "
+"\"salida de acceso\" que puede salvar la emisión a un archivo, o emitirla "
 "(UDP, HTTP, RTP/RTSP).\n"
-"Los módulos de volcados sout permiten procesamiento de volcado avanzado "
-"(transcodificar, duplicar, ...)."
+"Los módulos de emisiones sout permiten el procesado avanzado de la emisión "
+"(transcodificado, duplicado...)."
 
 #: include/vlc_config_cat.h:141
 msgid "General stream output settings"
-msgstr "Opciones generales de salida de volcado"
+msgstr "Opciones generales de salida de emisión"
 
 #: include/vlc_config_cat.h:143
 msgid "Muxers"
@@ -282,8 +282,8 @@ msgid ""
 "always force a specific muxer. You should probably not do that.\n"
 "You can also set default parameters for each muxer."
 msgstr ""
-"Muxores son los formatos de encapsulamiento que se usan para poner juntos "
-"todos los volcados elementales (vídeo, audio, ...). Esta opción te permite "
+"Los muxores crean los formatos de encapsulamiento usados para poner juntas "
+"todas las emisiones elementales (vídeo, audio, ...). Esta opción te permite "
 "forzar siempre un muxor específico. Probablemente no deberías hacerlo.\n"
 "También puedes poner parámentros por defecto para cada muxor."
 
@@ -292,16 +292,15 @@ msgid "Access output"
 msgstr "Salida de acceso"
 
 #: include/vlc_config_cat.h:153
-#, fuzzy
 msgid ""
 "Access output modules control the ways the muxed streams are sent. This "
 "setting allows you to always force a specific access output method. You "
 "should probably not do that.\n"
 "You can also set default parameters for each access output."
 msgstr ""
-"Salidas de acceso son los modos en que se envían los volcados muxados. Esta "
-"opción te permite forzar siempre una salida de acceso. Probablemente no "
-"deberías hacer eso.\n"
+"Los módulos de salida de acceso controlan cómo se envían las emisiones "
+"muxadas. Esta opción te permite forzar siempre un método de salida de "
+"acceso. Probablemente no deberías hacer eso.\n"
 "También puedes poner parámetros por defecto para cada salida de acceso."
 
 #: include/vlc_config_cat.h:158
@@ -315,14 +314,14 @@ msgid ""
 "not do that.\n"
 "You can also set default parameters for each packetizer."
 msgstr ""
-"Los empaquetadores se usan para \"preprocesar\" los volcados elementales "
-"antes de muxarlos. Esta opción te permite forzar siempre un empaquetador. "
+"Los empaquetadores se usan para \"preprocesar\" las emisiones elementales "
+"antes de muxarlas. Esta opción te permite forzar siempre un empaquetador. "
 "Probablemente no deberías hacerlo.\n"
 "También puedes poner parámetros por defecto para cada empaquetador."
 
 #: include/vlc_config_cat.h:166
 msgid "Sout stream"
-msgstr "Volcado Sout"
+msgstr "Emisión sout"
 
 #: include/vlc_config_cat.h:167
 msgid ""
@@ -330,9 +329,9 @@ msgid ""
 "the Streaming Howto for more information. You can configure default options "
 "for each sout stream module here."
 msgstr ""
-"Los módulos de volcado sout permiten crear una cadena de proceso sout. Por "
+"Los módulos de emisión sout permiten crear una cadena de proceso sout. Por "
 "favor leer el Streaming Howto para más información. Aquí puedes configurar "
-"opciones por defecto para cada módulo de volcado sout."
+"opciones por defecto para cada módulo de emisión sout."
 
 #: include/vlc_config_cat.h:172 modules/services_discovery/sap.c:127
 #: modules/services_discovery/sap.c:323
@@ -344,8 +343,8 @@ msgid ""
 "SAP is a way to publically announce streams that are being sent using "
 "multicast UDP or RTP."
 msgstr ""
-"SAP es un modo de anunciar públicamente volcados que estén siendo enviados "
-"usando UDP multiemisión o RPT."
+"SAP es un modo de anunciar públicamente emisiones que estén siendo enviadas "
+"usando multiemisión UDP o RPT."
 
 #: include/vlc_config_cat.h:177
 msgid "VOD"
@@ -579,7 +578,7 @@ msgstr "Añadir Nodo"
 
 #: include/vlc_intf_strings.h:59
 msgid "Stream..."
-msgstr "Volcado..."
+msgstr "Emisión..."
 
 #: include/vlc_intf_strings.h:60
 msgid "Save..."
@@ -763,7 +762,7 @@ msgstr ""
 "información sobre cómo usar el reproductor en el documento <br>\"<a href="
 "\"http://wiki.videolan.org/Documentation:Play_HowTo\"><em>How to play files "
 "with VLC media player</em></a>\".</p><p>Para toda tarea de salvado, "
-"conversión, transcodificación, codificación, muxing y volcado, hallarás "
+"conversión, transcodificación, codificación, muxing y emisión, hallarás "
 "información útil en la <a href=\"http://wiki.videolan.org/Documentation:"
 "Streaming_HowTo\">Documentación de Volcado</a>.</p><p>If you are unsure "
 "about terminology, please consult the <a href=\"http://wiki.videolan.org/"
@@ -922,9 +921,9 @@ msgid "%s: option `%s' requires an argument\n"
 msgstr "%s: opción `%s' requiere un argumento\n"
 
 #: src/extras/getopt.c:710 src/extras/getopt.c:716
-#, fuzzy, c-format
+#, c-format
 msgid "%s: unrecognized option `%s%s'\n"
-msgstr "%s: opción no reconocida `%c%s'\n"
+msgstr "%s: opción no reconocida `%s%s'\n"
 
 #: src/extras/getopt.c:743
 #, c-format
@@ -976,7 +975,7 @@ msgstr ""
 #: modules/codec/avcodec/encoder.c:676 modules/stream_out/es.c:373
 #: modules/stream_out/es.c:388
 msgid "Streaming / Transcoding failed"
-msgstr "Falló Volcado/Transcodificación"
+msgstr "Falló Emisión / Transcodificación"
 
 #: src/input/decoder.c:168
 msgid "VLC could not open the packetizer module."
@@ -1023,7 +1022,7 @@ msgstr ""
 #: src/input/es_out.c:2049 modules/codec/faad.c:386
 #, c-format
 msgid "Stream %d"
-msgstr "Volcado %d"
+msgstr "Emisión %d"
 
 #: src/input/es_out.c:2052 modules/gui/macosx/wizard.m:383
 #: modules/gui/qt4/ui/sout.ui:683 modules/gui/qt4/ui/sout.ui:770
@@ -1171,9 +1170,8 @@ msgid "Encoded by"
 msgstr "Codificado por"
 
 #: src/input/meta.c:67
-#, fuzzy
 msgid "Artwork URL"
-msgstr "URL"
+msgstr "URL de ilustración"
 
 #: src/input/meta.c:68
 msgid "Track ID"
@@ -1365,7 +1363,7 @@ msgid ""
 "Dumped content to vlc-help.txt file.\n"
 msgstr ""
 "\n"
-"Contenido volcado a archivo vlc-help.txt.\n"
+"Contenido metido a archivo vlc-help.txt.\n"
 
 #: src/libvlc.c:1943
 msgid ""
@@ -1376,7 +1374,7 @@ msgstr ""
 "Pulsa tecla RETORNO para continuar...\n"
 
 #: src/libvlc.h:199 src/libvlc-module.c:1325 src/libvlc-module.c:1326
-#: src/libvlc-module.c:2385 src/video_output/vout_intf.c:274
+#: src/libvlc-module.c:2398 src/video_output/vout_intf.c:274
 msgid "Zoom"
 msgstr "Zoom"
 
@@ -1501,9 +1499,8 @@ msgid "Portuguese"
 msgstr "Portugués"
 
 #: src/libvlc-module.c:114
-#, fuzzy
 msgid "Punjabi"
-msgstr "Panjabi"
+msgstr "Punjabi"
 
 #: src/libvlc-module.c:115 src/text/iso-639_def.h:154
 msgid "Romanian"
@@ -1605,11 +1602,11 @@ msgstr "Deshabilita todos los mensajes de aviso e información."
 
 #: src/libvlc-module.c:173
 msgid "Default stream"
-msgstr "Volcado por defecto"
+msgstr "Emisión por defecto"
 
 #: src/libvlc-module.c:175
 msgid "This stream will always be opened at VLC startup."
-msgstr "Este volcado siempre se abrirá al iniciar VLC."
+msgstr "Esta emisión siempre se abrirá al iniciar VLC."
 
 #: src/libvlc-module.c:178
 msgid ""
@@ -1796,8 +1793,8 @@ msgid ""
 "played)."
 msgstr ""
 "Esto pone el modo de canales de salida de audio a usar por defecto cuando "
-"sea posible (ej. si tu hardware así como el volcado de audio ejecutado lo "
-"soportan)."
+"sea posible (ej. si tu hardware lo soporta, así como la emisión de audio "
+"reproducida)."
 
 #: src/libvlc-module.c:271 modules/gui/macosx/simple_prefs.m:230
 #: modules/gui/qt4/ui/sprefs_audio.ui:99
@@ -1809,8 +1806,8 @@ msgid ""
 "S/PDIF can be used by default when your hardware supports it as well as the "
 "audio stream being played."
 msgstr ""
-"S/PDIF puede usarse por defecto cuando tu hardware y el volcado de audio "
-"ejecutado lo soportan."
+"S/PDIF puede usarse por defecto cuando tu hardware y la emisión de audio "
+"reproducida lo soportan."
 
 #: src/libvlc-module.c:276 modules/gui/macosx/simple_prefs.m:220
 #: modules/gui/qt4/ui/sprefs_audio.ui:113
@@ -1824,9 +1821,9 @@ msgid ""
 "actually encoded with Dolby Surround, turning on this option might enhance "
 "your experience, especially when combined with the Headphone Channel Mixer."
 msgstr ""
-"Usa esto cuando sepas que tu volcado está (o no) codificado con Dolby "
-"Surround pero falla para detectarse como tal. Incluso si el voncado no está "
-"actualmente codificado con Dolby Surround, activando esta opción podría "
+"Usa esto cuando sepas que tu emisión está (o no) codificada con Dolby "
+"Surround, pero falla para detectarse como tal. Incluso si la emisión no está "
+"actualmente codificada con Dolby Surround, activando esta opción podría "
 "mejorar tu experiencia, especialmente cuando se combina con el Mezclador de "
 "Canal de Auriculares."
 
@@ -1863,33 +1860,31 @@ msgid "Select the replay gain mode"
 msgstr "Pon el retraso (en segundos)"
 
 #: src/libvlc-module.c:303
-#, fuzzy
 msgid "Replay preamp"
-msgstr "Ejecutar Volcado"
+msgstr "Reproducir preamp"
 
 #: src/libvlc-module.c:305
-#, fuzzy
 msgid ""
 "This allows you to change the default target level (89 dB) for stream with "
 "replay gain information"
 msgstr ""
-"Esto permite indicar el puerto de audio por defecto para el volcado RTP."
+"Esto te permite cambiar nivel objetivo por defecto (89 dB) para emitir con "
+"información de reproducir ganancia"
 
 #: src/libvlc-module.c:308
-#, fuzzy
 msgid "Default replay gain"
-msgstr "Volcado por defecto"
+msgstr "Reproducir ganancia por defecto"
 
 #: src/libvlc-module.c:310
 msgid "This is the gain used for stream without replay gain information"
 msgstr ""
-"Esta es la ganancia usada para volcado sin información de ganancia de "
+"Esta es la ganancia usada para emisión sin información de ganancia de "
 "reproducción"
 
 #: src/libvlc-module.c:312
 #, fuzzy
 msgid "Peak protection"
-msgstr "Reducción de ruido"
+msgstr "Protección de ruido"
 
 #: src/libvlc-module.c:314
 #, fuzzy
@@ -2213,7 +2208,7 @@ msgstr "Módulo de salida de vídeo"
 
 #: src/libvlc-module.c:441
 msgid "This adds video output filters like clone or wall"
-msgstr ""
+msgstr "Esto añade filtros de salida de vídeo como clonar o pared"
 
 #: src/libvlc-module.c:443
 msgid "Video filter module"
@@ -2388,13 +2383,12 @@ msgid "Skip frames"
 msgstr "Omitir fotogramas"
 
 #: src/libvlc-module.c:521
-#, fuzzy
 msgid ""
 "Enables framedropping on MPEG2 stream. Framedropping occurs when your "
 "computer is not powerful enough"
 msgstr ""
-"Esta opción habilita el desechar fotogramas en volcados MPEG2. El desechar "
-"fotogramas sucede cuando tu computadora no es lo suficientemente potente"
+"Habilita desechar fotogramas en emisiones MPEG2. El desechar fotogramas "
+"sucede cuando tu computadora no es lo suficientemente potente"
 
 #: src/libvlc-module.c:524
 msgid "Drop late frames"
@@ -2451,8 +2445,9 @@ msgid ""
 "It is possible to disable the input clock synchronisation for real-time "
 "sources. Use this if you experience jerky playback of network streams."
 msgstr ""
-"Es posible deshabilitar la sincronización de reloj de entrada para fuentes a "
-"tiempo real. Úsalo si experimentas reproducción a saltos de volcados en red."
+"Es posible deshabilitar la sincronización de reloj de entrada para orígenes "
+"a tiempo real. Úsalo si experimentas reproducción a saltos de emisiones en "
+"red."
 
 #: src/libvlc-module.c:555 modules/control/netsync.c:82
 msgid "Network synchronisation"
@@ -2492,7 +2487,8 @@ msgstr "Puerto UDP"
 
 #: src/libvlc-module.c:566
 msgid "This is the default port used for UDP streams. Default is 1234."
-msgstr "Éste es el puerto usado para volcados UDP. Por defecto es 1234."
+msgstr ""
+"Éste es el puerto por defecto usado para emisiones UDP. Por defecto es 1234."
 
 #: src/libvlc-module.c:568
 msgid "MTU of the network interface"
@@ -2522,16 +2518,13 @@ msgstr ""
 "enviados por el volcado de salida."
 
 #: src/libvlc-module.c:581
-#, fuzzy
 msgid "Multicast output interface"
-msgstr "Interfaz de salida multiemisión IPv6"
+msgstr "Interfaz de salida multiemisión"
 
 #: src/libvlc-module.c:583
-#, fuzzy
 msgid "Default multicast interface. This overrides the routing table."
 msgstr ""
-"Interfaz de multiemisión IPv6 por defecto. Esto anula la tabla de "
-"enrutamiento."
+"Interfaz de multiemisión por defecto. Esto anula la tabla de enrutamiento."
 
 #: src/libvlc-module.c:585
 msgid "IPv4 multicast output interface address"
@@ -2554,7 +2547,7 @@ msgid ""
 "Differentiated Services Code Point for outgoing UDP streams (or IPv4 Type Of "
 "Service, or IPv6 Traffic Class). This is used for network Quality of Service."
 msgstr ""
-"Punto de Código de Servicios Diferenciados para volcados salientes UDP (o "
+"Punto de Código de Servicios Diferenciados para emisiones salientes UDP (o "
 "Tipo De Servicio IPv4, o Clase de Tráfico IPv6). Esto se usa para Calidad de "
 "Servicio de red."
 
@@ -2564,7 +2557,7 @@ msgid ""
 "if you want to read a multi-program stream (like DVB streams for example)."
 msgstr ""
 "Elige el programa a seleccionar dando su ID de Servicio. Sólo usa esta "
-"opción si deseas leer un volcado multi-programa (como volcados DVB por "
+"opción si deseas leer una emisión multi-programa (como emisiones DVB por "
 "ejemplo)."
 
 #: src/libvlc-module.c:603
@@ -2574,8 +2567,8 @@ msgid ""
 "(like DVB streams for example)."
 msgstr ""
 "Elige los programas a seleccionar dando una lista de IDs de Servicio (SIDs) "
-"separados por comas. Sólo usa esta opción si deseas leer un volcado multi-"
-"programa (como volcados DVB por ejemplo)."
+"separados por comas. Sólo usa esta opción si deseas leer una emisión multi-"
+"programa (como emisiones DVB por ejemplo)."
 
 #: src/libvlc-module.c:609 modules/gui/qt4/ui/open_disk.ui:238
 msgid "Audio track"
@@ -2583,7 +2576,7 @@ msgstr "Pista de audio"
 
 #: src/libvlc-module.c:611
 msgid "Stream number of the audio track to use (from 0 to n)."
-msgstr "Nº de volcado de la pista de audio a usar (de 0 a n)."
+msgstr "Nº de emisión de la pista de audio a usar (de 0 a n)."
 
 #: src/libvlc-module.c:614 modules/gui/qt4/ui/open_disk.ui:270
 msgid "Subtitles track"
@@ -2591,7 +2584,7 @@ msgstr "Pista de subtítulos"
 
 #: src/libvlc-module.c:616
 msgid "Stream number of the subtitle track to use (from 0 to n)."
-msgstr "Nº de volcado de la pista de subtítulos a usar (de 0 a n)."
+msgstr "Nº de emisión de la pista de subtítulos a usar (de 0 a n)."
 
 #: src/libvlc-module.c:619
 msgid "Audio language"
@@ -2610,12 +2603,11 @@ msgid "Subtitle language"
 msgstr "Lenguaje de subtítulos"
 
 #: src/libvlc-module.c:626
-#, fuzzy
 msgid ""
 "Language of the subtitle track you want to use (comma separated, two or "
 "three letters country code)."
 msgstr ""
-"Lenguaje de pista de subtítulos a usar (separados por comas, dos o tres "
+"Idioma de pista de subtítulos a usar (separados por comas, dos o tres "
 "códigos alfabéticos de países)."
 
 #: src/libvlc-module.c:630
@@ -2624,7 +2616,7 @@ msgstr "ID de pista de audio"
 
 #: src/libvlc-module.c:632
 msgid "Stream ID of the audio track to use."
-msgstr "ID de volcado de la pista de audio a usar."
+msgstr "ID de emisión de la pista de audio a usar."
 
 #: src/libvlc-module.c:634
 msgid "Subtitles track ID"
@@ -2632,7 +2624,7 @@ msgstr "ID de pista de subtítulos"
 
 #: src/libvlc-module.c:636
 msgid "Stream ID of the subtitle track to use."
-msgstr "ID de volcado de la pista de subtítulos que se desea usar."
+msgstr "ID de emisión de la pista de subtítulos a usar."
 
 #: src/libvlc-module.c:638
 msgid "Input repetitions"
@@ -2648,7 +2640,7 @@ msgstr "Tiempo de inicio"
 
 #: src/libvlc-module.c:644
 msgid "The stream will start at this position (in seconds)."
-msgstr "El volcado iniciará en esta posición (en segundos)."
+msgstr "La emisión iniciará en esta posición (en segundos)."
 
 #: src/libvlc-module.c:646
 msgid "Stop time"
@@ -2656,7 +2648,7 @@ msgstr "Tiempo de detención"
 
 #: src/libvlc-module.c:648
 msgid "The stream will stop at this position (in seconds)."
-msgstr "El volcado parará en esta posición (en segundos)."
+msgstr "La emisión parará en esta posición (en segundos)."
 
 #: src/libvlc-module.c:650
 msgid "Run time"
@@ -2664,7 +2656,7 @@ msgstr "Tiempo de ejecución"
 
 #: src/libvlc-module.c:652
 msgid "The stream will run this duration (in seconds)."
-msgstr "El volcado se ejecutará esta duración (en segundos)."
+msgstr "La emisión se ejecutará esta duración (en segundos)."
 
 #: src/libvlc-module.c:654
 msgid "Input list"
@@ -2694,18 +2686,17 @@ msgstr ""
 
 #: src/libvlc-module.c:665
 msgid "Bookmarks list for a stream"
-msgstr "Lista de favoritos para un volcado"
+msgstr "Lista de favoritos para una emisión"
 
 #: src/libvlc-module.c:667
-#, fuzzy
 msgid ""
 "You can manually give a list of bookmarks for a stream in the form "
 "\"{name=bookmark-name,time=optional-time-offset,bytes=optional-byte-offset},"
 "{...}\""
 msgstr ""
-"Puedes indicar una lista de favoritos para un volcado en la forma "
+"Puedes dar manualmente una lista de favoritos para una emisión en la forma "
 "\"{name=nombre-del-favorito,time=tiempo-de-compensación-opcional,bytes=byte-"
-"de-compensación-opcional}{etc...}\""
+"de-compensación-opcional},{...}\""
 
 #: src/libvlc-module.c:673
 msgid ""
@@ -2771,7 +2762,6 @@ msgid "Subpictures filter module"
 msgstr "Módulo de filtro de sub-imágenes"
 
 #: src/libvlc-module.c:699
-#, fuzzy
 msgid ""
 "This adds so-called \"subpicture filters\". These filters overlay some "
 "images or text over the video (like a logo, arbitrary text...)."
@@ -3011,7 +3001,7 @@ msgid ""
 msgstr ""
 "Esta opción puede usarse para alterar el modo en que VLC elige sus códecs "
 "(métodos de descompresión). Sólo usuarios avanzados deberían alterar esta "
-"opción pues puede mermar la reproducción de todos tus volcados."
+"opción, pues puede mermar la reproducción de todas tus emisiones."
 
 #: src/libvlc-module.c:820
 msgid "Preferred decoders list"
@@ -3024,9 +3014,9 @@ msgid ""
 "users should alter this option as it can break playback of all your streams."
 msgstr ""
 "Lista de códecs que VLC usará en prioridad. Por ejemplo, 'dummy,a52' probará "
-"los códecs dummy y a52 antes de probar los otros. Sólo usuarios avanzados "
-"deberían alterar esta opción pues puede mermar la reproducción de todos tus "
-"volcados."
+"los códecs dummy y a52 antes de probar otros. Sólo usuarios avanzados "
+"deberían alterar esta opción, pues puede mermar la reproducción de todas tus "
+"emisiones."
 
 #: src/libvlc-module.c:827
 msgid "Preferred encoders list"
@@ -3057,30 +3047,29 @@ msgid ""
 "subsystem."
 msgstr ""
 "Estas opciones te permiten configurar opciones globales por defecto para el "
-"subsistema de volcado de salida."
+"subsistema de salida de emisión."
 
 #: src/libvlc-module.c:846
 msgid "Default stream output chain"
-msgstr "Cadena de volcado de salida por defecto"
+msgstr "Cadena de salida de emisión por defecto"
 
 #: src/libvlc-module.c:848
-#, fuzzy
 msgid ""
 "You can enter here a default stream output chain. Refer to the documentation "
 "to learn how to build such chains.Warning: this chain will be enabled for "
 "all streams."
 msgstr ""
-"Puedes poner aquí una cadena de salida de volcado por defecto. Mira la "
+"Puedes poner aquí una cadena de salida de emisión por defecto. Mira la "
 "documentación para aprender cómo crear tales cadenas. Aviso: esta cadena se "
-"habilitará para todos los volcados."
+"habilitará para todas las emisiones."
 
 #: src/libvlc-module.c:852
 msgid "Enable streaming of all ES"
-msgstr "Habilitar volcado de todo ES"
+msgstr "Habilitar emisión de toda ES"
 
 #: src/libvlc-module.c:854
 msgid "Stream all elementary streams (video, audio and subtitles)"
-msgstr "Volcar todo volcado elemental (vídeo, audio y subtítulos)"
+msgstr "Emitir toda emisión elemental (vídeo, audio y subtítulos)"
 
 #: src/libvlc-module.c:856
 msgid "Display while streaming"
@@ -3088,47 +3077,47 @@ msgstr "Mostrar mientras se vuelca"
 
 #: src/libvlc-module.c:858
 msgid "Play locally the stream while streaming it."
-msgstr "Reproducir localmente el volcado mientras se vuelca."
+msgstr "Reproducir localmente la emisión mientras se emite."
 
 #: src/libvlc-module.c:860
 msgid "Enable video stream output"
-msgstr "Habilitar volcado de salida de vídeo"
+msgstr "Habilitar salida de emisión de vídeo"
 
 #: src/libvlc-module.c:862
 msgid ""
 "Choose whether the video stream should be redirected to the stream output "
 "facility when this last one is enabled."
 msgstr ""
-"Elige si el volcado de vídeo debería redirigirse al dispositivo de salida de "
-"volcado cuando este último está habilitado."
+"Elige si la emisión de vídeo debería redirigirse al dispositivo de salida de "
+"emisión cuando éste último está habilitado."
 
 #: src/libvlc-module.c:865
 msgid "Enable audio stream output"
-msgstr "Habilitar volcado de salida de audio"
+msgstr "Habilitar salida de emisión de audio"
 
 #: src/libvlc-module.c:867
 msgid ""
 "Choose whether the audio stream should be redirected to the stream output "
 "facility when this last one is enabled."
 msgstr ""
-"Elige si el volcado de audio debería redirigirse al dispositivo de salida de "
-"volcado cuando este último esté habilitado."
+"Elige si la emisión de audio debería redirigirse al dispositivo de salida de "
+"emisión cuando éste último esté habilitado."
 
 #: src/libvlc-module.c:870
 msgid "Enable SPU stream output"
-msgstr "Habilitar salida de volcado de SPU"
+msgstr "Habilitar salida de emisión SPU"
 
 #: src/libvlc-module.c:872
 msgid ""
 "Choose whether the SPU streams should be redirected to the stream output "
 "facility when this last one is enabled."
 msgstr ""
-"Elige si los volcados de SPU deberían redirigirse al dispositivo de salida "
-"de volcado cuando este último esté habilitado."
+"Elige si las emisiones SPU deberían redirigirse al dispositivo de salida de "
+"emisión cuando éste último esté habilitado."
 
 #: src/libvlc-module.c:875 modules/gui/qt4/ui/sout.ui:964
 msgid "Keep stream output open"
-msgstr "Mantener abierta salida de volcado"
+msgstr "Mantener abierta salida de emisión"
 
 #: src/libvlc-module.c:877
 msgid ""
@@ -3136,23 +3125,21 @@ msgid ""
 "playlist item (automatically insert the gather stream output if not "
 "specified)"
 msgstr ""
-"Esto te permite mantener una única instancia de salida de volcado a través "
+"Esto te permite mantener una única instancia de salida de emisión a través "
 "de múltiples objetos de listas de reproducción (automáticamente inserta la "
-"asemblanda salida de volcado obtenida si no se especifica)"
+"salida de emisión conjunta si no se especifica)"
 
 #: src/libvlc-module.c:881
-#, fuzzy
 msgid "Stream output muxer caching (ms)"
-msgstr "Opciones de módulos de módulos de salida de volcado"
+msgstr "Cacheado de muxor de salida de emisión (ms)"
 
 #: src/libvlc-module.c:883
-#, fuzzy
 msgid ""
 "This allow you to configure the initial caching amount for stream output  "
 "muxer. This value should be set in milliseconds."
 msgstr ""
-"Te permite modificar el valor por defecto de caché para volcados pvr. Este "
-"valor debería ponerse en unidades de milisegundos."
+"Esto te permite configurar la cantidad de cacheo inicial para el muxor de "
+"salida de emisión. Este valor debería ponerse en milisegundos."
 
 #: src/libvlc-module.c:886
 msgid "Preferred packetizer list"
@@ -3342,8 +3329,8 @@ msgid ""
 "Access filters are used to modify the stream that is being read. This is "
 "used for instance for timeshifting."
 msgstr ""
-"Los filtros de acceso se usan para modificar el volcado que está siendo "
-"leído. Esto se usa por ejemplo para timeshifting."
+"Los filtros de acceso se usan para modificar la emisión que se está leyendo. "
+"Esto se usa por ejemplo para timeshifting."
 
 #: src/libvlc-module.c:975
 msgid "Demux module"
@@ -3356,8 +3343,8 @@ msgid ""
 "automatically detected. You should not set this as a global option unless "
 "you really know what you are doing."
 msgstr ""
-"Los demultiplexores se usan para separar los volcados \"elementales\" (como "
-"volcados de audio y vídeo). Puede usarse si el demuxor correcto no se "
+"Los demultiplexores se usan para separar las emisiones \"elementales\" (como "
+"emisiones de audio y vídeo). Puedes usarlo si el demuxor correcto no se "
 "detecta automáticamente. No se debería poner como opción global a menos que "
 "sepas realmente lo que haces."
 
@@ -3372,10 +3359,10 @@ msgid ""
 "however lock up your whole machine, or make it very very slow. You should "
 "only activate this if you know what you're doing."
 msgstr ""
-"Ejecutar VLC en prioridad a tiempo real permitirá scheduling mucho más "
-"preciso y mejor manejo, especialmente al volcar contenido. Aun así puede "
+"Ejecutar VLC en prioridad a tiempo real permitirá una programación mucho más "
+"precisa y un mejor manejo, especialmente al emitir contenido. Aun así puede "
 "bloquear toda tu máquina, o ponerla muy, muy lenta. Sólo deberías activar "
-"ésto si sabes lo que estás haciendo."
+"esto si sabes lo que estás haciendo."
 
 #: src/libvlc-module.c:990
 msgid "Adjust VLC priority"
@@ -3406,11 +3393,11 @@ msgstr "(Experimental) No cachear en el nivel de acceso."
 #: src/libvlc-module.c:1002 src/libvlc-module.c:1008
 msgid ""
 "This option is useful if you want to lower the latency when reading a stream"
-msgstr "Esta opción es útil si deseas reducir la latencia al leer un volcado"
+msgstr "Esta opción es útil si deseas reducir la latencia al leer una emisión"
 
 #: src/libvlc-module.c:1005
 msgid "(Experimental) Minimize latency whenreading live stream."
-msgstr "(Experimental) Minimizar latencia al leer volcados en vivo."
+msgstr "(Experimental) Minimizar latencia al leer emisiones en vivo."
 
 #: src/libvlc-module.c:1011
 msgid "Modules search path"
@@ -3470,7 +3457,7 @@ msgstr "Grabar a archivo"
 
 #: src/libvlc-module.c:1038
 msgid "Log all VLC messages to a text file."
-msgstr "Volcar todo mensaje de VLC a un archivo de texto."
+msgstr "Anotar todo mensaje de VLC a un archivo de texto."
 
 #: src/libvlc-module.c:1040
 msgid "Log to syslog"
@@ -4286,11 +4273,11 @@ msgstr "Iniciar/parar filtro de acceso de grabación"
 #: modules/access_filter/dump.c:55 modules/gui/macosx/simple_prefs.m:251
 #: modules/gui/qt4/ui/sprefs_input.ui:201
 msgid "Dump"
-msgstr "Volcar"
+msgstr "Desechar"
 
 #: src/libvlc-module.c:1317
 msgid "Media dump access filter trigger."
-msgstr "Interruptor de filtro de acceso de volcado de medios."
+msgstr "Interruptor de filtro de acceso de desecho de medios."
 
 #: src/libvlc-module.c:1319
 msgid "Normal/Repeat/Loop"
@@ -4425,7 +4412,7 @@ msgid "Cycle through available audio devices"
 msgstr "Rota por los aparatos de audio disponibles"
 
 #: src/libvlc-module.c:1379
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "Usage: %s [options] [stream] ...\n"
 "You can specify multiple streams on the commandline. They will be enqueued "
@@ -4460,39 +4447,40 @@ msgid ""
 "certain time\n"
 "  vlc://quit                     Special item to quit VLC\n"
 msgstr ""
-"Uso: %s [opciones] [objs.delistadereprod.] ...\n"
-"Puedes indicar múltiples objs.delistadereprod. en la línea de comandos. Se "
-"pondrán en cola en la lista de reproducción.\n"
+"Uso: %s [opciones] [emisión] ...\n"
+"Puedes indicar múltiples emisiones en la línea de comandos. Se pondrán en "
+"cola en la lista de reproducción.\n"
 "El primer objeto indicado se reproducirá primero.\n"
 "\n"
 "Estilos de opciones:\n"
-"  --opción  Una opción global que se pone para la duración del programa.\n"
-"   -opción  Una única versión de letra de una --opción global.\n"
-"   :opción  Una opción sólo aplicable al obj.delistadereprod. que precede\n"
+"  --option  Una opción global que se pone para la duración del programa.\n"
+"   -option  Una única versión de letra de una --option global.\n"
+"   :option  Una opción que sólo se aplica a la emisión que precede\n"
 "            y que anula opciones previas.\n"
 "\n"
-"Sintaxis MRL de obj.delistadereprod.:\n"
+"Sintaxis MRL de emisiones:\n"
 "  [[acceso][/demux]://]URL[@[título][:capítulo][-[título][:capítulo]]] [:"
 "opción=valor ...]\n"
 "\n"
-"  Muchas de las --opciones globales pueden usarse también como :opciones "
-"específicas.\n"
-"  :opción múltiple=puede especificarse valor parejo.\n"
+"  Muchas de las --options globales pueden usarse también como :options "
+"específicas MRL.\n"
+"  Se pueden especificar múltiples parejas de :option=value.\n"
 "\n"
 "Sintaxis URL:\n"
-"  [file://]nombrearchivo    archivo de medios simple\n"
-"  http://ip:puerto/archivo  URL HTTP\n"
-"  ftp://ip:puerto/archivo   URL FTP\n"
-"  mms://ip:puerto/archivo   URL MMS\n"
-"  screen://                 Captura de pantalla\n"
-"  [dvd://][aparato][@aparato_raw]  aparato DVD\n"
-"  [vcd://][aparato]         Aparato VCD\n"
-"  [cdda://][aparato]        Aparato de CD de Audio\n"
-"  udp:[[<dir. fuente>]@[<dir. enlazada>][:<puerto enlazado>]]\n"
-"                            Volcado UDP enviado por servidor de volcado\n"
-"  vlc:pause                 Objeto especial para pausar la lista de reprod. "
-"durante un tiempo\n"
-"  vlc:quit                  Objeto especial para cerrar VLC\n"
+"  [file://]nombrearchivo           archivo de medios simple\n"
+"  http://ip:puerto/archivo         URL HTTP\n"
+"  ftp://ip:puerto/archivo          URL FTP\n"
+"  mms://ip:puerto/archivo          URL MMS\n"
+"  screen://                        Captura de pantalla\n"
+"  [dvd://][aparato][@aparato_raw]  Aparato DVD\n"
+"  [vcd://][aparato]                Aparato VCD\n"
+"  [cdda://][aparato]               Aparato de CD de Audio\n"
+"  udp://[[<dir. origen>]@[<dir. enlazada>][:<puerto enlazado>]]\n"
+"                                   Emisión UDP enviada por servidor de "
+"emisión\n"
+"  vlc://pause:<segundos>           Objeto especial para pausar la lista de "
+"reprod. cierto tiempo\n"
+"  vlc:quit                         Objeto especial para salir de VLC\n"
 
 #: src/libvlc-module.c:1521 src/video_output/vout_intf.c:421
 #: modules/gui/macosx/controls.m:473 modules/gui/macosx/controls.m:937
@@ -4577,73 +4565,72 @@ msgstr "Opciones de optimización"
 msgid "Hot keys"
 msgstr "Teclas rápidas"
 
-#: src/libvlc-module.c:2395
+#: src/libvlc-module.c:2408
 msgid "Jump sizes"
 msgstr "Tamaños de salto"
 
-#: src/libvlc-module.c:2472
+#: src/libvlc-module.c:2485
 #, fuzzy
 msgid "print help for VLC (can be combined with --advanced and --help-verbose)"
 msgstr "imprime ayuda de VLC (puede combinarse con --advanced)"
 
-#: src/libvlc-module.c:2475
+#: src/libvlc-module.c:2488
 msgid "Exhaustive help for VLC and its modules"
 msgstr "Ayuda exhaustiva para VLC y sus módulos"
 
-#: src/libvlc-module.c:2477
+#: src/libvlc-module.c:2490
 #, fuzzy
 msgid ""
 "print help for VLC and all its modules (can be combined with --advanced and "
 "--help-verbose)"
 msgstr "imprime ayuda de VLC y sus módulos (puede combinarse con --advanced)"
 
-#: src/libvlc-module.c:2480
+#: src/libvlc-module.c:2493
 msgid "ask for extra verbosity when displaying help"
 msgstr "pide más locuacidad al mostrar la ayuda"
 
-#: src/libvlc-module.c:2482
+#: src/libvlc-module.c:2495
 msgid "print a list of available modules"
 msgstr "imprime lista de módulos disponibles"
 
-#: src/libvlc-module.c:2484
-#, fuzzy
+#: src/libvlc-module.c:2497
 msgid "print a list of available modules with extra detail"
-msgstr "imprime lista de módulos disponibles"
+msgstr "imprime lista de módulos disponibles con detalles extra"
 
-#: src/libvlc-module.c:2486
+#: src/libvlc-module.c:2499
 #, fuzzy
 msgid ""
 "print help on a specific module (can be combined with --advanced and --help-"
 "verbose)"
 msgstr "imprime ayuda de módulo concreto (puede combinarse con --advanced)"
 
-#: src/libvlc-module.c:2489
+#: src/libvlc-module.c:2502
 msgid "no configuration option will be loaded nor saved to config file"
 msgstr ""
 "no se cargará opción de configuración ni se salvará al archivo de "
 "configuración"
 
-#: src/libvlc-module.c:2491
+#: src/libvlc-module.c:2504
 msgid "save the current command line options in the config"
 msgstr "salva las opciones actuales de línea de comandos en la config"
 
-#: src/libvlc-module.c:2493
+#: src/libvlc-module.c:2506
 msgid "reset the current config to the default values"
 msgstr "restaurar la actual configuración a los valores por defecto"
 
-#: src/libvlc-module.c:2495
+#: src/libvlc-module.c:2508
 msgid "use alternate config file"
 msgstr "Usar archivo de configuración alternativo"
 
-#: src/libvlc-module.c:2497
+#: src/libvlc-module.c:2510
 msgid "resets the current plugins cache"
 msgstr "reinicia la caché de los complementos actuales"
 
-#: src/libvlc-module.c:2499
+#: src/libvlc-module.c:2512
 msgid "print version information"
 msgstr "imprimir información de versión"
 
-#: src/libvlc-module.c:2556
+#: src/libvlc-module.c:2569
 msgid "main program"
 msgstr "programa principal"
 
@@ -5311,7 +5298,8 @@ msgstr "Valor de captura en ms"
 msgid ""
 "Caching value for DVB streams. This value should be set in milliseconds."
 msgstr ""
-"Valor de caché para volcados DVB. Este valor debería ponerse en milisegundos."
+"Valor de caché para emisiones DVB. Este valor debería ponerse en "
+"milisegundos."
 
 #: modules/access/bda/bda.c:45 modules/access/dvb/access.c:83
 #: modules/gui/qt4/components/open_panels.cpp:892
@@ -5372,7 +5360,7 @@ msgstr "Modo económico"
 #: modules/access/bda/bda.c:71 modules/access/dvb/access.c:99
 msgid "This allows you to stream an entire transponder with a \"budget\" card."
 msgstr ""
-"Esto te permite volcar todo un transpondedor con una tarjeta \"económica\"."
+"Esto te permite emitir todo un transpondedor con una tarjeta \"económica\"."
 
 #: modules/access/bda/bda.c:76
 msgid "Network Identifier"
@@ -5482,7 +5470,7 @@ msgstr "256"
 
 #: modules/access/bda/bda.c:118 modules/access/dvb/access.c:135
 msgid "Terrestrial high priority stream code rate (FEC)"
-msgstr "Tasa de código de volcado terrestre de alta prioridad (FEC)"
+msgstr "Tasa de código de emisión terrestre de alta prioridad (FEC)"
 
 #: modules/access/bda/bda.c:119
 msgid "High Priority FEC Rate [Undefined,1/2,2/3,3/4,5/6,7/8]"
@@ -5510,7 +5498,7 @@ msgstr "7/8"
 
 #: modules/access/bda/bda.c:125 modules/access/dvb/access.c:138
 msgid "Terrestrial low priority stream code rate (FEC)"
-msgstr "Tasa de código de volcado terrestre de baja prioridad (FEC)"
+msgstr "Tasa de código de emisión terrestre de baja prioridad (FEC)"
 
 #: modules/access/bda/bda.c:126
 msgid "Low Priority FEC Rate [Undefined,1/2,2/3,3/4,5/6,7/8]"
@@ -5746,7 +5734,7 @@ msgid ""
 "Caching value for CDDA streams. This value should be set in millisecond "
 "units."
 msgstr ""
-"Valor de caché para volcados CDDA. Este valor debería ponerse en "
+"Valor de caché para emisiones CDDA. Este valor debería ponerse en "
 "milisegundos."
 
 #: modules/access/cdda/cdda.c:64
@@ -5856,7 +5844,6 @@ msgid "Audio Compact Disc"
 msgstr "Disco Compacto de Audio"
 
 #: modules/access/cdda/cdda.c:125
-#, fuzzy
 msgid "Additional debug"
 msgstr "Debug adicional"
 
@@ -6089,8 +6076,8 @@ msgid ""
 "Caching value for DirectShow streams. This value should be set in "
 "millisecondss."
 msgstr ""
-"Valor de caché para volcados DirectShow. Este valor debería ponerse en "
-"unidades de milisegundo."
+"Valor de caché para emisiones DirectShow. Este valor debería ponerse en "
+"milisegundos."
 
 #: modules/access/dshow/dshow.cpp:102 modules/access/v4l.c:81
 #: modules/gui/qt4/components/open_panels.cpp:702
@@ -6168,8 +6155,8 @@ msgstr "Propiedades del aparato"
 msgid ""
 "Show the properties dialog of the selected device before starting the stream."
 msgstr ""
-"Muestra el diálogo propiedades del aparato elegido antes de iniciar el "
-"volcado."
+"Muestra el diálogo propiedades del aparato elegido antes de iniciar la "
+"emisión."
 
 #: modules/access/dshow/dshow.cpp:129
 msgid "Tuner properties"
@@ -6421,9 +6408,8 @@ msgid "HTTP server"
 msgstr "Servirdor HTTP"
 
 #: modules/access/dvb/access.c:733
-#, fuzzy
 msgid "Input syntax is deprecated"
-msgstr "URL de salida (depreciada)"
+msgstr "Sintaxis de entrada está depreciada"
 
 #: modules/access/dvb/access.c:734
 msgid ""
@@ -6440,12 +6426,12 @@ msgstr "Polarización Ilegal"
 #: modules/access/dvb/access.c:781
 #, c-format
 msgid "The provided polarization \"%c\" is not valid."
-msgstr ""
+msgstr "La polarización dada \"%c\" no es válida."
 
 #: modules/access/dv.c:73
 msgid "Caching value for DV streams. Thisvalue should be set in milliseconds."
 msgstr ""
-"Valor de caché para volcados DV. Este valor debería ponerse en milisegundos."
+"Valor de caché para emisiones DV. Este valor debería ponerse en milisegundos."
 
 #: modules/access/dv.c:77
 msgid "Digital Video (Firewire/ieee1394)  input"
@@ -6582,7 +6568,7 @@ msgstr "Módulo de acceso EyeTV"
 msgid ""
 "Caching value for fake streams. This value should be set in milliseconds."
 msgstr ""
-"Valor de caché para volcados falsos. Este valor debería ponerse en "
+"Valor de caché para emisiones falsas. Este valor debería ponerse en "
 "milisegundos."
 
 #: modules/access/fake.c:47 modules/access/pvr.c:86
@@ -6604,7 +6590,7 @@ msgid ""
 "Set the ID of the fake elementary stream for use in #duplicate{} constructs "
 "(default 0)."
 msgstr ""
-"Pon la ID del falso volcado elemental para usar en #duplicate{} constructs "
+"Pon la ID de la emisión elemental falsa para usar en #duplicate{} constructs "
 "(por defecto 0)."
 
 #: modules/access/fake.c:54
@@ -6616,8 +6602,8 @@ msgid ""
 "Duration of the fake streaming before faking an end-of-file (default is 0, "
 "meaning that the stream is unlimited)."
 msgstr ""
-"Duración del volcado falso antes de falsear un fin-de-archivo (por defecto "
-"es 0, significando que el volcado es ilimitado)."
+"Duración de la emisión falsa antes de falsear un fin-de-archivo (por defecto "
+"es 0, significando que la emisión es ilimitada)."
 
 #: modules/access/fake.c:60 modules/codec/fake.c:89
 msgid "Fake"
@@ -6728,8 +6714,8 @@ msgid ""
 "This is the size of the temporary files that will be used to store the "
 "timeshifted streams."
 msgstr ""
-"Este es el tamaño de los archivos temporales a usar para almacenar los "
-"volcados de grabación programada."
+"Este es el tamaño de los archivos temporales a usar para almacenar las "
+"emisiones de grabación programada."
 
 #: modules/access_filter/timeshift.c:57
 msgid "Timeshift directory"
@@ -6761,7 +6747,8 @@ msgstr "Grabación programada"
 msgid ""
 "Caching value for FTP streams. This value should be set in milliseconds."
 msgstr ""
-"Valor de caché para volcados FTP. Este valor debería ponerse en milisegundos."
+"Valor de caché para emisiones FTP. Este valor debería ponerse en "
+"milisegundos."
 
 #: modules/access/ftp.c:61
 msgid "FTP user name"
@@ -6792,9 +6779,8 @@ msgid "FTP input"
 msgstr "Entrada FTP"
 
 #: modules/access/ftp.c:90
-#, fuzzy
 msgid "FTP upload output"
-msgstr "Archivo de salida de audio"
+msgstr "Salida de subida FTP"
 
 #: modules/access/ftp.c:135 modules/access/ftp.c:145 modules/access/ftp.c:210
 #: modules/access/ftp.c:220 modules/access/ftp.c:228
@@ -6826,7 +6812,7 @@ msgstr "Tu intento de conexión al servidor fue rechazado."
 msgid ""
 "Caching value for GnomeVFS streams.This value should be set in milliseconds."
 msgstr ""
-"Valor de caché para volcados GnomeVFS. Este valor debería ponerse en "
+"Valor de caché para emisiones GnomeVFS. Este valor debería ponerse en "
 "milisegundos."
 
 #: modules/access/gnomevfs.c:53
@@ -6849,9 +6835,8 @@ msgstr ""
 "http_proxy."
 
 #: modules/access/http.c:71
-#, fuzzy
 msgid "HTTP proxy password"
-msgstr "Clave HTTP"
+msgstr "Clave de proxy HTTP"
 
 #: modules/access/http.c:73
 msgid "If your HTTP proxy requires a password, set it here."
@@ -6861,7 +6846,8 @@ msgstr "Si tu proxy HTTP requiere una clave, ponla aquí."
 msgid ""
 "Caching value for HTTP streams. This value should be set in milliseconds."
 msgstr ""
-"Valor de caché para volcados HTTP. Este valor debería ponerse en milisegundo."
+"Valor de caché para emisiones HTTP. Este valor debería ponerse en "
+"milisegundos."
 
 #: modules/access/http.c:80
 msgid "HTTP user agent"
@@ -6879,15 +6865,14 @@ msgstr "Auto reconectar"
 msgid ""
 "Automatically try to reconnect to the stream in case of a sudden disconnect."
 msgstr ""
-"Intentar automáticamente reconectar al volcado en caso de una súbita "
+"Intentar automáticamente reconectar a la emisión en caso de una súbita "
 "desconexión."
 
 #: modules/access/http.c:89
 msgid "Continuous stream"
-msgstr "Volcado contínuo"
+msgstr "Emisión contínua"
 
 #: modules/access/http.c:90
-#, fuzzy
 msgid ""
 "Read a file that is being constantly updated (for example, a JPG file on a "
 "server). You should not globally enable this option as it will break all "
@@ -6895,7 +6880,7 @@ msgid ""
 msgstr ""
 "Leer un archivo que está siendo constantemente actualizado (por ejemplo, un "
 "archivo JPG en un servidor). No deberías habilitar globalmente esta opción "
-"pues romperá los demás tipos de volcados HTTP."
+"pues romperá los demás tipos de emisiones HTTP."
 
 #: modules/access/http.c:95
 #, fuzzy
@@ -6917,7 +6902,7 @@ msgstr "HTTP(S)"
 #: modules/access/http.c:446
 #, fuzzy, c-format
 msgid "Please enter a valid login name and a password for realm %s."
-msgstr "Pon un nombre al nuevo grupo:"
+msgstr "Pon un nombre de login válido y una clave para reino %s."
 
 #: modules/access/http.c:450
 msgid "HTTP authentication"
@@ -6932,23 +6917,22 @@ msgstr ""
 "longitud especificada en milisegundos."
 
 #: modules/access/jack.c:66
-#, fuzzy
 msgid "Pace"
-msgstr "Dance"
+msgstr "Ritmo"
 
 #: modules/access/jack.c:68
-#, fuzzy
 msgid "Read the audio stream at VLC pace rather than Jack pace."
-msgstr "Tratar como tubo más que como archivo"
+msgstr "Leer la emisión de audio a ritmo de VLC en vez de ritmo Jack."
 
 #: modules/access/jack.c:69
 msgid "Auto Connection"
 msgstr "Autoconexión"
 
 #: modules/access/jack.c:71
-#, fuzzy
 msgid "Automatically connect VLC input ports to available output ports."
-msgstr "Pre-analizar archivos automáticamente"
+msgstr ""
+"Conecta automáticamente puertos de entrada VLC a puertos de salida "
+"disponibles."
 
 #: modules/access/jack.c:74
 msgid "JACK audio input"
@@ -6972,15 +6956,15 @@ msgid "MMap"
 msgstr "MMap"
 
 #: modules/access/mmap.c:55
-#, fuzzy
 msgid "Memory-mapped file input"
-msgstr "Usar salida float32"
+msgstr "Entrada de archivo mapeada en memoria"
 
 #: modules/access/mms/mms.c:51
 msgid ""
 "Caching value for MMS streams. This value should be set in milliseconds."
 msgstr ""
-"Valor de caché para volcados MMS. Este valor debería ponerse en milisegundos."
+"Valor de caché para emisiones MMS. Este valor debería ponerse en "
+"milisegundos."
 
 #: modules/access/mms/mms.c:54
 msgid "Force selection of all streams"
@@ -6991,8 +6975,8 @@ msgid ""
 "MMS streams can contain several elementary streams, with different bitrates. "
 "You can choose to select all of them."
 msgstr ""
-"Los volcados MMS pueden contener varios volcados elementales, con diferentes "
-"tasas de bits. Puedes elegir el selecionarlos todos."
+"Las emisiones MMS pueden contener varias emisiones elementales, con "
+"diferentes tasas de bits. Puedes elegir el selecionarlas todas."
 
 #: modules/access/mms/mms.c:59
 msgid "Maximum bitrate"
@@ -7000,7 +6984,7 @@ msgstr "Máxima tasa de bits"
 
 #: modules/access/mms/mms.c:61
 msgid "Select the stream with the maximum bitrate under that limit."
-msgstr "Elige el volcado con la tasa de bits máxima bajo ese límite."
+msgstr "Elige la emisión con la tasa de bits máxima bajo ese límite."
 
 #: modules/access/mms/mms.c:65
 #, fuzzy
@@ -7032,7 +7016,7 @@ msgstr "Entrada Microsoft Media Server (MMS)"
 
 #: modules/access_output/dummy.c:45 modules/stream_out/dummy.c:51
 msgid "Dummy stream output"
-msgstr "Salida de volcado dummy"
+msgstr "Salida de emisión dummy"
 
 #: modules/access_output/dummy.c:46 modules/misc/dummy/dummy.c:61
 msgid "Dummy"
@@ -7048,7 +7032,7 @@ msgstr "Añade a archivo si existe, en vez de reemplazarlo."
 
 #: modules/access_output/file.c:69
 msgid "File stream output"
-msgstr "Salida de volcado de archivo"
+msgstr "Salida de emisión de archivo"
 
 #: modules/access_output/http.c:65 modules/gui/qt4/ui/sprefs_audio.ui:309
 #: modules/misc/audioscrobbler.c:132
@@ -7057,7 +7041,7 @@ msgstr "Nombre de usuario"
 
 #: modules/access_output/http.c:66
 msgid "User name that will be requested to access the stream."
-msgstr "Nombre de usuario que se pregunta al acceder al volcado."
+msgstr "Nombre de usuario que se solicita al acceder a la emisión."
 
 #: modules/access_output/http.c:68 modules/control/telnet.c:87
 #: modules/gui/macosx/simple_prefs.m:227
@@ -7069,14 +7053,13 @@ msgstr "Clave"
 
 #: modules/access_output/http.c:69
 msgid "Password that will be requested to access the stream."
-msgstr "Clave que se preguntará al acceder al volcado."
+msgstr "Clave que se solicitará al acceder a la emisión."
 
 #: modules/access_output/http.c:71
 msgid "Mime"
 msgstr "Mime"
 
 #: modules/access_output/http.c:72
-#, fuzzy
 msgid "MIME returned by the server (autodetected if not specified)."
 msgstr "MIME devuelto por el servidor (autodetectado si no se especifica)."
 
@@ -7114,16 +7097,15 @@ msgstr "Anunciar con Bonjour"
 
 #: modules/access_output/http.c:91
 msgid "Advertise the stream with the Bonjour protocol."
-msgstr "Anunciar el volcado con el protocolo Bonjour."
+msgstr "Anunciar la emisión con el protocolo Bonjour."
 
 #: modules/access_output/http.c:95
 msgid "HTTP stream output"
-msgstr "Salida de volcado HTTP"
+msgstr "Salida de emisión HTTP"
 
 #: modules/access_output/rtmp.c:44
-#, fuzzy
 msgid "Active TCP connection"
-msgstr "Auto reconectar"
+msgstr "Conexión TCP activa"
 
 #: modules/access_output/rtmp.c:46
 msgid ""
@@ -7135,7 +7117,7 @@ msgstr ""
 
 #: modules/access_output/rtmp.c:55
 msgid "RTMP stream output"
-msgstr "Salida de volcado RTMP"
+msgstr "Salida de emisión RTMP"
 
 #: modules/access_output/rtmp.c:56 modules/access/rtmp/access.c:53
 msgid "RTMP"
@@ -7143,24 +7125,23 @@ msgstr "RTMP"
 
 #: modules/access_output/shout.c:63
 msgid "Stream name"
-msgstr "Nombre del volcado"
+msgstr "Nombre de emisión"
 
 #: modules/access_output/shout.c:64
-#, fuzzy
 msgid "Name to give to this stream/channel on the shoutcast/icecast server."
-msgstr "Nombre a dar a este volcado/canal en el servidor icecast."
+msgstr "Nombre a dar a este canal/emisión en el servidor shoutcast/icecast."
 
 #: modules/access_output/shout.c:67
 msgid "Stream description"
-msgstr "Descripción de volcado"
+msgstr "Descripción de emisión"
 
 #: modules/access_output/shout.c:68
 msgid "Description of the stream content or information about your channel."
-msgstr "Descripcción del contenido del volcado o información sobre tu canal."
+msgstr "Descripción del contenido de la emisión o información sobre tu canal."
 
 #: modules/access_output/shout.c:71
 msgid "Stream MP3"
-msgstr "Volcar mp3"
+msgstr "Emitir MP3"
 
 #: modules/access_output/shout.c:72
 msgid ""
@@ -7168,31 +7149,28 @@ msgid ""
 "possible to stream MP3 instead, so you can forward MP3 streams to the "
 "shoutcast/icecast server."
 msgstr ""
-"Normalmente tienes que alimentar el módulo shoutcast con volcados Ogg. "
-"También es posible volcar MP3, para enviarlo al servidor shoutcast/icecast."
+"Normalmente tienes que alimentar el módulo shoutcast con emisiones Ogg. "
+"También es posible emitir MP3, para enviarlo al servidor shoutcast/icecast."
 
 #: modules/access_output/shout.c:81
-#, fuzzy
 msgid "Genre description"
-msgstr "Descripción de volcado"
+msgstr "Descripción de género"
 
 #: modules/access_output/shout.c:82
 msgid "Genre of the content. "
 msgstr "Género del contenido. "
 
 #: modules/access_output/shout.c:84
-#, fuzzy
 msgid "URL description"
-msgstr "Descripción"
+msgstr "Descripción URL"
 
 #: modules/access_output/shout.c:85
 msgid "URL with information about the stream or your channel. "
-msgstr "URL con información sobre el volcado o tu canal. "
+msgstr "URL con información sobre la emisión o tu canal. "
 
 #: modules/access_output/shout.c:92
-#, fuzzy
 msgid "Bitrate information of the transcoded stream. "
-msgstr "Tasa de bits destino del volcado de vídeo transcodificado."
+msgstr "Información de tasa de bits de la emisión transcodificada."
 
 #: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:211
 #: modules/access/v4l.c:126
@@ -7200,31 +7178,28 @@ msgid "Samplerate"
 msgstr "Tasa de Muestra"
 
 #: modules/access_output/shout.c:95
-#, fuzzy
 msgid "Samplerate information of the transcoded stream. "
-msgstr "Tasa de bits destino del volcado de vídeo transcodificado."
+msgstr "Información de tasa de muestra de la emisión transcodificada."
 
 #: modules/access_output/shout.c:97
 msgid "Number of channels"
 msgstr "Nº de canales"
 
 #: modules/access_output/shout.c:98
-#, fuzzy
 msgid "Number of channels information of the transcoded stream. "
-msgstr "Nº de canales de audio en los volcados transcodificados."
+msgstr "Información del nº de canales de la emisión transcodificada."
 
 #: modules/access_output/shout.c:100
 msgid "Ogg Vorbis Quality"
 msgstr "Calidad Ogg Vorbis"
 
 #: modules/access_output/shout.c:101
-#, fuzzy
 msgid "Ogg Vorbis Quality information of the transcoded stream. "
-msgstr "Tasa de bits destino del volcado de vídeo transcodificado."
+msgstr "Información de Calidad de Ogg Vorbis de la emisión transcodificada."
 
 #: modules/access_output/shout.c:103
 msgid "Stream public"
-msgstr "Volcado público"
+msgstr "Emisión pública"
 
 #: modules/access_output/shout.c:104
 msgid ""
@@ -7232,9 +7207,9 @@ msgid ""
 "of streams) on the icecast/shoutcast website. Requires the bitrate "
 "information specified for shoutcast. Requires Ogg streaming for icecast."
 msgstr ""
-"Hace al servidor públicamente disponible en las 'Yellow Pages' (listado "
-"directorio de volcados) en la web de icecast/shoutcast. Requiere la "
-"información de tasa de bits especificada para shoutcast. Requiere volcado "
+"Hace al servidor públicamente disponible en las 'Yellow Pages' (lista de "
+"directorio de emisiones) en la web de icecast/shoutcast. Requiere la "
+"información de tasa de bits especificada para shoutcast. Requiere emisión "
 "Ogg para icecast."
 
 #: modules/access_output/shout.c:110
@@ -7252,7 +7227,7 @@ msgid ""
 "Default caching value for outbound UDP streams. This value should be set in "
 "milliseconds."
 msgstr ""
-"Valor por defecto de caché para volcados UDP outbound. Este valor debería "
+"Valor por defecto de caché para emisiones UDP outbound. Este valor debería "
 "ponerse en milisegundos."
 
 #: modules/access_output/udp.c:72
@@ -7271,14 +7246,14 @@ msgstr ""
 
 #: modules/access_output/udp.c:80
 msgid "UDP stream output"
-msgstr "Salida de volcado UDP"
+msgstr "Salida de emisión UDP"
 
 #: modules/access/pvr.c:62
 msgid ""
 "Default caching value for PVR streams. This value should be set in "
 "milliseconds."
 msgstr ""
-"Valor por defecto de caché para volcados PVR. Este valor debería ponerse en "
+"Valor por defecto de caché para emisiones PVR. Este valor debería ponerse en "
 "milisegundos."
 
 #: modules/access/pvr.c:65
@@ -7305,7 +7280,7 @@ msgstr "Norma"
 
 #: modules/access/pvr.c:72 modules/access/v4l.c:102
 msgid "Norm of the stream (Automatic, SECAM, PAL, or NTSC)."
-msgstr "Norma del volcado (Automática, SECAM, PAL, ó NTSC)."
+msgstr "Norma de la emisión (Automática, SECAM, PAL, ó NTSC)."
 
 #: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:101
 #: modules/access/v4l.c:106 modules/demux/rawvid.c:48
@@ -7315,7 +7290,7 @@ msgstr "Anchura"
 
 #: modules/access/pvr.c:76
 msgid "Width of the stream to capture (-1 for autodetection)."
-msgstr "Anchura del volcado a capturar (-1 para autodetección)."
+msgstr "Anchura de la emisión a capturar (-1 para autodetección)."
 
 #: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:104
 #: modules/access/v4l.c:109 modules/demux/rawvid.c:52
@@ -7325,7 +7300,7 @@ msgstr "Altura"
 
 #: modules/access/pvr.c:80
 msgid "Height of the stream to capture (-1 for autodetection)."
-msgstr "Altura del volcado a capturar (-1 para autodetección)."
+msgstr "Altura de la emisión a capturar (-1 para autodetección)."
 
 #: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:230
 #: modules/access/v4l.c:93 modules/gui/qt4/components/open_panels.cpp:757
@@ -7463,12 +7438,11 @@ msgstr ""
 "favor comprueba tus conectores y controladores."
 
 #: modules/access/rtmp/access.c:45
-#, fuzzy
 msgid ""
 "Caching value for RTMP streams. This value should be set in milliseconds."
 msgstr ""
-"Valor de caché por defecto para volcados RTSP. Este valor debería ponerse en "
-"milisegundos."
+"Valor de caché por defecto para emisiones RTSP. Este valor debería ponerse "
+"en milisegundos."
 
 #: modules/access/rtmp/access.c:52
 msgid "RTMP input"
@@ -7478,8 +7452,8 @@ msgstr "Entrada RTMP"
 msgid ""
 "Caching value for RTSP streams. This value should be set in milliseconds."
 msgstr ""
-"Valor de caché por defecto para volcados RTSP. Este valor debería ponerse en "
-"milisegundos."
+"Valor de caché por defecto para emisiones RTSP. Este valor debería ponerse "
+"en milisegundos."
 
 #: modules/access/rtsp/access.c:52 modules/access/rtsp/access.c:53
 msgid "Real RTSP"
@@ -7571,7 +7545,8 @@ msgstr "Pantalla"
 msgid ""
 "Caching value for SMB streams. This value should be set in milliseconds."
 msgstr ""
-"Valor de caché para volcados SMB. Este valor debería ponerse en milisegundos."
+"Valor de caché para emisiones SMB. Este valor debería ponerse en "
+"milisegundos."
 
 #: modules/access/smb.c:68
 msgid "SMB user name"
@@ -7597,7 +7572,8 @@ msgstr "Entrada SMB"
 msgid ""
 "Caching value for TCP streams. This value should be set in milliseconds."
 msgstr ""
-"Valor de caché para volcados TCP. Este valor debería ponerse en milisegundos."
+"Valor de caché para emisiones TCP. Este valor debería ponerse en "
+"milisegundos."
 
 #: modules/access/tcp.c:50
 msgid "TCP"
@@ -7611,7 +7587,8 @@ msgstr "Entrada TCP"
 msgid ""
 "Caching value for UDP streams. This value should be set in milliseconds."
 msgstr ""
-"Valor de caché para volcados UDP. Este valor debería ponerse en milisegundos."
+"Valor de caché para emisiones UDP. Este valor debería ponerse en "
+"milisegundos."
 
 #: modules/access/udp.c:58
 msgid "UDP"
@@ -7758,6 +7735,8 @@ msgid ""
 "Trigger a white balancing action, useless if auto white balance is activated "
 "(if supported by the v4l2 driver)."
 msgstr ""
+"Ejecutar una acción de balance blanco, inútil si balance blanco auto está "
+"activado (si soportado por el controlador v4l2)."
 
 #: modules/access/v4l2/v4l2.c:137
 msgid "Red balance"
@@ -7803,6 +7782,8 @@ msgstr "Auto ganancia"
 msgid ""
 "Automatically set the video input's gain (if supported by the v4l2 driver)."
 msgstr ""
+"Automáticamente pone la ganancia de la entrada de vídeo (si soportado por el "
+"controlador v4l2)."
 
 #: modules/access/v4l2/v4l2.c:153
 msgid "Gain"
@@ -7811,6 +7792,7 @@ msgstr "Ganancia"
 #: modules/access/v4l2/v4l2.c:155
 msgid "Video input's gain (if supported by the v4l2 driver)."
 msgstr ""
+"Ganancia de la entrada de vídeo (si soportado por el controlador v4l2)."
 
 #: modules/access/v4l2/v4l2.c:156
 msgid "Horizontal flip"
@@ -7818,7 +7800,7 @@ msgstr "Giro horizontal"
 
 #: modules/access/v4l2/v4l2.c:158
 msgid "Flip the video horizontally (if supported by the v4l2 driver)."
-msgstr ""
+msgstr "Rotar el vídeo horizontalmente (si soportado por el controlador v4l2)."
 
 #: modules/access/v4l2/v4l2.c:159
 msgid "Vertical flip"
@@ -7826,7 +7808,7 @@ msgstr "Giro vertical"
 
 #: modules/access/v4l2/v4l2.c:161
 msgid "Flip the video vertically (if supported by the v4l2 driver)."
-msgstr ""
+msgstr "Rotar el vídeo verticalmente (si soportado por el controlador v4l2)."
 
 #: modules/access/v4l2/v4l2.c:162
 msgid "Horizontal centering"
@@ -7836,6 +7818,8 @@ msgstr "Centrado horizontal"
 msgid ""
 "Set the camera's horizontal centering (if supported by the v4l2 driver)."
 msgstr ""
+"Poner el centrado horizontal de la cámara (si soportado por el controlador "
+"v4l2)."
 
 #: modules/access/v4l2/v4l2.c:165
 msgid "Vertical centering"
@@ -7844,6 +7828,8 @@ msgstr "Centrado vertical"
 #: modules/access/v4l2/v4l2.c:167
 msgid "Set the camera's vertical centering (if supported by the v4l2 driver)."
 msgstr ""
+"Poner el centrado vertical de la cámara (si soportado por el controlador "
+"v4l2)."
 
 #: modules/access/v4l2/v4l2.c:172
 #, fuzzy
@@ -7869,13 +7855,15 @@ msgstr "Método de audio"
 
 #: modules/access/v4l2/v4l2.c:183
 msgid "Audio method to use: 0 to disable audio, 1 for OSS."
-msgstr ""
+msgstr "Método de audio a usar: 0 para deshabilitar audio, 1 para OSS."
 
 #: modules/access/v4l2/v4l2.c:186
 msgid ""
 "Audio method to use: 0 to disable audio, 1 for OSS, 2 for ALSA, 3 for ALSA "
 "or OSS (ALSA is preferred)."
 msgstr ""
+"Método de audio a usar: 0 para deshabilitar audio, 1 para OSS, 2 para ALSA, "
+"3 para ALSA u OSS (se prefiere ALSA)."
 
 #: modules/access/v4l2/v4l2.c:191
 msgid "Volume of the audio input (if supported by the v4l2 driver)."
@@ -7922,16 +7910,15 @@ msgstr "Brillo de la entrada de vídeo."
 
 #: modules/access/v4l2/v4l2.c:210 modules/access/v4l.c:131
 msgid "Capture the audio stream in stereo."
-msgstr "Capturar el volcado de audio en estéreo."
+msgstr "Capturar la emisión de audio en estéreo."
 
 #: modules/access/v4l2/v4l2.c:213
-#, fuzzy
 msgid ""
 "Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100, "
 "48000)"
 msgstr ""
-"Tasa de muestra del volcado de audio capturado, en Hz (ej: 11025, 22050, "
-"44100)"
+"Tasa de muestra de la emisión de audio capturado, en Hz (ej: 11025, 22050, "
+"44100, 48000)"
 
 #: modules/access/v4l2/v4l2.c:217
 #, fuzzy
@@ -7941,9 +7928,8 @@ msgstr ""
 "Valor de caché para capturas V4L. Este valor debería ponerse en milisegundos."
 
 #: modules/access/v4l2/v4l2.c:219
-#, fuzzy
 msgid "v4l2 driver controls"
-msgstr "Controles"
+msgstr "Controles de controlador v4l2"
 
 #: modules/access/v4l2/v4l2.c:221
 msgid ""
@@ -8087,11 +8073,11 @@ msgstr "Canal de Audio a usar, si hay varias entradas de audio."
 
 #: modules/access/v4l.c:107
 msgid "Width of the stream to capture (-1 for autodetect)."
-msgstr "Anchura del volcado a capturar (-1 para autodetectar)."
+msgstr "Anchura de la emisión a capturar (-1 para autodetectar)."
 
 #: modules/access/v4l.c:110
 msgid "Height of the stream to capture (-1 for autodetect)."
-msgstr "Altura del volcado a capturar (-1 para autodetectar)."
+msgstr "Altura de la emisión a capturar (-1 para autodetectar)."
 
 #: modules/access/v4l.c:114
 msgid "Brightness of the video input."
@@ -8126,7 +8112,7 @@ msgstr "Sintonizador a usar, si hay varios."
 msgid ""
 "Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100)"
 msgstr ""
-"Tasa de muestra del volcado de audio capturado, en Hz (ej: 11025, 22050, "
+"Tasa de muestra de la emisión de audio capturada, en Hz (ej: 11025, 22050, "
 "44100)"
 
 #: modules/access/v4l.c:132
@@ -8143,7 +8129,7 @@ msgstr "Diezmado"
 
 #: modules/access/v4l.c:137
 msgid "Decimation level for MJPEG streams"
-msgstr "Nivel de diezmado para volcados MJPEG"
+msgstr "Nivel de diezmado para emisiones MJPEG"
 
 #: modules/access/v4l.c:138
 msgid "Quality"
@@ -8151,7 +8137,7 @@ msgstr "Calidad"
 
 #: modules/access/v4l.c:139
 msgid "Quality of the stream."
-msgstr "Calidad del volcado."
+msgstr "Calidad de la emisión."
 
 #: modules/access/v4l.c:150
 msgid "Video4Linux"
@@ -8334,7 +8320,7 @@ msgid ""
 "Show the maximum amount of information under Stream and Media Info. Shows "
 "for example playback control navigation."
 msgstr ""
-"Muestra la máxima cantidad de información bajo Info de Volcado y Medio. "
+"Muestra la máxima cantidad de información bajo Info de Emisión y Medio. "
 "Muestra p.ej. la navegación de control de reproducción."
 
 #: modules/access/vcdx/vcd.c:143
@@ -8347,7 +8333,7 @@ msgstr "Formato a usar en campo \"título\" de lista de reproducción."
 
 #: modules/audio_filter/channel_mixer/dolby.c:49
 msgid "Simple decoder for Dolby Surround encoded streams"
-msgstr "Decodificador simple para volcados codificados en Dolby Surround"
+msgstr "Decodificador simple para emisiones codificadas en Dolby Surround"
 
 #: modules/audio_filter/channel_mixer/dolby.c:50
 msgid "Dolby Surround decoder"
@@ -8398,8 +8384,8 @@ msgid ""
 "Dolby Surround encoded streams won't be decoded before being processed by "
 "this filter. Enabling this setting is not recommended."
 msgstr ""
-"Los volcados codificados Dolby Surround no serán decodificados antes de ser "
-"procesados por este filtro. No se recomienda habilitar esta opción."
+"Las emisiones codificadas Dolby Surround no serán decodificadas antes de ser "
+"procesadas por este filtro. No se recomienda habilitar esta opción."
 
 #: modules/audio_filter/channel_mixer/headphone.c:82
 #: modules/audio_filter/channel_mixer/headphone.c:101
@@ -8474,8 +8460,8 @@ msgid ""
 "without disturbing anyone. If you disable the dynamic range compression the "
 "playback will be more adapted to a movie theater or a listening room."
 msgstr ""
-"La compresión de rango dinámico hace que lo alto suene más suave, y los "
-"sonidos suaves más altos, para que puedas escuchar más fácilmente el volcado "
+"La compresión de rango dinámico hace de los sonidos altos más suaves, y los "
+"sonidos suaves más altos, para que puedas escuchar más fácilmente la emisión "
 "en un entorno ruidoso sin molestar a nadie. Si deshabilitas la compresión de "
 "rango dinámico, la reproducción estará más adaptada a un cine o una "
 "habitación acústica."
@@ -9342,7 +9328,7 @@ msgid ""
 "on quality. However it provides a big speedup for high definition streams."
 msgstr ""
 "Omitir el filtro bucle (o desbloquear) normalmente afecta perjudicialmente "
-"la calidad. Aun así da gran velocidad en volcados de alta definición."
+"la calidad. Aun así da gran velocidad en emisiones de alta definición."
 
 #: modules/codec/avcodec/avcodec.h:121
 msgid "Ratio of key frames"
@@ -9403,8 +9389,8 @@ msgid ""
 "Rate control buffer size (in kbytes). A bigger buffer will allow for better "
 "rate control, but will cause a delay in the stream."
 msgstr ""
-"Tamaño del búfer de control de tasa (en kbytes). Un búfer más grande "
-"permitirá mejor control de tasa, pero causará un retraso en el volcado."
+"Tamaño del búfer de control de tasa (en kbytes). Un búfer mayor permitirá "
+"mejor control de tasa, pero causará un retraso en la emisión."
 
 #: modules/codec/avcodec/avcodec.h:149
 msgid "Rate control buffer aggressiveness"
@@ -10110,7 +10096,7 @@ msgid ""
 "particular bitrate. This will produce a VBR stream."
 msgstr ""
 "Forzar una calidad entre 1 (baja) y 10 (alta), en vez de especificar una "
-"tasa de bits concreta. Esto producirá un volcado VBR."
+"tasa de bits concreta. Esto producirá una emisión VBR."
 
 #: modules/codec/theora.c:104
 msgid "Theora video decoder"
@@ -10134,8 +10120,8 @@ msgid ""
 "of specifying a particular bitrate. This will produce a VBR stream."
 msgstr ""
 "Fuerza una calidad de codificación específica entre 0.0 (alta) y 50.0 "
-"(baja), en vez de especificar una tasa de bits concreta. Esto producirá un "
-"volcado VBR."
+"(baja), en vez de especificar una tasa de bits concreta. Esto producirá una "
+"emisión VBR."
 
 #: modules/codec/twolame.c:60
 msgid "Stereo mode"
@@ -10143,7 +10129,7 @@ msgstr "Modo estéreo"
 
 #: modules/codec/twolame.c:61
 msgid "Handling mode for stereo streams"
-msgstr "Manejar modo para volcados estéreo"
+msgstr "Manejar modo para emisiones estéreo"
 
 #: modules/codec/twolame.c:62
 msgid "VBR mode"
@@ -10180,7 +10166,7 @@ msgstr "Máxima tasa de bits de codificación"
 
 #: modules/codec/vorbis.c:174
 msgid "Maximum bitrate in kbps. This is useful for streaming applications."
-msgstr "Máxima tasa de bits en kbps. Útil para aplicaciones de volcado."
+msgstr "Máxima tasa de bits en kbps. Útil para aplicaciones para emitir."
 
 #: modules/codec/vorbis.c:175
 msgid "Minimum encoding bitrate"
@@ -10502,9 +10488,8 @@ msgid ""
 msgstr ""
 
 #: modules/codec/x264.c:176
-#, fuzzy
 msgid "Strength of AQ"
-msgstr "Método de volcado"
+msgstr "Fuerza de AQ"
 
 #: modules/codec/x264.c:177
 msgid ""
@@ -10535,7 +10520,6 @@ msgid "QP difference between chroma and luma"
 msgstr "Diferencia QP entre croma y luma"
 
 #: modules/codec/x264.c:192
-#, fuzzy
 msgid "QP difference between chroma and luma."
 msgstr "Diferencia QP entre croma y luma."
 
@@ -10925,8 +10909,8 @@ msgid ""
 "Set SPS and PPS id numbers to allow concatenating streams with different "
 "settings."
 msgstr ""
-"Poner nºs id de SPS y PPS para permitir volcados concatenados con diferentes "
-"configuraciones."
+"Poner nºs id de SPS y PPS para permitir emisiones concatenadas con "
+"diferentes configuraciones."
 
 #: modules/codec/x264.c:372
 msgid "Access unit delimiters"
@@ -11369,13 +11353,13 @@ msgstr "Error"
 
 #: modules/control/rc.c:170
 msgid "Show stream position"
-msgstr "Muestra posición de volcado"
+msgstr "Muestra posición de la emisión"
 
 #: modules/control/rc.c:171
 msgid ""
 "Show the current position in seconds within the stream from time to time."
 msgstr ""
-"Muestra la posición actual en segundos dentro del volcado de vez en cuando."
+"Muestra la posición actual en segundos dentro de la emisión de vez en cuando."
 
 #: modules/control/rc.c:174
 msgid "Fake TTY"
@@ -11442,392 +11426,316 @@ msgid "+----[ Remote control commands ]"
 msgstr "+----[ Comandos de control remoto ]"
 
 #: modules/control/rc.c:855
-#, fuzzy
 msgid "| add XYZ  . . . . . . . . . . . . add XYZ to playlist"
-msgstr "| add XYZ . . . . . . . añade XYZ a lista de repr."
+msgstr "| add XYZ . . . . . .  añade XYZ a lista de reproducción"
 
 #: modules/control/rc.c:856
-#, fuzzy
 msgid "| enqueue XYZ  . . . . . . . . . queue XYZ to playlist"
-msgstr "| enqueue XYZ . . . . . . . añade XYZ a lista de repr."
+msgstr "| enqueue XYZ . . .  enlista XYZ a lista de reproducción"
 
 #: modules/control/rc.c:857
-#, fuzzy
 msgid "| playlist . . . . .  show items currently in playlist"
-msgstr "| playlist  . . mostrar objetos actualmente en lista de repr."
+msgstr "| playlist  . . muestra objetos en lista de reproducción"
 
 #: modules/control/rc.c:858
-#, fuzzy
 msgid "| play . . . . . . . . . . . . . . . . . . play stream"
-msgstr "| play  . . . . . . . . . . . .  reproducir volcado"
+msgstr "| play . . . . . . . . . . . . . . .  reproducir emisión"
 
 #: modules/control/rc.c:859
-#, fuzzy
 msgid "| stop . . . . . . . . . . . . . . . . . . stop stream"
-msgstr "| stop  . . . . . . . . . . . . . . . parar volcado"
+msgstr "| stop . . . . . . . . . . . . . . . . . . parar emisión"
 
 #: modules/control/rc.c:860
-#, fuzzy
 msgid "| next . . . . . . . . . . . . . .  next playlist item"
-msgstr "| next  . . . . . . . .  siguiente objeto de lista de repr."
+msgstr "| next . . . . objeto siguiente de lista de reproducción"
 
 #: modules/control/rc.c:861
-#, fuzzy
 msgid "| prev . . . . . . . . . . . .  previous playlist item"
-msgstr "| prev  . . . . . . . . . . objeto previo de lista de repr."
+msgstr "| prev . . . . . . . . . objeto previo de lista de repr."
 
 #: modules/control/rc.c:862
-#, fuzzy
 msgid "| goto . . . . . . . . . . . . . .  goto item at index"
-msgstr "| goto . . . . . . . . . . . . . . . . . ir a objeto en índice"
+msgstr "| goto . . . . . . . . . . . . . . ir a objeto en índice"
 
 #: modules/control/rc.c:863
-#, fuzzy
 msgid "| repeat [on|off] . . . .  toggle playlist item repeat"
-msgstr "| f [on|off] . . . . . . . .  intercambiar pantalla completa"
+msgstr "| repeat [on|off] . . .  cambiar repetir objeto de lista"
 
 #: modules/control/rc.c:864
-#, fuzzy
 msgid "| loop [on|off] . . . . . . . . . toggle playlist loop"
-msgstr "| f [on|off] . . . . . . . .  intercambiar pantalla completa"
+msgstr "| loop [on|off] . . . .  cambiar bucle de lista de repr."
 
 #: modules/control/rc.c:865
-#, fuzzy
 msgid "| random [on|off] . . . . . . .  toggle random jumping"
-msgstr "| f [on|off] . . . . . . . .  intercambiar pantalla completa"
+msgstr "| random [on|off] . . . . . . .  cambiar salto aleatorio"
 
 #: modules/control/rc.c:866
-#, fuzzy
 msgid "| clear . . . . . . . . . . . . . . clear the playlist"
-msgstr "| clear . . . . . . . . . .  limpiar lista de reproducción"
+msgstr "| clear . . . . . . . . .  limpiar lista de reproducción"
 
 #: modules/control/rc.c:867
-#, fuzzy
 msgid "| status . . . . . . . . . . . current playlist status"
-msgstr "| status . . . . . . . . .  estado actual de lista de repr."
+msgstr "| status . . . .  estado actual de lista de reproducción"
 
 #: modules/control/rc.c:868
-#, fuzzy
 msgid "| title [X]  . . . . . . set/get title in current item"
-msgstr "| title [X]. . . . . .  pon/obtén título en objeto actual"
+msgstr "| title [X]  . . . . . pon/obtén título en objeto actual"
 
 #: modules/control/rc.c:869
-#, fuzzy
 msgid "| title_n  . . . . . . . .  next title in current item"
-msgstr "| title_n . . . . . . . .  siguiente título en objeto actual"
+msgstr "| title_n  . . . . . . siguiente título en objeto actual"
 
 #: modules/control/rc.c:870
-#, fuzzy
 msgid "| title_p  . . . . . .  previous title in current item"
-msgstr "| title_p  . . . . . . . . . . título previo en objeto actual"
+msgstr "| title_p  . . . . . . .  título previo en objeto actual"
 
 #: modules/control/rc.c:871
-#, fuzzy
 msgid "| chapter [X]  . . . . set/get chapter in current item"
-msgstr "| chapter [X]  . . pon/obtén capítulo en objeto actual"
+msgstr "| chapter [X]  . . . pon/obtén capítulo en objeto actual"
 
 #: modules/control/rc.c:872
-#, fuzzy
 msgid "| chapter_n  . . . . . .  next chapter in current item"
 msgstr "| chapter_n  . . . . capítulo siguiente en objeto actual"
 
 #: modules/control/rc.c:873
-#, fuzzy
 msgid "| chapter_p  . . . .  previous chapter in current item"
-msgstr "| chapter_p  . .  capítulo previo en objeto actual"
+msgstr "| chapter_p  . . . . .  capítulo previo en objeto actual"
 
 #: modules/control/rc.c:875
-#, fuzzy
 msgid "| seek X . . . seek in seconds, for instance `seek 12'"
-msgstr "| seek X  . . . buscar en segundos, p.ej. `seek 12'"
+msgstr "| seek X . . . . . . buscar en segundos, p.ej. `seek 12'"
 
 #: modules/control/rc.c:876
-#, fuzzy
 msgid "| pause  . . . . . . . . . . . . . . . .  toggle pause"
-msgstr "| pause . . . . . . . . . . . .  intercambiar pausa"
+msgstr "| pause  . . . . . . . . . . . . . . . . . cambiar pausa"
 
 #: modules/control/rc.c:877
-#, fuzzy
 msgid "| fastforward  . . . . . . . .  .  set to maximum rate"
-msgstr "| fastforward . . . . . . . . . . . .  poner a tasa máxima"
+msgstr "| fastforward  . . . . . . . .  poner a máxima velovidad"
 
 #: modules/control/rc.c:878
-#, fuzzy
 msgid "| rewind  . . . . . . . . . . . .  set to minimum rate"
-msgstr "| rewind  . . . . . . . . . . . . . . . .  poner a tasa mínima"
+msgstr "| rewind . . . . . . . . . . .  poner a mínima velocidad"
 
 #: modules/control/rc.c:879
-#, fuzzy
 msgid "| faster . . . . . . . . . .  faster playing of stream"
-msgstr "| faster . . . . . . . .  reproducir volcado más rapido"
+msgstr "| faster . . . . . . . . . reproducir emisión más rapida"
 
 #: modules/control/rc.c:880
-#, fuzzy
 msgid "| slower . . . . . . . . . .  slower playing of stream"
-msgstr "| slower . . . . . . . .  reproducir volcado más lento"
+msgstr "| slower . . . . . . . . .  reproducir emisión más lenta"
 
 #: modules/control/rc.c:881
-#, fuzzy
 msgid "| normal . . . . . . . . . .  normal playing of stream"
-msgstr "| normal . . . . . . . .  reproducir volcado normal"
+msgstr "| normal . . . . . . . . . . . reproducir emisión normal"
 
 #: modules/control/rc.c:882
-#, fuzzy
 msgid "| f [on|off] . . . . . . . . . . . . toggle fullscreen"
-msgstr "| f [on|off] . . . . . . . .  intercambiar pantalla completa"
+msgstr "| f [on|off] . . . . . .  intercambiar pantalla completa"
 
 #: modules/control/rc.c:883
-#, fuzzy
 msgid "| info . . . . .  information about the current stream"
-msgstr "| info  . . . . información sobre el volcado actual"
+msgstr "| info . . . . . . . información sobre la emisión actual"
 
 #: modules/control/rc.c:884
-#, fuzzy
 msgid "| stats  . . . . . . . .  show statistical information"
-msgstr "| status . . . . . . . . .  estado actual de lista de repr."
+msgstr "| stats  . . . . . . . . mostrar información estadística"
 
 #: modules/control/rc.c:885
 msgid "| get_time . . seconds elapsed since stream's beginning"
-msgstr "| get_time . . segundos pasados desde el inicio del volcado"
+msgstr "| get_time . .  segundos pasados tras iniciar la emisión"
 
 #: modules/control/rc.c:886
-#, fuzzy
 msgid "| is_playing . . . .  1 if a stream plays, 0 otherwise"
-msgstr "| is_playing . .  1 si un volcado se reproduce, 0 de otro modo"
+msgstr "| is_playing . . . .  1 si se reproduce emisión, 0 si no"
 
 #: modules/control/rc.c:887
-#, fuzzy
 msgid "| get_title . . . . .  the title of the current stream"
-msgstr "| get_title . . .  el título del volcado actual"
+msgstr "| get_title  . . . . . . . . título de la emisión actual"
 
 #: modules/control/rc.c:888
-#, fuzzy
 msgid "| get_length . . . .  the length of the current stream"
-msgstr "| get_length . . . la longitud del volcado actual"
+msgstr "| get_length . . . . . . . longitud de la emisión actual"
 
 #: modules/control/rc.c:890
-#, fuzzy
 msgid "| volume [X] . . . . . . . . . .  set/get audio volume"
-msgstr "| volume [X]. . . . . .  pon/obtén volumen de audio"
+msgstr "| volume [X] . . . . . . . .  pon/obtén volumen de audio"
 
 #: modules/control/rc.c:891
-#, fuzzy
 msgid "| volup [X]  . . . . . . .  raise audio volume X steps"
-msgstr "| volup [X] . . . . subir volumen de audio X puntos"
+msgstr "| volup [X]  . . . . . . subir volumen de audio X puntos"
 
 #: modules/control/rc.c:892
-#, fuzzy
 msgid "| voldown [X]  . . . . . .  lower audio volume X steps"
-msgstr "| voldown [X] . . . bajar volumen de audio X puntos"
+msgstr "| voldown [X]  . . . . . bajar volumen de audio X puntos"
 
 #: modules/control/rc.c:893
-#, fuzzy
 msgid "| adev [X] . . . . . . . . . . .  set/get audio device"
-msgstr "| adev [X]  . . . . . .  pon/obtén aparato de audio"
+msgstr "| adev [X] . . . . . . . . .  pon/obtén aparato de audio"
 
 #: modules/control/rc.c:894
-#, fuzzy
 msgid "| achan [X]. . . . . . . . . .  set/get audio channels"
-msgstr "| achan [X] . . . . . .  pon/obtén canales de audio"
+msgstr "| achan [X]  . . . . . . . .  pon/obtén canales de audio"
 
 #: modules/control/rc.c:895
-#, fuzzy
 msgid "| atrack [X] . . . . . . . . . . . set/get audio track"
-msgstr "| atrack [X]  . . . . . .  pon/obtén pista de audio"
+msgstr "| atrack [X] . . . . . . . . .  pon/obtén pista de audio"
 
 #: modules/control/rc.c:896
-#, fuzzy
 msgid "| vtrack [X] . . . . . . . . . . . set/get video track"
-msgstr "| vtrack [X]  . . . . . .  pon/obtén pista de vídeo"
+msgstr "| vtrack [X] . . . . . . . . .  pon/obtén pista de vídeo"
 
 #: modules/control/rc.c:897
-#, fuzzy
 msgid "| vratio [X]  . . . . . . . set/get video aspect ratio"
-msgstr "| vratio [X]. . . . . .  pon/obtén tasa de aspecto de vídeo"
+msgstr "| vratio [X] . . . .  pon/obtén tasa de aspecto de vídeo"
 
 #: modules/control/rc.c:898
-#, fuzzy
 msgid "| vcrop [X]  . . . . . . . . . . .  set/get video crop"
-msgstr "| vcrop [X]  . . . . . .  pon/obtén recorte de vídeo"
+msgstr "| vcrop [X]  . . . . . . . .  pon/obtén recorte de vídeo"
 
 #: modules/control/rc.c:899
-#, fuzzy
 msgid "| vzoom [X]  . . . . . . . . . . .  set/get video zoom"
-msgstr "| vzoom [X]. . . . . .  pon/obtén zoom de vídeo"
+msgstr "| vzoom [X]  . . . . . . . . . . pon/obtén zoom de vídeo"
 
 #: modules/control/rc.c:900
-#, fuzzy
 msgid "| snapshot . . . . . . . . . . . . take video snapshot"
-msgstr "| vtrack [X]  . . . . . .  pon/obtén pista de vídeo"
+msgstr "| snapshot . . . . .  tomar captura de pantalla de vídeo"
 
 #: modules/control/rc.c:901
-#, fuzzy
 msgid "| strack [X] . . . . . . . . . set/get subtitles track"
-msgstr "| strack [X] . . . . . .  pon/obtén pista de subtítulos"
+msgstr "| strack [X] . . . . . . . pon/obtén pista de subtítulos"
 
 #: modules/control/rc.c:902
 msgid "| key [hotkey name] . . . . . .  simulate hotkey press"
-msgstr "| key [nombre tecla rápida] . .  simular pulsación tecla rápida"
+msgstr "| key [nombre tecla rápida] . simular pulsar tecla rápida"
 
 #: modules/control/rc.c:903
-#, fuzzy
 msgid "| menu . . [on|off|up|down|left|right|select] use menu"
-msgstr "| menú [on|off|arriba|abajo|izq|dcha|elegir] usar menú"
+msgstr "| menu . . . [on|off|up|down|left|right|select] usa menú"
 
 #: modules/control/rc.c:908
-#, fuzzy
 msgid "| @name marq-marquee  STRING  . . overlay STRING in video"
-msgstr "| marq-marquee STRING  . . superponer CADENA en vídeo"
+msgstr "| @name marq-marquee STRING  . superpone CADENA en vídeo"
 
 #: modules/control/rc.c:909
-#, fuzzy
 msgid "| @name marq-x X . . . . . . . . . . . .offset from left"
-msgstr "| marq-x X . . . . . . . . . . . . . . . . ajuste desde la izquierda"
+msgstr "| @name marq-x X . . . . . . . ajuste desde la izquierda"
 
 #: modules/control/rc.c:910
-#, fuzzy
 msgid "| @name marq-y Y . . . . . . . . . . . . offset from top"
-msgstr "| marq-y Y . . . . . . . . . . . . . . . . .  ajuste desde arriba"
+msgstr "| @name marq-y Y . . . . . . . . . . ajuste desde arriba"
 
 #: modules/control/rc.c:911
-#, fuzzy
 msgid "| @name marq-position #. . .  .relative position control"
-msgstr "| marq-position #. . .  .control de posición relativa"
+msgstr "| @name marq-position #  .  control de posición relativa"
 
 #: modules/control/rc.c:912
-#, fuzzy
 msgid "| @name marq-color # . . . . . . . . . . font color, RGB"
-msgstr "| marq-color #. . . . . . . . . . . . . . color de fuente, RGB"
+msgstr "| @name marq-color # . . . . . . .  color de fuente, RGB"
 
 #: modules/control/rc.c:913
-#, fuzzy
 msgid "| @name marq-opacity # . . . . . . . . . . . . . opacity"
-msgstr "| marq-opacity # . . . . . . . . . . . . . . . . . . . opacidad"
+msgstr "| @name marq-opacity # . . . . . . . . . . . .  opacidad"
 
 #: modules/control/rc.c:914
-#, fuzzy
 msgid "| @name marq-timeout T. . . . . . . . . . timeout, in ms"
-msgstr "| marq-timeout T . . . . . . . . . . . . . . . . retardo, en ms"
+msgstr "| @name marq-timeout T. . . . .  tiempo de espera, en ms"
 
 #: modules/control/rc.c:915
-#, fuzzy
 msgid "| @name marq-size # . . . . . . . . font size, in pixels"
-msgstr "| marq-size # . . . . . . . . tamaño de fuente, en píxels"
+msgstr "| @name marq-size # . . . . tamaño de fuente, en píxeles"
 
 #: modules/control/rc.c:917
-#, fuzzy
 msgid "| @name logo-file STRING . . .the overlay file path/name"
-msgstr "| logo-file STRING . . . la ruta/nombre de archivo superpuesto"
+msgstr "| @name logo-file STRING . ruta/nombre de archivo superpuesta"
 
 #: modules/control/rc.c:918
-#, fuzzy
 msgid "| @name logo-x X . . . . . . . . . . . .offset from left"
-msgstr "| logo-x X . . . . . . . . . . . .ajuste desde la izq."
+msgstr "| @name logo-x X . . . . . . . ajuste desde la izquierda"
 
 #: modules/control/rc.c:919
-#, fuzzy
 msgid "| @name logo-y Y . . . . . . . . . . . . offset from top"
-msgstr "| logo-y Y . . . . . . . . . . . . ajuste desde arriba"
+msgstr "| @name logo-y Y . . . . . . . . . . ajuste desde arriba"
 
 #: modules/control/rc.c:920
-#, fuzzy
 msgid "| @name logo-position #. . . . . . . . relative position"
-msgstr "| logo-position #. . . . . . . . posición relativa"
+msgstr "| @name logo-position #. . . . . . . . posición relativa"
 
 #: modules/control/rc.c:921
-#, fuzzy
 msgid "| @name logo-transparency #. . . . . . . . .transparency"
-msgstr "| logo-transparency #. . . . . . . . .transparencia"
+msgstr "| @name logo-transparency #. . . . . . . . transparencia"
 
 #: modules/control/rc.c:923
-#, fuzzy
 msgid "| @name mosaic-alpha # . . . . . . . . . . . . . . alpha"
-msgstr "| mosaic-alpha # . . . . . . . . . . . . . . alpha"
+msgstr "| @name mosaic-alpha # . . . . . . . . . . . . . . alpha"
 
 #: modules/control/rc.c:924
-#, fuzzy
 msgid "| @name mosaic-height #. . . . . . . . . . . . . .height"
-msgstr "| mosaic-height #. . . . . . . . . . . . . .altura"
+msgstr "| @name mosaic-height #. . . . . . . . . . . . .  altura"
 
 #: modules/control/rc.c:925
-#, fuzzy
 msgid "| @name mosaic-width # . . . . . . . . . . . . . . width"
-msgstr "| mosaic-width # . . . . . . . . . . . . . . anchura"
+msgstr "| @name mosaic-width # . . . . . . . . . . . . . anchura"
 
 #: modules/control/rc.c:926
-#, fuzzy
 msgid "| @name mosaic-xoffset # . . . .top left corner position"
-msgstr "| mosaic-xoffset # . . . .posición esquina sup. izq."
+msgstr "| @name mosaic-xoffset # . .  posición esquina sup. izq."
 
 #: modules/control/rc.c:927
-#, fuzzy
 msgid "| @name mosaic-yoffset # . . . .top left corner position"
-msgstr "| mosaic-yoffset # . . . .posición esquina sup. izq."
+msgstr "| @name mosaic-yoffset # . .  posición esquina sup. izq."
 
 #: modules/control/rc.c:928
-#, fuzzy
 msgid "| @name mosaic-offsets x,y(,x,y)*. . . . list of offsets"
-msgstr "| mosaic-xoffset # . . . .posición esquina sup. izq."
+msgstr "| @name mosaic-offsets x,y(,x,y)*  . .  lista de ajustes"
 
 #: modules/control/rc.c:929
-#, fuzzy
 msgid "| @name mosaic-align 0..2,4..6,8..10. . .mosaic alignment"
-msgstr "| mosaic-align 0..2,4..6,8..10. . .alineación de mosaico"
+msgstr "| @name mosaic-align 0..2,4..6,8..10 . alineación de mosaico"
 
 #: modules/control/rc.c:930
-#, fuzzy
 msgid "| @name mosaic-vborder # . . . . . . . . vertical border"
-msgstr "| mosaic-vborder # . . . . . . . . borde vertical"
+msgstr "| @name mosaic-vborder # . . . . . . . .  borde vertical"
 
 #: modules/control/rc.c:931
-#, fuzzy
 msgid "| @name mosaic-hborder # . . . . . . . horizontal border"
-msgstr "| mosaic-hborder # . . . . . . . borde horizontal"
+msgstr "| @name mosaic-hborder # . . . . . . .  borde horizontal"
 
 #: modules/control/rc.c:932
-#, fuzzy
 msgid "| @name mosaic-position {0=auto,1=fixed} . . . .position"
-msgstr "| mosaic-position {0=auto,1=fixed} . . . .posición"
+msgstr "| @name mosaic-position {0=auto,1=fixed} . . .  posición"
 
 #: modules/control/rc.c:933
-#, fuzzy
 msgid "| @name mosaic-rows #. . . . . . . . . . .number of rows"
-msgstr "| mosaic-rows #. . . . . . . . . . .nº de filas"
+msgstr "| @name mosaic-rows #  . . . . . . . . . . . nº de filas"
 
 #: modules/control/rc.c:934
-#, fuzzy
 msgid "| @name mosaic-cols #. . . . . . . . . . .number of cols"
-msgstr "| mosaic-cols #. . . . . . . . . . .nº de columnas"
+msgstr "| @name mosaic-cols #  . . . . . . . . .  nº de columnas"
 
 #: modules/control/rc.c:935
-#, fuzzy
 msgid "| @name mosaic-order id(,id)* . . . . order of pictures "
-msgstr "| mosaic-vborder # . . . . . . . . borde vertical"
+msgstr "| @name mosaic-order id(,id)* . . . .  orden de imágenes"
 
 #: modules/control/rc.c:936
-#, fuzzy
 msgid "| @name mosaic-keep-aspect-ratio {0,1} . . .aspect ratio"
-msgstr "| mosaic-keep-aspect-ratio {0,1} . . .tasa de aspecto"
+msgstr "| @name mosaic-keep-aspect-ratio {0,1} . tasa de aspecto"
 
 #: modules/control/rc.c:939
-#, fuzzy
 msgid "| help . . . . . . . . . . . . . . . this help message"
-msgstr "| help  . . . . . . . . . . . este mensaje de ayuda"
+msgstr "| help  . . . . . . . . . . . . .  este mensaje de ayuda"
 
 #: modules/control/rc.c:940
-#, fuzzy
 msgid "| longhelp . . . . . . . . . . . a longer help message"
-msgstr "| longhelp . . . . . . . . . un mensaje de ayuda más largo"
+msgstr "| longhelp  . . . . . . .  un mensaje de ayuda más largo"
 
 #: modules/control/rc.c:941
-#, fuzzy
 msgid "| logout . . . . . . .  exit (if in socket connection)"
-msgstr "| logout  . . . . . . salir (si en conexión socket)"
+msgstr "| logout  . . . . . . salir (estando en conexión socket)"
 
 #: modules/control/rc.c:942
-#, fuzzy
 msgid "| quit . . . . . . . . . . . . . . . . . . .  quit vlc"
-msgstr "| quit  . . . . . . . . . . . . . . . .  salir vlc"
+msgstr "| quit  . . . . . . . . . . . . . . . . . . salir de vlc"
 
 #: modules/control/rc.c:944
 msgid "+----[ end of help ]"
@@ -11861,29 +11769,28 @@ msgid "Unknown command!"
 msgstr "¡Comando desconocido!"
 
 #: modules/control/rc.c:1999 modules/gui/ncurses.c:2039
-#, fuzzy
 msgid "+-[Incoming]"
-msgstr "Codificación"
+msgstr "+-[Incoming]"
 
 #: modules/control/rc.c:2000 modules/gui/ncurses.c:2042
 #, c-format
 msgid "| input bytes read : %8.0f kB"
-msgstr ""
+msgstr "| lectura de bytes de entrada: %8.0f kB"
 
 #: modules/control/rc.c:2002 modules/gui/ncurses.c:2045
 #, c-format
 msgid "| input bitrate    :   %6.0f kb/s"
-msgstr ""
+msgstr "| tasa de bits de entrada    :   %6.0f kb/s"
 
 #: modules/control/rc.c:2004 modules/gui/ncurses.c:2047
 #, c-format
 msgid "| demux bytes read : %8.0f kB"
-msgstr ""
+msgstr "| lectura bytes de demux     : %8.0f kB"
 
 #: modules/control/rc.c:2006 modules/gui/ncurses.c:2050
 #, c-format
 msgid "| demux bitrate    :   %6.0f kb/s"
-msgstr ""
+msgstr "| tasa de bits de demux      :   %6.0f kb/s"
 
 #: modules/control/rc.c:2010 modules/gui/ncurses.c:2058
 msgid "+-[Video Decoding]"
@@ -11925,7 +11832,7 @@ msgstr ""
 
 #: modules/control/rc.c:2028 modules/gui/ncurses.c:2090
 msgid "+-[Streaming]"
-msgstr "+-[Volcado]"
+msgstr "+-[Emisión]"
 
 #: modules/control/rc.c:2029 modules/gui/ncurses.c:2093
 #, c-format
@@ -11955,9 +11862,8 @@ msgid "Signals"
 msgstr "Señales"
 
 #: modules/control/signals.c:42
-#, fuzzy
 msgid "POSIX signals handling interface"
-msgstr "Opciones para la interfaz principal"
+msgstr "Interfaz de manejo de señales POSIX"
 
 #: modules/control/telnet.c:78
 msgid "Host"
@@ -12013,11 +11919,11 @@ msgstr "Demuxer ASF v1.0"
 
 #: modules/demux/asf/asf.c:178
 msgid "Could not demux ASF stream"
-msgstr "No se pudo demuxar volcado ASF"
+msgstr "No se pudo demuxar la emisión ASF"
 
 #: modules/demux/asf/asf.c:179
 msgid "VLC failed to load the ASF header."
-msgstr ""
+msgstr "VLC no pudo cargar el encabezado ASF."
 
 #: modules/demux/au.c:50
 msgid "AU demuxer"
@@ -12036,9 +11942,8 @@ msgid "Ffmpeg mux"
 msgstr "muxor FFmpeg"
 
 #: modules/demux/avformat/avformat.h:36
-#, fuzzy
 msgid "Force use of ffmpeg muxer."
-msgstr "Forzar uso del módulo grabación programada"
+msgstr "Forzar uso de muxor ffmpeg."
 
 #: modules/demux/avi/avi.c:47
 msgid "Force interleaved method"
@@ -12109,11 +12014,11 @@ msgstr "Demuxor CDG"
 
 #: modules/demux/demuxdump.c:42
 msgid "Dump filename"
-msgstr "Nombre de archivo a volcar"
+msgstr "Nombre de archivo de volcado"
 
 #: modules/demux/demuxdump.c:44
 msgid "Name of the file to which the raw stream will be dumped."
-msgstr "Nombre de archivo al que el flujo raw se volcará."
+msgstr "Nombre de archivo al que la emisión raw se volcará."
 
 #: modules/demux/demuxdump.c:45
 msgid "Append to existing file"
@@ -12124,7 +12029,6 @@ msgid "If the file already exists, it will not be overwritten."
 msgstr "Si el archivo ya existe,no se sobreescribirá."
 
 #: modules/demux/demuxdump.c:56
-#, fuzzy
 msgid "File dumper"
 msgstr "Volcador de archivo"
 
@@ -12145,8 +12049,8 @@ msgid ""
 "Allows you to modify the default caching value for RTSP streams. This value "
 "should be set in millisecond units."
 msgstr ""
-"Te permite modificar el valor de caché por defecto para volcados RTSP. Este "
-"valor debería ponerse en unidades de milisegundos."
+"Te permite modificar el valor de caché por defecto para emisiones RTSP. Este "
+"valor debería ponerse en milisegundos."
 
 #: modules/demux/live555.cpp:79
 msgid "Kasenna RTSP dialect"
@@ -12248,7 +12152,7 @@ msgstr "Demuxor de cámara M-JPEG"
 
 #: modules/demux/mkv.cpp:118
 msgid "Matroska stream demuxer"
-msgstr "Demuxer de volcado Matroska"
+msgstr "Demuxor Matroska de emisión"
 
 #: modules/demux/mkv.cpp:125
 msgid "Ordered chapters"
@@ -12397,7 +12301,7 @@ msgstr "Retraso de sonido envolvente (ms)"
 
 #: modules/demux/mp4/mp4.c:58
 msgid "MP4 stream demuxer"
-msgstr "Demuxor de volcado MP4"
+msgstr "Demuxor MP4 de emisión"
 
 #: modules/demux/mpc.c:58
 msgid "MusePack demuxer"
@@ -12405,7 +12309,7 @@ msgstr "Demuxor MusePack"
 
 #: modules/demux/mpeg/h264.c:44
 msgid "Desired frame rate for the H264 stream."
-msgstr "Tasa de fotograma deseada para el volcado H264."
+msgstr "Tasa de fotograma deseada para la emisión H264."
 
 #: modules/demux/mpeg/h264.c:51
 msgid "H264 video demuxer"
@@ -12471,7 +12375,7 @@ msgstr "Mostrar contenido adulto de shoutcast"
 #: modules/demux/playlist/playlist.c:45
 msgid "Show NC17 rated video streams when using shoutcast video playlists."
 msgstr ""
-"Mostrar volcados de vídeo clasificados NC17 al usar listas de reproducción "
+"Mostrar emisiones de vídeo clasificados NC17 al usar listas de reproducción "
 "de vídeo shoutcast."
 
 #: modules/demux/playlist/playlist.c:48
@@ -12522,7 +12426,7 @@ msgstr "Analizador Kasenna MediaBase"
 
 #: modules/demux/playlist/playlist.c:117
 msgid "QuickTime Media Link importer"
-msgstr ""
+msgstr "Importador de Enlace de Medios QuickTime"
 
 #: modules/demux/playlist/playlist.c:122
 msgid "Google Video Playlist importer"
@@ -12535,7 +12439,7 @@ msgstr "Decodificador Dummy"
 
 #: modules/demux/playlist/playlist.c:131
 msgid "iTunes Music Library importer"
-msgstr ""
+msgstr "Importador de Biblioteca de Música iTunes"
 
 #: modules/demux/playlist/podcast.c:241 modules/demux/playlist/podcast.c:255
 #: modules/demux/playlist/podcast.c:285 modules/demux/playlist/podcast.c:297
@@ -12590,16 +12494,16 @@ msgstr "Demuxor DV (Vídeo Digital)"
 #: modules/demux/rawvid.c:45
 msgid "This is the desired frame rate when playing raw video streams."
 msgstr ""
-"Esta es la tasa de fotogramas deseada al reproducir volcados de vídeo en "
+"Ésta es la tasa de fotogramas deseada al reproducir volcados de vídeo en "
 "bruto."
 
 #: modules/demux/rawvid.c:49
 msgid "This specifies the width in pixels of the raw video stream."
-msgstr "Esto especifica el ancho en píxels del volcado de vídeo en bruto."
+msgstr "Esto especifica el ancho en píxels de la emisión de vídeo en bruto."
 
 #: modules/demux/rawvid.c:53
 msgid "This specifies the height in pixels of the raw video stream."
-msgstr "Esto especifica la altura en píxels del volcado de vídeo en bruto."
+msgstr "Esto especifica la altura en píxels de la emisión de vídeo en bruto."
 
 #: modules/demux/rawvid.c:56
 msgid "Force chroma (Use carefully)"
@@ -12668,7 +12572,7 @@ msgstr "Caducidad del origen RTP (seg)"
 
 #: modules/demux/rtp.c:63
 msgid "How long to wait for any packet before a source is expired."
-msgstr ""
+msgstr "Cuánto esperar un paquete antes que una fuente expire."
 
 #: modules/demux/rtp.c:65
 msgid "Maximum RTP sequence number dropout"
@@ -12770,7 +12674,8 @@ msgstr "PMT extra"
 #: modules/demux/ts.c:112
 msgid "Allows a user to specify an extra pmt (pmt_pid=pid:stream_type[,...])."
 msgstr ""
-"Permite a un usuario indicar un pmt extra (pmt_pid=pid:tipo_volcado[,...])."
+"Permite a un usuario indicar un pmt extra (pmt_pid=pid:tipo_de_emisión"
+"[,...])."
 
 #: modules/demux/ts.c:114
 msgid "Set id of ES to PID"
@@ -12782,13 +12687,13 @@ msgid ""
 "value as the PID in the TS stream, instead of 1, 2, 3, etc. Useful to do "
 "'#duplicate{..., select=\"es=<pid>\"}'."
 msgstr ""
-"Pone la ID interna de cada volcado elemental manejado por VLC al mismo valor "
-"que el PID en el volcado TS, en vez de 1, 2, 3, etc. Útil para hacer "
+"Pone la ID interna de cada emisión elemental manejada por VLC al mismo valor "
+"que el PID en la emisión TS, en vez de 1, 2, 3, etc. Útil para hacer "
 "'#duplicate{..., select=\"es=<pid>\"}'."
 
 #: modules/demux/ts.c:120
 msgid "Fast udp streaming"
-msgstr "Rápido volcado udp"
+msgstr "Rápida emisión udp"
 
 #: modules/demux/ts.c:122
 msgid "Sends TS to specific ip:port by udp (you must know what you are doing)."
@@ -12872,7 +12777,6 @@ msgstr ""
 "sobreescrito."
 
 #: modules/demux/ts.c:153
-#, fuzzy
 msgid "Dump buffer size"
 msgstr "Tamaño del búfer de volcado"
 
@@ -12886,7 +12790,7 @@ msgstr ""
 
 #: modules/demux/ts.c:159
 msgid "MPEG Transport Stream demuxer"
-msgstr "Demuxor de Volcado de Transporte MPEG"
+msgstr "Demuxor de Emisión de Transporte MPEG"
 
 #: modules/demux/ts.c:3421
 #: modules/gui/qt4/components/interface_widgets.cpp:627
@@ -12962,11 +12866,11 @@ msgstr "TY"
 
 #: modules/demux/ty.c:60
 msgid "TY Stream audio/video demux"
-msgstr "Demuxor de audio/vídeo Volcado TY"
+msgstr "Demuxor de audio/vídeo Emisión TY"
 
 #: modules/demux/vc1.c:44
 msgid "Desired frame rate for the VC-1 stream."
-msgstr "Tasa de fotograma deseada para volcado VC-1."
+msgstr "Tasa de fotograma deseada para emisión VC-1."
 
 #: modules/demux/vc1.c:50
 msgid "VC1 video demuxer"
@@ -13520,7 +13424,7 @@ msgstr "sin entrada"
 msgid ""
 "No input found. A stream must be playing or paused for bookmarks to work."
 msgstr ""
-"Entrada no hallada. Un volcado debe ejecutarse o pausarse para que funcione "
+"Entrada no hallada. Una emisión debe ejecutarse o pausarse para que funcione "
 "favoritos."
 
 #: modules/gui/macosx/bookmarks.m:226
@@ -13551,7 +13455,7 @@ msgstr "Entrada no hallada"
 #: modules/gui/macosx/bookmarks.m:281
 msgid "The stream must be playing or paused for bookmarks to work."
 msgstr ""
-"El volcado debe estar ejecutándose o pausado para que funcione favoritos."
+"La emisión debe estar ejecutándose o pausado para que funcione favoritos."
 
 #: modules/gui/macosx/controls.m:57 modules/gui/macosx/controls.m:919
 msgid "Jump To Time"
@@ -13799,7 +13703,7 @@ msgstr "Clave:"
 #: modules/gui/macosx/interaction.m:220 modules/gui/macosx/interaction.m:286
 #, c-format
 msgid "Remaining time: %i seconds"
-msgstr ""
+msgstr "Tiempo restante: %i segundos"
 
 #: modules/gui/macosx/interaction.m:399
 msgid "Errors and Warnings"
@@ -13819,7 +13723,7 @@ msgstr "Tu versión de Mac OS X no se soporta"
 
 #: modules/gui/macosx/intf.m:452
 msgid "VLC media player requires Mac OS X 10.4 or higher."
-msgstr ""
+msgstr "Reproductor de medios VLC requiere Mac OS X 10.4 o superior."
 
 #: modules/gui/macosx/intf.m:498
 msgid "Open CrashLog..."
@@ -13887,7 +13791,7 @@ msgstr "Borrar Menú"
 
 #: modules/gui/macosx/intf.m:521
 msgid "Streaming/Exporting Wizard..."
-msgstr "Asistente de Volcado/Transcodificación..."
+msgstr "Asistente de Emisión/Exportación..."
 
 #: modules/gui/macosx/intf.m:524
 msgid "Cut"
@@ -14033,11 +13937,11 @@ msgstr "Buscar actualizaciones no fue habilitado en esta versión."
 
 #: modules/gui/macosx/intf.m:2107
 msgid "Crash Report successfully sent"
-msgstr ""
+msgstr "Informe de Errores enviado con éxito"
 
 #: modules/gui/macosx/intf.m:2108
 msgid "Thanks for your report!"
-msgstr ""
+msgstr "¡Gracias por tu informe!"
 
 #: modules/gui/macosx/intf.m:2116
 #, fuzzy
@@ -14290,9 +14194,8 @@ msgid "Launch EyeTV now"
 msgstr "Ejecutar EyeTV ahora"
 
 #: modules/gui/macosx/open.m:219
-#, fuzzy
 msgid "Download Plugin"
-msgstr "Descargar ahora"
+msgstr "Descargar Complemento"
 
 #: modules/gui/macosx/open.m:286
 msgid "Load subtitles file:"
@@ -14347,7 +14250,7 @@ msgstr "Abrir Directorio VIDEO_TS"
 
 #: modules/gui/macosx/open.m:871
 msgid "iSight Capture Input"
-msgstr ""
+msgstr "Entrada de Captura iSight"
 
 #: modules/gui/macosx/open.m:872
 msgid ""
@@ -14369,20 +14272,20 @@ msgstr "Entrada de S-Vídeo"
 
 #: modules/gui/macosx/output.m:136
 msgid "Streaming/Saving:"
-msgstr "Volcado/Salvar:"
+msgstr "Emitiendo/Salvando:"
 
 #: modules/gui/macosx/output.m:140
 msgid "Streaming and Transcoding Options"
-msgstr "Opciones de Volcado y Transcodificación"
+msgstr "Opciones de Emisión y Transcodificación"
 
 #: modules/gui/macosx/output.m:141
 msgid "Display the stream locally"
-msgstr "Mostrar el volcado localmente"
+msgstr "Mostrar la emisión localmente"
 
 #: modules/gui/macosx/output.m:143 modules/gui/macosx/output.m:251
 #: modules/gui/macosx/output.m:391
 msgid "Stream"
-msgstr "Volcado"
+msgstr "Emisión"
 
 #: modules/gui/macosx/output.m:144 modules/gui/qt4/ui/sout.ui:81
 msgid "Dump raw input"
@@ -14408,7 +14311,7 @@ msgstr "Escala"
 
 #: modules/gui/macosx/output.m:180
 msgid "Stream Announcing"
-msgstr "Anunciando Volcado"
+msgstr "Anunciando Emisión"
 
 #: modules/gui/macosx/output.m:181 modules/gui/qt4/ui/sout.ui:906
 msgid "SAP announce"
@@ -14473,7 +14376,7 @@ msgstr "Demuxado"
 #: modules/gui/macosx/playlistinfo.m:97
 #: modules/gui/qt4/components/info_panels.cpp:517
 msgid "Stream bitrate"
-msgstr "Tasa de bits de volcado"
+msgstr "Tasa de bits de emisión"
 
 #: modules/gui/macosx/playlistinfo.m:100 modules/gui/macosx/playlistinfo.m:111
 #: modules/gui/qt4/components/info_panels.cpp:520
@@ -14495,7 +14398,7 @@ msgstr "Fotogramas perdidos"
 #: modules/gui/qt4/components/info_panels.cpp:510
 #: modules/video_filter/deinterlace.c:142
 msgid "Streaming"
-msgstr "Volcado"
+msgstr "Emitiendo"
 
 #: modules/gui/macosx/playlistinfo.m:106
 #: modules/gui/qt4/components/info_panels.cpp:528
@@ -14523,7 +14426,7 @@ msgstr "Búffers perdidos"
 
 #: modules/gui/macosx/playlistinfo.m:423
 msgid "Error while saving meta"
-msgstr ""
+msgstr "Error al salvar meta"
 
 #: modules/gui/macosx/playlistinfo.m:424
 msgid "VLC was unable to save the meta data."
@@ -14707,8 +14610,9 @@ msgid "Preferred Audio language"
 msgstr "Idioma de Audio Preferido"
 
 #: modules/gui/macosx/simple_prefs.m:226
+#, fuzzy
 msgid "Enable Last.fm submissions"
-msgstr ""
+msgstr "Habilitar submisiones Last.fm"
 
 #: modules/gui/macosx/simple_prefs.m:228
 msgid "User name"
@@ -14795,7 +14699,7 @@ msgstr "Puerto de Servidor por Defecto"
 #: modules/gui/macosx/simple_prefs.m:263
 #: modules/gui/qt4/ui/sprefs_interface.ui:250
 msgid "Album art download policy"
-msgstr ""
+msgstr "Política de descarga de arte de álbum"
 
 #: modules/gui/macosx/simple_prefs.m:264
 msgid "Add controls to the video window"
@@ -14928,11 +14832,11 @@ msgstr "Opciones de Vídeo no salvadas"
 
 #: modules/gui/macosx/simple_prefs.m:915
 msgid "Input Settings not saved"
-msgstr ""
+msgstr "Opciones de Entrada no salvadas"
 
 #: modules/gui/macosx/simple_prefs.m:943
 msgid "On Screen Display/Subtitle Settings not saved"
-msgstr ""
+msgstr "Opciones de Subtítulos/OSD no salvadas"
 
 #: modules/gui/macosx/simple_prefs.m:968
 msgid "Hotkeys not saved"
@@ -15122,11 +15026,11 @@ msgstr "Muestras de audio no comprimido (utilizable con WAV)"
 
 #: modules/gui/macosx/wizard.m:234
 msgid "MPEG Program Stream"
-msgstr "Volcado de Programa MPEG"
+msgstr "Emisión de Programa MPEG"
 
 #: modules/gui/macosx/wizard.m:236
 msgid "MPEG Transport Stream"
-msgstr "Volcado de Transporte MPEG"
+msgstr "Emisión de Transporte MPEG"
 
 #: modules/gui/macosx/wizard.m:238
 msgid "MPEG 1 Format"
@@ -15140,8 +15044,8 @@ msgid ""
 "at http://yourip:8080 by default."
 msgstr ""
 "Pon las direcciones locales por las que deseas escuchar solicitudes. No "
-"pongas nada si deseas escuchar todas las direcciones. Esto es lo mejor que "
-"hacer generalmente. Así otras máquinas podrán acceder al volcado por http://"
+"pongas nada si deseas escuchar todas las interfaces de red. Generalmente "
+"esto es lo mejor. Así otras máquinas podrán acceder a la emisión por http://"
 "tuip:8080 por defecto."
 
 #: modules/gui/macosx/wizard.m:261
@@ -15150,8 +15054,8 @@ msgid ""
 "efficient, as the server needs to send the stream several times, but "
 "generally the most compatible"
 msgstr ""
-"Use esto para volcar a varias computadoras. Este método no es el más "
-"eficiente, pues el servidor necesita enviar varias veces el volcado, pero "
+"Usa esto para emitir a varias computadoras. Este método no es el más "
+"eficiente, pues el servidor necesita enviar varias veces la emisión, pero "
 "generalmente es el más compatible"
 
 #: modules/gui/macosx/wizard.m:264
@@ -15162,9 +15066,8 @@ msgid ""
 "at mms://yourip:8080 by default."
 msgstr ""
 "Pon las direcciones locales que deseas escuchar. No pongas nada si deseas "
-"escuchar todas las interfaces de red. Esto es generalmente lo mejor que se "
-"puede hacer. Así otras máquinas podrán acceder al volcado por mms://"
-"tuip:8080 por defecto."
+"escuchar todas las interfaces de red. Generalmente esto es lo mejor. Así "
+"otras máquinas podrán acceder a la emisión por mms://tuip:8080 por defecto."
 
 #: modules/gui/macosx/wizard.m:268
 msgid ""
@@ -15173,17 +15076,18 @@ msgid ""
 "Note that only a small part of the MMS protocol is supported (MMS "
 "encapsulated in HTTP)."
 msgstr ""
-"Use esto para volcar a varios PCs usando el protocolo MMS Microsoft. Se usa "
-"como método de transporte por muchos programas de Microsoft. Nótese que sólo "
-"se soporta una pequeña parte del protocolo MMS (MMS encapsulado en HTTP)."
+"Usa esto para emitir a varias computadoras usando el protocolo MMS de "
+"Microsoft. Se usa como método de transporte por muchos programas de "
+"Microsoft. Nótese que sólo se soporta una pequeña parte del protocolo MMS "
+"(MMS encapsulado en HTTP)."
 
 #: modules/gui/macosx/wizard.m:273 modules/gui/macosx/wizard.m:283
 msgid "Enter the address of the computer to stream to."
-msgstr "Ponga la dirección del PC al que volcar."
+msgstr "Pon la dirección de la computadora a la que emitir."
 
 #: modules/gui/macosx/wizard.m:274 modules/gui/macosx/wizard.m:370
 msgid "Use this to stream to a single computer."
-msgstr "Use esto para volcar a un único PC."
+msgstr "Usa esto para emitir a una única computadora."
 
 #: modules/gui/macosx/wizard.m:276 modules/gui/macosx/wizard.m:286
 msgid ""
@@ -15191,9 +15095,9 @@ msgid ""
 "address between 224.0.0.0 and 239.255.255.255. For a private use, enter an "
 "address beginning with 239.255."
 msgstr ""
-"Ponga en este campo la dirección multiemisión a la que volcar. Debe ser una "
-"dirección IP entre 224.0.0.0 y 239.255.255.255. Para un uso privado, ponga "
-"una dirección que comience con 239.255."
+"Pon en este campo la dirección multiemisión a la que emitir. Debe ser una "
+"dirección IP entre 224.0.0.0 y 239.255.255.255. Para un uso privado, pon una "
+"dirección que comience con 239.255."
 
 #: modules/gui/macosx/wizard.m:279
 msgid ""
@@ -15201,8 +15105,8 @@ msgid ""
 "network. This is the most efficient method to stream to several computers, "
 "but it won't work over the Internet."
 msgstr ""
-"Usa esto para volcar a un grupo dinámico de computadoras en una red "
-"habilitada para multiemisión. Este es el método más eficiente para volcar a "
+"Usa esto para emitir a un grupo dinámico de computadoras en una red "
+"habilitada para multiemisión. Éste es el método más eficiente para emitir a "
 "varias computadoras, per no funcionará en Internet."
 
 #: modules/gui/macosx/wizard.m:284
@@ -15210,7 +15114,7 @@ msgid ""
 "Use this to stream to a single computer. RTP headers will be added to the "
 "stream"
 msgstr ""
-"Use esto para volcar a una única computadora. Se añadirán al volcado "
+"Usa esto para emitir a una única computadora. Se añadirán a la emisión "
 "encabezados RTP "
 
 #: modules/gui/macosx/wizard.m:289
@@ -15219,10 +15123,10 @@ msgid ""
 "network. This is the most efficient method to stream to several computers, "
 "but it won't work over Internet. RTP headers will be added to the stream"
 msgstr ""
-"Usa esto para volcar a un grupo dinámico de computadoras en una red "
-"habilitada para multiemisión. Este es el método más eficiente para volcar a "
+"Usa esto para emitir a un grupo dinámico de computadoras en una red "
+"habilitada para multiemisión. Éste es el método más eficiente para emitir a "
 "varias computadoras, pero no funcionará en Internet. Se añadirán encabezados "
-"RTP al volcado"
+"RTP a la emisión"
 
 #: modules/gui/macosx/wizard.m:319
 msgid "Back"
@@ -15231,12 +15135,12 @@ msgstr "Atrás"
 #: modules/gui/macosx/wizard.m:322 modules/gui/macosx/wizard.m:325
 #: modules/gui/macosx/wizard.m:1266
 msgid "Streaming/Transcoding Wizard"
-msgstr "Asistente de Volcado/Transcodificación"
+msgstr "Asistente de Emisión/Transcodificación"
 
 #: modules/gui/macosx/wizard.m:326
 msgid "This wizard allows to configure simple streaming or transcoding setups."
 msgstr ""
-"Este asistente permite configurar volcados simples o montajes de "
+"Este asistente permite configurar emisiones simples o montajes de "
 "transcodificación."
 
 #: modules/gui/macosx/wizard.m:328 modules/gui/macosx/wizard.m:329
@@ -15252,13 +15156,13 @@ msgid ""
 "access to more features."
 msgstr ""
 "Este asistente sólo da acceso a un pequeño subconjunto de capacidades de "
-"volcado y transcodificado de VLC. Los diálogos Abrir y 'Salvar/Volcar' darán "
+"emisión y transcodificado de VLC. Los diálogos Abrir y 'Salvar/Emitir' darán "
 "acceso a más características."
 
 #: modules/gui/macosx/wizard.m:335 modules/gui/macosx/wizard.m:491
 #: modules/gui/macosx/wizard.m:1675
 msgid "Stream to network"
-msgstr "Volcado a red"
+msgstr "Emitir a red"
 
 #: modules/gui/macosx/wizard.m:337 modules/gui/macosx/wizard.m:1683
 msgid "Transcode/Save to file"
@@ -15270,12 +15174,12 @@ msgstr "Elige entrada"
 
 #: modules/gui/macosx/wizard.m:341
 msgid "Choose here your input stream."
-msgstr "Elija aquí su volcado de entrada."
+msgstr "Elige aquí tu emisión de entrada."
 
 #: modules/gui/macosx/wizard.m:343 modules/gui/macosx/wizard.m:529
 #: modules/gui/macosx/wizard.m:1717
 msgid "Select a stream"
-msgstr "Elige un volcado"
+msgstr "Elige una emisión"
 
 #: modules/gui/macosx/wizard.m:345
 msgid "Existing playlist item"
@@ -15295,9 +15199,9 @@ msgid ""
 "control the incoming stream (for example, a file or a disc, but not an UDP "
 "network stream.) The starting and ending times can be given in seconds."
 msgstr ""
-"Esto puede usarse para leer sólo una parte del volcado. Debes ser capaz de "
-"controlar el volcado entrante (p. ej., un archivo o un disco, pero no un "
-"volcado de red UDP.) Los tiempos inicial y final pueden darse en segundos."
+"Esto puede usarse para leer sólo una parte de la emisión. Debe poderse "
+"controlar la emisión entrante (p. ej., un archivo o un disco, pero no una "
+"emisión UDP de red.) Los tiempos inicial y final pueden darse en segundos."
 
 #: modules/gui/macosx/wizard.m:357
 msgid "From"
@@ -15309,7 +15213,7 @@ msgstr "A"
 
 #: modules/gui/macosx/wizard.m:362
 msgid "This page allows to select how the input stream will be sent."
-msgstr "Esta página permite elegir cómo se enviará tu volcado de entrada."
+msgstr "Esta página permite elegir cómo se enviará tu emisión de entrada."
 
 #: modules/gui/macosx/wizard.m:364 modules/gui/macosx/wizard.m:425
 #: modules/stream_out/rtp.c:70
@@ -15318,11 +15222,11 @@ msgstr "Destino"
 
 #: modules/gui/macosx/wizard.m:365 modules/gui/macosx/wizard.m:437
 msgid "Streaming method"
-msgstr "Método de volcado"
+msgstr "Método de emisión"
 
 #: modules/gui/macosx/wizard.m:366
 msgid "Address of the computer to stream to."
-msgstr "Dirección del ordenador al que volcar."
+msgstr "Dirección de la computadora a la que emitir."
 
 #: modules/gui/macosx/wizard.m:368
 msgid "UDP Unicast"
@@ -15358,16 +15262,16 @@ msgid ""
 "Enabling this allows to transcode the audio track if one is present in the "
 "stream."
 msgstr ""
-"Habilitándolo permite transcodificar la pista de audio si hay una en el "
-"volcado."
+"Habilitándolo permite transcodificar la pista de audio si hay una en la "
+"emisión."
 
 #: modules/gui/macosx/wizard.m:386 modules/gui/macosx/wizard.m:1836
 msgid ""
 "Enabling this allows to transcode the video track if one is present in the "
 "stream."
 msgstr ""
-"Habilitándolo permite transcodificar la pista de vídeo si hay una en el "
-"volcado."
+"Habilitándolo permite transcodificar la pista de vídeo si hay una en la "
+"emisión."
 
 #: modules/gui/macosx/wizard.m:390
 msgid "Encapsulation format"
@@ -15378,12 +15282,12 @@ msgid ""
 "This page allows to select how the stream will be encapsulated. Depending on "
 "previously chosen settings all formats won't be available."
 msgstr ""
-"Esta página permite elegir cómo se enapsulará el volcado. Dependiendo de las "
-"elecciones anteriores hechas, no se dispondrá de todos los formatos."
+"Esta página permite elegir cómo se enapsulará la emisión. Dependiendo de las "
+"elecciones hechas antes, no se dispondrá de todos los formatos."
 
 #: modules/gui/macosx/wizard.m:396
 msgid "Additional streaming options"
-msgstr "Opciones de volcado adicionales"
+msgstr "Opciones de emisión adicionales"
 
 #: modules/gui/macosx/wizard.m:397
 msgid "In this page, a few additional streaming parameters can be set."
@@ -15434,7 +15338,7 @@ msgid ""
 "transcoding."
 msgstr ""
 "Esta página lista todas las configuraciones. Pulsa \"Finalizar\" para "
-"iniciar volcado o transcodificación."
+"iniciar emisión o transcodificación."
 
 #: modules/gui/macosx/wizard.m:424
 msgid "Summary"
@@ -15446,7 +15350,7 @@ msgstr "Formato de encaps."
 
 #: modules/gui/macosx/wizard.m:429
 msgid "Input stream"
-msgstr "Volcado de entrada"
+msgstr "Emisión de entrada"
 
 #: modules/gui/macosx/wizard.m:435
 msgid "Save file to"
@@ -15466,7 +15370,7 @@ msgid ""
 "\n"
 "Choose one before going to the next page."
 msgstr ""
-"No se ha elegido nuevo volcado u objeto válido de lista de reproducción.\n"
+"No se eligió nueva emisión u objeto válido de lista de reproducción.\n"
 "\n"
 "Elige uno antes de ir a la siguiente página."
 
@@ -15482,11 +15386,11 @@ msgid ""
 "If you don't know what this means, have a look at the VLC Streaming HOWTO "
 "and the help texts in this window."
 msgstr ""
-"Tiene que elegirse un destino válido. Pon o una IP Uniemisión o una IP "
+"Tiene que elegirse un destino válido. Pon una IP Uniemisión o una IP "
 "Multiemisión.\n"
 "\n"
-"Si no sabes qué significa, echa un vistazo al VLC Streaming HOWTO (Cómo "
-"Volcar) y los textos de ayuda en esta ventana."
+"Si no sabes qué significa, echa un vistazo al VLC Streaming HOWTO y los "
+"textos de ayuda en esta ventana."
 
 #: modules/gui/macosx/wizard.m:1056
 msgid ""
@@ -15526,7 +15430,7 @@ msgstr "Sin archivo elegido"
 
 #: modules/gui/macosx/wizard.m:1148
 msgid "A file where to save the stream has to be selected."
-msgstr "Tiene que elegirse un archivo donde salvar el volcado."
+msgstr "Tiene que elegirse un archivo donde salvar la emisión."
 
 #: modules/gui/macosx/wizard.m:1150
 msgid ""
@@ -15559,7 +15463,7 @@ msgstr "sí: %@ @ %@ kb/s"
 
 #: modules/gui/macosx/wizard.m:1677
 msgid "This allows to stream on a network."
-msgstr "Esto permite volcar en una red."
+msgstr "Esto permite emitir sobre una red."
 
 #: modules/gui/macosx/wizard.m:1685
 msgid ""
@@ -15568,11 +15472,11 @@ msgid ""
 "Please note that VLC is not very suited for file to file transcoding. Its "
 "transcoding features are however useful to save network streams, for example."
 msgstr ""
-"Esto permite salvar un volcado a un archivo. Puede ser recodificado al "
-"vuelo. Cualquier cosa que VLC pueda leer puede salvarse.\n"
+"Esto permite salvar una emisión a un archivo. Puede recodificarse al vuelo. "
+"Cualquier cosa que VLC pueda leer puede salvarse.\n"
 "Por favor nótese que VLC no es muy conveniente para transcodificar de "
 "archivo a archivo. Aun así sus capacidades transcodificadoras son útiles "
-"para guardar volcados de red, por ejemplo."
+"para guardar emisiones de red, por ejemplo."
 
 #: modules/gui/macosx/wizard.m:1814
 msgid "Select your audio codec. Click one to get more information."
@@ -15589,9 +15493,9 @@ msgid ""
 "know what it means, or if you want to stream on your local network only, "
 "leave this setting to 1."
 msgstr ""
-"Define el TTL (Time-To-Live, tiempo de permanencia) del volcado. Este "
-"parámetro es el máximo nº de routers que tu volcado puede atravesar. Si no "
-"sabes qué significa, o si deseas volcar sólo en tu red local, deja esto a 1."
+"Esto permite definir el TTL (Time-To-Live) de la emisión. Este parámetro es "
+"el máximo nº de routers que tu emisión puede atravesar. Si no sabes qué "
+"significa, o si deseas emitir sólo en tu red local, deja esto a 1."
 
 #: modules/gui/macosx/wizard.m:1877
 msgid ""
@@ -15602,11 +15506,11 @@ msgid ""
 "If you want to give a name to your stream, enter it here, else, a default "
 "name will be used."
 msgstr ""
-"Al volcar usando UDP, los volcados pueden anunciarse usando el protocolo "
-"anunciador SAP/SDP. De este modo, los clientes no tendrán que escribir la "
-"dirección multiemisión, aparecerá en sus listas de reproducción si habilitan "
-"el interfaz extra SAP.\n"
-"Si deseas dar un nombre a tu volcado, ponlo aquí, si no, se usará un nombre "
+"Al emitir usando UDP, las emisiones pueden anunciarse usando el protocolo "
+"anunciador SAP/SDP. Así, los clientes no tendrán que escribir la dirección "
+"multiemisión, aparecerá en sus listas de reproducción si habilitan el "
+"interfaz extra SAP.\n"
+"Si deseas dar un nombre a tu emisión, ponlo aquí, si no, se usará un nombre "
 "por defecto."
 
 #: modules/gui/macosx/wizard.m:1890
@@ -15617,11 +15521,11 @@ msgid ""
 "Note that this requires much more CPU power than simple transcoding or "
 "streaming."
 msgstr ""
-"Cuando se habilita esta opción, el volcado se transcodificará y "
-"reproducirá.\n"
+"Cuando se habilita esta opción, la emisión se reproducirá y transcodificará/"
+"emitirá.\n"
 "\n"
 "Nota que esto requiere mucha más potencia de CPU que la transcodificación o "
-"el volcado simple."
+"la emisión simple."
 
 #: modules/gui/minimal_macosx/macosx.c:58
 msgid "Minimal Mac OS X interface"
@@ -15629,7 +15533,7 @@ msgstr "Interfaz Mac OS X mínima"
 
 #: modules/gui/minimal_macosx/macosx.c:66
 msgid "Minimal Mac OS X OpenGL video output (opens a borderless window)"
-msgstr ""
+msgstr "Salida de vídeo mínima Mac OS X OpenGL (abre una ventana sin bordes)"
 
 #: modules/gui/ncurses.c:119
 msgid "Filebrowser starting point"
@@ -15712,7 +15616,7 @@ msgstr "Capítulo : %d/%d"
 #: modules/gui/ncurses.c:1628
 #, c-format
 msgid " Source: <no current item> %s"
-msgstr ""
+msgstr " Origen: <sin objeto actual> %s"
 
 #: modules/gui/ncurses.c:1630
 msgid " [ h for help ]"
@@ -15728,31 +15632,31 @@ msgstr "[Pantalla]"
 
 #: modules/gui/ncurses.c:1659
 msgid "     h,H         Show/Hide help box"
-msgstr ""
+msgstr "     h,H         Mostrar/Ocultar caja de ayuda"
 
 #: modules/gui/ncurses.c:1660
 msgid "     i           Show/Hide info box"
-msgstr ""
+msgstr "     i           Mostrar/Ocultar caja de info"
 
 #: modules/gui/ncurses.c:1661
 msgid "     m           Show/Hide metadata box"
-msgstr ""
+msgstr "     m           Mostrar/Ocultar caja de metadatos"
 
 #: modules/gui/ncurses.c:1662
 msgid "     L           Show/Hide messages box"
-msgstr ""
+msgstr "     L           Mostrar/Ocultar caja de mensajes"
 
 #: modules/gui/ncurses.c:1663
 msgid "     P           Show/Hide playlist box"
-msgstr ""
+msgstr "     P           Mostrar/Ocultar caja de lista de repr."
 
 #: modules/gui/ncurses.c:1664
 msgid "     B           Show/Hide filebrowser"
-msgstr ""
+msgstr "     B           Mostrar/Ocultar explorador de archivos"
 
 #: modules/gui/ncurses.c:1665
 msgid "     x           Show/Hide objects box"
-msgstr ""
+msgstr "     x           Mostrar/Ocultar caja de objetos"
 
 #: modules/gui/ncurses.c:1666
 msgid "     S           Show/Hide statistics box"
@@ -15760,11 +15664,11 @@ msgstr "     S           Mostrar/Ocultar caja de estadísticas"
 
 #: modules/gui/ncurses.c:1667
 msgid "     c           Switch color on/off"
-msgstr ""
+msgstr "     c           Cambiar color sí/no"
 
 #: modules/gui/ncurses.c:1668
 msgid "     Esc         Close Add/Search entry"
-msgstr ""
+msgstr "     Esc         Cerrar Añadir/Buscar entrada"
 
 #: modules/gui/ncurses.c:1673
 msgid "[Global]"
@@ -15772,15 +15676,15 @@ msgstr "[Global]"
 
 #: modules/gui/ncurses.c:1676
 msgid "     q, Q, Esc   Quit"
-msgstr ""
+msgstr "     q, Q, Esc   Salir"
 
 #: modules/gui/ncurses.c:1677
 msgid "     s           Stop"
-msgstr ""
+msgstr "     s           Detener"
 
 #: modules/gui/ncurses.c:1678
 msgid "     <space>     Pause/Play"
-msgstr ""
+msgstr "     <espacio>   Pausar/Reproducir"
 
 #: modules/gui/ncurses.c:1679
 msgid "     f           Toggle Fullscreen"
@@ -15792,21 +15696,21 @@ msgstr "     n, p        Siguiente/Previo objeto de lista de repr."
 
 #: modules/gui/ncurses.c:1681
 msgid "     [, ]        Next/Previous title"
-msgstr ""
+msgstr "     [, ]        Título Siguiente/Previo"
 
 #: modules/gui/ncurses.c:1682
 msgid "     <, >        Next/Previous chapter"
-msgstr ""
+msgstr "     <, >        Capítulo Siguiente/Previo"
 
 #: modules/gui/ncurses.c:1683
 #, c-format
 msgid "     <right>     Seek +1%%"
-msgstr ""
+msgstr "     <derecha>   Buscar +1%%"
 
 #: modules/gui/ncurses.c:1684
 #, c-format
 msgid "     <left>      Seek -1%%"
-msgstr ""
+msgstr "     <izquierda> Buscar -1%%"
 
 #: modules/gui/ncurses.c:1685
 msgid "     a           Volume Up"
@@ -15826,11 +15730,11 @@ msgstr "     r           Cambiar Reproducción aleatoria"
 
 #: modules/gui/ncurses.c:1695
 msgid "     l           Toggle Loop Playlist"
-msgstr ""
+msgstr "     l           Conmutar Bucle Lista de Repr."
 
 #: modules/gui/ncurses.c:1696
 msgid "     R           Toggle Repeat item"
-msgstr ""
+msgstr "     R           Cambiar Repetir objeto"
 
 #: modules/gui/ncurses.c:1697
 msgid "     o           Order Playlist by title"
@@ -15838,27 +15742,27 @@ msgstr "     o           Ordenar Lista de Reproducción por título"
 
 #: modules/gui/ncurses.c:1698
 msgid "     O           Reverse order Playlist by title"
-msgstr ""
+msgstr "     O           Invertir orden de Lista de Repr. por título"
 
 #: modules/gui/ncurses.c:1699
 msgid "     g           Go to the current playing item"
-msgstr ""
+msgstr "     g           Ir al objeto actual reproducido"
 
 #: modules/gui/ncurses.c:1700
 msgid "     /           Look for an item"
-msgstr ""
+msgstr "     /           Buscar un objeto"
 
 #: modules/gui/ncurses.c:1701
 msgid "     A           Add an entry"
-msgstr ""
+msgstr "     A           Añadir una entrada"
 
 #: modules/gui/ncurses.c:1702
 msgid "     D, <del>    Delete an entry"
-msgstr ""
+msgstr "     D, <supr>   Borrar una entrada"
 
 #: modules/gui/ncurses.c:1703
 msgid "     <backspace> Delete an entry"
-msgstr ""
+msgstr "     <borrar>    Borrar una entrada"
 
 #: modules/gui/ncurses.c:1704
 msgid "     e           Eject (if stopped)"
@@ -15870,11 +15774,11 @@ msgstr "[Explorador de archivos]"
 
 #: modules/gui/ncurses.c:1712
 msgid "     <enter>     Add the selected file to the playlist"
-msgstr ""
+msgstr "     <intro>     Añade archivo elegido a lista de repr."
 
 #: modules/gui/ncurses.c:1713
 msgid "     <space>     Add the selected directory to the playlist"
-msgstr ""
+msgstr "     <espacio>   Añade directorio elegido a lista de repr."
 
 #: modules/gui/ncurses.c:1714
 msgid "     .           Show/Hide hidden files"
@@ -15882,7 +15786,7 @@ msgstr "     .           Mostrar/Ocultar archivos ocultos"
 
 #: modules/gui/ncurses.c:1719
 msgid "[Boxes]"
-msgstr ""
+msgstr "[Cajas]"
 
 #: modules/gui/ncurses.c:1722
 msgid "     <up>,<down>     Navigate through the box line by line"
@@ -16564,10 +16468,9 @@ msgstr "Pausar reproducción"
 msgid "Revert to normal play speed"
 msgstr "Poner a velocidad normal de reproducción"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1544
-#, fuzzy
+#: modules/gui/qt4/components/interface_widgets.cpp:1554
 msgid "Download cover art"
-msgstr "Descargar ahora"
+msgstr "Descargar arte de carátula"
 
 #: modules/gui/qt4/components/open_panels.cpp:48
 msgid "Select the device or the VIDEO_TS directory"
@@ -16871,11 +16774,8 @@ msgid "Copyright (C) "
 msgstr "Copyright (C) "
 
 #: modules/gui/qt4/dialogs/help.cpp:128
-#, fuzzy
 msgid " by the VideoLAN Team.\n"
-msgstr ""
-"(c) 1996-2006 - el Equipo de VideoLAN\n"
-"\n"
+msgstr " por el Equipo de VideoLAN.\n"
 
 #: modules/gui/qt4/dialogs/help.cpp:149
 msgid ""
@@ -17037,7 +16937,7 @@ msgstr "Re&producir"
 #: modules/gui/qt4/dialogs/open.cpp:124 modules/gui/qt4/dialogs/open.cpp:199
 #: modules/gui/qt4/dialogs/sout.cpp:199
 msgid "&Stream"
-msgstr "&Volcado"
+msgstr "&Emisión"
 
 #: modules/gui/qt4/dialogs/open.cpp:126
 msgid "&Convert"
@@ -17050,7 +16950,7 @@ msgstr "&Convertir / Salvar"
 #: modules/gui/qt4/dialogs/preferences.cpp:66
 #, fuzzy
 msgid "Show settings"
-msgstr "Salvar ajustes"
+msgstr "Mostrar ajustes"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:70
 msgid "Simple"
@@ -17069,9 +16969,8 @@ msgid "&Save"
 msgstr "&Salvar"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:88
-#, fuzzy
 msgid "&Reset Preferences"
-msgstr "Restaurar Preferencias"
+msgstr "&Restaurar Preferencias"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:354
 msgid ""
@@ -17082,19 +16981,16 @@ msgstr ""
 "¿Seguro que quieres continuar?"
 
 #: modules/gui/qt4/dialogs_provider.cpp:422
-#, fuzzy
 msgid "Open Directory"
-msgstr "Abrir Dir&ectorio..."
+msgstr "Abrir Directorio"
 
 #: modules/gui/qt4/dialogs_provider.cpp:458
-#, fuzzy
 msgid "Open playlist file"
-msgstr "Abrir lista de reproducción"
+msgstr "Abrir archivo de lista de reproducción"
 
 #: modules/gui/qt4/dialogs_provider.cpp:469
-#, fuzzy
 msgid "Choose a filename to save playlist"
-msgstr "Debes elegir un archivo al que salvar"
+msgstr "Elige un nombre de archivo al que salvar lista"
 
 #: modules/gui/qt4/dialogs_provider.cpp:471
 #, fuzzy
@@ -17106,24 +17002,20 @@ msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr "Lista M3U (*.m3u);; Cualquiera (*.*) "
 
 #: modules/gui/qt4/dialogs_provider.hpp:45
-#, fuzzy
 msgid "Media Files"
-msgstr "Medio: %s"
+msgstr "Archivos de Medios"
 
 #: modules/gui/qt4/dialogs_provider.hpp:65
-#, fuzzy
 msgid "Subtitles Files"
-msgstr "Archivo de Subtítulos"
+msgstr "Archivos de Subtítulos"
 
 #: modules/gui/qt4/dialogs_provider.hpp:70
-#, fuzzy
 msgid "All Files"
-msgstr "Archivos"
+msgstr "Todos los Archivos"
 
 #: modules/gui/qt4/dialogs/sout.cpp:103 modules/gui/qt4/ui/sout.ui:14
-#, fuzzy
 msgid "Stream Output"
-msgstr "Volcado de salida"
+msgstr "Salida de Emisión"
 
 #: modules/gui/qt4/dialogs/sout.cpp:162
 msgid ""
@@ -17142,9 +17034,8 @@ msgstr ""
 "Contenedores (*.ps *.ts *.mpg *.ogg *.asf *.mp4 *.mov *.wav *.raw *.flv)"
 
 #: modules/gui/qt4/dialogs/sout.cpp:345
-#, fuzzy
 msgid "Audio Port:"
-msgstr "Puerto de audio"
+msgstr "Puerto de Audio:"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:83
 msgid "Hours / Minutes / Seconds:"
@@ -17155,29 +17046,24 @@ msgid "Day / Month / Year:"
 msgstr "Día / Mes / Año:"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:87
-#, fuzzy
 msgid "Repeat:"
-msgstr "Repetir todo"
+msgstr "Repetir:"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:89
-#, fuzzy
 msgid "Repeat delay:"
-msgstr "Repetir todo"
+msgstr "Repetir retraso:"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:114
-#, fuzzy
 msgid " days"
-msgstr "retraso"
+msgstr " días"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:133
-#, fuzzy
 msgid "Import"
-msgstr "&Ordenar"
+msgstr "Importar"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:136
-#, fuzzy
 msgid "Export"
-msgstr "Extraer"
+msgstr "Exportar"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:266
 #, fuzzy
@@ -17236,9 +17122,8 @@ msgid "Paused"
 msgstr "Pausado"
 
 #: modules/gui/qt4/menus.cpp:266
-#, fuzzy
 msgid "&Media"
-msgstr "Medio: %s"
+msgstr "&Medio"
 
 #: modules/gui/qt4/menus.cpp:268 modules/gui/qt4/menus.cpp:813
 msgid "&Audio"
@@ -17249,37 +17134,32 @@ msgid "&Video"
 msgstr "&Vídeo"
 
 #: modules/gui/qt4/menus.cpp:270
-#, fuzzy
 msgid "P&layback"
-msgstr "Reproducción"
+msgstr "&Reproducción"
 
 #: modules/gui/qt4/menus.cpp:272
-#, fuzzy
 msgid "&Playlist"
-msgstr "Lista de reproducción"
+msgstr "&Lista de reproducción"
 
 #: modules/gui/qt4/menus.cpp:274
-#, fuzzy
 msgid "&Tools"
-msgstr "Herramienta"
+msgstr "&Herramientas"
 
 #: modules/gui/qt4/menus.cpp:276
 msgid "&Help"
 msgstr "Ayuda: &H"
 
 #: modules/gui/qt4/menus.cpp:289 modules/gui/qt4/menus.cpp:677
-#, fuzzy
 msgid "&Open File..."
-msgstr "Abrir Archivo..."
+msgstr "&Abrir Archivo..."
 
 #: modules/gui/qt4/menus.cpp:293 modules/gui/qt4/menus.cpp:681
 msgid "Open &Disc..."
 msgstr "Abrir &Disco..."
 
 #: modules/gui/qt4/menus.cpp:295 modules/gui/qt4/menus.cpp:683
-#, fuzzy
 msgid "Open &Network..."
-msgstr "Abrir Red..."
+msgstr "Abrir &Red..."
 
 #: modules/gui/qt4/menus.cpp:297 modules/gui/qt4/menus.cpp:685
 msgid "Open &Capture Device..."
@@ -17290,231 +17170,189 @@ msgid "Conve&rt / Save..."
 msgstr "Conve&rtir / Salvar..."
 
 #: modules/gui/qt4/menus.cpp:304
-#, fuzzy
 msgid "&Streaming..."
-msgstr "Volcado"
+msgstr "&Emitiendo..."
 
 #: modules/gui/qt4/menus.cpp:309 modules/gui/qt4/menus.cpp:927
-#, fuzzy
 msgid "&Quit"
-msgstr "Salir"
+msgstr "&Salir"
 
 #: modules/gui/qt4/menus.cpp:320
-#, fuzzy
 msgid "Show P&laylist"
-msgstr "Salvar lista de reproducción"
+msgstr "Mostrar &Lista de reproducción"
 
 #: modules/gui/qt4/menus.cpp:349
-#, fuzzy
 msgid "Play&list..."
-msgstr "Lista de Reproducción..."
+msgstr "&Lista de Reproducción..."
 
 #: modules/gui/qt4/menus.cpp:350
-#, fuzzy
 msgid "Ctrl+L"
-msgstr "Ctrl"
+msgstr "Ctrl+L"
 
 #: modules/gui/qt4/menus.cpp:369
-#, fuzzy
 msgid "Mi&nimal View..."
-msgstr "Interfaz mínima"
+msgstr "Vista Mí&nima..."
 
 #: modules/gui/qt4/menus.cpp:370
-#, fuzzy
 msgid "Ctrl+H"
-msgstr "Ctrl"
+msgstr "Ctrl+H"
 
 #: modules/gui/qt4/menus.cpp:378
-#, fuzzy
 msgid "&Fullscreen Interface"
-msgstr "Cambiar modo pantalla completa"
+msgstr "Inter&faz Pantalla Completa"
 
 #: modules/gui/qt4/menus.cpp:384
-#, fuzzy
 msgid "&Advanced Controls"
-msgstr "Opciones avanzadas"
+msgstr "Controles &Avanzados"
 
 #: modules/gui/qt4/menus.cpp:391
-#, fuzzy
 msgid "Visualizations selector"
-msgstr "Visualizar vectores de movimiento"
+msgstr "Selector de visualizaciones"
 
 #: modules/gui/qt4/menus.cpp:415
 msgid "&Preferences..."
 msgstr "&Preferencias..."
 
 #: modules/gui/qt4/menus.cpp:448
-#, fuzzy
 msgid "Audio &Track"
-msgstr "Pista de Audio"
+msgstr "&Pista de Audio"
 
 #: modules/gui/qt4/menus.cpp:449
-#, fuzzy
 msgid "Audio &Device"
-msgstr "Aparato de Audio"
+msgstr "&Aparato de Audio"
 
 #: modules/gui/qt4/menus.cpp:450
-#, fuzzy
 msgid "Audio &Channels"
-msgstr "Canales de Audio"
+msgstr "&Canales de Audio"
 
 #: modules/gui/qt4/menus.cpp:452
-#, fuzzy
 msgid "&Visualizations"
-msgstr "Visualizaciones"
+msgstr "&Visualizaciones"
 
 #: modules/gui/qt4/menus.cpp:487
-#, fuzzy
 msgid "Video &Track"
-msgstr "Pista de Vídeo"
+msgstr "Pista de &Vídeo"
 
 #: modules/gui/qt4/menus.cpp:490
-#, fuzzy
 msgid "&Subtitles Track"
-msgstr "Pista de Subtítulos"
+msgstr "Pista de &Subtítulos"
 
 #: modules/gui/qt4/menus.cpp:493
-#, fuzzy
 msgid "Load File..."
-msgstr "Salvar archivo..."
+msgstr "Cargar Archivo..."
 
 #: modules/gui/qt4/menus.cpp:497
-#, fuzzy
 msgid "&Fullscreen"
-msgstr "Pantalla completa"
+msgstr "&Pantalla Completa"
 
 #: modules/gui/qt4/menus.cpp:498
-#, fuzzy
 msgid "&Zoom"
-msgstr "Zoom"
+msgstr "&Zoom"
 
 #: modules/gui/qt4/menus.cpp:499
-#, fuzzy
 msgid "&Deinterlace"
-msgstr "Desentrelazar"
+msgstr "&Desentrelazar"
 
 #: modules/gui/qt4/menus.cpp:500
 #, fuzzy
 msgid "&Aspect Ratio"
-msgstr "Proporción de Aspecto"
+msgstr "Tasa/Proporción de &Aspecto"
 
 #: modules/gui/qt4/menus.cpp:501
-#, fuzzy
 msgid "&Crop"
-msgstr "Recortar"
+msgstr "&Recortar"
 
 #: modules/gui/qt4/menus.cpp:502
-#, fuzzy
 msgid "Always &On Top"
-msgstr "Siempre sobre todo"
+msgstr "&Siempre Sobre Todo"
 
 #: modules/gui/qt4/menus.cpp:504
-#, fuzzy
 msgid "DirectX Wallpaper"
-msgstr "Fondo de escritorio"
+msgstr "Fondo de Escritorio DirectX"
 
 #: modules/gui/qt4/menus.cpp:506
-#, fuzzy
 msgid "Sna&pshot"
-msgstr "Captura de pantalla"
+msgstr "&Captura de Pantalla"
 
 #: modules/gui/qt4/menus.cpp:544
-#, fuzzy
 msgid "&Bookmarks"
-msgstr "Favoritos"
+msgstr "&Favoritos"
 
 #: modules/gui/qt4/menus.cpp:545
-#, fuzzy
 msgid "T&itle"
-msgstr "Título"
+msgstr "&Título"
 
 #: modules/gui/qt4/menus.cpp:546
-#, fuzzy
 msgid "&Chapter"
-msgstr "Capítulo"
+msgstr "&Capítulo"
 
 #: modules/gui/qt4/menus.cpp:547
-#, fuzzy
 msgid "&Program"
-msgstr "Programa"
+msgstr "&Programa"
 
 #: modules/gui/qt4/menus.cpp:548
 msgid "&Navigation"
 msgstr "&Navegación"
 
 #: modules/gui/qt4/menus.cpp:592
-#, fuzzy
 msgid "Configure podcasts..."
-msgstr "Configurar"
+msgstr "Configurar podcasts..."
 
 #: modules/gui/qt4/menus.cpp:610
-#, fuzzy
 msgid "&Help..."
-msgstr "Ayuda"
+msgstr "&Ayuda..."
 
 #: modules/gui/qt4/menus.cpp:613
-#, fuzzy
 msgid "Check for &Updates..."
-msgstr "Buscar Actualizaciones..."
+msgstr "&Buscar Actualizaciones..."
 
 #: modules/gui/qt4/menus.cpp:672
-#, fuzzy
 msgid "Tools"
-msgstr "Herramienta"
+msgstr "Herramientas"
 
 #: modules/gui/qt4/menus.cpp:799
-#, fuzzy
 msgid "Leave Fullscreen"
-msgstr "Llenar pantalla completa"
+msgstr "Abandonar Pantalla Completa"
 
 #: modules/gui/qt4/menus.cpp:825
-#, fuzzy
 msgid "&Playback"
-msgstr "Reproducción"
+msgstr "&Reproducción"
 
 #: modules/gui/qt4/menus.cpp:839
-#, fuzzy
 msgid "Show Playlist"
-msgstr "Salvar lista de reproducción"
+msgstr "Mostrar lista de reproducción"
 
 #: modules/gui/qt4/menus.cpp:846
-#, fuzzy
 msgid "Minimal View..."
-msgstr "Interfaz mínima"
+msgstr "Aspecto Mínimo..."
 
 #: modules/gui/qt4/menus.cpp:851
-#, fuzzy
 msgid "Toggle Fullscreen Interface"
-msgstr "Cambiar modo pantalla completa"
+msgstr "Conmutar Interfaz en Pantalla Completa"
 
 #: modules/gui/qt4/menus.cpp:911
-#, fuzzy
 msgid "Hide VLC media player in taskbar"
-msgstr "Reproductor de medios VLC"
+msgstr "Ocultar reproductor de medios VLC en barra de tareas"
 
 #: modules/gui/qt4/menus.cpp:917
-#, fuzzy
 msgid "Show VLC media player"
-msgstr "Reproductor de medios VLC"
+msgstr "Mostrar reproductor de medios VLC"
 
 #: modules/gui/qt4/menus.cpp:925
-#, fuzzy
 msgid "&Open Media"
-msgstr "Abrir Disco de Medios"
+msgstr "&Abrir Medio"
 
 #: modules/gui/qt4/menus.hpp:36
-#, fuzzy
 msgid "Open &Folder..."
-msgstr "Abrir Archivo..."
+msgstr "Abrir &Directorio..."
 
 #: modules/gui/qt4/menus.hpp:38
 msgid "Open D&irectory..."
 msgstr "Abrir D&irectorio..."
 
 #: modules/gui/qt4/qt4.cpp:71
-#, fuzzy
 msgid "Show advanced preferences over simple ones"
-msgstr "Mostrar opciones avanzadas"
+msgstr "Mostrar preferencias avanzadas sobre las simples"
 
 #: modules/gui/qt4/qt4.cpp:72
 msgid ""
@@ -17524,7 +17362,7 @@ msgstr ""
 "Mostrar preferencias avanzadas y no preferencias simples al abrir el diálogo "
 "preferencias."
 
-#: modules/gui/qt4/qt4.cpp:76 modules/gui/skins2/src/skin_main.cpp:437
+#: modules/gui/qt4/qt4.cpp:76 modules/gui/skins2/src/skin_main.cpp:441
 msgid "Systray icon"
 msgstr "Icono de bandeja de sistema"
 
@@ -17553,9 +17391,8 @@ msgstr ""
 "controlador."
 
 #: modules/gui/qt4/qt4.cpp:89
-#, fuzzy
 msgid "Path to use in openfile dialog"
-msgstr "ruta a archivo ui.rc"
+msgstr "Ruta a usar en diálogo abrirarchivo"
 
 #: modules/gui/qt4/qt4.cpp:91
 msgid "Show notification popup on track change"
@@ -17572,14 +17409,12 @@ msgid "Advanced options"
 msgstr "Opciones avanzadas"
 
 #: modules/gui/qt4/qt4.cpp:97
-#, fuzzy
 msgid "Show all the advanced options in the dialogs."
-msgstr "Mostrar opciones avanzadas"
+msgstr "Mostrar todas las opciones avanzadas en los diálogos."
 
 #: modules/gui/qt4/qt4.cpp:100
-#, fuzzy
 msgid "Windows opacity between 0.1 and 1."
-msgstr "Factor QP entre I y P"
+msgstr "Opacidad de ventanas entre 0.1 y 1."
 
 #: modules/gui/qt4/qt4.cpp:101
 msgid ""
@@ -17605,9 +17440,8 @@ msgstr ""
 "ejecuta una vez cada dos semanas."
 
 #: modules/gui/qt4/qt4.cpp:112
-#, fuzzy
 msgid "Number of days between two update checks"
-msgstr "Nº de fotogramas P entre dos fotogramas I."
+msgstr "Nº de días entre dos búsquedas de actualizaciones"
 
 #: modules/gui/qt4/qt4.cpp:114
 msgid "Allow the volume to be set to 400%"
@@ -17634,9 +17468,8 @@ msgid "Ask for network policy at start"
 msgstr "Preguntar por la política de red al iniciar"
 
 #: modules/gui/qt4/qt4.cpp:126
-#, fuzzy
 msgid "Define the colors of the volume slider "
-msgstr "Invierte los colores de la imagen"
+msgstr "Define los colores de la barra de volumen "
 
 #: modules/gui/qt4/qt4.cpp:127
 msgid ""
@@ -17659,9 +17492,8 @@ msgid ""
 msgstr ""
 
 #: modules/gui/qt4/qt4.cpp:139
-#, fuzzy
 msgid "Classic look"
-msgstr "Rock clásico"
+msgstr "Aspecto clásico"
 
 #: modules/gui/qt4/qt4.cpp:140
 msgid "Complete look with information area"
@@ -17672,9 +17504,8 @@ msgid "Minimal look with no menus"
 msgstr ""
 
 #: modules/gui/qt4/qt4.cpp:143
-#, fuzzy
 msgid "Show a controller in fullscreen mode"
-msgstr "elija la pantalla a usar para modo pantalla completa."
+msgstr "Muestra un controlador en modo pantalla completa"
 
 #: modules/gui/qt4/qt4.cpp:152
 msgid "Qt interface"
@@ -17686,19 +17517,16 @@ msgid "Preset"
 msgstr "Preanalizar"
 
 #: modules/gui/qt4/ui/open_capture.ui:17
-#, fuzzy
 msgid "Capture mode"
-msgstr "Códecs de capítulo"
+msgstr "Modo de captura"
 
 #: modules/gui/qt4/ui/open_capture.ui:30
-#, fuzzy
 msgid "Select the capture device type"
-msgstr "Elige el directorio al que salvar"
+msgstr "Elige el tipo de dispositivo de captura"
 
 #: modules/gui/qt4/ui/open_capture.ui:44
-#, fuzzy
 msgid "Card Selection"
-msgstr "&Selección"
+msgstr "Selección de Tarjeta"
 
 #: modules/gui/qt4/ui/open_capture.ui:51 modules/gui/qt4/ui/open_net.ui:101
 msgid "Options"
@@ -17713,129 +17541,108 @@ msgid "Advanced options..."
 msgstr "Opciones avanzadas..."
 
 #: modules/gui/qt4/ui/open_disk.ui:20
-#, fuzzy
 msgid "Disc Selection"
-msgstr "Selección no válida"
+msgstr "Selección de Disco"
 
 #: modules/gui/qt4/ui/open_disk.ui:91
 msgid "Disable DVD Menus (for compatibility)"
 msgstr ""
 
 #: modules/gui/qt4/ui/open_disk.ui:108
-#, fuzzy
 msgid "Disc device"
-msgstr "Aparato"
+msgstr "Aparato de disco"
 
 #: modules/gui/qt4/ui/open_disk.ui:165
-#, fuzzy
 msgid "Starting Position"
-msgstr "Posición de inicio"
+msgstr "Posición Inicial"
 
 #: modules/gui/qt4/ui/open_disk.ui:232
-#, fuzzy
 msgid "Audio and Subtitles"
-msgstr "Subtítulos Formateados"
+msgstr "Audio y Subtítulos"
 
 #: modules/gui/qt4/ui/open_file.ui:26
-#, fuzzy
 msgid "Choose one or more media file to open"
-msgstr "Elige archivo al que salvar"
+msgstr "Elige abrir uno o más archivos de medios"
 
 #: modules/gui/qt4/ui/open_file.ui:49
-#, fuzzy
 msgid "Add a subtitles file"
-msgstr "Usa un archivo de subtítulos"
+msgstr "Añade un archivo de subtítulos"
 
 #: modules/gui/qt4/ui/open_file.ui:52
-#, fuzzy
 msgid "Use a sub&titles file"
-msgstr "Usa un archivo de subtítulos"
+msgstr "Usa un archivo de sub&títulos"
 
 #: modules/gui/qt4/ui/open_file.ui:126
-#, fuzzy
 msgid "Alignment:"
-msgstr "Alineación de datos"
+msgstr "Alineación:"
 
 #: modules/gui/qt4/ui/open_file.ui:178
-#, fuzzy
 msgid "Select the subtitles file"
-msgstr "Elige un archivo de subtítulos"
+msgstr "Elige el archivo de subtítulos"
 
 #: modules/gui/qt4/ui/open_net.ui:20
-#, fuzzy
 msgid "Network Protocol"
-msgstr "Protocolo"
+msgstr "Protocolo de Red"
 
 #: modules/gui/qt4/ui/open_net.ui:26
-#, fuzzy
 msgid "Select the protocol for the URL."
-msgstr "Elige el directorio al que salvar"
+msgstr "Elige el protocolo para la URL."
 
 #: modules/gui/qt4/ui/open_net.ui:33
 msgid "Protocol"
 msgstr "Protocolo"
 
 #: modules/gui/qt4/ui/open_net.ui:43
-#, fuzzy
 msgid "Select the port used"
-msgstr "Elegido:"
+msgstr "Elige el puerto usado"
 
 #: modules/gui/qt4/ui/open_net.ui:85
 msgid "Enter the URL of the network stream here, with or without the protocol."
-msgstr ""
+msgstr "Pon la URL de la emisión de red aquí, con o sin el protocolo."
 
 #: modules/gui/qt4/ui/open.ui:38
-#, fuzzy
 msgid "Show extended options"
-msgstr "Mostrar opciones avanzadas"
+msgstr "Muestra opciones extendidas"
 
 #: modules/gui/qt4/ui/open.ui:41
-#, fuzzy
 msgid "Show &more options"
-msgstr "Mostrar opciones avanzadas"
+msgstr "Muestra &más opciones"
 
 #: modules/gui/qt4/ui/open.ui:61
-#, fuzzy
 msgid "Change the caching for the media"
-msgstr "Cambiar el nombre mostrado del Servicio."
+msgstr "Cambia el caché para el medio"
 
 #: modules/gui/qt4/ui/open.ui:90
-#, fuzzy
 msgid "Start Time"
-msgstr "Tiempo de inicio"
+msgstr "Tiempo de Inicio"
 
 #: modules/gui/qt4/ui/open.ui:100
-#, fuzzy
 msgid "Change the start time for the media"
-msgstr "Cambiar el nombre mostrado del Servicio."
+msgstr "Cambia el tiempo de inicio para el medio"
 
 #: modules/gui/qt4/ui/open.ui:132
 msgid "Play another media synchronously (extra audio file, ...)"
-msgstr ""
+msgstr "Reproducir otro medio sincronizadamente (archivo de audio extra, ...)"
 
 #: modules/gui/qt4/ui/open.ui:139
-#, fuzzy
 msgid "Extra media"
-msgstr "Metadata"
+msgstr "Medio extra"
 
 #: modules/gui/qt4/ui/open.ui:152
-#, fuzzy
 msgid "Select the file"
-msgstr "Elige un archivo"
+msgstr "Elige el archivo"
 
 #: modules/gui/qt4/ui/open.ui:165
-#, fuzzy
 msgid "Customize"
-msgstr "Personalizar:"
+msgstr "Personalizar"
 
 #: modules/gui/qt4/ui/open.ui:175
 msgid "Complete MRL for VLC internal"
 msgstr ""
 
 #: modules/gui/qt4/ui/open.ui:216
-#, fuzzy
 msgid "Select play mode"
-msgstr "Pon el retraso (en segundos)"
+msgstr "Elige modo de reproducción"
 
 #: modules/gui/qt4/ui/podcast_configuration.ui:19
 #: modules/services_discovery/podcast.c:58
@@ -17851,37 +17658,32 @@ msgid "Play locally"
 msgstr "Reproducir localmente"
 
 #: modules/gui/qt4/ui/sout.ui:338
-#, fuzzy
 msgid "Video Port"
-msgstr "Puerto de vídeo"
+msgstr "Puerto de Vídeo"
 
 #: modules/gui/qt4/ui/sout.ui:435
-#, fuzzy
 msgid "Mount Point"
-msgstr "Mongol"
+msgstr "Punto de Montura"
 
 #: modules/gui/qt4/ui/sout.ui:452
-#, fuzzy
 msgid "Login:pass:"
-msgstr "Conexión"
+msgstr "Login:pass:"
 
 #: modules/gui/qt4/ui/sout.ui:484
 msgid "Prefer UDP over RTP"
-msgstr ""
+msgstr "Preferir UDP sobre RTP"
 
 #: modules/gui/qt4/ui/sout.ui:512
 msgid "Using this option is not recommended in most of the cases."
-msgstr ""
+msgstr "No se recomienda usar esta opción en la mayoría de casos."
 
 #: modules/gui/qt4/ui/sout.ui:534
-#, fuzzy
 msgid "Profile"
-msgstr "Archivo Previo"
+msgstr "Perfil"
 
 #: modules/gui/qt4/ui/sout.ui:562
-#, fuzzy
 msgid "Encapsulation"
-msgstr "Método de Encapsulamiento"
+msgstr "Encapsulamiento"
 
 #: modules/gui/qt4/ui/sout.ui:657
 msgid "Video codec"
@@ -17892,28 +17694,24 @@ msgid "Audio codec"
 msgstr "Códec de audio"
 
 #: modules/gui/qt4/ui/sout.ui:877
-#, fuzzy
 msgid "Overlay subtitles on the video"
-msgstr "Superposiciones/Subtítulos"
+msgstr "Superpone subtítulos sobre el vídeo"
 
 #: modules/gui/qt4/ui/sout.ui:916
 msgid "Group name"
 msgstr "Nombre de grupo"
 
 #: modules/gui/qt4/ui/sout.ui:950
-#, fuzzy
 msgid "Stream all elementary streams"
-msgstr "Elige todo volcado elemental"
+msgstr "Elige toda emisión elemental"
 
 #: modules/gui/qt4/ui/sout.ui:976
-#, fuzzy
 msgid "Generated stream output string"
-msgstr "Opciones generales de salida de volcado"
+msgstr "Cadena generada de salida de emisión"
 
 #: modules/gui/qt4/ui/sprefs_audio.ui:36
-#, fuzzy
 msgid "Default volume"
-msgstr "Volumen de audio por defecto"
+msgstr "Volumen por defecto"
 
 #: modules/gui/qt4/ui/sprefs_audio.ui:77
 msgid "256 corresponds to 100%, 1024 to 400%"
@@ -17924,9 +17722,8 @@ msgid "Save volume on exit"
 msgstr "Salvar volumen al salir"
 
 #: modules/gui/qt4/ui/sprefs_audio.ui:142
-#, fuzzy
 msgid "Preferred audio language"
-msgstr "Lenguaje de audio"
+msgstr "Idioma de audio preferido"
 
 #: modules/gui/qt4/ui/sprefs_audio.ui:293
 msgid "last.fm"
@@ -17934,32 +17731,27 @@ msgstr "last.fm"
 
 #: modules/gui/qt4/ui/sprefs_audio.ui:299
 msgid "Enable last.fm submission"
-msgstr ""
+msgstr "Habilitar informe a last.fm"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:20
-#, fuzzy
 msgid "Disc Devices"
-msgstr "Aparatos"
+msgstr "Aparatos de Disco"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:26
-#, fuzzy
 msgid "Default disc device"
-msgstr "Aparatos por defecto"
+msgstr "Aparato de disco por defecto"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:55
-#, fuzzy
 msgid "Server default port"
-msgstr "Puerto del servidor"
+msgstr "Puerto del servidor por defecto"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:103
-#, fuzzy
 msgid "Default caching level"
-msgstr "Ángulo DVD por defecto."
+msgstr "Nivel de caché por defecto"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:125
-#, fuzzy
 msgid "Post-Processing quality"
-msgstr "Calidad de post-proceso"
+msgstr "Calidad de Post-Proceso"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:151
 msgid "Repair AVI files"
@@ -17967,17 +17759,15 @@ msgstr "Reparar archivos AVI"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:164
 msgid "Use system codecs if available (better quality)"
-msgstr ""
+msgstr "Usar códecs de sistema si hay disponibles (mejor calidad)"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:35
-#, fuzzy
 msgid "Interface Type"
-msgstr "Interfaz"
+msgstr "Tipo de Interfaz"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:41
-#, fuzzy
 msgid "Native"
-msgstr "Meditativa"
+msgstr "Nativo"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:51
 #, fuzzy
@@ -17993,7 +17783,7 @@ msgid "Integrate video in interface"
 msgstr "Integrar vídeo en interfaz"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:104
-#: modules/gui/skins2/src/skin_main.cpp:469
+#: modules/gui/skins2/src/skin_main.cpp:473
 msgid "Skins"
 msgstr "Pieles"
 
@@ -18024,7 +17814,7 @@ msgstr "Asociaciones de archivo:"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:234
 msgid "Association Setup"
-msgstr ""
+msgstr "Configuración de Asociación"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:260
 msgid "Activate update notifier"
@@ -18034,6 +17824,8 @@ msgstr "Activar notificador de actualizaciones"
 msgid ""
 "This is VLC's skinnable interface. You can download skins at &lt;a href="
 msgstr ""
+"Ésta es la interfaz configurable de VLC. Puedes descargar pieles en &lt;a "
+"href="
 
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:50
 msgid "Subtitles Language"
@@ -18125,7 +17917,6 @@ msgid "Transform"
 msgstr "Transformar"
 
 #: modules/gui/qt4/ui/video_effects.ui:49
-#, fuzzy
 msgid "Sharpen"
 msgstr "Agudizar"
 
@@ -18332,7 +18123,7 @@ msgstr "Reproducción Constante"
 
 #: modules/gui/qt4/ui/vlm.ui:235
 msgid "Media Manager List"
-msgstr ""
+msgstr "Lista de Administrador de Medios"
 
 #: modules/gui/skins2/src/dialogs.cpp:222
 msgid "Open a skin file"
@@ -18360,23 +18151,22 @@ msgid "Save playlist"
 msgstr "Salvar lista de reproducción"
 
 #: modules/gui/skins2/src/dialogs.cpp:240
-#, fuzzy
 msgid "XSPF playlist|*.xspf|M3U file|*.m3u"
-msgstr "exportar lista de reproducción XSPF"
+msgstr "Lista XSPF|*.xspf|Archivo M3U|*.m3u"
 
-#: modules/gui/skins2/src/skin_main.cpp:432
+#: modules/gui/skins2/src/skin_main.cpp:436
 msgid "Skin to use"
 msgstr "Piel a usar"
 
-#: modules/gui/skins2/src/skin_main.cpp:433
+#: modules/gui/skins2/src/skin_main.cpp:437
 msgid "Path to the skin to use."
 msgstr "Ruta de la piel a usar."
 
-#: modules/gui/skins2/src/skin_main.cpp:434
+#: modules/gui/skins2/src/skin_main.cpp:438
 msgid "Config of last used skin"
 msgstr "Configuración de última piel usada"
 
-#: modules/gui/skins2/src/skin_main.cpp:435
+#: modules/gui/skins2/src/skin_main.cpp:439
 msgid ""
 "Windows configuration of the last skin used. This option is updated "
 "automatically, do not touch it."
@@ -18384,20 +18174,20 @@ msgstr ""
 "Configuración de windows de la última piel usada. Esta opción se actualiza "
 "automáticamente, no la toques."
 
-#: modules/gui/skins2/src/skin_main.cpp:438
+#: modules/gui/skins2/src/skin_main.cpp:442
 msgid "Show a systray icon for VLC"
 msgstr "Mostrar icono de bandeja de sistema para VLC"
 
-#: modules/gui/skins2/src/skin_main.cpp:439
-#: modules/gui/skins2/src/skin_main.cpp:440
+#: modules/gui/skins2/src/skin_main.cpp:443
+#: modules/gui/skins2/src/skin_main.cpp:444
 msgid "Show VLC on the taskbar"
 msgstr "Mostrar VLC en la barra de tareas"
 
-#: modules/gui/skins2/src/skin_main.cpp:441
+#: modules/gui/skins2/src/skin_main.cpp:445
 msgid "Enable transparency effects"
 msgstr "Habilitar efectos de transparencia"
 
-#: modules/gui/skins2/src/skin_main.cpp:442
+#: modules/gui/skins2/src/skin_main.cpp:446
 msgid ""
 "You can disable all transparency effects if you want. This is mainly useful "
 "when moving windows does not behave correctly."
@@ -18405,16 +18195,16 @@ msgstr ""
 "Puedes deshabilitar todos los efectos de transparencia si quieres. Esto es "
 "útil principalmente cuando al mover ventanas no se comporta correctamente."
 
-#: modules/gui/skins2/src/skin_main.cpp:445
-#: modules/gui/skins2/src/skin_main.cpp:446
+#: modules/gui/skins2/src/skin_main.cpp:449
+#: modules/gui/skins2/src/skin_main.cpp:450
 msgid "Use a skinned playlist"
 msgstr "Usar una lista de reproducción con piel"
 
-#: modules/gui/skins2/src/skin_main.cpp:470
+#: modules/gui/skins2/src/skin_main.cpp:474
 msgid "Skinnable Interface"
 msgstr "Interfaz con Piel"
 
-#: modules/gui/skins2/src/skin_main.cpp:480
+#: modules/gui/skins2/src/skin_main.cpp:484
 msgid "Skins loader demux"
 msgstr "Demux cargador de pieles"
 
@@ -18786,11 +18576,11 @@ msgstr "Analizador de etiquetas ID3v1/2 y APEv1/2"
 
 #: modules/misc/audioscrobbler.c:133
 msgid "The username of your last.fm account"
-msgstr ""
+msgstr "El nombre de usuario de tu cuenta last.fm"
 
 #: modules/misc/audioscrobbler.c:135
 msgid "The password of your last.fm account"
-msgstr ""
+msgstr "La clave de tu cuenta last.fm"
 
 #: modules/misc/audioscrobbler.c:159
 msgid "Audioscrobbler"
@@ -18798,11 +18588,11 @@ msgstr "Audioscrobbler"
 
 #: modules/misc/audioscrobbler.c:160
 msgid "Submission of played songs to last.fm"
-msgstr ""
+msgstr "Informe de canciones reproducidas a last.fm"
 
 #: modules/misc/audioscrobbler.c:297
 msgid "Last.fm username not set"
-msgstr ""
+msgstr "No indicado nombre de usuario de Last.fm"
 
 #: modules/misc/audioscrobbler.c:298
 msgid ""
@@ -18810,16 +18600,21 @@ msgid ""
 "VLC.\n"
 "Visit http://www.last.fm/join/ to get an account."
 msgstr ""
+"Por favor indicar un nombre de usuario o deshabilitar el complemento "
+"audioscrobbler, y reiniciar VLC.\n"
+"Visita http://www.last.fm/join/ para obtener una cuenta."
 
 #: modules/misc/audioscrobbler.c:815
 msgid "last.fm: Authentication failed"
-msgstr ""
+msgstr "last.fm: Falló autenticación"
 
 #: modules/misc/audioscrobbler.c:816
 msgid ""
 "last.fm username or password is incorrect. Please verify your settings and "
 "relaunch VLC."
 msgstr ""
+"Nombre de usuario last.fm o clave es incorrecto. Por favor verifica tus "
+"ajustes y relanza VLC. "
 
 #: modules/misc/dummy/dummy.c:40
 msgid "Dummy image chroma format"
@@ -19045,7 +18840,7 @@ msgstr ""
 
 #: modules/misc/gnutls.c:90
 msgid "GnuTLS transport layer security"
-msgstr ""
+msgstr "Capa de transporte de seguridad GnuTLS"
 
 #: modules/misc/gnutls.c:100
 msgid "GnuTLS server"
@@ -19121,6 +18916,8 @@ msgid ""
 "Lua interface configuration string. Format is: '[\"<interface module name>"
 "\"] = { <option> = <value>, ...}, ...'."
 msgstr ""
+"Cadena de configuración de interfaz Lua. Formato es: '[\"<nombre del módulo "
+"de interfaz>\"] = { <opción> = <valor>, ...}, ...'."
 
 #: modules/misc/lua/vlc.c:61
 msgid "Lua Art"
@@ -19128,7 +18925,7 @@ msgstr "Arte Lua"
 
 #: modules/misc/lua/vlc.c:62
 msgid "Fetch artwork using lua scripts"
-msgstr ""
+msgstr "Obtener ilustración usando scripts lua"
 
 #: modules/misc/lua/vlc.c:70
 msgid "Lua Playlist"
@@ -19236,6 +19033,14 @@ msgid ""
 "$N Name, $O Audio language, $P Position, $R Rate, $S Sample rate, $T Time "
 "elapsed, $U Publisher, $V Volume"
 msgstr ""
+"Formato de la cadena a enviar a Telepathy. Por defecto \"Artista - Título"
+"\" ($a - $t). Puedes usar las siguientes sustituciones: $a Artista, $b "
+"Álbum, $c Copyright, $d Descripción, $e Codificador, $g Género, $l Idioma, "
+"$n nº, $p Reproduciendo Ahora, $r Puntuación, $s Idioma de subtítulos, $t "
+"Título, $u URL, $A Fecha, $B Tasa de Bits, $C Capítulo, $D Duración, $F URI, "
+"$I Título del Vídeo, $L Tiempo Restante, $N Nombre, $O Idioma del audio, $P "
+"Posición, $R Tasa, $S Tasa de Muestra, $T Tiempo transcurrido, $U Editorial, "
+"$V Volumen"
 
 #: modules/misc/notify/telepathy.c:81
 msgid "Telepathy \"Now Playing\" using MissionControl"
@@ -19502,6 +19307,9 @@ msgid ""
 "Windows Media Player will cache streamed content. Set to audio+video bitrate "
 "in bytes"
 msgstr ""
+"No intentes estimar la tasa de bits ASF. Poniéndolo, te permite controlar "
+"cómo el Reproductor de Medios de Windows cacheará contenido emitido. Poner "
+"tasa de bits de audio+vídeo en bytes"
 
 #: modules/mux/asf.c:69
 msgid "ASF muxer"
@@ -19549,7 +19357,7 @@ msgid ""
 msgstr ""
 "Retrasa el DTS (decoding time stamps - improntas de tiempo de "
 "decodificación) y PTS (presentation timestamps - improntas de tiempo de "
-"presentación) de los datos en el volcado, comparado a los SCRs. Esto permite "
+"presentación) de los datos en la emisión, comparado a los SCRs. Esto permite "
 "hacer algo de búfer dentro del decodificador del cliente."
 
 #: modules/mux/mpeg/ps.c:55
@@ -19558,7 +19366,7 @@ msgstr "Máximo tamaño PES"
 
 #: modules/mux/mpeg/ps.c:56
 msgid "Set the maximum allowed PES size when producing the MPEG PS streams."
-msgstr "Indica el tamaño PES máximo permitido al producir volcados MPEG PS."
+msgstr "Indica el tamaño PES máximo permitido al producir emisiones MPEG PS."
 
 #: modules/mux/mpeg/ps.c:65
 msgid "PS muxer"
@@ -19573,7 +19381,7 @@ msgid ""
 "Assign a fixed PID to the video stream. The PCR PID will automatically be "
 "the video."
 msgstr ""
-"Asigna un PID fijo al volcado de vídeo. El PID PCR automáticamente será el "
+"Asigna un PID fijo a la emisión de vídeo. El PID PCR automáticamente será el "
 "vídeo."
 
 #: modules/mux/mpeg/ts.c:98
@@ -19582,7 +19390,7 @@ msgstr "PID de audio"
 
 #: modules/mux/mpeg/ts.c:99
 msgid "Assign a fixed PID to the audio stream."
-msgstr "Asigna un PID fijo al volcado de audio."
+msgstr "Asigna un PID fijo a la emisión de audio."
 
 #: modules/mux/mpeg/ts.c:100
 msgid "SPU PID"
@@ -19606,7 +19414,7 @@ msgstr "ID de TS"
 
 #: modules/mux/mpeg/ts.c:105
 msgid "Assign a fixed Transport Stream ID."
-msgstr "Asigna una ID de Volcado de Transporte fija."
+msgstr "Asigna una ID de Emisión de Transporte fija."
 
 #: modules/mux/mpeg/ts.c:106
 msgid "NET ID"
@@ -19661,8 +19469,8 @@ msgid ""
 "Sets PID to the ID if the incoming ES. This is for use with --ts-es-id-pid, "
 "and allows to have the same PIDs in the input and output streams."
 msgstr ""
-" Pone PID a la ID si llega ES. Esto es para usar con --ts-es-id-pid, y "
-"permite tener los mismos PIDs en los volcados de entrada y salida."
+"Pone PID a la ID si llega ES. Esto es para usar con --ts-es-id-pid, y "
+"permite tener los mismos PIDs en las emisiones de entrada y salida."
 
 #: modules/mux/mpeg/ts.c:126
 msgid "Data alignment"
@@ -19686,7 +19494,7 @@ msgid ""
 "bitrate between the two boundaries. This avoids having huge bitrate peaks, "
 "especially for reference frames."
 msgstr ""
-"Corta el volcado en trozos de la duración dada, y asegura una tasa de bits "
+"Corta la emisión en trozos de la duración dada, y asegura una tasa de bits "
 "constante entre los dos límites. Esto evita tener grandes picos de tasa de "
 "bits, especialmente para fotogramas de referencia."
 
@@ -19706,7 +19514,7 @@ msgstr ""
 "final de imágenes I. En ese caso, la duración de forma dada por el usuario "
 "es una situación peor cuando no se dispone de fotogramas de referencia. Esto "
 "mejora la eficiencia del algoritmo de forma, pues los fotogramas I son "
-"normalmente los más grandes del volcado."
+"normalmente los más grandes de la emisión."
 
 #: modules/mux/mpeg/ts.c:144
 msgid "PCR delay (ms)"
@@ -19741,7 +19549,7 @@ msgid ""
 msgstr ""
 "Retrasa las DTS (decoding timestamps - improntas de tiempo de "
 "decodificación) y PTS (presentation timestamps - improntas de tiempo de "
-"presentación) de los datos en el volcado, comparado a los PCRs. Esto permite "
+"presentación) de los datos en la emisión, comparado a los PCRs. Esto permite "
 "algo de búfer dentro del decodificador del cliente."
 
 #: modules/mux/mpeg/ts.c:161
@@ -19780,6 +19588,8 @@ msgid ""
 "CSA encryption key used. It can be the odd/first/1 (default) or the even/"
 "second/2 one."
 msgstr ""
+"Usada clave de encriptación CSA. Puede ser la odd/primera/1 (por defecto) o "
+"la even/segunda/2."
 
 #: modules/mux/mpeg/ts.c:178
 msgid "Packet size in bytes to encrypt"
@@ -19947,7 +19757,8 @@ msgid ""
 "time, but you could end up with items corresponding to legacy streams."
 msgstr ""
 "Esto activa un mecanismo de caché SAP. Resultará en menor tiempo de inicio "
-"de SAP, pero podrías acabar con objetos correspondientes a volcados antiguos."
+"de SAP, pero podrías acabar con objetos correspondientes a emisiones "
+"antiguas."
 
 #: modules/services_discovery/sap.c:117
 #, fuzzy
@@ -19955,7 +19766,7 @@ msgid ""
 "This automatically enables timeshifting for streams discovered through SAP "
 "announcements."
 msgstr ""
-"Esto automáticamente habilita timeshifting para volcados descubiertos a "
+"Esto automáticamente habilita timeshifting para emisiones descubiertas a "
 "través de auncios SAP."
 
 #: modules/services_discovery/sap.c:128
@@ -20013,7 +19824,7 @@ msgstr "Listados de TV Shoutcast"
 
 #: modules/services_discovery/shout.c:131
 msgid "Freebox TV listing (French ISP free.fr services)"
-msgstr ""
+msgstr "Listado TV Freebox (Servicios franceses de ISP free.fr)"
 
 #: modules/services_discovery/upnp_cc.cpp:62
 msgid "Universal Plug'n'Play discovery"
@@ -20029,15 +19840,15 @@ msgstr "Autoborrar"
 
 #: modules/stream_out/autodel.c:47
 msgid "Automatically add/delete input streams"
-msgstr "Automáticamente añade/borra volcados de entrada"
+msgstr "Automáticamente añade/borra emisiones de entrada"
 
 #: modules/stream_out/bridge.c:42
 msgid ""
 "Integer identifier for this elementary stream. This will be used to \"find\" "
 "this stream later."
 msgstr ""
-"Identificador integral para este volcado elemental. Esto se usará para "
-"\"hallar\" este volcado más tarde."
+"Identificador integral para esta emisión elemental. Esto se usará para "
+"\"hallar\" esta emisión más tarde."
 
 #: modules/stream_out/bridge.c:46
 msgid ""
@@ -20058,8 +19869,8 @@ msgid ""
 "Offset to add to the stream IDs specified in bridge_out to obtain the stream "
 "IDs bridge_in will register."
 msgstr ""
-"Compensación a añadir a las IDs de volcado especificadas en bridge_out para "
-"obtener las IDs de volcado bridge_in que se registrarán."
+"Compensación a añadir a las IDs de emisión especificadas en bridge_out para "
+"obtener las IDs de emisión bridge_in que se registrarán."
 
 #: modules/stream_out/bridge.c:63
 msgid "Bridge"
@@ -20067,7 +19878,7 @@ msgstr "Puente"
 
 #: modules/stream_out/bridge.c:64
 msgid "Bridge stream output"
-msgstr "Salida de volcado puente"
+msgstr "Salida de emisión bridge"
 
 #: modules/stream_out/bridge.c:66
 #, fuzzy
@@ -20081,7 +19892,7 @@ msgstr "Bridge in"
 
 #: modules/stream_out/description.c:54
 msgid "Description stream output"
-msgstr "Descripción de salida de volcado"
+msgstr "Descripción de salida de emisión"
 
 #: modules/stream_out/display.c:42
 msgid "Enable/disable audio rendering."
@@ -20093,15 +19904,15 @@ msgstr "Habilitar/deshabilitar renderizado de vídeo."
 
 #: modules/stream_out/display.c:46
 msgid "Introduces a delay in the display of the stream."
-msgstr "Incluye un retraso en la muestra del volcado."
+msgstr "Incluye un retraso en la muestra de la emisión."
 
 #: modules/stream_out/display.c:55
 msgid "Display stream output"
-msgstr "Mostrar salida de volcado"
+msgstr "Mostrar salida de emisión"
 
 #: modules/stream_out/duplicate.c:44
 msgid "Duplicate stream output"
-msgstr "Duplicar salida de volcado"
+msgstr "Duplicar salida de emisión"
 
 #: modules/stream_out/es.c:41 modules/stream_out/standard.c:45
 msgid "Output access method"
@@ -20177,7 +19988,7 @@ msgstr "Ésta es la salida URI a usar para vídeo."
 
 #: modules/stream_out/es.c:79
 msgid "Elementary stream output"
-msgstr "Salida de volcado elemental"
+msgstr "Salida de emisión elemental"
 
 #: modules/stream_out/es.c:374 modules/stream_out/es.c:389
 #, c-format
@@ -20186,7 +19997,7 @@ msgstr ""
 
 #: modules/stream_out/gather.c:44
 msgid "Gathering stream output"
-msgstr "Obtener salida de volcado"
+msgstr "Obtener salida de emisión"
 
 #: modules/stream_out/mosaic_bridge.c:135
 msgid "Specify an identifier string for this subpicture"
@@ -20206,7 +20017,7 @@ msgstr "Filtro de vídeo"
 
 #: modules/stream_out/mosaic_bridge.c:149
 msgid "Video filters will be applied to the video stream."
-msgstr "Los filtros de vídeo se aplicarán al volcado de vídeo."
+msgstr "Los filtros de vídeo se aplicarán a la emisión de vídeo."
 
 #: modules/stream_out/mosaic_bridge.c:151
 msgid "Image chroma"
@@ -20248,7 +20059,7 @@ msgstr "Puente de mosaico"
 
 #: modules/stream_out/mosaic_bridge.c:172
 msgid "Mosaic bridge stream output"
-msgstr "Salida de volcado puente de mosaico"
+msgstr "Salida de emisión puente de mosaico"
 
 #: modules/stream_out/rtp.c:72
 msgid "This is the output URL that will be used."
@@ -20287,8 +20098,8 @@ msgid ""
 "This allows you to specify the muxer used for the streaming output. Default "
 "is to use no muxer (standard RTP stream)."
 msgstr ""
-"Esto te permite indicar el muxor usado para la salida de volcado. Por "
-"defecto es no usar muxor (volcado RTP estándar)."
+"Esto te permite indicar el muxor usado para la salida de emisión. Por "
+"defecto es no usar muxor (emisión RTP estándar)."
 
 #: modules/stream_out/rtp.c:86 modules/stream_out/standard.c:62
 msgid "Session name"
@@ -20311,7 +20122,7 @@ msgid ""
 "This allows you to give a short description with details about the stream, "
 "that will be announced in the SDP (Session Descriptor)."
 msgstr ""
-"Esto te permite dar una corta descripción con detalles sobre el volcado, que "
+"Esto te permite dar una corta descripción con detalles sobre la emisión, que "
 "se anunciará en el SDP (Descriptor de Sesión)."
 
 #: modules/stream_out/rtp.c:94 modules/stream_out/standard.c:76
@@ -20324,8 +20135,8 @@ msgid ""
 "website of the streaming organization), that will be announced in the SDP "
 "(Session Descriptor)."
 msgstr ""
-"Esto te permite dar una URL con más detalles sobre el volcado (a menudo el "
-"sitio web de la organización del volcado), que se anunciará en el SDP "
+"Esto te permite dar una URL con más detalles sobre la emisión (a menudo el "
+"sitio web de la organización de la emisión), que se anunciará en el SDP "
 "(Descriptor de Sesión)."
 
 #: modules/stream_out/rtp.c:99 modules/stream_out/standard.c:81
@@ -20337,7 +20148,7 @@ msgid ""
 "This allows you to give a contact mail address for the stream, that will be "
 "announced in the SDP (Session Descriptor)."
 msgstr ""
-"Esto te permite dar una dirección de correo de contacto para el volcado, que "
+"Esto te permite dar una dirección de correo de contacto para la emisión, que "
 "se anunciará en el SDP (Descriptor de Sesión)."
 
 #: modules/stream_out/rtp.c:103 modules/stream_out/standard.c:85
@@ -20349,12 +20160,12 @@ msgid ""
 "This allows you to give a contact telephone number for the stream, that will "
 "be announced in the SDP (Session Descriptor)."
 msgstr ""
-"Esto te permite dar un nº de teléfono de contacto para el volcado, que se "
+"Esto te permite dar un nº de teléfono de contacto para la emisión, que se "
 "anunciará en el SDP (Descriptor de Sesión)."
 
 #: modules/stream_out/rtp.c:110
 msgid "This allows you to specify the base port for the RTP streaming."
-msgstr "Esto permite especificar el puerto base usado para el volcado RTP."
+msgstr "Esto permite especificar el puerto base usado para la emisión RTP."
 
 #: modules/stream_out/rtp.c:111
 msgid "Audio port"
@@ -20364,7 +20175,7 @@ msgstr "Puerto de audio"
 msgid ""
 "This allows you to specify the default audio port for the RTP streaming."
 msgstr ""
-"Esto permite indicar el puerto de audio por defecto para el volcado RTP."
+"Esto permite indicar el puerto de audio por defecto para la emisión RTP."
 
 #: modules/stream_out/rtp.c:114
 msgid "Video port"
@@ -20374,17 +20185,17 @@ msgstr "Puerto de vídeo"
 msgid ""
 "This allows you to specify the default video port for the RTP streaming."
 msgstr ""
-"Esto permite indicar el puerto de vídeo por defecto para el volcado RTP."
+"Esto permite indicar el puerto de vídeo por defecto para la emisión RTP."
 
 #: modules/stream_out/rtp.c:120
-#, fuzzy
 msgid ""
 "This is the hop limit (also known as \"Time-To-Live\" or TTL) of the "
 "multicast packets sent by the stream output (0 = use operating system built-"
 "in default)."
 msgstr ""
-"Indicar aquí la Hora Para La Emisión En Directo de los paquetes multiemisión "
-"enviados por el volcado de salida."
+"Éste es el límite de salto (conocido también como \"Time-To-Live\" ó TTL) de "
+"los paquetes multiemisión enviados por la salida de emisión (0 = usar por "
+"defecto la integrada en el sistema operativo)."
 
 #: modules/stream_out/rtp.c:124
 msgid "RTP/RTCP multiplexing"
@@ -20416,19 +20227,19 @@ msgstr "MP4A LATM"
 
 #: modules/stream_out/rtp.c:152
 msgid "This allows you to stream MPEG4 LATM audio streams (see RFC3016)."
-msgstr "Esto te permite volcar volcados de audio MPEG4 LATM (ver RFC3016)."
+msgstr "Esto te permite emitir emisiones de audio MPEG4 LATM (ver RFC3016)."
 
 #: modules/stream_out/rtp.c:162
 msgid "RTP stream output"
-msgstr "Salida de volcado RTP"
+msgstr "Salida de emisión RTP"
 
 #: modules/stream_out/standard.c:47
 msgid "Output method to use for the stream."
-msgstr "Método de salida a usar para el volcado."
+msgstr "Método de salida a usar para la emisión."
 
 #: modules/stream_out/standard.c:50
 msgid "Muxer to use for the stream."
-msgstr "Muxor a usar para el volcado."
+msgstr "Muxor a usar para la emisión."
 
 #: modules/stream_out/standard.c:51
 msgid "Output destination"
@@ -20438,7 +20249,7 @@ msgstr "Destino de salida"
 #, fuzzy
 msgid ""
 "Destination (URL) to use for the stream. Overrides path and bind parameters"
-msgstr "Destino (URL) a usar para el volcado. Anula parámetros de ruta y bind"
+msgstr "Destino (URL) a usar para la emisión. Anula ruta y parámetros de bind"
 
 #: modules/stream_out/standard.c:54
 msgid "address to bind to (helper setting for dst)"
@@ -20474,7 +20285,7 @@ msgstr ""
 
 #: modules/stream_out/standard.c:101
 msgid "Standard stream output"
-msgstr "Salida de volcado estándar"
+msgstr "Salida de emisión estándar"
 
 #: modules/stream_out/switcher.c:86
 msgid "Files"
@@ -20538,7 +20349,7 @@ msgstr "Silenciar audio cuando el comando no sea 0."
 
 #: modules/stream_out/switcher.c:112
 msgid "MPEG2 video switcher stream output"
-msgstr "Salida de volcado intercambiadora de vídeo MPEG2"
+msgstr "Salida de emisión intercambiadora de vídeo MPEG2"
 
 #: modules/stream_out/transcode.c:54
 msgid "Video encoder"
@@ -20565,7 +20376,7 @@ msgstr "Tasa de bits de vídeo"
 
 #: modules/stream_out/transcode.c:63
 msgid "Target bitrate of the transcoded video stream."
-msgstr "Tasa de bits destino del volcado de vídeo transcodificado."
+msgstr "Tasa de bits objetivo de la emisión de vídeo transcodificado."
 
 #: modules/stream_out/transcode.c:64
 msgid "Video scaling"
@@ -20582,7 +20393,7 @@ msgstr "Tasa de fotogramas de vídeo"
 
 #: modules/stream_out/transcode.c:69
 msgid "Target output frame rate for the video stream."
-msgstr "Tasa objetivo de fotogramas de salida para el volcado de vídeo."
+msgstr "Tasa objetivo de fotogramas de salida para la emisión de vídeo."
 
 #: modules/stream_out/transcode.c:72
 msgid "Deinterlace the video before encoding."
@@ -20613,7 +20424,7 @@ msgid ""
 "Video filters will be applied to the video streams (after overlays are "
 "applied). You must enter a comma-separated list of filters."
 msgstr ""
-"Los filtros de vídeo se aplicarán a los volcados de vídeo (tras aplicar "
+"Los filtros de vídeo se aplicarán a las emisiones de vídeo (tras aplicar "
 "capas). Debes poner una lista de filtros separados por comas."
 
 #: modules/stream_out/transcode.c:93
@@ -20641,14 +20452,14 @@ msgstr "Tasa de bits de audio"
 
 #: modules/stream_out/transcode.c:102
 msgid "Target bitrate of the transcoded audio stream."
-msgstr "Tasa de bits objetivo del volcado de audio transcodificado."
+msgstr "Tasa de bits objetivo de la emisión de audio transcodificado."
 
 #: modules/stream_out/transcode.c:105
 msgid ""
 "Sample rate of the transcoded audio stream (11250, 22500, 44100 or 48000)."
 msgstr ""
-"Tasa de muestra del volcado de audio transcodificado (11250, 22500, 44100 ó "
-"48000)."
+"Tasa de muestra de la emisión de audio transcodificado (11250, 22500, 44100 "
+"ó 48000)."
 
 #: modules/stream_out/transcode.c:106
 msgid "Audio channels"
@@ -20656,20 +20467,19 @@ msgstr "Canales de audio"
 
 #: modules/stream_out/transcode.c:108
 msgid "Number of audio channels in the transcoded streams."
-msgstr "Nº de canales de audio en los volcados transcodificados."
+msgstr "Nº de canales de audio en las emisiones transcodificadas."
 
 #: modules/stream_out/transcode.c:109
 msgid "Audio filter"
 msgstr "Filtro de audio"
 
 #: modules/stream_out/transcode.c:111
-#, fuzzy
 msgid ""
 "Audio filters will be applied to the audio streams (after conversion filters "
 "are applied). You must enter a comma-separated list of filters."
 msgstr ""
-"Los filtros de vídeo se aplicarán a los volcados de vídeo (tras aplicar "
-"capas). Debes poner una lista de filtros separados por comas."
+"Los filtros de audio se aplicarán a las emisiones de audio (tras aplicar los "
+"filtros de conversión). Debes poner una lista de filtros separados por comas."
 
 #: modules/stream_out/transcode.c:114
 msgid "Subtitles encoder"
@@ -20699,7 +20509,7 @@ msgid ""
 "of subpicture modules"
 msgstr ""
 "Esto te permite añadir capas (también conocidas como \"sub-imágenes\") sobre "
-"el volcado de vídeo transcodificado. Las sub-imágenes producidas por los "
+"la emisión de vídeo transcodificado. Las sub-imágenes producidas por los "
 "filtros se superpondrán directamente sobre el vídeo. Debes especificar una "
 "lista de módulos de sub-imágenes"
 
@@ -20711,7 +20521,7 @@ msgstr "Menú OSD"
 msgid ""
 "Stream the On Screen Display menu (using the osdmenu subpicture module)."
 msgstr ""
-"Volcar el menú OSD (Visualización En Pantalla), usando el módulo subimagen "
+"Emitir el menú OSD (Visualización En Pantalla), usando el módulo subimagen "
 "osdmenu."
 
 #: modules/stream_out/transcode.c:133
@@ -20755,7 +20565,7 @@ msgstr ""
 
 #: modules/stream_out/transcode.c:162
 msgid "Transcode stream output"
-msgstr "Transcodificar salida de volcado"
+msgstr "Transcodificar salida de emisión"
 
 #: modules/stream_out/transcode.c:216
 msgid "Overlays/Subtitles"
@@ -20764,7 +20574,7 @@ msgstr "Superposiciones/Subtítulos"
 #: modules/stream_out/transrate/transrate.c:61
 #, fuzzy
 msgid "MPEG2 video transrating stream output"
-msgstr "Salida de volcado transrating de vídeo MPEG2"
+msgstr "Salida de emisión transrating de vídeo MPEG2"
 
 #: modules/video_chroma/grey_yuv.c:55 modules/video_chroma/i420_ymga.c:54
 #: modules/video_chroma/i420_yuy2.c:89 modules/video_chroma/i422_i420.c:57
@@ -20887,9 +20697,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:134
-#, fuzzy
 msgid "Save Debug Frames"
-msgstr "Tasa de fotograma"
+msgstr "Salvar Fotograma Debug"
 
 #: modules/video_filter/atmo/atmo.cpp:135
 msgid "Write every 128th miniframe to a folder."
@@ -20963,27 +20772,24 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:163
-#, fuzzy
 msgid "End-Red"
-msgstr "Rojo"
+msgstr "Final-Rojo"
 
 #: modules/video_filter/atmo/atmo.cpp:164
 msgid "Red component of the shutdown color"
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:165
-#, fuzzy
 msgid "End-Green"
-msgstr "Verde"
+msgstr "Final-Verde"
 
 #: modules/video_filter/atmo/atmo.cpp:166
 msgid "Green component of the shutdown color"
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:167
-#, fuzzy
 msgid "End-Blue"
-msgstr "Azul"
+msgstr "Final-Azul"
 
 #: modules/video_filter/atmo/atmo.cpp:168
 msgid "Blue component of the shutdown color"
@@ -21009,27 +20815,24 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:177
-#, fuzzy
 msgid "White Red"
-msgstr "Blanco"
+msgstr "Blanco Rojo"
 
 #: modules/video_filter/atmo/atmo.cpp:178
 msgid "Red value of a pure white on your LED stripes."
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:180
-#, fuzzy
 msgid "White Green"
-msgstr "Blanco"
+msgstr "Blanco Verde"
 
 #: modules/video_filter/atmo/atmo.cpp:181
 msgid "Green value of a pure white on your LED stripes."
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:183
-#, fuzzy
 msgid "White Blue"
-msgstr "Blanco"
+msgstr "Blanco Azul"
 
 #: modules/video_filter/atmo/atmo.cpp:184
 msgid "Blue value of a pure white on your LED stripes."
@@ -21060,9 +20863,8 @@ msgid "Overall brightness of your LED stripes"
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:198
-#, fuzzy
 msgid "Darkness Limit"
-msgstr "Enmascarado de oscuridad"
+msgstr "Límite de Oscuridad"
 
 #: modules/video_filter/atmo/atmo.cpp:199
 msgid ""
@@ -21076,9 +20878,8 @@ msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:203
 #: modules/video_filter/atmo/atmo.cpp:205
-#, fuzzy
 msgid "Used for statistics."
-msgstr "Recopilar estadísticas"
+msgstr "Usado para estadísticas."
 
 #: modules/video_filter/atmo/atmo.cpp:204
 msgid "Sat windowing"
@@ -21094,9 +20895,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:210
-#, fuzzy
 msgid "Filter threshold"
-msgstr "Umbral de movimiento"
+msgstr "Umbral de filtro"
 
 #: modules/video_filter/atmo/atmo.cpp:211
 msgid "How much a color has to be changed for an immediate color change."
@@ -21111,33 +20911,28 @@ msgid "Filter Smoothness"
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:217
-#, fuzzy
 msgid "Filter mode"
-msgstr "Filtros"
+msgstr "Modo de filtro"
 
 #: modules/video_filter/atmo/atmo.cpp:218
 msgid "kind of filtering which should be use to calcuate the color output"
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:226
-#, fuzzy
 msgid "No Filtering"
-msgstr "Filtros"
+msgstr "Sin Filtrado"
 
 #: modules/video_filter/atmo/atmo.cpp:227
-#, fuzzy
 msgid "Combined"
-msgstr "Comedia"
+msgstr "Combinado"
 
 #: modules/video_filter/atmo/atmo.cpp:228
-#, fuzzy
 msgid "Percent"
-msgstr "Preanalizar"
+msgstr "Porcentaje"
 
 #: modules/video_filter/atmo/atmo.cpp:231
-#, fuzzy
 msgid "Frame delay"
-msgstr "Tasa de fotograma"
+msgstr "Retraso de fotograma"
 
 #: modules/video_filter/atmo/atmo.cpp:232
 msgid ""
@@ -21146,29 +20941,24 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:237
-#, fuzzy
 msgid "Channel summary"
-msgstr "Mezclador de canal"
+msgstr "Sumario de canal"
 
 #: modules/video_filter/atmo/atmo.cpp:238
-#, fuzzy
 msgid "Channel left"
-msgstr "Nombre de Canal"
+msgstr "Canal izquierdo"
 
 #: modules/video_filter/atmo/atmo.cpp:239
-#, fuzzy
 msgid "Channel right"
-msgstr "Canal"
+msgstr "Canal derecho"
 
 #: modules/video_filter/atmo/atmo.cpp:240
-#, fuzzy
 msgid "Channel top"
-msgstr "Canal"
+msgstr "Canal superior"
 
 #: modules/video_filter/atmo/atmo.cpp:241
-#, fuzzy
 msgid "Channel bottom"
-msgstr "Nombre de Canal"
+msgstr "Canal inferior"
 
 #: modules/video_filter/atmo/atmo.cpp:243
 msgid ""
@@ -21176,59 +20966,48 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:254
-#, fuzzy
 msgid "disabled"
-msgstr "Deshabilitar"
+msgstr "deshabilitado"
 
 #: modules/video_filter/atmo/atmo.cpp:255
-#, fuzzy
 msgid "summary"
-msgstr "Sumario"
+msgstr "sumario"
 
 #: modules/video_filter/atmo/atmo.cpp:256
-#, fuzzy
 msgid "left"
-msgstr "Izquierdo"
+msgstr "izquierda"
 
 #: modules/video_filter/atmo/atmo.cpp:257
-#, fuzzy
 msgid "right"
-msgstr "Derecho"
+msgstr "derecha"
 
 #: modules/video_filter/atmo/atmo.cpp:258
-#, fuzzy
 msgid "top"
-msgstr "Parar"
+msgstr "arriba"
 
 #: modules/video_filter/atmo/atmo.cpp:259
-#, fuzzy
 msgid "bottom"
-msgstr "Abajo"
+msgstr "abajo"
 
 #: modules/video_filter/atmo/atmo.cpp:262
-#, fuzzy
 msgid "Summary gradient"
-msgstr "Gradiente"
+msgstr "Gradiente sumario"
 
 #: modules/video_filter/atmo/atmo.cpp:263
-#, fuzzy
 msgid "Left gradient"
-msgstr "Gradiente"
+msgstr "Gradiente izquierdo"
 
 #: modules/video_filter/atmo/atmo.cpp:264
-#, fuzzy
 msgid "Right gradient"
-msgstr "Gradiente"
+msgstr "Gradiente derecho"
 
 #: modules/video_filter/atmo/atmo.cpp:265
-#, fuzzy
 msgid "Top gradient"
-msgstr "Gradiente"
+msgstr "Gradiente superior"
 
 #: modules/video_filter/atmo/atmo.cpp:266
-#, fuzzy
 msgid "Bottom gradient"
-msgstr "Gradiente"
+msgstr "Gradiente inferior"
 
 #: modules/video_filter/atmo/atmo.cpp:267
 msgid ""
@@ -21236,9 +21015,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:271
-#, fuzzy
 msgid "Filename of AtmoWinA.exe"
-msgstr "Nombre de archivo de volcado"
+msgstr "Nombre de archivo de AtmoWinA.exe"
 
 #: modules/video_filter/atmo/atmo.cpp:272
 msgid ""
@@ -21298,19 +21076,16 @@ msgid "Change gradients"
 msgstr ""
 
 #: modules/video_filter/blendbench.c:52
-#, fuzzy
 msgid "Number of time to blend"
-msgstr "Número de bandas"
+msgstr "Nº de hora para mezclar"
 
 #: modules/video_filter/blendbench.c:53
-#, fuzzy
 msgid "The number of time the blend will be performed"
-msgstr "Número de veces que la misma entrada se repetirá"
+msgstr "El nº de hora que se hará la mezcla"
 
 #: modules/video_filter/blendbench.c:55
-#, fuzzy
 msgid "Alpha of the blended image"
-msgstr "Coordenada X del subtítulo dibujado"
+msgstr "Alpha de la imagen mezclada"
 
 #: modules/video_filter/blendbench.c:56
 msgid "Alpha with which the blend image is blended"
@@ -21321,14 +21096,12 @@ msgid "Image to be blended onto"
 msgstr ""
 
 #: modules/video_filter/blendbench.c:59
-#, fuzzy
 msgid "The image which will be used to blend onto"
-msgstr "Agente usuario a usar en la conexión."
+msgstr "La imagen sobre la que se usará para mezclar"
 
 #: modules/video_filter/blendbench.c:61
-#, fuzzy
 msgid "Chroma for the base image"
-msgstr "Anchura de la imagen de captura de pantalla."
+msgstr "Croma para la imagen base"
 
 #: modules/video_filter/blendbench.c:62
 msgid "Chroma which the base image will be loaded in"
@@ -21343,9 +21116,8 @@ msgid "The image blended onto the base image"
 msgstr ""
 
 #: modules/video_filter/blendbench.c:67
-#, fuzzy
 msgid "Chroma for the blend image"
-msgstr "Coordenada X del subtítulo dibujado"
+msgstr "Croma para la imagen mezclada"
 
 #: modules/video_filter/blendbench.c:68
 msgid "Chroma which the blend image will be loadedin"
@@ -21360,26 +21132,22 @@ msgid "blendbench"
 msgstr ""
 
 #: modules/video_filter/blendbench.c:80
-#, fuzzy
 msgid "Benchmarking"
-msgstr "Enmascarado de borde"
+msgstr "Pruebas de rendimiento"
 
 #: modules/video_filter/blendbench.c:86
-#, fuzzy
 msgid "Base image"
-msgstr "Imágenes feed"
+msgstr "Imagen base"
 
 #: modules/video_filter/blendbench.c:92
-#, fuzzy
 msgid "Blend image"
-msgstr "Imágenes feed"
+msgstr "Imagen mezcla"
 
 #: modules/video_filter/blend.c:45
 msgid "Video pictures blending"
 msgstr "Mezclado de imágenes de vídeo"
 
 #: modules/video_filter/bluescreen.c:39
-#, fuzzy
 msgid ""
 "This effect, also known as \"greenscreen\" or \"chroma key\" blends the "
 "\"blue parts\" of the foreground image of the mosaic on the background (like "
@@ -21388,8 +21156,8 @@ msgid ""
 msgstr ""
 "Este efecto, también conocido como \"pantalla verde\" o \"clave cromática\", "
 "mezcla las \"partes azules\" de las imágenes en primer plano del mosaico con "
-"el fondo (como los presentadores del tiempo). Puedes elegir el color \"clave"
-"\" para mezclar (azul por defecto)."
+"el fondo (como en las predicciones del tiempo). Puedes elegir el color "
+"\"clave\" para mezclar (azul por defecto)."
 
 #: modules/video_filter/bluescreen.c:44
 msgid "Bluescreen U value"
@@ -21440,9 +21208,8 @@ msgstr ""
 "plano V. Un valor entre 10 y 20 parece sensible."
 
 #: modules/video_filter/bluescreen.c:79
-#, fuzzy
 msgid "Bluescreen video filter"
-msgstr "Filtro de vídeo para recortar"
+msgstr "Filtro de vídeo pantalla azul"
 
 #: modules/video_filter/bluescreen.c:80
 msgid "Bluescreen"
@@ -21459,16 +21226,12 @@ msgid "Image height"
 msgstr "Altura de imagen"
 
 #: modules/video_filter/canvas.c:55
-#, fuzzy
 msgid "Set aspect (like 4:3) of the video canvas"
-msgstr ""
-"Esto pone el aspecto (como 4:3) del lienzo del vídeo y letterbox el vídeo "
-"según ello."
+msgstr "Poner aspecto (como 4:3) del lienzo del vídeo"
 
 #: modules/video_filter/canvas.c:63
-#, fuzzy
 msgid "Automatically resize and padd a video"
-msgstr "Pre-analizar archivos automáticamente"
+msgstr "Automáticamente redimensiona y rellena un vídeo"
 
 #: modules/video_filter/chain.c:43
 msgid "Video filtering using a chain of video filter modules"
@@ -21495,32 +21258,29 @@ msgid "Clone video filter"
 msgstr "Filtro de vídeo para clonar"
 
 #: modules/video_filter/colorthres.c:55
-#, fuzzy
 msgid ""
 "Colors similar to this will be kept, others will be grayscaled. This must be "
 "an hexadecimal (like HTML colors). The first two chars are for red, then "
 "green, then blue. #000000 = black, #FF0000 = red, #00FF00 = green, #FFFF00 = "
 "yellow (red + green), #FFFFFF = white"
 msgstr ""
-"Color del texto que se dibujará en el vídeo. Esto debe estar un hexadecimal "
-"(como colores HTML). Los dos primeros caracteres son para rojo, luego verde, "
-"y luego azul. #000000 = negro, #FF0000 = rojo, #00FF00 = verde, #FFFF00 "
-"amarillo (rojo + verde), #FFFFFF = blanco"
+"Se mantendrán colores similares a éste, los demás se harán escala de grises. "
+"Esto debe ser un hexadecimal (como los colores HTML). Los dos primeros "
+"caracteres son para rojo, luego verde, y luego azul. #000000 = negro, "
+"#FF0000 = rojo, #00FF00 = verde, #FFFF00 amarillo (rojo + verde), #FFFFFF = "
+"blanco"
 
 #: modules/video_filter/colorthres.c:68
-#, fuzzy
 msgid "Color threshold filter"
-msgstr "Filtro de vídeo para clonar"
+msgstr "Filtro de umbral de color"
 
 #: modules/video_filter/colorthres.c:77
-#, fuzzy
 msgid "Saturaton threshold"
-msgstr "Umbral de brillo"
+msgstr "Umbral de saturación"
 
 #: modules/video_filter/colorthres.c:79
-#, fuzzy
 msgid "Similarity threshold"
-msgstr "Umbral de movimiento"
+msgstr "Umbral de similitud"
 
 #: modules/video_filter/crop.c:73
 msgid "Crop geometry (pixels)"
@@ -21555,18 +21315,16 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/crop.c:83
-#, fuzzy
 msgid "Manual ratio"
-msgstr "Saturación"
+msgstr "Tasa manual"
 
 #: modules/video_filter/crop.c:84
 msgid "Force a ratio (0 for automatic). Value is x1000: 1333 means 4/3."
 msgstr ""
 
 #: modules/video_filter/crop.c:86
-#, fuzzy
 msgid "Number of images for change"
-msgstr "Nº de canales de salida"
+msgstr "Nº de imágenes para el cambio"
 
 #: modules/video_filter/crop.c:87
 msgid ""
@@ -21576,9 +21334,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/crop.c:89
-#, fuzzy
 msgid "Number of lines for change"
-msgstr "Nº de canales de salida"
+msgstr "Nº de líneas para el cambio"
 
 #: modules/video_filter/crop.c:90
 msgid ""
@@ -21587,9 +21344,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/crop.c:92
-#, fuzzy
 msgid "Number of non black pixels "
-msgstr "Nº de píxeles vacíos entre bandas."
+msgstr "Nº de píxeles no negros "
 
 #: modules/video_filter/crop.c:93
 msgid ""
@@ -21607,9 +21363,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/crop.c:99
-#, fuzzy
 msgid "Luminance threshold "
-msgstr "Umbral de movimiento"
+msgstr "Umbral de luminancia "
 
 #: modules/video_filter/crop.c:100
 msgid "Maximum luminance to consider a pixel as black (0-255)."
@@ -21620,94 +21375,76 @@ msgid "Crop video filter"
 msgstr "Filtro de vídeo para recortar"
 
 #: modules/video_filter/crop.c:378 modules/video_filter/crop.c:474
-#, fuzzy
 msgid "Cropping failed"
-msgstr "Filtro de vídeo para recortar"
+msgstr "Falló el recorte"
 
 #: modules/video_filter/crop.c:379 modules/video_filter/crop.c:475
-#, fuzzy
 msgid "VLC could not open the video output module."
-msgstr "Lista de módulos de salida de vídeo"
+msgstr "VLC no pudo abrir el módulo de salida de vídeo."
 
 #: modules/video_filter/croppadd.c:47
-#, fuzzy
 msgid "Pixels to crop from top"
-msgstr "Recorte de vídeo (superior)"
+msgstr "Píxeles a recortar arriba"
 
 #: modules/video_filter/croppadd.c:49
-#, fuzzy
 msgid "Number of pixels to crop from the top of the image."
-msgstr "Nº de píxeles a recortar en lado superior del vídeo."
+msgstr "Nº de píxeles a recortar de arriba de la imagen."
 
 #: modules/video_filter/croppadd.c:50
-#, fuzzy
 msgid "Pixels to crop from bottom"
-msgstr "Recorte de vídeo (inferior)"
+msgstr "Píxeles a recortar abajo"
 
 #: modules/video_filter/croppadd.c:52
-#, fuzzy
 msgid "Number of pixels to crop from the bottom of the image."
-msgstr "Nº de píxeles a recortar en lado inferior del vídeo."
+msgstr "Nº de píxeles a recortar de abajo de la imagen."
 
 #: modules/video_filter/croppadd.c:53
-#, fuzzy
 msgid "Pixels to crop from left"
-msgstr "Recorte de vídeo (izquierdo)"
+msgstr "Píxeles a recortar de la izquierda"
 
 #: modules/video_filter/croppadd.c:55
-#, fuzzy
 msgid "Number of pixels to crop from the left of the image."
-msgstr "Nº de píxeles a recortar a la izquierda del vídeo."
+msgstr "Nº de píxeles a recortar de la izquierda de la imagen."
 
 #: modules/video_filter/croppadd.c:56
-#, fuzzy
 msgid "Pixels to crop from right"
-msgstr "Recorte de vídeo (derecho)"
+msgstr "Píxeles a recortar de la derecha"
 
 #: modules/video_filter/croppadd.c:58
-#, fuzzy
 msgid "Number of pixels to crop from the right of the image."
-msgstr "Nº de píxeles a recortar a la derecha del vídeo."
+msgstr "Nº de píxeles a recortar de la derecha de la imagen."
 
 #: modules/video_filter/croppadd.c:60
-#, fuzzy
 msgid "Pixels to padd to top"
-msgstr "Relleno de vídeo (arriba)"
+msgstr "Píxeles a rellenar arriba"
 
 #: modules/video_filter/croppadd.c:62
-#, fuzzy
 msgid "Number of pixels to padd to the top of the image after cropping."
-msgstr "Nº de píxeles a recortar en lado superior del vídeo."
+msgstr "Nº de píxeles a rellenar arriba de la imagen tras el recorte."
 
 #: modules/video_filter/croppadd.c:63
-#, fuzzy
 msgid "Pixels to padd to bottom"
-msgstr "Relleno de vídeo (abajo)"
+msgstr "Píxeles a rellenar abajo"
 
 #: modules/video_filter/croppadd.c:65
-#, fuzzy
 msgid "Number of pixels to padd to the bottom of the image after cropping."
-msgstr "Nº de píxeles a recortar en lado inferior del vídeo."
+msgstr "Nº de píxeles a rellenar abajo de la imagen tras el recorte."
 
 #: modules/video_filter/croppadd.c:66
-#, fuzzy
 msgid "Pixels to padd to left"
-msgstr "Relleno de vídeo (izqu)"
+msgstr "Píxeles a rellenar a la izquierda"
 
 #: modules/video_filter/croppadd.c:68
-#, fuzzy
 msgid "Number of pixels to padd to the left of the image after cropping."
-msgstr "Nº de píxeles a recortar a la izquierda del vídeo."
+msgstr "Nº de píxeles a rellenar a la izquierda de la imagen tras el recorte."
 
 #: modules/video_filter/croppadd.c:69
-#, fuzzy
 msgid "Pixels to padd to right"
-msgstr "Relleno de vídeo (dcha)"
+msgstr "Píxeles a rellenar a la derecha"
 
 #: modules/video_filter/croppadd.c:71
-#, fuzzy
 msgid "Number of pixels to padd to the right of the image after cropping."
-msgstr "Nº de píxeles a recortar a la derecha del vídeo."
+msgstr "Nº de píxeles a rellenar a la derecha de la imagen tras el recorte."
 
 #: modules/video_filter/croppadd.c:79 modules/video_filter/scale.c:59
 #: modules/video_filter/swscale.c:63
@@ -21715,9 +21452,8 @@ msgid "Video scaling filter"
 msgstr "Filtro de escalado de vídeo"
 
 #: modules/video_filter/croppadd.c:93
-#, fuzzy
 msgid "Padd"
-msgstr "Pausado"
+msgstr "Rellenar"
 
 #: modules/video_filter/deinterlace.c:112 modules/video_output/x11/xvmc.c:130
 msgid "Deinterlace mode"
@@ -21729,44 +21465,39 @@ msgstr "Método de desentrelazado a usar para reproducción local."
 
 #: modules/video_filter/deinterlace.c:115
 msgid "Streaming deinterlace mode"
-msgstr "Modo de desentrelazado de volcado"
+msgstr "Emitiendo modo de desentrelazado"
 
 #: modules/video_filter/deinterlace.c:116
 msgid "Deinterlace method to use for streaming."
-msgstr "Método de desentrelazado a usar para el volcado."
+msgstr "Método de desentrelazado a usar para la emisión."
 
 #: modules/video_filter/deinterlace.c:126
 msgid "Deinterlacing video filter"
 msgstr "Filtro de vídeo para desentrelazar"
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:58
-#, fuzzy
 msgid "Input FIFO"
-msgstr "Entrada"
+msgstr "Entrada FIFO"
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:59
 msgid "FIFO which will be read for commands"
 msgstr ""
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:61
-#, fuzzy
 msgid "Output FIFO"
-msgstr "Salida"
+msgstr "Salida FIFO"
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:62
-#, fuzzy
 msgid "FIFO which will be written to for responses"
-msgstr "Archivo al que se escribirán las muestras de audio."
+msgstr "FIFO al que se escribirán las respuestas"
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:65
-#, fuzzy
 msgid "Dynamic video overlay"
-msgstr "Decodificador de vídeo Dirac"
+msgstr "Superposición de vídeo dinámica"
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:66
-#, fuzzy
 msgid "Overlay"
-msgstr "Superposiciones"
+msgstr "Superposición"
 
 #: modules/video_filter/erase.c:55
 msgid "Image mask"
@@ -21835,9 +21566,7 @@ msgstr "Modo de distorsión"
 #: modules/video_filter/gradient.c:64
 #, fuzzy
 msgid "Distort mode, one of \"gradient\", \"edge\" and \"hough\"."
-msgstr ""
-"Modo de distorsión, uno de \"onda\", \"rizo\", \"gradiente\", \"borde\", "
-"\"hough\" y \"psicodélico\"."
+msgstr "Modo de distorsión, uno de \"gradiente\", \"borde\", y \"hough\"."
 
 #: modules/video_filter/gradient.c:66
 msgid "Gradient image type"
@@ -21869,14 +21598,12 @@ msgid "Hough"
 msgstr "Hough"
 
 #: modules/video_filter/gradient.c:80
-#, fuzzy
 msgid "Gradient video filter"
-msgstr "Invertir filtro de vídeo"
+msgstr "Filtro de vídeo gradiente"
 
 #: modules/video_filter/grain.c:53
-#, fuzzy
 msgid "Grain video filter"
-msgstr "Invertir filtro de vídeo"
+msgstr "Filtro de vídeo grano"
 
 #: modules/video_filter/grain.c:54
 msgid "Grain"
@@ -21992,14 +21719,12 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/marq.c:104 modules/video_filter/rss.c:143
-#, fuzzy
 msgid "X offset, from the left screen edge."
-msgstr "Ajuste X, desde el borde de pantalla izquierdo"
+msgstr "Ajuste X, desde el borde de pantalla izquierdo."
 
 #: modules/video_filter/marq.c:106 modules/video_filter/rss.c:145
-#, fuzzy
 msgid "Y offset, down from the top."
-msgstr "Ajuste Y, de abajo a arriba"
+msgstr "Ajuste Y, de abajo a arriba."
 
 #: modules/video_filter/marq.c:107
 msgid "Timeout"
@@ -22181,9 +21906,8 @@ msgstr ""
 "\"mosaic-bridge\" (puente-mosaico)."
 
 #: modules/video_filter/mosaic.c:150
-#, fuzzy
 msgid "Offsets in order"
-msgstr "Orden de elementos"
+msgstr "Ajustes en orden"
 
 #: modules/video_filter/mosaic.c:152
 msgid ""
@@ -22208,9 +21932,8 @@ msgid "fixed"
 msgstr "fijo"
 
 #: modules/video_filter/mosaic.c:168
-#, fuzzy
 msgid "offsets"
-msgstr "Compensación X"
+msgstr "ajustes"
 
 #: modules/video_filter/mosaic.c:178
 msgid "Mosaic video sub filter"
@@ -22249,9 +21972,8 @@ msgid "OpenCV face detection example filter"
 msgstr ""
 
 #: modules/video_filter/opencv_example.cpp:68
-#, fuzzy
 msgid "OpenCV example"
-msgstr "Abre un archivo"
+msgstr "Ejemplo OpenCV"
 
 #: modules/video_filter/opencv_example.cpp:77
 msgid "Haar cascade filename"
@@ -22272,7 +21994,7 @@ msgstr ""
 
 #: modules/video_filter/opencv_wrapper.c:71
 msgid "RGB32"
-msgstr ""
+msgstr "RGB32"
 
 #: modules/video_filter/opencv_wrapper.c:74
 msgid "Don't display any video"
@@ -22288,15 +22010,15 @@ msgstr "Mostrar el vídeo procesado"
 
 #: modules/video_filter/opencv_wrapper.c:78
 msgid "Show only errors"
-msgstr ""
+msgstr "Mostrar sólo errores"
 
 #: modules/video_filter/opencv_wrapper.c:79
 msgid "Show errors and warnings"
-msgstr ""
+msgstr "Mostrar errores y avisos"
 
 #: modules/video_filter/opencv_wrapper.c:79
 msgid "Show everything including debug messages"
-msgstr ""
+msgstr "Mostrar todo incluyendo mensajes de debug"
 
 #: modules/video_filter/opencv_wrapper.c:82
 #, fuzzy
@@ -22304,9 +22026,8 @@ msgid "OpenCV video filter wrapper"
 msgstr "filtro de vídeo FFmpeg"
 
 #: modules/video_filter/opencv_wrapper.c:83
-#, fuzzy
 msgid "OpenCV"
-msgstr "Abrir"
+msgstr "OpenCV"
 
 #: modules/video_filter/opencv_wrapper.c:90
 msgid "Scale factor (0.1-2.0)"
@@ -23470,9 +23191,8 @@ msgid "Video memory buffer height."
 msgstr "Altura del búfer de memoria de vídeo."
 
 #: modules/video_output/vmem.c:56
-#, fuzzy
 msgid "Pitch"
-msgstr "Ruta"
+msgstr "Tono"
 
 #: modules/video_output/vmem.c:57
 msgid "Video memory buffer pitch in bytes."
