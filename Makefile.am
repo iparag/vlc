@@ -847,7 +847,7 @@ if BUILD_SKINS
 	done
 	for i in $(srcdir)/share/skins2/*.*; do \
 	  cp -- "$$i" $(win32_destdir)/skins/ || true ; \
-	done \
+	done
 	cp -v share/skins2/default.vlt $(win32_destdir)/skins/ || true ;
 
 endif
