@@ -409,7 +409,7 @@ Section $Name_Section01 SEC01
   !insertmacro InstallFolder plugins
   !insertmacro InstallFolder locale
   !insertmacro InstallFolder osdmenu
-;  !insertmacro InstallFolder skins
+  !insertmacro InstallFolder skins
   !insertmacro InstallFolder http
   !insertmacro InstallFolder lua
 
@@ -458,8 +458,8 @@ Section $Name_Section02a SEC02a
   CreateShortCut "$SMPROGRAMS\VideoLAN\Quick Settings\Audio\Set Audio mode to Waveout.lnk" \
     "$INSTDIR\vlc.exe" "--aout waveout --save-config vlc://quit"
   CreateDirectory "$SMPROGRAMS\VideoLAN\Quick Settings\Interface"
-;  CreateShortCut "$SMPROGRAMS\VideoLAN\Quick Settings\Interface\Set Main Interface to Skinnable.lnk" \
-;    "$INSTDIR\vlc.exe" "-I skins --save-config vlc://quit"
+  CreateShortCut "$SMPROGRAMS\VideoLAN\Quick Settings\Interface\Set Main Interface to Skinnable.lnk" \
+    "$INSTDIR\vlc.exe" "-I skins --save-config vlc://quit"
   CreateShortCut "$SMPROGRAMS\VideoLAN\Quick Settings\Interface\Set Main Interface to Qt (default).lnk" \
     "$INSTDIR\vlc.exe" "-I qt --save-config vlc://quit"
   CreateDirectory "$SMPROGRAMS\VideoLAN\Quick Settings\Video"

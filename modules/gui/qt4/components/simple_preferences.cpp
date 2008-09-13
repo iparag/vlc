@@ -467,7 +467,6 @@ SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,
             ui.assoButton->hide();
 #endif
 
-#ifndef WIN32
             /* interface */
             char *psz_intf = config_GetPsz( p_intf, "intf" );
             if( psz_intf )
@@ -478,10 +477,6 @@ SPrefsPanel::SPrefsPanel( intf_thread_t *_p_intf, QWidget *_parent,
                     ui.qt4->setChecked( true );
             }
             free( psz_intf );
-#else
-            ui.qt4->setChecked( true );
-            ui.skins->setEnabled( false );
-#endif
 
             optionWidgets.append( ui.skins );
             optionWidgets.append( ui.qt4 );
