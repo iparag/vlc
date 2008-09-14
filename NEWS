@@ -6,13 +6,16 @@ Changes between 0.9.2 and 0.9.3:
 Changes between 0.9.1 and 0.9.2:
 --------------------------------
 
+ * Restored the old behavior of --sout-keep. It is now de-activated by default.
  * Skins2 interface repaired on Windows.
- * Lots of bug fixes.
+ * Multiple bugfixes.
+
 
 Changes between 0.9.1 and 0.9.0:
 --------------------------------
 
- * Bunch of Qt4 bug fixes.
+ * Multiple bug fixes.
+
 
 Changes between 0.8.6i and 0.9.0:
 ---------------------------------
@@ -35,6 +38,7 @@ Important notes:
    This interface has a fullscreen controller and simplified preferences.
    This interface lacks the "Streaming Wizard" that used to be present in VLC
    0.8.6, but provides basic profiles.
+ * The behavior of --sout-keep was changed. It's now activated by default.
  * The marq, mosaic and logo commands in the rc interface changed. They
    now require a target name as their first argument. Example:
    vlc --sub-filter "marq@test{marquee=Hello}" -I rc <somevideo>
