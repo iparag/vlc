@@ -10,6 +10,8 @@
 
 #include <stdint.h>
 
+#include <math.h>
+
 static inline float undenormalise( float f )
 {
     if( fpclassify( f ) == FP_SUBNORMAL  )
