@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.8.6b1\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-11 17:27-0700\n"
+"POT-Creation-Date: 2008-09-13 23:53-0700\n"
 "PO-Revision-Date: 2007-05-01 15:55+0330\n"
 "Last-Translator: Meelad Zakaria <meelad@farsiweb.info>\n"
 "Language-Team: Persian\n"
@@ -77,7 +77,7 @@ msgid "Hotkeys settings"
 msgstr "تنظیمات میان‌برها"
 
 #: include/vlc_config_cat.h:54 src/input/es_out.c:2063
-#: src/libvlc-module.c:1431 modules/gui/beos/InterfaceWindow.cpp:283
+#: src/libvlc-module.c:1432 modules/gui/beos/InterfaceWindow.cpp:283
 #: modules/gui/macosx/intf.m:550 modules/gui/macosx/output.m:170
 #: modules/gui/macosx/playlistinfo.m:110 modules/gui/macosx/simple_prefs.m:177
 #: modules/gui/macosx/wizard.m:378
@@ -96,7 +96,7 @@ msgid "General audio settings"
 msgstr "تنظیمات عمومی صدا"
 
 #: include/vlc_config_cat.h:60 include/vlc_config_cat.h:85
-#: src/video_output/video_output.c:485
+#: src/video_output/video_output.c:486
 msgid "Filters"
 msgstr "صافی‌ها"
 
@@ -121,7 +121,7 @@ msgstr "پیمانه‌های خروجی"
 msgid "These are general settings for audio output modules."
 msgstr "اینها تنظیمات عمومی پیمانه‌های خروجی صدا هستند."
 
-#: include/vlc_config_cat.h:71 src/libvlc-module.c:1834
+#: include/vlc_config_cat.h:71 src/libvlc-module.c:1835
 #: modules/gui/qt4/ui/sout.ui:895 modules/stream_out/transcode.c:231
 msgid "Miscellaneous"
 msgstr "متفرقه"
@@ -131,7 +131,7 @@ msgid "Miscellaneous audio settings and modules."
 msgstr "تنظیمات و پیمانه‌های صوتی متفرقه"
 
 #: include/vlc_config_cat.h:75 src/input/es_out.c:2091
-#: src/libvlc-module.c:1481 modules/gui/macosx/intf.m:563
+#: src/libvlc-module.c:1482 modules/gui/macosx/intf.m:563
 #: modules/gui/macosx/output.m:160 modules/gui/macosx/playlistinfo.m:99
 #: modules/gui/macosx/simple_prefs.m:181 modules/gui/macosx/wizard.m:379
 #: modules/gui/qt4/components/info_panels.cpp:508
@@ -242,7 +242,7 @@ msgstr "تنظیمات کدگذارها و کدگشاهای صدا+تصویر و
 msgid "General input settings. Use with care."
 msgstr "تنظیمات عمومی ورودی. با احتیاط استفاده شود."
 
-#: include/vlc_config_cat.h:131 src/libvlc-module.c:1760
+#: include/vlc_config_cat.h:131 src/libvlc-module.c:1761
 msgid "Stream output"
 msgstr "خروجی جاری"
 
@@ -331,7 +331,7 @@ msgstr "ویدئوی درخواستی"
 msgid "VLC's implementation of Video On Demand"
 msgstr "پیاده‌سازی ویدئوی درخواستی برای وی‌ال‌سی"
 
-#: include/vlc_config_cat.h:182 src/libvlc-module.c:1902
+#: include/vlc_config_cat.h:182 src/libvlc-module.c:1901
 #: src/playlist/engine.c:113 modules/demux/playlist/playlist.c:66
 #: modules/demux/playlist/playlist.c:67
 #: modules/gui/beos/InterfaceWindow.cpp:232
@@ -368,7 +368,7 @@ msgstr ""
 "پیمانه‌های کشف سرویس وسایلی هستند که به طور خودکار مواردی به فهرست پخش اضافه "
 "می‌کنند."
 
-#: include/vlc_config_cat.h:193 src/libvlc-module.c:1719
+#: include/vlc_config_cat.h:193 src/libvlc-module.c:1720
 msgid "Advanced"
 msgstr "پیشرفته"
 
@@ -572,7 +572,7 @@ msgstr "ذخیره..."
 msgid "Open Folder..."
 msgstr "باز کردن پرونده..."
 
-#: include/vlc_intf_strings.h:65 src/libvlc-module.c:1121
+#: include/vlc_intf_strings.h:65 src/libvlc-module.c:1122
 msgid "Repeat all"
 msgstr "تکرار همه"
 
@@ -584,7 +584,7 @@ msgstr "تکرار یکی"
 msgid "No repeat"
 msgstr "بدون تکرار"
 
-#: include/vlc_intf_strings.h:69 src/libvlc-module.c:1322
+#: include/vlc_intf_strings.h:69 src/libvlc-module.c:1323
 #: modules/gui/macosx/controls.m:896 modules/gui/macosx/intf.m:537
 msgid "Random"
 msgstr "تصادفی"
@@ -748,7 +748,7 @@ msgstr "حداکثر تعداد صافی‌ها (%Id) استفاده شده اس
 
 #: src/audio_output/input.c:98 src/audio_output/input.c:144
 #: src/input/es_out.c:459 src/libvlc-module.c:562
-#: src/video_output/video_output.c:462 modules/video_filter/postproc.c:222
+#: src/video_output/video_output.c:463 modules/video_filter/postproc.c:222
 msgid "Disable"
 msgstr "خاموش"
 
@@ -839,15 +839,15 @@ msgstr "کلید"
 msgid "boolean"
 msgstr "بولی"
 
-#: src/config/file.c:593 src/libvlc.c:1570
+#: src/config/file.c:593 src/libvlc.c:1574
 msgid "integer"
 msgstr "عدد صحیح"
 
-#: src/config/file.c:602 src/libvlc.c:1599
+#: src/config/file.c:602 src/libvlc.c:1603
 msgid "float"
 msgstr "عدد اعشاری"
 
-#: src/config/file.c:625 src/libvlc.c:1549
+#: src/config/file.c:625 src/libvlc.c:1553
 msgid "string"
 msgstr "رشته"
 
@@ -1269,83 +1269,83 @@ msgstr "حرکت‌های موشی"
 msgid "C"
 msgstr "fa"
 
-#: src/libvlc.c:1133
+#: src/libvlc.c:1137
 msgid ""
 "Running vlc with the default interface. Use 'cvlc' to use vlc without "
 "interface."
 msgstr ""
 
-#: src/libvlc.c:1278
+#: src/libvlc.c:1282
 msgid "To get exhaustive help, use '-H'."
 msgstr ""
 
-#: src/libvlc.c:1614
+#: src/libvlc.c:1618
 msgid " (default enabled)"
 msgstr " (پیش‌فرض روشن)"
 
-#: src/libvlc.c:1615
+#: src/libvlc.c:1619
 msgid " (default disabled)"
 msgstr " (پیش‌فرض خاموش)"
 
-#: src/libvlc.c:1774 src/libvlc.c:1777
+#: src/libvlc.c:1778 src/libvlc.c:1781
 #, fuzzy
 msgid "Note:"
 msgstr "هیچ‌کدام"
 
-#: src/libvlc.c:1775 src/libvlc.c:1778
+#: src/libvlc.c:1779 src/libvlc.c:1782
 msgid "add --advanced to your command line to see advanced options."
 msgstr ""
 
-#: src/libvlc.c:1882
+#: src/libvlc.c:1886
 #, c-format
 msgid "VLC version %s\n"
 msgstr "وی‌ال‌سی نسخهٔ %s\n"
 
-#: src/libvlc.c:1883
+#: src/libvlc.c:1887
 #, c-format
 msgid "Compiled by %s@%s.%s\n"
 msgstr ""
 
-#: src/libvlc.c:1885
+#: src/libvlc.c:1889
 #, c-format
 msgid "Compiler: %s\n"
 msgstr ""
 
-#: src/libvlc.c:1887
+#: src/libvlc.c:1891
 #, c-format
 msgid "Based upon Git commit [%s]\n"
 msgstr ""
 
-#: src/libvlc.c:1923
+#: src/libvlc.c:1927
 msgid ""
 "\n"
 "Dumped content to vlc-help.txt file.\n"
 msgstr ""
 
-#: src/libvlc.c:1943
+#: src/libvlc.c:1947
 msgid ""
 "\n"
 "Press the RETURN key to continue...\n"
 msgstr ""
 
-#: src/libvlc.h:199 src/libvlc-module.c:1325 src/libvlc-module.c:1326
-#: src/libvlc-module.c:2385 src/video_output/vout_intf.c:274
+#: src/libvlc.h:199 src/libvlc-module.c:1326 src/libvlc-module.c:1327
+#: src/libvlc-module.c:2397 src/video_output/vout_intf.c:274
 msgid "Zoom"
 msgstr "زوم"
 
-#: src/libvlc.h:200 src/libvlc-module.c:1251 src/video_output/vout_intf.c:169
+#: src/libvlc.h:200 src/libvlc-module.c:1252 src/video_output/vout_intf.c:169
 msgid "1:4 Quarter"
 msgstr "۱:۴ ربع"
 
-#: src/libvlc.h:201 src/libvlc-module.c:1252 src/video_output/vout_intf.c:170
+#: src/libvlc.h:201 src/libvlc-module.c:1253 src/video_output/vout_intf.c:170
 msgid "1:2 Half"
 msgstr "۱:۲ نصف"
 
-#: src/libvlc.h:202 src/libvlc-module.c:1253 src/video_output/vout_intf.c:171
+#: src/libvlc.h:202 src/libvlc-module.c:1254 src/video_output/vout_intf.c:171
 msgid "1:1 Original"
 msgstr "۱:۱ اصلی"
 
-#: src/libvlc.h:203 src/libvlc-module.c:1254 src/video_output/vout_intf.c:172
+#: src/libvlc.h:203 src/libvlc-module.c:1255 src/video_output/vout_intf.c:172
 msgid "2:1 Double"
 msgstr "۲:۱ دو برابر"
 
@@ -2603,7 +2603,7 @@ msgstr ""
 msgid "You can completely disable the sub-picture processing."
 msgstr ""
 
-#: src/libvlc-module.c:688 src/libvlc-module.c:1586 src/text/iso-639_def.h:143
+#: src/libvlc-module.c:688 src/libvlc-module.c:1587 src/text/iso-639_def.h:143
 #: modules/gui/macosx/simple_prefs.m:278
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:22
 #: modules/stream_out/transcode.c:227
@@ -3281,7 +3281,7 @@ msgstr "ثبت همهٔ پیغام‌های وی‌ال‌سی در syslog (بر
 msgid "Allow only one running instance"
 msgstr "فقط یک نمونه اجرا شود"
 
-#: src/libvlc-module.c:1046
+#: src/libvlc-module.c:1047
 msgid ""
 "Allowing only one running instance of VLC can sometimes be useful, for "
 "example if you associated VLC with some media types and you don't want a new "
@@ -3309,29 +3309,29 @@ msgstr ""
 "پرونده‌ای دو بار کلیک می‌کنید یک وی‌ال‌سی جدید باز شود. با این گزینه می‌توانید "
 "پرونده را با همان وی‌ال‌سی در حال اجرا پخش کنید."
 
-#: src/libvlc-module.c:1062
+#: src/libvlc-module.c:1063
 msgid "VLC is started from file association"
 msgstr "وی‌ال‌سی به دلیل اتحاد با پرونده آغاز می‌شود"
 
-#: src/libvlc-module.c:1064
+#: src/libvlc-module.c:1065
 msgid "Tell VLC that it is being launched due to a file association in the OS"
 msgstr ""
 "به وی‌ال‌سی گفته شود به دلیل اتحادش با یک نوع پرونده در سیستم‌عامل راه‌اندازی "
 "می‌شود"
 
-#: src/libvlc-module.c:1067
+#: src/libvlc-module.c:1068
 msgid "One instance when started from file"
 msgstr "یک نمونه هنگام آغاز از پرونده"
 
-#: src/libvlc-module.c:1069
+#: src/libvlc-module.c:1070
 msgid "Allow only one running instance when started from file."
 msgstr "هنگامی که از پرونده آغاز می‌شود فقط یک نمونه از برنامه اجرا شود."
 
-#: src/libvlc-module.c:1071
+#: src/libvlc-module.c:1072
 msgid "Increase the priority of the process"
 msgstr "افزایش اولویت فراروند"
 
-#: src/libvlc-module.c:1073
+#: src/libvlc-module.c:1074
 msgid ""
 "Increasing the priority of the process will very likely improve your playing "
 "experience as it allows VLC not to be disturbed by other applications that "
@@ -3341,57 +3341,57 @@ msgid ""
 "machine."
 msgstr ""
 
-#: src/libvlc-module.c:1081
+#: src/libvlc-module.c:1082
 msgid "Enqueue items to playlist when in one instance mode"
 msgstr ""
 
-#: src/libvlc-module.c:1083
+#: src/libvlc-module.c:1084
 msgid ""
 "When using the one instance only option, enqueue items to playlist and keep "
 "playing current item."
 msgstr ""
 
-#: src/libvlc-module.c:1092
+#: src/libvlc-module.c:1093
 msgid ""
 "These options define the behavior of the playlist. Some of them can be "
 "overridden in the playlist dialog box."
 msgstr ""
 
-#: src/libvlc-module.c:1095
+#: src/libvlc-module.c:1096
 msgid "Automatically preparse files"
 msgstr ""
 
-#: src/libvlc-module.c:1097
+#: src/libvlc-module.c:1098
 msgid ""
 "Automatically preparse files added to the playlist (to retrieve some "
 "metadata)."
 msgstr ""
 
-#: src/libvlc-module.c:1100
+#: src/libvlc-module.c:1101
 msgid "Album art policy"
 msgstr ""
 
-#: src/libvlc-module.c:1102
+#: src/libvlc-module.c:1103
 msgid "Choose how album art will be downloaded."
 msgstr ""
 
-#: src/libvlc-module.c:1108
+#: src/libvlc-module.c:1109
 msgid "Manual download only"
 msgstr ""
 
-#: src/libvlc-module.c:1109
+#: src/libvlc-module.c:1110
 msgid "When track starts playing"
 msgstr ""
 
-#: src/libvlc-module.c:1110
+#: src/libvlc-module.c:1111
 msgid "As soon as track is added"
 msgstr ""
 
-#: src/libvlc-module.c:1112
+#: src/libvlc-module.c:1113
 msgid "Services discovery modules"
 msgstr "پیمانه‌های تشخیص سرویس‌ها"
 
-#: src/libvlc-module.c:1114
+#: src/libvlc-module.c:1115
 msgid ""
 "Specifies the services discovery modules to load, separated by semi-colons. "
 "Typical values are sap, hal, ..."
@@ -3399,72 +3399,72 @@ msgstr ""
 "پیمانه‌های تشخیص سرویسی که بار شوند را، که با نقطه ویرگول از یکدیگر جدا "
 "شده‌اند، مشخص می‌کند.مقادیر معمول عبارتند از sap، ‏hal، ..."
 
-#: src/libvlc-module.c:1117
+#: src/libvlc-module.c:1118
 msgid "Play files randomly forever"
 msgstr "پخش تصادفی پرونده‌ها برای همیشه"
 
-#: src/libvlc-module.c:1119
+#: src/libvlc-module.c:1120
 msgid "VLC will randomly play files in the playlist until interrupted."
 msgstr ""
 "وی‌ال‌سی پرونده‌های موجود در فهرست پخش را به صورت تصادفی پخش می‌کند تا زمانی که "
 "متوقف شود."
 
-#: src/libvlc-module.c:1123
+#: src/libvlc-module.c:1124
 msgid "VLC will keep playing the playlist indefinitely."
 msgstr "وی‌ال‌سی موارد فهرست پخش را به دفعات نامحدود پخش خواهد کرد."
 
-#: src/libvlc-module.c:1125
+#: src/libvlc-module.c:1126
 msgid "Repeat current item"
 msgstr "تکرار همین مورد"
 
-#: src/libvlc-module.c:1127
+#: src/libvlc-module.c:1128
 msgid "VLC will keep playing the current playlist item."
 msgstr "وی‌ال‌سی به پخش همین مورد از فهرست پخش ادامه می‌دهد."
 
-#: src/libvlc-module.c:1129
+#: src/libvlc-module.c:1130
 msgid "Play and stop"
 msgstr "پخش و توقف"
 
-#: src/libvlc-module.c:1131
+#: src/libvlc-module.c:1132
 msgid "Stop the playlist after each played playlist item."
 msgstr "توقف فهرست پخش پس از پخش هر یک از موارد فهرست پخش."
 
-#: src/libvlc-module.c:1133
+#: src/libvlc-module.c:1134
 msgid "Play and exit"
 msgstr "پخش و خروج"
 
-#: src/libvlc-module.c:1135
+#: src/libvlc-module.c:1136
 msgid "Exit if there are no more items in the playlist."
 msgstr "وقتی مورد دیگری در فهرست پخش نیست خارج شود."
 
-#: src/libvlc-module.c:1137
+#: src/libvlc-module.c:1138
 #, fuzzy
 msgid "Use media library"
 msgstr "افزودن به کتابخانه"
 
-#: src/libvlc-module.c:1139
+#: src/libvlc-module.c:1140
 msgid ""
 "The media library is automatically saved and reloaded each time you start "
 "VLC."
 msgstr ""
 
-#: src/libvlc-module.c:1142
+#: src/libvlc-module.c:1143
 #, fuzzy
 msgid "Display playlist tree"
 msgstr "مورد بعدی فهرست پخش"
 
-#: src/libvlc-module.c:1144
+#: src/libvlc-module.c:1145
 msgid ""
 "The playlist can use a tree to categorize some items, like the contents of a "
 "directory."
 msgstr ""
 
-#: src/libvlc-module.c:1153
+#: src/libvlc-module.c:1154
 msgid "These settings are the global VLC key bindings, known as \"hotkeys\"."
 msgstr ""
 "این تنظیمات مقیدسازی‌های کلیدی سراسری وی‌ال‌سی هستند که «میان‌بر» نامیده می‌شوند."
 
-#: src/libvlc-module.c:1156 src/video_output/vout_intf.c:415
+#: src/libvlc-module.c:1157 src/video_output/vout_intf.c:415
 #: modules/gui/beos/VideoOutput.cpp:1058 modules/gui/macosx/controls.m:435
 #: modules/gui/macosx/controls.m:489 modules/gui/macosx/controls.m:938
 #: modules/gui/macosx/controls.m:969 modules/gui/macosx/embeddedwindow.m:50
@@ -3474,65 +3474,65 @@ msgstr ""
 msgid "Fullscreen"
 msgstr "تمام‌صفحه"
 
-#: src/libvlc-module.c:1157
+#: src/libvlc-module.c:1158
 msgid "Select the hotkey to use to swap fullscreen state."
 msgstr "میان‌بر مورد استفاده برای تعویض حالت پخش تمام‌صفحه را انتخاب کنید."
 
-#: src/libvlc-module.c:1158
+#: src/libvlc-module.c:1159
 #, fuzzy
 msgid "Leave fullscreen"
 msgstr "تمام‌صفحه"
 
-#: src/libvlc-module.c:1159
+#: src/libvlc-module.c:1160
 #, fuzzy
 msgid "Select the hotkey to use to leave fullscreen state."
 msgstr "میان‌بر مورد استفاده برای تعویض حالت پخش تمام‌صفحه را انتخاب کنید."
 
-#: src/libvlc-module.c:1160
+#: src/libvlc-module.c:1161
 msgid "Play/Pause"
 msgstr "پخش/مکث"
 
-#: src/libvlc-module.c:1161
+#: src/libvlc-module.c:1162
 msgid "Select the hotkey to use to swap paused state."
 msgstr "میان‌بر مورد استفاده برای تعویض وضعیت مکث را انتخاب کنید."
 
-#: src/libvlc-module.c:1162
+#: src/libvlc-module.c:1163
 msgid "Pause only"
 msgstr "فقط مکث"
 
-#: src/libvlc-module.c:1163
+#: src/libvlc-module.c:1164
 msgid "Select the hotkey to use to pause."
 msgstr "میان‌بر مورد استفاده برای مکث را انتخاب کنید."
 
-#: src/libvlc-module.c:1164
+#: src/libvlc-module.c:1165
 msgid "Play only"
 msgstr "فقط پخش"
 
-#: src/libvlc-module.c:1165
+#: src/libvlc-module.c:1166
 msgid "Select the hotkey to use to play."
 msgstr "میان‌بر مورد استفاده برای پخش را انتخاب کنید."
 
-#: src/libvlc-module.c:1166 modules/control/hotkeys.c:695
+#: src/libvlc-module.c:1167 modules/control/hotkeys.c:695
 #: modules/gui/macosx/controls.m:868 modules/gui/macosx/intf.m:533
 #: modules/gui/qt4/components/interface_widgets.cpp:537
 msgid "Faster"
 msgstr "سریع‌تر"
 
-#: src/libvlc-module.c:1167
+#: src/libvlc-module.c:1168
 msgid "Select the hotkey to use for fast forward playback."
 msgstr "میان‌بر مورد استفاده برای پخش با حرکت سریع را انتخاب کنید."
 
-#: src/libvlc-module.c:1168 modules/control/hotkeys.c:701
+#: src/libvlc-module.c:1169 modules/control/hotkeys.c:701
 #: modules/gui/macosx/controls.m:869 modules/gui/macosx/intf.m:534
 #: modules/gui/qt4/components/interface_widgets.cpp:531
 msgid "Slower"
 msgstr "آهسته‌تر"
 
-#: src/libvlc-module.c:1169
+#: src/libvlc-module.c:1170
 msgid "Select the hotkey to use for slow motion playback."
 msgstr "میان‌بر مورد استفاده برای پخش با حرکت آهسته را انتخاب کنید."
 
-#: src/libvlc-module.c:1170 modules/control/hotkeys.c:678
+#: src/libvlc-module.c:1171 modules/control/hotkeys.c:678
 #: modules/gui/macosx/about.m:190 modules/gui/macosx/controls.m:889
 #: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:536
 #: modules/gui/macosx/intf.m:612 modules/gui/macosx/intf.m:620
@@ -3542,12 +3542,12 @@ msgstr "میان‌بر مورد استفاده برای پخش با حرکت آ
 msgid "Next"
 msgstr "بعدی"
 
-#: src/libvlc-module.c:1171
+#: src/libvlc-module.c:1172
 msgid "Select the hotkey to use to skip to the next item in the playlist."
 msgstr ""
 "میان‌بر مورد استفاده برای گذشتن از مورد بعدی در فهرست پخش را انتخاب کنید."
 
-#: src/libvlc-module.c:1172 modules/control/hotkeys.c:684
+#: src/libvlc-module.c:1173 modules/control/hotkeys.c:684
 #: modules/gui/macosx/about.m:191 modules/gui/macosx/controls.m:888
 #: modules/gui/macosx/intf.m:485 modules/gui/macosx/intf.m:535
 #: modules/gui/macosx/intf.m:613 modules/gui/macosx/intf.m:619
@@ -3555,12 +3555,12 @@ msgstr ""
 msgid "Previous"
 msgstr "قبلی"
 
-#: src/libvlc-module.c:1173
+#: src/libvlc-module.c:1174
 msgid "Select the hotkey to use to skip to the previous item in the playlist."
 msgstr ""
 "میان‌بر مورد استفاده برای گذشتن از مورد قبلی در فهرست پخش را انتخاب کنید."
 
-#: src/libvlc-module.c:1174 modules/control/rc.c:77
+#: src/libvlc-module.c:1175 modules/control/rc.c:77
 #: modules/gui/macosx/controls.m:880 modules/gui/macosx/intf.m:488
 #: modules/gui/macosx/intf.m:532 modules/gui/macosx/intf.m:611
 #: modules/gui/macosx/intf.m:618 modules/gui/pda/pda_interface.c:272
@@ -3569,11 +3569,11 @@ msgstr ""
 msgid "Stop"
 msgstr "توقف"
 
-#: src/libvlc-module.c:1175
+#: src/libvlc-module.c:1176
 msgid "Select the hotkey to stop playback."
 msgstr "میان‌بر مورد استفاده برای توقف پخش را انتخاب کنید."
 
-#: src/libvlc-module.c:1176 modules/gui/fbosd.c:129 modules/gui/fbosd.c:197
+#: src/libvlc-module.c:1177 modules/gui/fbosd.c:129 modules/gui/fbosd.c:197
 #: modules/gui/macosx/bookmarks.m:96 modules/gui/macosx/bookmarks.m:105
 #: modules/gui/macosx/embeddedwindow.m:52 modules/gui/macosx/intf.m:493
 #: modules/gui/qt4/ui/video_effects.ui:779 modules/video_filter/marq.c:153
@@ -3581,621 +3581,621 @@ msgstr "میان‌بر مورد استفاده برای توقف پخش را ا
 msgid "Position"
 msgstr "موقعیت"
 
-#: src/libvlc-module.c:1177
+#: src/libvlc-module.c:1178
 msgid "Select the hotkey to display the position."
 msgstr "میان‌بر نمایش موقعیت را انتخاب کنید."
 
-#: src/libvlc-module.c:1179
+#: src/libvlc-module.c:1180
 msgid "Very short backwards jump"
 msgstr "پرش بسیار کوتاه به عقب"
 
-#: src/libvlc-module.c:1181
+#: src/libvlc-module.c:1182
 msgid "Select the hotkey to make a very short backwards jump."
 msgstr "میان‌بر پرش بسیار کوتاه به عقب را انتخاب کنید."
 
-#: src/libvlc-module.c:1182
+#: src/libvlc-module.c:1183
 msgid "Short backwards jump"
 msgstr "پرش کوتاه به عقب"
 
-#: src/libvlc-module.c:1184
+#: src/libvlc-module.c:1185
 msgid "Select the hotkey to make a short backwards jump."
 msgstr "میان‌بر پرش کوتاه به عقب را انتخاب کنید."
 
-#: src/libvlc-module.c:1185
+#: src/libvlc-module.c:1186
 msgid "Medium backwards jump"
 msgstr "پرش متوسط به عقب"
 
-#: src/libvlc-module.c:1187
+#: src/libvlc-module.c:1188
 msgid "Select the hotkey to make a medium backwards jump."
 msgstr "میان‌بر پرش متوسط رو به عقب را انتخاب کنید."
 
-#: src/libvlc-module.c:1188
+#: src/libvlc-module.c:1189
 msgid "Long backwards jump"
 msgstr "پرش بلند به عقب"
 
-#: src/libvlc-module.c:1190
+#: src/libvlc-module.c:1191
 msgid "Select the hotkey to make a long backwards jump."
 msgstr "میان‌بر پرش بلند به عقب را انتخاب کنید."
 
-#: src/libvlc-module.c:1192
+#: src/libvlc-module.c:1193
 msgid "Very short forward jump"
 msgstr "پرش بسیار کوتاه به جلو"
 
-#: src/libvlc-module.c:1194
+#: src/libvlc-module.c:1195
 msgid "Select the hotkey to make a very short forward jump."
 msgstr "میان‌بر پرش بسیار کوتاه به جلو را انتخاب کنید."
 
-#: src/libvlc-module.c:1195
+#: src/libvlc-module.c:1196
 msgid "Short forward jump"
 msgstr "پرش کوتاه به جلو"
 
-#: src/libvlc-module.c:1197
+#: src/libvlc-module.c:1198
 msgid "Select the hotkey to make a short forward jump."
 msgstr "میان‌بر پرش کوتاه به جلو را انتخاب کنید."
 
-#: src/libvlc-module.c:1198
+#: src/libvlc-module.c:1199
 msgid "Medium forward jump"
 msgstr "پرش متوسط به جلو"
 
-#: src/libvlc-module.c:1200
+#: src/libvlc-module.c:1201
 msgid "Select the hotkey to make a medium forward jump."
 msgstr "میان‌بر پرش متوسط به جلو را انتخاب کنید."
 
-#: src/libvlc-module.c:1201
+#: src/libvlc-module.c:1202
 msgid "Long forward jump"
 msgstr "پرش بلند به جلو"
 
-#: src/libvlc-module.c:1203
+#: src/libvlc-module.c:1204
 msgid "Select the hotkey to make a long forward jump."
 msgstr "میان‌بر پرش بلند به جلو را انتخاب کنید."
 
-#: src/libvlc-module.c:1205
+#: src/libvlc-module.c:1206
 msgid "Very short jump length"
 msgstr "طول پرش بسیار کوتاه"
 
-#: src/libvlc-module.c:1206
+#: src/libvlc-module.c:1207
 msgid "Very short jump length, in seconds."
 msgstr "طول پرش بسیار کوتاه، به ثانیه."
 
-#: src/libvlc-module.c:1207
+#: src/libvlc-module.c:1208
 msgid "Short jump length"
 msgstr "طول پرش کوتاه"
 
-#: src/libvlc-module.c:1208
+#: src/libvlc-module.c:1209
 msgid "Short jump length, in seconds."
 msgstr "طول پرش کوتاه، به ثانیه."
 
-#: src/libvlc-module.c:1209
+#: src/libvlc-module.c:1210
 msgid "Medium jump length"
 msgstr "طول پرش متوسط"
 
-#: src/libvlc-module.c:1210
+#: src/libvlc-module.c:1211
 msgid "Medium jump length, in seconds."
 msgstr "طول پرش متوسط، به ثانیه."
 
-#: src/libvlc-module.c:1211
+#: src/libvlc-module.c:1212
 msgid "Long jump length"
 msgstr "طول پرش بلند"
 
-#: src/libvlc-module.c:1212
+#: src/libvlc-module.c:1213
 msgid "Long jump length, in seconds."
 msgstr "طول پرش بلند، به ثانیه"
 
-#: src/libvlc-module.c:1214 modules/control/hotkeys.c:189
+#: src/libvlc-module.c:1215 modules/control/hotkeys.c:189
 #: modules/gui/beos/InterfaceWindow.cpp:277 modules/gui/macosx/intf.m:449
 #: modules/gui/qt4/menus.cpp:696 modules/gui/skins2/commands/cmd_quit.cpp:40
 msgid "Quit"
 msgstr "خروج"
 
-#: src/libvlc-module.c:1215
+#: src/libvlc-module.c:1216
 msgid "Select the hotkey to quit the application."
 msgstr "میان‌بر مورد استفاده برای خروج از برنامه را انتخاب کنید."
 
-#: src/libvlc-module.c:1216
+#: src/libvlc-module.c:1217
 msgid "Navigate up"
 msgstr "ناوش به بالا"
 
-#: src/libvlc-module.c:1217
+#: src/libvlc-module.c:1218
 msgid "Select the key to move the selector up in DVD menus."
 msgstr ""
 "میان‌بر مورد استفاده برای بالا بردن مکان‌نما در منوی دی‌وی‌دی را انتخاب کنید."
 
-#: src/libvlc-module.c:1218
+#: src/libvlc-module.c:1219
 msgid "Navigate down"
 msgstr "ناوش به پایین"
 
-#: src/libvlc-module.c:1219
+#: src/libvlc-module.c:1220
 msgid "Select the key to move the selector down in DVD menus."
 msgstr ""
 "میان‌بر مورد استفاده برای پایین بردن مکان‌نما در منوی دی‌وی‌دی را انتخاب کنید."
 
-#: src/libvlc-module.c:1220
+#: src/libvlc-module.c:1221
 msgid "Navigate left"
 msgstr "ناوش به چپ"
 
-#: src/libvlc-module.c:1221
+#: src/libvlc-module.c:1222
 msgid "Select the key to move the selector left in DVD menus."
 msgstr ""
 "میان‌بر مورد استفاده برای بردن مکان‌نما به چپ در منوی دی‌وی‌دی را انتخاب کنید."
 
-#: src/libvlc-module.c:1222
+#: src/libvlc-module.c:1223
 msgid "Navigate right"
 msgstr "ناوش به راست"
 
-#: src/libvlc-module.c:1223
+#: src/libvlc-module.c:1224
 msgid "Select the key to move the selector right in DVD menus."
 msgstr ""
 "میان‌بر مورد استفاده برای بردن مکان‌نما به راست در منوی دی‌وی‌دی را انتخاب کنید."
 
-#: src/libvlc-module.c:1224
+#: src/libvlc-module.c:1225
 msgid "Activate"
 msgstr "فعال‌سازی"
 
-#: src/libvlc-module.c:1225
+#: src/libvlc-module.c:1226
 msgid "Select the key to activate selected item in DVD menus."
 msgstr "میان‌بر مورد استفاده برای فعال‌سازی مورد در منوی دی‌وی‌دی را انتخاب کنید."
 
-#: src/libvlc-module.c:1226
+#: src/libvlc-module.c:1227
 msgid "Go to the DVD menu"
 msgstr "رفتن به منوی دی‌وی‌دی"
 
-#: src/libvlc-module.c:1227
+#: src/libvlc-module.c:1228
 msgid "Select the key to take you to the DVD menu"
 msgstr "میان‌بر مورد استفاده برای رفتن به منوی دی‌وی‌دی را انتخاب کنید"
 
-#: src/libvlc-module.c:1228
+#: src/libvlc-module.c:1229
 msgid "Select previous DVD title"
 msgstr "انتخاب عنوان دی‌وی‌دی قبلی"
 
-#: src/libvlc-module.c:1229
+#: src/libvlc-module.c:1230
 msgid "Select the key to choose the previous title from the DVD"
 msgstr "کلید انتخاب عنوان قبلی در دی‌وی‌دی را انتخاب کنید"
 
-#: src/libvlc-module.c:1230
+#: src/libvlc-module.c:1231
 msgid "Select next DVD title"
 msgstr "عنوان دی‌وی‌دی بعدی را انتخاب کنید"
 
-#: src/libvlc-module.c:1231
+#: src/libvlc-module.c:1232
 msgid "Select the key to choose the next title from the DVD"
 msgstr "کلید انتخاب عنوان بعدی در دی‌وی‌دی را انتخاب کنید"
 
-#: src/libvlc-module.c:1232
+#: src/libvlc-module.c:1233
 msgid "Select prev DVD chapter"
 msgstr "انتخاب فصل قبل دی‌وی‌دی"
 
-#: src/libvlc-module.c:1233
+#: src/libvlc-module.c:1234
 msgid "Select the key to choose the previous chapter from the DVD"
 msgstr "کلید انتخاب فصل قبلی دی‌وی‌دی را انتخاب کنید"
 
-#: src/libvlc-module.c:1234
+#: src/libvlc-module.c:1235
 msgid "Select next DVD chapter"
 msgstr "انتخاب فصل بعدی دی‌وی‌دی"
 
-#: src/libvlc-module.c:1235
+#: src/libvlc-module.c:1236
 msgid "Select the key to choose the next chapter from the DVD"
 msgstr "کلید انتخاب فصل بعدی دی‌وی‌دی را انتخاب کنید."
 
-#: src/libvlc-module.c:1236
+#: src/libvlc-module.c:1237
 msgid "Volume up"
 msgstr "زیاد کردن صدا"
 
-#: src/libvlc-module.c:1237
+#: src/libvlc-module.c:1238
 msgid "Select the key to increase audio volume."
 msgstr "کلید زیاد کردن صدا را انتخاب کنید."
 
-#: src/libvlc-module.c:1238
+#: src/libvlc-module.c:1239
 msgid "Volume down"
 msgstr "کم کردن صدا"
 
-#: src/libvlc-module.c:1239
+#: src/libvlc-module.c:1240
 msgid "Select the key to decrease audio volume."
 msgstr "کلید کم کردن صدا را انتخاب کنید."
 
-#: src/libvlc-module.c:1240 modules/access/v4l2/v4l2.c:195
+#: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:195
 #: modules/gui/macosx/controls.m:928 modules/gui/macosx/intf.m:553
 #: modules/gui/macosx/intf.m:614 modules/gui/macosx/intf.m:623
 #: modules/gui/qt4/components/interface_widgets.cpp:903
 msgid "Mute"
 msgstr "بی‌صدا"
 
-#: src/libvlc-module.c:1241
+#: src/libvlc-module.c:1242
 msgid "Select the key to mute audio."
 msgstr "کلید قطع صدا را انتخاب کنید."
 
-#: src/libvlc-module.c:1242
+#: src/libvlc-module.c:1243
 msgid "Subtitle delay up"
 msgstr "زیاد کردن تأخیر زیرنویس"
 
-#: src/libvlc-module.c:1243
+#: src/libvlc-module.c:1244
 msgid "Select the key to increase the subtitle delay."
 msgstr "کلید افزایش تأخیر زیرنویس را انتخاب کنید."
 
-#: src/libvlc-module.c:1244
+#: src/libvlc-module.c:1245
 msgid "Subtitle delay down"
 msgstr "کم کردن تأخیر زیرنویس"
 
-#: src/libvlc-module.c:1245
+#: src/libvlc-module.c:1246
 msgid "Select the key to decrease the subtitle delay."
 msgstr "کلید کاهش تأخیر زیرنویس را انتخاب کنید."
 
-#: src/libvlc-module.c:1246
+#: src/libvlc-module.c:1247
 msgid "Audio delay up"
 msgstr "زیاد کردن تأخیر صدا"
 
-#: src/libvlc-module.c:1247
+#: src/libvlc-module.c:1248
 msgid "Select the key to increase the audio delay."
 msgstr "کلید افزایش تأخیر صدا را انتخاب کنید."
 
-#: src/libvlc-module.c:1248
+#: src/libvlc-module.c:1249
 msgid "Audio delay down"
 msgstr "کم کردن تأخیر صدا"
 
-#: src/libvlc-module.c:1249
+#: src/libvlc-module.c:1250
 msgid "Select the key to decrease the audio delay."
 msgstr "کلید کاهش تأخیر صدا را وارد کنید."
 
-#: src/libvlc-module.c:1256
+#: src/libvlc-module.c:1257
 msgid "Play playlist bookmark 1"
 msgstr "پخش نشانک ۱ فهرست پخش"
 
-#: src/libvlc-module.c:1257
+#: src/libvlc-module.c:1258
 msgid "Play playlist bookmark 2"
 msgstr "پخش نشانک ۲ فهرست پخش"
 
-#: src/libvlc-module.c:1258
+#: src/libvlc-module.c:1259
 msgid "Play playlist bookmark 3"
 msgstr "پخش نشانک ۳ فهرست پخش"
 
-#: src/libvlc-module.c:1259
+#: src/libvlc-module.c:1260
 msgid "Play playlist bookmark 4"
 msgstr "پخش نشانک ۴ فهرست پخش"
 
-#: src/libvlc-module.c:1260
+#: src/libvlc-module.c:1261
 msgid "Play playlist bookmark 5"
 msgstr "پخش نشانک ۵ فهرست پخش"
 
-#: src/libvlc-module.c:1261
+#: src/libvlc-module.c:1262
 msgid "Play playlist bookmark 6"
 msgstr "پخش نشانک ۶ فهرست پخش"
 
-#: src/libvlc-module.c:1262
+#: src/libvlc-module.c:1263
 msgid "Play playlist bookmark 7"
 msgstr "پخش نشانک ۷ فهرست پخش"
 
-#: src/libvlc-module.c:1263
+#: src/libvlc-module.c:1264
 msgid "Play playlist bookmark 8"
 msgstr "پخش نشانک ۸ فهرست پخش"
 
-#: src/libvlc-module.c:1264
+#: src/libvlc-module.c:1265
 msgid "Play playlist bookmark 9"
 msgstr "پخش نشانک ۹ فهرست پخش"
 
-#: src/libvlc-module.c:1265
+#: src/libvlc-module.c:1266
 msgid "Play playlist bookmark 10"
 msgstr "پخش نشانک ۱۰ فهرست پخش"
 
-#: src/libvlc-module.c:1266
+#: src/libvlc-module.c:1267
 msgid "Select the key to play this bookmark."
 msgstr "کلید پخش این نشانک را انتخاب کنید."
 
-#: src/libvlc-module.c:1267
+#: src/libvlc-module.c:1268
 msgid "Set playlist bookmark 1"
 msgstr "تنظیم نشانک ۱ فهرست پخش"
 
-#: src/libvlc-module.c:1268
+#: src/libvlc-module.c:1269
 msgid "Set playlist bookmark 2"
 msgstr "تنظیم نشانک ۲ فهرست پخش"
 
-#: src/libvlc-module.c:1269
+#: src/libvlc-module.c:1270
 msgid "Set playlist bookmark 3"
 msgstr "تنظیم نشانک ۳ فهرست پخش"
 
-#: src/libvlc-module.c:1270
+#: src/libvlc-module.c:1271
 msgid "Set playlist bookmark 4"
 msgstr "تنظیم نشانک ۴ فهرست پخش"
 
-#: src/libvlc-module.c:1271
+#: src/libvlc-module.c:1272
 msgid "Set playlist bookmark 5"
 msgstr "تنظیم نشانک ۵ فهرست پخش"
 
-#: src/libvlc-module.c:1272
+#: src/libvlc-module.c:1273
 msgid "Set playlist bookmark 6"
 msgstr "تنظیم نشانک ۶ فهرست پخش"
 
-#: src/libvlc-module.c:1273
+#: src/libvlc-module.c:1274
 msgid "Set playlist bookmark 7"
 msgstr "تنظیم نشانک ۷ فهرست پخش"
 
-#: src/libvlc-module.c:1274
+#: src/libvlc-module.c:1275
 msgid "Set playlist bookmark 8"
 msgstr "تنظیم نشانک ۸ فهرست پخش"
 
-#: src/libvlc-module.c:1275
+#: src/libvlc-module.c:1276
 msgid "Set playlist bookmark 9"
 msgstr "تنظیم نشانک ۹ فهرست پخش"
 
-#: src/libvlc-module.c:1276
+#: src/libvlc-module.c:1277
 msgid "Set playlist bookmark 10"
 msgstr "تنظیم نشانک ۱۰ فهرست پخش"
 
-#: src/libvlc-module.c:1277
+#: src/libvlc-module.c:1278
 msgid "Select the key to set this playlist bookmark."
 msgstr "کلید تنظیم این نشانک فهرست پخش را انتخاب کنید."
 
-#: src/libvlc-module.c:1279 modules/control/hotkeys.c:84
+#: src/libvlc-module.c:1280 modules/control/hotkeys.c:84
 msgid "Playlist bookmark 1"
 msgstr "نشانک ۱ فهرست پخش"
 
-#: src/libvlc-module.c:1280 modules/control/hotkeys.c:85
+#: src/libvlc-module.c:1281 modules/control/hotkeys.c:85
 msgid "Playlist bookmark 2"
 msgstr "نشانک ۲ فهرست پخش"
 
-#: src/libvlc-module.c:1281 modules/control/hotkeys.c:86
+#: src/libvlc-module.c:1282 modules/control/hotkeys.c:86
 msgid "Playlist bookmark 3"
 msgstr "نشانک ۳ فهرست پخش"
 
-#: src/libvlc-module.c:1282 modules/control/hotkeys.c:87
+#: src/libvlc-module.c:1283 modules/control/hotkeys.c:87
 msgid "Playlist bookmark 4"
 msgstr "نشانک ۴ فهرست پخش"
 
-#: src/libvlc-module.c:1283 modules/control/hotkeys.c:88
+#: src/libvlc-module.c:1284 modules/control/hotkeys.c:88
 msgid "Playlist bookmark 5"
 msgstr "نشانک ۵ فهرست پخش"
 
-#: src/libvlc-module.c:1284 modules/control/hotkeys.c:89
+#: src/libvlc-module.c:1285 modules/control/hotkeys.c:89
 msgid "Playlist bookmark 6"
 msgstr "نشانک ۶ فهرست پخش"
 
-#: src/libvlc-module.c:1285 modules/control/hotkeys.c:90
+#: src/libvlc-module.c:1286 modules/control/hotkeys.c:90
 msgid "Playlist bookmark 7"
 msgstr "نشانک ۷ فهرست پخش"
 
-#: src/libvlc-module.c:1286 modules/control/hotkeys.c:91
+#: src/libvlc-module.c:1287 modules/control/hotkeys.c:91
 msgid "Playlist bookmark 8"
 msgstr "نشانک ۸ فهرست پخش"
 
-#: src/libvlc-module.c:1287 modules/control/hotkeys.c:92
+#: src/libvlc-module.c:1288 modules/control/hotkeys.c:92
 msgid "Playlist bookmark 9"
 msgstr "نشانک ۹ فهرست پخش"
 
-#: src/libvlc-module.c:1288 modules/control/hotkeys.c:93
+#: src/libvlc-module.c:1289 modules/control/hotkeys.c:93
 msgid "Playlist bookmark 10"
 msgstr "نشانک ۱۰ فهرست پخش"
 
-#: src/libvlc-module.c:1290
+#: src/libvlc-module.c:1291
 msgid "This allows you to define playlist bookmarks."
 msgstr "به این ترتیب می‌توانید نشانک‌های فهرست پخشتان را تعیین کنید."
 
-#: src/libvlc-module.c:1292
+#: src/libvlc-module.c:1293
 msgid "Go back in browsing history"
 msgstr "عقب رفتن در مرور تاریخچه"
 
-#: src/libvlc-module.c:1293
+#: src/libvlc-module.c:1294
 msgid ""
 "Select the key to go back (to the previous media item) in the browsing "
 "history."
 msgstr ""
 "کلید رفتن به عقب (به مورد پخش شدنی قبل) در مرور تاریخچه را انتخاب کنید."
 
-#: src/libvlc-module.c:1294
+#: src/libvlc-module.c:1295
 msgid "Go forward in browsing history"
 msgstr "جلو رفتن در مرور تاریخچه"
 
-#: src/libvlc-module.c:1295
+#: src/libvlc-module.c:1296
 msgid ""
 "Select the key to go forward (to the next media item) in the browsing "
 "history."
 msgstr ""
 "دکمهٔ رفتن به جلو (به مورد پخش شدنی بعد) در مرور تاریخچه را انتخاب کنید."
 
-#: src/libvlc-module.c:1297
+#: src/libvlc-module.c:1298
 msgid "Cycle audio track"
 msgstr "چرخش در شیار صوتی"
 
-#: src/libvlc-module.c:1298
+#: src/libvlc-module.c:1299
 msgid "Cycle through the available audio tracks(languages)."
 msgstr "چرخیدن در شیارهای صوتی (زبان‌های) موجود"
 
-#: src/libvlc-module.c:1299
+#: src/libvlc-module.c:1300
 msgid "Cycle subtitle track"
 msgstr "چرخش در شیار زیرنویس"
 
-#: src/libvlc-module.c:1300
+#: src/libvlc-module.c:1301
 msgid "Cycle through the available subtitle tracks."
 msgstr "چرخیدن در شیارهای زیرنویس موجود."
 
-#: src/libvlc-module.c:1301
+#: src/libvlc-module.c:1302
 msgid "Cycle source aspect ratio"
 msgstr "چرخش در نسبت طول و عرض مبدأ"
 
-#: src/libvlc-module.c:1302
+#: src/libvlc-module.c:1303
 msgid "Cycle through a predefined list of source aspect ratios."
 msgstr "چرخیدن در فهرست از پیش تعیین شدهٔ نسبت‌های طول و عرض مبدأ"
 
-#: src/libvlc-module.c:1303
+#: src/libvlc-module.c:1304
 msgid "Cycle video crop"
 msgstr "چرخش در حاشیه‌گیری ویدئو"
 
-#: src/libvlc-module.c:1304
+#: src/libvlc-module.c:1305
 msgid "Cycle through a predefined list of crop formats."
 msgstr "چرخیدن در فهرست از پیش تعیین شدهٔ قالب‌های حاشیه‌گیری."
 
-#: src/libvlc-module.c:1305
+#: src/libvlc-module.c:1306
 msgid "Cycle deinterlace modes"
 msgstr "چرخش در حالت‌های نادرهم‌بافی"
 
-#: src/libvlc-module.c:1306
+#: src/libvlc-module.c:1307
 msgid "Cycle through deinterlace modes."
 msgstr "چرخیدن در حالت‌های نادرهم‌بافی."
 
-#: src/libvlc-module.c:1307
+#: src/libvlc-module.c:1308
 msgid "Show interface"
 msgstr "نمایش واسط"
 
-#: src/libvlc-module.c:1308
+#: src/libvlc-module.c:1309
 msgid "Raise the interface above all other windows."
 msgstr "آوردن واسط روی بقیهٔ پنجره‌ها."
 
-#: src/libvlc-module.c:1309
+#: src/libvlc-module.c:1310
 msgid "Hide interface"
 msgstr "مخفی کردن واسط"
 
-#: src/libvlc-module.c:1310
+#: src/libvlc-module.c:1311
 msgid "Lower the interface below all other windows."
 msgstr "پایین کشیدن واسط به زیر بقیهٔ پنجره‌ها."
 
-#: src/libvlc-module.c:1311
+#: src/libvlc-module.c:1312
 msgid "Take video snapshot"
 msgstr "عکس گرفتن از ویدئو"
 
-#: src/libvlc-module.c:1312
+#: src/libvlc-module.c:1313
 msgid "Takes a video snapshot and writes it to disk."
 msgstr "یک عکس از ویدئو می‌گیرد و آن را در دیسک ذخیره می‌کند."
 
-#: src/libvlc-module.c:1314 modules/access_filter/record.c:56
+#: src/libvlc-module.c:1315 modules/access_filter/record.c:56
 #: modules/access_filter/record.c:57 modules/gui/macosx/simple_prefs.m:257
 #: modules/gui/qt4/components/interface_widgets.cpp:365
 #: modules/gui/qt4/ui/sprefs_input.ui:194
 msgid "Record"
 msgstr "ضبط"
 
-#: src/libvlc-module.c:1315
+#: src/libvlc-module.c:1316
 msgid "Record access filter start/stop."
 msgstr "آغاز/توقف صافی دسترسی ضبط."
 
-#: src/libvlc-module.c:1316 modules/access_filter/dump.c:54
+#: src/libvlc-module.c:1317 modules/access_filter/dump.c:54
 #: modules/access_filter/dump.c:55 modules/gui/macosx/simple_prefs.m:251
 #: modules/gui/qt4/ui/sprefs_input.ui:201
 msgid "Dump"
 msgstr "تخلیه"
 
-#: src/libvlc-module.c:1317
+#: src/libvlc-module.c:1318
 msgid "Media dump access filter trigger."
 msgstr ""
 
-#: src/libvlc-module.c:1319
+#: src/libvlc-module.c:1320
 msgid "Normal/Repeat/Loop"
 msgstr ""
 
-#: src/libvlc-module.c:1320
+#: src/libvlc-module.c:1321
 msgid "Toggle Normal/Repeat/Loop playlist modes"
 msgstr ""
 
-#: src/libvlc-module.c:1323
+#: src/libvlc-module.c:1324
 msgid "Toggle random playlist playback"
 msgstr ""
 
-#: src/libvlc-module.c:1328 src/libvlc-module.c:1329
+#: src/libvlc-module.c:1329 src/libvlc-module.c:1330
 msgid "Un-Zoom"
 msgstr ""
 
-#: src/libvlc-module.c:1331 src/libvlc-module.c:1332
+#: src/libvlc-module.c:1332 src/libvlc-module.c:1333
 msgid "Crop one pixel from the top of the video"
 msgstr "حاشیه‌گیری به اندازهٔ یک نقطه از لبهٔ بالای ویدئو"
 
-#: src/libvlc-module.c:1333 src/libvlc-module.c:1334
+#: src/libvlc-module.c:1334 src/libvlc-module.c:1335
 msgid "Uncrop one pixel from the top of the video"
 msgstr "لغو حاشیه‌گیری به اندازهٔ یک نقطه از لبهٔ بالای ویدئو"
 
-#: src/libvlc-module.c:1336 src/libvlc-module.c:1337
+#: src/libvlc-module.c:1337 src/libvlc-module.c:1338
 msgid "Crop one pixel from the left of the video"
 msgstr "حاشیه‌گیری به اندازهٔ یک نقطه از لبهٔ چپ ویدئو"
 
-#: src/libvlc-module.c:1338 src/libvlc-module.c:1339
+#: src/libvlc-module.c:1339 src/libvlc-module.c:1340
 msgid "Uncrop one pixel from the left of the video"
 msgstr "برگرداندن حاشیه به اندازهٔ یک نقطه از لبهٔ چپ ویدئو"
 
-#: src/libvlc-module.c:1341 src/libvlc-module.c:1342
+#: src/libvlc-module.c:1342 src/libvlc-module.c:1343
 msgid "Crop one pixel from the bottom of the video"
 msgstr "حاشیه‌گیری به اندازهٔ یک نقطه از لبهٔ پایین ویدئو"
 
-#: src/libvlc-module.c:1343 src/libvlc-module.c:1344
+#: src/libvlc-module.c:1344 src/libvlc-module.c:1345
 msgid "Uncrop one pixel from the bottom of the video"
 msgstr "برگرداندن حاشیه به اندازهٔ یک نقطه از لبهٔ پایین ویدئو"
 
-#: src/libvlc-module.c:1346 src/libvlc-module.c:1347
+#: src/libvlc-module.c:1347 src/libvlc-module.c:1348
 msgid "Crop one pixel from the right of the video"
 msgstr "حاشیه‌گیری به اندازهٔ یک نقطه از لبهٔ راست ویدئو"
 
-#: src/libvlc-module.c:1348 src/libvlc-module.c:1349
+#: src/libvlc-module.c:1349 src/libvlc-module.c:1350
 msgid "Uncrop one pixel from the right of the video"
 msgstr "برگرداندن حاشیه به اندازهٔ یک نقطه از لبهٔ راست ویدئو"
 
-#: src/libvlc-module.c:1351
+#: src/libvlc-module.c:1352
 #, fuzzy
 msgid "Toggle wallpaper mode in video output"
 msgstr "خروجی ویدئو تمام‌صفحه"
 
-#: src/libvlc-module.c:1353
+#: src/libvlc-module.c:1354
 msgid ""
 "Toggle wallpaper mode in video output. Only works with the directx video "
 "output for the time being."
 msgstr ""
 
-#: src/libvlc-module.c:1356 src/libvlc-module.c:1357
+#: src/libvlc-module.c:1357 src/libvlc-module.c:1358
 msgid "Display OSD menu on top of video output"
 msgstr ""
 
-#: src/libvlc-module.c:1358
+#: src/libvlc-module.c:1359
 msgid "Do not display OSD menu on video output"
 msgstr ""
 
-#: src/libvlc-module.c:1359
+#: src/libvlc-module.c:1360
 msgid "Do not display OSD menu on top of video output"
 msgstr ""
 
-#: src/libvlc-module.c:1360
+#: src/libvlc-module.c:1361
 msgid "Highlight widget on the right"
 msgstr ""
 
-#: src/libvlc-module.c:1362
+#: src/libvlc-module.c:1363
 msgid "Move OSD menu highlight to the widget on the right"
 msgstr ""
 
-#: src/libvlc-module.c:1363
+#: src/libvlc-module.c:1364
 msgid "Highlight widget on the left"
 msgstr ""
 
-#: src/libvlc-module.c:1365
+#: src/libvlc-module.c:1366
 msgid "Move OSD menu highlight to the widget on the left"
 msgstr ""
 
-#: src/libvlc-module.c:1366
+#: src/libvlc-module.c:1367
 msgid "Highlight widget on top"
 msgstr ""
 
-#: src/libvlc-module.c:1368
+#: src/libvlc-module.c:1369
 msgid "Move OSD menu highlight to the widget on top"
 msgstr ""
 
-#: src/libvlc-module.c:1369
+#: src/libvlc-module.c:1370
 msgid "Highlight widget below"
 msgstr ""
 
-#: src/libvlc-module.c:1371
+#: src/libvlc-module.c:1372
 msgid "Move OSD menu highlight to the widget below"
 msgstr ""
 
-#: src/libvlc-module.c:1372
+#: src/libvlc-module.c:1373
 #, fuzzy
 msgid "Select current widget"
 msgstr "تکرار همین مورد"
 
-#: src/libvlc-module.c:1374
+#: src/libvlc-module.c:1375
 msgid "Selecting current widget performs the associated action."
 msgstr ""
 
-#: src/libvlc-module.c:1376
+#: src/libvlc-module.c:1377
 #, fuzzy
 msgid "Cycle through audio devices"
 msgstr "چرخیدن در حالت‌های نادرهم‌بافی."
 
-#: src/libvlc-module.c:1377
+#: src/libvlc-module.c:1378
 #, fuzzy
 msgid "Cycle through available audio devices"
 msgstr "چرخیدن در شیارهای صوتی (زبان‌های) موجود"
 
-#: src/libvlc-module.c:1379
+#: src/libvlc-module.c:1380
 #, fuzzy, c-format
 msgid ""
 "Usage: %s [options] [stream] ...\n"
@@ -4264,150 +4264,150 @@ msgstr ""
 "certain time\n"
 "  vlc:quit                       Special item to quit VLC\n"
 
-#: src/libvlc-module.c:1521 src/video_output/vout_intf.c:421
+#: src/libvlc-module.c:1522 src/video_output/vout_intf.c:421
 #: modules/gui/macosx/controls.m:473 modules/gui/macosx/controls.m:937
 #: modules/gui/macosx/intf.m:570 modules/gui/macosx/intf.m:625
 #: modules/video_output/snapshot.c:81
 msgid "Snapshot"
 msgstr "عکس"
 
-#: src/libvlc-module.c:1539
+#: src/libvlc-module.c:1540
 msgid "Window properties"
 msgstr "ویژگی‌های پنجره"
 
-#: src/libvlc-module.c:1587
+#: src/libvlc-module.c:1588
 msgid "Subpictures"
 msgstr ""
 
-#: src/libvlc-module.c:1595 modules/codec/subtitles/subsdec.c:117
+#: src/libvlc-module.c:1596 modules/codec/subtitles/subsdec.c:117
 #: modules/demux/subtitle.c:74 modules/gui/beos/InterfaceWindow.cpp:280
 #: modules/gui/qt4/ui/sout.ui:854 modules/gui/qt4/ui/sout.ui:860
 msgid "Subtitles"
 msgstr "زیرنویس‌ها"
 
-#: src/libvlc-module.c:1612 modules/stream_out/transcode.c:122
+#: src/libvlc-module.c:1613 modules/stream_out/transcode.c:122
 msgid "Overlays"
 msgstr ""
 
-#: src/libvlc-module.c:1620
+#: src/libvlc-module.c:1621
 msgid "Track settings"
 msgstr "تنظیمات شیار"
 
-#: src/libvlc-module.c:1650
+#: src/libvlc-module.c:1651
 msgid "Playback control"
 msgstr "کنترل پخش"
 
-#: src/libvlc-module.c:1671
+#: src/libvlc-module.c:1672
 msgid "Default devices"
 msgstr "دستگاه‌های پیش‌فرض"
 
-#: src/libvlc-module.c:1680
+#: src/libvlc-module.c:1681
 msgid "Network settings"
 msgstr "تنظیمات شبکه"
 
-#: src/libvlc-module.c:1692
+#: src/libvlc-module.c:1693
 msgid "Socks proxy"
 msgstr "پیشکار SOCKS"
 
-#: src/libvlc-module.c:1701
+#: src/libvlc-module.c:1702
 msgid "Metadata"
 msgstr "متاداده"
 
-#: src/libvlc-module.c:1731
+#: src/libvlc-module.c:1732
 msgid "Decoders"
 msgstr "کدگشاها"
 
-#: src/libvlc-module.c:1738 modules/access/v4l2/v4l2.c:92
+#: src/libvlc-module.c:1739 modules/access/v4l2/v4l2.c:92
 #: modules/gui/macosx/playlistinfo.m:93
 #: modules/gui/qt4/components/info_panels.cpp:509
 msgid "Input"
 msgstr "ورودی"
 
-#: src/libvlc-module.c:1778
+#: src/libvlc-module.c:1779
 msgid "VLM"
 msgstr "VLM"
 
-#: src/libvlc-module.c:1811
+#: src/libvlc-module.c:1812
 msgid "CPU"
 msgstr "پردازنده"
 
-#: src/libvlc-module.c:1833
+#: src/libvlc-module.c:1834
 msgid "Special modules"
 msgstr "پیمانه‌های ویژه"
 
-#: src/libvlc-module.c:1839
+#: src/libvlc-module.c:1840
 msgid "Plugins"
 msgstr "متصل شونده‌ها"
 
-#: src/libvlc-module.c:1848
+#: src/libvlc-module.c:1849
 msgid "Performance options"
 msgstr "گزینه‌های کارآیی"
 
-#: src/libvlc-module.c:1998
+#: src/libvlc-module.c:1997
 msgid "Hot keys"
 msgstr "میان‌برها"
 
-#: src/libvlc-module.c:2395
+#: src/libvlc-module.c:2407
 msgid "Jump sizes"
 msgstr "اندازهٔ پرش‌ها"
 
-#: src/libvlc-module.c:2472
+#: src/libvlc-module.c:2484
 msgid "print help for VLC (can be combined with --advanced and --help-verbose)"
 msgstr ""
 
-#: src/libvlc-module.c:2475
+#: src/libvlc-module.c:2487
 msgid "Exhaustive help for VLC and its modules"
 msgstr ""
 
-#: src/libvlc-module.c:2477
+#: src/libvlc-module.c:2489
 msgid ""
 "print help for VLC and all its modules (can be combined with --advanced and "
 "--help-verbose)"
 msgstr ""
 
-#: src/libvlc-module.c:2480
+#: src/libvlc-module.c:2492
 msgid "ask for extra verbosity when displaying help"
 msgstr ""
 
-#: src/libvlc-module.c:2482
+#: src/libvlc-module.c:2494
 msgid "print a list of available modules"
 msgstr ""
 
-#: src/libvlc-module.c:2484
+#: src/libvlc-module.c:2496
 msgid "print a list of available modules with extra detail"
 msgstr ""
 
-#: src/libvlc-module.c:2486
+#: src/libvlc-module.c:2498
 msgid ""
 "print help on a specific module (can be combined with --advanced and --help-"
 "verbose)"
 msgstr ""
 
-#: src/libvlc-module.c:2489
+#: src/libvlc-module.c:2501
 msgid "no configuration option will be loaded nor saved to config file"
 msgstr ""
 
-#: src/libvlc-module.c:2491
+#: src/libvlc-module.c:2503
 msgid "save the current command line options in the config"
 msgstr ""
 
-#: src/libvlc-module.c:2493
+#: src/libvlc-module.c:2505
 msgid "reset the current config to the default values"
 msgstr ""
 
-#: src/libvlc-module.c:2495
+#: src/libvlc-module.c:2507
 msgid "use alternate config file"
 msgstr ""
 
-#: src/libvlc-module.c:2497
+#: src/libvlc-module.c:2509
 msgid "resets the current plugins cache"
 msgstr ""
 
-#: src/libvlc-module.c:2499
+#: src/libvlc-module.c:2511
 msgid "print version information"
 msgstr ""
 
-#: src/libvlc-module.c:2556
+#: src/libvlc-module.c:2568
 msgid "main program"
 msgstr "برنامهٔ اصلی"
 
@@ -5018,28 +5018,28 @@ msgstr "چوانگی"
 msgid "Zulu"
 msgstr "زولویی"
 
-#: src/video_output/video_output.c:460 modules/gui/macosx/intf.m:581
+#: src/video_output/video_output.c:461 modules/gui/macosx/intf.m:581
 #: modules/gui/macosx/intf.m:582 modules/video_filter/deinterlace.c:127
 msgid "Deinterlace"
 msgstr "نادرهم‌بافی"
 
-#: src/video_output/video_output.c:464 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:465 modules/video_filter/deinterlace.c:123
 msgid "Discard"
 msgstr "دور انداختن"
 
-#: src/video_output/video_output.c:466 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:467 modules/video_filter/deinterlace.c:123
 msgid "Blend"
 msgstr "ترکیب"
 
-#: src/video_output/video_output.c:468 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:469 modules/video_filter/deinterlace.c:123
 msgid "Mean"
 msgstr "میانگین"
 
-#: src/video_output/video_output.c:470 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:471 modules/video_filter/deinterlace.c:123
 msgid "Bob"
 msgstr ""
 
-#: src/video_output/video_output.c:472 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:473 modules/video_filter/deinterlace.c:123
 msgid "Linear"
 msgstr "خطی"
 
@@ -7742,7 +7742,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:3138
+#: modules/access/v4l2/v4l2.c:3145
 #, fuzzy
 msgid "Reset controls to default"
 msgstr "واسط‌های کنترلی"
@@ -16259,7 +16259,7 @@ msgstr "پخش"
 msgid "Revert to normal play speed"
 msgstr ""
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1544
+#: modules/gui/qt4/components/interface_widgets.cpp:1554
 #, fuzzy
 msgid "Download cover art"
 msgstr "بارگیری فوری"
@@ -17274,7 +17274,7 @@ msgid ""
 "preferences dialog."
 msgstr ""
 
-#: modules/gui/qt4/qt4.cpp:76 modules/gui/skins2/src/skin_main.cpp:437
+#: modules/gui/qt4/qt4.cpp:76 modules/gui/skins2/src/skin_main.cpp:441
 #, fuzzy
 msgid "Systray icon"
 msgstr "غلظت"
@@ -17737,7 +17737,7 @@ msgid "Integrate video in interface"
 msgstr "نصب توکار ویدئو در واسط"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:104
-#: modules/gui/skins2/src/skin_main.cpp:469
+#: modules/gui/skins2/src/skin_main.cpp:473
 #, fuzzy
 msgid "Skins"
 msgstr "اندازه‌ها"
@@ -18169,56 +18169,56 @@ msgstr "ذخیرهٔ فهرست پخش"
 msgid "XSPF playlist|*.xspf|M3U file|*.m3u"
 msgstr "صدور فهرست پخش XSPF"
 
-#: modules/gui/skins2/src/skin_main.cpp:432
+#: modules/gui/skins2/src/skin_main.cpp:436
 #, fuzzy
 msgid "Skin to use"
 msgstr "باز کردن پرونده"
 
-#: modules/gui/skins2/src/skin_main.cpp:433
+#: modules/gui/skins2/src/skin_main.cpp:437
 msgid "Path to the skin to use."
 msgstr ""
 
-#: modules/gui/skins2/src/skin_main.cpp:434
+#: modules/gui/skins2/src/skin_main.cpp:438
 msgid "Config of last used skin"
 msgstr ""
 
-#: modules/gui/skins2/src/skin_main.cpp:435
+#: modules/gui/skins2/src/skin_main.cpp:439
 msgid ""
 "Windows configuration of the last skin used. This option is updated "
 "automatically, do not touch it."
 msgstr ""
 
-#: modules/gui/skins2/src/skin_main.cpp:438
+#: modules/gui/skins2/src/skin_main.cpp:442
 msgid "Show a systray icon for VLC"
 msgstr ""
 
-#: modules/gui/skins2/src/skin_main.cpp:439
-#: modules/gui/skins2/src/skin_main.cpp:440
+#: modules/gui/skins2/src/skin_main.cpp:443
+#: modules/gui/skins2/src/skin_main.cpp:444
 msgid "Show VLC on the taskbar"
 msgstr ""
 
-#: modules/gui/skins2/src/skin_main.cpp:441
+#: modules/gui/skins2/src/skin_main.cpp:445
 msgid "Enable transparency effects"
 msgstr ""
 
-#: modules/gui/skins2/src/skin_main.cpp:442
+#: modules/gui/skins2/src/skin_main.cpp:446
 msgid ""
 "You can disable all transparency effects if you want. This is mainly useful "
 "when moving windows does not behave correctly."
 msgstr ""
 
-#: modules/gui/skins2/src/skin_main.cpp:445
-#: modules/gui/skins2/src/skin_main.cpp:446
+#: modules/gui/skins2/src/skin_main.cpp:449
+#: modules/gui/skins2/src/skin_main.cpp:450
 #, fuzzy
 msgid "Use a skinned playlist"
 msgstr "فهرست پخش پیدا نمی‌شود"
 
-#: modules/gui/skins2/src/skin_main.cpp:470
+#: modules/gui/skins2/src/skin_main.cpp:474
 #, fuzzy
 msgid "Skinnable Interface"
 msgstr "واسط وبی"
 
-#: modules/gui/skins2/src/skin_main.cpp:480
+#: modules/gui/skins2/src/skin_main.cpp:484
 msgid "Skins loader demux"
 msgstr ""
 

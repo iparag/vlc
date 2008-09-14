@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slovak translation for VLC Media Player\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-11 17:27-0700\n"
+"POT-Creation-Date: 2008-09-13 23:53-0700\n"
 "PO-Revision-Date: 2008-08-23 21:51+0100\n"
 "Last-Translator: Marián Hikaník <podnety-at-mojepreklady.net>\n"
 "Language-Team: Marián Hikaník, translation controlled by: Pavel Kříž\n"
@@ -78,7 +78,7 @@ msgid "Hotkeys settings"
 msgstr "Nastavenia klávesových skratiek"
 
 #: include/vlc_config_cat.h:54 src/input/es_out.c:2063
-#: src/libvlc-module.c:1431 modules/gui/beos/InterfaceWindow.cpp:283
+#: src/libvlc-module.c:1432 modules/gui/beos/InterfaceWindow.cpp:283
 #: modules/gui/macosx/intf.m:550 modules/gui/macosx/output.m:170
 #: modules/gui/macosx/playlistinfo.m:110 modules/gui/macosx/simple_prefs.m:177
 #: modules/gui/macosx/wizard.m:378
@@ -97,7 +97,7 @@ msgid "General audio settings"
 msgstr "Všeobecné nastavenia zvuku"
 
 #: include/vlc_config_cat.h:60 include/vlc_config_cat.h:85
-#: src/video_output/video_output.c:485
+#: src/video_output/video_output.c:486
 msgid "Filters"
 msgstr "Filtre"
 
@@ -122,7 +122,7 @@ msgstr "Výstupné moduly"
 msgid "These are general settings for audio output modules."
 msgstr "Toto sú všeobecné nastavenia výstupných modulov zvuku."
 
-#: include/vlc_config_cat.h:71 src/libvlc-module.c:1834
+#: include/vlc_config_cat.h:71 src/libvlc-module.c:1835
 #: modules/gui/qt4/ui/sout.ui:895 modules/stream_out/transcode.c:231
 msgid "Miscellaneous"
 msgstr "Rôzne"
@@ -132,7 +132,7 @@ msgid "Miscellaneous audio settings and modules."
 msgstr "Rôzne nastavenia zvuku a modulov"
 
 #: include/vlc_config_cat.h:75 src/input/es_out.c:2091
-#: src/libvlc-module.c:1481 modules/gui/macosx/intf.m:563
+#: src/libvlc-module.c:1482 modules/gui/macosx/intf.m:563
 #: modules/gui/macosx/output.m:160 modules/gui/macosx/playlistinfo.m:99
 #: modules/gui/macosx/simple_prefs.m:181 modules/gui/macosx/wizard.m:379
 #: modules/gui/qt4/components/info_panels.cpp:508
@@ -246,7 +246,7 @@ msgid "General input settings. Use with care."
 msgstr ""
 "Všeobecné nastavenia vstupu. Týmto nastavenia venujte zvýšenú pozornosť!"
 
-#: include/vlc_config_cat.h:131 src/libvlc-module.c:1760
+#: include/vlc_config_cat.h:131 src/libvlc-module.c:1761
 msgid "Stream output"
 msgstr "Výstupný tok"
 
@@ -358,7 +358,7 @@ msgstr "VOD"
 msgid "VLC's implementation of Video On Demand"
 msgstr "Implementácia funkcie video na požiadanie (Video on Demand)"
 
-#: include/vlc_config_cat.h:182 src/libvlc-module.c:1902
+#: include/vlc_config_cat.h:182 src/libvlc-module.c:1901
 #: src/playlist/engine.c:113 modules/demux/playlist/playlist.c:66
 #: modules/demux/playlist/playlist.c:67
 #: modules/gui/beos/InterfaceWindow.cpp:232
@@ -395,7 +395,7 @@ msgstr ""
 "Zisťovacie moduly pridávajú do programu VLC možnosť automatického pridávania "
 "položiek do playlistu."
 
-#: include/vlc_config_cat.h:193 src/libvlc-module.c:1719
+#: include/vlc_config_cat.h:193 src/libvlc-module.c:1720
 msgid "Advanced"
 msgstr "Pokročilé"
 
@@ -590,7 +590,7 @@ msgstr "Uložiť..."
 msgid "Open Folder..."
 msgstr "Otvoriť priečinok..."
 
-#: include/vlc_intf_strings.h:65 src/libvlc-module.c:1121
+#: include/vlc_intf_strings.h:65 src/libvlc-module.c:1122
 msgid "Repeat all"
 msgstr "Zopakovať všetko"
 
@@ -602,7 +602,7 @@ msgstr "Opakovať jedenkrát"
 msgid "No repeat"
 msgstr "Bez opakovania"
 
-#: include/vlc_intf_strings.h:69 src/libvlc-module.c:1322
+#: include/vlc_intf_strings.h:69 src/libvlc-module.c:1323
 #: modules/gui/macosx/controls.m:896 modules/gui/macosx/intf.m:537
 msgid "Random"
 msgstr "Náhodne"
@@ -774,7 +774,7 @@ msgstr "Bol dosiahnutý maximálny počet (%d) filtrov."
 
 #: src/audio_output/input.c:98 src/audio_output/input.c:144
 #: src/input/es_out.c:459 src/libvlc-module.c:562
-#: src/video_output/video_output.c:462 modules/video_filter/postproc.c:222
+#: src/video_output/video_output.c:463 modules/video_filter/postproc.c:222
 msgid "Disable"
 msgstr "Zablokovať"
 
@@ -863,15 +863,15 @@ msgstr "kľúč"
 msgid "boolean"
 msgstr "Hodnota boolean"
 
-#: src/config/file.c:593 src/libvlc.c:1570
+#: src/config/file.c:593 src/libvlc.c:1574
 msgid "integer"
 msgstr "hodnota"
 
-#: src/config/file.c:602 src/libvlc.c:1599
+#: src/config/file.c:602 src/libvlc.c:1603
 msgid "float"
 msgstr "plávajúci"
 
-#: src/config/file.c:625 src/libvlc.c:1549
+#: src/config/file.c:625 src/libvlc.c:1553
 msgid "string"
 msgstr "príkaz"
 
@@ -1289,7 +1289,7 @@ msgstr "Rozhranie pre gestá pomocou myši"
 msgid "C"
 msgstr "sk"
 
-#: src/libvlc.c:1133
+#: src/libvlc.c:1137
 msgid ""
 "Running vlc with the default interface. Use 'cvlc' to use vlc without "
 "interface."
@@ -1297,49 +1297,49 @@ msgstr ""
 "Spustenie programu VLC s predvolený vzhľadom a rozhraním. Pre spustenie bez "
 "rozhrania a vzhľadu zadajte 'cvlc'"
 
-#: src/libvlc.c:1278
+#: src/libvlc.c:1282
 msgid "To get exhaustive help, use '-H'."
 msgstr "Pre získanie úplného pomocníka použite príkaz '-H'."
 
-#: src/libvlc.c:1614
+#: src/libvlc.c:1618
 msgid " (default enabled)"
 msgstr "(v predvolenom nastavení: zapnuté)"
 
-#: src/libvlc.c:1615
+#: src/libvlc.c:1619
 msgid " (default disabled)"
 msgstr "(v predvolenom nastavení: vypnuté)"
 
-#: src/libvlc.c:1774 src/libvlc.c:1777
+#: src/libvlc.c:1778 src/libvlc.c:1781
 msgid "Note:"
 msgstr "Poznámka:"
 
-#: src/libvlc.c:1775 src/libvlc.c:1778
+#: src/libvlc.c:1779 src/libvlc.c:1782
 msgid "add --advanced to your command line to see advanced options."
 msgstr ""
 "Do príkazového riadka zadajte príkaz add --advanced a zobrazia sa pokročilé "
 "nastavenia."
 
-#: src/libvlc.c:1882
+#: src/libvlc.c:1886
 #, c-format
 msgid "VLC version %s\n"
 msgstr "Verzia programu VLC %s\n"
 
-#: src/libvlc.c:1883
+#: src/libvlc.c:1887
 #, c-format
 msgid "Compiled by %s@%s.%s\n"
 msgstr "Kompiloval: %s@%s.%s\n"
 
-#: src/libvlc.c:1885
+#: src/libvlc.c:1889
 #, c-format
 msgid "Compiler: %s\n"
 msgstr "Kompilátor: %s\n"
 
-#: src/libvlc.c:1887
+#: src/libvlc.c:1891
 #, c-format
 msgid "Based upon Git commit [%s]\n"
 msgstr "Založené na Git [%s]\n"
 
-#: src/libvlc.c:1923
+#: src/libvlc.c:1927
 msgid ""
 "\n"
 "Dumped content to vlc-help.txt file.\n"
@@ -1347,7 +1347,7 @@ msgstr ""
 "\n"
 "Analyzovaný obsah sa uloží do súboru vlc-help.txt.\n"
 
-#: src/libvlc.c:1943
+#: src/libvlc.c:1947
 msgid ""
 "\n"
 "Press the RETURN key to continue...\n"
@@ -1355,24 +1355,24 @@ msgstr ""
 "\n"
 "Ak chcete pokračovať, stlačte ENTER... \n"
 
-#: src/libvlc.h:199 src/libvlc-module.c:1325 src/libvlc-module.c:1326
-#: src/libvlc-module.c:2385 src/video_output/vout_intf.c:274
+#: src/libvlc.h:199 src/libvlc-module.c:1326 src/libvlc-module.c:1327
+#: src/libvlc-module.c:2397 src/video_output/vout_intf.c:274
 msgid "Zoom"
 msgstr "Priblížiť"
 
-#: src/libvlc.h:200 src/libvlc-module.c:1251 src/video_output/vout_intf.c:169
+#: src/libvlc.h:200 src/libvlc-module.c:1252 src/video_output/vout_intf.c:169
 msgid "1:4 Quarter"
 msgstr "1:4 (štvrtina)"
 
-#: src/libvlc.h:201 src/libvlc-module.c:1252 src/video_output/vout_intf.c:170
+#: src/libvlc.h:201 src/libvlc-module.c:1253 src/video_output/vout_intf.c:170
 msgid "1:2 Half"
 msgstr "1:2 (polovica)"
 
-#: src/libvlc.h:202 src/libvlc-module.c:1253 src/video_output/vout_intf.c:171
+#: src/libvlc.h:202 src/libvlc-module.c:1254 src/video_output/vout_intf.c:171
 msgid "1:1 Original"
 msgstr "1:1 (Originál)"
 
-#: src/libvlc.h:203 src/libvlc-module.c:1254 src/video_output/vout_intf.c:172
+#: src/libvlc.h:203 src/libvlc-module.c:1255 src/video_output/vout_intf.c:172
 msgid "2:1 Double"
 msgstr "2:1 (Dvojitá veľkosť)"
 
@@ -2719,7 +2719,7 @@ msgstr "Zapnúť sub-obrázky"
 msgid "You can completely disable the sub-picture processing."
 msgstr "Tu môžete kompletne vypnúť spracovávanie sub-obrázkov."
 
-#: src/libvlc-module.c:688 src/libvlc-module.c:1586 src/text/iso-639_def.h:143
+#: src/libvlc-module.c:688 src/libvlc-module.c:1587 src/text/iso-639_def.h:143
 #: modules/gui/macosx/simple_prefs.m:278
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:22
 #: modules/stream_out/transcode.c:227
@@ -3473,7 +3473,7 @@ msgstr ""
 msgid "Allow only one running instance"
 msgstr "Povoliť len jednu spustenú inštanciu programu"
 
-#: src/libvlc-module.c:1046
+#: src/libvlc-module.c:1047
 msgid ""
 "Allowing only one running instance of VLC can sometimes be useful, for "
 "example if you associated VLC with some media types and you don't want a new "
@@ -3503,29 +3503,29 @@ msgstr ""
 "sa len zaradí do playlistu. Táto funkcia vyžaduje, aby bola aktívna D-Bus "
 "sesia a aby bola spustená aspoň jedna inštancia programu VLC."
 
-#: src/libvlc-module.c:1062
+#: src/libvlc-module.c:1063
 msgid "VLC is started from file association"
 msgstr "Program VLC môže byť spustený aj po kliknutí na asociovaný súboru"
 
-#: src/libvlc-module.c:1064
+#: src/libvlc-module.c:1065
 msgid "Tell VLC that it is being launched due to a file association in the OS"
 msgstr "Prikážte programu VLC, že sa má spustiť keď kliknete na nejaký súbor."
 
-#: src/libvlc-module.c:1067
+#: src/libvlc-module.c:1068
 msgid "One instance when started from file"
 msgstr "Pri otvorení súboru vytvoriť jednu inštanciu programu"
 
-#: src/libvlc-module.c:1069
+#: src/libvlc-module.c:1070
 msgid "Allow only one running instance when started from file."
 msgstr ""
 "Ak program spustíte tak, že otvoríte nejaký súbor, spustí sa len jedna "
 "inštancia programu."
 
-#: src/libvlc-module.c:1071
+#: src/libvlc-module.c:1072
 msgid "Increase the priority of the process"
 msgstr "Zvýšiť prioritu procesu"
 
-#: src/libvlc-module.c:1073
+#: src/libvlc-module.c:1074
 msgid ""
 "Increasing the priority of the process will very likely improve your playing "
 "experience as it allows VLC not to be disturbed by other applications that "
@@ -3541,13 +3541,13 @@ msgstr ""
 "systém môže prestať odpovedať na Vaše príkazy. Zvyčajne sa to potom končí "
 "reštartovaním počítača."
 
-#: src/libvlc-module.c:1081
+#: src/libvlc-module.c:1082
 msgid "Enqueue items to playlist when in one instance mode"
 msgstr ""
 "Ak je povolené spúšťanie iba jednej inštancie programu, zaraďovať položky do "
 "playlistu."
 
-#: src/libvlc-module.c:1083
+#: src/libvlc-module.c:1084
 msgid ""
 "When using the one instance only option, enqueue items to playlist and keep "
 "playing current item."
@@ -3556,7 +3556,7 @@ msgstr ""
 "nové položky do playlistu len pridajú, ale bude sa pokračovať v prehrávaní "
 "aktuálnej položky."
 
-#: src/libvlc-module.c:1092
+#: src/libvlc-module.c:1093
 msgid ""
 "These options define the behavior of the playlist. Some of them can be "
 "overridden in the playlist dialog box."
@@ -3564,11 +3564,11 @@ msgstr ""
 "Tieto nastavenia definujú správanie sa playlistu. Niektorý z nich sa dajú "
 "zmeniť v dialógovom okne Playlist."
 
-#: src/libvlc-module.c:1095
+#: src/libvlc-module.c:1096
 msgid "Automatically preparse files"
 msgstr "Automaticky pripraviť súbory"
 
-#: src/libvlc-module.c:1097
+#: src/libvlc-module.c:1098
 msgid ""
 "Automatically preparse files added to the playlist (to retrieve some "
 "metadata)."
@@ -3576,31 +3576,31 @@ msgstr ""
 "K súborom pridaným do playlistu sa automaticky doplnia niektoré meta-dáta, "
 "zobrazované pri prehrávaní."
 
-#: src/libvlc-module.c:1100
+#: src/libvlc-module.c:1101
 msgid "Album art policy"
 msgstr "Metóda zisťovania druhu albumu"
 
-#: src/libvlc-module.c:1102
+#: src/libvlc-module.c:1103
 msgid "Choose how album art will be downloaded."
 msgstr "Vyberte si, ako sa má stiahnuť druh albumu."
 
-#: src/libvlc-module.c:1108
+#: src/libvlc-module.c:1109
 msgid "Manual download only"
 msgstr "Stiahnuť manuálne"
 
-#: src/libvlc-module.c:1109
+#: src/libvlc-module.c:1110
 msgid "When track starts playing"
 msgstr "Keď sa začne prehrávať stopa z albumu"
 
-#: src/libvlc-module.c:1110
+#: src/libvlc-module.c:1111
 msgid "As soon as track is added"
 msgstr "Hneď po pridaní stopy"
 
-#: src/libvlc-module.c:1112
+#: src/libvlc-module.c:1113
 msgid "Services discovery modules"
 msgstr "Moduly pre zisťovanie služieb."
 
-#: src/libvlc-module.c:1114
+#: src/libvlc-module.c:1115
 msgid ""
 "Specifies the services discovery modules to load, separated by semi-colons. "
 "Typical values are sap, hal, ..."
@@ -3608,60 +3608,60 @@ msgstr ""
 "Udáva, ktoré moduly pre zisťovanie služieb sa načítajú. Zoznam oddeľujte "
 "bodko-čiarkami. Typické hodnoty sú napr.: sap, hal..."
 
-#: src/libvlc-module.c:1117
+#: src/libvlc-module.c:1118
 msgid "Play files randomly forever"
 msgstr "Prehrávať súbory dookola v náhodnom poradí"
 
-#: src/libvlc-module.c:1119
+#: src/libvlc-module.c:1120
 msgid "VLC will randomly play files in the playlist until interrupted."
 msgstr ""
 "Program VLC bude prehrávať súbory v playliste v náhodnom poradí, až dokedy "
 "ho neukončíte."
 
-#: src/libvlc-module.c:1123
+#: src/libvlc-module.c:1124
 msgid "VLC will keep playing the playlist indefinitely."
 msgstr "Program VLC bude prehrávať položky playlistu stále dookola."
 
-#: src/libvlc-module.c:1125
+#: src/libvlc-module.c:1126
 msgid "Repeat current item"
 msgstr "Zopakovať aktuálnu položku"
 
-#: src/libvlc-module.c:1127
+#: src/libvlc-module.c:1128
 msgid "VLC will keep playing the current playlist item."
 msgstr "Program VLC bude prehrávať aktuálnu položku v playliste."
 
-#: src/libvlc-module.c:1129
+#: src/libvlc-module.c:1130
 msgid "Play and stop"
 msgstr "Prehrať a zastaviť"
 
-#: src/libvlc-module.c:1131
+#: src/libvlc-module.c:1132
 msgid "Stop the playlist after each played playlist item."
 msgstr "Zastaviť prehrávanie po prehratí každej položky v playliste."
 
-#: src/libvlc-module.c:1133
+#: src/libvlc-module.c:1134
 msgid "Play and exit"
 msgstr "Prehrať a ukončiť"
 
-#: src/libvlc-module.c:1135
+#: src/libvlc-module.c:1136
 msgid "Exit if there are no more items in the playlist."
 msgstr "Ak v playliste už nie sú žiadne položky, ukončiť prehrávanie."
 
-#: src/libvlc-module.c:1137
+#: src/libvlc-module.c:1138
 msgid "Use media library"
 msgstr "Použiť knižnicu médií"
 
-#: src/libvlc-module.c:1139
+#: src/libvlc-module.c:1140
 msgid ""
 "The media library is automatically saved and reloaded each time you start "
 "VLC."
 msgstr ""
 "Knižnica médií sa automaticky ukladá a načítava vždy pri štarte programu VLC."
 
-#: src/libvlc-module.c:1142
+#: src/libvlc-module.c:1143
 msgid "Display playlist tree"
 msgstr "Zobraziť vetvenie playlistu"
 
-#: src/libvlc-module.c:1144
+#: src/libvlc-module.c:1145
 msgid ""
 "The playlist can use a tree to categorize some items, like the contents of a "
 "directory."
@@ -3669,13 +3669,13 @@ msgstr ""
 "Playlist môže mať podobu stromu, v ktorom sa dajú lepšie kategorizovať "
 "jednotlivé položky. Vidíte napríklad obsah konkrétnych priečinkov."
 
-#: src/libvlc-module.c:1153
+#: src/libvlc-module.c:1154
 msgid "These settings are the global VLC key bindings, known as \"hotkeys\"."
 msgstr ""
 "V tejto časti si môžete nastaviť svoje vlastné \"klávesové skratky\" "
 "programu VLC."
 
-#: src/libvlc-module.c:1156 src/video_output/vout_intf.c:415
+#: src/libvlc-module.c:1157 src/video_output/vout_intf.c:415
 #: modules/gui/beos/VideoOutput.cpp:1058 modules/gui/macosx/controls.m:435
 #: modules/gui/macosx/controls.m:489 modules/gui/macosx/controls.m:938
 #: modules/gui/macosx/controls.m:969 modules/gui/macosx/embeddedwindow.m:50
@@ -3685,69 +3685,69 @@ msgstr ""
 msgid "Fullscreen"
 msgstr "Celoobrazovkový režim"
 
-#: src/libvlc-module.c:1157
+#: src/libvlc-module.c:1158
 msgid "Select the hotkey to use to swap fullscreen state."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre prepínanie medzi klasickým "
 "zobrazením a zobrazením na celú obrazovku."
 
-#: src/libvlc-module.c:1158
+#: src/libvlc-module.c:1159
 msgid "Leave fullscreen"
 msgstr "Vypnúť celoobrazovkový režim"
 
-#: src/libvlc-module.c:1159
+#: src/libvlc-module.c:1160
 msgid "Select the hotkey to use to leave fullscreen state."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre ukončenie celoobrazovkového "
 "režimu."
 
-#: src/libvlc-module.c:1160
+#: src/libvlc-module.c:1161
 msgid "Play/Pause"
 msgstr "Prehrať/Pozastaviť"
 
-#: src/libvlc-module.c:1161
+#: src/libvlc-module.c:1162
 msgid "Select the hotkey to use to swap paused state."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre pozastavenie/opätovné "
 "spustenie prehrávania"
 
-#: src/libvlc-module.c:1162
+#: src/libvlc-module.c:1163
 msgid "Pause only"
 msgstr "Len pozastaviť"
 
-#: src/libvlc-module.c:1163
+#: src/libvlc-module.c:1164
 msgid "Select the hotkey to use to pause."
 msgstr "Vyberte si klávesu, ktorú chcete používať pre pozastavenie prehrávania"
 
-#: src/libvlc-module.c:1164
+#: src/libvlc-module.c:1165
 msgid "Play only"
 msgstr "Len prehrať"
 
-#: src/libvlc-module.c:1165
+#: src/libvlc-module.c:1166
 msgid "Select the hotkey to use to play."
 msgstr "Vyberte si klávesu, ktorú chcete používať pre spustenie prehrávania"
 
-#: src/libvlc-module.c:1166 modules/control/hotkeys.c:695
+#: src/libvlc-module.c:1167 modules/control/hotkeys.c:695
 #: modules/gui/macosx/controls.m:868 modules/gui/macosx/intf.m:533
 #: modules/gui/qt4/components/interface_widgets.cpp:537
 msgid "Faster"
 msgstr "Rýchlejšie"
 
-#: src/libvlc-module.c:1167
+#: src/libvlc-module.c:1168
 msgid "Select the hotkey to use for fast forward playback."
 msgstr "Vyberte si klávesu, ktorú chcete používať pre zrýchlenie prehrávania"
 
-#: src/libvlc-module.c:1168 modules/control/hotkeys.c:701
+#: src/libvlc-module.c:1169 modules/control/hotkeys.c:701
 #: modules/gui/macosx/controls.m:869 modules/gui/macosx/intf.m:534
 #: modules/gui/qt4/components/interface_widgets.cpp:531
 msgid "Slower"
 msgstr "Pomalšie"
 
-#: src/libvlc-module.c:1169
+#: src/libvlc-module.c:1170
 msgid "Select the hotkey to use for slow motion playback."
 msgstr "Vyberte si klávesu, ktorú chcete používať pre spomalenie prehrávania"
 
-#: src/libvlc-module.c:1170 modules/control/hotkeys.c:678
+#: src/libvlc-module.c:1171 modules/control/hotkeys.c:678
 #: modules/gui/macosx/about.m:190 modules/gui/macosx/controls.m:889
 #: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:536
 #: modules/gui/macosx/intf.m:612 modules/gui/macosx/intf.m:620
@@ -3757,13 +3757,13 @@ msgstr "Vyberte si klávesu, ktorú chcete používať pre spomalenie prehrávan
 msgid "Next"
 msgstr "Ďalej"
 
-#: src/libvlc-module.c:1171
+#: src/libvlc-module.c:1172
 msgid "Select the hotkey to use to skip to the next item in the playlist."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre preskočenie na ďalší súbor "
 "zaradený v playliste"
 
-#: src/libvlc-module.c:1172 modules/control/hotkeys.c:684
+#: src/libvlc-module.c:1173 modules/control/hotkeys.c:684
 #: modules/gui/macosx/about.m:191 modules/gui/macosx/controls.m:888
 #: modules/gui/macosx/intf.m:485 modules/gui/macosx/intf.m:535
 #: modules/gui/macosx/intf.m:613 modules/gui/macosx/intf.m:619
@@ -3771,13 +3771,13 @@ msgstr ""
 msgid "Previous"
 msgstr "Dozadu"
 
-#: src/libvlc-module.c:1173
+#: src/libvlc-module.c:1174
 msgid "Select the hotkey to use to skip to the previous item in the playlist."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre návrat k predchádzajúcemu "
 "súboru v playliste"
 
-#: src/libvlc-module.c:1174 modules/control/rc.c:77
+#: src/libvlc-module.c:1175 modules/control/rc.c:77
 #: modules/gui/macosx/controls.m:880 modules/gui/macosx/intf.m:488
 #: modules/gui/macosx/intf.m:532 modules/gui/macosx/intf.m:611
 #: modules/gui/macosx/intf.m:618 modules/gui/pda/pda_interface.c:272
@@ -3786,11 +3786,11 @@ msgstr ""
 msgid "Stop"
 msgstr "Stop"
 
-#: src/libvlc-module.c:1175
+#: src/libvlc-module.c:1176
 msgid "Select the hotkey to stop playback."
 msgstr "Vyberte si klávesu, ktorú chcete používať pre zastavenie prehrávania"
 
-#: src/libvlc-module.c:1176 modules/gui/fbosd.c:129 modules/gui/fbosd.c:197
+#: src/libvlc-module.c:1177 modules/gui/fbosd.c:129 modules/gui/fbosd.c:197
 #: modules/gui/macosx/bookmarks.m:96 modules/gui/macosx/bookmarks.m:105
 #: modules/gui/macosx/embeddedwindow.m:52 modules/gui/macosx/intf.m:493
 #: modules/gui/qt4/ui/video_effects.ui:779 modules/video_filter/marq.c:153
@@ -3798,415 +3798,415 @@ msgstr "Vyberte si klávesu, ktorú chcete používať pre zastavenie prehrávan
 msgid "Position"
 msgstr "Pozícia"
 
-#: src/libvlc-module.c:1177
+#: src/libvlc-module.c:1178
 msgid "Select the hotkey to display the position."
 msgstr "Vyberte si klávesu, ktorú chcete používať pre zobrazenie pozície."
 
-#: src/libvlc-module.c:1179
+#: src/libvlc-module.c:1180
 msgid "Very short backwards jump"
 msgstr "Veľmi krátky skok späť"
 
-#: src/libvlc-module.c:1181
+#: src/libvlc-module.c:1182
 msgid "Select the hotkey to make a very short backwards jump."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre preskočenie o veľmi malý kúsok "
 "späť."
 
-#: src/libvlc-module.c:1182
+#: src/libvlc-module.c:1183
 msgid "Short backwards jump"
 msgstr "Krátky skok späť"
 
-#: src/libvlc-module.c:1184
+#: src/libvlc-module.c:1185
 msgid "Select the hotkey to make a short backwards jump."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre preskočenie o kúsok späť."
 
-#: src/libvlc-module.c:1185
+#: src/libvlc-module.c:1186
 msgid "Medium backwards jump"
 msgstr "Väčší skok späť"
 
-#: src/libvlc-module.c:1187
+#: src/libvlc-module.c:1188
 msgid "Select the hotkey to make a medium backwards jump."
 msgstr "Vyberte si klávesu, ktorú chcete používať pre preskočenie späť."
 
-#: src/libvlc-module.c:1188
+#: src/libvlc-module.c:1189
 msgid "Long backwards jump"
 msgstr "Dlhý skok späť"
 
-#: src/libvlc-module.c:1190
+#: src/libvlc-module.c:1191
 msgid "Select the hotkey to make a long backwards jump."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre preskočenie späť o veľký kus."
 
-#: src/libvlc-module.c:1192
+#: src/libvlc-module.c:1193
 msgid "Very short forward jump"
 msgstr "Veľmi krátky skok dopredu"
 
-#: src/libvlc-module.c:1194
+#: src/libvlc-module.c:1195
 msgid "Select the hotkey to make a very short forward jump."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre preskočenie o malý kúsok vpred."
 
-#: src/libvlc-module.c:1195
+#: src/libvlc-module.c:1196
 msgid "Short forward jump"
 msgstr "Krátky skok dopredu"
 
-#: src/libvlc-module.c:1197
+#: src/libvlc-module.c:1198
 msgid "Select the hotkey to make a short forward jump."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre preskočenie o kúsok vpred."
 
-#: src/libvlc-module.c:1198
+#: src/libvlc-module.c:1199
 msgid "Medium forward jump"
 msgstr "Väčší skok dopredu"
 
-#: src/libvlc-module.c:1200
+#: src/libvlc-module.c:1201
 msgid "Select the hotkey to make a medium forward jump."
 msgstr "Vyberte si klávesu, ktorú chcete používať pre preskočenie vpred."
 
-#: src/libvlc-module.c:1201
+#: src/libvlc-module.c:1202
 msgid "Long forward jump"
 msgstr "Dlhý skok dopredu"
 
-#: src/libvlc-module.c:1203
+#: src/libvlc-module.c:1204
 msgid "Select the hotkey to make a long forward jump."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre preskočenie dopredu o veľký "
 "kus."
 
-#: src/libvlc-module.c:1205
+#: src/libvlc-module.c:1206
 msgid "Very short jump length"
 msgstr "Dĺžka veľmi krátkeho skoku"
 
-#: src/libvlc-module.c:1206
+#: src/libvlc-module.c:1207
 msgid "Very short jump length, in seconds."
 msgstr "Dĺžka veľmi krátkeho skoku, v sekundách"
 
-#: src/libvlc-module.c:1207
+#: src/libvlc-module.c:1208
 msgid "Short jump length"
 msgstr "Dĺžka krátkeho skoku"
 
-#: src/libvlc-module.c:1208
+#: src/libvlc-module.c:1209
 msgid "Short jump length, in seconds."
 msgstr "Dĺžka malého skoku, v sekundách."
 
-#: src/libvlc-module.c:1209
+#: src/libvlc-module.c:1210
 msgid "Medium jump length"
 msgstr "Dĺžka stredne-veľkého skoku"
 
-#: src/libvlc-module.c:1210
+#: src/libvlc-module.c:1211
 msgid "Medium jump length, in seconds."
 msgstr "Dĺžka stredne-veľkého skoku, v sekundách."
 
-#: src/libvlc-module.c:1211
+#: src/libvlc-module.c:1212
 msgid "Long jump length"
 msgstr "Dĺžka veľkého skoku"
 
-#: src/libvlc-module.c:1212
+#: src/libvlc-module.c:1213
 msgid "Long jump length, in seconds."
 msgstr "Dĺžka veľkého skoku, v sekundách."
 
-#: src/libvlc-module.c:1214 modules/control/hotkeys.c:189
+#: src/libvlc-module.c:1215 modules/control/hotkeys.c:189
 #: modules/gui/beos/InterfaceWindow.cpp:277 modules/gui/macosx/intf.m:449
 #: modules/gui/qt4/menus.cpp:696 modules/gui/skins2/commands/cmd_quit.cpp:40
 msgid "Quit"
 msgstr "Koniec"
 
-#: src/libvlc-module.c:1215
+#: src/libvlc-module.c:1216
 msgid "Select the hotkey to quit the application."
 msgstr "Vyberte si klávesu, ktorú chcete používať pre ukončenie programu."
 
-#: src/libvlc-module.c:1216
+#: src/libvlc-module.c:1217
 msgid "Navigate up"
 msgstr "Navigovať smerom nahor"
 
-#: src/libvlc-module.c:1217
+#: src/libvlc-module.c:1218
 msgid "Select the key to move the selector up in DVD menus."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre pohyb v menu DVD smerom nahor"
 
-#: src/libvlc-module.c:1218
+#: src/libvlc-module.c:1219
 msgid "Navigate down"
 msgstr "Navigovať smerom nadol"
 
-#: src/libvlc-module.c:1219
+#: src/libvlc-module.c:1220
 msgid "Select the key to move the selector down in DVD menus."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre pohyb v menu DVD smerom nadol"
 
-#: src/libvlc-module.c:1220
+#: src/libvlc-module.c:1221
 msgid "Navigate left"
 msgstr "Navigovať smerom doľava"
 
-#: src/libvlc-module.c:1221
+#: src/libvlc-module.c:1222
 msgid "Select the key to move the selector left in DVD menus."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre pohyb v menu DVD smerom doľava."
 
-#: src/libvlc-module.c:1222
+#: src/libvlc-module.c:1223
 msgid "Navigate right"
 msgstr "Navigovať smerom doprava"
 
-#: src/libvlc-module.c:1223
+#: src/libvlc-module.c:1224
 msgid "Select the key to move the selector right in DVD menus."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre pohyb v menu DVD smerom "
 "doprava."
 
-#: src/libvlc-module.c:1224
+#: src/libvlc-module.c:1225
 msgid "Activate"
 msgstr "Aktivovať"
 
-#: src/libvlc-module.c:1225
+#: src/libvlc-module.c:1226
 msgid "Select the key to activate selected item in DVD menus."
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre aktivovanie zvolenej položky v "
 "menu DVD."
 
-#: src/libvlc-module.c:1226
+#: src/libvlc-module.c:1227
 msgid "Go to the DVD menu"
 msgstr "Prejsť na menu DVD"
 
-#: src/libvlc-module.c:1227
+#: src/libvlc-module.c:1228
 msgid "Select the key to take you to the DVD menu"
 msgstr "Vyberte si klávesu, ktorú chcete používať pre zobrazenie menu DVD."
 
-#: src/libvlc-module.c:1228
+#: src/libvlc-module.c:1229
 msgid "Select previous DVD title"
 msgstr "Vybrať predchádzajúci DVD titul"
 
-#: src/libvlc-module.c:1229
+#: src/libvlc-module.c:1230
 msgid "Select the key to choose the previous title from the DVD"
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre vybranie predchádzajúceho DVD"
 
-#: src/libvlc-module.c:1230
+#: src/libvlc-module.c:1231
 msgid "Select next DVD title"
 msgstr "Vybrať ďalší DVD titul"
 
-#: src/libvlc-module.c:1231
+#: src/libvlc-module.c:1232
 msgid "Select the key to choose the next title from the DVD"
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre vybranie ďalšieho DVD v poradí"
 
-#: src/libvlc-module.c:1232
+#: src/libvlc-module.c:1233
 msgid "Select prev DVD chapter"
 msgstr "Vybrať predchádzajúcu kapitolu DVD"
 
-#: src/libvlc-module.c:1233
+#: src/libvlc-module.c:1234
 msgid "Select the key to choose the previous chapter from the DVD"
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre vybranie predchádzajucej "
 "kapitoly v DVD"
 
-#: src/libvlc-module.c:1234
+#: src/libvlc-module.c:1235
 msgid "Select next DVD chapter"
 msgstr "Vybrať ďalšiu kapitolu DVD"
 
-#: src/libvlc-module.c:1235
+#: src/libvlc-module.c:1236
 msgid "Select the key to choose the next chapter from the DVD"
 msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre vybranie ďalšej kapitoly DVD"
 
-#: src/libvlc-module.c:1236
+#: src/libvlc-module.c:1237
 msgid "Volume up"
 msgstr "Zvýšiť hlasitosť"
 
-#: src/libvlc-module.c:1237
+#: src/libvlc-module.c:1238
 msgid "Select the key to increase audio volume."
 msgstr "Vyberte si klávesu pre zvýšenie hlasitosti zvuku."
 
-#: src/libvlc-module.c:1238
+#: src/libvlc-module.c:1239
 msgid "Volume down"
 msgstr "Znížiť hlasitosť"
 
-#: src/libvlc-module.c:1239
+#: src/libvlc-module.c:1240
 msgid "Select the key to decrease audio volume."
 msgstr "Vyberte si klávesu pre zníženie hlasitosti zvuku."
 
-#: src/libvlc-module.c:1240 modules/access/v4l2/v4l2.c:195
+#: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:195
 #: modules/gui/macosx/controls.m:928 modules/gui/macosx/intf.m:553
 #: modules/gui/macosx/intf.m:614 modules/gui/macosx/intf.m:623
 #: modules/gui/qt4/components/interface_widgets.cpp:903
 msgid "Mute"
 msgstr "Stlmiť"
 
-#: src/libvlc-module.c:1241
+#: src/libvlc-module.c:1242
 msgid "Select the key to mute audio."
 msgstr "Vyberte si klávesu pre stlmenie zvuku."
 
-#: src/libvlc-module.c:1242
+#: src/libvlc-module.c:1243
 msgid "Subtitle delay up"
 msgstr "Zvýšiť oneskorenie titulkov"
 
-#: src/libvlc-module.c:1243
+#: src/libvlc-module.c:1244
 msgid "Select the key to increase the subtitle delay."
 msgstr "Vyberte si klávesu pre zvýšenie oneskorenia titulkov."
 
-#: src/libvlc-module.c:1244
+#: src/libvlc-module.c:1245
 msgid "Subtitle delay down"
 msgstr "Znížiť oneskorenie titulkov"
 
-#: src/libvlc-module.c:1245
+#: src/libvlc-module.c:1246
 msgid "Select the key to decrease the subtitle delay."
 msgstr "Vyberte si klávesu pre zníženie oneskorenia titulkov."
 
-#: src/libvlc-module.c:1246
+#: src/libvlc-module.c:1247
 msgid "Audio delay up"
 msgstr "Zvýšiť oneskorenie zvuku"
 
-#: src/libvlc-module.c:1247
+#: src/libvlc-module.c:1248
 msgid "Select the key to increase the audio delay."
 msgstr "Vyberte si klávesu pre zvýšenie oneskorenia hlasitosti."
 
-#: src/libvlc-module.c:1248
+#: src/libvlc-module.c:1249
 msgid "Audio delay down"
 msgstr "Znížiť oneskorenie zvuku"
 
-#: src/libvlc-module.c:1249
+#: src/libvlc-module.c:1250
 msgid "Select the key to decrease the audio delay."
 msgstr "Vyberte si klávesu pre zníženie oneskorenie zvuku."
 
-#: src/libvlc-module.c:1256
+#: src/libvlc-module.c:1257
 msgid "Play playlist bookmark 1"
 msgstr "Prehrať záložku č. 1 v playliste"
 
-#: src/libvlc-module.c:1257
+#: src/libvlc-module.c:1258
 msgid "Play playlist bookmark 2"
 msgstr "Prehrať záložku č. 2 v playliste"
 
-#: src/libvlc-module.c:1258
+#: src/libvlc-module.c:1259
 msgid "Play playlist bookmark 3"
 msgstr "Prehrať záložku č. 3 v playliste"
 
-#: src/libvlc-module.c:1259
+#: src/libvlc-module.c:1260
 msgid "Play playlist bookmark 4"
 msgstr "Prehrať záložku č. 4 v playliste"
 
-#: src/libvlc-module.c:1260
+#: src/libvlc-module.c:1261
 msgid "Play playlist bookmark 5"
 msgstr "Prehrať záložku č. 5 v playliste"
 
-#: src/libvlc-module.c:1261
+#: src/libvlc-module.c:1262
 msgid "Play playlist bookmark 6"
 msgstr "Prehrať záložku č. 6 v playliste"
 
-#: src/libvlc-module.c:1262
+#: src/libvlc-module.c:1263
 msgid "Play playlist bookmark 7"
 msgstr "Prehrať záložku č. 7 v playliste"
 
-#: src/libvlc-module.c:1263
+#: src/libvlc-module.c:1264
 msgid "Play playlist bookmark 8"
 msgstr "Prehrať záložku č. 8 v playliste"
 
-#: src/libvlc-module.c:1264
+#: src/libvlc-module.c:1265
 msgid "Play playlist bookmark 9"
 msgstr "Prehrať záložku č. 9 v playliste"
 
-#: src/libvlc-module.c:1265
+#: src/libvlc-module.c:1266
 msgid "Play playlist bookmark 10"
 msgstr "Prehrať záložku č. 10 v playliste"
 
-#: src/libvlc-module.c:1266
+#: src/libvlc-module.c:1267
 msgid "Select the key to play this bookmark."
 msgstr "Vyberte si klávesu pre prehratie tejto záložky."
 
-#: src/libvlc-module.c:1267
+#: src/libvlc-module.c:1268
 msgid "Set playlist bookmark 1"
 msgstr "Nastaviť záložku č. 1 v playliste "
 
-#: src/libvlc-module.c:1268
+#: src/libvlc-module.c:1269
 msgid "Set playlist bookmark 2"
 msgstr "Nastaviť záložku č. 2 v playliste"
 
-#: src/libvlc-module.c:1269
+#: src/libvlc-module.c:1270
 msgid "Set playlist bookmark 3"
 msgstr "Nastaviť záložku č. 3 v playliste"
 
-#: src/libvlc-module.c:1270
+#: src/libvlc-module.c:1271
 msgid "Set playlist bookmark 4"
 msgstr "Nastaviť záložku č. 4 v playliste"
 
-#: src/libvlc-module.c:1271
+#: src/libvlc-module.c:1272
 msgid "Set playlist bookmark 5"
 msgstr "Nastaviť záložku č. 5 v playliste"
 
-#: src/libvlc-module.c:1272
+#: src/libvlc-module.c:1273
 msgid "Set playlist bookmark 6"
 msgstr "Nastaviť záložku č. 6 v playliste"
 
-#: src/libvlc-module.c:1273
+#: src/libvlc-module.c:1274
 msgid "Set playlist bookmark 7"
 msgstr "Nastaviť záložku č. 7 v playliste"
 
-#: src/libvlc-module.c:1274
+#: src/libvlc-module.c:1275
 msgid "Set playlist bookmark 8"
 msgstr "Nastaviť záložku č. 8 v playliste"
 
-#: src/libvlc-module.c:1275
+#: src/libvlc-module.c:1276
 msgid "Set playlist bookmark 9"
 msgstr "Nastaviť záložku č. 9 v playliste"
 
-#: src/libvlc-module.c:1276
+#: src/libvlc-module.c:1277
 msgid "Set playlist bookmark 10"
 msgstr "Nastaviť záložku č. 10 v playliste"
 
-#: src/libvlc-module.c:1277
+#: src/libvlc-module.c:1278
 msgid "Select the key to set this playlist bookmark."
 msgstr "Vyberte si klávesu pre nastavenie tejto záložky v playliste."
 
-#: src/libvlc-module.c:1279 modules/control/hotkeys.c:84
+#: src/libvlc-module.c:1280 modules/control/hotkeys.c:84
 msgid "Playlist bookmark 1"
 msgstr "Záložka č. 1 v playliste"
 
-#: src/libvlc-module.c:1280 modules/control/hotkeys.c:85
+#: src/libvlc-module.c:1281 modules/control/hotkeys.c:85
 msgid "Playlist bookmark 2"
 msgstr "Záložka č. 2 v playliste"
 
-#: src/libvlc-module.c:1281 modules/control/hotkeys.c:86
+#: src/libvlc-module.c:1282 modules/control/hotkeys.c:86
 msgid "Playlist bookmark 3"
 msgstr "Záložka č. 3 v playliste"
 
-#: src/libvlc-module.c:1282 modules/control/hotkeys.c:87
+#: src/libvlc-module.c:1283 modules/control/hotkeys.c:87
 msgid "Playlist bookmark 4"
 msgstr "Záložka č. 4 v playliste"
 
-#: src/libvlc-module.c:1283 modules/control/hotkeys.c:88
+#: src/libvlc-module.c:1284 modules/control/hotkeys.c:88
 msgid "Playlist bookmark 5"
 msgstr "Záložka č. 5 v playliste"
 
-#: src/libvlc-module.c:1284 modules/control/hotkeys.c:89
+#: src/libvlc-module.c:1285 modules/control/hotkeys.c:89
 msgid "Playlist bookmark 6"
 msgstr "Záložka č. 6 v playliste"
 
-#: src/libvlc-module.c:1285 modules/control/hotkeys.c:90
+#: src/libvlc-module.c:1286 modules/control/hotkeys.c:90
 msgid "Playlist bookmark 7"
 msgstr "Záložka č. 7 v playliste"
 
-#: src/libvlc-module.c:1286 modules/control/hotkeys.c:91
+#: src/libvlc-module.c:1287 modules/control/hotkeys.c:91
 msgid "Playlist bookmark 8"
 msgstr "Záložka č. 8 v playliste"
 
-#: src/libvlc-module.c:1287 modules/control/hotkeys.c:92
+#: src/libvlc-module.c:1288 modules/control/hotkeys.c:92
 msgid "Playlist bookmark 9"
 msgstr "Záložka č. 9 v playliste"
 
-#: src/libvlc-module.c:1288 modules/control/hotkeys.c:93
+#: src/libvlc-module.c:1289 modules/control/hotkeys.c:93
 msgid "Playlist bookmark 10"
 msgstr "Záložka č. 10 v playliste"
 
-#: src/libvlc-module.c:1290
+#: src/libvlc-module.c:1291
 msgid "This allows you to define playlist bookmarks."
 msgstr ""
 "Tu si môžete nastaviť záložky vo svojom obľúbenom playliste. Pomocou "
 "záložiek sa potom môžete vrátiť na želané miesto v playliste jediným "
 "kliknutím."
 
-#: src/libvlc-module.c:1292
+#: src/libvlc-module.c:1293
 msgid "Go back in browsing history"
 msgstr "Vrátiť sa späť v prehliadači"
 
-#: src/libvlc-module.c:1293
+#: src/libvlc-module.c:1294
 msgid ""
 "Select the key to go back (to the previous media item) in the browsing "
 "history."
@@ -4214,11 +4214,11 @@ msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre návrat k predchádzajúcemu "
 "médiu, ktoré ste si prehliadali."
 
-#: src/libvlc-module.c:1294
+#: src/libvlc-module.c:1295
 msgid "Go forward in browsing history"
 msgstr "Prejsť v prehliadači dopredu"
 
-#: src/libvlc-module.c:1295
+#: src/libvlc-module.c:1296
 msgid ""
 "Select the key to go forward (to the next media item) in the browsing "
 "history."
@@ -4226,147 +4226,147 @@ msgstr ""
 "Vyberte si klávesu, ktorú chcete používať pre prechod k ďalšiemu médiu, "
 "ktoré si chcete prehliadať."
 
-#: src/libvlc-module.c:1297
+#: src/libvlc-module.c:1298
 msgid "Cycle audio track"
 msgstr "Opakovať zvuk. stopu"
 
-#: src/libvlc-module.c:1298
+#: src/libvlc-module.c:1299
 msgid "Cycle through the available audio tracks(languages)."
 msgstr "Opakovať všetky dostupné zvuk. stopy (jazyky)."
 
-#: src/libvlc-module.c:1299
+#: src/libvlc-module.c:1300
 msgid "Cycle subtitle track"
 msgstr "Opakovať stopu s titulkami"
 
-#: src/libvlc-module.c:1300
+#: src/libvlc-module.c:1301
 msgid "Cycle through the available subtitle tracks."
 msgstr "Opakovať všetky stopy s titulkami"
 
-#: src/libvlc-module.c:1301
+#: src/libvlc-module.c:1302
 msgid "Cycle source aspect ratio"
 msgstr "Stranový pomer plátna s videom"
 
-#: src/libvlc-module.c:1302
+#: src/libvlc-module.c:1303
 msgid "Cycle through a predefined list of source aspect ratios."
 msgstr ""
 "Cyklicky prechádzať preddefinovaným zoznamom stranových pomerov zdrojového "
 "videa"
 
-#: src/libvlc-module.c:1303
+#: src/libvlc-module.c:1304
 msgid "Cycle video crop"
 msgstr "Cyklické zostrihávanie videa"
 
-#: src/libvlc-module.c:1304
+#: src/libvlc-module.c:1305
 msgid "Cycle through a predefined list of crop formats."
 msgstr "Cyklicky prechádzať preddefinovaným zoznamom formátov vystrihnutia."
 
-#: src/libvlc-module.c:1305
+#: src/libvlc-module.c:1306
 msgid "Cycle deinterlace modes"
 msgstr "Cyklicky prechádzať po módoch rozkladania"
 
-#: src/libvlc-module.c:1306
+#: src/libvlc-module.c:1307
 msgid "Cycle through deinterlace modes."
 msgstr "Cyklicky prechádzať po módoch rozkladania obrazu."
 
-#: src/libvlc-module.c:1307
+#: src/libvlc-module.c:1308
 msgid "Show interface"
 msgstr "Zobraziť rohranie"
 
-#: src/libvlc-module.c:1308
+#: src/libvlc-module.c:1309
 msgid "Raise the interface above all other windows."
 msgstr "Umiestniť rozhranie nad všetky ostatné okná"
 
-#: src/libvlc-module.c:1309
+#: src/libvlc-module.c:1310
 msgid "Hide interface"
 msgstr "Skryť rozhranie"
 
-#: src/libvlc-module.c:1310
+#: src/libvlc-module.c:1311
 msgid "Lower the interface below all other windows."
 msgstr "Skryť rozhranie pod všetky ostatné okná"
 
-#: src/libvlc-module.c:1311
+#: src/libvlc-module.c:1312
 msgid "Take video snapshot"
 msgstr "Vytvoriť snímok z videa"
 
-#: src/libvlc-module.c:1312
+#: src/libvlc-module.c:1313
 msgid "Takes a video snapshot and writes it to disk."
 msgstr ""
 "Z prehrávaného videa sa vytvorí snímok (screenshot) a uloží sa na disk."
 
-#: src/libvlc-module.c:1314 modules/access_filter/record.c:56
+#: src/libvlc-module.c:1315 modules/access_filter/record.c:56
 #: modules/access_filter/record.c:57 modules/gui/macosx/simple_prefs.m:257
 #: modules/gui/qt4/components/interface_widgets.cpp:365
 #: modules/gui/qt4/ui/sprefs_input.ui:194
 msgid "Record"
 msgstr "Nahrať"
 
-#: src/libvlc-module.c:1315
+#: src/libvlc-module.c:1316
 msgid "Record access filter start/stop."
 msgstr "Spustiť/zastaviť nahrávanie pomocou prístupového filtra."
 
-#: src/libvlc-module.c:1316 modules/access_filter/dump.c:54
+#: src/libvlc-module.c:1317 modules/access_filter/dump.c:54
 #: modules/access_filter/dump.c:55 modules/gui/macosx/simple_prefs.m:251
 #: modules/gui/qt4/ui/sprefs_input.ui:201
 msgid "Dump"
 msgstr "Analyzovať"
 
-#: src/libvlc-module.c:1317
+#: src/libvlc-module.c:1318
 msgid "Media dump access filter trigger."
 msgstr "Spúšťač prístupového filtra pre analyzáciu médií"
 
-#: src/libvlc-module.c:1319
+#: src/libvlc-module.c:1320
 msgid "Normal/Repeat/Loop"
 msgstr "Normálne/Opakovať/Opakovať celé"
 
-#: src/libvlc-module.c:1320
+#: src/libvlc-module.c:1321
 msgid "Toggle Normal/Repeat/Loop playlist modes"
 msgstr "Prepnúť playlistové módy Normálne/Opakovať/Opakovať celé"
 
-#: src/libvlc-module.c:1323
+#: src/libvlc-module.c:1324
 msgid "Toggle random playlist playback"
 msgstr "Prepnúť náhodné prehrávanie playlistu"
 
-#: src/libvlc-module.c:1328 src/libvlc-module.c:1329
+#: src/libvlc-module.c:1329 src/libvlc-module.c:1330
 msgid "Un-Zoom"
 msgstr "Oddialiť"
 
-#: src/libvlc-module.c:1331 src/libvlc-module.c:1332
+#: src/libvlc-module.c:1332 src/libvlc-module.c:1333
 msgid "Crop one pixel from the top of the video"
 msgstr "Orezať jeden pixel z hornej časti videa"
 
-#: src/libvlc-module.c:1333 src/libvlc-module.c:1334
+#: src/libvlc-module.c:1334 src/libvlc-module.c:1335
 msgid "Uncrop one pixel from the top of the video"
 msgstr "Neorezávať jeden pixel z hornej časti videa"
 
-#: src/libvlc-module.c:1336 src/libvlc-module.c:1337
+#: src/libvlc-module.c:1337 src/libvlc-module.c:1338
 msgid "Crop one pixel from the left of the video"
 msgstr "Orezať jeden pixel z ľavej strany videa"
 
-#: src/libvlc-module.c:1338 src/libvlc-module.c:1339
+#: src/libvlc-module.c:1339 src/libvlc-module.c:1340
 msgid "Uncrop one pixel from the left of the video"
 msgstr "Neorezávať jeden pixel z ľavej strany videa"
 
-#: src/libvlc-module.c:1341 src/libvlc-module.c:1342
+#: src/libvlc-module.c:1342 src/libvlc-module.c:1343
 msgid "Crop one pixel from the bottom of the video"
 msgstr "Orezať jeden pixel zo spodnej časti videa"
 
-#: src/libvlc-module.c:1343 src/libvlc-module.c:1344
+#: src/libvlc-module.c:1344 src/libvlc-module.c:1345
 msgid "Uncrop one pixel from the bottom of the video"
 msgstr "Neorezávať jeden pixel zo spodnej časti videa"
 
-#: src/libvlc-module.c:1346 src/libvlc-module.c:1347
+#: src/libvlc-module.c:1347 src/libvlc-module.c:1348
 msgid "Crop one pixel from the right of the video"
 msgstr "Orezať jeden pixel z pravej časti videa"
 
-#: src/libvlc-module.c:1348 src/libvlc-module.c:1349
+#: src/libvlc-module.c:1349 src/libvlc-module.c:1350
 msgid "Uncrop one pixel from the right of the video"
 msgstr "Neorezávať jeden pixel z pravej časti videa"
 
-#: src/libvlc-module.c:1351
+#: src/libvlc-module.c:1352
 msgid "Toggle wallpaper mode in video output"
 msgstr "Zapnúť mód prehrávania na pozadí"
 
-#: src/libvlc-module.c:1353
+#: src/libvlc-module.c:1354
 msgid ""
 "Toggle wallpaper mode in video output. Only works with the directx video "
 "output for the time being."
@@ -4374,67 +4374,67 @@ msgstr ""
 "Prepnúť mód prehrávania na pozadí pracovnej plochy. Táto voľba funguje len v "
 "prípade, že je aktívny directx výstup videa na začiatku jeho prehrávania."
 
-#: src/libvlc-module.c:1356 src/libvlc-module.c:1357
+#: src/libvlc-module.c:1357 src/libvlc-module.c:1358
 msgid "Display OSD menu on top of video output"
 msgstr "Zobraziť OSD ovládanie na výstupnom videu - hore"
 
-#: src/libvlc-module.c:1358
+#: src/libvlc-module.c:1359
 msgid "Do not display OSD menu on video output"
 msgstr "Vo výstupe videa nezobrazovať OSD menu"
 
-#: src/libvlc-module.c:1359
+#: src/libvlc-module.c:1360
 msgid "Do not display OSD menu on top of video output"
 msgstr "Nezobrazovať OSD ovládanie na výstupnom videu - hore"
 
-#: src/libvlc-module.c:1360
+#: src/libvlc-module.c:1361
 msgid "Highlight widget on the right"
 msgstr "Zvýrazniť pomôcku napravo"
 
-#: src/libvlc-module.c:1362
+#: src/libvlc-module.c:1363
 msgid "Move OSD menu highlight to the widget on the right"
 msgstr "Presunúť zvýraznenie OSD menu na pomôcku napravo"
 
-#: src/libvlc-module.c:1363
+#: src/libvlc-module.c:1364
 msgid "Highlight widget on the left"
 msgstr "Zvýrazniť pomôcku naľavo"
 
-#: src/libvlc-module.c:1365
+#: src/libvlc-module.c:1366
 msgid "Move OSD menu highlight to the widget on the left"
 msgstr "Presunúť zvýraznenie OSD menu na pomôcku naľavo"
 
-#: src/libvlc-module.c:1366
+#: src/libvlc-module.c:1367
 msgid "Highlight widget on top"
 msgstr "Zvýrazniť pomôcku navrchu"
 
-#: src/libvlc-module.c:1368
+#: src/libvlc-module.c:1369
 msgid "Move OSD menu highlight to the widget on top"
 msgstr "Presunúť zvýraznenie OSD menu na pomôcku hore"
 
-#: src/libvlc-module.c:1369
+#: src/libvlc-module.c:1370
 msgid "Highlight widget below"
 msgstr "Zvýrazniť pomôcku dole"
 
-#: src/libvlc-module.c:1371
+#: src/libvlc-module.c:1372
 msgid "Move OSD menu highlight to the widget below"
 msgstr "Presunúť zvýraznenie OSD menu na pomôcku dole"
 
-#: src/libvlc-module.c:1372
+#: src/libvlc-module.c:1373
 msgid "Select current widget"
 msgstr "Vybrať aktuálnu pomôcku"
 
-#: src/libvlc-module.c:1374
+#: src/libvlc-module.c:1375
 msgid "Selecting current widget performs the associated action."
 msgstr "Výberom pomôcky, sa spustí operácia, ktorá je s ňou asociovaná."
 
-#: src/libvlc-module.c:1376
+#: src/libvlc-module.c:1377
 msgid "Cycle through audio devices"
 msgstr "Cyklicky prechádzať po jednotlivých zvukových zariadeniach."
 
-#: src/libvlc-module.c:1377
+#: src/libvlc-module.c:1378
 msgid "Cycle through available audio devices"
 msgstr "Cyklicky prechádzať po dostupných zvukových zariadeniach."
 
-#: src/libvlc-module.c:1379
+#: src/libvlc-module.c:1380
 #, c-format
 msgid ""
 "Usage: %s [options] [stream] ...\n"
@@ -4507,104 +4507,104 @@ msgstr ""
 "playlistu na určitý čas\n"
 "  vlc:quit                       Osobitný príkaz na ukončenie programu VLC\n"
 
-#: src/libvlc-module.c:1521 src/video_output/vout_intf.c:421
+#: src/libvlc-module.c:1522 src/video_output/vout_intf.c:421
 #: modules/gui/macosx/controls.m:473 modules/gui/macosx/controls.m:937
 #: modules/gui/macosx/intf.m:570 modules/gui/macosx/intf.m:625
 #: modules/video_output/snapshot.c:81
 msgid "Snapshot"
 msgstr "Snímka"
 
-#: src/libvlc-module.c:1539
+#: src/libvlc-module.c:1540
 msgid "Window properties"
 msgstr "Vlastnosti okna"
 
-#: src/libvlc-module.c:1587
+#: src/libvlc-module.c:1588
 msgid "Subpictures"
 msgstr "Sub-obrázky"
 
-#: src/libvlc-module.c:1595 modules/codec/subtitles/subsdec.c:117
+#: src/libvlc-module.c:1596 modules/codec/subtitles/subsdec.c:117
 #: modules/demux/subtitle.c:74 modules/gui/beos/InterfaceWindow.cpp:280
 #: modules/gui/qt4/ui/sout.ui:854 modules/gui/qt4/ui/sout.ui:860
 msgid "Subtitles"
 msgstr "Titulky"
 
-#: src/libvlc-module.c:1612 modules/stream_out/transcode.c:122
+#: src/libvlc-module.c:1613 modules/stream_out/transcode.c:122
 msgid "Overlays"
 msgstr "Prekryvy/Titulky"
 
-#: src/libvlc-module.c:1620
+#: src/libvlc-module.c:1621
 msgid "Track settings"
 msgstr "Nastavenia stopy"
 
-#: src/libvlc-module.c:1650
+#: src/libvlc-module.c:1651
 msgid "Playback control"
 msgstr "Kontrola prehrávania"
 
-#: src/libvlc-module.c:1671
+#: src/libvlc-module.c:1672
 msgid "Default devices"
 msgstr "Predvolené zariadenia"
 
-#: src/libvlc-module.c:1680
+#: src/libvlc-module.c:1681
 msgid "Network settings"
 msgstr "Nastavenia siete"
 
-#: src/libvlc-module.c:1692
+#: src/libvlc-module.c:1693
 msgid "Socks proxy"
 msgstr "Socks proxy"
 
-#: src/libvlc-module.c:1701
+#: src/libvlc-module.c:1702
 msgid "Metadata"
 msgstr "Meta-dáta"
 
-#: src/libvlc-module.c:1731
+#: src/libvlc-module.c:1732
 msgid "Decoders"
 msgstr "Dekodéry"
 
-#: src/libvlc-module.c:1738 modules/access/v4l2/v4l2.c:92
+#: src/libvlc-module.c:1739 modules/access/v4l2/v4l2.c:92
 #: modules/gui/macosx/playlistinfo.m:93
 #: modules/gui/qt4/components/info_panels.cpp:509
 msgid "Input"
 msgstr "Vstup"
 
-#: src/libvlc-module.c:1778
+#: src/libvlc-module.c:1779
 msgid "VLM"
 msgstr "VLM"
 
-#: src/libvlc-module.c:1811
+#: src/libvlc-module.c:1812
 msgid "CPU"
 msgstr "Procesor (CPU)"
 
-#: src/libvlc-module.c:1833
+#: src/libvlc-module.c:1834
 msgid "Special modules"
 msgstr "Špeciálne moduly"
 
-#: src/libvlc-module.c:1839
+#: src/libvlc-module.c:1840
 msgid "Plugins"
 msgstr "Prídavné moduly"
 
-#: src/libvlc-module.c:1848
+#: src/libvlc-module.c:1849
 msgid "Performance options"
 msgstr "Nastavenia výkonu"
 
-#: src/libvlc-module.c:1998
+#: src/libvlc-module.c:1997
 msgid "Hot keys"
 msgstr "Klávesové skratky"
 
-#: src/libvlc-module.c:2395
+#: src/libvlc-module.c:2407
 msgid "Jump sizes"
 msgstr "Veľkosti skoku"
 
-#: src/libvlc-module.c:2472
+#: src/libvlc-module.c:2484
 msgid "print help for VLC (can be combined with --advanced and --help-verbose)"
 msgstr ""
 "zobraziť pomocníka programu VLC (príkaz možno kombinovať s parametrom --"
 "advanced)"
 
-#: src/libvlc-module.c:2475
+#: src/libvlc-module.c:2487
 msgid "Exhaustive help for VLC and its modules"
 msgstr "Rozsiahly pomocník pre program VLC a jeho moduly"
 
-#: src/libvlc-module.c:2477
+#: src/libvlc-module.c:2489
 msgid ""
 "print help for VLC and all its modules (can be combined with --advanced and "
 "--help-verbose)"
@@ -4612,21 +4612,21 @@ msgstr ""
 "zobraziť pomocníka programu VLC a všetkých jeho modulov (príkaz možno "
 "kombinovať s parametrami --advanced a --help-verbose)"
 
-#: src/libvlc-module.c:2480
+#: src/libvlc-module.c:2492
 msgid "ask for extra verbosity when displaying help"
 msgstr ""
 "pri zobrazení pomocníka sa spýtať na použitie rozšíreného komunikačného módu "
 "programu"
 
-#: src/libvlc-module.c:2482
+#: src/libvlc-module.c:2494
 msgid "print a list of available modules"
 msgstr "zobraziť zoznam dostupných modulov"
 
-#: src/libvlc-module.c:2484
+#: src/libvlc-module.c:2496
 msgid "print a list of available modules with extra detail"
 msgstr "zobraziť zoznam dostupných modulov s detailnými informáciami"
 
-#: src/libvlc-module.c:2486
+#: src/libvlc-module.c:2498
 msgid ""
 "print help on a specific module (can be combined with --advanced and --help-"
 "verbose)"
@@ -4634,32 +4634,32 @@ msgstr ""
 "zobraziť pomocníka pre špecifický modul (príkaz možno kombinovať s "
 "parametrami --advanced a --help-verbose)"
 
-#: src/libvlc-module.c:2489
+#: src/libvlc-module.c:2501
 msgid "no configuration option will be loaded nor saved to config file"
 msgstr ""
 "do konfiguračného súboru sa neuloží ani sa z neho nenačíta žiadna vlastnosť"
 
-#: src/libvlc-module.c:2491
+#: src/libvlc-module.c:2503
 msgid "save the current command line options in the config"
 msgstr "uložiť aktuálne nastavenia príkazového riadka do konfiguračného súboru"
 
-#: src/libvlc-module.c:2493
+#: src/libvlc-module.c:2505
 msgid "reset the current config to the default values"
 msgstr "odstrániť aktuálnu konfiguráciu a aktivovať predvolené nastavenia"
 
-#: src/libvlc-module.c:2495
+#: src/libvlc-module.c:2507
 msgid "use alternate config file"
 msgstr "použiť alternatívny konfiguračný súbor"
 
-#: src/libvlc-module.c:2497
+#: src/libvlc-module.c:2509
 msgid "resets the current plugins cache"
 msgstr "vymaže aktuálnu vyrovnávaciu pamäť prídavných modulov"
 
-#: src/libvlc-module.c:2499
+#: src/libvlc-module.c:2511
 msgid "print version information"
 msgstr "zobraziť informácie o verzii programu"
 
-#: src/libvlc-module.c:2556
+#: src/libvlc-module.c:2568
 msgid "main program"
 msgstr "hlavný program"
 
@@ -5271,28 +5271,28 @@ msgstr "Zhuang"
 msgid "Zulu"
 msgstr "Zulu"
 
-#: src/video_output/video_output.c:460 modules/gui/macosx/intf.m:581
+#: src/video_output/video_output.c:461 modules/gui/macosx/intf.m:581
 #: modules/gui/macosx/intf.m:582 modules/video_filter/deinterlace.c:127
 msgid "Deinterlace"
 msgstr "Rozkladať"
 
-#: src/video_output/video_output.c:464 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:465 modules/video_filter/deinterlace.c:123
 msgid "Discard"
 msgstr "Vyraďovať"
 
-#: src/video_output/video_output.c:466 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:467 modules/video_filter/deinterlace.c:123
 msgid "Blend"
 msgstr "Premiešavať"
 
-#: src/video_output/video_output.c:468 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:469 modules/video_filter/deinterlace.c:123
 msgid "Mean"
 msgstr "Stredná úroveň"
 
-#: src/video_output/video_output.c:470 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:471 modules/video_filter/deinterlace.c:123
 msgid "Bob"
 msgstr "Bob"
 
-#: src/video_output/video_output.c:472 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:473 modules/video_filter/deinterlace.c:123
 msgid "Linear"
 msgstr "Lineárne rozkladanie"
 
@@ -8104,7 +8104,7 @@ msgstr "Ovládacie prvky v4l2, ak sú podporované ovládačom v4l2."
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux2 komprimované A/V"
 
-#: modules/access/v4l2/v4l2.c:3138
+#: modules/access/v4l2/v4l2.c:3145
 msgid "Reset controls to default"
 msgstr "Obnoviť predvolené ovládacie prvky"
 
@@ -16668,7 +16668,7 @@ msgstr "Pozastaviť prehrávanie"
 msgid "Revert to normal play speed"
 msgstr "Vrátiť na normálnu rýchlosť prehrávania"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1544
+#: modules/gui/qt4/components/interface_widgets.cpp:1554
 #, fuzzy
 msgid "Download cover art"
 msgstr "Stiahnuť teraz"
@@ -17580,7 +17580,7 @@ msgstr ""
 "Pri otvorení okna s nastaveniami zobraziť pokročilé nastavenia, nie "
 "zjednodušené."
 
-#: modules/gui/qt4/qt4.cpp:76 modules/gui/skins2/src/skin_main.cpp:437
+#: modules/gui/qt4/qt4.cpp:76 modules/gui/skins2/src/skin_main.cpp:441
 msgid "Systray icon"
 msgstr "Zobraziť ikonu v oznamovacej oblasti"
 
@@ -18014,7 +18014,7 @@ msgid "Integrate video in interface"
 msgstr "Integrovať video do rozhrania"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:104
-#: modules/gui/skins2/src/skin_main.cpp:469
+#: modules/gui/skins2/src/skin_main.cpp:473
 msgid "Skins"
 msgstr "Vzhľady"
 
@@ -18384,19 +18384,19 @@ msgstr "Uložiť playlist"
 msgid "XSPF playlist|*.xspf|M3U file|*.m3u"
 msgstr "XSPF playlist|*.xspf|súbor M3U|*.m3u"
 
-#: modules/gui/skins2/src/skin_main.cpp:432
+#: modules/gui/skins2/src/skin_main.cpp:436
 msgid "Skin to use"
 msgstr "Vzhľad, ktorý chcete aplikovať"
 
-#: modules/gui/skins2/src/skin_main.cpp:433
+#: modules/gui/skins2/src/skin_main.cpp:437
 msgid "Path to the skin to use."
 msgstr "Cesta k súboru s týmto vzhľadom."
 
-#: modules/gui/skins2/src/skin_main.cpp:434
+#: modules/gui/skins2/src/skin_main.cpp:438
 msgid "Config of last used skin"
 msgstr "Konfigurácia naposledy použitého vzhľadu"
 
-#: modules/gui/skins2/src/skin_main.cpp:435
+#: modules/gui/skins2/src/skin_main.cpp:439
 msgid ""
 "Windows configuration of the last skin used. This option is updated "
 "automatically, do not touch it."
@@ -18404,20 +18404,20 @@ msgstr ""
 "Konfigurácia okien použitá pri poslednom skine. Táto funkcia a jej hodnoty "
 "sú aktualizované automaticky, nemeňte ich manuálne."
 
-#: modules/gui/skins2/src/skin_main.cpp:438
+#: modules/gui/skins2/src/skin_main.cpp:442
 msgid "Show a systray icon for VLC"
 msgstr "Zobraziť ikonu programu VLC v oznamovacej oblasti."
 
-#: modules/gui/skins2/src/skin_main.cpp:439
-#: modules/gui/skins2/src/skin_main.cpp:440
+#: modules/gui/skins2/src/skin_main.cpp:443
+#: modules/gui/skins2/src/skin_main.cpp:444
 msgid "Show VLC on the taskbar"
 msgstr "Zobraziť VLC v paneli úloh"
 
-#: modules/gui/skins2/src/skin_main.cpp:441
+#: modules/gui/skins2/src/skin_main.cpp:445
 msgid "Enable transparency effects"
 msgstr "Zapnúť efekty priesvitnosti"
 
-#: modules/gui/skins2/src/skin_main.cpp:442
+#: modules/gui/skins2/src/skin_main.cpp:446
 msgid ""
 "You can disable all transparency effects if you want. This is mainly useful "
 "when moving windows does not behave correctly."
@@ -18426,16 +18426,16 @@ msgstr ""
 "vtedy, keď sa napríklad okno, pri presúvaní po pracovnej ploche, nespráva "
 "korektne."
 
-#: modules/gui/skins2/src/skin_main.cpp:445
-#: modules/gui/skins2/src/skin_main.cpp:446
+#: modules/gui/skins2/src/skin_main.cpp:449
+#: modules/gui/skins2/src/skin_main.cpp:450
 msgid "Use a skinned playlist"
 msgstr "Použiť skinovateľný playlist"
 
-#: modules/gui/skins2/src/skin_main.cpp:470
+#: modules/gui/skins2/src/skin_main.cpp:474
 msgid "Skinnable Interface"
 msgstr "Rozhranie s možnosťou zmeny vzhľadu"
 
-#: modules/gui/skins2/src/skin_main.cpp:480
+#: modules/gui/skins2/src/skin_main.cpp:484
 msgid "Skins loader demux"
 msgstr "Demuxovať zavádzač skinov (súborov so vzhľadom)"
 
