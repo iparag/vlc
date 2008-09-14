@@ -1,13 +1,26 @@
-Changes between 0.8.6i and 0.9.2:
----------------------------------
+Changes between 0.9.2 and 0.9.3:
+--------------------------------
 
-Note: version 0.9.0 was skipped due to bugs being discovered at the last
-minute.
+ ...
+
+Changes between 0.9.1 and 0.9.2:
+--------------------------------
+
+ * Skins2 interface repaired on Windows.
+ * Lots of bug fixes.
+
+Changes between 0.9.1 and 0.9.0:
+--------------------------------
+
+ * Bunch of Qt4 bug fixes.
+
+Changes between 0.8.6i and 0.9.0:
+---------------------------------
 
 Important notes:
 ----------------
- * This release will need Windows 2000 and Mac OS X 10.4 (Tiger) to work
-   correctly
+ * This release will need Windows 2000 and Mac OS X 10.4 (Tiger), or more
+   recent to work correctly
  * The HTTP interface is now only available on the local machine by default.
    If you want to make it available from other machines, you will have to
    edit the ".hosts" file.
