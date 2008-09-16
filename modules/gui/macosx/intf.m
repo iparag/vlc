@@ -2257,6 +2257,7 @@ end:
     [NSUserDefaults resetStandardUserDefaults];
 
     [[NSUserDefaults standardUserDefaults] setInteger:kCurrentPreferencesVersion forKey:kVLCPreferencesVersion];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 
     /* Relaunch now */
     const char * path = [[[NSBundle mainBundle] executablePath] UTF8String];
