@@ -400,12 +400,14 @@ Section $Name_Section01 SEC01
   !insertmacro InstallFile vlc.exe.manifest
 
   ; All dlls
+  Delete *.dll
   !insertmacro InstallFile *.dll
 
   ; Text files
   !insertmacro InstallFile *.txt
 
   ; Subfolders
+  RMDir /r "$INSTDIR\plugins"
   !insertmacro InstallFolder plugins
   !insertmacro InstallFolder locale
   !insertmacro InstallFolder osdmenu
