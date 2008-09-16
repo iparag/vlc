@@ -31,6 +31,7 @@
 #include <sys/param.h>                                    /* for MAXPATHLEN */
 #include <string.h>
 #include <vlc_keys.h>
+#include <spawn.h>
 
 #ifdef HAVE_CONFIG_H
 #   include "config.h"
@@ -2258,7 +2259,11 @@ end:
     [[NSUserDefaults standardUserDefaults] setInteger:kCurrentPreferencesVersion forKey:kVLCPreferencesVersion];
 
     /* Relaunch now */
-    [[NSWorkspace sharedWorkspace] launchApplication:[[NSBundle mainBundle] bundlePath]];
+    const char * path = [[[NSBundle mainBundle] executablePath] UTF8String];
+    const char *spawnedArgs[2] = { path, NULL };
+    char *spawnedEnv[] = {NULL};
+
+    posix_spawn(NULL, path, NULL, NULL, spawnedArgs, spawnedEnv);
     exit(0);
 }
 
