@@ -17325,7 +17325,7 @@ msgstr ""
 
 #: modules/gui/qt4/qt4.cpp:112
 msgid "Number of days between two update checks"
-msgstr "Nombre d'images entre deux vérifications de mises à jour"
+msgstr "Nombre de jours entre deux vérifications de mises à jour"
 
 #: modules/gui/qt4/qt4.cpp:114
 msgid "Allow the volume to be set to 400%"
