@@ -216,7 +216,7 @@ void SoutDialog::fileBrowse()
 {
     QString fileName = QFileDialog::getSaveFileName( this, qtr( "Save file" ), "",
         qtr( "Containers (*.ps *.ts *.mpg *.ogg *.asf *.mp4 *.mov *.wav *.raw *.flv)" ) );
-    ui.fileEdit->setText( fileName );
+    ui.fileEdit->setText( toNativeSeparators( fileName ) );
     updateMRL();
 }
 
