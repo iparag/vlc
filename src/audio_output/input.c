@@ -218,7 +218,7 @@ int aout_InputNew( aout_instance_t * p_aout, aout_input_t * p_input )
     psz_visual = val.psz_string;
 
     /* parse user filter lists */
-    for( i_visual = 0; i_visual < 2; i_visual++ )
+    for( i_visual = 0; i_visual < 2 && !AOUT_FMT_NON_LINEAR(&chain_output_format); i_visual++ )
     {
         char *psz_next = NULL;
         char *psz_parser = i_visual ? psz_visual : psz_filters;
