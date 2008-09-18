@@ -191,6 +191,8 @@ enum input_control_e
     INPUT_CONTROL_SET_SPU_DELAY,
 
     INPUT_CONTROL_ADD_SLAVE,
+
+    INPUT_CONTROL_ADD_SUBTITLE,
 };
 
 /* Internal helpers */
