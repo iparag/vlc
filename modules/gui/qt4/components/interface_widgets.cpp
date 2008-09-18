@@ -317,7 +317,9 @@ void VisualSelector::next()
 #define setupSmallButton( aButton ){  \
     aButton->setMaximumSize( QSize( 26, 26 ) ); \
     aButton->setMinimumSize( QSize( 26, 26 ) ); \
-    aButton->setIconSize( QSize( 20, 20 ) ); }
+    aButton->setIconSize( QSize( 20, 20 ) ); \
+    aButton->setFocusPolicy( Qt::NoFocus ); \
+}
 
 /* init static variables in advanced controls */
 mtime_t AdvControlsWidget::timeA = 0;
@@ -527,12 +529,14 @@ ControlsWidget::ControlsWidget( intf_thread_t *_p_i,
     slowerButton = new QToolButton;
     slowerButton->setAutoRaise( true );
     slowerButton->setMaximumSize( QSize( 26, 20 ) );
+    slowerButton->setFocusPolicy( Qt::NoFocus );
 
     BUTTON_SET_ACT( slowerButton, "-", qtr( "Slower" ), slower() );
 
     fasterButton = new QToolButton;
     fasterButton->setAutoRaise( true );
     fasterButton->setMaximumSize( QSize( 26, 20 ) );
+    fasterButton->setFocusPolicy( Qt::NoFocus );
 
     BUTTON_SET_ACT( fasterButton, "+", qtr( "Faster" ), faster() );
 
@@ -643,7 +647,7 @@ ControlsWidget::ControlsWidget( intf_thread_t *_p_i,
     playButton->setMaximumSize( QSize( 36, 36 ) );
     playButton->setMinimumSize( QSize( 36, 36 ) );
     playButton->setIconSize( QSize( 30, 30 ) );
-
+    playButton->setFocusPolicy( Qt::NoFocus );
 
     /** Prev + Stop + Next Block **/
     controlButLayout = new QHBoxLayout;
