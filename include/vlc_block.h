@@ -79,8 +79,13 @@ typedef struct block_sys_t block_sys_t;
 /** This block is corrupted and/or there is data loss  */
 #define BLOCK_FLAG_CORRUPTED     0x1000
 
-#define BLOCK_FLAG_PRIVATE_MASK  0xffff0000
-#define BLOCK_FLAG_PRIVATE_SHIFT 16
+/* These are for input core private usage only */
+#define BLOCK_FLAG_CORE_PRIVATE_MASK  0x00ff0000
+#define BLOCK_FLAG_CORE_PRIVATE_SHIFT 16
+
+/* These are for module private usage only */
+#define BLOCK_FLAG_PRIVATE_MASK  0xff000000
+#define BLOCK_FLAG_PRIVATE_SHIFT 24
 
 typedef void (*block_free_t) (block_t *);
 
