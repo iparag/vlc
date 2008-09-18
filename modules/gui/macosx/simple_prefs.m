@@ -269,7 +269,7 @@ create_toolbar_item( NSString * o_itemIdent, NSString * o_name, NSString * o_des
     /* Subtitles and OSD */
     [o_osd_encoding_txt setStringValue: _NS("Default Encoding")];
     [o_osd_font_box setTitle: _NS("Display Settings")];
-    [o_osd_font_btn setTitle: _NS("Browse...")];
+    [o_osd_font_btn setTitle: _NS("Choose...")];
     [o_osd_font_color_txt setStringValue: _NS("Font Color")];
     [o_osd_font_size_txt setStringValue: _NS("Font Size")];
     [o_osd_font_txt setStringValue: _NS("Font")];
@@ -1096,29 +1096,34 @@ static inline void save_module_list( intf_thread_t * p_intf, id object, const ch
 
 - (IBAction)osdSettingChanged:(id)sender
 {
-    if( sender == o_osd_font_btn )
-    {
-        o_selectFolderPanel = [[NSOpenPanel alloc] init];
-        [o_selectFolderPanel setCanChooseDirectories: NO];
-        [o_selectFolderPanel setCanChooseFiles: YES];
-        [o_selectFolderPanel setResolvesAliases: YES];
-        [o_selectFolderPanel setAllowsMultipleSelection: NO];
-        [o_selectFolderPanel setMessage: _NS("Choose the font to display your Subtitles with.")];
-        [o_selectFolderPanel setCanCreateDirectories: NO];
-        [o_selectFolderPanel setPrompt: _NS("Choose")];
-        [o_selectFolderPanel setAllowedFileTypes: [NSArray arrayWithObjects: @"dfont", @"ttf", @"otf", @"FFIL", nil]];
-        [o_selectFolderPanel beginSheetForDirectory: @"/System/Library/Fonts/" file: nil modalForWindow: o_sprefs_win 
-                                      modalDelegate: self 
-                                     didEndSelector: @selector(savePanelDidEnd:returnCode:contextInfo:)
-                                        contextInfo: o_osd_font_btn];
-    }
-    else
-        b_osdSettingChanged = YES;
+    b_osdSettingChanged = YES;
 }
 
 - (void)showOSDSettings
 {
     [self showSettingsForCategory: o_osd_view];
+}
+
+- (IBAction)showFontPicker:(id)sender
+{
+    char * font = config_GetPsz( p_intf, "quartztext-font" );
+    NSString * fontFamilyName = font ? [NSString stringWithUTF8String: font] : nil;
+    free(font);
+    if( fontFamilyName )
+    {
+        NSFontDescriptor * fd = [NSFontDescriptor fontDescriptorWithFontAttributes:nil];
+        NSFont * font = [NSFont fontWithDescriptor:[fd fontDescriptorWithFamily:fontFamilyName] textTransform:nil];
+        [[NSFontManager sharedFontManager] setSelectedFont:font isMultiple:NO];
+    }
+    [[NSFontManager sharedFontManager] setTarget:self];
+    [[NSFontPanel sharedFontPanel] orderFront:self];
+}
+
+- (void)changeFont:(id)sender
+{
+    NSFont * font = [sender convertFont:[[NSFontManager sharedFontManager] selectedFont]];
+    [o_osd_font_fld setStringValue:[font familyName]];
+    [self osdSettingChanged:self];
 }
 
 - (IBAction)inputSettingChanged:(id)sender
