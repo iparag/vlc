@@ -11,6 +11,7 @@ Changes between 0.9.2 and 0.9.3-git:
  * Add necessary options to Simple preferences (to avoid NVIDIA drivers issues)
  * Fix ffmpeg slowness on Mac OS X/PowerPC
  * Fix font selection on Mac OS X
+ * Thicker border to the Mac OS X subtitle renderer.
 
 Changes between 0.9.1 and 0.9.2:
 --------------------------------
