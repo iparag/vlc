@@ -151,8 +151,6 @@ ifdef HAVE_DARWIN_OS
 X264CONF += --enable-pic
 ifdef HAVE_DARWIN_OS_ON_INTEL
 FFMPEG_CFLAGS += -DHAVE_LRINTF
-else
-FFMPEGCONF += --disable-altivec
 endif
 endif
 
@@ -1081,7 +1079,6 @@ ifdef HAVE_DARWIN_OS_ON_INTEL
 	(cd $@; patch -p0 < ../Patches/ffmpeg-macosx-intel-mmx.patch)
 endif
 ifdef HAVE_DARWIN_OS
-	(cd $@/libswscale; patch -p0 < ../../Patches/ffmpeg-fix-noaltivec.patch)
 	(cd $@/libswscale; patch -p0 < ../../Patches/ffmpeg-libswscale-head.patch)
 endif
 ifdef NO_TEXT_RELOCATION
