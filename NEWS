@@ -9,6 +9,8 @@ Changes between 0.9.2 and 0.9.3-git:
  * Fix bug in directory opening on Mac OS X
  * Fix lost playlist columns when switching the playlist view
  * Add necessary options to Simple preferences (to avoid NVIDIA drivers issues)
+ * Fix ffmpeg slowness on Mac OS X/PowerPC
+ * Fix font selection on Mac OS X
 
 Changes between 0.9.1 and 0.9.2:
 --------------------------------
