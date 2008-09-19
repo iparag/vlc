@@ -143,10 +143,6 @@ ifdef HAVE_DARWIN_OS_ON_INTEL
 FFMPEGCONF += --enable-memalign-hack --cpu=pentium-m
 endif
 
-ifdef NO_TEXT_RELOCATION
-FFMPEGCONF += --disable-mmx
-endif
-
 ifdef HAVE_DARWIN_OS
 X264CONF += --enable-pic
 ifdef HAVE_DARWIN_OS_ON_INTEL
@@ -790,11 +786,7 @@ libtheora: libtheora-$(THEORA_VERSION).tar.bz2
 ifdef HAVE_BEOS
 	(cd $<; $(HOSTCC) ./configure $(HOSTCONF) --prefix=$(PREFIX) --disable-sdltest --disable-oggtest --disable-vorbistest --disable-asm --disable-examples && make && make install)
 else
-  ifdef NO_TEXT_RELOCATION
-	(cd $<; $(HOSTCC) ./configure $(HOSTCONF) --prefix=$(PREFIX) --disable-asm --disable-sdltest --disable-oggtest --disable-vorbistest --disable-asm --disable-examples && make && make install)
-  else
 	(cd $<; $(HOSTCC) ./configure $(HOSTCONF) --prefix=$(PREFIX) --disable-sdltest --disable-oggtest --disable-vorbistest --disable-examples && make && make install)
-  endif
 endif
 	$(INSTALL_NAME)
 	touch $@
@@ -1081,13 +1073,14 @@ endif
 ifdef HAVE_DARWIN_OS
 	(cd $@/libswscale; patch -p0 < ../../Patches/ffmpeg-libswscale-head.patch)
 endif
-ifdef NO_TEXT_RELOCATION
-	(cd $@; patch -p0 < ../Patches/ffmpeg-svn-mmx_removal-darwin9.patch)
-endif
 ifdef HAVE_UCLIBC
 	patch -p0 < Patches/ffmpeg-svn-uclibc.patch
 	patch -p0 < Patches/ffmpeg-svn-internal-define.patch
 	patch -p0 < Patches/ffmpeg-svn-libavformat.patch
+endif
+ifdef NO_TEXT_RELOCATION
+	echo "Broken LD. Fix your tools."
+	exit -1
 endif
 else
 ffmpeg-$(FFMPEG_VERSION).tar.gz:
