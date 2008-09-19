@@ -2994,7 +2994,7 @@ then
       VLC_ADD_CFLAGS([avcodec],[$AVCODEC_CFLAGS])
       VLC_RESTORE_FLAGS
     ],[
-      AC_MSG_ERROR([Could not find libavcodec or libavutil. Use --disable-avcodec to ignore this error.])
+      AC_MSG_FAILURE([Could not find libavcodec or libavutil. Use --disable-avcodec to ignore this error.])
   ])
 fi
 
@@ -3018,7 +3018,7 @@ then
       VLC_ADD_CFLAGS([avformat],[$AVFORMAT_CFLAGS])
       VLC_RESTORE_FLAGS
     ],[
-      AC_MSG_ERROR([Could not find libavformat or libavutil. Use --disable-avformat to ignore this error.])
+      AC_MSG_FAILURE([Could not find libavformat or libavutil. Use --disable-avformat to ignore this error.])
   ])
 fi
 
@@ -3075,7 +3075,7 @@ then
           AC_MSG_WARN([Could not find img_resample in libavcodec.])
           if test "${enable_swscale}" != "no"
           then
-            AC_MSG_ERROR([swscale (and its fallback module imgresample) support will be missing. Use --disable-swscale to ignore this error. (This basically means that you will be missing any good software scaling module and some video chroma converters.)])
+            AC_MSG_FAILURE([swscale (and its fallback module imgresample) support will be missing. Use --disable-swscale to ignore this error. (This basically means that you will be missing any good software scaling module and some video chroma converters.)])
           fi
 	# That sed hack to add -rpath is kind of ugly but at least it fixes
         # detection when linking against a shared libavcodec with
