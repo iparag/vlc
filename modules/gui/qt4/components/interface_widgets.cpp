@@ -1093,6 +1093,7 @@ void FullscreenControllerWidget::showFSC()
 {
     adjustSize();
 #ifdef WIN32TRICK
+    msg_Dbg( p_intf, "showFSC() was called" );
     // after quiting and going to fs, we need to call show()
     if( isHidden() )
         show();
@@ -1119,6 +1120,7 @@ void FullscreenControllerWidget::showFSC()
 void FullscreenControllerWidget::hideFSC()
 {
 #ifdef WIN32TRICK
+    msg_Dbg( p_intf, "hideFSC() was called" );
     b_fscHidden = true;
     setWindowOpacity( 0.0 );    // simulate hidding
 #else
@@ -1164,6 +1166,7 @@ void FullscreenControllerWidget::slowHideFSC()
     else
     {
 #ifdef WIN32TRICK
+        msg_Dbg( p_intf, "slowHideFSC() was called" );
          if ( windowOpacity() > 0.0 && !b_fscHidden )
 #else
          if ( windowOpacity() > 0.0 )
@@ -1187,6 +1190,10 @@ void FullscreenControllerWidget::slowHideFSC()
 void FullscreenControllerWidget::customEvent( QEvent *event )
 {
     bool b_fs;
+
+#ifndef NDEBUG
+    msg_Dbg( p_intf, "New FSC event: %i", event->type() );
+#endif
 
     switch( event->type() )
     {
