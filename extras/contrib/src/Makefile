@@ -1908,11 +1908,11 @@ ifdef HAVE_WIN32
 	(cd $@; cd lgl; ln -sf alloca_.h alloca.h;)
 endif
 
-.gnutls: gnutls .opencdk .gcrypt .gpg-error 
+.gnutls: gnutls .gcrypt .gpg-error 
 ifdef HAVE_WIN32
 	(cd $<; autoconf && $(HOSTCC) ./configure $(HOSTCONF) --prefix=$(PREFIX) CFLAGS="$(CFLAGS)" --target=i586-mingw32msvc --disable-cxx -disable-shared --enable-static --disable-nls  && cd lgl && make && cd ../gl && make &&  cd ../lib &&make && make install && cd ../includes && make install)
 else
-	(cd $<; $(HOSTCC) ./configure $(HOSTCONF) --prefix=$(PREFIX) CFLAGS="$(CFLAGS)" --disable-cxx --with-libopencdk-prefix=$(PREFIX) --disable-guile && make && make install)
+	(cd $<; $(HOSTCC) ./configure $(HOSTCONF) --prefix=$(PREFIX) CFLAGS="$(CFLAGS)" --disable-cxx --with-included-opencdk --disable-guile && make && make install)
 endif
 	$(INSTALL_NAME)
 	touch $@
