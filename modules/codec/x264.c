@@ -1039,7 +1039,7 @@ static int  Open ( vlc_object_t *p_this )
 #if X264_BUILD >= 0x0013
     var_Get( p_enc, SOUT_CFG_PREFIX "b-adapt", &val );
 #if X264_BUILD >= 63
-    p_sys->param.i_bframe_adaptive = val.i_int;
+    p_sys->param.i_bframe_adaptive = val.b_bool ? X264_B_ADAPT_FAST : X264_B_ADAPT_NONE;
 #else
     p_sys->param.b_bframe_adaptive = val.b_bool;
 #endif
