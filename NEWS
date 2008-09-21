@@ -12,6 +12,8 @@ Changes between 0.9.2 and 0.9.3-git:
  * Fix ffmpeg slowness on Mac OS X/PowerPC
  * Fix font selection on Mac OS X
  * Thicker border to the Mac OS X subtitle renderer.
+ * Fix sensitivity of Fullscreen Controller on Windows
+ * Fix update system bugs.
 
 Changes between 0.9.1 and 0.9.2:
 --------------------------------
