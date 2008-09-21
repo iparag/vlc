@@ -13944,13 +13944,14 @@ msgstr ""
 
 #: modules/gui/macosx/intf.m:641
 msgid "I agree to be possibly contacted about this bugreport."
-msgstr ""
+msgstr "Ich stimme zu, möglicherweise zu diesem Bericht kontaktiert zu werden."
 
 #: modules/gui/macosx/intf.m:642
 msgid ""
 "Only your default E-Mail address will be submitted, including no further "
 "information."
 msgstr ""
+"Nur Ihre Standard-E-Mail-Adresse wird übertragen, ohne weitere Informationen."
 
 #: modules/gui/macosx/intf.m:1627
 #, c-format
@@ -13997,16 +13998,16 @@ msgstr "Einstellungen zurücksetzen"
 
 #: modules/gui/macosx/intf.m:2250
 msgid "We just found an older version of VLC's preferences files."
-msgstr ""
+msgstr "Wir haben gerade eine ältere Version von VLC's "
+"Einstellungsdateien gefunden."
 
 #: modules/gui/macosx/intf.m:2251
 msgid "Move To Trash and Relaunch VLC"
-msgstr ""
+msgstr "In den Papierkorb und VLC neustarten"
 
 #: modules/gui/macosx/intf.m:2251
-#, fuzzy
 msgid "Ignore"
-msgstr "gar nicht"
+msgstr "Ignorieren"
 
 #: modules/gui/macosx/macosx.m:52
 msgid "Video device"
@@ -17950,6 +17951,7 @@ msgstr "Automatisch nach Updates suchen"
 msgid ""
 "This is VLC's skinnable interface. You can download skins at &lt;a href="
 msgstr ""
+"Dies ist VLCs skinbares Interface. Sie können skins herunterladen unter &lt;a href="
 
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:50
 msgid "Subtitles Language"
