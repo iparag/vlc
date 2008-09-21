@@ -1,19 +1,23 @@
 Changes between 0.9.2 and 0.9.3-git:
 ------------------------------------
 
+ * Fix sensitivity of Fullscreen Controller on Windows
+ * Fix ffmpeg slowness on Mac OS X/PowerPC
  * Fix crash on startup on Mac OS X when installed on old preferences
- * Fix error messages on startup on Windows when VLC wasn't correctly uninstalled before installation
+ * Fix error messages on startup on Windows when VLC wasn't correctly
+   uninstalled before installation
  * Various crashes fixed in PS, SSA, mkv, xspf, freetype
+ * Fix DTS channel order on 5.1 systems
  * Fix pausing behaviour for subtitles
  * Multiple subtitles and podcast fixes
  * Fix bug in directory opening on Mac OS X
  * Fix lost playlist columns when switching the playlist view
  * Add necessary options to Simple preferences (to avoid NVIDIA drivers issues)
- * Fix ffmpeg slowness on Mac OS X/PowerPC
  * Fix font selection on Mac OS X
  * Thicker border to the Mac OS X subtitle renderer.
- * Fix sensitivity of Fullscreen Controller on Windows
  * Fix update system bugs.
+ * Fix others bugs (dvd languages selection, ...)
+
 
 Changes between 0.9.1 and 0.9.2:
 --------------------------------
