@@ -254,6 +254,9 @@ public:
     void fullscreenChanged( vout_thread_t *, bool b_fs, int i_timeout );
     vout_thread_t *p_vout;
 
+    int i_mouse_last_move_x;
+    int i_mouse_last_move_y;
+
 protected:
     friend class MainInterface;
     friend class VolumeClickHandler;

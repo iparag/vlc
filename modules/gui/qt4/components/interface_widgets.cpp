@@ -1021,6 +1021,9 @@ FullscreenControllerWidget::FullscreenControllerWidget( intf_thread_t *_p_i,
           b_slow_hide_begin(false), i_slow_hide_timeout(1),
           b_fullscreen( false ), i_hide_timeout( 1 ), p_vout(NULL)
 {
+    i_mouse_last_move_x = -1;
+    i_mouse_last_move_y = -1;
+
     setWindowFlags( Qt::ToolTip );
 
     setFrameShape( QFrame::StyledPanel );
@@ -1191,9 +1194,7 @@ void FullscreenControllerWidget::customEvent( QEvent *event )
 {
     bool b_fs;
 
-#ifndef NDEBUG
     msg_Dbg( p_intf, "New FSC event: %i", event->type() );
-#endif
 
     switch( event->type() )
     {
@@ -1325,14 +1326,47 @@ static int FullscreenControllerWidgetMouseMoved( vlc_object_t *vlc_object, const
 {
     FullscreenControllerWidget *p_fs = (FullscreenControllerWidget *)data;
 
-    msg_Dbg( p_fs->p_vout, "Qt4: The mouse has moved" );
-    /* Show event */
-    IMEvent *eShow = new IMEvent( FullscreenControlShow_Type, 0 );
-    QApplication::postEvent( p_fs, static_cast<QEvent *>(eShow) );
+    int i_mousex, i_mousey;
+    bool b_toShow = false;
 
-    /* Plan hide event */
-    IMEvent *eHide = new IMEvent( FullscreenControlPlanHide_Type, 0 );
-    QApplication::postEvent( p_fs, static_cast<QEvent *>(eHide) );
+    /* Get the value from the Vout - Trust the vout more than Qt */
+    i_mousex = var_GetInteger( p_fs->p_vout, "mouse-x" );
+    i_mousey = var_GetInteger( p_fs->p_vout, "mouse-y" );
+    msg_Dbg( p_fs->p_vout, "Qt4: The mouse has moved: %i %i",
+            i_mousex, i_mousey );
+
+    /* First time */
+    if( p_fs->i_mouse_last_move_x == -1 || p_fs->i_mouse_last_move_y == -1 )
+    {
+        p_fs->i_mouse_last_move_x = i_mousex;
+        p_fs->i_mouse_last_move_y = i_mousey;
+        b_toShow = true;
+    }
+    /* All other times */
+    else
+    {
+        msg_Dbg( p_fs->p_vout, "%i %i",
+                abs( p_fs->i_mouse_last_move_x - i_mousex ),
+                abs( p_fs->i_mouse_last_move_y - i_mousey ) );
+        if( abs( p_fs->i_mouse_last_move_x - i_mousex ) > 1 ||
+            abs( p_fs->i_mouse_last_move_y - i_mousey ) > 1 )
+        {
+            b_toShow = true;
+            p_fs->i_mouse_last_move_x = i_mousex;
+            p_fs->i_mouse_last_move_y = i_mousey;
+        }
+    }
+
+    if( b_toShow )
+    {
+        /* Show event */
+        IMEvent *eShow = new IMEvent( FullscreenControlShow_Type, 0 );
+        QApplication::postEvent( p_fs, static_cast<QEvent *>(eShow) );
+
+        /* Plan hide event */
+        IMEvent *eHide = new IMEvent( FullscreenControlPlanHide_Type, 0 );
+        QApplication::postEvent( p_fs, static_cast<QEvent *>(eHide) );
+    }
 
     return VLC_SUCCESS;
 }
