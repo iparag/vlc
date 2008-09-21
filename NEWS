@@ -18,7 +18,7 @@ Changes between 0.9.2 and 0.9.3-git:
  * Fix update system bugs
  * Removed the deprecated QuickDraw video output module to avoid crashes on 
    Modern Mac OS X versions
- * Fixed others bugs (dvd language selection, ...)
+ * Other bug fixes (dvd language selection, ...)
 
 
 Changes between 0.9.1 and 0.9.2:
