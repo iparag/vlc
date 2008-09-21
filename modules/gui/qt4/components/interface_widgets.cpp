@@ -1095,7 +1095,6 @@ FullscreenControllerWidget::~FullscreenControllerWidget()
 void FullscreenControllerWidget::showFSC()
 {
     adjustSize();
-    msg_Dbg( p_intf, "showFSC() was called" );
 #ifdef WIN32TRICK
     // after quiting and going to fs, we need to call show()
     if( isHidden() )
@@ -1122,7 +1121,6 @@ void FullscreenControllerWidget::showFSC()
  */
 void FullscreenControllerWidget::hideFSC()
 {
-    msg_Dbg( p_intf, "hideFSC() was called" );
 #ifdef WIN32TRICK
     b_fscHidden = true;
     setWindowOpacity( 0.0 );    // simulate hidding
@@ -1168,7 +1166,6 @@ void FullscreenControllerWidget::slowHideFSC()
     }
     else
     {
-        msg_Dbg( p_intf, "slowHideFSC() was called" );
 #ifdef WIN32TRICK
          if ( windowOpacity() > 0.0 && !b_fscHidden )
 #else
@@ -1193,8 +1190,6 @@ void FullscreenControllerWidget::slowHideFSC()
 void FullscreenControllerWidget::customEvent( QEvent *event )
 {
     bool b_fs;
-
-    msg_Dbg( p_intf, "New FSC event: %i", event->type() );
 
     switch( event->type() )
     {
@@ -1332,8 +1327,6 @@ static int FullscreenControllerWidgetMouseMoved( vlc_object_t *vlc_object, const
     /* Get the value from the Vout - Trust the vout more than Qt */
     i_mousex = var_GetInteger( p_fs->p_vout, "mouse-x" );
     i_mousey = var_GetInteger( p_fs->p_vout, "mouse-y" );
-    msg_Dbg( p_fs->p_vout, "Qt4: The mouse has moved: %i %i",
-            i_mousex, i_mousey );
 
     /* First time */
     if( p_fs->i_mouse_last_move_x == -1 || p_fs->i_mouse_last_move_y == -1 )
@@ -1345,11 +1338,9 @@ static int FullscreenControllerWidgetMouseMoved( vlc_object_t *vlc_object, const
     /* All other times */
     else
     {
-        msg_Dbg( p_fs->p_vout, "%i %i",
-                abs( p_fs->i_mouse_last_move_x - i_mousex ),
-                abs( p_fs->i_mouse_last_move_y - i_mousey ) );
-        if( abs( p_fs->i_mouse_last_move_x - i_mousex ) > 1 ||
-            abs( p_fs->i_mouse_last_move_y - i_mousey ) > 1 )
+        /* Trigger only if move > 3 px dans une direction */
+        if( abs( p_fs->i_mouse_last_move_x - i_mousex ) > 2 ||
+            abs( p_fs->i_mouse_last_move_y - i_mousey ) > 2 )
         {
             b_toShow = true;
             p_fs->i_mouse_last_move_x = i_mousex;
