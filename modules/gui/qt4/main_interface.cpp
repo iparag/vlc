@@ -1077,6 +1077,11 @@ void MainInterface::updateSystrayTooltipStatus( int i_status )
  ************************************************************************/
 void MainInterface::dropEvent(QDropEvent *event)
 {
+    dropEventPlay( event, true );
+}
+
+void MainInterface::dropEventPlay( QDropEvent *event, bool b_play )
+{
      const QMimeData *mimeData = event->mimeData();
 
      /* D&D of a subtitles file, add it on the fly */
@@ -1094,14 +1099,14 @@ void MainInterface::dropEvent(QDropEvent *event)
             }
         }
      }
-     bool first = true;
+     bool first = b_play;
      foreach( QUrl url, mimeData->urls() )
      {
         QString s = toNativeSeparators( url.toLocalFile() );
 
         if( s.length() > 0 ) {
             playlist_Add( THEPL, qtu(s), NULL,
-                          PLAYLIST_APPEND | (first ? PLAYLIST_GO:0),
+                          PLAYLIST_APPEND | (first ? PLAYLIST_GO: 0),
                           PLAYLIST_END, true, false );
             first = false;
         }
