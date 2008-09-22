@@ -25,11 +25,13 @@ Windows port:
  * Fixed sensitivity of Fullscreen Controller
  * Fixed error messages on startup when VLC wasn't correctly uninstalled
    before installation
+ * Fix showing of controller when returning from fullscreen playback
 
 Qt4 interface:
- * Added Faster/Slower buttons to the controller panel
+ * Added Faster/Slower icons to the controller panel
  * Fixed lost playlist columns when switching the playlist view
  * Added needed options to Simple preferences (to avoid NVIDIA drivers issues)
+ * Added time label in the Fullscreen controller
 
 
 Changes between 0.9.1 and 0.9.2:
