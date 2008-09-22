@@ -19,14 +19,15 @@ Mac OS X port:
  * Fixed AC3 passthrough on Mac OS X
  * Fixed behavior of the Volume Normalizer settings on Mac OS X
  * Removed the deprecated QuickDraw video output module to avoid crashes on
-      modern Mac OS X versions
+   modern Mac OS X versions
 
 Windows port:
  * Fixed sensitivity of Fullscreen Controller
  * Fixed error messages on startup when VLC wasn't correctly uninstalled
-      before installation
+   before installation
 
 Qt4 interface:
+ * Added Faster/Slower buttons to the controller panel
  * Fixed lost playlist columns when switching the playlist view
  * Added needed options to Simple preferences (to avoid NVIDIA drivers issues)
 
