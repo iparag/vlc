@@ -221,10 +221,13 @@ void MMSTUClose( access_t *p_access )
 {
     access_sys_t *p_sys = p_access->p_sys;
 
-    vlc_object_kill( p_sys->p_keepalive_thread );
-    if( !p_sys->p_keepalive_thread->b_thread_error )
-        vlc_thread_join( p_sys->p_keepalive_thread );
-    vlc_object_release( p_sys->p_keepalive_thread );
+    if( p_sys->p_keepalive_thread )
+    {
+        vlc_object_kill( p_sys->p_keepalive_thread );
+        if( !p_sys->p_keepalive_thread->b_thread_error )
+            vlc_thread_join( p_sys->p_keepalive_thread );
+        vlc_object_release( p_sys->p_keepalive_thread );
+    }
 
     /* close connection with server */
     MMSClose( p_access );
