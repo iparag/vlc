@@ -8,7 +8,7 @@ Various bugfixes:
  * Various crashes fixed in PS, SSA, mkv, xspf, freetype
  * Fixed update system bugs
  * Other bug fixes (dvd language selection, ...)
- 
+
 Mac OS X port:
  * Fixed ffmpeg slowness on PowerPC-based Macs
  * Fixed crash on startup when installed on old preferences
@@ -31,7 +31,7 @@ Qt4 interface:
  * Added Faster/Slower icons to the controller panel
  * Fixed lost playlist columns when switching the playlist view
  * Added needed options to Simple preferences (to avoid NVIDIA drivers issues)
- * Added time label in the Fullscreen controller
+ * Fullscreen controller: added time label, remembering of last position
 
 
 Changes between 0.9.1 and 0.9.2:
