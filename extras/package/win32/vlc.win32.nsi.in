@@ -541,8 +541,8 @@ Section /o $Name_Section03 SEC03
 
 SectionEnd
 
-Section $Name_Section04 SEC04
-  SectionIn 1 3
+Section /o $Name_Section04 SEC04
+  SectionIn 3
   SetOutPath "$INSTDIR"
   !insertmacro OpenUninstallLog
   !insertmacro InstallFile activex\axvlc.dll
@@ -550,7 +550,20 @@ Section $Name_Section04 SEC04
   RegDLL "$INSTDIR\axvlc.dll"
 SectionEnd
 
-Section $Name_Section05 SEC05
+SectionGroup /e !$Name_Section06 SEC05
+  SectionGroup $Name_SectionGroupAudio
+    !insertmacro MacroAudioExtensions RegisterExtensionSection
+  SectionGroupEnd
+  SectionGroup $Name_SectionGroupVideo
+    !insertmacro MacroVideoExtensions RegisterExtensionSection
+  SectionGroupEnd
+  SectionGroup $Name_SectionGroupOther
+    !insertmacro MacroOtherExtensions RegisterExtensionSection
+  SectionGroupEnd
+SectionGroupEnd
+
+
+Section $Name_Section05 SEC06
   SectionIn 1 2 3
   WriteRegStr HKCR "AudioCD\shell\PlayWithVLC" "" $ContextMenuEntry_PlayWith
   WriteRegStr HKCR "AudioCD\shell\PlayWithVLC\command" "" \
@@ -585,20 +598,8 @@ Section $Name_Section05 SEC05
 
 SectionEnd
 
-SectionGroup $Name_Section06 SEC06
-  SectionGroup $Name_SectionGroupAudio
-    !insertmacro MacroAudioExtensions RegisterExtensionSection
-  SectionGroupEnd
-  SectionGroup $Name_SectionGroupVideo
-    !insertmacro MacroVideoExtensions RegisterExtensionSection
-  SectionGroupEnd
-  SectionGroup $Name_SectionGroupOther
-    !insertmacro MacroOtherExtensions RegisterExtensionSection
-  SectionGroupEnd
-SectionGroupEnd
-
 Section $Name_Section07 SEC07
-  SectionIn 3
+  SectionIn 1 3
   !insertmacro MacroAllExtensions AddContextMenu
   !insertmacro AddContextMenuExt "Directory"
 SectionEnd
@@ -623,7 +624,7 @@ SectionEnd
 ;;; Start function
 Function .onInit
   !insertmacro MUI_LANGDLL_DISPLAY
-  
+
   !include "languages\english.nsh"
   StrCmp $LANGUAGE ${LANG_FRENCH} French 0
   StrCmp $LANGUAGE ${LANG_ITALIAN} Italian 0
@@ -657,7 +658,7 @@ Function .onInit
     ClearErrors
     ExecWait '$R0 _?=$INSTDIR' ;Do not copy the uninstaller to a temp file
   done:
-  
+
 FunctionEnd
 
 ;; End function
