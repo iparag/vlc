@@ -2067,7 +2067,8 @@ static int ProcessNodes( filter_t *p_filter,
         rv = PushFont( &p_fonts,
                        FC_DEFAULT_FONT,
                        p_sys->i_font_size,
-                       0x00ffffff,
+                       (p_sys->i_font_color & 0xffffff) |
+                          (((255-p_sys->i_font_opacity) & 0xff) << 24),
                        0x00ffffff );
     }
     if( rv != VLC_SUCCESS )
