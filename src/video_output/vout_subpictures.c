@@ -35,6 +35,7 @@
 #include <vlc_block.h>
 #include <vlc_filter.h>
 #include <vlc_osd.h>
+#include <vlc_input.h>  /* Used only for ugly pause workaround */
 #include "../libvlc.h"
 
 #include <assert.h>
@@ -957,6 +958,15 @@ void spu_RenderSubpictures( spu_t *p_spu, video_format_t *p_fmt,
     int i_source_video_width;
     int i_source_video_height;
     subpicture_t *p_subpic_v;
+    bool b_paused;
+
+
+    /* Get input pause status
+     * XXX this is *really* ugly but it cannot be avoid without breaking 0.9 ABI */
+    input_thread_t *p_input = vlc_object_find( p_spu, VLC_OBJECT_INPUT, FIND_PARENT );
+    b_paused = p_input && var_GetInteger( p_input, "state" ) == PAUSE_S;
+    if( p_input )
+        vlc_object_release( p_input );
 
     /* Get lock */
     vlc_mutex_lock( &p_spu->subpicture_lock );
