@@ -1069,6 +1069,9 @@ endif
 ifdef HAVE_DARWIN_OS_ON_INTEL
 	(cd $@; patch -p0 < ../Patches/ffmpeg-macosx-intel-mmx.patch)
 endif
+ifdef HAVE_DARWIN_OS
+	(cd $@; patch -p1 < ../Patches/ffmpeg-altivec-fix.patch)
+endif
 ifdef HAVE_UCLIBC
 	patch -p0 < Patches/ffmpeg-svn-uclibc.patch
 	patch -p0 < Patches/ffmpeg-svn-internal-define.patch
