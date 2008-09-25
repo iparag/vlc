@@ -3,11 +3,11 @@ Changes between 0.9.2 and 0.9.3-git:
 
 Various bugfixes:
  * Fixed DTS channel order on 5.1 systems
- * Fixed pausing behavior for subtitles
+ * Fixed pausing behavior for subtitles and for Audio-CD
  * Multiple subtitles and podcast fixes
  * Various crashes fixed in PS, SSA, mkv, xspf, freetype
  * Fixed update system bugs
- * Other bug fixes (dvd language selection, ...)
+ * Other bug fixes (dvd language selection, subtitle colours, HTTP keep-alive...)
 
 Mac OS X port:
  * Fixed ffmpeg slowness on PowerPC-based Macs
@@ -26,12 +26,15 @@ Windows port:
  * Fixed error messages on startup when VLC wasn't correctly uninstalled
    before installation
  * Fix showing of controller when returning from fullscreen playback
+ * Multiple directory and path location fixes.
 
 Qt4 interface:
  * Added Faster/Slower icons to the controller panel
  * Fixed lost playlist columns when switching the playlist view
  * Added needed options to Simple preferences (to avoid NVIDIA drivers issues)
  * Fullscreen controller: added time label, remembering of last position
+ * Fixed drag'n drop behaviour on the playlist
+ * Multiple other fixes (Enter hotkey in preferences, Skins selection...)
 
 
 Changes between 0.9.1 and 0.9.2:
