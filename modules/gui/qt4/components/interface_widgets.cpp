@@ -1418,7 +1418,7 @@ void FullscreenControllerWidget::detachVout()
 void FullscreenControllerWidget::fullscreenChanged( vout_thread_t *p_vout,
         bool b_fs, int i_timeout )
 {
-    msg_Dbg( p_vout, "Qt: Entering Fullscreen" );
+    msg_Dbg( p_vout, "Qt: Changing Fullscreen Mode" );
 
     vlc_mutex_lock( &lock );
     /* Entering fullscreen, register callback */
@@ -1440,6 +1440,17 @@ void FullscreenControllerWidget::fullscreenChanged( vout_thread_t *p_vout,
         /* Force fs hidding */
         IMEvent *eHide = new IMEvent( FullscreenControlHide_Type, 0 );
         QApplication::postEvent( this, static_cast<QEvent *>(eHide) );
+#ifdef WIN32
+        /* This is a big, a huge HACK around the windows Video Output,
+         Since the Vout fusion the Vout Windows, with the main windows
+         (very nice indeed for Alt-Tab), at the end of the film, when Vout quits
+         fullscreen, MI isn't properly put in the good state again...
+         (hidden still)...
+         Of course this is not good, but we will have to live with it temporarly
+         */
+        p_intf->p_sys->p_mi->hide();
+        p_intf->p_sys->p_mi->show();
+#endif
     }
     vlc_mutex_unlock( &lock );
 }
