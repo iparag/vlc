@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-23 21:18+0100\n"
+"POT-Creation-Date: 2008-09-25 11:50-0700\n"
 "PO-Revision-Date: 2008-09-01 21:53+0100\n"
 "Last-Translator: Rémi Duraffort <ivoire@videolan.org>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -2425,7 +2425,7 @@ msgstr ""
 #: modules/access/dshow/dshow.cpp:83 modules/access/dshow/dshow.cpp:86
 #: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:246
 #: modules/audio_output/alsa.c:105 modules/gui/fbosd.c:173
-#: modules/gui/macosx/prefs_widgets.m:1280
+#: modules/gui/macosx/prefs_widgets.m:1321
 #: modules/gui/macosx/simple_prefs.m:381 modules/gui/macosx/simple_prefs.m:476
 #: modules/gui/macosx/simple_prefs.m:702 modules/gui/macosx/vout.m:203
 #: modules/gui/qt4/components/preferences_widgets.cpp:559
@@ -5706,7 +5706,7 @@ msgstr "Port CDDB"
 msgid "CDDB Server port to use."
 msgstr "Port du serveur CDDB à utiliser."
 
-#: modules/access/cdda.c:466
+#: modules/access/cdda.c:468
 #, c-format
 msgid "Audio CD - Track %i"
 msgstr "CD Audio - Piste %i"
@@ -13996,7 +13996,7 @@ msgstr "Capture"
 
 #: modules/gui/macosx/open.m:175 modules/gui/macosx/open.m:181
 #: modules/gui/macosx/open.m:288 modules/gui/macosx/output.m:145
-#: modules/gui/macosx/prefs_widgets.m:1174
+#: modules/gui/macosx/prefs_widgets.m:1215
 #: modules/gui/macosx/simple_prefs.m:291
 #: modules/gui/qt4/components/preferences_widgets.cpp:260
 #: modules/gui/qt4/components/simple_preferences.cpp:239
@@ -14116,7 +14116,6 @@ msgid "Delay"
 msgstr "Retard"
 
 #: modules/gui/macosx/open.m:292
-#: modules/gui/qt4/components/info_panels.cpp:526
 msgid "FPS"
 msgstr "FPS"
 
@@ -14442,15 +14441,15 @@ msgstr ""
 "Attention, ceci va réinitialiser le fichier de configuration de VLC.\n"
 "Désirez-vous vraiment continuer ?"
 
-#: modules/gui/macosx/prefs_widgets.m:1209
+#: modules/gui/macosx/prefs_widgets.m:1250
 msgid "Select a directory"
 msgstr "Sélectionnez un répertoire"
 
-#: modules/gui/macosx/prefs_widgets.m:1209
+#: modules/gui/macosx/prefs_widgets.m:1250
 msgid "Select a file"
 msgstr "Sélectionner un fichier"
 
-#: modules/gui/macosx/prefs_widgets.m:1210
+#: modules/gui/macosx/prefs_widgets.m:1251
 msgid "Select"
 msgstr "Sélectionner"
 
@@ -14693,27 +14692,34 @@ msgstr "Numérotation séquentielle"
 
 #: modules/gui/macosx/simple_prefs.m:520 modules/gui/macosx/simple_prefs.m:564
 #: modules/gui/macosx/simple_prefs.m:1151
+#: modules/gui/qt4/components/simple_preferences.cpp:408
 msgid "Custom"
 msgstr "Personnalisé"
 
 #: modules/gui/macosx/simple_prefs.m:520
+#: modules/gui/qt4/components/simple_preferences.cpp:409
 msgid "Lowest latency"
 msgstr "Latence la plus faible"
 
 #: modules/gui/macosx/simple_prefs.m:520
+#: modules/gui/qt4/components/simple_preferences.cpp:410
 msgid "Low latency"
 msgstr "Faible latence"
 
-#: modules/gui/macosx/simple_prefs.m:520 modules/misc/freetype.c:107
-#: modules/misc/quartztext.c:108 modules/misc/win32text.c:80
+#: modules/gui/macosx/simple_prefs.m:520
+#: modules/gui/qt4/components/simple_preferences.cpp:411
+#: modules/misc/freetype.c:107 modules/misc/quartztext.c:108
+#: modules/misc/win32text.c:80
 msgid "Normal"
 msgstr "Normal"
 
 #: modules/gui/macosx/simple_prefs.m:521
+#: modules/gui/qt4/components/simple_preferences.cpp:412
 msgid "High latency"
 msgstr "Haute latence"
 
 #: modules/gui/macosx/simple_prefs.m:521
+#: modules/gui/qt4/components/simple_preferences.cpp:413
 msgid "Higher latency"
 msgstr "Latence la plus élevée"
 
@@ -16227,29 +16233,29 @@ msgstr "Impossible de trouver le fichier pixmap: %s"
 msgid "QNX RTOS video and audio output"
 msgstr "Sortie vidéo et audio QNX RTOS"
 
-#: modules/gui/qt4/components/extended_panels.cpp:977
-#: modules/gui/qt4/components/extended_panels.cpp:1042
+#: modules/gui/qt4/components/extended_panels.cpp:978
+#: modules/gui/qt4/components/extended_panels.cpp:1043
 msgid "Preamp\n"
 msgstr "Préamp\n"
 
-#: modules/gui/qt4/components/extended_panels.cpp:978
-#: modules/gui/qt4/components/extended_panels.cpp:1043
+#: modules/gui/qt4/components/extended_panels.cpp:979
+#: modules/gui/qt4/components/extended_panels.cpp:1044
 msgid "dB"
 msgstr "dB"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1131
+#: modules/gui/qt4/components/extended_panels.cpp:1132
 msgid "Enable spatializer"
 msgstr "Activer le spatialiseur"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1272
+#: modules/gui/qt4/components/extended_panels.cpp:1273
 msgid "Audio/Video"
 msgstr "Audio/Vidéo"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1288
+#: modules/gui/qt4/components/extended_panels.cpp:1289
 msgid "Advance of audio over video:"
 msgstr "Avance de l'audio sur la vidéo"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1297
+#: modules/gui/qt4/components/extended_panels.cpp:1298
 msgid ""
 "A positive value means that\n"
 "the audio is ahead of the video"
@@ -16257,15 +16263,15 @@ msgstr ""
 "Une valeur positive veut dire\n"
 "que l'audio est en avance sur la vidéo"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1305
+#: modules/gui/qt4/components/extended_panels.cpp:1306
 msgid "Subtitles/Video"
 msgstr "Sous-titres/Vidéo"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1321
+#: modules/gui/qt4/components/extended_panels.cpp:1322
 msgid "Advance of subtitles over video:"
 msgstr "Avance des sous-titres sur la vidéo :"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1330
+#: modules/gui/qt4/components/extended_panels.cpp:1331
 msgid ""
 "A positive value means that\n"
 "the subtitles are ahead of the video"
@@ -16273,11 +16279,11 @@ msgstr ""
 "Une valeur positive veut dire\n"
 "que les sous-titres sont en avance sur la vidéo"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1349
+#: modules/gui/qt4/components/extended_panels.cpp:1350
 msgid "Speed of the subtitles:"
 msgstr "Vitesse des sous-titres :"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1379
+#: modules/gui/qt4/components/extended_panels.cpp:1380
 msgid "Force update of this dialog's values"
 msgstr "Forcez l'actualisation des valeur de la fenêtre"
 
@@ -16396,16 +16402,16 @@ msgstr "Enlever le mode muet"
 msgid "Pause the playback"
 msgstr "Pauser la lecture"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1474
+#: modules/gui/qt4/components/interface_widgets.cpp:1485
 msgid "Revert to normal play speed"
 msgstr "Retourner à la vitesse de lecture normale"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1624
+#: modules/gui/qt4/components/interface_widgets.cpp:1635
 #, fuzzy
 msgid "Download cover art"
 msgstr "Télécharger"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1640
+#: modules/gui/qt4/components/interface_widgets.cpp:1651
 msgid "Toggle between elapsed and remaining time"
 msgstr "Basculer entre le temps écoulé et le temps restant"
 
