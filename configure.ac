@@ -1,10 +1,10 @@
 dnl Autoconf settings for vlc
 
-AC_INIT(vlc, 0.9.3)
+AC_INIT(vlc, 0.9.4-git)
 VERSION_MAJOR="0"
 VERSION_MINOR="9"
-VERSION_REVISION="3"
-VERSION_EXTRA=""
+VERSION_REVISION="4"
+VERSION_EXTRA="-git"
 
 CONFIGURE_LINE="`echo "$0 $ac_configure_args" | sed -e 's/\\\/\\\\\\\/g'`"
 CODENAME="Grishenko"
