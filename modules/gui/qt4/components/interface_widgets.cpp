@@ -1102,6 +1102,18 @@ FullscreenControllerWidget::~FullscreenControllerWidget()
     vlc_mutex_destroy( &lock );
 }
 
+
+void FullscreenControllerWidget::stop()
+{
+#ifdef WIN32
+    if( p_vout )
+        var_SetBool( p_vout, "fullscreen", false );
+#endif
+
+    THEMIM->stop();
+}
+
+
 /**
  * Show fullscreen controller
  */
