@@ -1427,6 +1427,8 @@ static int EsOutSend( es_out_t *out, es_out_id_t *es, block_t *p_block )
         p_block->i_pts =
             input_ClockGetTS( p_input, &p_pgrm->clock, p_block->i_pts ) + i_delay;
     }
+
+    p_block->i_rate = p_sys->i_rate;
     if ( p_block->i_rate == INPUT_RATE_DEFAULT &&
          es->fmt.i_codec == VLC_FOURCC( 't', 'e', 'l', 'x' ) )
     {
@@ -1441,8 +1443,6 @@ static int EsOutSend( es_out_t *out, es_out_id_t *es, block_t *p_block )
                                + p_input->i_pts_delay + i_delay;
         }
     }
-
-    p_block->i_rate = p_sys->i_rate;
 
     /* TODO handle mute */
     if( es->p_dec &&
