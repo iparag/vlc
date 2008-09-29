@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.9.0-test2\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-25 11:50-0700\n"
-"PO-Revision-Date: 2008-09-24 14:53+0200\n"
+"POT-Creation-Date: 2008-09-29 22:38+0100\n"
+"PO-Revision-Date: 2008-09-26 16:45+0200\n"
 "Last-Translator: Ivo Ivanov (ivo88) <bestran@mail.bg>\n"
 "Language-Team: Bulgarian <bestran@mail.bg>\n"
 "MIME-Version: 1.0\n"
@@ -358,7 +358,7 @@ msgstr "Осъществяване на видео по поръчка (Video On
 #: modules/gui/beos/InterfaceWindow.cpp:232
 #: modules/gui/beos/InterfaceWindow.cpp:326 modules/gui/macosx/intf.m:502
 #: modules/gui/pda/pda_interface.c:1262
-#: modules/gui/qt4/components/playlist/playlist.cpp:125
+#: modules/gui/qt4/components/playlist/playlist.cpp:123
 #: modules/gui/qt4/dialogs/playlist.cpp:48
 #: modules/gui/qt4/main_interface.cpp:120
 msgid "Playlist"
@@ -1240,7 +1240,7 @@ msgstr "Отказ"
 #: modules/gui/macosx/wizard.m:1889
 #: modules/gui/qt4/components/open_panels.cpp:1163
 #: modules/gui/qt4/components/preferences_widgets.cpp:1293
-#: modules/gui/qt4/main_interface.cpp:530
+#: modules/gui/qt4/main_interface.cpp:532
 msgid "OK"
 msgstr ""
 
@@ -1466,7 +1466,7 @@ msgstr "Португалски"
 
 #: src/libvlc-module.c:114
 msgid "Punjabi"
-msgstr "Пенджапски"
+msgstr "Пенджабски"
 
 #: src/libvlc-module.c:115 src/text/iso-639_def.h:154
 msgid "Romanian"
@@ -2665,7 +2665,7 @@ msgstr ""
 
 #: src/libvlc-module.c:679 modules/gui/qt4/ui/sprefs_subtitles.ui:170
 msgid "Force subtitle position"
-msgstr "Задаване позицията на субтитрите"
+msgstr "Позиция на субтитрите"
 
 #: src/libvlc-module.c:681
 msgid ""
@@ -3419,7 +3419,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1044
 msgid "Allow only one running instance"
-msgstr "Разрешаване пускането само на едно копие на VLC"
+msgstr "Само едно стартирано копие на VLC"
 
 #: src/libvlc-module.c:1047
 msgid ""
@@ -4224,7 +4224,7 @@ msgstr "Филтър за запис старт/стоп."
 #: modules/access_filter/dump.c:55 modules/gui/macosx/simple_prefs.m:251
 #: modules/gui/qt4/ui/sprefs_input.ui:201
 msgid "Dump"
-msgstr "Временно съхранение на поток"
+msgstr "Временно съхранение"
 
 #: src/libvlc-module.c:1318
 msgid "Media dump access filter trigger."
@@ -6595,8 +6595,8 @@ msgstr "Въвеждане от файл"
 msgid "File"
 msgstr "Файл"
 
-#: modules/access/file.c:246 modules/access/file.c:364
-#: modules/access/file.c:378 modules/access/mmap.c:221
+#: modules/access/file.c:246 modules/access/file.c:365
+#: modules/access/file.c:379 modules/access/mmap.c:221
 msgid "File reading failed"
 msgstr "Грешка при четене на файла"
 
@@ -6604,7 +6604,7 @@ msgstr "Грешка при четене на файла"
 msgid "VLC could not read the file."
 msgstr "VLC не може да прочете файла"
 
-#: modules/access/file.c:365 modules/access/file.c:379
+#: modules/access/file.c:366 modules/access/file.c:380
 #, c-format
 msgid "VLC could not open the file \"%s\"."
 msgstr "VLC не може да отвори файла \"%s\"."
@@ -6633,7 +6633,7 @@ msgstr "Ограничаване на честотната лента"
 
 #: modules/access_filter/dump.c:42
 msgid "Force use of dump module"
-msgstr "Задаване използването на модула за временно съхранение"
+msgstr "Задаване използването на модула за временно съхранение на поток"
 
 #: modules/access_filter/dump.c:43
 msgid "Activate the dump module even for media with fast seeking."
@@ -8706,7 +8706,7 @@ msgstr "Грубо изменение на честотата на дискре�
 
 #: modules/audio_filter/scaletempo.c:47
 msgid "Scale audio tempo in sync with playback rate"
-msgstr "Синхр. темпото на звука със скоростта на въпроизв."
+msgstr "Синхр. темпото на звука със скоростта на въпроизвеждане"
 
 #: modules/audio_filter/scaletempo.c:48
 msgid "Scaletempo"
@@ -9009,14 +9009,14 @@ msgstr "Извеждане на звука чрез PORTAUDIO"
 #: modules/audio_output/pulse.c:61 modules/gui/macosx/intf.m:489
 #: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:1789
 #: modules/gui/pda/pda_interface.c:210 modules/gui/pda/pda_interface.c:1353
-#: modules/gui/qt4/main_interface.cpp:361
-#: modules/gui/qt4/main_interface.cpp:365
-#: modules/gui/qt4/main_interface.cpp:930
-#: modules/gui/qt4/main_interface.cpp:932
-#: modules/gui/qt4/main_interface.cpp:996
-#: modules/gui/qt4/main_interface.cpp:1011
-#: modules/gui/qt4/main_interface.cpp:1018
-#: modules/gui/qt4/main_interface.cpp:1035
+#: modules/gui/qt4/main_interface.cpp:363
+#: modules/gui/qt4/main_interface.cpp:367
+#: modules/gui/qt4/main_interface.cpp:929
+#: modules/gui/qt4/main_interface.cpp:931
+#: modules/gui/qt4/main_interface.cpp:995
+#: modules/gui/qt4/main_interface.cpp:1010
+#: modules/gui/qt4/main_interface.cpp:1017
+#: modules/gui/qt4/main_interface.cpp:1034
 msgid "VLC media player"
 msgstr ""
 
@@ -11311,38 +11311,38 @@ msgstr "Край"
 msgid "Error"
 msgstr "Грешка"
 
-#: modules/control/rc.c:170
+#: modules/control/rc.c:171
 msgid "Show stream position"
 msgstr "Показване позицията в потока"
 
-#: modules/control/rc.c:171
+#: modules/control/rc.c:172
 msgid ""
 "Show the current position in seconds within the stream from time to time."
 msgstr "Показване на текущата позиция в потока (в секунди) от време на време."
 
-#: modules/control/rc.c:174
+#: modules/control/rc.c:175
 msgid "Fake TTY"
 msgstr "Фиктивен TTY"
 
-#: modules/control/rc.c:175
+#: modules/control/rc.c:176
 msgid "Force the rc module to use stdin as if it was a TTY."
 msgstr ""
 "Задаване модула rc да използва стандартно въвеждане, все едно че е TTY."
 
-#: modules/control/rc.c:177
+#: modules/control/rc.c:178
 msgid "UNIX socket command input"
 msgstr "UNIX сокет за въвеждане на команди"
 
-#: modules/control/rc.c:178
+#: modules/control/rc.c:179
 msgid "Accept commands over a Unix socket rather than stdin."
 msgstr ""
 "Приемане на команди чрез Unix сокета вместо чрез стандартното въвеждане."
 
-#: modules/control/rc.c:181
+#: modules/control/rc.c:182
 msgid "TCP command input"
 msgstr "Входящи команди от TCP"
 
-#: modules/control/rc.c:182
+#: modules/control/rc.c:183
 msgid ""
 "Accept commands over a socket rather than stdin. You can set the address and "
 "port the interface will bind to."
@@ -11350,11 +11350,11 @@ msgstr ""
 "Приемане на команди чрез мрежовия сокет вместо чрез стандартното въвеждане. "
 "Можете да определите адрес и порт на интерфейса."
 
-#: modules/control/rc.c:186 modules/misc/dummy/dummy.c:52
+#: modules/control/rc.c:187 modules/misc/dummy/dummy.c:52
 msgid "Do not open a DOS command box interface"
 msgstr "Без отваряне на DOS интерфейс за команди"
 
-#: modules/control/rc.c:188
+#: modules/control/rc.c:189
 msgid ""
 "By default the rc interface plugin will start a DOS command box. Enabling "
 "the quiet mode will not bring this command box but can also be pretty "
@@ -11364,453 +11364,453 @@ msgstr ""
 "Включването на тих режим няма да показва този прозорец, но това може да бъде "
 "досадно, когато искате да спрете VLC и не се отваря видео прозорец."
 
-#: modules/control/rc.c:195
+#: modules/control/rc.c:196
 msgid "RC"
 msgstr ""
 
-#: modules/control/rc.c:198
+#: modules/control/rc.c:199
 msgid "Remote control interface"
 msgstr "Интерфейс с дистанционен контрол"
 
-#: modules/control/rc.c:347
+#: modules/control/rc.c:348
 msgid "Remote control interface initialized. Type `help' for help."
 msgstr "Интерфейса с дистанционен контрол е зареден. Напишете `help' за помощ."
 
-#: modules/control/rc.c:820
+#: modules/control/rc.c:821
 #, c-format
 msgid "Unknown command `%s'. Type `help' for help."
 msgstr "Непозната команда `%s'. Напишете `help' за помощ."
 
-#: modules/control/rc.c:853
+#: modules/control/rc.c:854
 msgid "+----[ Remote control commands ]"
 msgstr "+----[ Команди за дистанционен контрол ]"
 
-#: modules/control/rc.c:855
+#: modules/control/rc.c:856
 msgid "| add XYZ  . . . . . . . . . . . . add XYZ to playlist"
 msgstr "| add XYZ   . . . . . . . . . . добавяне XYZ към плейлист"
 
-#: modules/control/rc.c:856
+#: modules/control/rc.c:857
 msgid "| enqueue XYZ  . . . . . . . . . queue XYZ to playlist"
 msgstr "| enqueue XYZ  . . . . . . . опашка XYZ за плейлист"
 
-#: modules/control/rc.c:857
+#: modules/control/rc.c:858
 msgid "| playlist . . . . .  show items currently in playlist"
 msgstr "| playlist . . .  показване на текущите елементи в плейлиста"
 
-#: modules/control/rc.c:858
+#: modules/control/rc.c:859
 msgid "| play . . . . . . . . . . . . . . . . . . play stream"
 msgstr "| play . . . . . . . . . . . . . . . . възпроизвеждане на потока"
 
-#: modules/control/rc.c:859
+#: modules/control/rc.c:860
 msgid "| stop . . . . . . . . . . . . . . . . . . stop stream"
 msgstr "| stop . . . . . . . . . . . . . . . . спиране на потока"
 
-#: modules/control/rc.c:860
+#: modules/control/rc.c:861
 msgid "| next . . . . . . . . . . . . . .  next playlist item"
 msgstr "| next . . . . . . . . . . . .  следващ елемент в плейлиста"
 
-#: modules/control/rc.c:861
+#: modules/control/rc.c:862
 msgid "| prev . . . . . . . . . . . .  previous playlist item"
 msgstr "| prev . . . . . . . . . .  предишен елемент в плейлиста"
 
-#: modules/control/rc.c:862
+#: modules/control/rc.c:863
 msgid "| goto . . . . . . . . . . . . . .  goto item at index"
 msgstr "| goto . . . . . . . . . . . .  преминаване към елемент в индекса"
 
-#: modules/control/rc.c:863
+#: modules/control/rc.c:864
 msgid "| repeat [on|off] . . . .  toggle playlist item repeat"
 msgstr ""
 "| repeat [on|off] . . . .  превключване повторението на елемент от плейлиста"
 
-#: modules/control/rc.c:864
+#: modules/control/rc.c:865
 msgid "| loop [on|off] . . . . . . . . . toggle playlist loop"
 msgstr ""
 "| loop [on|off] . . . . . . . . . превключване повторението на плейлист"
 
-#: modules/control/rc.c:865
+#: modules/control/rc.c:866
 msgid "| random [on|off] . . . . . . .  toggle random jumping"
 msgstr ""
 "| random [on|off] . . . . . . . превключване на разбъркано възпроизвеждане"
 
-#: modules/control/rc.c:866
+#: modules/control/rc.c:867
 msgid "| clear . . . . . . . . . . . . . . clear the playlist"
 msgstr "| clear . . . . . . . . . . .   изчистване на плейлиста"
 
-#: modules/control/rc.c:867
+#: modules/control/rc.c:868
 msgid "| status . . . . . . . . . . . current playlist status"
 msgstr "| status . . . . . . . . . текущ статус на плейлиста"
 
-#: modules/control/rc.c:868
+#: modules/control/rc.c:869
 msgid "| title [X]  . . . . . . set/get title in current item"
 msgstr "| title [X]  . . . . настрой/вземи заглавието на текущия елемент"
 
-#: modules/control/rc.c:869
+#: modules/control/rc.c:870
 msgid "| title_n  . . . . . . . .  next title in current item"
 msgstr "| title_n  . . . . . .  следващо заглавие в текущия елемент"
 
-#: modules/control/rc.c:870
+#: modules/control/rc.c:871
 msgid "| title_p  . . . . . .  previous title in current item"
 msgstr "| title_p  . . . .  предишно заглавие в текущия елемент"
 
-#: modules/control/rc.c:871
+#: modules/control/rc.c:872
 msgid "| chapter [X]  . . . . set/get chapter in current item"
 msgstr "| chapter [X] .  . . настройка на глава в текущия елемент"
 
-#: modules/control/rc.c:872
+#: modules/control/rc.c:873
 msgid "| chapter_n  . . . . . .  next chapter in current item"
 msgstr "| chapter_n  . . . .  следваща глава в текущия елемент"
 
-#: modules/control/rc.c:873
+#: modules/control/rc.c:874
 msgid "| chapter_p  . . . .  previous chapter in current item"
 msgstr "| chapter_p  . . .  предишна глава в текущия елемент"
 
-#: modules/control/rc.c:875
+#: modules/control/rc.c:876
 msgid "| seek X . . . seek in seconds, for instance `seek 12'"
 msgstr "| seek X . . . преход в секунди, например `преход 12'"
 
-#: modules/control/rc.c:876
+#: modules/control/rc.c:877
 msgid "| pause  . . . . . . . . . . . . . . . .  toggle pause"
 msgstr "| pause  . . . . . . . . . . . . . .  превключване на пауза"
 
-#: modules/control/rc.c:877
+#: modules/control/rc.c:878
 msgid "| fastforward  . . . . . . . .  .  set to maximum rate"
 msgstr "| fastforward  . . . . . .  .  настройка на максималната стойност"
 
-#: modules/control/rc.c:878
+#: modules/control/rc.c:879
 msgid "| rewind  . . . . . . . . . . . .  set to minimum rate"
 msgstr "| rewind  . . . . . . . . . .  настройка до минималната стойност"
 
-#: modules/control/rc.c:879
+#: modules/control/rc.c:880
 msgid "| faster . . . . . . . . . .  faster playing of stream"
 msgstr "| faster . . . . . . . .  по-бързо възпроизвеждане на потока"
 
-#: modules/control/rc.c:880
+#: modules/control/rc.c:881
 msgid "| slower . . . . . . . . . .  slower playing of stream"
 msgstr "| slower . . . . . . . .  по-бавно възпроизвеждане на потока"
 
-#: modules/control/rc.c:881
+#: modules/control/rc.c:882
 msgid "| normal . . . . . . . . . .  normal playing of stream"
 msgstr "| normal . . . . . . . . . .  нормално възпроизвеждане на потока"
 
-#: modules/control/rc.c:882
+#: modules/control/rc.c:883
 msgid "| f [on|off] . . . . . . . . . . . . toggle fullscreen"
 msgstr "| f [on|off] . . . . . . . . . . . . превключване на цял екран"
 
-#: modules/control/rc.c:883
+#: modules/control/rc.c:884
 msgid "| info . . . . .  information about the current stream"
 msgstr "| info . . . . .  информация за текущия поток"
 
-#: modules/control/rc.c:884
+#: modules/control/rc.c:885
 msgid "| stats  . . . . . . . .  show statistical information"
 msgstr "| stats  . . . . . . . .  показване на статистическа информация"
 
-#: modules/control/rc.c:885
+#: modules/control/rc.c:886
 msgid "| get_time . . seconds elapsed since stream's beginning"
 msgstr "| get_time . . изминали секунди от началото на потока"
 
-#: modules/control/rc.c:886
+#: modules/control/rc.c:887
 msgid "| is_playing . . . .  1 if a stream plays, 0 otherwise"
 msgstr ""
 "| is_playing . . . .  1 ако потока се възпроизвежда, 0 в другите случаи"
 
-#: modules/control/rc.c:887
+#: modules/control/rc.c:888
 msgid "| get_title . . . . .  the title of the current stream"
 msgstr "| get_title . . . . .  заглавие на текущия поток"
 
-#: modules/control/rc.c:888
+#: modules/control/rc.c:889
 msgid "| get_length . . . .  the length of the current stream"
 msgstr "| get_length . . . .  продължителност на текущия поток"
 
-#: modules/control/rc.c:890
+#: modules/control/rc.c:891
 msgid "| volume [X] . . . . . . . . . .  set/get audio volume"
 msgstr "| volume [X] . . . . . . . . . .  настрой/вземи нивото на звука"
 
-#: modules/control/rc.c:891
+#: modules/control/rc.c:892
 msgid "| volup [X]  . . . . . . .  raise audio volume X steps"
 msgstr "| volup [X]  . . . . . . .  увеличаване нивото на звука с Х стъпки"
 
-#: modules/control/rc.c:892
+#: modules/control/rc.c:893
 msgid "| voldown [X]  . . . . . .  lower audio volume X steps"
 msgstr "| voldown [X]  . . . . . .  намаляване нивото на звука с Х стъпки"
 
-#: modules/control/rc.c:893
+#: modules/control/rc.c:894
 msgid "| adev [X] . . . . . . . . . . .  set/get audio device"
 msgstr "| adev [X] . . . . . . . . . . .  настрой/вземи аудио устройство"
 
-#: modules/control/rc.c:894
+#: modules/control/rc.c:895
 msgid "| achan [X]. . . . . . . . . .  set/get audio channels"
 msgstr "| achan [X]. . . . . . . . . .   настрой/вземи аудио канали"
 
-#: modules/control/rc.c:895
+#: modules/control/rc.c:896
 msgid "| atrack [X] . . . . . . . . . . . set/get audio track"
 msgstr "| atrack [X] . . . . . . . . . . . настрой/вземи аудио пътека"
 
-#: modules/control/rc.c:896
+#: modules/control/rc.c:897
 msgid "| vtrack [X] . . . . . . . . . . . set/get video track"
 msgstr "| vtrack [X] . . . . . . . . . . . настрой/вземи видео пътека"
 
-#: modules/control/rc.c:897
+#: modules/control/rc.c:898
 msgid "| vratio [X]  . . . . . . . set/get video aspect ratio"
 msgstr "| vratio [X]  . . . . . . . настрой/вземи пропорцията на видеото"
 
-#: modules/control/rc.c:898
+#: modules/control/rc.c:899
 msgid "| vcrop [X]  . . . . . . . . . . .  set/get video crop"
 msgstr ""
 "| vcrop [X]  . . . . . . . . . . .  настрой/вземи изрязването на видеото"
 
-#: modules/control/rc.c:899
+#: modules/control/rc.c:900
 msgid "| vzoom [X]  . . . . . . . . . . .  set/get video zoom"
 msgstr "| vzoom [X]  . . . . . . . . . . .  настрой/вземи мащаба на видеото"
 
-#: modules/control/rc.c:900
+#: modules/control/rc.c:901
 msgid "| snapshot . . . . . . . . . . . . take video snapshot"
 msgstr "| snapshot . . . . . . . . . . . . снимане на видеото"
 
-#: modules/control/rc.c:901
+#: modules/control/rc.c:902
 msgid "| strack [X] . . . . . . . . . set/get subtitles track"
 msgstr "| strack [X] . . . . . . . . . настрой/вземи пътека със субтитри"
 
-#: modules/control/rc.c:902
+#: modules/control/rc.c:903
 msgid "| key [hotkey name] . . . . . .  simulate hotkey press"
 msgstr "| key [hotkey name] . . . . . .  симулиране натискане на клавиш"
 
-#: modules/control/rc.c:903
+#: modules/control/rc.c:904
 msgid "| menu . . [on|off|up|down|left|right|select] use menu"
 msgstr ""
 "| menu . . [вкл.|изкл.|нагоре|надолу|наляво|надясно|избор] използване на меню"
 
-#: modules/control/rc.c:908
+#: modules/control/rc.c:909
 msgid "| @name marq-marquee  STRING  . . overlay STRING in video"
 msgstr "| @name marq-marquee  STRING  . . слой с НИЗ върху видеото"
 
-#: modules/control/rc.c:909
+#: modules/control/rc.c:910
 msgid "| @name marq-x X . . . . . . . . . . . .offset from left"
 msgstr "| @name marq-x X . . . . . . . . . . . .отместване отляво"
 
-#: modules/control/rc.c:910
+#: modules/control/rc.c:911
 msgid "| @name marq-y Y . . . . . . . . . . . . offset from top"
 msgstr "| @name marq-y Y . . . . . . . . . . . . отместване отгоре"
 
-#: modules/control/rc.c:911
+#: modules/control/rc.c:912
 msgid "| @name marq-position #. . .  .relative position control"
 msgstr "| @name marq-position #. . .  .управление на относителната позиция"
 
-#: modules/control/rc.c:912
+#: modules/control/rc.c:913
 msgid "| @name marq-color # . . . . . . . . . . font color, RGB"
 msgstr "| @name marq-color # . . . . . . . . . . цвят на шрифта, RGB"
 
-#: modules/control/rc.c:913
+#: modules/control/rc.c:914
 msgid "| @name marq-opacity # . . . . . . . . . . . . . opacity"
 msgstr "| @name marq-opacity # . . . . . . . . . . . . . непрозрачност"
 
-#: modules/control/rc.c:914
+#: modules/control/rc.c:915
 msgid "| @name marq-timeout T. . . . . . . . . . timeout, in ms"
 msgstr "| @name marq-timeout T. . . . . . . . . . прекъсване в ms"
 
-#: modules/control/rc.c:915
+#: modules/control/rc.c:916
 msgid "| @name marq-size # . . . . . . . . font size, in pixels"
 msgstr "| @name marq-size # . . . . . . . . размер на шрифта, в пиксели"
 
-#: modules/control/rc.c:917
+#: modules/control/rc.c:918
 msgid "| @name logo-file STRING . . .the overlay file path/name"
 msgstr "| @name logo-file STRING . . . път/име на файла за лого"
 
-#: modules/control/rc.c:918
+#: modules/control/rc.c:919
 msgid "| @name logo-x X . . . . . . . . . . . .offset from left"
 msgstr "| @name logo-x X . . . . . . . . . . . . отместване отляво"
 
-#: modules/control/rc.c:919
+#: modules/control/rc.c:920
 msgid "| @name logo-y Y . . . . . . . . . . . . offset from top"
 msgstr "| @name logo-y Y . . . . . . . . . . . . отместване отгоре"
 
-#: modules/control/rc.c:920
+#: modules/control/rc.c:921
 msgid "| @name logo-position #. . . . . . . . relative position"
 msgstr "| @name logo-position #. . . . . . . .  относителна позиция"
 
-#: modules/control/rc.c:921
+#: modules/control/rc.c:922
 msgid "| @name logo-transparency #. . . . . . . . .transparency"
 msgstr "| @name logo-transparency #. . . . . . . . . прозрачност"
 
-#: modules/control/rc.c:923
+#: modules/control/rc.c:924
 msgid "| @name mosaic-alpha # . . . . . . . . . . . . . . alpha"
 msgstr "| @name mosaic-alpha # . . . . . . . . . . . . . . алфа"
 
-#: modules/control/rc.c:924
+#: modules/control/rc.c:925
 msgid "| @name mosaic-height #. . . . . . . . . . . . . .height"
 msgstr "| @name mosaic-height #. . . . . . . . . . . . . .височина"
 
-#: modules/control/rc.c:925
+#: modules/control/rc.c:926
 msgid "| @name mosaic-width # . . . . . . . . . . . . . . width"
 msgstr "| @name mosaic-width # . . . . . . . . . . . . . . широчина"
 
-#: modules/control/rc.c:926
+#: modules/control/rc.c:927
 msgid "| @name mosaic-xoffset # . . . .top left corner position"
 msgstr "| @name mosaic-xoffset # . . . . позиция в горния ляв ъгъл"
 
-#: modules/control/rc.c:927
+#: modules/control/rc.c:928
 msgid "| @name mosaic-yoffset # . . . .top left corner position"
 msgstr "| @name mosaic-yoffset # . . . .позиция в горния ляв ъгъл"
 
-#: modules/control/rc.c:928
+#: modules/control/rc.c:929
 msgid "| @name mosaic-offsets x,y(,x,y)*. . . . list of offsets"
 msgstr "| @name mosaic-offsets x,y(,x,y)*. . . . списък с отмествания"
 
-#: modules/control/rc.c:929
+#: modules/control/rc.c:930
 msgid "| @name mosaic-align 0..2,4..6,8..10. . .mosaic alignment"
 msgstr "| @name mosaic-align 0..2,4..6,8..10. . . подравняване на мозайката"
 
-#: modules/control/rc.c:930
+#: modules/control/rc.c:931
 msgid "| @name mosaic-vborder # . . . . . . . . vertical border"
 msgstr "| @name mosaic-vborder # . . . . . . . . вертикална граница"
 
-#: modules/control/rc.c:931
+#: modules/control/rc.c:932
 msgid "| @name mosaic-hborder # . . . . . . . horizontal border"
 msgstr "| @name mosaic-hborder # . . . . . . . хоризонтална граница"
 
-#: modules/control/rc.c:932
+#: modules/control/rc.c:933
 msgid "| @name mosaic-position {0=auto,1=fixed} . . . .position"
 msgstr "| @name mosaic-position {0=auto,1=fixed} . . . .позиция"
 
-#: modules/control/rc.c:933
+#: modules/control/rc.c:934
 msgid "| @name mosaic-rows #. . . . . . . . . . .number of rows"
 msgstr "| @name mosaic-rows #. . . . . . . . . . . брой редове"
 
-#: modules/control/rc.c:934
+#: modules/control/rc.c:935
 msgid "| @name mosaic-cols #. . . . . . . . . . .number of cols"
 msgstr "| @name mosaic-cols #. . . . . . . . . . . брой колони"
 
-#: modules/control/rc.c:935
+#: modules/control/rc.c:936
 msgid "| @name mosaic-order id(,id)* . . . . order of pictures "
 msgstr "| @name mosaic-order id(,id)* . . . . ред на изображенията"
 
-#: modules/control/rc.c:936
+#: modules/control/rc.c:937
 msgid "| @name mosaic-keep-aspect-ratio {0,1} . . .aspect ratio"
 msgstr "| @name mosaic-keep-aspect-ratio {0,1} . . . пропорция"
 
-#: modules/control/rc.c:939
+#: modules/control/rc.c:940
 msgid "| help . . . . . . . . . . . . . . . this help message"
 msgstr "| help . . . . . . . . . . . . . . . помощно съобщение"
 
-#: modules/control/rc.c:940
+#: modules/control/rc.c:941
 msgid "| longhelp . . . . . . . . . . . a longer help message"
 msgstr "| longhelp . . . . . . . . . . . по-дълго помощно съобщение"
 
-#: modules/control/rc.c:941
+#: modules/control/rc.c:942
 msgid "| logout . . . . . . .  exit (if in socket connection)"
 msgstr "| logout . . . . . . .   изход (ако връзката е със сокет)"
 
-#: modules/control/rc.c:942
+#: modules/control/rc.c:943
 msgid "| quit . . . . . . . . . . . . . . . . . . .  quit vlc"
 msgstr "| quit . . . . . . . . . . . . . . . . . . .   изход на vlc"
 
-#: modules/control/rc.c:944
+#: modules/control/rc.c:945
 msgid "+----[ end of help ]"
 msgstr "+----[ край на помоща]"
 
-#: modules/control/rc.c:1059
+#: modules/control/rc.c:1060
 msgid "Press menu select or pause to continue."
 msgstr "Натиснете избор на меню или пауза за продължаване."
 
-#: modules/control/rc.c:1315 modules/control/rc.c:1575
-#: modules/control/rc.c:1646 modules/control/rc.c:1826
-#: modules/control/rc.c:1924
+#: modules/control/rc.c:1316 modules/control/rc.c:1576
+#: modules/control/rc.c:1647 modules/control/rc.c:1827
+#: modules/control/rc.c:1925
 msgid "Type 'menu select' or 'pause' to continue."
 msgstr "Напишете 'menu select' или 'pause' за продължаване"
 
-#: modules/control/rc.c:1410
+#: modules/control/rc.c:1411
 msgid "Error: `goto' needs an argument greater than zero."
 msgstr "Грешка: `goto' нужен е аргумент по-голям от нула."
 
-#: modules/control/rc.c:1421
+#: modules/control/rc.c:1422
 #, c-format
 msgid "Playlist has only %d elements"
 msgstr "Плейлиста има само %d елемента"
 
-#: modules/control/rc.c:1911 modules/control/rc.c:1951
+#: modules/control/rc.c:1912 modules/control/rc.c:1952
 msgid "Please provide one of the following parameters:"
 msgstr "Моля задайте един от следните параметри:"
 
-#: modules/control/rc.c:1983
+#: modules/control/rc.c:1984
 msgid "Unknown command!"
 msgstr "Непозната команда!"
 
-#: modules/control/rc.c:1999 modules/gui/ncurses.c:2039
+#: modules/control/rc.c:2000 modules/gui/ncurses.c:2039
 msgid "+-[Incoming]"
 msgstr "+-[Iвходящи]"
 
-#: modules/control/rc.c:2000 modules/gui/ncurses.c:2042
+#: modules/control/rc.c:2001 modules/gui/ncurses.c:2042
 #, c-format
 msgid "| input bytes read : %8.0f kB"
 msgstr "| прочетени входни байта : %8.0f kB"
 
-#: modules/control/rc.c:2002 modules/gui/ncurses.c:2045
+#: modules/control/rc.c:2003 modules/gui/ncurses.c:2045
 #, c-format
 msgid "| input bitrate    :   %6.0f kb/s"
 msgstr "| входен битрейт    :   %6.0f kb/s"
 
-#: modules/control/rc.c:2004 modules/gui/ncurses.c:2047
+#: modules/control/rc.c:2005 modules/gui/ncurses.c:2047
 #, c-format
 msgid "| demux bytes read : %8.0f kB"
 msgstr "| прочетени байта от демултиплексора : %8.0f kB"
 
-#: modules/control/rc.c:2006 modules/gui/ncurses.c:2050
+#: modules/control/rc.c:2007 modules/gui/ncurses.c:2050
 #, c-format
 msgid "| demux bitrate    :   %6.0f kb/s"
 msgstr "| битрейт на демултиплексора    :   %6.0f kb/s"
 
-#: modules/control/rc.c:2010 modules/gui/ncurses.c:2058
+#: modules/control/rc.c:2011 modules/gui/ncurses.c:2058
 msgid "+-[Video Decoding]"
 msgstr "+-[Видео декодиране]"
 
-#: modules/control/rc.c:2011 modules/gui/ncurses.c:2061
+#: modules/control/rc.c:2012 modules/gui/ncurses.c:2061
 #, c-format
 msgid "| video decoded    :    %5i"
 msgstr "| декодирано видео    :    %5i"
 
-#: modules/control/rc.c:2013 modules/gui/ncurses.c:2064
+#: modules/control/rc.c:2014 modules/gui/ncurses.c:2064
 #, c-format
 msgid "| frames displayed :    %5i"
 msgstr "| показани кадри :    %5i"
 
-#: modules/control/rc.c:2015 modules/gui/ncurses.c:2067
+#: modules/control/rc.c:2016 modules/gui/ncurses.c:2067
 #, c-format
 msgid "| frames lost      :    %5i"
 msgstr "| загубени кадри      :    %5i"
 
-#: modules/control/rc.c:2019 modules/gui/ncurses.c:2075
+#: modules/control/rc.c:2020 modules/gui/ncurses.c:2075
 msgid "+-[Audio Decoding]"
 msgstr "+-[Аудио декодиране]"
 
-#: modules/control/rc.c:2020 modules/gui/ncurses.c:2078
+#: modules/control/rc.c:2021 modules/gui/ncurses.c:2078
 #, c-format
 msgid "| audio decoded    :    %5i"
 msgstr "| декодирано аудио    :    %5i"
 
-#: modules/control/rc.c:2022 modules/gui/ncurses.c:2081
+#: modules/control/rc.c:2023 modules/gui/ncurses.c:2081
 #, c-format
 msgid "| buffers played   :    %5i"
 msgstr "| възпроизведени буфери   :    %5i"
 
-#: modules/control/rc.c:2024 modules/gui/ncurses.c:2084
+#: modules/control/rc.c:2025 modules/gui/ncurses.c:2084
 #, c-format
 msgid "| buffers lost     :    %5i"
 msgstr "| загубени буфери     :    %5i"
 
-#: modules/control/rc.c:2028 modules/gui/ncurses.c:2090
+#: modules/control/rc.c:2029 modules/gui/ncurses.c:2090
 msgid "+-[Streaming]"
 msgstr "+-[Извеждане на поток]"
 
-#: modules/control/rc.c:2029 modules/gui/ncurses.c:2093
+#: modules/control/rc.c:2030 modules/gui/ncurses.c:2093
 #, c-format
 msgid "| packets sent     :    %5i"
 msgstr "| изпратени пакети     :    %5i"
 
-#: modules/control/rc.c:2030 modules/gui/ncurses.c:2095
+#: modules/control/rc.c:2031 modules/gui/ncurses.c:2095
 #, c-format
 msgid "| bytes sent       : %8.0f kB"
 msgstr "| изпратени байта       : %8.0f kB"
 
-#: modules/control/rc.c:2032
+#: modules/control/rc.c:2033
 #, c-format
 msgid "| sending bitrate  :   %6.0f kb/s"
 msgstr "| изпратен битрейт  :   %6.0f kb/s"
@@ -14592,8 +14592,7 @@ msgstr "Основно аудио"
 #: modules/gui/qt4/ui/sprefs_audio.ui:259
 msgid "Headphone surround effect"
 msgstr ""
-"Без декодиране на Dolby Surround за ефекта на виртуално пространство за "
-"слушалки"
+"Без декодиране на Dolby Surround за виртуалното пространство за слушалки"
 
 #: modules/gui/macosx/simple_prefs.m:225
 msgid "Preferred Audio language"
@@ -16481,15 +16480,15 @@ msgstr "Без звук"
 msgid "Pause the playback"
 msgstr "Пауза"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1485
+#: modules/gui/qt4/components/interface_widgets.cpp:1497
 msgid "Revert to normal play speed"
 msgstr "Връщане към нормална скорост"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1635
+#: modules/gui/qt4/components/interface_widgets.cpp:1647
 msgid "Download cover art"
 msgstr "Изтегляне на обложка за албум"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1651
+#: modules/gui/qt4/components/interface_widgets.cpp:1663
 msgid "Toggle between elapsed and remaining time"
 msgstr "Превключване между изминалото и оставащото време"
 
@@ -16510,7 +16509,7 @@ msgid "Filter:"
 msgstr "Филтър:"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:632
+#: modules/gui/qt4/dialogs_provider.cpp:631
 msgid "Open subtitles file"
 msgstr "Отваряне на файл със субтитри"
 
@@ -16560,7 +16559,7 @@ msgstr "Име на радио устройството"
 msgid "Advanced Options"
 msgstr "Разширени настройки"
 
-#: modules/gui/qt4/components/playlist/playlist.cpp:68
+#: modules/gui/qt4/components/playlist/playlist.cpp:66
 msgid "Double click to get media information"
 msgstr "Щракнете два пъти, за да видите информация за медията"
 
@@ -17014,23 +17013,23 @@ msgstr ""
 "Възстановяване на стандартните настройки на VLC.\n"
 "Сигурни ли сте, че искате да продължите?"
 
-#: modules/gui/qt4/dialogs_provider.cpp:423
+#: modules/gui/qt4/dialogs_provider.cpp:422
 msgid "Open Directory"
 msgstr "Отваряне на директория"
 
-#: modules/gui/qt4/dialogs_provider.cpp:461
+#: modules/gui/qt4/dialogs_provider.cpp:460
 msgid "Open playlist file"
 msgstr "Отваряне на файл с плейлист"
 
-#: modules/gui/qt4/dialogs_provider.cpp:472
+#: modules/gui/qt4/dialogs_provider.cpp:471
 msgid "Choose a filename to save playlist"
 msgstr "Изберете име на файла за запис на плейлиста"
 
-#: modules/gui/qt4/dialogs_provider.cpp:474
+#: modules/gui/qt4/dialogs_provider.cpp:473
 msgid "XSPF playlist (*.xspf);; "
 msgstr ""
 
-#: modules/gui/qt4/dialogs_provider.cpp:475
+#: modules/gui/qt4/dialogs_provider.cpp:474
 msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr ""
 
@@ -17139,7 +17138,7 @@ msgstr "Настройки за разписание"
 msgid "VOD: "
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:307
+#: modules/gui/qt4/main_interface.cpp:309
 msgid ""
 "Current playback speed.\n"
 "Right click to adjust"
@@ -17147,15 +17146,15 @@ msgstr ""
 "Текуща скорост на възпроизвеждане.\n"
 "Щракнете с десния бутон за настройка"
 
-#: modules/gui/qt4/main_interface.cpp:476
+#: modules/gui/qt4/main_interface.cpp:478
 msgid "Privacy and Network Policies"
 msgstr "Лични и мрежови управления"
 
-#: modules/gui/qt4/main_interface.cpp:480
+#: modules/gui/qt4/main_interface.cpp:482
 msgid "Privacy and Network Warning"
 msgstr "Лични и мрежови предупреждения"
 
-#: modules/gui/qt4/main_interface.cpp:483
+#: modules/gui/qt4/main_interface.cpp:485
 msgid ""
 "<p>The <i>VideoLAN Team</i> doesn't like when an application goes online "
 "without authorization.</p>\n"
@@ -17167,11 +17166,11 @@ msgid ""
 "access on the web.</p>\n"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:997
+#: modules/gui/qt4/main_interface.cpp:996
 msgid "Control menu for the player"
 msgstr "Меню за управление на плеъра"
 
-#: modules/gui/qt4/main_interface.cpp:1046
+#: modules/gui/qt4/main_interface.cpp:1045
 msgid "Paused"
 msgstr "Пауза"
 
@@ -17543,9 +17542,9 @@ msgid ""
 "An alternative can be '30;30;50;40;40;100;50;50;160;150;150;255' "
 msgstr ""
 "Определяне цветовете на плъзгача за нивото на звука,\n"
-" чрез задаването на 12 числа разделени с точка и запетая ';'.\n"
-"По подразбиране е '255;255;255;20;226;20;255;176;15;235;30;20'.\n"
-" Като алтернатива може да бъде '30;30;50;40;40;100;50;50;160;150;150;255' "
+" чрез задаването на 12 числа разделени с точка и запетая ';'. \n"
+"По подразбиране е: '255;255;255;20;226;20;255;176;15;235;30;20'.\n"
+" Като алтернатива може да бъде: '30;30;50;40;40;100;50;50;160;150;150;255' "
 
 #: modules/gui/qt4/qt4.cpp:132
 msgid "Selection of the starting mode and look "
@@ -17872,7 +17871,7 @@ msgstr "Интерфейси"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:232
 msgid "Allow only one instance"
-msgstr "Разрешаване пускането само на едно копие на VLC"
+msgstr "Само едно стартирано копие на VLC"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:239
 msgid "File associations:"
@@ -17880,9 +17879,7 @@ msgstr "Асоцииране на файлове"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:246
 msgid "Enqueue files in playlist when in one instance mode"
-msgstr ""
-"Поставяне на файловете на опашката в плейлиста, когато е в режим на едно "
-"копие"
+msgstr "Файлове на опашката в плейлиста при режим на едно копие"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:259
 msgid "Association Setup"
