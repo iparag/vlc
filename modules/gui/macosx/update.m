@@ -134,6 +134,8 @@ static VLCUpdate *_o_sharedInstance = nil;
     [saveFilePanel setRequiredFileType: @"dmg"];
     [saveFilePanel setCanSelectHiddenExtension: YES];
     [saveFilePanel setCanCreateDirectories: YES];
+    [saveFilePanel setPrompt: _NS("Save" )];
+    [saveFilePanel setNameFieldLabel: _NS("Save As:" )];
     update_release_t *p_release = update_GetRelease( p_u );
     assert( p_release );
     [saveFilePanel beginSheetForDirectory:nil file:
