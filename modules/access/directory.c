@@ -266,6 +266,7 @@ static ssize_t Read( access_t *p_access, uint8_t *p_buffer, size_t i_len)
              p_item_in_category,
              p_current_input, (DIR *)p_access->p_sys, NULL );
 
+    var_SetBool( p_playlist, "intf-change", true );
     playlist_Signal( p_playlist );
 
     free( psz_name );
