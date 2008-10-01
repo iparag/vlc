@@ -201,7 +201,7 @@ protected:
     bool                 b_telexEnabled;
 protected slots:
     void play();
-    virtual void stop();
+    void stop();
     void prev();
     void next();
     void updateVolume( int );
@@ -273,7 +273,6 @@ private slots:
     void hideFSC();
 
     void slowHideFSC();
-    virtual void stop();
 
 
 private:
