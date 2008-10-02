@@ -152,10 +152,6 @@ static int Open( vlc_object_t *p_this )
     if( !p_access->psz_path )
         return VLC_EGENERIC;
 
-    struct stat st;
-    if( !stat( p_access->psz_path, &st ) && !S_ISDIR( st.st_mode ) )
-        return VLC_EGENERIC;
-
     DIR *handle = OpenDir (p_this, p_access->psz_path);
     if (handle == NULL)
         return VLC_EGENERIC;
@@ -573,18 +569,17 @@ static int ReadDir( access_t *p_access, playlist_t *p_playlist,
 
 static DIR *OpenDir (vlc_object_t *obj, const char *path)
 {
-    msg_Dbg (obj, "opening directory `%s'", path);
     DIR *handle = utf8_opendir (path);
     if (handle == NULL)
     {
         int err = errno;
         if (err != ENOTDIR)
             msg_Err (obj, "%s: %m", path);
-        else
-            msg_Dbg (obj, "skipping non-directory `%s'", path);
+        // else not a dir
         errno = err;
 
         return NULL;
     }
+    msg_Dbg (obj, "opening directory `%s'", path);
     return handle;
 }
