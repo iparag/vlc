@@ -186,7 +186,7 @@ int ParseDirectory( intf_thread_t *p_intf, char *psz_root,
         ACL_Destroy( p_acl );
 
         struct stat st;
-        if( stat( dir, &st ) == 0 )
+        if( utf8_stat( dir, &st ) == 0 )
         {
             closedir( p_dir );
             return VLC_EGENERIC;

@@ -1434,7 +1434,7 @@ static int ProbeDVD( demux_t *p_demux, char *psz_name )
         return VLC_SUCCESS;
     }
 
-    if( stat( psz_name, &stat_info ) || !S_ISREG( stat_info.st_mode ) )
+    if( utf8_stat( psz_name, &stat_info ) || !S_ISREG( stat_info.st_mode ) )
     {
         /* Let dvdnav_open() do the probing */
         return VLC_SUCCESS;
