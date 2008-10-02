@@ -218,7 +218,8 @@ static void updateCallback( void * p_data, bool b_success )
 - (void)performDownload:(NSString *)path
 {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    update_Download( p_u, [path UTF8String] );
+    NSString *local = [NSString stringWithFormat: @"%@/", path];
+    update_Download( p_u, [local UTF8String] );
     [o_btn_DownloadNow setEnabled: NO];
     [o_update_window orderOut: self];
     update_WaitDownload( p_u );
