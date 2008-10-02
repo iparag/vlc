@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.8.6b1\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-25 11:50-0700\n"
+"POT-Creation-Date: 2008-10-02 09:58-0700\n"
 "PO-Revision-Date: 2007-05-01 15:55+0330\n"
 "Last-Translator: Meelad Zakaria <meelad@farsiweb.info>\n"
 "Language-Team: Persian\n"
@@ -337,7 +337,7 @@ msgstr "پیاده‌سازی ویدئوی درخواستی برای وی‌ال
 #: modules/gui/beos/InterfaceWindow.cpp:232
 #: modules/gui/beos/InterfaceWindow.cpp:326 modules/gui/macosx/intf.m:502
 #: modules/gui/pda/pda_interface.c:1262
-#: modules/gui/qt4/components/playlist/playlist.cpp:125
+#: modules/gui/qt4/components/playlist/playlist.cpp:123
 #: modules/gui/qt4/dialogs/playlist.cpp:48
 #: modules/gui/qt4/main_interface.cpp:120
 msgid "Playlist"
@@ -355,8 +355,8 @@ msgstr ""
 msgid "General playlist behaviour"
 msgstr "رفتار عمومی فهرست پخش"
 
-#: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:449
-#: modules/gui/macosx/playlist.m:450
+#: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:451
+#: modules/gui/macosx/playlist.m:452
 msgid "Services discovery"
 msgstr "کشف سرویس"
 
@@ -527,7 +527,7 @@ msgstr "درباره..."
 #: modules/gui/macosx/intf.m:539 modules/gui/macosx/intf.m:618
 #: modules/gui/macosx/intf.m:625 modules/gui/macosx/intf.m:1809
 #: modules/gui/macosx/intf.m:1810 modules/gui/macosx/intf.m:1811
-#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:441
+#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:442
 #: modules/gui/pda/pda_interface.c:260 modules/gui/pda/pda_interface.c:261
 #: modules/gui/qt4/menus.cpp:656 modules/gui/qt4/menus.cpp:660
 #: modules/gui/qt4/menus.cpp:663
@@ -539,7 +539,7 @@ msgstr "پخش"
 msgid "Fetch Information"
 msgstr "گرفتن اطلاعات"
 
-#: include/vlc_intf_strings.h:55 modules/gui/macosx/playlist.m:442
+#: include/vlc_intf_strings.h:55 modules/gui/macosx/playlist.m:443
 #: modules/gui/pda/pda_interface.c:1252
 #: modules/gui/qt4/dialogs/bookmarks.cpp:46
 #: modules/gui/qt4/ui/podcast_configuration.ui:59
@@ -547,7 +547,7 @@ msgstr "گرفتن اطلاعات"
 msgid "Delete"
 msgstr "حذف"
 
-#: include/vlc_intf_strings.h:56 modules/gui/macosx/playlist.m:445
+#: include/vlc_intf_strings.h:56
 msgid "Information..."
 msgstr "اطلاعات..."
 
@@ -1073,7 +1073,7 @@ msgid "Title"
 msgstr "عنوان"
 
 #: src/input/meta.c:53 modules/gui/macosx/playlistinfo.m:73
-#: modules/gui/macosx/playlist.m:1123
+#: modules/gui/macosx/playlist.m:1156
 msgid "Artist"
 msgstr "اجرا"
 
@@ -1191,12 +1191,12 @@ msgid "Chapter %i"
 msgstr "فصل %Ii"
 
 #: src/input/var.c:370 modules/gui/beos/InterfaceWindow.cpp:291
-#: modules/gui/qt4/components/interface_widgets.cpp:868
+#: modules/gui/qt4/components/interface_widgets.cpp:872
 msgid "Next chapter"
 msgstr "فصل بعدی"
 
 #: src/input/var.c:375 modules/gui/beos/InterfaceWindow.cpp:290
-#: modules/gui/qt4/components/interface_widgets.cpp:867
+#: modules/gui/qt4/components/interface_widgets.cpp:871
 msgid "Previous chapter"
 msgstr "فصل قبلی"
 
@@ -1235,7 +1235,7 @@ msgstr "انصراف"
 #: modules/gui/macosx/wizard.m:1889
 #: modules/gui/qt4/components/open_panels.cpp:1163
 #: modules/gui/qt4/components/preferences_widgets.cpp:1293
-#: modules/gui/qt4/main_interface.cpp:530
+#: modules/gui/qt4/main_interface.cpp:532
 msgid "OK"
 msgstr "تأیید"
 
@@ -3794,7 +3794,7 @@ msgstr "کلید کم کردن صدا را انتخاب کنید."
 #: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:195
 #: modules/gui/macosx/controls.m:928 modules/gui/macosx/intf.m:561
 #: modules/gui/macosx/intf.m:622 modules/gui/macosx/intf.m:631
-#: modules/gui/qt4/components/interface_widgets.cpp:907
+#: modules/gui/qt4/components/interface_widgets.cpp:911
 msgid "Mute"
 msgstr "بی‌صدا"
 
@@ -5748,7 +5748,7 @@ msgid "Disc"
 msgstr "دیسک"
 
 #: modules/access/cdda/info.c:330 modules/access/cdda/info.c:395
-#: modules/gui/macosx/playlist.m:128
+#: modules/gui/macosx/playlist.m:129
 #: modules/gui/qt4/components/playlist/sorting.h:51
 msgid "Duration"
 msgstr "مدت پخش"
@@ -6381,8 +6381,8 @@ msgstr "ورودی پرونده"
 msgid "File"
 msgstr "پرونده"
 
-#: modules/access/file.c:246 modules/access/file.c:364
-#: modules/access/file.c:378 modules/access/mmap.c:221
+#: modules/access/file.c:246 modules/access/file.c:365
+#: modules/access/file.c:379 modules/access/mmap.c:221
 #, fuzzy
 msgid "File reading failed"
 msgstr "صافی کردن صدا شکست خورد"
@@ -6392,7 +6392,7 @@ msgstr "صافی کردن صدا شکست خورد"
 msgid "VLC could not read the file."
 msgstr "وی‌ال‌سی نتوانست پیمانهٔ کدگشا را باز کند."
 
-#: modules/access/file.c:365 modules/access/file.c:379
+#: modules/access/file.c:366 modules/access/file.c:380
 #, fuzzy, c-format
 msgid "VLC could not open the file \"%s\"."
 msgstr "وی‌ال‌سی نتوانست پیمانهٔ کدگشا را باز کند."
@@ -8819,14 +8819,14 @@ msgstr "خروجی صدای ALSA"
 #: modules/audio_output/pulse.c:61 modules/gui/macosx/intf.m:489
 #: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:1789
 #: modules/gui/pda/pda_interface.c:210 modules/gui/pda/pda_interface.c:1353
-#: modules/gui/qt4/main_interface.cpp:361
-#: modules/gui/qt4/main_interface.cpp:365
-#: modules/gui/qt4/main_interface.cpp:930
-#: modules/gui/qt4/main_interface.cpp:932
-#: modules/gui/qt4/main_interface.cpp:996
-#: modules/gui/qt4/main_interface.cpp:1011
-#: modules/gui/qt4/main_interface.cpp:1018
-#: modules/gui/qt4/main_interface.cpp:1035
+#: modules/gui/qt4/main_interface.cpp:363
+#: modules/gui/qt4/main_interface.cpp:367
+#: modules/gui/qt4/main_interface.cpp:929
+#: modules/gui/qt4/main_interface.cpp:931
+#: modules/gui/qt4/main_interface.cpp:995
+#: modules/gui/qt4/main_interface.cpp:1010
+#: modules/gui/qt4/main_interface.cpp:1017
+#: modules/gui/qt4/main_interface.cpp:1034
 msgid "VLC media player"
 msgstr "پخش‌کنندهٔ صدا و تصویر وی‌ال‌سی"
 
@@ -11029,504 +11029,504 @@ msgstr "پایان"
 msgid "Error"
 msgstr "خطا"
 
-#: modules/control/rc.c:170
+#: modules/control/rc.c:171
 #, fuzzy
 msgid "Show stream position"
 msgstr "تعیین اجباری موقعیت زیرنویس"
 
-#: modules/control/rc.c:171
+#: modules/control/rc.c:172
 msgid ""
 "Show the current position in seconds within the stream from time to time."
 msgstr ""
 
-#: modules/control/rc.c:174
+#: modules/control/rc.c:175
 #, fuzzy
 msgid "Fake TTY"
 msgstr "قلابی"
 
-#: modules/control/rc.c:175
+#: modules/control/rc.c:176
 msgid "Force the rc module to use stdin as if it was a TTY."
 msgstr ""
 
-#: modules/control/rc.c:177
+#: modules/control/rc.c:178
 msgid "UNIX socket command input"
 msgstr ""
 
-#: modules/control/rc.c:178
+#: modules/control/rc.c:179
 msgid "Accept commands over a Unix socket rather than stdin."
 msgstr ""
 
-#: modules/control/rc.c:181
+#: modules/control/rc.c:182
 #, fuzzy
 msgid "TCP command input"
 msgstr "ورودی TCP‏"
 
-#: modules/control/rc.c:182
+#: modules/control/rc.c:183
 msgid ""
 "Accept commands over a socket rather than stdin. You can set the address and "
 "port the interface will bind to."
 msgstr ""
 
-#: modules/control/rc.c:186 modules/misc/dummy/dummy.c:52
+#: modules/control/rc.c:187 modules/misc/dummy/dummy.c:52
 #, fuzzy
 msgid "Do not open a DOS command box interface"
 msgstr "واسط‌های کنترلی"
 
-#: modules/control/rc.c:188
+#: modules/control/rc.c:189
 msgid ""
 "By default the rc interface plugin will start a DOS command box. Enabling "
 "the quiet mode will not bring this command box but can also be pretty "
 "annoying when you want to stop VLC and no video window is open."
 msgstr ""
 
-#: modules/control/rc.c:195
+#: modules/control/rc.c:196
 #, fuzzy
 msgid "RC"
 msgstr "fa"
 
-#: modules/control/rc.c:198
+#: modules/control/rc.c:199
 #, fuzzy
 msgid "Remote control interface"
 msgstr "واسط‌های کنترلی"
 
-#: modules/control/rc.c:347
+#: modules/control/rc.c:348
 msgid "Remote control interface initialized. Type `help' for help."
 msgstr ""
 
-#: modules/control/rc.c:820
+#: modules/control/rc.c:821
 #, c-format
 msgid "Unknown command `%s'. Type `help' for help."
 msgstr ""
 
-#: modules/control/rc.c:853
+#: modules/control/rc.c:854
 msgid "+----[ Remote control commands ]"
 msgstr ""
 
-#: modules/control/rc.c:855
+#: modules/control/rc.c:856
 msgid "| add XYZ  . . . . . . . . . . . . add XYZ to playlist"
 msgstr ""
 
-#: modules/control/rc.c:856
+#: modules/control/rc.c:857
 msgid "| enqueue XYZ  . . . . . . . . . queue XYZ to playlist"
 msgstr ""
 
-#: modules/control/rc.c:857
+#: modules/control/rc.c:858
 msgid "| playlist . . . . .  show items currently in playlist"
 msgstr ""
 
-#: modules/control/rc.c:858
+#: modules/control/rc.c:859
 msgid "| play . . . . . . . . . . . . . . . . . . play stream"
 msgstr ""
 
-#: modules/control/rc.c:859
+#: modules/control/rc.c:860
 msgid "| stop . . . . . . . . . . . . . . . . . . stop stream"
 msgstr ""
 
-#: modules/control/rc.c:860
+#: modules/control/rc.c:861
 msgid "| next . . . . . . . . . . . . . .  next playlist item"
 msgstr ""
 
-#: modules/control/rc.c:861
+#: modules/control/rc.c:862
 msgid "| prev . . . . . . . . . . . .  previous playlist item"
 msgstr ""
 
-#: modules/control/rc.c:862
+#: modules/control/rc.c:863
 msgid "| goto . . . . . . . . . . . . . .  goto item at index"
 msgstr ""
 
-#: modules/control/rc.c:863
+#: modules/control/rc.c:864
 msgid "| repeat [on|off] . . . .  toggle playlist item repeat"
 msgstr ""
 
-#: modules/control/rc.c:864
+#: modules/control/rc.c:865
 msgid "| loop [on|off] . . . . . . . . . toggle playlist loop"
 msgstr ""
 
-#: modules/control/rc.c:865
+#: modules/control/rc.c:866
 msgid "| random [on|off] . . . . . . .  toggle random jumping"
 msgstr ""
 
-#: modules/control/rc.c:866
+#: modules/control/rc.c:867
 msgid "| clear . . . . . . . . . . . . . . clear the playlist"
 msgstr ""
 
-#: modules/control/rc.c:867
+#: modules/control/rc.c:868
 msgid "| status . . . . . . . . . . . current playlist status"
 msgstr ""
 
-#: modules/control/rc.c:868
+#: modules/control/rc.c:869
 msgid "| title [X]  . . . . . . set/get title in current item"
 msgstr ""
 
-#: modules/control/rc.c:869
+#: modules/control/rc.c:870
 msgid "| title_n  . . . . . . . .  next title in current item"
 msgstr ""
 
-#: modules/control/rc.c:870
+#: modules/control/rc.c:871
 msgid "| title_p  . . . . . .  previous title in current item"
 msgstr ""
 
-#: modules/control/rc.c:871
+#: modules/control/rc.c:872
 msgid "| chapter [X]  . . . . set/get chapter in current item"
 msgstr ""
 
-#: modules/control/rc.c:872
+#: modules/control/rc.c:873
 msgid "| chapter_n  . . . . . .  next chapter in current item"
 msgstr ""
 
-#: modules/control/rc.c:873
+#: modules/control/rc.c:874
 msgid "| chapter_p  . . . .  previous chapter in current item"
 msgstr ""
 
-#: modules/control/rc.c:875
+#: modules/control/rc.c:876
 msgid "| seek X . . . seek in seconds, for instance `seek 12'"
 msgstr ""
 
-#: modules/control/rc.c:876
+#: modules/control/rc.c:877
 msgid "| pause  . . . . . . . . . . . . . . . .  toggle pause"
 msgstr ""
 
-#: modules/control/rc.c:877
+#: modules/control/rc.c:878
 msgid "| fastforward  . . . . . . . .  .  set to maximum rate"
 msgstr ""
 
-#: modules/control/rc.c:878
+#: modules/control/rc.c:879
 msgid "| rewind  . . . . . . . . . . . .  set to minimum rate"
 msgstr ""
 
-#: modules/control/rc.c:879
+#: modules/control/rc.c:880
 msgid "| faster . . . . . . . . . .  faster playing of stream"
 msgstr ""
 
-#: modules/control/rc.c:880
+#: modules/control/rc.c:881
 msgid "| slower . . . . . . . . . .  slower playing of stream"
 msgstr ""
 
-#: modules/control/rc.c:881
+#: modules/control/rc.c:882
 msgid "| normal . . . . . . . . . .  normal playing of stream"
 msgstr ""
 
-#: modules/control/rc.c:882
+#: modules/control/rc.c:883
 msgid "| f [on|off] . . . . . . . . . . . . toggle fullscreen"
 msgstr ""
 
-#: modules/control/rc.c:883
+#: modules/control/rc.c:884
 msgid "| info . . . . .  information about the current stream"
 msgstr ""
 
-#: modules/control/rc.c:884
+#: modules/control/rc.c:885
 msgid "| stats  . . . . . . . .  show statistical information"
 msgstr ""
 
-#: modules/control/rc.c:885
+#: modules/control/rc.c:886
 msgid "| get_time . . seconds elapsed since stream's beginning"
 msgstr ""
 
-#: modules/control/rc.c:886
+#: modules/control/rc.c:887
 msgid "| is_playing . . . .  1 if a stream plays, 0 otherwise"
 msgstr ""
 
-#: modules/control/rc.c:887
+#: modules/control/rc.c:888
 msgid "| get_title . . . . .  the title of the current stream"
 msgstr ""
 
-#: modules/control/rc.c:888
+#: modules/control/rc.c:889
 msgid "| get_length . . . .  the length of the current stream"
 msgstr ""
 
-#: modules/control/rc.c:890
+#: modules/control/rc.c:891
 msgid "| volume [X] . . . . . . . . . .  set/get audio volume"
 msgstr ""
 
-#: modules/control/rc.c:891
+#: modules/control/rc.c:892
 msgid "| volup [X]  . . . . . . .  raise audio volume X steps"
 msgstr ""
 
-#: modules/control/rc.c:892
+#: modules/control/rc.c:893
 msgid "| voldown [X]  . . . . . .  lower audio volume X steps"
 msgstr ""
 
-#: modules/control/rc.c:893
+#: modules/control/rc.c:894
 msgid "| adev [X] . . . . . . . . . . .  set/get audio device"
 msgstr ""
 
-#: modules/control/rc.c:894
+#: modules/control/rc.c:895
 msgid "| achan [X]. . . . . . . . . .  set/get audio channels"
 msgstr ""
 
-#: modules/control/rc.c:895
+#: modules/control/rc.c:896
 msgid "| atrack [X] . . . . . . . . . . . set/get audio track"
 msgstr ""
 
-#: modules/control/rc.c:896
+#: modules/control/rc.c:897
 msgid "| vtrack [X] . . . . . . . . . . . set/get video track"
 msgstr ""
 
-#: modules/control/rc.c:897
+#: modules/control/rc.c:898
 msgid "| vratio [X]  . . . . . . . set/get video aspect ratio"
 msgstr ""
 
-#: modules/control/rc.c:898
+#: modules/control/rc.c:899
 msgid "| vcrop [X]  . . . . . . . . . . .  set/get video crop"
 msgstr ""
 
-#: modules/control/rc.c:899
+#: modules/control/rc.c:900
 msgid "| vzoom [X]  . . . . . . . . . . .  set/get video zoom"
 msgstr ""
 
-#: modules/control/rc.c:900
+#: modules/control/rc.c:901
 msgid "| snapshot . . . . . . . . . . . . take video snapshot"
 msgstr ""
 
-#: modules/control/rc.c:901
+#: modules/control/rc.c:902
 msgid "| strack [X] . . . . . . . . . set/get subtitles track"
 msgstr ""
 
-#: modules/control/rc.c:902
+#: modules/control/rc.c:903
 msgid "| key [hotkey name] . . . . . .  simulate hotkey press"
 msgstr ""
 
-#: modules/control/rc.c:903
+#: modules/control/rc.c:904
 msgid "| menu . . [on|off|up|down|left|right|select] use menu"
 msgstr ""
 
-#: modules/control/rc.c:908
+#: modules/control/rc.c:909
 msgid "| @name marq-marquee  STRING  . . overlay STRING in video"
 msgstr ""
 
-#: modules/control/rc.c:909
+#: modules/control/rc.c:910
 msgid "| @name marq-x X . . . . . . . . . . . .offset from left"
 msgstr ""
 
-#: modules/control/rc.c:910
+#: modules/control/rc.c:911
 msgid "| @name marq-y Y . . . . . . . . . . . . offset from top"
 msgstr ""
 
-#: modules/control/rc.c:911
+#: modules/control/rc.c:912
 msgid "| @name marq-position #. . .  .relative position control"
 msgstr ""
 
-#: modules/control/rc.c:912
+#: modules/control/rc.c:913
 msgid "| @name marq-color # . . . . . . . . . . font color, RGB"
 msgstr ""
 
-#: modules/control/rc.c:913
+#: modules/control/rc.c:914
 msgid "| @name marq-opacity # . . . . . . . . . . . . . opacity"
 msgstr ""
 
-#: modules/control/rc.c:914
+#: modules/control/rc.c:915
 msgid "| @name marq-timeout T. . . . . . . . . . timeout, in ms"
 msgstr ""
 
-#: modules/control/rc.c:915
+#: modules/control/rc.c:916
 msgid "| @name marq-size # . . . . . . . . font size, in pixels"
 msgstr ""
 
-#: modules/control/rc.c:917
+#: modules/control/rc.c:918
 msgid "| @name logo-file STRING . . .the overlay file path/name"
 msgstr ""
 
-#: modules/control/rc.c:918
+#: modules/control/rc.c:919
 msgid "| @name logo-x X . . . . . . . . . . . .offset from left"
 msgstr ""
 
-#: modules/control/rc.c:919
+#: modules/control/rc.c:920
 msgid "| @name logo-y Y . . . . . . . . . . . . offset from top"
 msgstr ""
 
-#: modules/control/rc.c:920
+#: modules/control/rc.c:921
 msgid "| @name logo-position #. . . . . . . . relative position"
 msgstr ""
 
-#: modules/control/rc.c:921
+#: modules/control/rc.c:922
 msgid "| @name logo-transparency #. . . . . . . . .transparency"
 msgstr ""
 
-#: modules/control/rc.c:923
+#: modules/control/rc.c:924
 msgid "| @name mosaic-alpha # . . . . . . . . . . . . . . alpha"
 msgstr ""
 
-#: modules/control/rc.c:924
+#: modules/control/rc.c:925
 msgid "| @name mosaic-height #. . . . . . . . . . . . . .height"
 msgstr ""
 
-#: modules/control/rc.c:925
+#: modules/control/rc.c:926
 msgid "| @name mosaic-width # . . . . . . . . . . . . . . width"
 msgstr ""
 
-#: modules/control/rc.c:926
+#: modules/control/rc.c:927
 msgid "| @name mosaic-xoffset # . . . .top left corner position"
 msgstr ""
 
-#: modules/control/rc.c:927
+#: modules/control/rc.c:928
 msgid "| @name mosaic-yoffset # . . . .top left corner position"
 msgstr ""
 
-#: modules/control/rc.c:928
+#: modules/control/rc.c:929
 msgid "| @name mosaic-offsets x,y(,x,y)*. . . . list of offsets"
 msgstr ""
 
-#: modules/control/rc.c:929
+#: modules/control/rc.c:930
 msgid "| @name mosaic-align 0..2,4..6,8..10. . .mosaic alignment"
 msgstr ""
 
-#: modules/control/rc.c:930
+#: modules/control/rc.c:931
 msgid "| @name mosaic-vborder # . . . . . . . . vertical border"
 msgstr ""
 
-#: modules/control/rc.c:931
+#: modules/control/rc.c:932
 msgid "| @name mosaic-hborder # . . . . . . . horizontal border"
 msgstr ""
 
-#: modules/control/rc.c:932
+#: modules/control/rc.c:933
 msgid "| @name mosaic-position {0=auto,1=fixed} . . . .position"
 msgstr ""
 
-#: modules/control/rc.c:933
+#: modules/control/rc.c:934
 msgid "| @name mosaic-rows #. . . . . . . . . . .number of rows"
 msgstr ""
 
-#: modules/control/rc.c:934
+#: modules/control/rc.c:935
 msgid "| @name mosaic-cols #. . . . . . . . . . .number of cols"
 msgstr ""
 
-#: modules/control/rc.c:935
+#: modules/control/rc.c:936
 msgid "| @name mosaic-order id(,id)* . . . . order of pictures "
 msgstr ""
 
-#: modules/control/rc.c:936
+#: modules/control/rc.c:937
 msgid "| @name mosaic-keep-aspect-ratio {0,1} . . .aspect ratio"
 msgstr ""
 
-#: modules/control/rc.c:939
+#: modules/control/rc.c:940
 msgid "| help . . . . . . . . . . . . . . . this help message"
 msgstr ""
 
-#: modules/control/rc.c:940
+#: modules/control/rc.c:941
 msgid "| longhelp . . . . . . . . . . . a longer help message"
 msgstr ""
 
-#: modules/control/rc.c:941
+#: modules/control/rc.c:942
 msgid "| logout . . . . . . .  exit (if in socket connection)"
 msgstr ""
 
-#: modules/control/rc.c:942
+#: modules/control/rc.c:943
 msgid "| quit . . . . . . . . . . . . . . . . . . .  quit vlc"
 msgstr ""
 
-#: modules/control/rc.c:944
+#: modules/control/rc.c:945
 msgid "+----[ end of help ]"
 msgstr ""
 
-#: modules/control/rc.c:1059
+#: modules/control/rc.c:1060
 msgid "Press menu select or pause to continue."
 msgstr ""
 
-#: modules/control/rc.c:1315 modules/control/rc.c:1575
-#: modules/control/rc.c:1646 modules/control/rc.c:1826
-#: modules/control/rc.c:1924
+#: modules/control/rc.c:1316 modules/control/rc.c:1576
+#: modules/control/rc.c:1647 modules/control/rc.c:1827
+#: modules/control/rc.c:1925
 msgid "Type 'menu select' or 'pause' to continue."
 msgstr ""
 
-#: modules/control/rc.c:1410
+#: modules/control/rc.c:1411
 msgid "Error: `goto' needs an argument greater than zero."
 msgstr ""
 
-#: modules/control/rc.c:1421
+#: modules/control/rc.c:1422
 #, fuzzy, c-format
 msgid "Playlist has only %d elements"
 msgstr "فهرست پخش خالی است"
 
-#: modules/control/rc.c:1911 modules/control/rc.c:1951
+#: modules/control/rc.c:1912 modules/control/rc.c:1952
 msgid "Please provide one of the following parameters:"
 msgstr ""
 
-#: modules/control/rc.c:1983
+#: modules/control/rc.c:1984
 #, fuzzy
 msgid "Unknown command!"
 msgstr "کارت صدای نامعلوم"
 
-#: modules/control/rc.c:1999 modules/gui/ncurses.c:2039
+#: modules/control/rc.c:2000 modules/gui/ncurses.c:2039
 #, fuzzy
 msgid "+-[Incoming]"
 msgstr "کدگشایی"
 
-#: modules/control/rc.c:2000 modules/gui/ncurses.c:2042
+#: modules/control/rc.c:2001 modules/gui/ncurses.c:2042
 #, c-format
 msgid "| input bytes read : %8.0f kB"
 msgstr ""
 
-#: modules/control/rc.c:2002 modules/gui/ncurses.c:2045
+#: modules/control/rc.c:2003 modules/gui/ncurses.c:2045
 #, c-format
 msgid "| input bitrate    :   %6.0f kb/s"
 msgstr ""
 
-#: modules/control/rc.c:2004 modules/gui/ncurses.c:2047
+#: modules/control/rc.c:2005 modules/gui/ncurses.c:2047
 #, c-format
 msgid "| demux bytes read : %8.0f kB"
 msgstr ""
 
-#: modules/control/rc.c:2006 modules/gui/ncurses.c:2050
+#: modules/control/rc.c:2007 modules/gui/ncurses.c:2050
 #, c-format
 msgid "| demux bitrate    :   %6.0f kb/s"
 msgstr ""
 
-#: modules/control/rc.c:2010 modules/gui/ncurses.c:2058
+#: modules/control/rc.c:2011 modules/gui/ncurses.c:2058
 #, fuzzy
 msgid "+-[Video Decoding]"
 msgstr "حاشیه‌گیری ویدئو"
 
-#: modules/control/rc.c:2011 modules/gui/ncurses.c:2061
+#: modules/control/rc.c:2012 modules/gui/ncurses.c:2061
 #, c-format
 msgid "| video decoded    :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2013 modules/gui/ncurses.c:2064
+#: modules/control/rc.c:2014 modules/gui/ncurses.c:2064
 #, c-format
 msgid "| frames displayed :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2015 modules/gui/ncurses.c:2067
+#: modules/control/rc.c:2016 modules/gui/ncurses.c:2067
 #, c-format
 msgid "| frames lost      :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2019 modules/gui/ncurses.c:2075
+#: modules/control/rc.c:2020 modules/gui/ncurses.c:2075
 #, fuzzy
 msgid "+-[Audio Decoding]"
 msgstr "کدگذار صدا"
 
-#: modules/control/rc.c:2020 modules/gui/ncurses.c:2078
+#: modules/control/rc.c:2021 modules/gui/ncurses.c:2078
 #, c-format
 msgid "| audio decoded    :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2022 modules/gui/ncurses.c:2081
+#: modules/control/rc.c:2023 modules/gui/ncurses.c:2081
 #, c-format
 msgid "| buffers played   :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2024 modules/gui/ncurses.c:2084
+#: modules/control/rc.c:2025 modules/gui/ncurses.c:2084
 #, c-format
 msgid "| buffers lost     :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2028 modules/gui/ncurses.c:2090
+#: modules/control/rc.c:2029 modules/gui/ncurses.c:2090
 #, fuzzy
 msgid "+-[Streaming]"
 msgstr "جریان‌سازی"
 
-#: modules/control/rc.c:2029 modules/gui/ncurses.c:2093
+#: modules/control/rc.c:2030 modules/gui/ncurses.c:2093
 #, c-format
 msgid "| packets sent     :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2030 modules/gui/ncurses.c:2095
+#: modules/control/rc.c:2031 modules/gui/ncurses.c:2095
 #, c-format
 msgid "| bytes sent       : %8.0f kB"
 msgstr ""
 
-#: modules/control/rc.c:2032
+#: modules/control/rc.c:2033
 #, c-format
 msgid "| sending bitrate  :   %6.0f kb/s"
 msgstr ""
@@ -12713,7 +12713,7 @@ msgid "Edit"
 msgstr "ویرایش"
 
 #: modules/gui/beos/PlayListWindow.cpp:106 modules/gui/macosx/intf.m:536
-#: modules/gui/macosx/playlist.m:444
+#: modules/gui/macosx/playlist.m:445
 msgid "Select All"
 msgstr "انتخاب همه"
 
@@ -12754,7 +12754,7 @@ msgid "Path"
 msgstr "مسیر"
 
 #: modules/gui/beos/PlayListWindow.cpp:150 modules/gui/macosx/bookmarks.m:103
-#: modules/gui/macosx/playlist.m:126
+#: modules/gui/macosx/playlist.m:127
 msgid "Name"
 msgstr "نام"
 
@@ -12763,8 +12763,9 @@ msgid "Apply"
 msgstr "اِعمال"
 
 #: modules/gui/beos/PreferencesWindow.cpp:257 modules/gui/macosx/output.m:526
-#: modules/gui/macosx/playlist.m:681 modules/gui/macosx/prefs.m:125
-#: modules/gui/macosx/simple_prefs.m:302 modules/gui/qt4/ui/vlm.ui:209
+#: modules/gui/macosx/playlist.m:683 modules/gui/macosx/prefs.m:125
+#: modules/gui/macosx/simple_prefs.m:302 modules/gui/macosx/update.m:137
+#: modules/gui/qt4/ui/vlm.ui:209
 msgid "Save"
 msgstr "ذخیره"
 
@@ -13123,7 +13124,7 @@ msgstr "استخراج"
 msgid "Time"
 msgstr "زمان"
 
-#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:677
+#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:679
 msgid "Untitled"
 msgstr "بی‌عنوان"
 
@@ -13581,7 +13582,7 @@ msgstr "نشانک‌ها"
 msgid "Playlist..."
 msgstr "فهرست پخش"
 
-#: modules/gui/macosx/intf.m:602
+#: modules/gui/macosx/intf.m:602 modules/gui/macosx/playlist.m:446
 #, fuzzy
 msgid "Media Information..."
 msgstr "اطلاعات متا"
@@ -14196,91 +14197,96 @@ msgstr ""
 msgid "VLC was unable to save the meta data."
 msgstr ""
 
-#: modules/gui/macosx/playlistinfo.m:442
+#: modules/gui/macosx/playlistinfo.m:449
 msgid "Information"
 msgstr "اطلاعات"
 
-#: modules/gui/macosx/playlist.m:127 modules/gui/macosx/wizard.m:350
+#: modules/gui/macosx/playlist.m:128 modules/gui/macosx/wizard.m:350
 #: modules/gui/wince/playlist.cpp:671 modules/mux/asf.c:54
 msgid "Author"
 msgstr "مؤلف"
 
-#: modules/gui/macosx/playlist.m:440
+#: modules/gui/macosx/playlist.m:441
 msgid "Save Playlist..."
 msgstr "ذخیرهٔ فهرست پخش..."
 
-#: modules/gui/macosx/playlist.m:443
+#: modules/gui/macosx/playlist.m:444
 msgid "Expand Node"
 msgstr "باز کردن گره"
 
-#: modules/gui/macosx/playlist.m:446
+#: modules/gui/macosx/playlist.m:447
+#, fuzzy
+msgid "Download Cover Art"
+msgstr "بارگیری فوری"
+
+#: modules/gui/macosx/playlist.m:448
 #, fuzzy
 msgid "Fetch Meta Data"
 msgstr "متادادهٔ عنوان"
 
-#: modules/gui/macosx/playlist.m:447
+#: modules/gui/macosx/playlist.m:449
 msgid "Sort Node by Name"
 msgstr "مرتب کردن گره بر مبنای نام"
 
-#: modules/gui/macosx/playlist.m:448
+#: modules/gui/macosx/playlist.m:450
 msgid "Sort Node by Author"
 msgstr "مرتب کردن گره بر مبنای مؤلف"
 
-#: modules/gui/macosx/playlist.m:451 modules/gui/macosx/playlist.m:489
-#: modules/gui/macosx/playlist.m:1411
+#: modules/gui/macosx/playlist.m:453 modules/gui/macosx/playlist.m:491
+#: modules/gui/macosx/playlist.m:1444
 msgid "No items in the playlist"
 msgstr "موردی در فهرست پخش نیست"
 
-#: modules/gui/macosx/playlist.m:453
+#: modules/gui/macosx/playlist.m:455
 msgid "Search in Playlist"
 msgstr "جستجو در فهرست پخش"
 
-#: modules/gui/macosx/playlist.m:454
+#: modules/gui/macosx/playlist.m:456
 msgid "Add Folder to Playlist"
 msgstr "اضافه کردن پوشه به فهرست پخش"
 
-#: modules/gui/macosx/playlist.m:456
+#: modules/gui/macosx/playlist.m:458
 msgid "File Format:"
 msgstr "قالب پرونده:"
 
-#: modules/gui/macosx/playlist.m:457
+#: modules/gui/macosx/playlist.m:459
 msgid "Extended M3U"
 msgstr "‏M3U گسترش‌یافته"
 
-#: modules/gui/macosx/playlist.m:458
+#: modules/gui/macosx/playlist.m:460
 msgid "XML Shareable Playlist Format (XSPF)"
 msgstr "قالب فهرست پخش قابل اشتراک XML ‏(XSPF)"
 
-#: modules/gui/macosx/playlist.m:483 modules/gui/macosx/playlist.m:1404
+#: modules/gui/macosx/playlist.m:485 modules/gui/macosx/playlist.m:1437
 #: modules/gui/macosx/wizard.m:1356
 #, fuzzy, c-format
 msgid "%i items"
 msgstr "ن&مایش موارد"
 
-#: modules/gui/macosx/playlist.m:491 modules/gui/macosx/playlist.m:1415
+#: modules/gui/macosx/playlist.m:493 modules/gui/macosx/playlist.m:1448
 #, fuzzy
 msgid "1 item"
 msgstr "ن&مایش موارد"
 
-#: modules/gui/macosx/playlist.m:680
+#: modules/gui/macosx/playlist.m:682
 msgid "Save Playlist"
 msgstr "ذخیرهٔ فهرست پخش"
 
-#: modules/gui/macosx/playlist.m:1123 modules/gui/ncurses.c:1808
+#: modules/gui/macosx/playlist.m:1156 modules/gui/ncurses.c:1808
 msgid "Meta-information"
 msgstr "اطلاعات متا"
 
-#: modules/gui/macosx/playlist.m:1370
+#: modules/gui/macosx/playlist.m:1403
 #, fuzzy
 msgid "New Node"
 msgstr "گرهٔ جدید"
 
-#: modules/gui/macosx/playlist.m:1371
+#: modules/gui/macosx/playlist.m:1404
 #, fuzzy
 msgid "Please enter a name for the new node."
 msgstr "لطفاً نام گره را وارد کنید"
 
-#: modules/gui/macosx/playlist.m:1382
+#: modules/gui/macosx/playlist.m:1415
 msgid "Empty Folder"
 msgstr "خالی کردن پوشه"
 
@@ -14721,17 +14727,22 @@ msgstr "بله"
 msgid "No"
 msgstr "نه"
 
-#: modules/gui/macosx/update.m:176
+#: modules/gui/macosx/update.m:138
+#, fuzzy
+msgid "Save As:"
+msgstr "ذخیره ب&ه نام..."
+
+#: modules/gui/macosx/update.m:178
 #, fuzzy
 msgid "This version of VLC is the latest available."
 msgstr "این نسخه آخرین نسخهٔ موجود وی‌ال‌سی است."
 
-#: modules/gui/macosx/update.m:183
+#: modules/gui/macosx/update.m:185
 #, fuzzy
 msgid "This version of VLC is outdated."
 msgstr "این نسخه آخرین نسخهٔ موجود وی‌ال‌سی است."
 
-#: modules/gui/macosx/update.m:185
+#: modules/gui/macosx/update.m:187
 #, c-format
 msgid "The current release is %d.%d.%d%c."
 msgstr ""
@@ -16320,26 +16331,26 @@ msgstr "نمایش گزینه‌های پیشرفته"
 msgid "Transparent"
 msgstr "شفافیت"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:898
+#: modules/gui/qt4/components/interface_widgets.cpp:902
 #, fuzzy
 msgid "Unmute"
 msgstr "بی‌صدا"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:938
+#: modules/gui/qt4/components/interface_widgets.cpp:942
 #, fuzzy
 msgid "Pause the playback"
 msgstr "پخش"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1485
+#: modules/gui/qt4/components/interface_widgets.cpp:1478
 msgid "Revert to normal play speed"
 msgstr ""
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1635
+#: modules/gui/qt4/components/interface_widgets.cpp:1628
 #, fuzzy
 msgid "Download cover art"
 msgstr "بارگیری فوری"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1651
+#: modules/gui/qt4/components/interface_widgets.cpp:1644
 msgid "Toggle between elapsed and remaining time"
 msgstr ""
 
@@ -16364,7 +16375,7 @@ msgid "Filter:"
 msgstr "صافی‌ها"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:632
+#: modules/gui/qt4/dialogs_provider.cpp:631
 msgid "Open subtitles file"
 msgstr "باز کردن پروندهٔ زیرنویس"
 
@@ -16422,7 +16433,7 @@ msgstr "نام دستگاه صدا"
 msgid "Advanced Options"
 msgstr "گزینه‌های پیشرفته"
 
-#: modules/gui/qt4/components/playlist/playlist.cpp:68
+#: modules/gui/qt4/components/playlist/playlist.cpp:66
 msgid "Double click to get media information"
 msgstr ""
 
@@ -16921,27 +16932,27 @@ msgid ""
 "Are you sure you want to continue?"
 msgstr ""
 
-#: modules/gui/qt4/dialogs_provider.cpp:423
+#: modules/gui/qt4/dialogs_provider.cpp:422
 #, fuzzy
 msgid "Open Directory"
 msgstr "باز کردن شا&خه..."
 
-#: modules/gui/qt4/dialogs_provider.cpp:461
+#: modules/gui/qt4/dialogs_provider.cpp:460
 #, fuzzy
 msgid "Open playlist file"
 msgstr "مورد بعدی فهرست پخش"
 
-#: modules/gui/qt4/dialogs_provider.cpp:472
+#: modules/gui/qt4/dialogs_provider.cpp:471
 #, fuzzy
 msgid "Choose a filename to save playlist"
 msgstr "فهرست پخش پیدا نمی‌شود"
 
-#: modules/gui/qt4/dialogs_provider.cpp:474
+#: modules/gui/qt4/dialogs_provider.cpp:473
 #, fuzzy
 msgid "XSPF playlist (*.xspf);; "
 msgstr "صدور فهرست پخش XSPF"
 
-#: modules/gui/qt4/dialogs_provider.cpp:475
+#: modules/gui/qt4/dialogs_provider.cpp:474
 msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr ""
 
@@ -17059,23 +17070,23 @@ msgstr ""
 msgid "VOD: "
 msgstr "ویدئوی درخواستی"
 
-#: modules/gui/qt4/main_interface.cpp:307
+#: modules/gui/qt4/main_interface.cpp:309
 msgid ""
 "Current playback speed.\n"
 "Right click to adjust"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:476
+#: modules/gui/qt4/main_interface.cpp:478
 #, fuzzy
 msgid "Privacy and Network Policies"
 msgstr "تعامل با واسط"
 
-#: modules/gui/qt4/main_interface.cpp:480
+#: modules/gui/qt4/main_interface.cpp:482
 #, fuzzy
 msgid "Privacy and Network Warning"
 msgstr "تعامل با واسط"
 
-#: modules/gui/qt4/main_interface.cpp:483
+#: modules/gui/qt4/main_interface.cpp:485
 msgid ""
 "<p>The <i>VideoLAN Team</i> doesn't like when an application goes online "
 "without authorization.</p>\n"
@@ -17087,11 +17098,11 @@ msgid ""
 "access on the web.</p>\n"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:997
+#: modules/gui/qt4/main_interface.cpp:996
 msgid "Control menu for the player"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:1046
+#: modules/gui/qt4/main_interface.cpp:1045
 msgid "Paused"
 msgstr "در حال مکث"
 
@@ -24068,9 +24079,6 @@ msgstr "تحلیل‌گر طیفی"
 
 #~ msgid "Playlist item info"
 #~ msgstr "اطلاعات مدخل فهرست پخش"
-
-#~ msgid "Save &As..."
-#~ msgstr "ذخیره ب&ه نام..."
 
 #~ msgid "Save Messages As..."
 #~ msgstr "ذخیرهٔ پیغام به صورت..."

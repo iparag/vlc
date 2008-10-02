@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slovak translation for VLC Media Player\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-25 11:50-0700\n"
+"POT-Creation-Date: 2008-10-02 09:58-0700\n"
 "PO-Revision-Date: 2008-09-24 13:53+0100\n"
 "Last-Translator: Marián Hikaník <podnety-at-mojepreklady.net>\n"
 "Language-Team: Marián Hikaník, translation controlled by: Pavel Kříž\n"
@@ -364,7 +364,7 @@ msgstr "Implementácia funkcie video na požiadanie (Video on Demand)"
 #: modules/gui/beos/InterfaceWindow.cpp:232
 #: modules/gui/beos/InterfaceWindow.cpp:326 modules/gui/macosx/intf.m:502
 #: modules/gui/pda/pda_interface.c:1262
-#: modules/gui/qt4/components/playlist/playlist.cpp:125
+#: modules/gui/qt4/components/playlist/playlist.cpp:123
 #: modules/gui/qt4/dialogs/playlist.cpp:48
 #: modules/gui/qt4/main_interface.cpp:120
 msgid "Playlist"
@@ -382,8 +382,8 @@ msgstr ""
 msgid "General playlist behaviour"
 msgstr "Všeobecné nastavenia správania sa playlistu"
 
-#: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:449
-#: modules/gui/macosx/playlist.m:450
+#: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:451
+#: modules/gui/macosx/playlist.m:452
 msgid "Services discovery"
 msgstr "Zisťovacie moduly"
 
@@ -547,7 +547,7 @@ msgstr "O &programe..."
 #: modules/gui/macosx/intf.m:539 modules/gui/macosx/intf.m:618
 #: modules/gui/macosx/intf.m:625 modules/gui/macosx/intf.m:1809
 #: modules/gui/macosx/intf.m:1810 modules/gui/macosx/intf.m:1811
-#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:441
+#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:442
 #: modules/gui/pda/pda_interface.c:260 modules/gui/pda/pda_interface.c:261
 #: modules/gui/qt4/menus.cpp:656 modules/gui/qt4/menus.cpp:660
 #: modules/gui/qt4/menus.cpp:663
@@ -558,7 +558,7 @@ msgstr "Prehrať"
 msgid "Fetch Information"
 msgstr "Získať informácie"
 
-#: include/vlc_intf_strings.h:55 modules/gui/macosx/playlist.m:442
+#: include/vlc_intf_strings.h:55 modules/gui/macosx/playlist.m:443
 #: modules/gui/pda/pda_interface.c:1252
 #: modules/gui/qt4/dialogs/bookmarks.cpp:46
 #: modules/gui/qt4/ui/podcast_configuration.ui:59
@@ -566,7 +566,7 @@ msgstr "Získať informácie"
 msgid "Delete"
 msgstr "Vymazať"
 
-#: include/vlc_intf_strings.h:56 modules/gui/macosx/playlist.m:445
+#: include/vlc_intf_strings.h:56
 msgid "Information..."
 msgstr "Informácia"
 
@@ -1096,7 +1096,7 @@ msgid "Title"
 msgstr "Titul"
 
 #: src/input/meta.c:53 modules/gui/macosx/playlistinfo.m:73
-#: modules/gui/macosx/playlist.m:1123
+#: modules/gui/macosx/playlist.m:1156
 msgid "Artist"
 msgstr "Interpret"
 
@@ -1211,12 +1211,12 @@ msgid "Chapter %i"
 msgstr "Kapitola %i"
 
 #: src/input/var.c:370 modules/gui/beos/InterfaceWindow.cpp:291
-#: modules/gui/qt4/components/interface_widgets.cpp:868
+#: modules/gui/qt4/components/interface_widgets.cpp:872
 msgid "Next chapter"
 msgstr "Ďalšia kapitola"
 
 #: src/input/var.c:375 modules/gui/beos/InterfaceWindow.cpp:290
-#: modules/gui/qt4/components/interface_widgets.cpp:867
+#: modules/gui/qt4/components/interface_widgets.cpp:871
 msgid "Previous chapter"
 msgstr "Predchádzajúca kapitola"
 
@@ -1255,7 +1255,7 @@ msgstr "Storno"
 #: modules/gui/macosx/wizard.m:1889
 #: modules/gui/qt4/components/open_panels.cpp:1163
 #: modules/gui/qt4/components/preferences_widgets.cpp:1293
-#: modules/gui/qt4/main_interface.cpp:530
+#: modules/gui/qt4/main_interface.cpp:532
 msgid "OK"
 msgstr "OK"
 
@@ -4028,7 +4028,7 @@ msgstr "Vyberte si klávesu pre zníženie hlasitosti zvuku."
 #: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:195
 #: modules/gui/macosx/controls.m:928 modules/gui/macosx/intf.m:561
 #: modules/gui/macosx/intf.m:622 modules/gui/macosx/intf.m:631
-#: modules/gui/qt4/components/interface_widgets.cpp:907
+#: modules/gui/qt4/components/interface_widgets.cpp:911
 msgid "Mute"
 msgstr "Stlmiť"
 
@@ -6068,7 +6068,7 @@ msgid "Disc"
 msgstr "Disk"
 
 #: modules/access/cdda/info.c:330 modules/access/cdda/info.c:395
-#: modules/gui/macosx/playlist.m:128
+#: modules/gui/macosx/playlist.m:129
 #: modules/gui/qt4/components/playlist/sorting.h:51
 msgid "Duration"
 msgstr "Trvanie"
@@ -6746,8 +6746,8 @@ msgstr "Vstup súboru"
 msgid "File"
 msgstr "Súbor"
 
-#: modules/access/file.c:246 modules/access/file.c:364
-#: modules/access/file.c:378 modules/access/mmap.c:221
+#: modules/access/file.c:246 modules/access/file.c:365
+#: modules/access/file.c:379 modules/access/mmap.c:221
 msgid "File reading failed"
 msgstr "Nepodarilo sa načítať súbor"
 
@@ -6755,7 +6755,7 @@ msgstr "Nepodarilo sa načítať súbor"
 msgid "VLC could not read the file."
 msgstr "Program VLC nemôže prečítať súbor."
 
-#: modules/access/file.c:365 modules/access/file.c:379
+#: modules/access/file.c:366 modules/access/file.c:380
 #, c-format
 msgid "VLC could not open the file \"%s\"."
 msgstr "Program VLC nemôže otvoriť súbor \"%s\"."
@@ -9177,14 +9177,14 @@ msgstr "Zvukový výstup PORTAUDIO"
 #: modules/audio_output/pulse.c:61 modules/gui/macosx/intf.m:489
 #: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:1789
 #: modules/gui/pda/pda_interface.c:210 modules/gui/pda/pda_interface.c:1353
-#: modules/gui/qt4/main_interface.cpp:361
-#: modules/gui/qt4/main_interface.cpp:365
-#: modules/gui/qt4/main_interface.cpp:930
-#: modules/gui/qt4/main_interface.cpp:932
-#: modules/gui/qt4/main_interface.cpp:996
-#: modules/gui/qt4/main_interface.cpp:1011
-#: modules/gui/qt4/main_interface.cpp:1018
-#: modules/gui/qt4/main_interface.cpp:1035
+#: modules/gui/qt4/main_interface.cpp:363
+#: modules/gui/qt4/main_interface.cpp:367
+#: modules/gui/qt4/main_interface.cpp:929
+#: modules/gui/qt4/main_interface.cpp:931
+#: modules/gui/qt4/main_interface.cpp:995
+#: modules/gui/qt4/main_interface.cpp:1010
+#: modules/gui/qt4/main_interface.cpp:1017
+#: modules/gui/qt4/main_interface.cpp:1034
 msgid "VLC media player"
 msgstr "VLC media player"
 
@@ -11503,36 +11503,36 @@ msgstr "Koniec"
 msgid "Error"
 msgstr "Chyba"
 
-#: modules/control/rc.c:170
+#: modules/control/rc.c:171
 msgid "Show stream position"
 msgstr "Zobraziť pozíciu streamu"
 
-#: modules/control/rc.c:171
+#: modules/control/rc.c:172
 msgid ""
 "Show the current position in seconds within the stream from time to time."
 msgstr "Zobraziť aktuálnu pozíciu (v sekundách) vo vnútri streamu."
 
-#: modules/control/rc.c:174
+#: modules/control/rc.c:175
 msgid "Fake TTY"
 msgstr "Fingované TTY"
 
-#: modules/control/rc.c:175
+#: modules/control/rc.c:176
 msgid "Force the rc module to use stdin as if it was a TTY."
 msgstr "Prinútiť rc-modul, aby používal stdin, akoby to bolo TTY."
 
-#: modules/control/rc.c:177
+#: modules/control/rc.c:178
 msgid "UNIX socket command input"
 msgstr "Vstup pre príkazy UNIX-socketu"
 
-#: modules/control/rc.c:178
+#: modules/control/rc.c:179
 msgid "Accept commands over a Unix socket rather than stdin."
 msgstr "Akceptovať príkazy radšej cez Unixový socket, ako cez stdin."
 
-#: modules/control/rc.c:181
+#: modules/control/rc.c:182
 msgid "TCP command input"
 msgstr "Vstup TCP príkazu"
 
-#: modules/control/rc.c:182
+#: modules/control/rc.c:183
 msgid ""
 "Accept commands over a socket rather than stdin. You can set the address and "
 "port the interface will bind to."
@@ -11540,11 +11540,11 @@ msgstr ""
 "Akceptovať radšej príkazy cez socket, ako cez stdin. Tu môžete nastaviť aj "
 "adresu a port, s ktorým bude spojené rozhranie."
 
-#: modules/control/rc.c:186 modules/misc/dummy/dummy.c:52
+#: modules/control/rc.c:187 modules/misc/dummy/dummy.c:52
 msgid "Do not open a DOS command box interface"
 msgstr "Neotvárať rozhranie s príkazovým oknom systému DOS"
 
-#: modules/control/rc.c:188
+#: modules/control/rc.c:189
 msgid ""
 "By default the rc interface plugin will start a DOS command box. Enabling "
 "the quiet mode will not bring this command box but can also be pretty "
@@ -11555,459 +11555,459 @@ msgstr ""
 "sa nebude otvárať. Neskôr sa však môže vyskytnúť problém v prípade, že "
 "budete chcieť zastaviť program VLC a nebude otvorené žiadne okno s videom."
 
-#: modules/control/rc.c:195
+#: modules/control/rc.c:196
 msgid "RC"
 msgstr "Diaľkové ovládanie"
 
-#: modules/control/rc.c:198
+#: modules/control/rc.c:199
 msgid "Remote control interface"
 msgstr "Rozhranie pre diaľkové ovládanie"
 
-#: modules/control/rc.c:347
+#: modules/control/rc.c:348
 msgid "Remote control interface initialized. Type `help' for help."
 msgstr ""
 "Rozhranie pre dialkove ovladanie je inicializovane. Ak potrebujete "
 "pomocnika, napiste prikaz `help' "
 
-#: modules/control/rc.c:820
+#: modules/control/rc.c:821
 #, c-format
 msgid "Unknown command `%s'. Type `help' for help."
 msgstr ""
 "Prikaz `%s' nie je znamy a vykonatelny. Ak potrebujte pomocnika, napiste "
 "prosim prikaz `help'"
 
-#: modules/control/rc.c:853
+#: modules/control/rc.c:854
 msgid "+----[ Remote control commands ]"
 msgstr "+----[ Prikazy z dialkoveho ovladania ]"
 
-#: modules/control/rc.c:855
+#: modules/control/rc.c:856
 msgid "| add XYZ  . . . . . . . . . . . . add XYZ to playlist"
 msgstr "| add XYZ  . . . . . . . . . . pridat XYZ do playlistu"
 
-#: modules/control/rc.c:856
+#: modules/control/rc.c:857
 msgid "| enqueue XYZ  . . . . . . . . . queue XYZ to playlist"
 msgstr "| enqueue XYZ  . . . . . . . . . . zaradit XYZ do playlistu"
 
-#: modules/control/rc.c:857
+#: modules/control/rc.c:858
 msgid "| playlist . . . . .  show items currently in playlist"
 msgstr "| playlist . . .  zobrazit aktualne polozky v playliste"
 
-#: modules/control/rc.c:858
+#: modules/control/rc.c:859
 msgid "| play . . . . . . . . . . . . . . . . . . play stream"
 msgstr "| play . . . . . . . . . . . . . . . . prehrat stream"
 
-#: modules/control/rc.c:859
+#: modules/control/rc.c:860
 msgid "| stop . . . . . . . . . . . . . . . . . . stop stream"
 msgstr "| stop . . . . . . . . . . . . . . . . zastavit prehravanie streamu"
 
-#: modules/control/rc.c:860
+#: modules/control/rc.c:861
 msgid "| next . . . . . . . . . . . . . .  next playlist item"
 msgstr "| next . . . . . . . . . . . .  dalsia polozka v playliste"
 
-#: modules/control/rc.c:861
+#: modules/control/rc.c:862
 msgid "| prev . . . . . . . . . . . .  previous playlist item"
 msgstr "| prev . . . . . . . . . .  predchadzajuca polozka v playliste"
 
-#: modules/control/rc.c:862
+#: modules/control/rc.c:863
 msgid "| goto . . . . . . . . . . . . . .  goto item at index"
 msgstr "| goto . . . . . . . . . . . .  prejst na index"
 
-#: modules/control/rc.c:863
+#: modules/control/rc.c:864
 msgid "| repeat [on|off] . . . .  toggle playlist item repeat"
 msgstr "| repeat [on|off] . . . .  prepnut opakovanie polozky playlistu"
 
-#: modules/control/rc.c:864
+#: modules/control/rc.c:865
 msgid "| loop [on|off] . . . . . . . . . toggle playlist loop"
 msgstr "| loop [on|off] . . . . . .  prepnut opakovanie poloziek v playliste"
 
-#: modules/control/rc.c:865
+#: modules/control/rc.c:866
 msgid "| random [on|off] . . . . . . .  toggle random jumping"
 msgstr ""
 "| loop [on|off] . . . . . .  prepnut nahodne opakovanie poloziek v playliste"
 
-#: modules/control/rc.c:866
+#: modules/control/rc.c:867
 msgid "| clear . . . . . . . . . . . . . . clear the playlist"
 msgstr "| clear . . . . . . . . . . .   vycistit playlist"
 
-#: modules/control/rc.c:867
+#: modules/control/rc.c:868
 msgid "| status . . . . . . . . . . . current playlist status"
 msgstr "| status . . . . . . . . . stav aktualneho playlistu"
 
-#: modules/control/rc.c:868
+#: modules/control/rc.c:869
 msgid "| title [X]  . . . . . . set/get title in current item"
 msgstr "| title [X]  . . . . nastavit/nacitat titulok aktualnej polozky"
 
-#: modules/control/rc.c:869
+#: modules/control/rc.c:870
 msgid "| title_n  . . . . . . . .  next title in current item"
 msgstr "| title_n  . . . . . .  dalsi titul v aktualnej polozke"
 
-#: modules/control/rc.c:870
+#: modules/control/rc.c:871
 msgid "| title_p  . . . . . .  previous title in current item"
 msgstr "| title_p  . . . .  predchadzajuci titul v aktualnej polozke"
 
-#: modules/control/rc.c:871
+#: modules/control/rc.c:872
 msgid "| chapter [X]  . . . . set/get chapter in current item"
 msgstr "| chapter [X]  . . nastavit/nacitat kapitolu v aktualnej polozke"
 
-#: modules/control/rc.c:872
+#: modules/control/rc.c:873
 msgid "| chapter_n  . . . . . .  next chapter in current item"
 msgstr "| chapter_n  . . . .  dalsia kapitola v aktualnej polozke"
 
-#: modules/control/rc.c:873
+#: modules/control/rc.c:874
 msgid "| chapter_p  . . . .  previous chapter in current item"
 msgstr "| chapter_p  . .  predchadzajuca kapitola v aktualnej polozke"
 
-#: modules/control/rc.c:875
+#: modules/control/rc.c:876
 msgid "| seek X . . . seek in seconds, for instance `seek 12'"
 msgstr ""
 "| seek X . vyhladavanie pozicie v sekundach, prikaz zadavajte napr. takto: "
 "`seek 12'"
 
-#: modules/control/rc.c:876
+#: modules/control/rc.c:877
 msgid "| pause  . . . . . . . . . . . . . . . .  toggle pause"
 msgstr "| pause  . . . . . . . . . . . . . .  pozastavit prehravanie"
 
-#: modules/control/rc.c:877
+#: modules/control/rc.c:878
 msgid "| fastforward  . . . . . . . .  .  set to maximum rate"
 msgstr "| fastforward  . . . . . .  .  nastavit na max. rychlost"
 
-#: modules/control/rc.c:878
+#: modules/control/rc.c:879
 msgid "| rewind  . . . . . . . . . . . .  set to minimum rate"
 msgstr "| rewind  . . . . . . . . . .  nastavit na minimalnu rychlost"
 
-#: modules/control/rc.c:879
+#: modules/control/rc.c:880
 msgid "| faster . . . . . . . . . .  faster playing of stream"
 msgstr "| faster . . . . . . . .  rychlejsie prehravanie streamu"
 
-#: modules/control/rc.c:880
+#: modules/control/rc.c:881
 msgid "| slower . . . . . . . . . .  slower playing of stream"
 msgstr "| slower . . . . . . . .  pomalsie prehravanie streamu"
 
-#: modules/control/rc.c:881
+#: modules/control/rc.c:882
 msgid "| normal . . . . . . . . . .  normal playing of stream"
 msgstr "| normal . . . . . . . .  normalne prehravanie streamu"
 
-#: modules/control/rc.c:882
+#: modules/control/rc.c:883
 msgid "| f [on|off] . . . . . . . . . . . . toggle fullscreen"
 msgstr "| f [on|off] . . . . . . . . . . prepnut do celoobrazovkoveho rezimu"
 
-#: modules/control/rc.c:883
+#: modules/control/rc.c:884
 msgid "| info . . . . .  information about the current stream"
 msgstr "| info . . .  informacia o aktualnom streame"
 
-#: modules/control/rc.c:884
+#: modules/control/rc.c:885
 msgid "| stats  . . . . . . . .  show statistical information"
 msgstr "| stats . . . . . . . . . zobraziť štatistické informácie"
 
-#: modules/control/rc.c:885
+#: modules/control/rc.c:886
 msgid "| get_time . . seconds elapsed since stream's beginning"
 msgstr ""
 "| get_time . . zobrazit pocet sekund, ktore uplynuli od zaciatku prehravania"
 
-#: modules/control/rc.c:886
+#: modules/control/rc.c:887
 msgid "| is_playing . . . .  1 if a stream plays, 0 otherwise"
 msgstr "| is_playing . .  hodnota 1=stream sa prehrava, hodnota 0=ine"
 
-#: modules/control/rc.c:887
+#: modules/control/rc.c:888
 msgid "| get_title . . . . .  the title of the current stream"
 msgstr "| get_title . . .  titulok (nazov) aktualneho streamu"
 
-#: modules/control/rc.c:888
+#: modules/control/rc.c:889
 msgid "| get_length . . . .  the length of the current stream"
 msgstr "| get_length . .  dlzka aktualneho streamu"
 
-#: modules/control/rc.c:890
+#: modules/control/rc.c:891
 msgid "| volume [X] . . . . . . . . . .  set/get audio volume"
 msgstr "| volume [X] . . . . . . . .  nastavit/nacitat uroven hlasitosti"
 
-#: modules/control/rc.c:891
+#: modules/control/rc.c:892
 msgid "| volup [X]  . . . . . . .  raise audio volume X steps"
 msgstr "| volup [X]  . . . . .  zvysit hlasitost o zadany pocet stupnov"
 
-#: modules/control/rc.c:892
+#: modules/control/rc.c:893
 msgid "| voldown [X]  . . . . . .  lower audio volume X steps"
 msgstr "| voldown [X]  . . . .  znizit hlasitost o zadany pocet stupnov"
 
-#: modules/control/rc.c:893
+#: modules/control/rc.c:894
 msgid "| adev [X] . . . . . . . . . . .  set/get audio device"
 msgstr "| adev [X] . . . . . . . . .  nastavit/detekovat audio-zariadenie"
 
-#: modules/control/rc.c:894
+#: modules/control/rc.c:895
 msgid "| achan [X]. . . . . . . . . .  set/get audio channels"
 msgstr "| achan [X]. . . . . . . .  nastavit/nacitat audio-kanaly"
 
-#: modules/control/rc.c:895
+#: modules/control/rc.c:896
 msgid "| atrack [X] . . . . . . . . . . . set/get audio track"
 msgstr "| adev [X] . . . . . . . . .  nastavit/detekovat audio-stopu"
 
-#: modules/control/rc.c:896
+#: modules/control/rc.c:897
 msgid "| vtrack [X] . . . . . . . . . . . set/get video track"
 msgstr "| adev [X] . . . . . . . . .  nastavit/detekovat video-stopu"
 
-#: modules/control/rc.c:897
+#: modules/control/rc.c:898
 msgid "| vratio [X]  . . . . . . . set/get video aspect ratio"
 msgstr "| titul [X]  . . . . nastavit/detekovat stranovy pomer videa"
 
-#: modules/control/rc.c:898
+#: modules/control/rc.c:899
 msgid "| vcrop [X]  . . . . . . . . . . .  set/get video crop"
 msgstr "| adev [X] . . . . . . . . .  nastavit/detekovat vystrihnutie videa"
 
-#: modules/control/rc.c:899
+#: modules/control/rc.c:900
 msgid "| vzoom [X]  . . . . . . . . . . .  set/get video zoom"
 msgstr "| hlasitost [X] . . . . . . . .  nastavit/nacitat uroven priblizenia"
 
-#: modules/control/rc.c:900
+#: modules/control/rc.c:901
 msgid "| snapshot . . . . . . . . . . . . take video snapshot"
 msgstr "| adev [X] . . . . . . . . .  zaznamenať snimku z videa"
 
-#: modules/control/rc.c:901
+#: modules/control/rc.c:902
 msgid "| strack [X] . . . . . . . . . set/get subtitles track"
 msgstr "| achan [X]. . . . . . . .  nastavit/detekovat stopu s titulkami"
 
-#: modules/control/rc.c:902
+#: modules/control/rc.c:903
 msgid "| key [hotkey name] . . . . . .  simulate hotkey press"
 msgstr "| klávesa [názov klávesy] . . . . . .  simulovať stlačenie klávesy"
 
-#: modules/control/rc.c:903
+#: modules/control/rc.c:904
 msgid "| menu . . [on|off|up|down|left|right|select] use menu"
 msgstr "| menu . .  [on|off|up|down|left|right|select] pouzitie menu"
 
-#: modules/control/rc.c:908
+#: modules/control/rc.c:909
 msgid "| @name marq-marquee  STRING  . . overlay STRING in video"
 msgstr "| @name marq-marquee STRING  . . prekryvaci prikaz vo videu"
 
-#: modules/control/rc.c:909
+#: modules/control/rc.c:910
 msgid "| @name marq-x X . . . . . . . . . . . .offset from left"
 msgstr "| @name marq-x X . . . . . . . . . . . .offset zlava"
 
-#: modules/control/rc.c:910
+#: modules/control/rc.c:911
 msgid "| @name marq-y Y . . . . . . . . . . . . offset from top"
 msgstr "| @name marq-y Y . . . . . . . . . . . . offset zhora"
 
-#: modules/control/rc.c:911
+#: modules/control/rc.c:912
 msgid "| @name marq-position #. . .  .relative position control"
 msgstr "| @name marq-position #. . .  .ovladanie relativnej pozicie"
 
-#: modules/control/rc.c:912
+#: modules/control/rc.c:913
 msgid "| @name marq-color # . . . . . . . . . . font color, RGB"
 msgstr "| @name marq-color # . . . . . . . . . . farba pisma, RGB"
 
-#: modules/control/rc.c:913
+#: modules/control/rc.c:914
 msgid "| @name marq-opacity # . . . . . . . . . . . . . opacity"
 msgstr "| @name marq-opacity # . . . . . . . . . . . . . priehladnost"
 
-#: modules/control/rc.c:914
+#: modules/control/rc.c:915
 msgid "| @name marq-timeout T. . . . . . . . . . timeout, in ms"
 msgstr "| @name marq-timeout T. . . . . . . . . . casovy limit v ms"
 
-#: modules/control/rc.c:915
+#: modules/control/rc.c:916
 msgid "| @name marq-size # . . . . . . . . font size, in pixels"
 msgstr "| @name marq-size # . . . . . . . . velkost pisma v pixeloch"
 
-#: modules/control/rc.c:917
+#: modules/control/rc.c:918
 msgid "| @name logo-file STRING . . .the overlay file path/name"
 msgstr "| @name logo-file STRING. . .cesta a nazov prekryvacieho suboru"
 
-#: modules/control/rc.c:918
+#: modules/control/rc.c:919
 msgid "| @name logo-x X . . . . . . . . . . . .offset from left"
 msgstr "| @name logo-x X . . . . . . . . . . . .offset zlava"
 
-#: modules/control/rc.c:919
+#: modules/control/rc.c:920
 msgid "| @name logo-y Y . . . . . . . . . . . . offset from top"
 msgstr "| @name logo-y Y . . . . . . . . . . . . offset zhora"
 
-#: modules/control/rc.c:920
+#: modules/control/rc.c:921
 msgid "| @name logo-position #. . . . . . . . relative position"
 msgstr "| @name logo-position #. . . . . . . . relativna pozicia"
 
-#: modules/control/rc.c:921
+#: modules/control/rc.c:922
 msgid "| @name logo-transparency #. . . . . . . . .transparency"
 msgstr "| @name logo-transparency #. . . . . . . . .priehladnost"
 
-#: modules/control/rc.c:923
+#: modules/control/rc.c:924
 msgid "| @name mosaic-alpha # . . . . . . . . . . . . . . alpha"
 msgstr "| @name mosaic-alpha # . . . . . . . . . . . . . . alfa-kanal"
 
-#: modules/control/rc.c:924
+#: modules/control/rc.c:925
 msgid "| @name mosaic-height #. . . . . . . . . . . . . .height"
 msgstr "| @name mosaic-height #. . . . . . . . . . . . . .vyska"
 
-#: modules/control/rc.c:925
+#: modules/control/rc.c:926
 msgid "| @name mosaic-width # . . . . . . . . . . . . . . width"
 msgstr "| @name mosaic-width # . . . . . . . . . . . . . . sirka"
 
-#: modules/control/rc.c:926
+#: modules/control/rc.c:927
 msgid "| @name mosaic-xoffset # . . . .top left corner position"
 msgstr "| @name mosaic-xoffset # . . . .pozicia laveho horneho rohu"
 
-#: modules/control/rc.c:927
+#: modules/control/rc.c:928
 msgid "| @name mosaic-yoffset # . . . .top left corner position"
 msgstr "| @name mosaic-yoffset # . . . .pozicia laveho horneho rohu"
 
-#: modules/control/rc.c:928
+#: modules/control/rc.c:929
 msgid "| @name mosaic-offsets x,y(,x,y)*. . . . list of offsets"
 msgstr "| @name mosaic-offsets x,y(,x,y)*. . . . zoznam suradnic"
 
-#: modules/control/rc.c:929
+#: modules/control/rc.c:930
 msgid "| @name mosaic-align 0..2,4..6,8..10. . .mosaic alignment"
 msgstr "| @name mosaic-align 0..2,4..6,8..10. . .zarovnanie mozaiky"
 
-#: modules/control/rc.c:930
+#: modules/control/rc.c:931
 msgid "| @name mosaic-vborder # . . . . . . . . vertical border"
 msgstr "| @name mosaic-vborder # . . . . . . . . vertikalny okraj mozaiky"
 
-#: modules/control/rc.c:931
+#: modules/control/rc.c:932
 msgid "| @name mosaic-hborder # . . . . . . . horizontal border"
 msgstr "| @name mosaic-hborder # . . . . . . . horizontalny okraj"
 
-#: modules/control/rc.c:932
+#: modules/control/rc.c:933
 msgid "| @name mosaic-position {0=auto,1=fixed} . . . .position"
 msgstr "| @name mosaic-position {0=auto,1=fixed} . . . .pozicia"
 
-#: modules/control/rc.c:933
+#: modules/control/rc.c:934
 msgid "| @name mosaic-rows #. . . . . . . . . . .number of rows"
 msgstr "| @name mosaic-rows #. . . . . . . . . . .pocet riadkov mozaiky"
 
-#: modules/control/rc.c:934
+#: modules/control/rc.c:935
 msgid "| @name mosaic-cols #. . . . . . . . . . .number of cols"
 msgstr "| @name mosaic-cols #. . . . . . . . . . .pocet stlpcov mozaiky"
 
-#: modules/control/rc.c:935
+#: modules/control/rc.c:936
 msgid "| @name mosaic-order id(,id)* . . . . order of pictures "
 msgstr "| @name mozaika-radenie id(,id)* . . . . radenie obrázkov"
 
-#: modules/control/rc.c:936
+#: modules/control/rc.c:937
 msgid "| @name mosaic-keep-aspect-ratio {0,1} . . .aspect ratio"
 msgstr "| @name mosaic-keep-aspect-ratio {0,1} . . .stranovy pomer"
 
-#: modules/control/rc.c:939
+#: modules/control/rc.c:940
 msgid "| help . . . . . . . . . . . . . . . this help message"
 msgstr "| help . . . . . . . . . . . . . toto okno s pomocnikom"
 
-#: modules/control/rc.c:940
+#: modules/control/rc.c:941
 msgid "| longhelp . . . . . . . . . . . a longer help message"
 msgstr "| longhelp . . . . . . . . . obsiahlejsie informacie z pomocnika"
 
-#: modules/control/rc.c:941
+#: modules/control/rc.c:942
 msgid "| logout . . . . . . .  exit (if in socket connection)"
 msgstr "| logout . . . . .  ukoncenie (socketoveho spojenia)"
 
-#: modules/control/rc.c:942
+#: modules/control/rc.c:943
 msgid "| quit . . . . . . . . . . . . . . . . . . .  quit vlc"
 msgstr "| quit . . . . . . . . . . . . . . . . .  ukoncit program vlc"
 
-#: modules/control/rc.c:944
+#: modules/control/rc.c:945
 msgid "+----[ end of help ]"
 msgstr "+----[ koniec pomocnika ]"
 
-#: modules/control/rc.c:1059
+#: modules/control/rc.c:1060
 msgid "Press menu select or pause to continue."
 msgstr ""
 "Pre pokračovanie stlačte tlačidlo pre výber menu alebo pozastavenie "
 "prehrávania."
 
-#: modules/control/rc.c:1315 modules/control/rc.c:1575
-#: modules/control/rc.c:1646 modules/control/rc.c:1826
-#: modules/control/rc.c:1924
+#: modules/control/rc.c:1316 modules/control/rc.c:1576
+#: modules/control/rc.c:1647 modules/control/rc.c:1827
+#: modules/control/rc.c:1925
 msgid "Type 'menu select' or 'pause' to continue."
 msgstr ""
 "Pre pokračovanie stlačte tlačidlo pre výber menu alebo pozastavenie "
 "prehrávania."
 
-#: modules/control/rc.c:1410
+#: modules/control/rc.c:1411
 msgid "Error: `goto' needs an argument greater than zero."
 msgstr "Chyba: Funkcia `goto' vyžaduje argument väčší ako 0."
 
-#: modules/control/rc.c:1421
+#: modules/control/rc.c:1422
 #, c-format
 msgid "Playlist has only %d elements"
 msgstr "Playlist má len %d položiek!"
 
-#: modules/control/rc.c:1911 modules/control/rc.c:1951
+#: modules/control/rc.c:1912 modules/control/rc.c:1952
 msgid "Please provide one of the following parameters:"
 msgstr "Prosím zadajte jeden z týchto parametrov:"
 
-#: modules/control/rc.c:1983
+#: modules/control/rc.c:1984
 msgid "Unknown command!"
 msgstr "Neznámy príkaz!"
 
-#: modules/control/rc.c:1999 modules/gui/ncurses.c:2039
+#: modules/control/rc.c:2000 modules/gui/ncurses.c:2039
 msgid "+-[Incoming]"
 msgstr "+-[Prichádzajúce]"
 
-#: modules/control/rc.c:2000 modules/gui/ncurses.c:2042
+#: modules/control/rc.c:2001 modules/gui/ncurses.c:2042
 #, c-format
 msgid "| input bytes read : %8.0f kB"
 msgstr "| nacitane vstupne byty : %8.0f kB"
 
-#: modules/control/rc.c:2002 modules/gui/ncurses.c:2045
+#: modules/control/rc.c:2003 modules/gui/ncurses.c:2045
 #, c-format
 msgid "| input bitrate    :   %6.0f kb/s"
 msgstr "| dátový tok na vstupe    :   %6.0f kb/s"
 
-#: modules/control/rc.c:2004 modules/gui/ncurses.c:2047
+#: modules/control/rc.c:2005 modules/gui/ncurses.c:2047
 #, c-format
 msgid "| demux bytes read : %8.0f kB"
 msgstr "| čítanie demux. bytov : %8.0f kB"
 
-#: modules/control/rc.c:2006 modules/gui/ncurses.c:2050
+#: modules/control/rc.c:2007 modules/gui/ncurses.c:2050
 #, c-format
 msgid "| demux bitrate    :   %6.0f kb/s"
 msgstr "| dátový tok pri demuxovaní    :   %6.0f kb/s"
 
-#: modules/control/rc.c:2010 modules/gui/ncurses.c:2058
+#: modules/control/rc.c:2011 modules/gui/ncurses.c:2058
 msgid "+-[Video Decoding]"
 msgstr "+-[Dekódovanie videa]"
 
-#: modules/control/rc.c:2011 modules/gui/ncurses.c:2061
+#: modules/control/rc.c:2012 modules/gui/ncurses.c:2061
 #, c-format
 msgid "| video decoded    :    %5i"
 msgstr "| dekódované video    :    %5i"
 
-#: modules/control/rc.c:2013 modules/gui/ncurses.c:2064
+#: modules/control/rc.c:2014 modules/gui/ncurses.c:2064
 #, c-format
 msgid "| frames displayed :    %5i"
 msgstr "| zobrazené snímky :    %5i"
 
-#: modules/control/rc.c:2015 modules/gui/ncurses.c:2067
+#: modules/control/rc.c:2016 modules/gui/ncurses.c:2067
 #, c-format
 msgid "| frames lost      :    %5i"
 msgstr "| stratené snímky      :    %5i"
 
-#: modules/control/rc.c:2019 modules/gui/ncurses.c:2075
+#: modules/control/rc.c:2020 modules/gui/ncurses.c:2075
 msgid "+-[Audio Decoding]"
 msgstr "+-[Dekódovanie zvuku]"
 
-#: modules/control/rc.c:2020 modules/gui/ncurses.c:2078
+#: modules/control/rc.c:2021 modules/gui/ncurses.c:2078
 #, c-format
 msgid "| audio decoded    :    %5i"
 msgstr "| dekódovaný zvuk    :    %5i"
 
-#: modules/control/rc.c:2022 modules/gui/ncurses.c:2081
+#: modules/control/rc.c:2023 modules/gui/ncurses.c:2081
 #, c-format
 msgid "| buffers played   :    %5i"
 msgstr "| prehrané z vyr. pamäte   :    %5i"
 
-#: modules/control/rc.c:2024 modules/gui/ncurses.c:2084
+#: modules/control/rc.c:2025 modules/gui/ncurses.c:2084
 #, c-format
 msgid "| buffers lost     :    %5i"
 msgstr "| stratené z vyr. pamäte     :    %5i"
 
-#: modules/control/rc.c:2028 modules/gui/ncurses.c:2090
+#: modules/control/rc.c:2029 modules/gui/ncurses.c:2090
 msgid "+-[Streaming]"
 msgstr "+-[Streamovanie]"
 
-#: modules/control/rc.c:2029 modules/gui/ncurses.c:2093
+#: modules/control/rc.c:2030 modules/gui/ncurses.c:2093
 #, c-format
 msgid "| packets sent     :    %5i"
 msgstr "| odoslané pakety     :    %5i"
 
-#: modules/control/rc.c:2030 modules/gui/ncurses.c:2095
+#: modules/control/rc.c:2031 modules/gui/ncurses.c:2095
 #, c-format
 msgid "| bytes sent       : %8.0f kB"
 msgstr "| odoslané byty       : %8.0f kB"
 
-#: modules/control/rc.c:2032
+#: modules/control/rc.c:2033
 #, c-format
 msgid "| sending bitrate  :   %6.0f kb/s"
 msgstr "| dátový tok pri odosielaní  :   %6.0f kb/s"
@@ -13175,7 +13175,7 @@ msgid "Edit"
 msgstr "Úpravy"
 
 #: modules/gui/beos/PlayListWindow.cpp:106 modules/gui/macosx/intf.m:536
-#: modules/gui/macosx/playlist.m:444
+#: modules/gui/macosx/playlist.m:445
 msgid "Select All"
 msgstr "Vybrať všetko"
 
@@ -13216,7 +13216,7 @@ msgid "Path"
 msgstr "Cesta"
 
 #: modules/gui/beos/PlayListWindow.cpp:150 modules/gui/macosx/bookmarks.m:103
-#: modules/gui/macosx/playlist.m:126
+#: modules/gui/macosx/playlist.m:127
 msgid "Name"
 msgstr "Názov"
 
@@ -13225,8 +13225,9 @@ msgid "Apply"
 msgstr "Použiť"
 
 #: modules/gui/beos/PreferencesWindow.cpp:257 modules/gui/macosx/output.m:526
-#: modules/gui/macosx/playlist.m:681 modules/gui/macosx/prefs.m:125
-#: modules/gui/macosx/simple_prefs.m:302 modules/gui/qt4/ui/vlm.ui:209
+#: modules/gui/macosx/playlist.m:683 modules/gui/macosx/prefs.m:125
+#: modules/gui/macosx/simple_prefs.m:302 modules/gui/macosx/update.m:137
+#: modules/gui/qt4/ui/vlm.ui:209
 msgid "Save"
 msgstr "Uložiť"
 
@@ -13595,7 +13596,7 @@ msgstr "Extrahovať"
 msgid "Time"
 msgstr "Čas"
 
-#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:677
+#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:679
 msgid "Untitled"
 msgstr "Bez názvu"
 
@@ -14042,7 +14043,7 @@ msgstr "Záložky..."
 msgid "Playlist..."
 msgstr "Playlist..."
 
-#: modules/gui/macosx/intf.m:602
+#: modules/gui/macosx/intf.m:602 modules/gui/macosx/playlist.m:446
 msgid "Media Information..."
 msgstr "Informácia o médiu..."
 
@@ -14654,87 +14655,92 @@ msgstr "Chyba počas ukladania meta-dát"
 msgid "VLC was unable to save the meta data."
 msgstr "Program VLC nemohol uložiť meta-údaje"
 
-#: modules/gui/macosx/playlistinfo.m:442
+#: modules/gui/macosx/playlistinfo.m:449
 msgid "Information"
 msgstr "Informácia"
 
-#: modules/gui/macosx/playlist.m:127 modules/gui/macosx/wizard.m:350
+#: modules/gui/macosx/playlist.m:128 modules/gui/macosx/wizard.m:350
 #: modules/gui/wince/playlist.cpp:671 modules/mux/asf.c:54
 msgid "Author"
 msgstr "Autor"
 
-#: modules/gui/macosx/playlist.m:440
+#: modules/gui/macosx/playlist.m:441
 msgid "Save Playlist..."
 msgstr "Uložiť playlist..."
 
-#: modules/gui/macosx/playlist.m:443
+#: modules/gui/macosx/playlist.m:444
 msgid "Expand Node"
 msgstr "Rozbaliť uzol"
 
-#: modules/gui/macosx/playlist.m:446
+#: modules/gui/macosx/playlist.m:447
+#, fuzzy
+msgid "Download Cover Art"
+msgstr "Stiahnuť obal"
+
+#: modules/gui/macosx/playlist.m:448
 msgid "Fetch Meta Data"
 msgstr "Získať meta-dáta"
 
-#: modules/gui/macosx/playlist.m:447
+#: modules/gui/macosx/playlist.m:449
 msgid "Sort Node by Name"
 msgstr "Zoradiť uzly podľa názvu"
 
-#: modules/gui/macosx/playlist.m:448
+#: modules/gui/macosx/playlist.m:450
 msgid "Sort Node by Author"
 msgstr "Zoradiť uzol podľa autora"
 
-#: modules/gui/macosx/playlist.m:451 modules/gui/macosx/playlist.m:489
-#: modules/gui/macosx/playlist.m:1411
+#: modules/gui/macosx/playlist.m:453 modules/gui/macosx/playlist.m:491
+#: modules/gui/macosx/playlist.m:1444
 msgid "No items in the playlist"
 msgstr "Žiadne položky v playliste"
 
-#: modules/gui/macosx/playlist.m:453
+#: modules/gui/macosx/playlist.m:455
 msgid "Search in Playlist"
 msgstr "Hľadať v playliste"
 
-#: modules/gui/macosx/playlist.m:454
+#: modules/gui/macosx/playlist.m:456
 msgid "Add Folder to Playlist"
 msgstr "Pridať priečinok do playlistu"
 
-#: modules/gui/macosx/playlist.m:456
+#: modules/gui/macosx/playlist.m:458
 msgid "File Format:"
 msgstr "Formát súboru:"
 
-#: modules/gui/macosx/playlist.m:457
+#: modules/gui/macosx/playlist.m:459
 msgid "Extended M3U"
 msgstr "Rozšírený M3U súbor"
 
-#: modules/gui/macosx/playlist.m:458
+#: modules/gui/macosx/playlist.m:460
 msgid "XML Shareable Playlist Format (XSPF)"
 msgstr "XML formát playlistu (XSPF)"
 
-#: modules/gui/macosx/playlist.m:483 modules/gui/macosx/playlist.m:1404
+#: modules/gui/macosx/playlist.m:485 modules/gui/macosx/playlist.m:1437
 #: modules/gui/macosx/wizard.m:1356
 #, c-format
 msgid "%i items"
 msgstr "%i položiek"
 
-#: modules/gui/macosx/playlist.m:491 modules/gui/macosx/playlist.m:1415
+#: modules/gui/macosx/playlist.m:493 modules/gui/macosx/playlist.m:1448
 msgid "1 item"
 msgstr "1 položka"
 
-#: modules/gui/macosx/playlist.m:680
+#: modules/gui/macosx/playlist.m:682
 msgid "Save Playlist"
 msgstr "Uložiť playlist"
 
-#: modules/gui/macosx/playlist.m:1123 modules/gui/ncurses.c:1808
+#: modules/gui/macosx/playlist.m:1156 modules/gui/ncurses.c:1808
 msgid "Meta-information"
 msgstr "Meta-Informácia"
 
-#: modules/gui/macosx/playlist.m:1370
+#: modules/gui/macosx/playlist.m:1403
 msgid "New Node"
 msgstr "Nový uzol"
 
-#: modules/gui/macosx/playlist.m:1371
+#: modules/gui/macosx/playlist.m:1404
 msgid "Please enter a name for the new node."
 msgstr "Prosím zadajte názov pre nový uzol."
 
-#: modules/gui/macosx/playlist.m:1382
+#: modules/gui/macosx/playlist.m:1415
 msgid "Empty Folder"
 msgstr "Prázdny priečinok"
 
@@ -15132,15 +15138,20 @@ msgstr "Áno"
 msgid "No"
 msgstr "Nie"
 
-#: modules/gui/macosx/update.m:176
+#: modules/gui/macosx/update.m:138
+#, fuzzy
+msgid "Save As:"
+msgstr "Uložiť"
+
+#: modules/gui/macosx/update.m:178
 msgid "This version of VLC is the latest available."
 msgstr "Máte najnovšiu verziu programu VLC."
 
-#: modules/gui/macosx/update.m:183
+#: modules/gui/macosx/update.m:185
 msgid "This version of VLC is outdated."
 msgstr "Táto verzia programu VLC je zastaralá."
 
-#: modules/gui/macosx/update.m:185
+#: modules/gui/macosx/update.m:187
 #, c-format
 msgid "The current release is %d.%d.%d%c."
 msgstr "Aktuálne vydanie je %d.%d.%d%c."
@@ -16732,23 +16743,23 @@ msgstr "Zobraziť pokročilé nastavenia"
 msgid "Transparent"
 msgstr "Priehľadné"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:898
+#: modules/gui/qt4/components/interface_widgets.cpp:902
 msgid "Unmute"
 msgstr "Vypnúť stlmenie"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:938
+#: modules/gui/qt4/components/interface_widgets.cpp:942
 msgid "Pause the playback"
 msgstr "Pozastaviť prehrávanie"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1485
+#: modules/gui/qt4/components/interface_widgets.cpp:1478
 msgid "Revert to normal play speed"
 msgstr "Vrátiť na normálnu rýchlosť prehrávania"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1635
+#: modules/gui/qt4/components/interface_widgets.cpp:1628
 msgid "Download cover art"
 msgstr "Stiahnuť obal"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1651
+#: modules/gui/qt4/components/interface_widgets.cpp:1644
 msgid "Toggle between elapsed and remaining time"
 msgstr "Prepnúť medzi uplynulým a zostávajúcim časom"
 
@@ -16769,7 +16780,7 @@ msgid "Filter:"
 msgstr "Filter:"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:632
+#: modules/gui/qt4/dialogs_provider.cpp:631
 msgid "Open subtitles file"
 msgstr "Otvoriť súbor s titulkami"
 
@@ -16819,7 +16830,7 @@ msgstr "Názov rádio-zariadenia"
 msgid "Advanced Options"
 msgstr "Pokročilé nastavenia"
 
-#: modules/gui/qt4/components/playlist/playlist.cpp:68
+#: modules/gui/qt4/components/playlist/playlist.cpp:66
 msgid "Double click to get media information"
 msgstr "Dvakrát kliknite pre získanie informácií o médiu"
 
@@ -17275,23 +17286,23 @@ msgstr ""
 "Týmto sa zrušia všetky Vaše nastavenia programu VLC.\n"
 "Naozaj chcete pokračovať?"
 
-#: modules/gui/qt4/dialogs_provider.cpp:423
+#: modules/gui/qt4/dialogs_provider.cpp:422
 msgid "Open Directory"
 msgstr "Otvoriť priečinok"
 
-#: modules/gui/qt4/dialogs_provider.cpp:461
+#: modules/gui/qt4/dialogs_provider.cpp:460
 msgid "Open playlist file"
 msgstr "Otvoriť súbor s playlistom"
 
-#: modules/gui/qt4/dialogs_provider.cpp:472
+#: modules/gui/qt4/dialogs_provider.cpp:471
 msgid "Choose a filename to save playlist"
 msgstr "Musíte si vybrať súbor, do ktorého uloží playlist"
 
-#: modules/gui/qt4/dialogs_provider.cpp:474
+#: modules/gui/qt4/dialogs_provider.cpp:473
 msgid "XSPF playlist (*.xspf);; "
 msgstr "XSPF playlist (*.xspf);; "
 
-#: modules/gui/qt4/dialogs_provider.cpp:475
+#: modules/gui/qt4/dialogs_provider.cpp:474
 msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr "M3U playlist (*.m3u);; Akýkoľvek (*.*) "
 
@@ -17397,7 +17408,7 @@ msgstr "Naplánovanie:"
 msgid "VOD: "
 msgstr "VOD: "
 
-#: modules/gui/qt4/main_interface.cpp:307
+#: modules/gui/qt4/main_interface.cpp:309
 msgid ""
 "Current playback speed.\n"
 "Right click to adjust"
@@ -17405,15 +17416,15 @@ msgstr ""
 "Aktuálna rýchlosť prehrávania.\n"
 "Kliknite pravým tlačidlom pre prispôsobenie"
 
-#: modules/gui/qt4/main_interface.cpp:476
+#: modules/gui/qt4/main_interface.cpp:478
 msgid "Privacy and Network Policies"
 msgstr "Pravidlá pre súkromie a sieť"
 
-#: modules/gui/qt4/main_interface.cpp:480
+#: modules/gui/qt4/main_interface.cpp:482
 msgid "Privacy and Network Warning"
 msgstr "Upozornenia pre súkromie a sieť"
 
-#: modules/gui/qt4/main_interface.cpp:483
+#: modules/gui/qt4/main_interface.cpp:485
 msgid ""
 "<p>The <i>VideoLAN Team</i> doesn't like when an application goes online "
 "without authorization.</p>\n"
@@ -17434,11 +17445,11 @@ msgstr ""
 "<p>Preto si prosím skontrolujte nasledujúce nastavenia, predvolené hodnoty "
 "týchto nastavení neposkytujú totiž takmer žiadny prístup na internet.</p>\n"
 
-#: modules/gui/qt4/main_interface.cpp:997
+#: modules/gui/qt4/main_interface.cpp:996
 msgid "Control menu for the player"
 msgstr "Kontrolné menu prehrávača"
 
-#: modules/gui/qt4/main_interface.cpp:1046
+#: modules/gui/qt4/main_interface.cpp:1045
 msgid "Paused"
 msgstr "Pozastavené"
 

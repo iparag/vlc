@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-25 11:50-0700\n"
+"POT-Creation-Date: 2008-10-02 09:58-0700\n"
 "PO-Revision-Date: 2006-05-18 19:31+0100\n"
 "Last-Translator: Miroslav Oujeský <oujesky@mail.muni.cz>\n"
 "Language-Team: \n"
@@ -340,7 +340,7 @@ msgstr ""
 #: modules/gui/beos/InterfaceWindow.cpp:232
 #: modules/gui/beos/InterfaceWindow.cpp:326 modules/gui/macosx/intf.m:502
 #: modules/gui/pda/pda_interface.c:1262
-#: modules/gui/qt4/components/playlist/playlist.cpp:125
+#: modules/gui/qt4/components/playlist/playlist.cpp:123
 #: modules/gui/qt4/dialogs/playlist.cpp:48
 #: modules/gui/qt4/main_interface.cpp:120
 msgid "Playlist"
@@ -357,8 +357,8 @@ msgstr ""
 msgid "General playlist behaviour"
 msgstr "Podle chování Nautilu"
 
-#: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:449
-#: modules/gui/macosx/playlist.m:450
+#: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:451
+#: modules/gui/macosx/playlist.m:452
 #, fuzzy
 msgid "Services discovery"
 msgstr "Služby online"
@@ -528,7 +528,7 @@ msgstr "O programu..."
 #: modules/gui/macosx/intf.m:539 modules/gui/macosx/intf.m:618
 #: modules/gui/macosx/intf.m:625 modules/gui/macosx/intf.m:1809
 #: modules/gui/macosx/intf.m:1810 modules/gui/macosx/intf.m:1811
-#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:441
+#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:442
 #: modules/gui/pda/pda_interface.c:260 modules/gui/pda/pda_interface.c:261
 #: modules/gui/qt4/menus.cpp:656 modules/gui/qt4/menus.cpp:660
 #: modules/gui/qt4/menus.cpp:663
@@ -540,7 +540,7 @@ msgstr "Přehrát"
 msgid "Fetch Information"
 msgstr "Meta-informace"
 
-#: include/vlc_intf_strings.h:55 modules/gui/macosx/playlist.m:442
+#: include/vlc_intf_strings.h:55 modules/gui/macosx/playlist.m:443
 #: modules/gui/pda/pda_interface.c:1252
 #: modules/gui/qt4/dialogs/bookmarks.cpp:46
 #: modules/gui/qt4/ui/podcast_configuration.ui:59
@@ -548,7 +548,7 @@ msgstr "Meta-informace"
 msgid "Delete"
 msgstr "Odstranit"
 
-#: include/vlc_intf_strings.h:56 modules/gui/macosx/playlist.m:445
+#: include/vlc_intf_strings.h:56
 #, fuzzy
 msgid "Information..."
 msgstr "Information"
@@ -1091,7 +1091,7 @@ msgid "Title"
 msgstr "Titul"
 
 #: src/input/meta.c:53 modules/gui/macosx/playlistinfo.m:73
-#: modules/gui/macosx/playlist.m:1123
+#: modules/gui/macosx/playlist.m:1156
 msgid "Artist"
 msgstr "Umělec"
 
@@ -1210,12 +1210,12 @@ msgid "Chapter %i"
 msgstr "Kapitola %i"
 
 #: src/input/var.c:370 modules/gui/beos/InterfaceWindow.cpp:291
-#: modules/gui/qt4/components/interface_widgets.cpp:868
+#: modules/gui/qt4/components/interface_widgets.cpp:872
 msgid "Next chapter"
 msgstr "Následující kapitola"
 
 #: src/input/var.c:375 modules/gui/beos/InterfaceWindow.cpp:290
-#: modules/gui/qt4/components/interface_widgets.cpp:867
+#: modules/gui/qt4/components/interface_widgets.cpp:871
 msgid "Previous chapter"
 msgstr "Předchozí kapitola"
 
@@ -1254,7 +1254,7 @@ msgstr "Zrušit"
 #: modules/gui/macosx/wizard.m:1889
 #: modules/gui/qt4/components/open_panels.cpp:1163
 #: modules/gui/qt4/components/preferences_widgets.cpp:1293
-#: modules/gui/qt4/main_interface.cpp:530
+#: modules/gui/qt4/main_interface.cpp:532
 msgid "OK"
 msgstr "OK"
 
@@ -3807,7 +3807,7 @@ msgstr ""
 #: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:195
 #: modules/gui/macosx/controls.m:928 modules/gui/macosx/intf.m:561
 #: modules/gui/macosx/intf.m:622 modules/gui/macosx/intf.m:631
-#: modules/gui/qt4/components/interface_widgets.cpp:907
+#: modules/gui/qt4/components/interface_widgets.cpp:911
 msgid "Mute"
 msgstr "Umlčet"
 
@@ -5757,7 +5757,7 @@ msgid "Disc"
 msgstr "Disk"
 
 #: modules/access/cdda/info.c:330 modules/access/cdda/info.c:395
-#: modules/gui/macosx/playlist.m:128
+#: modules/gui/macosx/playlist.m:129
 #: modules/gui/qt4/components/playlist/sorting.h:51
 msgid "Duration"
 msgstr "Délka trvání"
@@ -6384,8 +6384,8 @@ msgstr "Souborový vstup"
 msgid "File"
 msgstr "File"
 
-#: modules/access/file.c:246 modules/access/file.c:364
-#: modules/access/file.c:378 modules/access/mmap.c:221
+#: modules/access/file.c:246 modules/access/file.c:365
+#: modules/access/file.c:379 modules/access/mmap.c:221
 #, fuzzy
 msgid "File reading failed"
 msgstr "zakázat veškeré změny měřítka"
@@ -6395,7 +6395,7 @@ msgstr "zakázat veškeré změny měřítka"
 msgid "VLC could not read the file."
 msgstr "Barva video vstupu."
 
-#: modules/access/file.c:365 modules/access/file.c:379
+#: modules/access/file.c:366 modules/access/file.c:380
 #, fuzzy, c-format
 msgid "VLC could not open the file \"%s\"."
 msgstr "Barva video vstupu."
@@ -8799,14 +8799,14 @@ msgstr "Zařízení výstupu zvuku"
 #: modules/audio_output/pulse.c:61 modules/gui/macosx/intf.m:489
 #: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:1789
 #: modules/gui/pda/pda_interface.c:210 modules/gui/pda/pda_interface.c:1353
-#: modules/gui/qt4/main_interface.cpp:361
-#: modules/gui/qt4/main_interface.cpp:365
-#: modules/gui/qt4/main_interface.cpp:930
-#: modules/gui/qt4/main_interface.cpp:932
-#: modules/gui/qt4/main_interface.cpp:996
-#: modules/gui/qt4/main_interface.cpp:1011
-#: modules/gui/qt4/main_interface.cpp:1018
-#: modules/gui/qt4/main_interface.cpp:1035
+#: modules/gui/qt4/main_interface.cpp:363
+#: modules/gui/qt4/main_interface.cpp:367
+#: modules/gui/qt4/main_interface.cpp:929
+#: modules/gui/qt4/main_interface.cpp:931
+#: modules/gui/qt4/main_interface.cpp:995
+#: modules/gui/qt4/main_interface.cpp:1010
+#: modules/gui/qt4/main_interface.cpp:1017
+#: modules/gui/qt4/main_interface.cpp:1034
 msgid "VLC media player"
 msgstr "VLC media player"
 
@@ -11085,575 +11085,575 @@ msgstr "konec"
 msgid "Error"
 msgstr "Chyba"
 
-#: modules/control/rc.c:170
+#: modules/control/rc.c:171
 msgid "Show stream position"
 msgstr "Zobrazovat umístění proudu"
 
-#: modules/control/rc.c:171
+#: modules/control/rc.c:172
 msgid ""
 "Show the current position in seconds within the stream from time to time."
 msgstr ""
 
-#: modules/control/rc.c:174
+#: modules/control/rc.c:175
 msgid "Fake TTY"
 msgstr "Falešné TTY"
 
-#: modules/control/rc.c:175
+#: modules/control/rc.c:176
 msgid "Force the rc module to use stdin as if it was a TTY."
 msgstr ""
 
-#: modules/control/rc.c:177
+#: modules/control/rc.c:178
 #, fuzzy
 msgid "UNIX socket command input"
 msgstr "svc_unix.c - při vytváření AF_UNIX soketu vznikla chyba"
 
-#: modules/control/rc.c:178
+#: modules/control/rc.c:179
 msgid "Accept commands over a Unix socket rather than stdin."
 msgstr ""
 
-#: modules/control/rc.c:181
+#: modules/control/rc.c:182
 #, fuzzy
 msgid "TCP command input"
 msgstr "Chybný vstupní řádek %s\n"
 
-#: modules/control/rc.c:182
+#: modules/control/rc.c:183
 msgid ""
 "Accept commands over a socket rather than stdin. You can set the address and "
 "port the interface will bind to."
 msgstr ""
 
-#: modules/control/rc.c:186 modules/misc/dummy/dummy.c:52
+#: modules/control/rc.c:187 modules/misc/dummy/dummy.c:52
 #, fuzzy
 msgid "Do not open a DOS command box interface"
 msgstr "Rozhraní pro dálkové ovládání"
 
-#: modules/control/rc.c:188
+#: modules/control/rc.c:189
 msgid ""
 "By default the rc interface plugin will start a DOS command box. Enabling "
 "the quiet mode will not bring this command box but can also be pretty "
 "annoying when you want to stop VLC and no video window is open."
 msgstr ""
 
-#: modules/control/rc.c:195
+#: modules/control/rc.c:196
 msgid "RC"
 msgstr "RC"
 
-#: modules/control/rc.c:198
+#: modules/control/rc.c:199
 msgid "Remote control interface"
 msgstr "Rozhraní pro dálkové ovládání"
 
-#: modules/control/rc.c:347
+#: modules/control/rc.c:348
 msgid "Remote control interface initialized. Type `help' for help."
 msgstr ""
 
-#: modules/control/rc.c:820
+#: modules/control/rc.c:821
 #, c-format
 msgid "Unknown command `%s'. Type `help' for help."
 msgstr "Neznámý příkaz `%s'. Zadejte `help' pro nápovědu."
 
-#: modules/control/rc.c:853
+#: modules/control/rc.c:854
 #, fuzzy
 msgid "+----[ Remote control commands ]"
 msgstr "Rozhraní pro dálkové ovládání"
 
-#: modules/control/rc.c:855
+#: modules/control/rc.c:856
 #, fuzzy
 msgid "| add XYZ  . . . . . . . . . . . . add XYZ to playlist"
 msgstr "Přidat složku do seznamu skladeb"
 
-#: modules/control/rc.c:856
+#: modules/control/rc.c:857
 #, fuzzy
 msgid "| enqueue XYZ  . . . . . . . . . queue XYZ to playlist"
 msgstr "Přidat složku do seznamu skladeb"
 
-#: modules/control/rc.c:857
+#: modules/control/rc.c:858
 #, fuzzy
 msgid "| playlist . . . . .  show items currently in playlist"
 msgstr "Kdy zobrazovat počet položek v adresáři"
 
-#: modules/control/rc.c:858
+#: modules/control/rc.c:859
 #, fuzzy
 msgid "| play . . . . . . . . . . . . . . . . . . play stream"
 msgstr "Inicializuji proud"
 
-#: modules/control/rc.c:859
+#: modules/control/rc.c:860
 #, fuzzy
 msgid "| stop . . . . . . . . . . . . . . . . . . stop stream"
 msgstr "Inicializuji proud"
 
-#: modules/control/rc.c:860
+#: modules/control/rc.c:861
 #, fuzzy
 msgid "| next . . . . . . . . . . . . . .  next playlist item"
 msgstr "Následující položka seznamu skladeb"
 
-#: modules/control/rc.c:861
+#: modules/control/rc.c:862
 #, fuzzy
 msgid "| prev . . . . . . . . . . . .  previous playlist item"
 msgstr "Přesunout se na předchozí položku"
 
-#: modules/control/rc.c:862
+#: modules/control/rc.c:863
 #, fuzzy
 msgid "| goto . . . . . . . . . . . . . .  goto item at index"
 msgstr "KDGKBENT na pozici %d v tabulce %d: "
 
-#: modules/control/rc.c:863
+#: modules/control/rc.c:864
 #, fuzzy
 msgid "| repeat [on|off] . . . .  toggle playlist item repeat"
 msgstr "Sledování Braille zapnuto/vypnuto"
 
-#: modules/control/rc.c:864
+#: modules/control/rc.c:865
 #, fuzzy
 msgid "| loop [on|off] . . . . . . . . . toggle playlist loop"
 msgstr "Sledování Braille zapnuto/vypnuto"
 
-#: modules/control/rc.c:865
+#: modules/control/rc.c:866
 #, fuzzy
 msgid "| random [on|off] . . . . . . .  toggle random jumping"
 msgstr "Sledování Braille zapnuto/vypnuto"
 
-#: modules/control/rc.c:866
+#: modules/control/rc.c:867
 #, fuzzy
 msgid "| clear . . . . . . . . . . . . . . clear the playlist"
 msgstr "Nesmaže seznam skladeb"
 
-#: modules/control/rc.c:867
+#: modules/control/rc.c:868
 #, fuzzy
 msgid "| status . . . . . . . . . . . current playlist status"
 msgstr "Váš momentální stav"
 
-#: modules/control/rc.c:868
+#: modules/control/rc.c:869
 #, fuzzy
 msgid "| title [X]  . . . . . . set/get title in current item"
 msgstr "Získat aktuální datum a čas"
 
-#: modules/control/rc.c:869
+#: modules/control/rc.c:870
 #, fuzzy
 msgid "| title_n  . . . . . . . .  next title in current item"
 msgstr "Následující položka seznamu skladeb"
 
-#: modules/control/rc.c:870
+#: modules/control/rc.c:871
 #, fuzzy
 msgid "| title_p  . . . . . .  previous title in current item"
 msgstr "Přesunout se na předchozí položku"
 
-#: modules/control/rc.c:871
+#: modules/control/rc.c:872
 #, fuzzy
 msgid "| chapter [X]  . . . . set/get chapter in current item"
 msgstr "Nelze nastavit hlasitost zvuku"
 
-#: modules/control/rc.c:872
+#: modules/control/rc.c:873
 #, fuzzy
 msgid "| chapter_n  . . . . . .  next chapter in current item"
 msgstr "Reinicializuji proud"
 
-#: modules/control/rc.c:873
+#: modules/control/rc.c:874
 #, fuzzy
 msgid "| chapter_p  . . . .  previous chapter in current item"
 msgstr "Přesunout se na předchozí položku"
 
-#: modules/control/rc.c:875
+#: modules/control/rc.c:876
 msgid "| seek X . . . seek in seconds, for instance `seek 12'"
 msgstr ""
 
-#: modules/control/rc.c:876
+#: modules/control/rc.c:877
 #, fuzzy
 msgid "| pause  . . . . . . . . . . . . . . . .  toggle pause"
 msgstr "Přepnout režim přehrávání/pozastavení"
 
-#: modules/control/rc.c:877
+#: modules/control/rc.c:878
 #, fuzzy
 msgid "| fastforward  . . . . . . . .  .  set to maximum rate"
 msgstr "rychlost hlasů bude nastavena na implicitní hodnotu"
 
-#: modules/control/rc.c:878
+#: modules/control/rc.c:879
 #, fuzzy
 msgid "| rewind  . . . . . . . . . . . .  set to minimum rate"
 msgstr "rychlost hlasů bude nastavena na implicitní hodnotu"
 
-#: modules/control/rc.c:879
+#: modules/control/rc.c:880
 #, fuzzy
 msgid "| faster . . . . . . . . . .  faster playing of stream"
 msgstr "Reinicializuji proud"
 
-#: modules/control/rc.c:880
+#: modules/control/rc.c:881
 #, fuzzy
 msgid "| slower . . . . . . . . . .  slower playing of stream"
 msgstr "Reinicializuji proud"
 
-#: modules/control/rc.c:881
+#: modules/control/rc.c:882
 #, fuzzy
 msgid "| normal . . . . . . . . . .  normal playing of stream"
 msgstr "Reinicializuji proud"
 
-#: modules/control/rc.c:882
+#: modules/control/rc.c:883
 #, fuzzy
 msgid "| f [on|off] . . . . . . . . . . . . toggle fullscreen"
 msgstr "Sledování Braille zapnuto/vypnuto"
 
-#: modules/control/rc.c:883
+#: modules/control/rc.c:884
 #, fuzzy
 msgid "| info . . . . .  information about the current stream"
 msgstr "Zobrazení informací o současné stránce"
 
-#: modules/control/rc.c:884
+#: modules/control/rc.c:885
 #, fuzzy
 msgid "| stats  . . . . . . . .  show statistical information"
 msgstr "Váš momentální stav"
 
-#: modules/control/rc.c:885
+#: modules/control/rc.c:886
 msgid "| get_time . . seconds elapsed since stream's beginning"
 msgstr ""
 
-#: modules/control/rc.c:886
+#: modules/control/rc.c:887
 msgid "| is_playing . . . .  1 if a stream plays, 0 otherwise"
 msgstr ""
 
-#: modules/control/rc.c:887
+#: modules/control/rc.c:888
 #, fuzzy
 msgid "| get_title . . . . .  the title of the current stream"
 msgstr "Získat aktuální datum a čas"
 
-#: modules/control/rc.c:888
+#: modules/control/rc.c:889
 #, fuzzy
 msgid "| get_length . . . .  the length of the current stream"
 msgstr "Získat aktuální datum a čas"
 
-#: modules/control/rc.c:890
+#: modules/control/rc.c:891
 #, fuzzy
 msgid "| volume [X] . . . . . . . . . .  set/get audio volume"
 msgstr "Nelze nastavit hlasitost zvuku"
 
-#: modules/control/rc.c:891
+#: modules/control/rc.c:892
 #, fuzzy
 msgid "| volup [X]  . . . . . . .  raise audio volume X steps"
 msgstr "Nelze nastavit hlasitost zvuku"
 
-#: modules/control/rc.c:892
+#: modules/control/rc.c:893
 #, fuzzy
 msgid "| voldown [X]  . . . . . .  lower audio volume X steps"
 msgstr "Nelze nastavit hlasitost zvuku"
 
-#: modules/control/rc.c:893
+#: modules/control/rc.c:894
 #, fuzzy
 msgid "| adev [X] . . . . . . . . . . .  set/get audio device"
 msgstr "Nemohu nastavit zařízení zvuku \"%s\" na %d Hz."
 
-#: modules/control/rc.c:894
+#: modules/control/rc.c:895
 #, fuzzy
 msgid "| achan [X]. . . . . . . . . .  set/get audio channels"
 msgstr "Nemohu nastavit zařízení zvuku \"%s\" na %d Hz."
 
-#: modules/control/rc.c:895
+#: modules/control/rc.c:896
 #, fuzzy
 msgid "| atrack [X] . . . . . . . . . . . set/get audio track"
 msgstr "Nemohu nastavit zařízení zvuku \"%s\" na %d Hz."
 
-#: modules/control/rc.c:896
+#: modules/control/rc.c:897
 #, fuzzy
 msgid "| vtrack [X] . . . . . . . . . . . set/get video track"
 msgstr "Nemohu nastavit zařízení zvuku \"%s\" na %d Hz."
 
-#: modules/control/rc.c:897
+#: modules/control/rc.c:898
 #, fuzzy
 msgid "| vratio [X]  . . . . . . . set/get video aspect ratio"
 msgstr "Nelze nastavit hlasitost zvuku"
 
-#: modules/control/rc.c:898
+#: modules/control/rc.c:899
 #, fuzzy
 msgid "| vcrop [X]  . . . . . . . . . . .  set/get video crop"
 msgstr "Nemohu nastavit zařízení zvuku \"%s\" na %d Hz."
 
-#: modules/control/rc.c:899
+#: modules/control/rc.c:900
 #, fuzzy
 msgid "| vzoom [X]  . . . . . . . . . . .  set/get video zoom"
 msgstr "Nelze nastavit hlasitost zvuku"
 
-#: modules/control/rc.c:900
+#: modules/control/rc.c:901
 #, fuzzy
 msgid "| snapshot . . . . . . . . . . . . take video snapshot"
 msgstr "Nemohu nastavit zařízení zvuku \"%s\" na %d Hz."
 
-#: modules/control/rc.c:901
+#: modules/control/rc.c:902
 #, fuzzy
 msgid "| strack [X] . . . . . . . . . set/get subtitles track"
 msgstr "Nemohu nastavit zařízení zvuku \"%s\" na %d Hz."
 
-#: modules/control/rc.c:902
+#: modules/control/rc.c:903
 msgid "| key [hotkey name] . . . . . .  simulate hotkey press"
 msgstr ""
 
-#: modules/control/rc.c:903
+#: modules/control/rc.c:904
 msgid "| menu . . [on|off|up|down|left|right|select] use menu"
 msgstr ""
 
-#: modules/control/rc.c:908
+#: modules/control/rc.c:909
 msgid "| @name marq-marquee  STRING  . . overlay STRING in video"
 msgstr ""
 
-#: modules/control/rc.c:909
+#: modules/control/rc.c:910
 #, fuzzy
 msgid "| @name marq-x X . . . . . . . . . . . .offset from left"
 msgstr "Zleva doprava"
 
-#: modules/control/rc.c:910
+#: modules/control/rc.c:911
 #, fuzzy
 msgid "| @name marq-y Y . . . . . . . . . . . . offset from top"
 msgstr "Odshora zleva dolů doprava"
 
-#: modules/control/rc.c:911
+#: modules/control/rc.c:912
 #, fuzzy
 msgid "| @name marq-position #. . .  .relative position control"
 msgstr "Pozice widgetu vzhledem k jeho sourozencům"
 
-#: modules/control/rc.c:912
+#: modules/control/rc.c:913
 #, fuzzy
 msgid "| @name marq-color # . . . . . . . . . . font color, RGB"
 msgstr "Implicitní barva písma"
 
-#: modules/control/rc.c:913
+#: modules/control/rc.c:914
 #, fuzzy
 msgid "| @name marq-opacity # . . . . . . . . . . . . . opacity"
 msgstr "Krytí vyplňování:"
 
-#: modules/control/rc.c:914
+#: modules/control/rc.c:915
 #, fuzzy
 msgid "| @name marq-timeout T. . . . . . . . . . timeout, in ms"
 msgstr "Časový limit pro vypršení spojení (v sekundách)."
 
-#: modules/control/rc.c:915
+#: modules/control/rc.c:916
 #, fuzzy
 msgid "| @name marq-size # . . . . . . . . font size, in pixels"
 msgstr "Velikost písma v jednotkách Pango"
 
-#: modules/control/rc.c:917
+#: modules/control/rc.c:918
 msgid "| @name logo-file STRING . . .the overlay file path/name"
 msgstr ""
 
-#: modules/control/rc.c:918
+#: modules/control/rc.c:919
 #, fuzzy
 msgid "| @name logo-x X . . . . . . . . . . . .offset from left"
 msgstr "Zleva doprava"
 
-#: modules/control/rc.c:919
+#: modules/control/rc.c:920
 #, fuzzy
 msgid "| @name logo-y Y . . . . . . . . . . . . offset from top"
 msgstr "Odshora zleva dolů doprava"
 
-#: modules/control/rc.c:920
+#: modules/control/rc.c:921
 #, fuzzy
 msgid "| @name logo-position #. . . . . . . . relative position"
 msgstr "Poměrná vzdálenost obzoru"
 
-#: modules/control/rc.c:921
+#: modules/control/rc.c:922
 #, fuzzy
 msgid "| @name logo-transparency #. . . . . . . . .transparency"
 msgstr "Průhlednost loga"
 
-#: modules/control/rc.c:923
+#: modules/control/rc.c:924
 #, fuzzy
 msgid "| @name mosaic-alpha # . . . . . . . . . . . . . . alpha"
 msgstr "Řecká alfa"
 
-#: modules/control/rc.c:924
+#: modules/control/rc.c:925
 #, fuzzy
 msgid "| @name mosaic-height #. . . . . . . . . . . . . .height"
 msgstr "Výška desky: "
 
-#: modules/control/rc.c:925
+#: modules/control/rc.c:926
 #, fuzzy
 msgid "| @name mosaic-width # . . . . . . . . . . . . . . width"
 msgstr "Šířka desky: "
 
-#: modules/control/rc.c:926
+#: modules/control/rc.c:927
 #, fuzzy
 msgid "| @name mosaic-xoffset # . . . .top left corner position"
 msgstr "Vyprávěj příběh uspořádáním obrázků"
 
-#: modules/control/rc.c:927
+#: modules/control/rc.c:928
 #, fuzzy
 msgid "| @name mosaic-yoffset # . . . .top left corner position"
 msgstr "Vyprávěj příběh uspořádáním obrázků"
 
-#: modules/control/rc.c:928
+#: modules/control/rc.c:929
 #, fuzzy
 msgid "| @name mosaic-offsets x,y(,x,y)*. . . . list of offsets"
 msgstr "Vyprávěj příběh uspořádáním obrázků"
 
-#: modules/control/rc.c:929
+#: modules/control/rc.c:930
 msgid "| @name mosaic-align 0..2,4..6,8..10. . .mosaic alignment"
 msgstr ""
 
-#: modules/control/rc.c:930
+#: modules/control/rc.c:931
 #, fuzzy
 msgid "| @name mosaic-vborder # . . . . . . . . vertical border"
 msgstr "Velikost vertikální hranice úchytek listů sešitu"
 
-#: modules/control/rc.c:931
+#: modules/control/rc.c:932
 #, fuzzy
 msgid "| @name mosaic-hborder # . . . . . . . horizontal border"
 msgstr "Velikost horizontální hranice úchytek listů sešitu"
 
-#: modules/control/rc.c:932
+#: modules/control/rc.c:933
 #, fuzzy
 msgid "| @name mosaic-position {0=auto,1=fixed} . . . .position"
 msgstr "Určuje poměr stran stopy"
 
-#: modules/control/rc.c:933
+#: modules/control/rc.c:934
 #, fuzzy
 msgid "| @name mosaic-rows #. . . . . . . . . . .number of rows"
 msgstr "Počet řádků v pixbufu"
 
-#: modules/control/rc.c:934
+#: modules/control/rc.c:935
 #, fuzzy
 msgid "| @name mosaic-cols #. . . . . . . . . . .number of cols"
 msgstr "číslo mezi 0 a 1"
 
-#: modules/control/rc.c:935
+#: modules/control/rc.c:936
 #, fuzzy
 msgid "| @name mosaic-order id(,id)* . . . . order of pictures "
 msgstr "Vyprávěj příběh uspořádáním obrázků"
 
-#: modules/control/rc.c:936
+#: modules/control/rc.c:937
 #, fuzzy
 msgid "| @name mosaic-keep-aspect-ratio {0,1} . . .aspect ratio"
 msgstr "Určuje poměr stran stopy"
 
-#: modules/control/rc.c:939
+#: modules/control/rc.c:940
 #, fuzzy
 msgid "| help . . . . . . . . . . . . . . . this help message"
 msgstr "Zobrazit tuto nápovědu"
 
-#: modules/control/rc.c:940
+#: modules/control/rc.c:941
 #, fuzzy
 msgid "| longhelp . . . . . . . . . . . a longer help message"
 msgstr "  help             zobrazit podrobnou zprávu s nápovědou"
 
-#: modules/control/rc.c:941
+#: modules/control/rc.c:942
 #, fuzzy
 msgid "| logout . . . . . . .  exit (if in socket connection)"
 msgstr "Poměrná vzdálenost obzoru"
 
-#: modules/control/rc.c:942
+#: modules/control/rc.c:943
 #, fuzzy
 msgid "| quit . . . . . . . . . . . . . . . . . . .  quit vlc"
 msgstr "Ukončit VLC"
 
-#: modules/control/rc.c:944
+#: modules/control/rc.c:945
 #, fuzzy
 msgid "+----[ end of help ]"
 msgstr "help-cs.txt"
 
-#: modules/control/rc.c:1059
+#: modules/control/rc.c:1060
 #, fuzzy
 msgid "Press menu select or pause to continue."
 msgstr "Pro pokračování napište frázi \"%s\":\n"
 
-#: modules/control/rc.c:1315 modules/control/rc.c:1575
-#: modules/control/rc.c:1646 modules/control/rc.c:1826
-#: modules/control/rc.c:1924
+#: modules/control/rc.c:1316 modules/control/rc.c:1576
+#: modules/control/rc.c:1647 modules/control/rc.c:1827
+#: modules/control/rc.c:1925
 #, fuzzy
 msgid "Type 'menu select' or 'pause' to continue."
 msgstr "Pro pokračování napište frázi \"%s\":\n"
 
-#: modules/control/rc.c:1410
+#: modules/control/rc.c:1411
 msgid "Error: `goto' needs an argument greater than zero."
 msgstr ""
 
-#: modules/control/rc.c:1421
+#: modules/control/rc.c:1422
 #, fuzzy, c-format
 msgid "Playlist has only %d elements"
 msgstr "Seznam skladeb je prázdný"
 
-#: modules/control/rc.c:1911 modules/control/rc.c:1951
+#: modules/control/rc.c:1912 modules/control/rc.c:1952
 msgid "Please provide one of the following parameters:"
 msgstr ""
 
-#: modules/control/rc.c:1983
+#: modules/control/rc.c:1984
 #, fuzzy
 msgid "Unknown command!"
 msgstr "Neznámý zvuková karta"
 
-#: modules/control/rc.c:1999 modules/gui/ncurses.c:2039
+#: modules/control/rc.c:2000 modules/gui/ncurses.c:2039
 #, fuzzy
 msgid "+-[Incoming]"
 msgstr "Kódování"
 
-#: modules/control/rc.c:2000 modules/gui/ncurses.c:2042
+#: modules/control/rc.c:2001 modules/gui/ncurses.c:2042
 #, c-format
 msgid "| input bytes read : %8.0f kB"
 msgstr ""
 
-#: modules/control/rc.c:2002 modules/gui/ncurses.c:2045
+#: modules/control/rc.c:2003 modules/gui/ncurses.c:2045
 #, c-format
 msgid "| input bitrate    :   %6.0f kb/s"
 msgstr ""
 
-#: modules/control/rc.c:2004 modules/gui/ncurses.c:2047
+#: modules/control/rc.c:2005 modules/gui/ncurses.c:2047
 #, c-format
 msgid "| demux bytes read : %8.0f kB"
 msgstr ""
 
-#: modules/control/rc.c:2006 modules/gui/ncurses.c:2050
+#: modules/control/rc.c:2007 modules/gui/ncurses.c:2050
 #, c-format
 msgid "| demux bitrate    :   %6.0f kb/s"
 msgstr ""
 
-#: modules/control/rc.c:2010 modules/gui/ncurses.c:2058
+#: modules/control/rc.c:2011 modules/gui/ncurses.c:2058
 #, fuzzy
 msgid "+-[Video Decoding]"
 msgstr "<b>Videokonference</b>"
 
-#: modules/control/rc.c:2011 modules/gui/ncurses.c:2061
+#: modules/control/rc.c:2012 modules/gui/ncurses.c:2061
 #, c-format
 msgid "| video decoded    :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2013 modules/gui/ncurses.c:2064
+#: modules/control/rc.c:2014 modules/gui/ncurses.c:2064
 #, c-format
 msgid "| frames displayed :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2015 modules/gui/ncurses.c:2067
+#: modules/control/rc.c:2016 modules/gui/ncurses.c:2067
 #, c-format
 msgid "| frames lost      :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2019 modules/gui/ncurses.c:2075
+#: modules/control/rc.c:2020 modules/gui/ncurses.c:2075
 #, fuzzy
 msgid "+-[Audio Decoding]"
 msgstr "verze kodéru"
 
-#: modules/control/rc.c:2020 modules/gui/ncurses.c:2078
+#: modules/control/rc.c:2021 modules/gui/ncurses.c:2078
 #, c-format
 msgid "| audio decoded    :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2022 modules/gui/ncurses.c:2081
+#: modules/control/rc.c:2023 modules/gui/ncurses.c:2081
 #, c-format
 msgid "| buffers played   :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2024 modules/gui/ncurses.c:2084
+#: modules/control/rc.c:2025 modules/gui/ncurses.c:2084
 #, c-format
 msgid "| buffers lost     :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2028 modules/gui/ncurses.c:2090
+#: modules/control/rc.c:2029 modules/gui/ncurses.c:2090
 #, fuzzy
 msgid "+-[Streaming]"
 msgstr "Streamování"
 
-#: modules/control/rc.c:2029 modules/gui/ncurses.c:2093
+#: modules/control/rc.c:2030 modules/gui/ncurses.c:2093
 #, c-format
 msgid "| packets sent     :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2030 modules/gui/ncurses.c:2095
+#: modules/control/rc.c:2031 modules/gui/ncurses.c:2095
 #, c-format
 msgid "| bytes sent       : %8.0f kB"
 msgstr ""
 
-#: modules/control/rc.c:2032
+#: modules/control/rc.c:2033
 #, c-format
 msgid "| sending bitrate  :   %6.0f kb/s"
 msgstr ""
@@ -12856,7 +12856,7 @@ msgid "Edit"
 msgstr "Úpravy"
 
 #: modules/gui/beos/PlayListWindow.cpp:106 modules/gui/macosx/intf.m:536
-#: modules/gui/macosx/playlist.m:444
+#: modules/gui/macosx/playlist.m:445
 msgid "Select All"
 msgstr "Vybrat vše"
 
@@ -12898,7 +12898,7 @@ msgid "Path"
 msgstr "Cesta"
 
 #: modules/gui/beos/PlayListWindow.cpp:150 modules/gui/macosx/bookmarks.m:103
-#: modules/gui/macosx/playlist.m:126
+#: modules/gui/macosx/playlist.m:127
 msgid "Name"
 msgstr "Název"
 
@@ -12907,8 +12907,9 @@ msgid "Apply"
 msgstr "Použít"
 
 #: modules/gui/beos/PreferencesWindow.cpp:257 modules/gui/macosx/output.m:526
-#: modules/gui/macosx/playlist.m:681 modules/gui/macosx/prefs.m:125
-#: modules/gui/macosx/simple_prefs.m:302 modules/gui/qt4/ui/vlm.ui:209
+#: modules/gui/macosx/playlist.m:683 modules/gui/macosx/prefs.m:125
+#: modules/gui/macosx/simple_prefs.m:302 modules/gui/macosx/update.m:137
+#: modules/gui/qt4/ui/vlm.ui:209
 msgid "Save"
 msgstr "Uložit"
 
@@ -13258,7 +13259,7 @@ msgstr "Rozbalit"
 msgid "Time"
 msgstr "Čas"
 
-#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:677
+#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:679
 msgid "Untitled"
 msgstr "Bez názvu"
 
@@ -13723,7 +13724,7 @@ msgstr "Záložky"
 msgid "Playlist..."
 msgstr "Playlist"
 
-#: modules/gui/macosx/intf.m:602
+#: modules/gui/macosx/intf.m:602 modules/gui/macosx/playlist.m:446
 #, fuzzy
 msgid "Media Information..."
 msgstr "Meta-informace"
@@ -14357,93 +14358,98 @@ msgstr ""
 msgid "VLC was unable to save the meta data."
 msgstr ""
 
-#: modules/gui/macosx/playlistinfo.m:442
+#: modules/gui/macosx/playlistinfo.m:449
 msgid "Information"
 msgstr "Information"
 
-#: modules/gui/macosx/playlist.m:127 modules/gui/macosx/wizard.m:350
+#: modules/gui/macosx/playlist.m:128 modules/gui/macosx/wizard.m:350
 #: modules/gui/wince/playlist.cpp:671 modules/mux/asf.c:54
 msgid "Author"
 msgstr "Autor"
 
-#: modules/gui/macosx/playlist.m:440
+#: modules/gui/macosx/playlist.m:441
 msgid "Save Playlist..."
 msgstr "Uložit seznam skladeb..."
 
-#: modules/gui/macosx/playlist.m:443
+#: modules/gui/macosx/playlist.m:444
 #, fuzzy
 msgid "Expand Node"
 msgstr "Centrum uzlů"
 
-#: modules/gui/macosx/playlist.m:446
+#: modules/gui/macosx/playlist.m:447
+#, fuzzy
+msgid "Download Cover Art"
+msgstr "Stáhnout nyní"
+
+#: modules/gui/macosx/playlist.m:448
 #, fuzzy
 msgid "Fetch Meta Data"
 msgstr "<b>Jiná metadata</b>"
 
-#: modules/gui/macosx/playlist.m:447
+#: modules/gui/macosx/playlist.m:449
 msgid "Sort Node by Name"
 msgstr "Seřadit uzel podle názvu"
 
-#: modules/gui/macosx/playlist.m:448
+#: modules/gui/macosx/playlist.m:450
 msgid "Sort Node by Author"
 msgstr "Seřadit uzel podle autora"
 
-#: modules/gui/macosx/playlist.m:451 modules/gui/macosx/playlist.m:489
-#: modules/gui/macosx/playlist.m:1411
+#: modules/gui/macosx/playlist.m:453 modules/gui/macosx/playlist.m:491
+#: modules/gui/macosx/playlist.m:1444
 msgid "No items in the playlist"
 msgstr "Žádné položky v seznamu skladeb"
 
-#: modules/gui/macosx/playlist.m:453
+#: modules/gui/macosx/playlist.m:455
 msgid "Search in Playlist"
 msgstr "Hledat v seznamu skladeb"
 
-#: modules/gui/macosx/playlist.m:454
+#: modules/gui/macosx/playlist.m:456
 msgid "Add Folder to Playlist"
 msgstr "Přidat složku do seznamu skladeb"
 
-#: modules/gui/macosx/playlist.m:456
+#: modules/gui/macosx/playlist.m:458
 msgid "File Format:"
 msgstr "Formát souboru:"
 
-#: modules/gui/macosx/playlist.m:457
+#: modules/gui/macosx/playlist.m:459
 #, fuzzy
 msgid "Extended M3U"
 msgstr "Soubor M3U"
 
-#: modules/gui/macosx/playlist.m:458
+#: modules/gui/macosx/playlist.m:460
 msgid "XML Shareable Playlist Format (XSPF)"
 msgstr ""
 
-#: modules/gui/macosx/playlist.m:483 modules/gui/macosx/playlist.m:1404
+#: modules/gui/macosx/playlist.m:485 modules/gui/macosx/playlist.m:1437
 #: modules/gui/macosx/wizard.m:1356
 #, c-format
 msgid "%i items"
 msgstr "%i položek"
 
-#: modules/gui/macosx/playlist.m:491 modules/gui/macosx/playlist.m:1415
+#: modules/gui/macosx/playlist.m:493 modules/gui/macosx/playlist.m:1448
 #, fuzzy
 msgid "1 item"
 msgstr "%i položek"
 
-#: modules/gui/macosx/playlist.m:680
+#: modules/gui/macosx/playlist.m:682
 msgid "Save Playlist"
 msgstr "Uložit seznam skladeb"
 
-#: modules/gui/macosx/playlist.m:1123 modules/gui/ncurses.c:1808
+#: modules/gui/macosx/playlist.m:1156 modules/gui/ncurses.c:1808
 msgid "Meta-information"
 msgstr "Meta-informace"
 
-#: modules/gui/macosx/playlist.m:1370
+#: modules/gui/macosx/playlist.m:1403
 #, fuzzy
 msgid "New Node"
 msgstr "Nový uzel"
 
-#: modules/gui/macosx/playlist.m:1371
+#: modules/gui/macosx/playlist.m:1404
 #, fuzzy
 msgid "Please enter a name for the new node."
 msgstr "Zadejte prosím název uzlu"
 
-#: modules/gui/macosx/playlist.m:1382
+#: modules/gui/macosx/playlist.m:1415
 msgid "Empty Folder"
 msgstr "Prázdná složka"
 
@@ -14888,16 +14894,21 @@ msgstr "Ano"
 msgid "No"
 msgstr "Ne"
 
-#: modules/gui/macosx/update.m:176
+#: modules/gui/macosx/update.m:138
+#, fuzzy
+msgid "Save As:"
+msgstr "Uložit &jako..."
+
+#: modules/gui/macosx/update.m:178
 #, fuzzy
 msgid "This version of VLC is the latest available."
 msgstr "Tato verze VLC je neaktuální."
 
-#: modules/gui/macosx/update.m:183
+#: modules/gui/macosx/update.m:185
 msgid "This version of VLC is outdated."
 msgstr "Tato verze VLC je neaktuální."
 
-#: modules/gui/macosx/update.m:185
+#: modules/gui/macosx/update.m:187
 #, c-format
 msgid "The current release is %d.%d.%d%c."
 msgstr ""
@@ -16433,26 +16444,26 @@ msgstr "Zobrazovat rozšířené volby"
 msgid "Transparent"
 msgstr "Průhlednost"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:898
+#: modules/gui/qt4/components/interface_widgets.cpp:902
 #, fuzzy
 msgid "Unmute"
 msgstr "Umlčet"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:938
+#: modules/gui/qt4/components/interface_widgets.cpp:942
 #, fuzzy
 msgid "Pause the playback"
 msgstr "Přehrání animace:"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1485
+#: modules/gui/qt4/components/interface_widgets.cpp:1478
 msgid "Revert to normal play speed"
 msgstr ""
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1635
+#: modules/gui/qt4/components/interface_widgets.cpp:1628
 #, fuzzy
 msgid "Download cover art"
 msgstr "Stáhnout nyní"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1651
+#: modules/gui/qt4/components/interface_widgets.cpp:1644
 msgid "Toggle between elapsed and remaining time"
 msgstr ""
 
@@ -16477,7 +16488,7 @@ msgid "Filter:"
 msgstr "Filtry"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:632
+#: modules/gui/qt4/dialogs_provider.cpp:631
 #, fuzzy
 msgid "Open subtitles file"
 msgstr "Otevřít soubor s titulky:"
@@ -16540,7 +16551,7 @@ msgstr "Název zvukového zařízení"
 msgid "Advanced Options"
 msgstr "Pokročilá nastavení"
 
-#: modules/gui/qt4/components/playlist/playlist.cpp:68
+#: modules/gui/qt4/components/playlist/playlist.cpp:66
 msgid "Double click to get media information"
 msgstr ""
 
@@ -17041,27 +17052,27 @@ msgid ""
 "Are you sure you want to continue?"
 msgstr ""
 
-#: modules/gui/qt4/dialogs_provider.cpp:423
+#: modules/gui/qt4/dialogs_provider.cpp:422
 #, fuzzy
 msgid "Open Directory"
 msgstr "Otevřít &složku..."
 
-#: modules/gui/qt4/dialogs_provider.cpp:461
+#: modules/gui/qt4/dialogs_provider.cpp:460
 #, fuzzy
 msgid "Open playlist file"
 msgstr "Otevřít seznam skladeb"
 
-#: modules/gui/qt4/dialogs_provider.cpp:472
+#: modules/gui/qt4/dialogs_provider.cpp:471
 #, fuzzy
 msgid "Choose a filename to save playlist"
 msgstr "Pro instalaci musíte vybrat jeden z nich.\n"
 
-#: modules/gui/qt4/dialogs_provider.cpp:474
+#: modules/gui/qt4/dialogs_provider.cpp:473
 #, fuzzy
 msgid "XSPF playlist (*.xspf);; "
 msgstr "Soubor M3U|*.m3u|Seznam skladeb XSPF|*.xspf"
 
-#: modules/gui/qt4/dialogs_provider.cpp:475
+#: modules/gui/qt4/dialogs_provider.cpp:474
 msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr ""
 
@@ -17179,23 +17190,23 @@ msgstr ""
 msgid "VOD: "
 msgstr "Video On Demand"
 
-#: modules/gui/qt4/main_interface.cpp:307
+#: modules/gui/qt4/main_interface.cpp:309
 msgid ""
 "Current playback speed.\n"
 "Right click to adjust"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:476
+#: modules/gui/qt4/main_interface.cpp:478
 #, fuzzy
 msgid "Privacy and Network Policies"
 msgstr "_Optimální odhad"
 
-#: modules/gui/qt4/main_interface.cpp:480
+#: modules/gui/qt4/main_interface.cpp:482
 #, fuzzy
 msgid "Privacy and Network Warning"
 msgstr "_Optimální odhad"
 
-#: modules/gui/qt4/main_interface.cpp:483
+#: modules/gui/qt4/main_interface.cpp:485
 msgid ""
 "<p>The <i>VideoLAN Team</i> doesn't like when an application goes online "
 "without authorization.</p>\n"
@@ -17207,11 +17218,11 @@ msgid ""
 "access on the web.</p>\n"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:997
+#: modules/gui/qt4/main_interface.cpp:996
 msgid "Control menu for the player"
 msgstr ""
 
-#: modules/gui/qt4/main_interface.cpp:1046
+#: modules/gui/qt4/main_interface.cpp:1045
 msgid "Paused"
 msgstr "Pozastaveno"
 
@@ -24246,9 +24257,6 @@ msgstr "Analyzátor spektra"
 #, fuzzy
 #~ msgid "Playlist item info"
 #~ msgstr "1 položka v seznamu skladeb"
-
-#~ msgid "Save &As..."
-#~ msgstr "Uložit &jako..."
 
 #~ msgid "Save Messages As..."
 #~ msgstr "Uložit zprávu jako..."

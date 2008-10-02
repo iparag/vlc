@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: VLC 0.9.0\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-29 22:38+0100\n"
+"POT-Creation-Date: 2008-10-02 09:58-0700\n"
 "PO-Revision-Date: 2008-10-01 04:13+0100\n"
 "Last-Translator: \n"
 "Language-Team: Michał Trzebiatowski <hippie_1968@hotmail.com>\n"
@@ -373,8 +373,8 @@ msgstr ""
 msgid "General playlist behaviour"
 msgstr "Ogólne zachowanie listy odtwarzania"
 
-#: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:449
-#: modules/gui/macosx/playlist.m:450
+#: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:451
+#: modules/gui/macosx/playlist.m:452
 msgid "Services discovery"
 msgstr "Wykrywanie usług"
 
@@ -537,7 +537,7 @@ msgstr "&O..."
 #: modules/gui/macosx/intf.m:539 modules/gui/macosx/intf.m:618
 #: modules/gui/macosx/intf.m:625 modules/gui/macosx/intf.m:1809
 #: modules/gui/macosx/intf.m:1810 modules/gui/macosx/intf.m:1811
-#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:441
+#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:442
 #: modules/gui/pda/pda_interface.c:260 modules/gui/pda/pda_interface.c:261
 #: modules/gui/qt4/menus.cpp:656 modules/gui/qt4/menus.cpp:660
 #: modules/gui/qt4/menus.cpp:663
@@ -548,7 +548,7 @@ msgstr "Odtwarzaj"
 msgid "Fetch Information"
 msgstr "Pobierz informację"
 
-#: include/vlc_intf_strings.h:55 modules/gui/macosx/playlist.m:442
+#: include/vlc_intf_strings.h:55 modules/gui/macosx/playlist.m:443
 #: modules/gui/pda/pda_interface.c:1252
 #: modules/gui/qt4/dialogs/bookmarks.cpp:46
 #: modules/gui/qt4/ui/podcast_configuration.ui:59
@@ -556,7 +556,7 @@ msgstr "Pobierz informację"
 msgid "Delete"
 msgstr "Usuń"
 
-#: include/vlc_intf_strings.h:56 modules/gui/macosx/playlist.m:445
+#: include/vlc_intf_strings.h:56
 msgid "Information..."
 msgstr "Informacja..."
 
@@ -1066,7 +1066,7 @@ msgid "Title"
 msgstr "Tytuł"
 
 #: src/input/meta.c:53 modules/gui/macosx/playlistinfo.m:73
-#: modules/gui/macosx/playlist.m:1123
+#: modules/gui/macosx/playlist.m:1156
 msgid "Artist"
 msgstr "Wykonawca"
 
@@ -1181,12 +1181,12 @@ msgid "Chapter %i"
 msgstr "Rozdział %i"
 
 #: src/input/var.c:370 modules/gui/beos/InterfaceWindow.cpp:291
-#: modules/gui/qt4/components/interface_widgets.cpp:868
+#: modules/gui/qt4/components/interface_widgets.cpp:872
 msgid "Next chapter"
 msgstr "Następny rozdział"
 
 #: src/input/var.c:375 modules/gui/beos/InterfaceWindow.cpp:290
-#: modules/gui/qt4/components/interface_widgets.cpp:867
+#: modules/gui/qt4/components/interface_widgets.cpp:871
 msgid "Previous chapter"
 msgstr "Poprzedni rozdział"
 
@@ -3827,7 +3827,7 @@ msgstr "Wybierz klawisz dla zmniejszenia głośności."
 #: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:195
 #: modules/gui/macosx/controls.m:928 modules/gui/macosx/intf.m:561
 #: modules/gui/macosx/intf.m:622 modules/gui/macosx/intf.m:631
-#: modules/gui/qt4/components/interface_widgets.cpp:907
+#: modules/gui/qt4/components/interface_widgets.cpp:911
 msgid "Mute"
 msgstr "Wycisz"
 
@@ -5720,7 +5720,7 @@ msgid "Disc"
 msgstr "Płyta"
 
 #: modules/access/cdda/info.c:330 modules/access/cdda/info.c:395
-#: modules/gui/macosx/playlist.m:128
+#: modules/gui/macosx/playlist.m:129
 #: modules/gui/qt4/components/playlist/sorting.h:51
 msgid "Duration"
 msgstr "Czas trwania"
@@ -12224,7 +12224,7 @@ msgid "Edit"
 msgstr "Edytuj"
 
 #: modules/gui/beos/PlayListWindow.cpp:106 modules/gui/macosx/intf.m:536
-#: modules/gui/macosx/playlist.m:444
+#: modules/gui/macosx/playlist.m:445
 msgid "Select All"
 msgstr "Zaznacz wszystko"
 
@@ -12265,7 +12265,7 @@ msgid "Path"
 msgstr "Ściezka"
 
 #: modules/gui/beos/PlayListWindow.cpp:150 modules/gui/macosx/bookmarks.m:103
-#: modules/gui/macosx/playlist.m:126
+#: modules/gui/macosx/playlist.m:127
 msgid "Name"
 msgstr "Nazwa"
 
@@ -12274,8 +12274,9 @@ msgid "Apply"
 msgstr "Zastosuj"
 
 #: modules/gui/beos/PreferencesWindow.cpp:257 modules/gui/macosx/output.m:526
-#: modules/gui/macosx/playlist.m:681 modules/gui/macosx/prefs.m:125
-#: modules/gui/macosx/simple_prefs.m:302 modules/gui/qt4/ui/vlm.ui:209
+#: modules/gui/macosx/playlist.m:683 modules/gui/macosx/prefs.m:125
+#: modules/gui/macosx/simple_prefs.m:302 modules/gui/macosx/update.m:137
+#: modules/gui/qt4/ui/vlm.ui:209
 msgid "Save"
 msgstr "Zapisz"
 
@@ -12627,7 +12628,7 @@ msgstr "Ekstrahuj"
 msgid "Time"
 msgstr "Czas"
 
-#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:677
+#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:679
 msgid "Untitled"
 msgstr "Bez tytułu"
 
@@ -13061,7 +13062,7 @@ msgstr "Zakładki..."
 msgid "Playlist..."
 msgstr "Lista odtwarzania..."
 
-#: modules/gui/macosx/intf.m:602
+#: modules/gui/macosx/intf.m:602 modules/gui/macosx/playlist.m:446
 msgid "Media Information..."
 msgstr ""
 
@@ -13639,87 +13640,92 @@ msgstr ""
 msgid "VLC was unable to save the meta data."
 msgstr ""
 
-#: modules/gui/macosx/playlistinfo.m:442
+#: modules/gui/macosx/playlistinfo.m:449
 msgid "Information"
 msgstr "Informacja"
 
-#: modules/gui/macosx/playlist.m:127 modules/gui/macosx/wizard.m:350
+#: modules/gui/macosx/playlist.m:128 modules/gui/macosx/wizard.m:350
 #: modules/gui/wince/playlist.cpp:671 modules/mux/asf.c:54
 msgid "Author"
 msgstr "Autor"
 
-#: modules/gui/macosx/playlist.m:440
+#: modules/gui/macosx/playlist.m:441
 msgid "Save Playlist..."
 msgstr "Zapisz listę odtwarzania..."
 
-#: modules/gui/macosx/playlist.m:443
+#: modules/gui/macosx/playlist.m:444
 msgid "Expand Node"
 msgstr "Rozszerz węzeł"
 
-#: modules/gui/macosx/playlist.m:446
+#: modules/gui/macosx/playlist.m:447
+#, fuzzy
+msgid "Download Cover Art"
+msgstr "Pobierz teraz"
+
+#: modules/gui/macosx/playlist.m:448
 msgid "Fetch Meta Data"
 msgstr ""
 
-#: modules/gui/macosx/playlist.m:447
+#: modules/gui/macosx/playlist.m:449
 msgid "Sort Node by Name"
 msgstr "Sortuj węzły według nazwy"
 
-#: modules/gui/macosx/playlist.m:448
+#: modules/gui/macosx/playlist.m:450
 msgid "Sort Node by Author"
 msgstr "Sortuj węzły według wykonawców"
 
-#: modules/gui/macosx/playlist.m:451 modules/gui/macosx/playlist.m:489
-#: modules/gui/macosx/playlist.m:1411
+#: modules/gui/macosx/playlist.m:453 modules/gui/macosx/playlist.m:491
+#: modules/gui/macosx/playlist.m:1444
 msgid "No items in the playlist"
 msgstr "Brak pozycji na liście"
 
-#: modules/gui/macosx/playlist.m:453
+#: modules/gui/macosx/playlist.m:455
 msgid "Search in Playlist"
 msgstr "Szukaj w liście odtwarzania"
 
-#: modules/gui/macosx/playlist.m:454
+#: modules/gui/macosx/playlist.m:456
 msgid "Add Folder to Playlist"
 msgstr "Dodaj folder do listy odtwarzania"
 
-#: modules/gui/macosx/playlist.m:456
+#: modules/gui/macosx/playlist.m:458
 msgid "File Format:"
 msgstr "Format pliku:"
 
-#: modules/gui/macosx/playlist.m:457
+#: modules/gui/macosx/playlist.m:459
 msgid "Extended M3U"
 msgstr "Rozszerzony M3U"
 
-#: modules/gui/macosx/playlist.m:458
+#: modules/gui/macosx/playlist.m:460
 msgid "XML Shareable Playlist Format (XSPF)"
 msgstr ""
 
-#: modules/gui/macosx/playlist.m:483 modules/gui/macosx/playlist.m:1404
+#: modules/gui/macosx/playlist.m:485 modules/gui/macosx/playlist.m:1437
 #: modules/gui/macosx/wizard.m:1356
 #, c-format
 msgid "%i items"
 msgstr "%i pozycji"
 
-#: modules/gui/macosx/playlist.m:491 modules/gui/macosx/playlist.m:1415
+#: modules/gui/macosx/playlist.m:493 modules/gui/macosx/playlist.m:1448
 msgid "1 item"
 msgstr "1 pozycja"
 
-#: modules/gui/macosx/playlist.m:680
+#: modules/gui/macosx/playlist.m:682
 msgid "Save Playlist"
 msgstr "Zapisz listę odtwarzania"
 
-#: modules/gui/macosx/playlist.m:1123 modules/gui/ncurses.c:1808
+#: modules/gui/macosx/playlist.m:1156 modules/gui/ncurses.c:1808
 msgid "Meta-information"
 msgstr "Metainformacje"
 
-#: modules/gui/macosx/playlist.m:1370
+#: modules/gui/macosx/playlist.m:1403
 msgid "New Node"
 msgstr ""
 
-#: modules/gui/macosx/playlist.m:1371
+#: modules/gui/macosx/playlist.m:1404
 msgid "Please enter a name for the new node."
 msgstr ""
 
-#: modules/gui/macosx/playlist.m:1382
+#: modules/gui/macosx/playlist.m:1415
 msgid "Empty Folder"
 msgstr "Pusty Folder"
 
@@ -14111,15 +14117,20 @@ msgstr "Tak"
 msgid "No"
 msgstr "Nie"
 
-#: modules/gui/macosx/update.m:176
+#: modules/gui/macosx/update.m:138
+#, fuzzy
+msgid "Save As:"
+msgstr " Zapisz "
+
+#: modules/gui/macosx/update.m:178
 msgid "This version of VLC is the latest available."
 msgstr ""
 
-#: modules/gui/macosx/update.m:183
+#: modules/gui/macosx/update.m:185
 msgid "This version of VLC is outdated."
 msgstr ""
 
-#: modules/gui/macosx/update.m:185
+#: modules/gui/macosx/update.m:187
 #, c-format
 msgid "The current release is %d.%d.%d%c."
 msgstr ""
@@ -15590,24 +15601,24 @@ msgstr "Pokaż opcje zaawansowane"
 msgid "Transparent"
 msgstr "Przezroczystość"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:898
+#: modules/gui/qt4/components/interface_widgets.cpp:902
 msgid "Unmute"
 msgstr ""
 
-#: modules/gui/qt4/components/interface_widgets.cpp:938
+#: modules/gui/qt4/components/interface_widgets.cpp:942
 msgid "Pause the playback"
 msgstr "Wstrzymaj odtwarzanie"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1497
+#: modules/gui/qt4/components/interface_widgets.cpp:1478
 msgid "Revert to normal play speed"
 msgstr "Powrócić do normalnej prędkości odtwarzania"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1647
+#: modules/gui/qt4/components/interface_widgets.cpp:1628
 #, fuzzy
 msgid "Download cover art"
 msgstr "Pobierz teraz"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1663
+#: modules/gui/qt4/components/interface_widgets.cpp:1644
 msgid "Toggle between elapsed and remaining time"
 msgstr "Przełącza pomiędzy upłynnionym i pozostałym czasem"
 

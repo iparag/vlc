@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: de\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-09-25 11:50-0700\n"
+"POT-Creation-Date: 2008-10-02 09:58-0700\n"
 "PO-Revision-Date: 2007-12-10 19:23+0100\n"
 "Last-Translator: Philipp Weissenbacher <philipp.weissenbacher@gmail.com>\n"
 "Language-Team: German\n"
@@ -373,7 +373,7 @@ msgstr "VLCs Implementierung von Video-On-Demand"
 #: modules/gui/beos/InterfaceWindow.cpp:232
 #: modules/gui/beos/InterfaceWindow.cpp:326 modules/gui/macosx/intf.m:502
 #: modules/gui/pda/pda_interface.c:1262
-#: modules/gui/qt4/components/playlist/playlist.cpp:125
+#: modules/gui/qt4/components/playlist/playlist.cpp:123
 #: modules/gui/qt4/dialogs/playlist.cpp:48
 #: modules/gui/qt4/main_interface.cpp:120
 msgid "Playlist"
@@ -392,8 +392,8 @@ msgstr ""
 msgid "General playlist behaviour"
 msgstr "Allgemeines Verhalten der Wiedergabeliste"
 
-#: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:449
-#: modules/gui/macosx/playlist.m:450
+#: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:451
+#: modules/gui/macosx/playlist.m:452
 msgid "Services discovery"
 msgstr "Diensterkennung"
 
@@ -560,7 +560,7 @@ msgstr "&Über..."
 #: modules/gui/macosx/intf.m:539 modules/gui/macosx/intf.m:618
 #: modules/gui/macosx/intf.m:625 modules/gui/macosx/intf.m:1809
 #: modules/gui/macosx/intf.m:1810 modules/gui/macosx/intf.m:1811
-#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:441
+#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:442
 #: modules/gui/pda/pda_interface.c:260 modules/gui/pda/pda_interface.c:261
 #: modules/gui/qt4/menus.cpp:656 modules/gui/qt4/menus.cpp:660
 #: modules/gui/qt4/menus.cpp:663
@@ -571,7 +571,7 @@ msgstr "Wiedergabe"
 msgid "Fetch Information"
 msgstr "Informationen abrufen"
 
-#: include/vlc_intf_strings.h:55 modules/gui/macosx/playlist.m:442
+#: include/vlc_intf_strings.h:55 modules/gui/macosx/playlist.m:443
 #: modules/gui/pda/pda_interface.c:1252
 #: modules/gui/qt4/dialogs/bookmarks.cpp:46
 #: modules/gui/qt4/ui/podcast_configuration.ui:59
@@ -579,7 +579,7 @@ msgstr "Informationen abrufen"
 msgid "Delete"
 msgstr "Löschen"
 
-#: include/vlc_intf_strings.h:56 modules/gui/macosx/playlist.m:445
+#: include/vlc_intf_strings.h:56
 msgid "Information..."
 msgstr "Information..."
 
@@ -1132,7 +1132,7 @@ msgid "Title"
 msgstr "Titel"
 
 #: src/input/meta.c:53 modules/gui/macosx/playlistinfo.m:73
-#: modules/gui/macosx/playlist.m:1123
+#: modules/gui/macosx/playlist.m:1156
 msgid "Artist"
 msgstr "Künstler"
 
@@ -1247,12 +1247,12 @@ msgid "Chapter %i"
 msgstr "Kapitel %i"
 
 #: src/input/var.c:370 modules/gui/beos/InterfaceWindow.cpp:291
-#: modules/gui/qt4/components/interface_widgets.cpp:868
+#: modules/gui/qt4/components/interface_widgets.cpp:872
 msgid "Next chapter"
 msgstr "Nächstes Kapitel"
 
 #: src/input/var.c:375 modules/gui/beos/InterfaceWindow.cpp:290
-#: modules/gui/qt4/components/interface_widgets.cpp:867
+#: modules/gui/qt4/components/interface_widgets.cpp:871
 msgid "Previous chapter"
 msgstr "Vorheriges Kapitel"
 
@@ -1291,7 +1291,7 @@ msgstr "Abbrechen"
 #: modules/gui/macosx/wizard.m:1889
 #: modules/gui/qt4/components/open_panels.cpp:1163
 #: modules/gui/qt4/components/preferences_widgets.cpp:1293
-#: modules/gui/qt4/main_interface.cpp:530
+#: modules/gui/qt4/main_interface.cpp:532
 msgid "OK"
 msgstr "OK"
 
@@ -4023,7 +4023,7 @@ msgstr "Wählen Sie den Hotkey zum Verringern der Lautstärke."
 #: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:195
 #: modules/gui/macosx/controls.m:928 modules/gui/macosx/intf.m:561
 #: modules/gui/macosx/intf.m:622 modules/gui/macosx/intf.m:631
-#: modules/gui/qt4/components/interface_widgets.cpp:907
+#: modules/gui/qt4/components/interface_widgets.cpp:911
 msgid "Mute"
 msgstr "Ton aus"
 
@@ -6038,7 +6038,7 @@ msgid "Disc"
 msgstr "Volume"
 
 #: modules/access/cdda/info.c:330 modules/access/cdda/info.c:395
-#: modules/gui/macosx/playlist.m:128
+#: modules/gui/macosx/playlist.m:129
 #: modules/gui/qt4/components/playlist/sorting.h:51
 msgid "Duration"
 msgstr "Laufzeit"
@@ -6707,8 +6707,8 @@ msgstr "Datei-Input"
 msgid "File"
 msgstr "Datei"
 
-#: modules/access/file.c:246 modules/access/file.c:364
-#: modules/access/file.c:378 modules/access/mmap.c:221
+#: modules/access/file.c:246 modules/access/file.c:365
+#: modules/access/file.c:379 modules/access/mmap.c:221
 msgid "File reading failed"
 msgstr "Einlesen der Datei fehlgeschlagen"
 
@@ -6716,7 +6716,7 @@ msgstr "Einlesen der Datei fehlgeschlagen"
 msgid "VLC could not read the file."
 msgstr "VLC konnte die Datei nicht lesen."
 
-#: modules/access/file.c:365 modules/access/file.c:379
+#: modules/access/file.c:366 modules/access/file.c:380
 #, c-format
 msgid "VLC could not open the file \"%s\"."
 msgstr "VLC konnte die Datei \"%s\" nicht lesen."
@@ -9120,14 +9120,14 @@ msgstr "PORTAUDIO-Audioausgabe"
 #: modules/audio_output/pulse.c:61 modules/gui/macosx/intf.m:489
 #: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:1789
 #: modules/gui/pda/pda_interface.c:210 modules/gui/pda/pda_interface.c:1353
-#: modules/gui/qt4/main_interface.cpp:361
-#: modules/gui/qt4/main_interface.cpp:365
-#: modules/gui/qt4/main_interface.cpp:930
-#: modules/gui/qt4/main_interface.cpp:932
-#: modules/gui/qt4/main_interface.cpp:996
-#: modules/gui/qt4/main_interface.cpp:1011
-#: modules/gui/qt4/main_interface.cpp:1018
-#: modules/gui/qt4/main_interface.cpp:1035
+#: modules/gui/qt4/main_interface.cpp:363
+#: modules/gui/qt4/main_interface.cpp:367
+#: modules/gui/qt4/main_interface.cpp:929
+#: modules/gui/qt4/main_interface.cpp:931
+#: modules/gui/qt4/main_interface.cpp:995
+#: modules/gui/qt4/main_interface.cpp:1010
+#: modules/gui/qt4/main_interface.cpp:1017
+#: modules/gui/qt4/main_interface.cpp:1034
 msgid "VLC media player"
 msgstr "VLC media player"
 
@@ -11404,36 +11404,36 @@ msgstr "Ende"
 msgid "Error"
 msgstr "Fehler"
 
-#: modules/control/rc.c:170
+#: modules/control/rc.c:171
 msgid "Show stream position"
 msgstr "Streamposition anzeigen"
 
-#: modules/control/rc.c:171
+#: modules/control/rc.c:172
 msgid ""
 "Show the current position in seconds within the stream from time to time."
 msgstr "Zeigt die aktuelle Position im Stream von Zeit zu Zeit in Sekunden an."
 
-#: modules/control/rc.c:174
+#: modules/control/rc.c:175
 msgid "Fake TTY"
 msgstr "TTY vortäuschen"
 
-#: modules/control/rc.c:175
+#: modules/control/rc.c:176
 msgid "Force the rc module to use stdin as if it was a TTY."
 msgstr "Das rc-Modul zwingen, stdin zu benutzen als ob es ein TTY sei."
 
-#: modules/control/rc.c:177
+#: modules/control/rc.c:178
 msgid "UNIX socket command input"
 msgstr "UNIX-Socketbefehl-Input"
 
-#: modules/control/rc.c:178
+#: modules/control/rc.c:179
 msgid "Accept commands over a Unix socket rather than stdin."
 msgstr "Befehle über ein Unix-Socket statt über stdin akzeptieren."
 
-#: modules/control/rc.c:181
+#: modules/control/rc.c:182
 msgid "TCP command input"
 msgstr "TCP-Befehlsinput"
 
-#: modules/control/rc.c:182
+#: modules/control/rc.c:183
 msgid ""
 "Accept commands over a socket rather than stdin. You can set the address and "
 "port the interface will bind to."
@@ -11441,11 +11441,11 @@ msgstr ""
 "Befehle über ein Socket statt über stdin akzeptieren. Sie können die Adresse "
 "und Port festlegen, an den sich das Interface binden wird."
 
-#: modules/control/rc.c:186 modules/misc/dummy/dummy.c:52
+#: modules/control/rc.c:187 modules/misc/dummy/dummy.c:52
 msgid "Do not open a DOS command box interface"
 msgstr "Kein DOS-Befehlszeileninterface öffnen"
 
-#: modules/control/rc.c:188
+#: modules/control/rc.c:189
 msgid ""
 "By default the rc interface plugin will start a DOS command box. Enabling "
 "the quiet mode will not bring this command box but can also be pretty "
@@ -11456,452 +11456,452 @@ msgstr ""
 "Dies kann jedoch recht nervig sein, wenn Sie VLC stoppen möchten und kein "
 "Videofenster geöffnet ist."
 
-#: modules/control/rc.c:195
+#: modules/control/rc.c:196
 msgid "RC"
 msgstr "RC"
 
-#: modules/control/rc.c:198
+#: modules/control/rc.c:199
 msgid "Remote control interface"
 msgstr "Remote-Control-Interface"
 
-#: modules/control/rc.c:347
+#: modules/control/rc.c:348
 msgid "Remote control interface initialized. Type `help' for help."
 msgstr ""
 "Remote-Control-Interface initialisiert. Geben Sie `help' für Hilfe ein."
 
-#: modules/control/rc.c:820
+#: modules/control/rc.c:821
 #, c-format
 msgid "Unknown command `%s'. Type `help' for help."
 msgstr "Unbekannter Befehl `%s'. Geben Sie `help' für Hilfe ein."
 
-#: modules/control/rc.c:853
+#: modules/control/rc.c:854
 msgid "+----[ Remote control commands ]"
 msgstr "+----[ Remote-Control-Befehle ]"
 
-#: modules/control/rc.c:855
+#: modules/control/rc.c:856
 msgid "| add XYZ  . . . . . . . . . . . . add XYZ to playlist"
 msgstr "| add XYZ  . . . . . . . . .  XYZ der Wiedergabeliste hinzufügen"
 
-#: modules/control/rc.c:856
+#: modules/control/rc.c:857
 msgid "| enqueue XYZ  . . . . . . . . . queue XYZ to playlist"
 msgstr "| enqueue XYZ  . . . . . . . .  XYZ an die Wiedergabeliste anhängen"
 
-#: modules/control/rc.c:857
+#: modules/control/rc.c:858
 msgid "| playlist . . . . .  show items currently in playlist"
 msgstr "| playlist . . . . . aktuelle Objekte der Wiedergabeliste zeigen"
 
-#: modules/control/rc.c:858
+#: modules/control/rc.c:859
 msgid "| play . . . . . . . . . . . . . . . . . . play stream"
 msgstr "| play . . . . . . . . . . . . . . . . . . .  Stream wiedergeben"
 
-#: modules/control/rc.c:859
+#: modules/control/rc.c:860
 msgid "| stop . . . . . . . . . . . . . . . . . . stop stream"
 msgstr "| stop . . . . . . . . . . . . . . . . . . . . .  Stream stoppen"
 
-#: modules/control/rc.c:860
+#: modules/control/rc.c:861
 msgid "| next . . . . . . . . . . . . . .  next playlist item"
 msgstr "| next . . . . . . . . . . . . . nächstes Wiedergabelistenobjekt"
 
-#: modules/control/rc.c:861
+#: modules/control/rc.c:862
 msgid "| prev . . . . . . . . . . . .  previous playlist item"
 msgstr "| prev . . . . . . . . . . . . vorheriges Wiedergabelistenobjekt"
 
-#: modules/control/rc.c:862
+#: modules/control/rc.c:863
 msgid "| goto . . . . . . . . . . . . . .  goto item at index"
 msgstr "| gehe zu. . . . . . . . . .  gehe zu Objekt bei gegebenem Index"
 
-#: modules/control/rc.c:863
+#: modules/control/rc.c:864
 msgid "| repeat [on|off] . . . .  toggle playlist item repeat"
 msgstr "| repeat [on|off] . . . . . . . .  Objektwiederholung umschalten"
 
-#: modules/control/rc.c:864
+#: modules/control/rc.c:865
 msgid "| loop [on|off] . . . . . . . . . toggle playlist loop"
 msgstr "| loop [on|off] . . . .  Wiedergabelistenwiederholung umschalten"
 
-#: modules/control/rc.c:865
+#: modules/control/rc.c:866
 msgid "| random [on|off] . . . . . . .  toggle random jumping"
 msgstr "| random [on|off] . . . . . . .  Zufällige Wiedergabe umschalten"
 
-#: modules/control/rc.c:866
+#: modules/control/rc.c:867
 msgid "| clear . . . . . . . . . . . . . . clear the playlist"
 msgstr "| clear . . . . . . . . . . . . . . . .  Wiedergabeliste löschen"
 
-#: modules/control/rc.c:867
+#: modules/control/rc.c:868
 msgid "| status . . . . . . . . . . . current playlist status"
 msgstr "| status . . . . . . . . . . .  aktueller Wiedergabelistenstatus"
 
-#: modules/control/rc.c:868
+#: modules/control/rc.c:869
 msgid "| title [X]  . . . . . . set/get title in current item"
 msgstr "| title [X] . . . . .  Titel im aktuellen Objekt ein-/darstellen"
 
-#: modules/control/rc.c:869
+#: modules/control/rc.c:870
 msgid "| title_n  . . . . . . . .  next title in current item"
 msgstr "| title_n  . . . . . . . . .  nächster Titel im aktuellen Objekt"
 
-#: modules/control/rc.c:870
+#: modules/control/rc.c:871
 msgid "| title_p  . . . . . .  previous title in current item"
 msgstr "| title_p  . . . . . . . .  vorheriger Titel im aktuellen Objekt"
 
-#: modules/control/rc.c:871
+#: modules/control/rc.c:872
 msgid "| chapter [X]  . . . . set/get chapter in current item"
 msgstr "| chapter [X]  . . . Kapitel im aktuellen Objekt ein-/darstellen"
 
-#: modules/control/rc.c:872
+#: modules/control/rc.c:873
 msgid "| chapter_n  . . . . . .  next chapter in current item"
 msgstr "| chapter_n  . . . . . . .  nächstes Kapitel im aktuellen Objekt"
 
-#: modules/control/rc.c:873
+#: modules/control/rc.c:874
 msgid "| chapter_p  . . . .  previous chapter in current item"
 msgstr "| chapter_p  . . . . . .  vorheriges Kapitel im aktuellen Objekt"
 
-#: modules/control/rc.c:875
+#: modules/control/rc.c:876
 msgid "| seek X . . . seek in seconds, for instance `seek 12'"
 msgstr "| seek X . . . . .  Suchen in Sekunden, beispielsweise `seek 12'"
 
-#: modules/control/rc.c:876
+#: modules/control/rc.c:877
 msgid "| pause  . . . . . . . . . . . . . . . .  toggle pause"
 msgstr "| pause  . . . . . . . . . . . . . . . . . . .  Pause umschalten"
 
-#: modules/control/rc.c:877
+#: modules/control/rc.c:878
 msgid "| fastforward  . . . . . . . .  .  set to maximum rate"
 msgstr "| fastforward . . . . . . . . . . . . auf maximale Rate schalten"
 
-#: modules/control/rc.c:878
+#: modules/control/rc.c:879
 msgid "| rewind  . . . . . . . . . . . .  set to minimum rate"
 msgstr "| rewind . . . . . . . . . . . . . .  auf minimale Rate schalten"
 
-#: modules/control/rc.c:879
+#: modules/control/rc.c:880
 msgid "| faster . . . . . . . . . .  faster playing of stream"
 msgstr "| faster . . . . . . . . . . . schnellere Wiedergabe des Streams"
 
-#: modules/control/rc.c:880
+#: modules/control/rc.c:881
 msgid "| slower . . . . . . . . . .  slower playing of stream"
 msgstr "| slower . . . . . . . . . . . langsamere Wiedergabe des Streams"
 
-#: modules/control/rc.c:881
+#: modules/control/rc.c:882
 msgid "| normal . . . . . . . . . .  normal playing of stream"
 msgstr "| normal . . . . . . . . . . . .  normale Wiedergabe des Streams"
 
-#: modules/control/rc.c:882
+#: modules/control/rc.c:883
 msgid "| f [on|off] . . . . . . . . . . . . toggle fullscreen"
 msgstr "| f [on|off] . . . . . . . . . . . . . . . . Vollbild umschalten"
 
-#: modules/control/rc.c:883
+#: modules/control/rc.c:884
 msgid "| info . . . . .  information about the current stream"
 msgstr "| info . . . . . . . . . Informationen über den aktuellen Stream"
 
-#: modules/control/rc.c:884
+#: modules/control/rc.c:885
 msgid "| stats  . . . . . . . .  show statistical information"
 msgstr "| stats . . . . . . . . . . .  statistische Informationen zeigen"
 
-#: modules/control/rc.c:885
+#: modules/control/rc.c:886
 msgid "| get_time . . seconds elapsed since stream's beginning"
 msgstr "| get_time . . Sekunden, die seit Beginn des Streams vergangen sind"
 
-#: modules/control/rc.c:886
+#: modules/control/rc.c:887
 msgid "| is_playing . . . .  1 if a stream plays, 0 otherwise"
 msgstr "| is_playing . .  1 falls der Stream gerade läuft, andernfalls 0"
 
-#: modules/control/rc.c:887
+#: modules/control/rc.c:888
 msgid "| get_title . . . . .  the title of the current stream"
 msgstr "| get_title . . . . .  Titel des aktuellen Streams"
 
-#: modules/control/rc.c:888
+#: modules/control/rc.c:889
 msgid "| get_length . . . .  the length of the current stream"
 msgstr "| get_length . . . .  Länge des aktuellen Streams"
 
-#: modules/control/rc.c:890
+#: modules/control/rc.c:891
 msgid "| volume [X] . . . . . . . . . .  set/get audio volume"
 msgstr "| volume [X] . . . . . . . . . . . . Lautstärke zeigen/festlegen"
 
-#: modules/control/rc.c:891
+#: modules/control/rc.c:892
 msgid "| volup [X]  . . . . . . .  raise audio volume X steps"
 msgstr "| volup [X]  . . . . . . . . . .  Lautstärke um X Stufen erhöhen"
 
-#: modules/control/rc.c:892
+#: modules/control/rc.c:893
 msgid "| voldown [X]  . . . . . .  lower audio volume X steps"
 msgstr "| voldown [X]  . . . . . . . . Lautstärke um X Stufen verringern"
 
-#: modules/control/rc.c:893
+#: modules/control/rc.c:894
 msgid "| adev [X] . . . . . . . . . . .  set/get audio device"
 msgstr "| adev [X] . . . . . . . . . . . . .  Ton-Device zeigen/einstellen"
 
-#: modules/control/rc.c:894
+#: modules/control/rc.c:895
 msgid "| achan [X]. . . . . . . . . .  set/get audio channels"
 msgstr "| achan [X]. . . . . . . . . . . . . Tonkanäle zeigen/einstellen"
 
-#: modules/control/rc.c:895
+#: modules/control/rc.c:896
 msgid "| atrack [X] . . . . . . . . . . . set/get audio track"
 msgstr "| atrack [X] . . . . . . . . . . . Audiospur setzen/einstellen"
 
-#: modules/control/rc.c:896
+#: modules/control/rc.c:897
 msgid "| vtrack [X] . . . . . . . . . . . set/get video track"
 msgstr "| vtrack [X] . . . . . . . . . . . Videospur setzen/einstellen"
 
-#: modules/control/rc.c:897
+#: modules/control/rc.c:898
 msgid "| vratio [X]  . . . . . . . set/get video aspect ratio"
 msgstr "| vratio [X]  . . . . . . . Videoseitenverhältnis holen/einstellen"
 
-#: modules/control/rc.c:898
+#: modules/control/rc.c:899
 msgid "| vcrop [X]  . . . . . . . . . . .  set/get video crop"
 msgstr "| vcrop [X]  . . . . . . . . . . .  set/get video crop"
 
-#: modules/control/rc.c:899
+#: modules/control/rc.c:900
 msgid "| vzoom [X]  . . . . . . . . . . .  set/get video zoom"
 msgstr "| vzoom [X]  . . . . . . . . . . .  set/get video zoom"
 
-#: modules/control/rc.c:900
+#: modules/control/rc.c:901
 msgid "| snapshot . . . . . . . . . . . . take video snapshot"
 msgstr "| snapshot . . . . . . . . . . . . einen Videoschnappschuss machen"
 
-#: modules/control/rc.c:901
+#: modules/control/rc.c:902
 msgid "| strack [X] . . . . . . . . . set/get subtitles track"
 msgstr "| strack [X] . . . . . . . . . Untertitelspur holen/einstellen"
 
-#: modules/control/rc.c:902
+#: modules/control/rc.c:903
 msgid "| key [hotkey name] . . . . . .  simulate hotkey press"
 msgstr "| key [Hotkey Name] . . . . . .  Hotkey druck simulieren"
 
-#: modules/control/rc.c:903
+#: modules/control/rc.c:904
 msgid "| menu . . [on|off|up|down|left|right|select] use menu"
 msgstr "| menu [on|off|up|down|left|right|select] Menü benutzen"
 
-#: modules/control/rc.c:908
+#: modules/control/rc.c:909
 msgid "| @name marq-marquee  STRING  . . overlay STRING in video"
 msgstr "| @name marq-marquee ZEICHENKETTE . . ZEICHENKETTE im Video einblenden"
 
-#: modules/control/rc.c:909
+#: modules/control/rc.c:910
 msgid "| @name marq-x X . . . . . . . . . . . .offset from left"
 msgstr "| @name marq-x X . . . . . . . . . . . . . . . . . . Abstand von links"
 
-#: modules/control/rc.c:910
+#: modules/control/rc.c:911
 msgid "| @name marq-y Y . . . . . . . . . . . . offset from top"
 msgstr "| @name marq-y Y  . . . . . . . . . . . . . . . . . . Abstand von oben"
 
-#: modules/control/rc.c:911
+#: modules/control/rc.c:912
 msgid "| @name marq-position #. . .  .relative position control"
 msgstr "| @name marq-position #. . . . . . . . . . relative Positionskontrolle"
 
-#: modules/control/rc.c:912
+#: modules/control/rc.c:913
 msgid "| @name marq-color # . . . . . . . . . . font color, RGB"
 msgstr "| @name marq-color # . . . . . . . . . . . . . . . . Schriftfarbe, RGB"
 
-#: modules/control/rc.c:913
+#: modules/control/rc.c:914
 msgid "| @name marq-opacity # . . . . . . . . . . . . . opacity"
 msgstr "| @name marq-opacity # . . . . . . . . . . . . . . . . . . . Deckkraft"
 
-#: modules/control/rc.c:914
+#: modules/control/rc.c:915
 msgid "| @name marq-timeout T. . . . . . . . . . timeout, in ms"
 msgstr "| @name marq-timeout T . . . . . . . .  Timeout der Einblendung, in ms"
 
-#: modules/control/rc.c:915
+#: modules/control/rc.c:916
 msgid "| @name marq-size # . . . . . . . . font size, in pixels"
 msgstr "| @name marq-size #  . . . . . . . . . . . . . Schriftgröße, in Pixeln"
 
 # überlagernde order überlagerte Datei???
-#: modules/control/rc.c:917
+#: modules/control/rc.c:918
 msgid "| @name logo-file STRING . . .the overlay file path/name"
 msgstr ""
 "| @name logo-file ZEICHENKETTE . . . die zu überlagernde Datei (Pfad/Name)"
 
-#: modules/control/rc.c:918
+#: modules/control/rc.c:919
 msgid "| @name logo-x X . . . . . . . . . . . .offset from left"
 msgstr "| @name logo-x X . . . . . . . . . . . . . . . . . . Abstand von links"
 
-#: modules/control/rc.c:919
+#: modules/control/rc.c:920
 msgid "| @name logo-y Y . . . . . . . . . . . . offset from top"
 msgstr "| @name logo-y Y . . . . . . . . . . . . . . . . . .  Abstand von oben"
 
-#: modules/control/rc.c:920
+#: modules/control/rc.c:921
 msgid "| @name logo-position #. . . . . . . . relative position"
 msgstr "| @name logo-position # . . . . . . . . . . . . . .  relative Position"
 
-#: modules/control/rc.c:921
+#: modules/control/rc.c:922
 msgid "| @name logo-transparency #. . . . . . . . .transparency"
 msgstr ""
 "| @name logo-transparency # . . . . . . . . . . . . . . .  Transparenz des "
 "Logos"
 
-#: modules/control/rc.c:923
+#: modules/control/rc.c:924
 msgid "| @name mosaic-alpha # . . . . . . . . . . . . . . alpha"
 msgstr "| @name mosaic-alpha #. . . . . . . . . . . . . . . . . . . . .  Alpha"
 
-#: modules/control/rc.c:924
+#: modules/control/rc.c:925
 msgid "| @name mosaic-height #. . . . . . . . . . . . . .height"
 msgstr "| @name mosaic-height # . . . . . . . . . . . . . . . . . . . . . Höhe"
 
-#: modules/control/rc.c:925
+#: modules/control/rc.c:926
 msgid "| @name mosaic-width # . . . . . . . . . . . . . . width"
 msgstr "| @name mosaic-width # . . . . . . . . . . . . . . . . . . . .  Breite"
 
-#: modules/control/rc.c:926
+#: modules/control/rc.c:927
 msgid "| @name mosaic-xoffset # . . . .top left corner position"
 msgstr "| @name mosaic-xoffset # . . . . . . . Position der linken oberen Ecke"
 
-#: modules/control/rc.c:927
+#: modules/control/rc.c:928
 msgid "| @name mosaic-yoffset # . . . .top left corner position"
 msgstr "| @name mosaic-yoffset # . . . . . . . Position der linken oberen Ecke"
 
-#: modules/control/rc.c:928
+#: modules/control/rc.c:929
 msgid "| @name mosaic-offsets x,y(,x,y)*. . . . list of offsets"
 msgstr "| @name mosaic-offsets x,y(,x,y)*. . . . Liste der Abstände"
 
-#: modules/control/rc.c:929
+#: modules/control/rc.c:930
 msgid "| @name mosaic-align 0..2,4..6,8..10. . .mosaic alignment"
 msgstr "| @name mosaic-align 0..2,4..6,8..10. . . . . . . . Mosaik-Ausrichtung"
 
-#: modules/control/rc.c:930
+#: modules/control/rc.c:931
 msgid "| @name mosaic-vborder # . . . . . . . . vertical border"
 msgstr "| @name mosaic-vborder # . . . . . . . . . . . . . . . vertikaler Rand"
 
-#: modules/control/rc.c:931
+#: modules/control/rc.c:932
 msgid "| @name mosaic-hborder # . . . . . . . horizontal border"
 msgstr "| @name mosaic-hborder # . . . . . . . . . . . . . . horizontaler Rand"
 
-#: modules/control/rc.c:932
+#: modules/control/rc.c:933
 msgid "| @name mosaic-position {0=auto,1=fixed} . . . .position"
 msgstr "| @name mosaic-position {0=auto,1=fest} . . . . . . . . . . . Position"
 
-#: modules/control/rc.c:933
+#: modules/control/rc.c:934
 msgid "| @name mosaic-rows #. . . . . . . . . . .number of rows"
 msgstr "| @name mosaic-rows #. . . . . . . . . . . . . . . . Anzahl von Reihen"
 
-#: modules/control/rc.c:934
+#: modules/control/rc.c:935
 msgid "| @name mosaic-cols #. . . . . . . . . . .number of cols"
 msgstr "| @name mosaic-cols # . . . . . . . . . . . . . . . Anzahl von Spalten"
 
-#: modules/control/rc.c:935
+#: modules/control/rc.c:936
 msgid "| @name mosaic-order id(,id)* . . . . order of pictures "
 msgstr "| @name mosaic-order id(,id)* . . . . Reihenfolge von Bildern"
 
-#: modules/control/rc.c:936
+#: modules/control/rc.c:937
 msgid "| @name mosaic-keep-aspect-ratio {0,1} . . .aspect ratio"
 msgstr "| @name mosaic-keep-aspect-ratio {0,1} . . . . . . .  Seitenverhältnis"
 
-#: modules/control/rc.c:939
+#: modules/control/rc.c:940
 msgid "| help . . . . . . . . . . . . . . . this help message"
 msgstr "| help . . . . . . . . . . . . . . . . . . diese Hilfsmitteilung"
 
-#: modules/control/rc.c:940
+#: modules/control/rc.c:941
 msgid "| longhelp . . . . . . . . . . . a longer help message"
 msgstr "| longhelp . . . . . . . . . . . .  eine längere Hilfsmitteilung"
 
-#: modules/control/rc.c:941
+#: modules/control/rc.c:942
 msgid "| logout . . . . . . .  exit (if in socket connection)"
 msgstr "| logout . . . . . . . . . . .  Abmelden (bei Socket-Verbindung)"
 
-#: modules/control/rc.c:942
+#: modules/control/rc.c:943
 msgid "| quit . . . . . . . . . . . . . . . . . . .  quit vlc"
 msgstr "| quit . . . . . . . . . . . . . . . . . . . VLC beenden"
 
-#: modules/control/rc.c:944
+#: modules/control/rc.c:945
 msgid "+----[ end of help ]"
 msgstr "+----[ Ende der Hilfe ]"
 
-#: modules/control/rc.c:1059
+#: modules/control/rc.c:1060
 msgid "Press menu select or pause to continue."
 msgstr "Drücken Sie Menüauswahl oder Pause um fortzufahren."
 
-#: modules/control/rc.c:1315 modules/control/rc.c:1575
-#: modules/control/rc.c:1646 modules/control/rc.c:1826
-#: modules/control/rc.c:1924
+#: modules/control/rc.c:1316 modules/control/rc.c:1576
+#: modules/control/rc.c:1647 modules/control/rc.c:1827
+#: modules/control/rc.c:1925
 msgid "Type 'menu select' or 'pause' to continue."
 msgstr "Geben Sie 'menu select' oder 'pause' ein, um fortzufahren."
 
-#: modules/control/rc.c:1410
+#: modules/control/rc.c:1411
 msgid "Error: `goto' needs an argument greater than zero."
 msgstr "Fehler: `goto' benötigt ein Argument größer Null."
 
-#: modules/control/rc.c:1421
+#: modules/control/rc.c:1422
 #, c-format
 msgid "Playlist has only %d elements"
 msgstr "Wiedergabeliste hat nur %d Elemente"
 
-#: modules/control/rc.c:1911 modules/control/rc.c:1951
+#: modules/control/rc.c:1912 modules/control/rc.c:1952
 msgid "Please provide one of the following parameters:"
 msgstr "Bitte geben Sie einen der folgenden Parameter an:"
 
-#: modules/control/rc.c:1983
+#: modules/control/rc.c:1984
 msgid "Unknown command!"
 msgstr "Unbekannter Befehl!"
 
-#: modules/control/rc.c:1999 modules/gui/ncurses.c:2039
+#: modules/control/rc.c:2000 modules/gui/ncurses.c:2039
 msgid "+-[Incoming]"
 msgstr "+-[Eingehend]"
 
-#: modules/control/rc.c:2000 modules/gui/ncurses.c:2042
+#: modules/control/rc.c:2001 modules/gui/ncurses.c:2042
 #, c-format
 msgid "| input bytes read : %8.0f kB"
 msgstr ""
 
-#: modules/control/rc.c:2002 modules/gui/ncurses.c:2045
+#: modules/control/rc.c:2003 modules/gui/ncurses.c:2045
 #, c-format
 msgid "| input bitrate    :   %6.0f kb/s"
 msgstr ""
 
-#: modules/control/rc.c:2004 modules/gui/ncurses.c:2047
+#: modules/control/rc.c:2005 modules/gui/ncurses.c:2047
 #, c-format
 msgid "| demux bytes read : %8.0f kB"
 msgstr ""
 
-#: modules/control/rc.c:2006 modules/gui/ncurses.c:2050
+#: modules/control/rc.c:2007 modules/gui/ncurses.c:2050
 #, c-format
 msgid "| demux bitrate    :   %6.0f kb/s"
 msgstr ""
 
-#: modules/control/rc.c:2010 modules/gui/ncurses.c:2058
+#: modules/control/rc.c:2011 modules/gui/ncurses.c:2058
 msgid "+-[Video Decoding]"
 msgstr "+-[Videodecodierung]"
 
-#: modules/control/rc.c:2011 modules/gui/ncurses.c:2061
+#: modules/control/rc.c:2012 modules/gui/ncurses.c:2061
 #, c-format
 msgid "| video decoded    :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2013 modules/gui/ncurses.c:2064
+#: modules/control/rc.c:2014 modules/gui/ncurses.c:2064
 #, c-format
 msgid "| frames displayed :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2015 modules/gui/ncurses.c:2067
+#: modules/control/rc.c:2016 modules/gui/ncurses.c:2067
 #, c-format
 msgid "| frames lost      :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2019 modules/gui/ncurses.c:2075
+#: modules/control/rc.c:2020 modules/gui/ncurses.c:2075
 msgid "+-[Audio Decoding]"
 msgstr "+-[Audiodecodierung]"
 
-#: modules/control/rc.c:2020 modules/gui/ncurses.c:2078
+#: modules/control/rc.c:2021 modules/gui/ncurses.c:2078
 #, c-format
 msgid "| audio decoded    :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2022 modules/gui/ncurses.c:2081
+#: modules/control/rc.c:2023 modules/gui/ncurses.c:2081
 #, c-format
 msgid "| buffers played   :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2024 modules/gui/ncurses.c:2084
+#: modules/control/rc.c:2025 modules/gui/ncurses.c:2084
 #, c-format
 msgid "| buffers lost     :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2028 modules/gui/ncurses.c:2090
+#: modules/control/rc.c:2029 modules/gui/ncurses.c:2090
 msgid "+-[Streaming]"
 msgstr "+-[Streaming]"
 
-#: modules/control/rc.c:2029 modules/gui/ncurses.c:2093
+#: modules/control/rc.c:2030 modules/gui/ncurses.c:2093
 #, c-format
 msgid "| packets sent     :    %5i"
 msgstr ""
 
-#: modules/control/rc.c:2030 modules/gui/ncurses.c:2095
+#: modules/control/rc.c:2031 modules/gui/ncurses.c:2095
 #, c-format
 msgid "| bytes sent       : %8.0f kB"
 msgstr ""
 
-#: modules/control/rc.c:2032
+#: modules/control/rc.c:2033
 #, c-format
 msgid "| sending bitrate  :   %6.0f kb/s"
 msgstr ""
@@ -13053,7 +13053,7 @@ msgid "Edit"
 msgstr "Bearbeiten"
 
 #: modules/gui/beos/PlayListWindow.cpp:106 modules/gui/macosx/intf.m:536
-#: modules/gui/macosx/playlist.m:444
+#: modules/gui/macosx/playlist.m:445
 msgid "Select All"
 msgstr "Alles auswählen"
 
@@ -13094,7 +13094,7 @@ msgid "Path"
 msgstr "Pfad"
 
 #: modules/gui/beos/PlayListWindow.cpp:150 modules/gui/macosx/bookmarks.m:103
-#: modules/gui/macosx/playlist.m:126
+#: modules/gui/macosx/playlist.m:127
 msgid "Name"
 msgstr "Name"
 
@@ -13103,8 +13103,9 @@ msgid "Apply"
 msgstr "Übernehmen"
 
 #: modules/gui/beos/PreferencesWindow.cpp:257 modules/gui/macosx/output.m:526
-#: modules/gui/macosx/playlist.m:681 modules/gui/macosx/prefs.m:125
-#: modules/gui/macosx/simple_prefs.m:302 modules/gui/qt4/ui/vlm.ui:209
+#: modules/gui/macosx/playlist.m:683 modules/gui/macosx/prefs.m:125
+#: modules/gui/macosx/simple_prefs.m:302 modules/gui/macosx/update.m:137
+#: modules/gui/qt4/ui/vlm.ui:209
 msgid "Save"
 msgstr "Speichern"
 
@@ -13463,7 +13464,7 @@ msgstr "Extrahieren"
 msgid "Time"
 msgstr "Zeit"
 
-#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:677
+#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:679
 msgid "Untitled"
 msgstr "Ohne Titel"
 
@@ -13911,7 +13912,7 @@ msgstr "Lesezeichen..."
 msgid "Playlist..."
 msgstr "Wiedergabeliste..."
 
-#: modules/gui/macosx/intf.m:602
+#: modules/gui/macosx/intf.m:602 modules/gui/macosx/playlist.m:446
 msgid "Media Information..."
 msgstr "Medien-Information..."
 
@@ -14527,87 +14528,92 @@ msgstr "Fehler beim Speichern der Metadaten"
 msgid "VLC was unable to save the meta data."
 msgstr "VLC war nicht in der Lage, die Metadaten zu speichern."
 
-#: modules/gui/macosx/playlistinfo.m:442
+#: modules/gui/macosx/playlistinfo.m:449
 msgid "Information"
 msgstr "Information"
 
-#: modules/gui/macosx/playlist.m:127 modules/gui/macosx/wizard.m:350
+#: modules/gui/macosx/playlist.m:128 modules/gui/macosx/wizard.m:350
 #: modules/gui/wince/playlist.cpp:671 modules/mux/asf.c:54
 msgid "Author"
 msgstr "Autor"
 
-#: modules/gui/macosx/playlist.m:440
+#: modules/gui/macosx/playlist.m:441
 msgid "Save Playlist..."
 msgstr "Wiedergabeliste speichern..."
 
-#: modules/gui/macosx/playlist.m:443
+#: modules/gui/macosx/playlist.m:444
 msgid "Expand Node"
 msgstr "Knoten ausklappen"
 
-#: modules/gui/macosx/playlist.m:446
+#: modules/gui/macosx/playlist.m:447
+#, fuzzy
+msgid "Download Cover Art"
+msgstr "Jetzt herunterladen"
+
+#: modules/gui/macosx/playlist.m:448
 msgid "Fetch Meta Data"
 msgstr "Metadaten abrufen"
 
-#: modules/gui/macosx/playlist.m:447
+#: modules/gui/macosx/playlist.m:449
 msgid "Sort Node by Name"
 msgstr "Knoten nach Namen sortieren"
 
-#: modules/gui/macosx/playlist.m:448
+#: modules/gui/macosx/playlist.m:450
 msgid "Sort Node by Author"
 msgstr "Knoten nach Autor sortieren"
 
-#: modules/gui/macosx/playlist.m:451 modules/gui/macosx/playlist.m:489
-#: modules/gui/macosx/playlist.m:1411
+#: modules/gui/macosx/playlist.m:453 modules/gui/macosx/playlist.m:491
+#: modules/gui/macosx/playlist.m:1444
 msgid "No items in the playlist"
 msgstr "Keine Objekte in der Wiedergabeliste"
 
-#: modules/gui/macosx/playlist.m:453
+#: modules/gui/macosx/playlist.m:455
 msgid "Search in Playlist"
 msgstr "In Wiedergabeliste suchen"
 
-#: modules/gui/macosx/playlist.m:454
+#: modules/gui/macosx/playlist.m:456
 msgid "Add Folder to Playlist"
 msgstr "Ordner zur Wiedergabeliste hinzufügen"
 
-#: modules/gui/macosx/playlist.m:456
+#: modules/gui/macosx/playlist.m:458
 msgid "File Format:"
 msgstr "Dateiformat:"
 
-#: modules/gui/macosx/playlist.m:457
+#: modules/gui/macosx/playlist.m:459
 msgid "Extended M3U"
 msgstr "Extended M3U"
 
-#: modules/gui/macosx/playlist.m:458
+#: modules/gui/macosx/playlist.m:460
 msgid "XML Shareable Playlist Format (XSPF)"
 msgstr "XML Shareable Playlist Format (XSPF)"
 
-#: modules/gui/macosx/playlist.m:483 modules/gui/macosx/playlist.m:1404
+#: modules/gui/macosx/playlist.m:485 modules/gui/macosx/playlist.m:1437
 #: modules/gui/macosx/wizard.m:1356
 #, c-format
 msgid "%i items"
 msgstr "%i Objekte"
 
-#: modules/gui/macosx/playlist.m:491 modules/gui/macosx/playlist.m:1415
+#: modules/gui/macosx/playlist.m:493 modules/gui/macosx/playlist.m:1448
 msgid "1 item"
 msgstr "1 Objekt"
 
-#: modules/gui/macosx/playlist.m:680
+#: modules/gui/macosx/playlist.m:682
 msgid "Save Playlist"
 msgstr "Wiedergabeliste speichern"
 
-#: modules/gui/macosx/playlist.m:1123 modules/gui/ncurses.c:1808
+#: modules/gui/macosx/playlist.m:1156 modules/gui/ncurses.c:1808
 msgid "Meta-information"
 msgstr "Meta-Information"
 
-#: modules/gui/macosx/playlist.m:1370
+#: modules/gui/macosx/playlist.m:1403
 msgid "New Node"
 msgstr "Neuer Knoten"
 
-#: modules/gui/macosx/playlist.m:1371
+#: modules/gui/macosx/playlist.m:1404
 msgid "Please enter a name for the new node."
 msgstr "Bitte geben Sie einen Namen für den neuen Knoten ein."
 
-#: modules/gui/macosx/playlist.m:1382
+#: modules/gui/macosx/playlist.m:1415
 msgid "Empty Folder"
 msgstr "Leerer Ordner"
 
@@ -15009,15 +15015,20 @@ msgstr "Ja"
 msgid "No"
 msgstr "Nein"
 
-#: modules/gui/macosx/update.m:176
+#: modules/gui/macosx/update.m:138
+#, fuzzy
+msgid "Save As:"
+msgstr "D&atei sichern..."
+
+#: modules/gui/macosx/update.m:178
 msgid "This version of VLC is the latest available."
 msgstr "Diese Version von VLC ist aktuell."
 
-#: modules/gui/macosx/update.m:183
+#: modules/gui/macosx/update.m:185
 msgid "This version of VLC is outdated."
 msgstr "Diese Version von VLC ist veraltet."
 
-#: modules/gui/macosx/update.m:185
+#: modules/gui/macosx/update.m:187
 #, c-format
 msgid "The current release is %d.%d.%d%c."
 msgstr "Die aktuelle Version ist %d.%d.%d%c."
@@ -16594,24 +16605,24 @@ msgstr "Erweiterte Optionen anzeigen"
 msgid "Transparent"
 msgstr "Transparent"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:898
+#: modules/gui/qt4/components/interface_widgets.cpp:902
 msgid "Unmute"
 msgstr "Ton an"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:938
+#: modules/gui/qt4/components/interface_widgets.cpp:942
 msgid "Pause the playback"
 msgstr "Wiedergabe pausieren"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1485
+#: modules/gui/qt4/components/interface_widgets.cpp:1478
 msgid "Revert to normal play speed"
 msgstr "Auf normale Wiedergabegeschwindigkeit zurücksetzen"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1635
+#: modules/gui/qt4/components/interface_widgets.cpp:1628
 #, fuzzy
 msgid "Download cover art"
 msgstr "Jetzt herunterladen"
 
-#: modules/gui/qt4/components/interface_widgets.cpp:1651
+#: modules/gui/qt4/components/interface_widgets.cpp:1644
 msgid "Toggle between elapsed and remaining time"
 msgstr "Zwischen abgelaufener und verbleibender Zeit umschalten"
 
@@ -16632,7 +16643,7 @@ msgid "Filter:"
 msgstr "Filter:"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:632
+#: modules/gui/qt4/dialogs_provider.cpp:631
 msgid "Open subtitles file"
 msgstr "Untertiteldatei öffnen"
 
@@ -16682,7 +16693,7 @@ msgstr "Radio-Gerätename"
 msgid "Advanced Options"
 msgstr "Erweiterte Optionen"
 
-#: modules/gui/qt4/components/playlist/playlist.cpp:68
+#: modules/gui/qt4/components/playlist/playlist.cpp:66
 msgid "Double click to get media information"
 msgstr "Für Medieninformationen doppelklicken"
 
@@ -17136,23 +17147,23 @@ msgstr ""
 "Dies wird die Einstellungen des VLC media player zurücksetzen.\n"
 "Sind Sie sicher, dass Sie fortfahren möchten?"
 
-#: modules/gui/qt4/dialogs_provider.cpp:423
+#: modules/gui/qt4/dialogs_provider.cpp:422
 msgid "Open Directory"
 msgstr "Verzeichnis öffnen"
 
-#: modules/gui/qt4/dialogs_provider.cpp:461
+#: modules/gui/qt4/dialogs_provider.cpp:460
 msgid "Open playlist file"
 msgstr "Wiedergabeliste öffnen"
 
-#: modules/gui/qt4/dialogs_provider.cpp:472
+#: modules/gui/qt4/dialogs_provider.cpp:471
 msgid "Choose a filename to save playlist"
 msgstr "Wählen Sie einen Dateinamen um die Wiedergabeliste zu speichern"
 
-#: modules/gui/qt4/dialogs_provider.cpp:474
+#: modules/gui/qt4/dialogs_provider.cpp:473
 msgid "XSPF playlist (*.xspf);; "
 msgstr "XSPF-Wiedergabeliste (*.xspf);; "
 
-#: modules/gui/qt4/dialogs_provider.cpp:475
+#: modules/gui/qt4/dialogs_provider.cpp:474
 msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr "M3U-Wiedergabeliste (*.m3u);; Alle (*.*) "
 
@@ -17264,7 +17275,7 @@ msgstr "Plan einstellen"
 msgid "VOD: "
 msgstr "VOD"
 
-#: modules/gui/qt4/main_interface.cpp:307
+#: modules/gui/qt4/main_interface.cpp:309
 msgid ""
 "Current playback speed.\n"
 "Right click to adjust"
@@ -17272,15 +17283,15 @@ msgstr ""
 "Aktuelle Wiedergabegeschwindigkeit.\n"
 "Zum Anpassen rechtsklicken"
 
-#: modules/gui/qt4/main_interface.cpp:476
+#: modules/gui/qt4/main_interface.cpp:478
 msgid "Privacy and Network Policies"
 msgstr "Privatsphären- und Netzwerkeinstellungen"
 
-#: modules/gui/qt4/main_interface.cpp:480
+#: modules/gui/qt4/main_interface.cpp:482
 msgid "Privacy and Network Warning"
 msgstr "Privatsphären- und Netzwerkwarnung"
 
-#: modules/gui/qt4/main_interface.cpp:483
+#: modules/gui/qt4/main_interface.cpp:485
 msgid ""
 "<p>The <i>VideoLAN Team</i> doesn't like when an application goes online "
 "without authorization.</p>\n"
@@ -17301,11 +17312,11 @@ msgstr ""
 "<p>Bitte überprüfen Sie deshalb die folgenden Einstellungen. Standardmäßig "
 "erfolgt fast kein Zugriff auf das Web.</p>\n"
 
-#: modules/gui/qt4/main_interface.cpp:997
+#: modules/gui/qt4/main_interface.cpp:996
 msgid "Control menu for the player"
 msgstr "Steuerungsmenü für den Player"
 
-#: modules/gui/qt4/main_interface.cpp:1046
+#: modules/gui/qt4/main_interface.cpp:1045
 msgid "Paused"
 msgstr "Pausiert"
 
@@ -24287,9 +24298,6 @@ msgstr "Spektrum-Analysierer"
 
 #~ msgid "Playlist item info"
 #~ msgstr "Titel - Info"
-
-#~ msgid "Save &As..."
-#~ msgstr "D&atei sichern..."
 
 #~ msgid "Save Messages As..."
 #~ msgstr "Meldungen sichern als..."
