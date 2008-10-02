@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ro\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
-"PO-Revision-Date: 2008-09-24 15:17+0200\n"
+"POT-Creation-Date: 2008-10-02 22:48+0100\n"
+"PO-Revision-Date: 2008-10-02 23:14+0200\n"
 "Last-Translator: Cristian Secară <cristi AT secarica DOT ro>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -1568,7 +1568,7 @@ msgstr "Puteți selecta interfețe de control pentru VLC."
 
 #: src/libvlc-module.c:164
 msgid "Verbosity (0,1,2)"
-msgstr "Verbositate (0,1,2)"
+msgstr "Verbozitate (0,1,2)"
 
 #: src/libvlc-module.c:166
 msgid ""
@@ -1802,7 +1802,7 @@ msgstr ""
 #: src/libvlc-module.c:276 modules/gui/macosx/simple_prefs.m:220
 #: modules/gui/qt4/ui/sprefs_audio.ui:113
 msgid "Force detection of Dolby Surround"
-msgstr "Forțează detecția Dolby Surround"
+msgstr "Forțare detecție Dolby Surround"
 
 #: src/libvlc-module.c:278
 msgid ""
@@ -1883,7 +1883,7 @@ msgstr "Protejează împotriva limitării nivelului de sunet"
 #: modules/gui/qt4/components/interface_widgets.cpp:279
 #: modules/video_output/opengl.c:126 modules/video_output/opengl.c:182
 msgid "None"
-msgstr "Nimic"
+msgstr "Fără"
 
 #: src/libvlc-module.c:327
 msgid ""
@@ -2151,14 +2151,15 @@ msgstr ""
 #: src/libvlc-module.c:416
 msgid "Hide cursor and fullscreen controller after x miliseconds"
 msgstr ""
-"Ascunde cursorul și controlul din modul pe tot ecranul după n milisecunde"
+"Ascunde cursorul și panoul de control de mod pe tot ecranul după n "
+"milisecunde"
 
 #: src/libvlc-module.c:419
 msgid ""
 "Hide mouse cursor and fullscreen controller after n miliseconds, default is "
 "3000 ms (3 sec.)"
 msgstr ""
-"Ascunde cursorul de maus și panoul control din modul pe tot ecranul după n "
+"Ascunde cursorul de maus și panoul de control de mod pe tot ecranul după n "
 "milisecunde, implicit este 3000 ms (3 secunde)"
 
 #: src/libvlc-module.c:427
@@ -3392,7 +3393,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1005
 msgid "(Experimental) Minimize latency whenreading live stream."
-msgstr ""
+msgstr "(Experimental) Minimizează latența la citirea unui flux live."
 
 #: src/libvlc-module.c:1011
 msgid "Modules search path"
@@ -3440,11 +3441,11 @@ msgstr "Rulează VLC ca un proces demon în fundal."
 
 #: src/libvlc-module.c:1032
 msgid "Write process id to file"
-msgstr ""
+msgstr "Scrie ID-ul procesului în fișier"
 
 #: src/libvlc-module.c:1034
 msgid "Writes process id into specified file."
-msgstr ""
+msgstr "Scrie ID-ul procesului în fișierul specificat."
 
 #: src/libvlc-module.c:1036
 msgid "Log to file"
@@ -3630,19 +3631,16 @@ msgid "Stop the playlist after each played playlist item."
 msgstr "Oprește lista de redare după fiecare element redat."
 
 #: src/libvlc-module.c:1134
-#, fuzzy
 msgid "Play and exit"
-msgstr "Redă și stop"
+msgstr "Redă și ieși"
 
 #: src/libvlc-module.c:1136
-#, fuzzy
 msgid "Exit if there are no more items in the playlist."
-msgstr "Niciun element în lista de redare"
+msgstr "Iese dacă nu mai sunt elemente în lista de redare."
 
 #: src/libvlc-module.c:1138
-#, fuzzy
 msgid "Use media library"
-msgstr "VLC media player"
+msgstr "Folosește biblioteca media"
 
 #: src/libvlc-module.c:1140
 msgid ""
@@ -3653,9 +3651,8 @@ msgstr ""
 "pornirea VLC."
 
 #: src/libvlc-module.c:1143
-#, fuzzy
 msgid "Display playlist tree"
-msgstr "Element de listă de redare existent"
+msgstr "Afișează arborele de listă de redare"
 
 #: src/libvlc-module.c:1145
 msgid ""
@@ -3681,23 +3678,20 @@ msgstr ""
 msgid "Fullscreen"
 msgstr "Pe tot ecranul"
 
-# hm ?
 #: src/libvlc-module.c:1158
 msgid "Select the hotkey to use to swap fullscreen state."
 msgstr ""
-"Selectați tasta rapidă folosită pentru a schimba starea de vizualizare pe "
-"tot ecranul."
+"Selectați tasta rapidă folosită pentru a schimba starea de mod pe tot "
+"ecranul."
 
 #: src/libvlc-module.c:1159
 msgid "Leave fullscreen"
-msgstr "Ieșire din vizualizare pe tot ecranul"
+msgstr "Ieșire din modul pe tot ecranul"
 
-# hm ?
 #: src/libvlc-module.c:1160
 msgid "Select the hotkey to use to leave fullscreen state."
 msgstr ""
-"Selectați tasta rapidă folosită pentru ieșirea din vizualizarea pe tot "
-"ecranul."
+"Selectați tasta rapidă folosită pentru ieșirea din modul pe tot ecranul."
 
 # apare în lista de taste rapide din preferințe
 #: src/libvlc-module.c:1161
@@ -3915,7 +3909,7 @@ msgstr "Selectați tasta pentru a deplasa în sus selectorul în meniurile DVD."
 
 #: src/libvlc-module.c:1219
 msgid "Navigate down"
-msgstr "Deplasare în jos"
+msgstr "Navigare în jos"
 
 #: src/libvlc-module.c:1220
 msgid "Select the key to move the selector down in DVD menus."
@@ -3932,7 +3926,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1223
 msgid "Navigate right"
-msgstr "Deplasare spre dreapta"
+msgstr "Navigare spre dreapta"
 
 #: src/libvlc-module.c:1224
 msgid "Select the key to move the selector right in DVD menus."
@@ -4205,63 +4199,63 @@ msgstr ""
 
 #: src/libvlc-module.c:1298
 msgid "Cycle audio track"
-msgstr "Comută ciclic pista audio"
+msgstr "Comutare ciclică a pistei audio"
 
 #: src/libvlc-module.c:1299
 msgid "Cycle through the available audio tracks(languages)."
-msgstr "Comută ciclic prin pistele audio disponibile (limbi)."
+msgstr "Comutare ciclică prin pistele audio disponibile (limbi)."
 
 #: src/libvlc-module.c:1300
 msgid "Cycle subtitle track"
-msgstr "Comută ciclic pista de subtitlu"
+msgstr "Comutare ciclică a pistei de subtitlu"
 
 #: src/libvlc-module.c:1301
 msgid "Cycle through the available subtitle tracks."
-msgstr "Comută ciclic prin pistele de subtitlu disponibile."
+msgstr "Comutare ciclică prin pistele de subtitlu disponibile."
 
 #: src/libvlc-module.c:1302
 msgid "Cycle source aspect ratio"
-msgstr "Comută ciclic raportul de aspect al sursei."
+msgstr "Comutare ciclică a raportului de aspect al sursei"
 
 #: src/libvlc-module.c:1303
 msgid "Cycle through a predefined list of source aspect ratios."
-msgstr "Comută ciclic printr-o listă predefinită de rapoarte de aspect."
+msgstr "Comutare ciclică printr-o listă predefinită de rapoarte de aspect."
 
 #: src/libvlc-module.c:1304
 msgid "Cycle video crop"
-msgstr "Comută ciclic trunchierea imaginii video"
+msgstr "Comutare ciclică a trunchierii imaginii video"
 
 #: src/libvlc-module.c:1305
 msgid "Cycle through a predefined list of crop formats."
-msgstr "Comută ciclic printr-o listă predefinită de formate de trunchiere."
+msgstr "Comutare ciclică printr-o listă predefinită de formate de trunchiere."
 
 #: src/libvlc-module.c:1306
 msgid "Cycle deinterlace modes"
-msgstr "Comută ciclic modurile de deîntrețesere"
+msgstr "Comutare ciclică a modurilor de deîntrețesere"
 
 #: src/libvlc-module.c:1307
 msgid "Cycle through deinterlace modes."
-msgstr "Comută ciclic prin modurile de deîntrețesere."
+msgstr "Comutare ciclică prin modurile de deîntrețesere."
 
 #: src/libvlc-module.c:1308
 msgid "Show interface"
-msgstr "Arată interfața"
+msgstr "Arătarea interfață"
 
 #: src/libvlc-module.c:1309
 msgid "Raise the interface above all other windows."
-msgstr "Arată interfața în fața celorlalte ferestre."
+msgstr "Ridică interfața deasupra celorlalte ferestre."
 
 #: src/libvlc-module.c:1310
 msgid "Hide interface"
-msgstr "Ascunde interfața"
+msgstr "Ascundere interfață"
 
 #: src/libvlc-module.c:1311
 msgid "Lower the interface below all other windows."
-msgstr "Coboară interfața mai jos de toate celelalte ferestre."
+msgstr "Coboară interfața sub toate celelalte ferestre."
 
 #: src/libvlc-module.c:1312
 msgid "Take video snapshot"
-msgstr "Obține un instantaneu video"
+msgstr "Obținere instantaneu video"
 
 #: src/libvlc-module.c:1313
 msgid "Takes a video snapshot and writes it to disk."
@@ -4300,119 +4294,119 @@ msgstr "Comută modurile normal/repetare/buclă ale listei de redare"
 
 #: src/libvlc-module.c:1324
 msgid "Toggle random playlist playback"
-msgstr ""
+msgstr "Comută redarea aleatoare a listei de redare"
 
 # hm ?
 #: src/libvlc-module.c:1329 src/libvlc-module.c:1330
 msgid "Un-Zoom"
-msgstr "De-zoom-ează"
+msgstr "De-zoom-are"
 
 #: src/libvlc-module.c:1332 src/libvlc-module.c:1333
 msgid "Crop one pixel from the top of the video"
-msgstr "Trunchiază un pixel din partea de sus a imaginii video"
+msgstr "Trunchiere un pixel din partea de sus a imaginii video"
 
 #: src/libvlc-module.c:1334 src/libvlc-module.c:1335
 msgid "Uncrop one pixel from the top of the video"
-msgstr "Anulează trunchierea unui pixel din partea de sus a imaginii video"
+msgstr "Anulare trunchiere a unui pixel din partea de sus a imaginii video"
 
 #: src/libvlc-module.c:1337 src/libvlc-module.c:1338
 msgid "Crop one pixel from the left of the video"
-msgstr "Trunchiază un pixel din partea din stânga a imaginii video"
+msgstr "Trunchiere un pixel din partea din stânga a imaginii video"
 
 #: src/libvlc-module.c:1339 src/libvlc-module.c:1340
 msgid "Uncrop one pixel from the left of the video"
-msgstr "Anulează trunchierea unui pixel din partea din stânga a imaginii video"
+msgstr "Anulare trunchiere a unui pixel din partea din stânga a imaginii video"
 
 #: src/libvlc-module.c:1342 src/libvlc-module.c:1343
 msgid "Crop one pixel from the bottom of the video"
-msgstr "Trunchiază un pixel din partea de jos a imaginii video"
+msgstr "Trunchiere un pixel din partea de jos a imaginii video"
 
 #: src/libvlc-module.c:1344 src/libvlc-module.c:1345
 msgid "Uncrop one pixel from the bottom of the video"
-msgstr "Anulează trunchierea unui pixel din partea de jos a imaginii video"
+msgstr "Anulare trunchiere a unui pixel din partea de jos a imaginii video"
 
 #: src/libvlc-module.c:1347 src/libvlc-module.c:1348
 msgid "Crop one pixel from the right of the video"
-msgstr "Trunchiază un pixel din partea din dreapta a imaginii video"
+msgstr "Trunchiere un pixel din partea din dreapta a imaginii video"
 
 #: src/libvlc-module.c:1349 src/libvlc-module.c:1350
 msgid "Uncrop one pixel from the right of the video"
 msgstr ""
-"Anulează trunchierea unui pixel din partea din dreapta a imaginii video"
+"Anulare trunchiere a unui pixel din partea din dreapta a imaginii video"
 
 #: src/libvlc-module.c:1352
-#, fuzzy
 msgid "Toggle wallpaper mode in video output"
-msgstr "Activează modul tapet"
+msgstr "Comutare mod tapet în ieșirea video"
 
 #: src/libvlc-module.c:1354
 msgid ""
 "Toggle wallpaper mode in video output. Only works with the directx video "
 "output for the time being."
 msgstr ""
+"Comută modul tapet în ieșirea video. Deocamdată merge numai cu ieșirea video "
+"directx."
 
+# hm ?
 #: src/libvlc-module.c:1357 src/libvlc-module.c:1358
 msgid "Display OSD menu on top of video output"
-msgstr ""
+msgstr "Afișare meniu OSD deasupra ieșirii video"
 
 #: src/libvlc-module.c:1359
 msgid "Do not display OSD menu on video output"
-msgstr ""
+msgstr "Fără afișare meniu OSD pe ieșirea video"
 
+# hm ?
 #: src/libvlc-module.c:1360
 msgid "Do not display OSD menu on top of video output"
-msgstr ""
+msgstr "Fără afișare meniu OSD deasupra ieșirii video"
 
 #: src/libvlc-module.c:1361
 msgid "Highlight widget on the right"
-msgstr ""
+msgstr "Evidențiere widget în dreapta"
 
 #: src/libvlc-module.c:1363
 msgid "Move OSD menu highlight to the widget on the right"
-msgstr ""
+msgstr "Mută evidențierea meniului OSD la widget în dreapta"
 
 #: src/libvlc-module.c:1364
 msgid "Highlight widget on the left"
-msgstr ""
+msgstr "Evidențiere widget în stânga"
 
 #: src/libvlc-module.c:1366
 msgid "Move OSD menu highlight to the widget on the left"
-msgstr ""
+msgstr "Mută evidențierea meniului OSD la widget în stânga"
 
 #: src/libvlc-module.c:1367
 msgid "Highlight widget on top"
-msgstr ""
+msgstr "Evidențiere widget sus de tot"
 
 #: src/libvlc-module.c:1369
 msgid "Move OSD menu highlight to the widget on top"
-msgstr ""
+msgstr "Mută evidențierea meniului OSD la widget sus de tot"
 
 #: src/libvlc-module.c:1370
 msgid "Highlight widget below"
-msgstr ""
+msgstr "Evidențiere widget jos de tot"
 
 #: src/libvlc-module.c:1372
 msgid "Move OSD menu highlight to the widget below"
-msgstr ""
+msgstr "Mută evidențierea meniului OSD la widget jos de tot"
 
 #: src/libvlc-module.c:1373
-#, fuzzy
 msgid "Select current widget"
-msgstr "Repetă elementul curent"
+msgstr "Selectare widget curent"
 
 #: src/libvlc-module.c:1375
 msgid "Selecting current widget performs the associated action."
-msgstr ""
+msgstr "Selectarea widget-ului curent execută acțiunea asociată."
 
 #: src/libvlc-module.c:1377
-#, fuzzy
 msgid "Cycle through audio devices"
-msgstr "Comută ciclic prin modurile de deîntrețesere."
+msgstr "Comutare ciclică prin dispozitivele audio"
 
 #: src/libvlc-module.c:1378
-#, fuzzy
 msgid "Cycle through available audio devices"
-msgstr "Comută ciclic prin pistele audio disponibile (limbi)."
+msgstr "Comutare ciclică prin dispozitivele audio disponibile"
 
 #: src/libvlc-module.c:1380
 #, c-format
@@ -4579,7 +4573,7 @@ msgstr "tipărește ajutorul pentru VLC (poate fi combinat cu --advanced)"
 
 #: src/libvlc-module.c:2487
 msgid "Exhaustive help for VLC and its modules"
-msgstr ""
+msgstr "Ajutor exhaustiv pentru VLC și modulele lui"
 
 #: src/libvlc-module.c:2489
 #, fuzzy
@@ -4590,10 +4584,9 @@ msgstr ""
 "tipărește ajutorul pentru VLC și toate modulele lui (poate fi combinat cu --"
 "advanced)"
 
-# hm ?
 #: src/libvlc-module.c:2492
 msgid "ask for extra verbosity when displaying help"
-msgstr "cere verbositate suplimentară la afișarea ajutorului"
+msgstr "cere verbozitate suplimentară la afișarea ajutorului"
 
 #: src/libvlc-module.c:2494
 msgid "print a list of available modules"
@@ -4605,12 +4598,12 @@ msgid "print a list of available modules with extra detail"
 msgstr "tipărește o listă cu toate modulele disponibile"
 
 #: src/libvlc-module.c:2498
-#, fuzzy
 msgid ""
 "print help on a specific module (can be combined with --advanced and --help-"
 "verbose)"
 msgstr ""
-"tipărește ajutorul pentru un modul specific (poate fi combinat cu --advanced)"
+"tipărește ajutorul pentru un modul specific (poate fi combinat cu --advanced "
+"și --help-verbose)"
 
 #: src/libvlc-module.c:2501
 msgid "no configuration option will be loaded nor saved to config file"
@@ -4643,22 +4636,22 @@ msgstr "program principal"
 #: src/misc/update.c:1458
 #, c-format
 msgid "%.1f GB"
-msgstr ""
+msgstr "%.1f GOcteți"
 
 #: src/misc/update.c:1460
 #, c-format
 msgid "%.1f MB"
-msgstr ""
+msgstr "%.1f MOcteți"
 
 #: src/misc/update.c:1462
 #, c-format
 msgid "%.1f kB"
-msgstr ""
+msgstr "%.1f KOcteți"
 
 #: src/misc/update.c:1464
-#, fuzzy, c-format
+#, c-format
 msgid "%ld B"
-msgstr "%d Hz"
+msgstr "%ld Octeți"
 
 #: src/misc/update.c:1568 src/misc/update.c:1592
 #, c-format
@@ -4666,10 +4659,12 @@ msgid ""
 "%s\n"
 "Downloading... %s/%s %.1f%% done"
 msgstr ""
+"%s\n"
+"Descărcare... %s/%s %.1f%% gata"
 
 #: src/misc/update.c:1571
 msgid "Downloading ..."
-msgstr ""
+msgstr "Descărcare..."
 
 #: src/misc/update.c:1611
 #, c-format
@@ -4677,10 +4672,12 @@ msgid ""
 "%s\n"
 "Done %s (100.0%%)"
 msgstr ""
+"%s\n"
+"Gata %s (100.0%%)"
 
 #: src/misc/update.c:1632
 msgid "File could not be verified"
-msgstr ""
+msgstr "Fișierul nu a putut fi verificat"
 
 #: src/misc/update.c:1633
 #, c-format
@@ -4688,6 +4685,8 @@ msgid ""
 "It was not possible to download a cryptographic signature for the downloaded "
 "file \"%s\". Thus, it was deleted."
 msgstr ""
+"Nu a fost posibilă descărcarea unei semnături criptografice pentru fișierul "
+"„%s” descărcat. De aceea, fișierul a fost șters."
 
 #: src/misc/update.c:1644 src/misc/update.c:1656
 msgid "Invalid signature"
@@ -4721,9 +4720,8 @@ msgid "Downloaded file \"%s\" was corrupted. Thus, it was deleted."
 msgstr ""
 
 #: src/misc/update.c:1707
-#, fuzzy
 msgid "Cancelled"
-msgstr "Renunță"
+msgstr "Anulat"
 
 #: src/playlist/tree.c:66 modules/access/bda/bda.c:62
 #: modules/access/bda/bda.c:115 modules/access/bda/bda.c:123
@@ -5601,7 +5599,7 @@ msgstr "Mod de transmise terestră"
 
 #: modules/access/bda/bda.c:145
 msgid "Transmission mode [Undefined,2k,8k]"
-msgstr ""
+msgstr "Mod de transmise [nedefinit,2k,8k]"
 
 #: modules/access/bda/bda.c:148
 msgid "2k"
@@ -5617,7 +5615,7 @@ msgstr "Mod de ierarhie terestră"
 
 #: modules/access/bda/bda.c:151
 msgid "Hierarchy alpha value [Undefined,1,2,4]"
-msgstr ""
+msgstr "Valoare alfa ierarhică [nedefinit,2k,8k]"
 
 #: modules/access/bda/bda.c:154
 msgid "1"
@@ -5744,7 +5742,7 @@ msgstr "CD audio - Pista %i"
 #: modules/access/cdda/cdda.c:43 modules/access/directory.c:86
 #: modules/codec/x264.c:392 modules/codec/x264.c:398 modules/codec/x264.c:403
 msgid "none"
-msgstr "nimic"
+msgstr "fără"
 
 #: modules/access/cdda/cdda.c:43
 msgid "overlap"
@@ -7183,7 +7181,7 @@ msgstr "Anunță cu Bonjour"
 
 #: modules/access_output/http.c:91
 msgid "Advertise the stream with the Bonjour protocol."
-msgstr "Anunță fluxul video prin intermediul protocolului Bonjour."
+msgstr "Anunță fluxul cu protocolul Bonjour."
 
 #: modules/access_output/http.c:95
 msgid "HTTP stream output"
@@ -7239,7 +7237,7 @@ msgid ""
 "shoutcast/icecast server."
 msgstr ""
 "În mod normal trebuie să alimentați modulul shoutcast cu fluxuri Ogg. Este "
-"însă de asemena posibil să difuzați un flux MP3 în loc, încât puteţi să "
+"însă de asemena posibil să difuzați un flux MP3 în loc, încât puteți să "
 "înaintați fluxuri MP3 la serverul shoutcast/icecast."
 
 #: modules/access_output/shout.c:81
@@ -8006,7 +8004,7 @@ msgstr ""
 
 #: modules/access/v4l2/v4l2.c:210 modules/access/v4l.c:131
 msgid "Capture the audio stream in stereo."
-msgstr ""
+msgstr "Capturează fluxul audio în format stereo."
 
 #: modules/access/v4l2/v4l2.c:213
 #, fuzzy
@@ -8122,7 +8120,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Audio/Video comprimat Video4Linux2"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 #, fuzzy
 msgid "Reset controls to default"
 msgstr "Interfață de control la distanță"
@@ -9925,9 +9923,8 @@ msgid "Kate"
 msgstr "Kate"
 
 #: modules/codec/kate.c:113
-#, fuzzy
 msgid "Kate text subtitles decoder"
-msgstr "Decodor de subtitluri teletext"
+msgstr "Decodor de subtitluri de text Kate"
 
 #: modules/codec/kate.c:122
 #, fuzzy
@@ -9935,9 +9932,8 @@ msgid "Kate text subtitles packetizer"
 msgstr "Pachetizor de subtitluri DVD"
 
 #: modules/codec/kate.c:731
-#, fuzzy
 msgid "Kate comment"
-msgstr "Comentariu Speex"
+msgstr "Comentariu Kate"
 
 #: modules/codec/libass.c:54
 #, fuzzy
@@ -10966,9 +10962,8 @@ msgid "MPEG I/II hw video decoder (using libmpeg2)"
 msgstr "Decodor audio AAC (utilizând libfaad2)"
 
 #: modules/codec/zvbi.c:58
-#, fuzzy
 msgid "Teletext page"
-msgstr "Subtitluri teletext"
+msgstr "Pagină teletext"
 
 #: modules/codec/zvbi.c:59
 msgid "Open the indicated Teletext page.Default page is index 100"
@@ -10983,38 +10978,34 @@ msgid "Setting vbi-opaque to false makes the boxed text transparent."
 msgstr ""
 
 #: modules/codec/zvbi.c:66
-#, fuzzy
 msgid "Teletext alignment"
-msgstr "Aliniament de date"
+msgstr "Aliniament teletext"
 
 #: modules/codec/zvbi.c:68
-#, fuzzy
 msgid ""
 "You can enforce the teletext position on the video (0=center, 1=left, "
 "2=right, 4=top, 8=bottom, you can also use combinations of these values, eg. "
 "6 = top-right)."
 msgstr ""
-"Puteți forța poziția textului pe imaginea video (0=centru, 1=stânga, "
+"Puteți forța poziția telextului pe imaginea video (0=centru, 1=stânga, "
 "2=dreapta, 4=sus, 8=jos, puteți de asemenea să folosiți combinații ale "
 "acestori valori, de exemplu 6=stânga-sus)."
 
 #: modules/codec/zvbi.c:72
-#, fuzzy
 msgid "Teletext text subtitles"
-msgstr "Subtitluri teletext"
+msgstr "Subtitluri de text teletext"
 
 #: modules/codec/zvbi.c:73
 msgid "Output teletext subtitles as text instead of as RGBA"
 msgstr ""
 
 #: modules/codec/zvbi.c:82
-#, fuzzy
 msgid "VBI and Teletext decoder"
-msgstr "Decodor de subtitluri teletext"
+msgstr "Decodor de VBI și teletext"
 
 #: modules/codec/zvbi.c:83
 msgid "VBI & Teletext"
-msgstr ""
+msgstr "VBI și Teletext"
 
 #: modules/control/dbus.c:111
 msgid "dbus"
@@ -11135,7 +11126,7 @@ msgstr ""
 
 #: modules/control/http/http.c:45 modules/control/http/http.c:46
 msgid "Source directory"
-msgstr ""
+msgstr "Director sursă"
 
 #: modules/control/http/http.c:47
 msgid "Handlers"
@@ -11198,7 +11189,7 @@ msgstr ""
 
 #: modules/control/lirc.c:66
 msgid "Infrared"
-msgstr ""
+msgstr "Infraroșu"
 
 #: modules/control/lirc.c:69
 msgid "Infrared remote control interface"
@@ -11940,7 +11931,7 @@ msgstr ""
 
 #: modules/demux/asf/asf.c:56
 msgid "ASF v1.0 demuxer"
-msgstr ""
+msgstr "Demultiplexor ASF v1.0"
 
 #: modules/demux/asf/asf.c:178
 msgid "Could not demux ASF stream"
@@ -11952,7 +11943,7 @@ msgstr ""
 
 #: modules/demux/au.c:50
 msgid "AU demuxer"
-msgstr ""
+msgstr "Demultiplexor AU"
 
 #: modules/demux/avformat/avformat.c:52
 msgid "FFmpeg demuxer"
@@ -11960,7 +11951,7 @@ msgstr "Demultiplexor FFmpeg"
 
 #: modules/demux/avformat/avformat.c:59
 msgid "FFmpeg muxer"
-msgstr ""
+msgstr "Multiplexor FFmpeg"
 
 #: modules/demux/avformat/avformat.h:35
 #, fuzzy
@@ -11974,7 +11965,7 @@ msgstr "Forțează folosirea modulului de dump"
 
 #: modules/demux/avi/avi.c:47
 msgid "Force interleaved method"
-msgstr ""
+msgstr "Forțează metoda intercalat"
 
 #: modules/demux/avi/avi.c:48
 msgid "Force interleaved method."
@@ -11982,7 +11973,7 @@ msgstr "Forțează metoda de întrețesere."
 
 #: modules/demux/avi/avi.c:50
 msgid "Force index creation"
-msgstr ""
+msgstr "Forțează crearea indexului"
 
 #: modules/demux/avi/avi.c:52
 msgid ""
@@ -12013,7 +12004,6 @@ msgid "AVI Index"
 msgstr "Index AVI"
 
 #: modules/demux/avi/avi.c:675
-#, fuzzy
 msgid ""
 "This AVI file is broken. Seeking will not work correctly.\n"
 "Do you want to try to repair it?\n"
@@ -12022,21 +12012,21 @@ msgid ""
 msgstr ""
 "Acest fișier AVI este deteriorat. Căutarea în cadrul fișierului nu va "
 "funcționa corect.\n"
-"Vreți să încercați să îl reparați ? (aceasta ar putea lua mult timp)"
+"Vreți să fie încercată repararea lui ?\n"
+"\n"
+"Aceasta ar putea lua mult timp."
 
 #: modules/demux/avi/avi.c:678
-#, fuzzy
 msgid "Repair"
-msgstr "Nepaleză"
+msgstr "Repară"
 
 #: modules/demux/avi/avi.c:678
 msgid "Don't repair"
-msgstr ""
+msgstr "Nu repara"
 
 #: modules/demux/avi/avi.c:2395 modules/demux/avi/avi.c:2413
-#, fuzzy
 msgid "Fixing AVI Index..."
-msgstr "Reparare index AVI"
+msgstr "Reparare index AVI..."
 
 #: modules/demux/cdg.c:45
 #, fuzzy
@@ -12086,7 +12076,7 @@ msgstr ""
 
 #: modules/demux/live555.cpp:79
 msgid "Kasenna RTSP dialect"
-msgstr ""
+msgstr "Dialect Kasenna RTSP"
 
 #: modules/demux/live555.cpp:80
 msgid ""
@@ -12094,6 +12084,9 @@ msgid ""
 "parameter, VLC will try this dialect for communication. In this mode you "
 "cannot connect to normal RTSP servers."
 msgstr ""
+"Serverele Kasenna folosesc un dialect vechi și nestandard al RTSP. Când "
+"stabiliți acest parametru, VLC va încerca acest dialect pentru comunicare. "
+"În acest mod nu vă puteți conecta la servere RTSP normale."
 
 #: modules/demux/live555.cpp:84
 msgid "RTSP user name"
@@ -12139,11 +12132,11 @@ msgstr ""
 
 #: modules/demux/live555.cpp:114 modules/demux/live555.cpp:115
 msgid "Force multicast RTP via RTSP"
-msgstr ""
+msgstr "Forțează RTP multicast via RTSP"
 
 #: modules/demux/live555.cpp:117 modules/demux/live555.cpp:118
 msgid "Tunnel RTSP and RTP over HTTP"
-msgstr ""
+msgstr "Tunel RTSP și RTP peste HTTP"
 
 #: modules/demux/live555.cpp:120
 msgid "HTTP tunnel port"
@@ -12181,23 +12174,23 @@ msgstr "Demultiplexor M-JPEG de cameră"
 
 #: modules/demux/mkv.cpp:118
 msgid "Matroska stream demuxer"
-msgstr ""
+msgstr "Demultiplexor de flux Matroska"
 
 #: modules/demux/mkv.cpp:125
 msgid "Ordered chapters"
-msgstr ""
+msgstr "Capitole ordonate"
 
 #: modules/demux/mkv.cpp:126
 msgid "Play ordered chapters as specified in the segment."
-msgstr ""
+msgstr "Redă capitolele ordonate așa cum este specificat în segment."
 
 #: modules/demux/mkv.cpp:129
 msgid "Chapter codecs"
-msgstr ""
+msgstr "Codecuri de capitol"
 
 #: modules/demux/mkv.cpp:130
 msgid "Use chapter codecs found in the segment."
-msgstr ""
+msgstr "Folosește codecurile de capitol găsite în segment."
 
 # hm ?
 #: modules/demux/mkv.cpp:133
@@ -12209,6 +12202,8 @@ msgid ""
 "Preload matroska files from the same family in the same directory (not good "
 "for broken files)."
 msgstr ""
+"Preîncarcă fișiere Matroska din aceeași familie în același director (nu este "
+"bine pentru fișiere deteriorate)."
 
 #: modules/demux/mkv.cpp:137
 msgid "Seek based on percent not time"
@@ -12409,9 +12404,8 @@ msgstr ""
 "shoutcast."
 
 #: modules/demux/playlist/playlist.c:48
-#, fuzzy
 msgid "Skip ads"
-msgstr "Omite cadre"
+msgstr "Omite publicitatea"
 
 #: modules/demux/playlist/playlist.c:49
 msgid ""
@@ -12458,7 +12452,7 @@ msgstr ""
 
 #: modules/demux/playlist/playlist.c:117
 msgid "QuickTime Media Link importer"
-msgstr ""
+msgstr "Importator de legătură media QuickTime"
 
 #: modules/demux/playlist/playlist.c:122
 msgid "Google Video Playlist importer"
@@ -12471,7 +12465,7 @@ msgstr "Ieșire video falsă"
 
 #: modules/demux/playlist/playlist.c:131
 msgid "iTunes Music Library importer"
-msgstr ""
+msgstr "Importator de bibliotecă de muzică iTunes"
 
 #: modules/demux/playlist/podcast.c:249 modules/demux/playlist/podcast.c:263
 #: modules/demux/playlist/podcast.c:293 modules/demux/playlist/podcast.c:305
@@ -12547,16 +12541,15 @@ msgstr ""
 #: modules/demux/rawvid.c:59 modules/stream_out/switcher.c:92
 #: modules/video_filter/canvas.c:53
 msgid "Aspect ratio"
-msgstr ""
+msgstr "Raport de aspect"
 
 #: modules/demux/rawvid.c:61
 msgid "Aspect ratio (4:3, 16:9). Default is square pixels."
-msgstr ""
+msgstr "Raport de aspect (4:3, 16:9). Implicit este cu pixeli pătrați."
 
 #: modules/demux/rawvid.c:65
-#, fuzzy
 msgid "Raw video demuxer"
-msgstr "Demultiplexor video H264"
+msgstr "Demultiplexor video brut"
 
 #: modules/demux/real.c:68
 msgid "Real demuxer"
@@ -12589,9 +12582,8 @@ msgid "Secure RTP requires a (non-secret) master salt value."
 msgstr ""
 
 #: modules/demux/rtp.c:57
-#, fuzzy
 msgid "Maximum RTP sources"
-msgstr "Dimensiune maximă GOP"
+msgstr "Resurse RTP maxime"
 
 #: modules/demux/rtp.c:59
 msgid "How many distinct active RTP sources are allowed at a time."
@@ -12788,7 +12780,7 @@ msgstr ""
 
 #: modules/demux/ts.c:148
 msgid "Append"
-msgstr ""
+msgstr "Adaugă"
 
 #: modules/demux/ts.c:150
 msgid ""
@@ -12821,18 +12813,16 @@ msgid "Teletext subtitles"
 msgstr "Subtitluri teletext"
 
 #: modules/demux/ts.c:3441
-#, fuzzy
 msgid "Teletext additional information"
-msgstr "Dacă este diferit de 0, acesta dă informații suplimentare de depanare."
+msgstr "Informații adiționale de teletext"
 
 #: modules/demux/ts.c:3451
-#, fuzzy
 msgid "Teletext programme schedule"
-msgstr "Subtitluri teletext"
+msgstr "Planificare de program teletext"
 
 #: modules/demux/ts.c:3461
 msgid "Teletext hearing impaired subtitles"
-msgstr ""
+msgstr "Subtitluri teletext pentru cei cu dizabilități de auz"
 
 #: modules/demux/ts.c:3556
 msgid "subtitles"
@@ -12852,19 +12842,19 @@ msgstr "Subtitluri 2.21:1"
 
 #: modules/demux/ts.c:3572 modules/demux/ts.c:3753 modules/demux/ts.c:3794
 msgid "hearing impaired"
-msgstr ""
+msgstr "dizabilități de auz"
 
 #: modules/demux/ts.c:3576
 msgid "4:3 hearing impaired"
-msgstr ""
+msgstr "dizabilități de auz 4:3"
 
 #: modules/demux/ts.c:3580
 msgid "16:9 hearing impaired"
-msgstr ""
+msgstr "dizabilități de auz 16:9"
 
 #: modules/demux/ts.c:3584
 msgid "2.21:1 hearing impaired"
-msgstr ""
+msgstr "dizabilități de auz 2.21:1"
 
 #: modules/demux/ts.c:3749 modules/demux/ts.c:3790
 msgid "clean effects"
@@ -12872,7 +12862,7 @@ msgstr "efecte curate"
 
 #: modules/demux/ts.c:3757 modules/demux/ts.c:3798
 msgid "visual impaired commentary"
-msgstr ""
+msgstr "comentariu pentru cei cu dizabilități de vedere"
 
 #: modules/demux/tta.c:45
 msgid "TTA demuxer"
@@ -12887,14 +12877,12 @@ msgid "TY Stream audio/video demux"
 msgstr "Demultiplexor audio/video de flux TY"
 
 #: modules/demux/vc1.c:44
-#, fuzzy
 msgid "Desired frame rate for the VC-1 stream."
-msgstr "Frecvența de cadre dorită pentru stream-ul H264."
+msgstr "Frecvența de cadre dorită pentru stream-ul VC-1."
 
 #: modules/demux/vc1.c:50
-#, fuzzy
 msgid "VC1 video demuxer"
-msgstr "Demultiplexor video H264"
+msgstr "Demultiplexor video VC1"
 
 #: modules/demux/vobsub.c:52
 msgid "Vobsub subtitles parser"
@@ -13034,11 +13022,11 @@ msgstr ""
 
 #: modules/gui/beos/PlayListWindow.cpp:117
 msgid "Sort by Name"
-msgstr ""
+msgstr "Sortează după nume"
 
 #: modules/gui/beos/PlayListWindow.cpp:121
 msgid "Sort by Path"
-msgstr ""
+msgstr "Sortează după cale"
 
 #: modules/gui/beos/PlayListWindow.cpp:125
 msgid "Randomize"
@@ -13120,11 +13108,9 @@ msgstr ""
 msgid "Framebuffer device to use for rendering (usually /dev/fb0)."
 msgstr ""
 
-# hm ? conform glosarului, canvas = țesătură, pînză, plan, proiect
 #: modules/gui/fbosd.c:107 modules/video_output/fb.c:91
-#, fuzzy
 msgid "Video aspect ratio"
-msgstr "Raport de aspect canvas video"
+msgstr "Raport de aspect video"
 
 #: modules/gui/fbosd.c:109 modules/video_output/fb.c:93
 msgid "Aspect ratio of the video image (4:3, 16:9). Default is square pixels."
@@ -13135,9 +13121,8 @@ msgid "Filename of image file to use on the overlay framebuffer."
 msgstr ""
 
 #: modules/gui/fbosd.c:115
-#, fuzzy
 msgid "Transparency of the image"
-msgstr "Transparență logo"
+msgstr "Transparența imaginii"
 
 #: modules/gui/fbosd.c:116
 #, fuzzy
@@ -13163,9 +13148,8 @@ msgid "X coordinate"
 msgstr "Coordonata X"
 
 #: modules/gui/fbosd.c:124
-#, fuzzy
 msgid "X coordinate of the rendered image"
-msgstr "Coordonata X a sbtitlului randat"
+msgstr "Coordonata X a imaginii randate"
 
 #: modules/gui/fbosd.c:126 modules/video_filter/erase.c:60
 #: modules/video_filter/logo.c:84 modules/video_filter/osdmenu.c:54
@@ -13173,9 +13157,8 @@ msgid "Y coordinate"
 msgstr "Coordonata Y"
 
 #: modules/gui/fbosd.c:127
-#, fuzzy
 msgid "Y coordinate of the rendered image"
-msgstr "Coordonata Y a sbtitlului randat"
+msgstr "Coordonata Y a imaginii randate"
 
 #: modules/gui/fbosd.c:131
 #, fuzzy
@@ -13543,11 +13526,11 @@ msgstr ""
 #: modules/gui/macosx/embeddedwindow.m:48 modules/gui/macosx/intf.m:494
 #: modules/gui/pda/pda_interface.c:236 modules/gui/pda/pda_interface.c:237
 msgid "Rewind"
-msgstr "Derulează"
+msgstr "Derulare"
 
 #: modules/gui/macosx/embeddedwindow.m:49 modules/gui/macosx/intf.m:497
 msgid "Fast Forward"
-msgstr ""
+msgstr "Înaintare rapidă"
 
 #: modules/gui/macosx/equalizer.m:157 modules/gui/qt4/ui/equalizer.ui:34
 msgid "2 Pass"
@@ -13597,7 +13580,6 @@ msgstr "Gradient"
 
 # hm ? sau generală ?
 #: modules/gui/macosx/extended.m:73
-#, fuzzy
 msgid "General editing filters"
 msgstr "Filtre de editare generale"
 
@@ -13850,9 +13832,10 @@ msgstr "Minimizează fereastra"
 msgid "Close Window"
 msgstr "Închide fereastra"
 
+# hm ? sau controler ?
 #: modules/gui/macosx/intf.m:597
 msgid "Controller..."
-msgstr "Controlor..."
+msgstr "Panou de control..."
 
 #: modules/gui/macosx/intf.m:598
 msgid "Equalizer..."
@@ -13985,9 +13968,8 @@ msgid "Couldn't find any trace of a previous crash."
 msgstr ""
 
 #: modules/gui/macosx/intf.m:2249
-#, fuzzy
 msgid "Remove old preferences?"
-msgstr "Resetează preferințele"
+msgstr "Eliminați preferințele vechi ?"
 
 #: modules/gui/macosx/intf.m:2250
 msgid "We just found an older version of VLC's preferences files."
@@ -13998,9 +13980,8 @@ msgid "Move To Trash and Relaunch VLC"
 msgstr ""
 
 #: modules/gui/macosx/intf.m:2251
-#, fuzzy
 msgid "Ignore"
-msgstr "nimic"
+msgstr "Ignoră"
 
 #: modules/gui/macosx/macosx.m:52
 msgid "Video device"
@@ -14061,11 +14042,13 @@ msgstr ""
 
 #: modules/gui/macosx/macosx.m:74
 msgid "Show Fullscreen controller"
-msgstr ""
+msgstr "Arată panoul de control de mod pe tot ecranul"
 
 #: modules/gui/macosx/macosx.m:75
 msgid "Shows a lucent controller when moving the mouse in fullscreen mode."
 msgstr ""
+"Arată un panou de control translucid la mișcarea mausului în modul pe tot "
+"ecranul."
 
 #: modules/gui/macosx/macosx.m:78
 msgid "Auto-playback of new items"
@@ -14481,7 +14464,7 @@ msgstr "Expandează nodul"
 
 #: modules/gui/macosx/playlist.m:447
 msgid "Download Cover Art"
-msgstr ""
+msgstr "Descarcă grafica de album"
 
 #: modules/gui/macosx/playlist.m:448
 msgid "Fetch Meta Data"
@@ -14587,9 +14570,8 @@ msgid "Select"
 msgstr "Selectați"
 
 #: modules/gui/macosx/simple_prefs.m:89
-#, fuzzy
 msgid "Not Set"
-msgstr "Notă:"
+msgstr "Nestabilit"
 
 #: modules/gui/macosx/simple_prefs.m:173
 #: modules/gui/qt4/components/simple_preferences.cpp:458
@@ -14691,7 +14673,7 @@ msgstr "Filtru de acces"
 
 #: modules/gui/macosx/simple_prefs.m:246
 msgid "Repair AVI Files"
-msgstr ""
+msgstr "Repară fișierele AVI"
 
 #: modules/gui/macosx/simple_prefs.m:248
 msgid "Default Caching Level"
@@ -14714,7 +14696,7 @@ msgstr "Proxy HTTP"
 
 #: modules/gui/macosx/simple_prefs.m:253
 msgid "Password for HTTP Proxy"
-msgstr ""
+msgstr "Parolă pentru proxy-ul HTTP"
 
 #: modules/gui/macosx/simple_prefs.m:254
 #: modules/gui/qt4/ui/sprefs_input.ui:119
@@ -14741,7 +14723,7 @@ msgstr "Contrastul semnalului de intrare video"
 
 #: modules/gui/macosx/simple_prefs.m:265
 msgid "Show Fullscreen Controller"
-msgstr ""
+msgstr "Arată panoul de control de mod pe tot ecranul"
 
 #: modules/gui/macosx/simple_prefs.m:267
 #: modules/gui/qt4/ui/sprefs_interface.ui:269
@@ -14818,12 +14800,12 @@ msgstr "Format"
 #: modules/gui/macosx/simple_prefs.m:294
 #: modules/gui/qt4/ui/sprefs_video.ui:182
 msgid "Prefix"
-msgstr ""
+msgstr "Prefix"
 
 #: modules/gui/macosx/simple_prefs.m:295
 #: modules/gui/qt4/ui/sprefs_video.ui:212
 msgid "Sequential numbering"
-msgstr ""
+msgstr "Numerotare secvențială"
 
 #: modules/gui/macosx/simple_prefs.m:520 modules/gui/macosx/simple_prefs.m:564
 #: modules/gui/macosx/simple_prefs.m:1151
@@ -14951,9 +14933,8 @@ msgid "No"
 msgstr "Nu"
 
 #: modules/gui/macosx/update.m:138
-#, fuzzy
 msgid "Save As:"
-msgstr " Salvează"
+msgstr "Salvează ca:"
 
 #: modules/gui/macosx/update.m:178
 msgid "This version of VLC is the latest available."
@@ -16343,9 +16324,8 @@ msgid "Force update of this dialog's values"
 msgstr "Forțează actualizarea valorilor din acest dialog"
 
 #: modules/gui/qt4/components/info_panels.cpp:129
-#, fuzzy
 msgid "Comments"
-msgstr "Comentariu"
+msgstr "Comentarii"
 
 #: modules/gui/qt4/components/info_panels.cpp:334
 msgid "Extra metadata and other information are shown in this panel.\n"
@@ -16447,10 +16427,10 @@ msgstr "Arată setările extinse"
 msgid "Transparent"
 msgstr "Transparent"
 
+# hm ?
 #: modules/gui/qt4/components/interface_widgets.cpp:902
-#, fuzzy
 msgid "Unmute"
-msgstr "Mut"
+msgstr "Cu sunet"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:942
 msgid "Pause the playback"
@@ -16574,11 +16554,11 @@ msgstr "Deselectează"
 
 #: modules/gui/qt4/components/preferences_widgets.cpp:1286
 msgid "Hotkey for "
-msgstr "Tastă rapidă pentru"
+msgstr "Tastă rapidă pentru "
 
 #: modules/gui/qt4/components/preferences_widgets.cpp:1289
 msgid "Press the new keys for "
-msgstr "Apăsați tasta nouă pentru"
+msgstr "Apăsați tasta nouă pentru "
 
 #: modules/gui/qt4/components/preferences_widgets.cpp:1314
 msgid "Warning: the key is already assigned to \""
@@ -16587,7 +16567,7 @@ msgstr "Avertisment: tasta este deja asociată la \""
 #: modules/gui/qt4/components/preferences_widgets.cpp:1334
 #: modules/gui/qt4/components/preferences_widgets.cpp:1342
 msgid "Key: "
-msgstr "Tastă:"
+msgstr "Tastă: "
 
 #: modules/gui/qt4/components/simple_preferences.cpp:79
 msgid "Subtitles && OSD"
@@ -16954,13 +16934,15 @@ msgstr "&Redă"
 msgid "&Stream"
 msgstr "&Flux"
 
+# în meniul desfășurabil
 #: modules/gui/qt4/dialogs/open.cpp:126
 msgid "&Convert"
-msgstr "&Convertește"
+msgstr "&Conversie / Salvare"
 
+# pe buton
 #: modules/gui/qt4/dialogs/open.cpp:202
 msgid "&Convert / Save"
-msgstr "&Convertește / Salvează"
+msgstr "&Conversie / Salvare"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:66
 msgid "Show settings"
@@ -17213,7 +17195,7 @@ msgstr "Con&versie / Salvare..."
 
 #: modules/gui/qt4/menus.cpp:310
 msgid "&Streaming..."
-msgstr "Difu&zare..."
+msgstr "Difu&zare ca flux..."
 
 #: modules/gui/qt4/menus.cpp:315 modules/gui/qt4/menus.cpp:933
 msgid "&Quit"
@@ -17679,9 +17661,10 @@ msgstr "Personalizează"
 msgid "Complete MRL for VLC internal"
 msgstr "MRL intern complet pentru VLC"
 
+# !!! adaptare la realitate !!!
 #: modules/gui/qt4/ui/open.ui:216
 msgid "Select play mode"
-msgstr "Selectați modul de redare"
+msgstr "Selectați tipul acțiunii"
 
 #: modules/gui/qt4/ui/podcast_configuration.ui:19
 #: modules/services_discovery/podcast.c:58
@@ -19242,38 +19225,32 @@ msgid "Stats"
 msgstr "Statistici"
 
 #: modules/misc/stats/stats.c:49
-#, fuzzy
 msgid "Stats encoder function"
-msgstr "Funcție de randare de font falsă"
+msgstr "Statistici funcționare codor"
 
 #: modules/misc/stats/stats.c:54
-#, fuzzy
 msgid "Stats decoder"
-msgstr "Codor de subtitluri"
+msgstr "Statistici decodor"
 
 #: modules/misc/stats/stats.c:55
-#, fuzzy
 msgid "Stats decoder function"
-msgstr "Descriere stream"
+msgstr "Statistic funcționare decodor"
 
 #: modules/misc/stats/stats.c:59
-#, fuzzy
 msgid "Stats demux"
-msgstr "Demultiplexor Real"
+msgstr "Statistici demultiplexor"
 
 #: modules/misc/stats/stats.c:60
 msgid "Stats demux function"
 msgstr ""
 
 #: modules/misc/stats/stats.c:64
-#, fuzzy
 msgid "Stats video output"
-msgstr "Ieșire video ca imagine"
+msgstr "Statistici ieșire video"
 
 #: modules/misc/stats/stats.c:65
-#, fuzzy
 msgid "Stats video output function"
-msgstr "Funcție de ieșire video falsă"
+msgstr "Statistici funcționare ieșire video"
 
 #: modules/misc/svg.c:70
 msgid "SVG template file"
@@ -20490,9 +20467,8 @@ msgid "Number of audio channels in the transcoded streams."
 msgstr "Numărul canalelor audio în fluxurile transcodate."
 
 #: modules/stream_out/transcode.c:109
-#, fuzzy
 msgid "Audio filter"
-msgstr "Filtre audio"
+msgstr "Filtru audio"
 
 #: modules/stream_out/transcode.c:111
 msgid ""
@@ -20682,18 +20658,16 @@ msgid "Use an image's alpha channel as a transparency mask."
 msgstr ""
 
 #: modules/video_filter/alphamask.c:42
-#, fuzzy
 msgid "Transparency mask"
-msgstr "Transparență"
+msgstr "Mască de transparență"
 
 #: modules/video_filter/alphamask.c:44
 msgid "Alpha blending transparency mask. Uses a png alpha channel."
 msgstr ""
 
 #: modules/video_filter/alphamask.c:63
-#, fuzzy
 msgid "Alpha mask video filter"
-msgstr "Filtru de trunchiere video"
+msgstr "Filtru video de mască alfa"
 
 #: modules/video_filter/alphamask.c:64
 msgid "Alpha mask"
@@ -20732,18 +20706,16 @@ msgid "The path where the debugframes should be saved"
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:141
-#, fuzzy
 msgid "Extracted Image Width"
-msgstr "Lățime imagine"
+msgstr "Lățimea imaginii extrase"
 
 #: modules/video_filter/atmo/atmo.cpp:142
 msgid "The width of the mini image for further processing (64 is default)"
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:145
-#, fuzzy
 msgid "Extracted Image Height"
-msgstr "Înălțime imagine"
+msgstr "Înălțimea imaginii extrase"
 
 #: modules/video_filter/atmo/atmo.cpp:146
 msgid "The height of the mini image for further processing (48 is default)"
@@ -20877,6 +20849,8 @@ msgid ""
 "Name of the serial port where the AtmoLight controller is attached to.\n"
 "On Windows usually something like COM1 or COM2. On Linux /dev/ttyS01 f.e."
 msgstr ""
+"Numele portului serial la care este atașat controlerul AtmoLight.\n"
+"Pe Windows uzual ceva gen COM1 sau COM2. Pe Linux /dev/ttyS01 f.e."
 
 #: modules/video_filter/atmo/atmo.cpp:193
 msgid "Edge Weightning"
@@ -21355,9 +21329,8 @@ msgid "Force a ratio (0 for automatic). Value is x1000: 1333 means 4/3."
 msgstr ""
 
 #: modules/video_filter/crop.c:86
-#, fuzzy
 msgid "Number of images for change"
-msgstr "Număr de canale de ieșire"
+msgstr "Numărul de imagini de schimbat"
 
 #: modules/video_filter/crop.c:87
 msgid ""
@@ -21367,9 +21340,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/crop.c:89
-#, fuzzy
 msgid "Number of lines for change"
-msgstr "Număr de canale de ieșire"
+msgstr "Numărul de linii de schimbat"
 
 #: modules/video_filter/crop.c:90
 msgid ""
@@ -21378,9 +21350,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/crop.c:92
-#, fuzzy
 msgid "Number of non black pixels "
-msgstr "Numărul de pixeli blanc între benzi."
+msgstr "Numărul de pixeli care nu sunt negri"
 
 #: modules/video_filter/crop.c:93
 msgid ""
@@ -21398,7 +21369,6 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/crop.c:99
-#, fuzzy
 msgid "Luminance threshold "
 msgstr "Prag de luminozitate"
 
@@ -21411,105 +21381,86 @@ msgid "Crop video filter"
 msgstr "Filtru de trunchiere video"
 
 #: modules/video_filter/crop.c:378 modules/video_filter/crop.c:474
-#, fuzzy
 msgid "Cropping failed"
-msgstr "Filtru de trunchiere video"
+msgstr "Decuparea a eșuat"
 
-# adaptare
 #: modules/video_filter/crop.c:379 modules/video_filter/crop.c:475
-#, fuzzy
 msgid "VLC could not open the video output module."
-msgstr "Culoarea imaginii video de intrare."
+msgstr "VLC nu a putut deschide modulul de ieșire video"
 
 #: modules/video_filter/croppadd.c:47
-#, fuzzy
 msgid "Pixels to crop from top"
-msgstr "Trunchiere video (sus)"
+msgstr "Pixeli de decupat din partea de sus"
 
 #: modules/video_filter/croppadd.c:49
-#, fuzzy
 msgid "Number of pixels to crop from the top of the image."
-msgstr "Numărul de pixeli de trunchiat în partea de sus a imaginii video."
+msgstr "Numărul de pixeli de decupat în partea de sus a imaginii."
 
 #: modules/video_filter/croppadd.c:50
-#, fuzzy
 msgid "Pixels to crop from bottom"
-msgstr "Trunchiere video (jos)"
+msgstr "Pixeli de decupat din partea de jos"
 
 #: modules/video_filter/croppadd.c:52
-#, fuzzy
 msgid "Number of pixels to crop from the bottom of the image."
-msgstr "Numărul de pixeli de trunchiat în partea de jos a imaginii video."
+msgstr "Numărul de pixeli de decupat în partea de jos a imaginii."
 
 #: modules/video_filter/croppadd.c:53
-#, fuzzy
 msgid "Pixels to crop from left"
-msgstr "Trunchiere video (stânga)"
+msgstr "Pixeli de decupat din stânga"
 
 #: modules/video_filter/croppadd.c:55
-#, fuzzy
 msgid "Number of pixels to crop from the left of the image."
-msgstr "Numărul de pixeli de trunchiat în partea din stânga a imaginii video."
+msgstr "Numărul de pixeli de decupat din stânga imaginii."
 
 #: modules/video_filter/croppadd.c:56
-#, fuzzy
 msgid "Pixels to crop from right"
-msgstr "Trunchiere video (dreapta)"
+msgstr "Pixeli de decupat din dreapta"
 
 #: modules/video_filter/croppadd.c:58
-#, fuzzy
 msgid "Number of pixels to crop from the right of the image."
-msgstr "Numărul de pixeli de trunchiat în partea din dreapta a imaginii video."
+msgstr "Numărul de pixeli de decupat din dreapta a imaginii."
 
 #: modules/video_filter/croppadd.c:60
-#, fuzzy
 msgid "Pixels to padd to top"
-msgstr "Umplutură video (sus)"
+msgstr "Pixeli de umplut în partea de sus"
 
 #: modules/video_filter/croppadd.c:62
-#, fuzzy
 msgid "Number of pixels to padd to the top of the image after cropping."
-msgstr "Numărul de pixeli de trunchiat în partea de sus a imaginii video."
+msgstr "Numărul de pixeli de umplut în partea de sus a imaginii după decupare."
 
 #: modules/video_filter/croppadd.c:63
-#, fuzzy
 msgid "Pixels to padd to bottom"
-msgstr "Umplutură video (jos)"
+msgstr "Pixeli de umplut în partea de jos"
 
 #: modules/video_filter/croppadd.c:65
-#, fuzzy
 msgid "Number of pixels to padd to the bottom of the image after cropping."
-msgstr "Numărul de pixeli de trunchiat în partea de jos a imaginii video."
+msgstr "Numărul de pixeli de umplut în partea de jos a imaginii după decupare."
 
 #: modules/video_filter/croppadd.c:66
-#, fuzzy
 msgid "Pixels to padd to left"
-msgstr "Umplutură video (stânga)"
+msgstr "Pixeli de umplut la stânga"
 
 #: modules/video_filter/croppadd.c:68
-#, fuzzy
 msgid "Number of pixels to padd to the left of the image after cropping."
-msgstr "Numărul de pixeli de trunchiat în partea din stânga a imaginii video."
+msgstr "Numărul de pixeli de umplut în stânga imaginii după decupare."
 
 #: modules/video_filter/croppadd.c:69
-#, fuzzy
 msgid "Pixels to padd to right"
-msgstr "Umplutură video (dreapta)"
+msgstr "Pixeli de umplut la dreapta"
 
 #: modules/video_filter/croppadd.c:71
-#, fuzzy
 msgid "Number of pixels to padd to the right of the image after cropping."
-msgstr "Numărul de pixeli de trunchiat în partea din dreapta a imaginii video."
+msgstr "Numărul de pixeli de umplut în dreapta imaginii după decupare."
 
 #: modules/video_filter/croppadd.c:79 modules/video_filter/scale.c:59
 #: modules/video_filter/swscale.c:63
 msgid "Video scaling filter"
 msgstr "Filtru de scalare video"
 
+# hm ?
 #: modules/video_filter/croppadd.c:93
-#, fuzzy
 msgid "Padd"
-msgstr "Pauză"
+msgstr "Umplere"
 
 #: modules/video_filter/deinterlace.c:112 modules/video_output/x11/xvmc.c:130
 msgid "Deinterlace mode"
@@ -22508,37 +22459,32 @@ msgid "Puzzle interactive game video filter"
 msgstr "Filtru de deîntrețesere video"
 
 #: modules/video_filter/puzzle.c:76
-#, fuzzy
 msgid "Puzzle"
-msgstr "Violet"
+msgstr "Puzzle"
 
 #: modules/video_filter/remoteosd.c:74
-#, fuzzy
 msgid "VNC Host"
-msgstr "Gazdă"
+msgstr "Gazdă VLC"
 
 #: modules/video_filter/remoteosd.c:76
 msgid "VNC hostname or IP address."
 msgstr ""
 
 #: modules/video_filter/remoteosd.c:78
-#, fuzzy
 msgid "VNC Port"
-msgstr "Format VCD"
+msgstr "Port VNC"
 
 #: modules/video_filter/remoteosd.c:80
 msgid "VNC portnumber."
 msgstr ""
 
 #: modules/video_filter/remoteosd.c:82
-#, fuzzy
 msgid "VNC Password"
-msgstr "Parolă"
+msgstr "Parolă VNC"
 
 #: modules/video_filter/remoteosd.c:84
-#, fuzzy
 msgid "VNC password."
-msgstr "Parolă SOCKS"
+msgstr "Parolă VNC."
 
 #: modules/video_filter/remoteosd.c:86
 #, fuzzy
@@ -22559,9 +22505,8 @@ msgid "Activate VNC polling. Do NOT activate for use as VDR ffnetdev client."
 msgstr ""
 
 #: modules/video_filter/remoteosd.c:94
-#, fuzzy
 msgid "Mouse events"
-msgstr "Gesturi de maus"
+msgstr "Evenimente de maus"
 
 #: modules/video_filter/remoteosd.c:96
 msgid ""
@@ -22774,7 +22719,7 @@ msgstr ""
 
 #: modules/video_filter/swscale.c:60
 msgid "Lanczos"
-msgstr ""
+msgstr "Lanczos"
 
 #: modules/video_filter/swscale.c:60
 msgid "Bicubic spline"
@@ -23291,9 +23236,10 @@ msgstr ""
 "Ieșire de crominanță pentru imaginea instantaneu (un șir de 4 caractere, "
 "similar cu „RV32”)"
 
+# hm ? sau blochează funcția ?
 #: modules/video_output/vmem.c:63
 msgid "Lock function"
-msgstr ""
+msgstr "Funcșie de blocare"
 
 #: modules/video_output/vmem.c:64
 msgid ""

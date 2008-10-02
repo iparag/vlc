@@ -18,7 +18,7 @@ StrCpy $Desc_Section02a \
 StrCpy $Desc_Section02b \
     "Adaugã o pictogramã pe desktop pentru acces facil"
 StrCpy $Desc_Section03 \
-    "Pluginul VLC Mozilla and Mozilla Firefox"
+    "Pluginul VLC Mozilla ºi Mozilla Firefox"
 StrCpy $Desc_Section04 \
     "Pluginul VLC ActiveX"
 StrCpy $Desc_Section05 \
@@ -31,7 +31,7 @@ StrCpy $Desc_Section08 \
     "ªterge preferinþele ºi cache-ul VLC media player rãmase de la instalãri precedente"
 
 StrCpy $Message_AlreadyInstalled  \
-"VLC media player a fost deja instalat. $\nVreþi sã eliminaþi \
+"VLC media player este deja instalat. $\nVreþi sã eliminaþi \
 versiunea precedentã înainte de a instala $(^Name) ?"
 
 StrCpy $Name_Section91 "Dezinstalare"
