@@ -845,7 +845,11 @@ void ControlsWidget::play()
     if( THEPL->current.i_size == 0 )
     {
         /* The playlist is empty, open a file requester */
+#ifndef WIN32
         THEDP->openFileDialog();
+#else
+        THEDP->simpleOpenDialog();
+#endif
         setStatus( 0 );
         return;
     }
