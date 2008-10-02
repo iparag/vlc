@@ -208,7 +208,6 @@ static ssize_t Read( access_t *p_access, uint8_t *p_buffer, size_t i_len)
     input_thread_t     *p_input = (input_thread_t*)vlc_object_find( p_access, VLC_OBJECT_INPUT, FIND_PARENT );
 
     playlist_item_t    *p_item_in_category;
-    input_item_t       *p_current_input;
     playlist_item_t    *p_current;
 
     if( !p_input )
@@ -219,8 +218,9 @@ static ssize_t Read( access_t *p_access, uint8_t *p_buffer, size_t i_len)
         return VLC_ENOOBJ;
     }
 
-    p_current_input = input_GetItem( p_input );
-    p_current = playlist_ItemGetByInput( p_playlist, p_current_input, pl_Unlocked );
+    vlc_mutex_lock( &input_GetItem(p_input)->lock );
+    p_current = playlist_ItemGetByInput( p_playlist, input_GetItem( p_input ), pl_Unlocked );
+    vlc_mutex_unlock( &input_GetItem(p_input)->lock );
 
     if( !p_current )
     {
@@ -260,7 +260,7 @@ static ssize_t Read( access_t *p_access, uint8_t *p_buffer, size_t i_len)
 
     ReadDir( p_access, p_playlist, psz_name, i_mode,
              p_item_in_category,
-             p_current_input, (DIR *)p_access->p_sys, NULL );
+             p_current->p_input, (DIR *)p_access->p_sys, NULL );
 
     var_SetBool( p_playlist, "intf-change", true );
     playlist_Signal( p_playlist );
