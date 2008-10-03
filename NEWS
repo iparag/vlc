@@ -1,5 +1,16 @@
-Changes between 0.9.3 and 0.9.4-git:
+Changes between 0.9.3 and 0.9.4:
 ------------------------------------
+Various bugfixes:
+ * Crashes fixed in ogg, vobsub, dvdread
+ * Fixes several memory leaks.
+
+Mac OS X port:
+ * Apple machines without Quartz Extreme are no longer supported (use 0.9.2 or earlier )
+ * Fixed a crash with deletion of old preferences.
+ * Fixed targetname for downloaded updates
+
+Windows port:
+ * Stability fix for the video output.
 
 
 Changes between 0.9.2 and 0.9.3:
