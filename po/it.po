@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
-"PO-Revision-Date: 2008-09-26 13:41+0100\n"
+"POT-Creation-Date: 2008-10-03 22:28+0100\n"
+"PO-Revision-Date: 2008-10-03 09:38+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128@baslug.org>\n"
 "Language-Team: Italian <kde-i18n-it@mail.kde.org>\n"
 "MIME-Version: 1.0\n"
@@ -2518,7 +2518,7 @@ msgstr "Interfaccia di uscita multicast"
 
 #: src/libvlc-module.c:583
 msgid "Default multicast interface. This overrides the routing table."
-msgstr ""
+msgstr "Interfaccia multicast predefinita. Ignora la tabella di routing."
 
 #: src/libvlc-module.c:585
 msgid "IPv4 multicast output interface address"
@@ -2629,7 +2629,6 @@ msgid "Start time"
 msgstr "Ora di inizio"
 
 #: src/libvlc-module.c:644
-#, fuzzy
 msgid "The stream will start at this position (in seconds)."
 msgstr "Il flusso inizierà da questa posizione (in secondi)."
 
@@ -2638,7 +2637,6 @@ msgid "Stop time"
 msgstr "Ora di fine"
 
 #: src/libvlc-module.c:648
-#, fuzzy
 msgid "The stream will stop at this position (in seconds)."
 msgstr "Il flusso si fermerà a questa posizione (in secondi)."
 
@@ -2648,9 +2646,8 @@ msgid "Run time"
 msgstr "Rundi"
 
 #: src/libvlc-module.c:652
-#, fuzzy
 msgid "The stream will run this duration (in seconds)."
-msgstr "Il flusso inizierà da questa posizione (in secondi)."
+msgstr "Il flusso avrà questa durata (in secondi)."
 
 #: src/libvlc-module.c:654
 msgid "Input list"
@@ -3379,6 +3376,7 @@ msgstr ""
 #: src/libvlc-module.c:1005
 msgid "(Experimental) Minimize latency whenreading live stream."
 msgstr ""
+"(Sperimentale) Minimizza la latenza durante la lettura di flussi in diretta."
 
 #: src/libvlc-module.c:1011
 msgid "Modules search path"
@@ -3431,7 +3429,7 @@ msgstr "Scrivi ID di processo su file"
 
 #: src/libvlc-module.c:1034
 msgid "Writes process id into specified file."
-msgstr ""
+msgstr "Scrive l'id di processo nel file specificato."
 
 #: src/libvlc-module.c:1036
 msgid "Log to file"
@@ -3618,9 +3616,8 @@ msgid "Play and exit"
 msgstr "Riproduci ed esci"
 
 #: src/libvlc-module.c:1136
-#, fuzzy
 msgid "Exit if there are no more items in the playlist."
-msgstr "%i elementi nella playlist"
+msgstr "Esci se non ci sono elementi nella playlist."
 
 #: src/libvlc-module.c:1138
 msgid "Use media library"
@@ -3631,11 +3628,11 @@ msgid ""
 "The media library is automatically saved and reloaded each time you start "
 "VLC."
 msgstr ""
+"La raccolta multimediale viene salvata e ricaricata ad ogni avvio di VLC."
 
 #: src/libvlc-module.c:1143
-#, fuzzy
 msgid "Display playlist tree"
-msgstr "Usa l'albero della playlist"
+msgstr "Visualizza l'albero della playlist"
 
 #: src/libvlc-module.c:1145
 msgid ""
@@ -4272,7 +4269,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1324
 msgid "Toggle random playlist playback"
-msgstr ""
+msgstr "Commuta la riproduzione casuale della playlist"
 
 #: src/libvlc-module.c:1329 src/libvlc-module.c:1330
 msgid "Un-Zoom"
@@ -4571,16 +4568,16 @@ msgid "print a list of available modules"
 msgstr "mostra una lista dei moduli disponibili"
 
 #: src/libvlc-module.c:2496
-#, fuzzy
 msgid "print a list of available modules with extra detail"
-msgstr "mostra una lista dei moduli disponibili"
+msgstr "mostra una lista dei moduli disponibili con dettagli aggiuntivi"
 
 #: src/libvlc-module.c:2498
-#, fuzzy
 msgid ""
 "print help on a specific module (can be combined with --advanced and --help-"
 "verbose)"
-msgstr "mostra l'aiuto su un modulo (può essere combinato con --advanced)"
+msgstr ""
+"mostra la guida di un modulo specifico (può essere combinato con --advanced "
+"e --help-verbose)"
 
 #: src/libvlc-module.c:2501
 msgid "no configuration option will be loaded nor saved to config file"
@@ -4626,9 +4623,9 @@ msgid "%.1f kB"
 msgstr "%.1f kB"
 
 #: src/misc/update.c:1464
-#, fuzzy, c-format
+#, c-format
 msgid "%ld B"
-msgstr "%d Hz"
+msgstr "%ld B"
 
 #: src/misc/update.c:1568 src/misc/update.c:1592
 #, c-format
@@ -4640,9 +4637,8 @@ msgstr ""
 "Scaricamento... %s/%s %.1f%% completato"
 
 #: src/misc/update.c:1571
-#, fuzzy
 msgid "Downloading ..."
-msgstr "Scarica plugin"
+msgstr "Scaricamento in corso..."
 
 #: src/misc/update.c:1611
 #, c-format
@@ -4698,9 +4694,8 @@ msgid "Downloaded file \"%s\" was corrupted. Thus, it was deleted."
 msgstr "Il file scaricato \"%s\" era danneggiato. Perciò, è stato eliminato."
 
 #: src/misc/update.c:1707
-#, fuzzy
 msgid "Cancelled"
-msgstr "Annulla"
+msgstr "Annullata"
 
 #: src/playlist/tree.c:66 modules/access/bda/bda.c:62
 #: modules/access/bda/bda.c:115 modules/access/bda/bda.c:123
@@ -5463,7 +5458,7 @@ msgstr "Tipo di modulazione"
 
 #: modules/access/bda/bda.c:111
 msgid "QAM constellation points [16, 32, 64, 128, 256]"
-msgstr ""
+msgstr "Punti di costellazione QAM [16, 32, 64, 128, 256]"
 
 #: modules/access/bda/bda.c:115
 msgid "16"
@@ -6556,6 +6551,8 @@ msgid ""
 "EyeTV program number, or use 0 for last channel, -1 for S-Video input, -2 "
 "for Composite input"
 msgstr ""
+"Numero di programma EyeTV, o utilizza 0 per l'ultimo canale, -1 per "
+"l'ingresso S-Video, -2 per l'ingresso Composito"
 
 #: modules/access/eyetv.m:63
 #, fuzzy
@@ -6793,9 +6790,8 @@ msgid "VLC could not connect with the given server."
 msgstr "VLC non può connettersi al dato server."
 
 #: modules/access/ftp.c:146
-#, fuzzy
 msgid "VLC's connection to the given server was rejected."
-msgstr "Il tuo account è stato rifiutato."
+msgstr "La connessione di VLC al dato server è stata rifiutata."
 
 #: modules/access/ftp.c:211
 msgid "Your account was rejected."
@@ -6898,9 +6894,9 @@ msgid "HTTP(S)"
 msgstr "HTTP(S)"
 
 #: modules/access/http.c:446
-#, fuzzy, c-format
+#, c-format
 msgid "Please enter a valid login name and a password for realm %s."
-msgstr "Inserire un nome utente e una password valida."
+msgstr "Inserire un nome utente e una password valida per il dominio %s."
 
 #: modules/access/http.c:450
 msgid "HTTP authentication"
@@ -7056,10 +7052,9 @@ msgid "Mime"
 msgstr "Mime"
 
 #: modules/access_output/http.c:72
-#, fuzzy
 msgid "MIME returned by the server (autodetected if not specified)."
 msgstr ""
-"MIME restituito dal server (rilevato automaticamente se non specificato."
+"MIME restituito dal server (rilevato automaticamente se non specificato)."
 
 #: modules/access_output/http.c:75
 #, fuzzy
@@ -7784,7 +7779,7 @@ msgstr "Guadagno"
 
 #: modules/access/v4l2/v4l2.c:155
 msgid "Video input's gain (if supported by the v4l2 driver)."
-msgstr ""
+msgstr "Guadagno dell'ingresso video (se supportato dal driver v4l2)."
 
 #: modules/access/v4l2/v4l2.c:156
 #, fuzzy
@@ -7843,7 +7838,7 @@ msgstr "Metodo audio"
 
 #: modules/access/v4l2/v4l2.c:183
 msgid "Audio method to use: 0 to disable audio, 1 for OSS."
-msgstr ""
+msgstr "Metodo audio da utilizzare: 0 per disabilitare l'audio, 1 per OSS."
 
 #: modules/access/v4l2/v4l2.c:186
 msgid ""
@@ -8012,7 +8007,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr "A/V compresso Video4Linux2"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 msgid "Reset controls to default"
 msgstr "Ripristina controlli ai valori predefiniti"
 
@@ -9663,18 +9658,16 @@ msgid "Decoding X coordinate"
 msgstr "Decodifica coordinata X "
 
 #: modules/codec/dvbsub.c:57
-#, fuzzy
 msgid "X coordinate of the rendered subtitle"
-msgstr "Coordinata X del sottotitolo restituito"
+msgstr "Coordinata X del sottotitolo reso"
 
 #: modules/codec/dvbsub.c:59
 msgid "Decoding Y coordinate"
 msgstr "Decodifica coordinata Y"
 
 #: modules/codec/dvbsub.c:60
-#, fuzzy
 msgid "Y coordinate of the rendered subtitle"
-msgstr "Coordinata Y del sottotitolo restituito"
+msgstr "Coordinata Y del sottotitolo reso"
 
 #: modules/codec/dvbsub.c:62
 #, fuzzy
@@ -9791,9 +9784,8 @@ msgid "Deinterlace module to use."
 msgstr "Modulo di deinterlacciamento da utilizzare."
 
 #: modules/codec/fake.c:77 modules/video_output/fb.c:87
-#, fuzzy
 msgid "Chroma used."
-msgstr "Croma"
+msgstr "Croma utilizzata"
 
 #: modules/codec/fake.c:79 modules/video_output/fb.c:89
 msgid "Force use of a specific chroma for output. Default is I420."
@@ -10424,9 +10416,8 @@ msgid ""
 msgstr ""
 
 #: modules/codec/x264.c:176
-#, fuzzy
 msgid "Strength of AQ"
-msgstr "Sistema di trasmissione"
+msgstr "Intensità di AQ"
 
 #: modules/codec/x264.c:177
 msgid ""
@@ -10870,9 +10861,8 @@ msgid "H.264/MPEG4 AVC encoder (using x264 library)"
 msgstr "Decodificatore H.264/MPEG4 AVC (usa la libreria x264)"
 
 #: modules/codec/xvmc/xxmc.c:104
-#, fuzzy
 msgid "MPEG I/II hw video decoder (using libmpeg2)"
-msgstr "Decodifica video MPEG I/II (usa libmpeg2)"
+msgstr "Decodificatore video MPEG I/II hw (usa libmpeg2)"
 
 #: modules/codec/zvbi.c:58
 msgid "Teletext page"
@@ -11118,9 +11108,8 @@ msgid "motion"
 msgstr "movimento"
 
 #: modules/control/motion.c:80
-#, fuzzy
 msgid "motion control interface"
-msgstr "Interfaccia comando a distanza"
+msgstr "Interfaccia di controllo del movimento"
 
 #: modules/control/motion.c:81
 msgid ""
@@ -11519,14 +11508,12 @@ msgid "| @name marq-marquee  STRING  . . overlay STRING in video"
 msgstr "| marq-marquee STRINGA  . .  sovrappone STRINGA sul video"
 
 #: modules/control/rc.c:910
-#, fuzzy
 msgid "| @name marq-x X . . . . . . . . . . . .offset from left"
-msgstr "| marq-x X . . . . . . scostamento da sinistra"
+msgstr "| @name marq-x X . . . . . . . . . . . .scostamento da sinistra"
 
 #: modules/control/rc.c:911
-#, fuzzy
 msgid "| @name marq-y Y . . . . . . . . . . . . offset from top"
-msgstr "| marq-y Y . . . . . . scostamento dall'alto"
+msgstr "| @name marq-y Y . . . . . . . . . . . . scostamento dall'alto"
 
 #: modules/control/rc.c:912
 #, fuzzy
@@ -11534,24 +11521,20 @@ msgid "| @name marq-position #. . .  .relative position control"
 msgstr "| marq-position #. . .  .controllo della posizione relativa"
 
 #: modules/control/rc.c:913
-#, fuzzy
 msgid "| @name marq-color # . . . . . . . . . . font color, RGB"
-msgstr "| marq-color # . . . . . . . . . . colore carattere, RGB"
+msgstr "| @name marq-color # . . . . . . . . . . colore del carattere, RGB"
 
 #: modules/control/rc.c:914
-#, fuzzy
 msgid "| @name marq-opacity # . . . . . . . . . . . . . opacity"
-msgstr "| marq-opacity # . . . . . . . . . . . . . opacità"
+msgstr "| @name marq-opacity # . . . . . . . . . . . . . opacità"
 
 #: modules/control/rc.c:915
-#, fuzzy
 msgid "| @name marq-timeout T. . . . . . . . . . timeout, in ms"
-msgstr "| marq-timeout T. . . . . . . . . . scadenza, in ms"
+msgstr "| @name marq-timeout T. . . . . . . . . . scadenza, in ms"
 
 #: modules/control/rc.c:916
-#, fuzzy
 msgid "| @name marq-size # . . . . . . . . font size, in pixels"
-msgstr "| marq-size # . . . . . . . . dimensioni carattere, in pixel"
+msgstr "| @name marq-size # . . . . . . . . dimensioni carattere, in pixel"
 
 #: modules/control/rc.c:918
 #, fuzzy
@@ -11559,39 +11542,32 @@ msgid "| @name logo-file STRING . . .the overlay file path/name"
 msgstr "| marq-marquee STRINGA  . .  sovrappone STRINGA sul video"
 
 #: modules/control/rc.c:919
-#, fuzzy
 msgid "| @name logo-x X . . . . . . . . . . . .offset from left"
-msgstr "| logo-x X . . . . . . . . . . . .scostamento da sinistra"
+msgstr "| @name logo-x X . . . . . . . . . . . .scostamento da sinistra"
 
 #: modules/control/rc.c:920
-#, fuzzy
 msgid "| @name logo-y Y . . . . . . . . . . . . offset from top"
-msgstr "| logo-y Y . . . . . . . . . . . . scostamento dall'alto"
+msgstr "| @name logo-y Y . . . . . . . . . . . . scostamento dall'alto"
 
 #: modules/control/rc.c:921
-#, fuzzy
 msgid "| @name logo-position #. . . . . . . . relative position"
-msgstr "| logo-position #. . . . . . . . posizione relativa"
+msgstr "| @name logo-position #. . . . . . . . posizione relativa"
 
 #: modules/control/rc.c:922
-#, fuzzy
 msgid "| @name logo-transparency #. . . . . . . . .transparency"
-msgstr "| logo-transparency #. . . . . . . . .trasparenza"
+msgstr "| @name logo-transparency #. . . . . . . . .trasparenza"
 
 #: modules/control/rc.c:924
-#, fuzzy
 msgid "| @name mosaic-alpha # . . . . . . . . . . . . . . alpha"
-msgstr "| mosaic-alpha # . . . . . . . . . . . . . . alpha"
+msgstr "| @name mosaic-alpha # . . . . . . . . . . . . . . alpha"
 
 #: modules/control/rc.c:925
-#, fuzzy
 msgid "| @name mosaic-height #. . . . . . . . . . . . . .height"
-msgstr "| mosaic-height #. . . . . . . . . . . . . .altezza"
+msgstr "| @name mosaic-height #. . . . . . . . . . . . . .altezza"
 
 #: modules/control/rc.c:926
-#, fuzzy
 msgid "| @name mosaic-width # . . . . . . . . . . . . . . width"
-msgstr "| mosaic-width # . . . . . . . . . . . . . . larghezza"
+msgstr "| @name mosaic-width # . . . . . . . . . . . . . . larghezza"
 
 #: modules/control/rc.c:927
 #, fuzzy
@@ -11609,34 +11585,28 @@ msgid "| @name mosaic-offsets x,y(,x,y)*. . . . list of offsets"
 msgstr "| pause  . . . . . . . . . . . . . . . . . . . . . . . . .  pausa"
 
 #: modules/control/rc.c:930
-#, fuzzy
 msgid "| @name mosaic-align 0..2,4..6,8..10. . .mosaic alignment"
-msgstr "| mosaic-align 0..2,4..6,8..10. . .allineamento mosaico"
+msgstr "| @name mosaic-align 0..2,4..6,8..10. . .allineamento mosaico"
 
 #: modules/control/rc.c:931
-#, fuzzy
 msgid "| @name mosaic-vborder # . . . . . . . . vertical border"
-msgstr "| mosaic-vborder # . . . . . . . . bordo verticale"
+msgstr "| @name mosaic-vborder # . . . . . . . . bordo verticale"
 
 #: modules/control/rc.c:932
-#, fuzzy
 msgid "| @name mosaic-hborder # . . . . . . . horizontal border"
-msgstr "| mosaic-hborder # . . . . . . . bordo orizzontale"
+msgstr "| @name mosaic-hborder # . . . . . . . bordo orizzontale"
 
 #: modules/control/rc.c:933
-#, fuzzy
 msgid "| @name mosaic-position {0=auto,1=fixed} . . . .position"
-msgstr "| mosaic-position {0=auto,1=fissa} . . . .posizione"
+msgstr "| @name mosaic-position {0=auto,1=fissa} . . . .posizione"
 
 #: modules/control/rc.c:934
-#, fuzzy
 msgid "| @name mosaic-rows #. . . . . . . . . . .number of rows"
-msgstr "| mosaic-rows #. . . . . . . . . . .numero di righe"
+msgstr "| @name mosaic-rows #. . . . . . . . . . .numero di righe"
 
 #: modules/control/rc.c:935
-#, fuzzy
 msgid "| @name mosaic-cols #. . . . . . . . . . .number of cols"
-msgstr "| mosaic-cols #. . . . . . . . . . .numero di colonne"
+msgstr "| @name mosaic-cols #. . . . . . . . . . .numero di colonne"
 
 #: modules/control/rc.c:936
 #, fuzzy
@@ -11644,9 +11614,8 @@ msgid "| @name mosaic-order id(,id)* . . . . order of pictures "
 msgstr "| pause  . . . . . . . . . . . . . . . . . . . . . . . . .  pausa"
 
 #: modules/control/rc.c:937
-#, fuzzy
 msgid "| @name mosaic-keep-aspect-ratio {0,1} . . .aspect ratio"
-msgstr "| mosaic-keep-aspect-ratio {0,1} . . .proporzioni"
+msgstr "| @name mosaic-keep-aspect-ratio {0,1} . . .proporzioni"
 
 #: modules/control/rc.c:940
 msgid "| help . . . . . . . . . . . . . . . this help message"
@@ -13057,9 +13026,8 @@ msgid "X coordinate"
 msgstr "Coordinata X"
 
 #: modules/gui/fbosd.c:124
-#, fuzzy
 msgid "X coordinate of the rendered image"
-msgstr "Coordinata X del sottotitolo restituito"
+msgstr "Coordinata X dell'immagine resa"
 
 #: modules/gui/fbosd.c:126 modules/video_filter/erase.c:60
 #: modules/video_filter/logo.c:84 modules/video_filter/osdmenu.c:54
@@ -13067,9 +13035,8 @@ msgid "Y coordinate"
 msgstr "Coordinata Y"
 
 #: modules/gui/fbosd.c:127
-#, fuzzy
 msgid "Y coordinate of the rendered image"
-msgstr "Coordinata Y del sottotitolo restituito"
+msgstr "Coordinata Y dell'immagine resa"
 
 #: modules/gui/fbosd.c:131
 #, fuzzy
@@ -13129,9 +13096,8 @@ msgid ""
 msgstr ""
 
 #: modules/gui/fbosd.c:154
-#, fuzzy
 msgid "Render text or image"
-msgstr "Clona l'immagine"
+msgstr "Resa testo o immagine"
 
 #: modules/gui/fbosd.c:155
 msgid "Render the image or text in current overlay buffer."
@@ -13313,12 +13279,12 @@ msgstr "Aggiungi"
 #: modules/gui/qt4/components/preferences_widgets.cpp:1133
 #: modules/gui/qt4/dialogs/bookmarks.cpp:48 modules/gui/qt4/ui/vlm.ui:202
 msgid "Clear"
-msgstr "Elimina"
+msgstr "Cancella"
 
 #: modules/gui/macosx/bookmarks.m:91 modules/gui/qt4/dialogs/bookmarks.cpp:51
 #: modules/video_filter/extract.c:76
 msgid "Extract"
-msgstr "Estrarre"
+msgstr "Estrazione"
 
 #: modules/gui/macosx/bookmarks.m:98 modules/gui/macosx/bookmarks.m:104
 #: modules/gui/pda/pda.c:278 modules/gui/qt4/dialogs/bookmarks.cpp:68
@@ -13974,9 +13940,8 @@ msgid ""
 msgstr ""
 
 #: modules/gui/macosx/macosx.m:86
-#, fuzzy
 msgid "Keep current Equalizer settings"
-msgstr "Impostazioni generali video"
+msgstr "Mantieni le impostazione di equalizzazione attuali"
 
 #: modules/gui/macosx/macosx.m:87
 msgid ""
@@ -16296,9 +16261,8 @@ msgid "Force update of this dialog's values"
 msgstr "Forza l'aggiornamento dei valori delle finestre"
 
 #: modules/gui/qt4/components/info_panels.cpp:129
-#, fuzzy
 msgid "Comments"
-msgstr "Commento"
+msgstr "Commenti"
 
 #: modules/gui/qt4/components/info_panels.cpp:334
 msgid "Extra metadata and other information are shown in this panel.\n"
@@ -16326,6 +16290,8 @@ msgid ""
 "Play\n"
 "If the playlist is empty, open a media"
 msgstr ""
+"Riproduci\n"
+"Se la playlist è vuota, apri un file multimediale"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:277
 msgid "Current visualization"
@@ -17342,6 +17308,8 @@ msgid ""
 "Show advanced preferences and not simple preferences when opening the "
 "preferences dialog."
 msgstr ""
+"Mostra preferenze avanzate e non quelle semplici quando si apre la finestra "
+"di dialogo delle preferenze."
 
 #: modules/gui/qt4/qt4.cpp:76 modules/gui/qt4/ui/sprefs_interface.ui:125
 #: modules/gui/skins2/src/skin_main.cpp:441
@@ -17353,6 +17321,8 @@ msgid ""
 "Show an icon in the systray allowing you to control VLC media player for "
 "basic actions."
 msgstr ""
+"Mostra un'icona nel systray consentendo di controllare le azioni di base del "
+"lettore multimediale VLC."
 
 #: modules/gui/qt4/qt4.cpp:81
 msgid "Start VLC with only a systray icon"
@@ -17369,6 +17339,7 @@ msgstr "Mostra il nome dell'elemento in riproduzione nel titolo della finestra"
 #: modules/gui/qt4/qt4.cpp:86
 msgid "Show the name of the song or video in the controler window title."
 msgstr ""
+"Mostra il nome del brano o del video nel titolo della finestra dei controlli."
 
 #: modules/gui/qt4/qt4.cpp:89
 msgid "Path to use in openfile dialog"
@@ -17376,7 +17347,7 @@ msgstr "Percorso da utilizzare nella finestra di apertura file"
 
 #: modules/gui/qt4/qt4.cpp:91
 msgid "Show notification popup on track change"
-msgstr ""
+msgstr "Mostra una notifica a comparsa al cambio di traccia"
 
 #: modules/gui/qt4/qt4.cpp:93
 msgid ""
@@ -17806,8 +17777,7 @@ msgstr "Attiva le notifiche degli aggiornamenti"
 msgid ""
 "This is VLC's skinnable interface. You can download skins at &lt;a href="
 msgstr ""
-"Questa è l'interfaccia personalizzabile di VLC. Puoi scaricare i temi da &lt;"
-"a href="
+"Questa è l'interfaccia personalizzabile di VLC. Puoi scaricare i temi da "
 
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:50
 msgid "Subtitles Language"
@@ -17988,7 +17958,7 @@ msgstr "Effetto acqua"
 #: modules/gui/qt4/ui/video_effects.ui:612 modules/meta_engine/id3genres.h:67
 #: modules/video_filter/noise.c:54
 msgid "Noise"
-msgstr "Noise"
+msgstr "Rumore"
 
 #: modules/gui/qt4/ui/video_effects.ui:619
 msgid "Motion detect"
@@ -18005,7 +17975,7 @@ msgstr "Fattore"
 
 #: modules/gui/qt4/ui/video_effects.ui:696
 msgid "Cartoon"
-msgstr "Cartone"
+msgstr "Cartone animato"
 
 #: modules/gui/qt4/ui/video_effects.ui:718
 #, fuzzy
@@ -18076,9 +18046,8 @@ msgid "VLM configurator"
 msgstr "Configuratore VLM"
 
 #: modules/gui/qt4/ui/vlm.ui:34
-#, fuzzy
 msgid "Media Manager Edition"
-msgstr "Metainformazioni"
+msgstr "Edizione gestore multimediale"
 
 #: modules/gui/qt4/ui/vlm.ui:57
 msgid "Name:"
@@ -18114,7 +18083,7 @@ msgstr "Ripeti"
 
 #: modules/gui/qt4/ui/vlm.ui:235
 msgid "Media Manager List"
-msgstr ""
+msgstr "Elenco gestore multimediale"
 
 #: modules/gui/skins2/src/dialogs.cpp:222
 msgid "Open a skin file"
@@ -19791,7 +19760,7 @@ msgstr "Elenchi TV Shoutcast"
 
 #: modules/services_discovery/shout.c:131
 msgid "Freebox TV listing (French ISP free.fr services)"
-msgstr ""
+msgstr "Programmazione Freebox TV (servizi dell'ISP francese free.fr)"
 
 #: modules/services_discovery/upnp_cc.cpp:62
 msgid "Universal Plug'n'Play discovery"
@@ -22216,7 +22185,7 @@ msgstr ""
 
 #: modules/video_filter/panoramix.c:128
 msgid "Attenuation, middle (in %)"
-msgstr ""
+msgstr "Attenuazione, centro (in %)"
 
 #: modules/video_filter/panoramix.c:129
 msgid "Select in percent the Lagrange coeff of the middle of blended zone"
@@ -22369,7 +22338,7 @@ msgstr "Opzioni Xinerama"
 
 #: modules/video_filter/panoramix.c:193
 msgid "Uncheck if you have not used xinerama"
-msgstr ""
+msgstr "Deseleziona se non hai utilizzato xinerama"
 
 #: modules/video_filter/postproc.c:59
 msgid "Post processing quality"
@@ -22638,7 +22607,7 @@ msgstr "Imposta il contrasto dell'immagine, tra 0 e 2. Predefinito a 1."
 
 #: modules/video_filter/sharpen.c:66
 msgid "Augment contrast between contours."
-msgstr ""
+msgstr "Aumenta contrasto tra i contorni"
 
 #: modules/video_filter/sharpen.c:67
 msgid "Sharpen video filter"
@@ -22842,27 +22811,24 @@ msgid "Image format"
 msgstr "Formato immagine"
 
 #: modules/video_output/image.c:54
-#, fuzzy
 msgid "Format of the output images (png or jpg)."
-msgstr "Imposta la larghezza dell'immagine acquisita dallo schermo."
+msgstr "Formato dell'immagine risultante (png o jpg)."
 
 #: modules/video_output/image.c:57
-#, fuzzy
 msgid ""
 "You can enforce the image width. By default (-1) VLC will adapt to the video "
 "characteristics."
 msgstr ""
-"È possibile forzare qui la larghezza del video. Per impostazione predefinita "
-"(-1) VLC si adatterà alle caratteristiche del video."
+"È possibile forzare qui la larghezza dell'immagine. Per impostazione "
+"predefinita (-1) VLC si adatterà alle caratteristiche del video."
 
 #: modules/video_output/image.c:62
-#, fuzzy
 msgid ""
 "You can enforce the image height. By default (-1) VLC will adapt to the "
 "video characteristics."
 msgstr ""
-"È possibile forzare qui l'altezza video. Per impostazione predefinita (-1) "
-"VLC si adatterà alle caratteristiche del video."
+"È possibile forzare qui l'altezza dell'immagine. Per impostazione "
+"predefinita (-1) VLC si adatterà alle caratteristiche del video."
 
 #: modules/video_output/image.c:66
 msgid "Recording ratio"
@@ -23189,9 +23155,8 @@ msgid "Video memory buffer height."
 msgstr "Altezza buffer di memoria video."
 
 #: modules/video_output/vmem.c:56
-#, fuzzy
 msgid "Pitch"
-msgstr "Percorso"
+msgstr "Intonazione"
 
 #: modules/video_output/vmem.c:57
 msgid "Video memory buffer pitch in bytes."
@@ -23510,7 +23475,7 @@ msgstr "Definisce se disegnare la base delle bande."
 
 #: modules/visualization/visual/visual.c:84
 msgid "Base pixel radius"
-msgstr ""
+msgstr "Raggio pixel base"
 
 #: modules/visualization/visual/visual.c:86
 msgid "Defines radius size in pixels, of base of bands(beginning)."
@@ -23541,9 +23506,8 @@ msgid "Additions or subtractions of pixels on the peak width."
 msgstr ""
 
 #: modules/visualization/visual/visual.c:100
-#, fuzzy
 msgid "V-plane color"
-msgstr "Inverti colori"
+msgstr "Colore piano V"
 
 #: modules/visualization/visual/visual.c:102
 msgid "YUV-Color cube shifting across the V-plane ( 0 - 127 )."
@@ -23592,10 +23556,6 @@ msgstr "Analizzatore di spettro"
 
 #~ msgid "MusicBrainz meta data"
 #~ msgstr "Metadati MusicBrainz"
-
-#, fuzzy
-#~ msgid "Seam Carving video filter"
-#~ msgstr "Filtro ritaglia video"
 
 #, fuzzy
 #~ msgid "Seam Carving"
