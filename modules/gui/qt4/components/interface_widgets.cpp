@@ -829,7 +829,7 @@ void ControlsWidget::toggleTeletextTransparency()
     }
     else
     {
-        telexTransparent->setIcon( QIcon( ":/tvtelx-transparent" ) );
+        telexTransparent->setIcon( QIcon( ":/tvtelx-trans" ) );
         telexTransparent->setToolTip( qtr( "Transparent" ) );
         b_telexTransparent = true;
     }
