@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: l 10n\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2006-11-27 21:50+0700\n"
 "Last-Translator: devleop5 <devleop5@datawiz.co.th>\n"
 "Language-Team: Thai <thailang@buraphalinux.org>\n"
@@ -7525,7 +7525,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr "สิ่งนำเข้า Video4Linux"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 #, fuzzy
 msgid "Reset controls to default"
 msgstr "ส่วนติดต่อ Remote control"

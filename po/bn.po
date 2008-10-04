@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.8.2-svn\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2005-02-01 14:23+0000\n"
 "Last-Translator: Simos Xenitellis <simos74@gmx.net>\n"
 "Language-Team: Bengali\n"
@@ -7393,7 +7393,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 msgid "Reset controls to default"
 msgstr ""
 

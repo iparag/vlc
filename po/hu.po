@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Videolan\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2008-09-23 01:11+0200\n"
 "Last-Translator: Gabor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <gnome@fsf.hu>\n"
@@ -8084,7 +8084,7 @@ msgstr "v4l2 meghajtó vezérlői, ha a v4l2 meghajtó támogatja."
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux2 tömörített A/V"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 msgid "Reset controls to default"
 msgstr "Vezérlők visszaállítása az alapértelmezésre"
 

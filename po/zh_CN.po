@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.8.4-test1-svn\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2008-09-26 00:33+0700\n"
 "Last-Translator: Wei Mingzhi <whistler@openoffice.org>\n"
 "Language-Team: Simplified Chinese\n"
@@ -7531,7 +7531,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux2 压缩 A/V"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 #, fuzzy
 msgid "Reset controls to default"
 msgstr "摇控界面"

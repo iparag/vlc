@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ka\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2008-08-23 18:31+0200\n"
 "Last-Translator: Alexander Didebulidze <didebuli@in.tum.de>\n"
 "Language-Team: Georgian <geognome@googlegroups.com>\n"
@@ -7632,7 +7632,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux შესავალი"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 #, fuzzy
 msgid "Reset controls to default"
 msgstr "დაშორებული კონტროლის ინტერფეისი"

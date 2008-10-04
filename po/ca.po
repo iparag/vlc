@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.9.3-svn\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2008-09-24 10:44+0100\n"
 "Last-Translator: Xenia Alba <xenia.alba@gmail.com>\n"
 "Language-Team: Catalan <xenia_alba@hotmail.com>\n"
@@ -7967,7 +7967,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux2 Comprimit A/V"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 msgid "Reset controls to default"
 msgstr "Reinicia els controls als valors per defecte"
 

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.8.6-svn20061012\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2007-11-22 18:10+0900\n"
 "Last-Translator: Namhyung Kim <namhyung@gmail.com>\n"
 "Language-Team: Korean Linux User Group <ko@li.org>\n"
@@ -7561,7 +7561,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux2 입력"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 #, fuzzy
 msgid "Reset controls to default"
 msgstr "원격 제어 인터페이스"

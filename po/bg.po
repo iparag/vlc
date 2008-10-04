@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.9.0-test2\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2008-09-26 16:45+0200\n"
 "Last-Translator: Ivo Ivanov (ivo88) <bestran@mail.bg>\n"
 "Language-Team: Bulgarian <bestran@mail.bg>\n"
@@ -7979,7 +7979,7 @@ msgstr "v4l2 управление на драйвера, ако се поддъ�
 msgid "Video4Linux2 Compressed A/V"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 msgid "Reset controls to default"
 msgstr "Нулиране на регулаторите към настройките по подразбиране"
 

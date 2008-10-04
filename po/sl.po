@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.9.0\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2008-07-31 16:11+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
@@ -7965,7 +7965,7 @@ msgstr "Možnosti v4l2, če jih podpira vaš v4l2 gonilnik."
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux2 skrčena dovoda zvoka in slike"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 msgid "Reset controls to default"
 msgstr "Počisti tipkovne bližnjice na privzete vrednosti"
 

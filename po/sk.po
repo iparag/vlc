@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slovak translation for VLC Media Player\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2008-09-24 13:53+0100\n"
 "Last-Translator: Marián Hikaník <podnety-at-mojepreklady.net>\n"
 "Language-Team: Marián Hikaník, translation controlled by: Pavel Kříž\n"
@@ -8151,7 +8151,7 @@ msgstr "Ovládacie prvky v4l2, ak sú podporované ovládačom v4l2."
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux2 komprimované A/V"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 msgid "Reset controls to default"
 msgstr "Obnoviť predvolené ovládacie prvky"
 

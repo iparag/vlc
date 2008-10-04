@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2005-11-09 16:45+0000\n"
 "Last-Translator: Yaniv Abir <yanivabir@gmail.com>\n"
 "Language-Team: Hebrew <he@li.org>\n"
@@ -7641,7 +7641,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr "קלט Video4Linux"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 #, fuzzy
 msgid "Reset controls to default"
 msgstr "ממשקי שליטה"

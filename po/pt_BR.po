@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: pt_BR\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2008-07-30 19:55-0300\n"
 "Last-Translator: Sidney Doria <sidney@dsc.ufcg.edu.br>\n"
 "Language-Team: Brazilian Portuguese\n"
@@ -7823,7 +7823,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr "A/V comprimido por Video4Linux2"
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 msgid "Reset controls to default"
 msgstr "Reestabelecer padrão aos controles"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-02 09:58-0700\n"
+"POT-Creation-Date: 2008-10-04 11:17-0700\n"
 "PO-Revision-Date: 2008-08-05 17:36+0530\n"
 "Last-Translator: Amanpreet Singh Alam <aalam@users.sf.net>\n"
 "Language-Team: Punjabi <pa@li.org>\n"
@@ -7349,7 +7349,7 @@ msgstr ""
 msgid "Video4Linux2 Compressed A/V"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:3145
+#: modules/access/v4l2/v4l2.c:3147
 msgid "Reset controls to default"
 msgstr "ਕੰਟਰੋਲ ਡਿਫਾਲਟ ਲਈ ਰੀ-ਸੈੱਟ ਕਰੋ"
 
