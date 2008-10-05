@@ -770,7 +770,8 @@ char ** __module_GetModulesNamesForCapability( vlc_object_t *p_this,
     if( !psz_ret || ( pppsz_longname && *pppsz_longname == NULL ) )
     {
         free( psz_ret );
-        free( *pppsz_longname );
+        if( pppsz_longname )
+            free( *pppsz_longname );
         *pppsz_longname = NULL;
         vlc_list_release( p_list );
         return NULL;
