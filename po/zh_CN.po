@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.8.4-test1-svn\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-04 11:17-0700\n"
+"POT-Creation-Date: 2008-10-06 20:31+0200\n"
 "PO-Revision-Date: 2008-09-26 00:33+0700\n"
 "Last-Translator: Wei Mingzhi <whistler@openoffice.org>\n"
 "Language-Team: Simplified Chinese\n"
@@ -835,7 +835,7 @@ msgid "string"
 msgstr "字符串型"
 
 #: src/control/media_list.c:226 src/playlist/engine.c:129
-#: src/playlist/loadsave.c:144
+#: src/playlist/loadsave.c:148
 msgid "Media Library"
 msgstr "媒体库"
 
@@ -1092,7 +1092,7 @@ msgstr "设置"
 msgid "URL"
 msgstr "网址"
 
-#: src/input/meta.c:64 modules/misc/notify/notify.c:287
+#: src/input/meta.c:64 modules/misc/notify/notify.c:288
 msgid "Now Playing"
 msgstr "正在播放"
 
@@ -3421,7 +3421,7 @@ msgstr "选择热键以慢速回放"
 #: modules/gui/macosx/intf.m:620 modules/gui/macosx/intf.m:628
 #: modules/gui/macosx/wizard.m:309 modules/gui/macosx/wizard.m:321
 #: modules/gui/macosx/wizard.m:1621 modules/gui/qt4/menus.cpp:670
-#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:301
+#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:302
 msgid "Next"
 msgstr "下一项"
 
@@ -3433,7 +3433,7 @@ msgstr "选择热键以播放列表中的下一个项目"
 #: modules/gui/macosx/about.m:191 modules/gui/macosx/controls.m:888
 #: modules/gui/macosx/intf.m:493 modules/gui/macosx/intf.m:543
 #: modules/gui/macosx/intf.m:621 modules/gui/macosx/intf.m:627
-#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:299
+#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:300
 msgid "Previous"
 msgstr "上一项"
 

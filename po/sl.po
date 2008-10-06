@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.9.0\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-04 11:17-0700\n"
+"POT-Creation-Date: 2008-10-06 20:31+0200\n"
 "PO-Revision-Date: 2008-07-31 16:11+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
@@ -894,7 +894,7 @@ msgid "string"
 msgstr "niz"
 
 #: src/control/media_list.c:226 src/playlist/engine.c:129
-#: src/playlist/loadsave.c:144
+#: src/playlist/loadsave.c:148
 msgid "Media Library"
 msgstr "Zbirka medijev"
 
@@ -1156,7 +1156,7 @@ msgstr "Nastavitev"
 msgid "URL"
 msgstr "URL"
 
-#: src/input/meta.c:64 modules/misc/notify/notify.c:287
+#: src/input/meta.c:64 modules/misc/notify/notify.c:288
 msgid "Now Playing"
 msgstr "Predvaja se"
 
@@ -3694,7 +3694,7 @@ msgstr "Izbor hitre tipke za počasno predvajanje."
 #: modules/gui/macosx/intf.m:620 modules/gui/macosx/intf.m:628
 #: modules/gui/macosx/wizard.m:309 modules/gui/macosx/wizard.m:321
 #: modules/gui/macosx/wizard.m:1621 modules/gui/qt4/menus.cpp:670
-#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:301
+#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:302
 msgid "Next"
 msgstr "Naslednji"
 
@@ -3706,7 +3706,7 @@ msgstr "Izbor hitre tipke za skok na naslednji predmet na seznamu predvajanja."
 #: modules/gui/macosx/about.m:191 modules/gui/macosx/controls.m:888
 #: modules/gui/macosx/intf.m:493 modules/gui/macosx/intf.m:543
 #: modules/gui/macosx/intf.m:621 modules/gui/macosx/intf.m:627
-#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:299
+#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:300
 msgid "Previous"
 msgstr "Predhodni"
 

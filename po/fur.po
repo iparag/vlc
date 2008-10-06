@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-04 11:17-0700\n"
+"POT-Creation-Date: 2008-10-06 20:31+0200\n"
 "PO-Revision-Date: 2006-10-22 20:42+0000\n"
 "Last-Translator: A. Decorte <klenje@adriacom.it>\n"
 "Language-Team: Friulian <fur@li.org>\n"
@@ -845,7 +845,7 @@ msgid "string"
 msgstr ""
 
 #: src/control/media_list.c:226 src/playlist/engine.c:129
-#: src/playlist/loadsave.c:144
+#: src/playlist/loadsave.c:148
 msgid "Media Library"
 msgstr ""
 
@@ -1103,7 +1103,7 @@ msgstr ""
 msgid "URL"
 msgstr "URL"
 
-#: src/input/meta.c:64 modules/misc/notify/notify.c:287
+#: src/input/meta.c:64 modules/misc/notify/notify.c:288
 msgid "Now Playing"
 msgstr "Cumò in esecuzion"
 
@@ -3414,7 +3414,7 @@ msgstr ""
 #: modules/gui/macosx/intf.m:620 modules/gui/macosx/intf.m:628
 #: modules/gui/macosx/wizard.m:309 modules/gui/macosx/wizard.m:321
 #: modules/gui/macosx/wizard.m:1621 modules/gui/qt4/menus.cpp:670
-#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:301
+#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:302
 msgid "Next"
 msgstr "Sucessîf"
 
@@ -3426,7 +3426,7 @@ msgstr ""
 #: modules/gui/macosx/about.m:191 modules/gui/macosx/controls.m:888
 #: modules/gui/macosx/intf.m:493 modules/gui/macosx/intf.m:543
 #: modules/gui/macosx/intf.m:621 modules/gui/macosx/intf.m:627
-#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:299
+#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:300
 msgid "Previous"
 msgstr "Precedent"
 
