@@ -70,7 +70,7 @@ int playlist_Export( playlist_t * p_playlist, const char *psz_filename ,
 
     /* And call the module ! All work is done now */
     int i_ret;
-    p_module = module_need( p_playlist, "playlist export", psz_type, true);
+    p_module = module_Need( p_playlist, "playlist export", psz_type, true);
     if( !p_module )
     {
         msg_Warn( p_playlist, "exporting playlist failed" );
@@ -78,7 +78,7 @@ int playlist_Export( playlist_t * p_playlist, const char *psz_filename ,
     }
     else
     {
-        module_unneed( p_playlist , p_module );
+        module_Unneed( p_playlist , p_module );
         i_ret = VLC_SUCCESS;
     }
 
