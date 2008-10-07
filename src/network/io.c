@@ -74,8 +74,6 @@
 # define SOL_DCCP 269
 #endif
 
-#include "libvlc.h" /* vlc_object_waitpipe */
-
 extern int rootwrap_bind (int family, int socktype, int protocol,
                           const struct sockaddr *addr, size_t alen);
 
