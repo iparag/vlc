@@ -1426,6 +1426,7 @@ libmodplug: libmodplug-$(MODPLUG_VERSION).tar.gz
 	$(EXTRACT_GZ)
 #ifdef HAVE_WIN32
 	patch -p0 < Patches/libmodplug-win32.patch
+	(cd $@; autoreconf)
 #end
 
 .mod: libmodplug
