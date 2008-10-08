@@ -1849,12 +1849,10 @@ static int ParseRealText( demux_t *p_demux, subtitle_t *p_subtitle, int i_idx )
         int h1 = 0, m1 = 0, s1 = 0, f1 = 0;
         int h2 = 0, m2 = 0, s2 = 0, f2 = 0;
         const char *s = TextGetLine( txt );
+        free( psz_text );
 
         if( !s )
-        {
-            free( psz_text );
             return VLC_EGENERIC;
-        }
 
         psz_text = malloc( strlen( s ) + 1 );
         if( !psz_text )
@@ -1875,7 +1873,6 @@ static int ParseRealText( demux_t *p_demux, subtitle_t *p_subtitle, int i_idx )
                               psz_begin, psz_text ) != 2) )
                 /* Line is not recognized */
             {
-                free( psz_text );
                 continue;
             }
 
@@ -1892,12 +1889,6 @@ static int ParseRealText( demux_t *p_demux, subtitle_t *p_subtitle, int i_idx )
                 p_subtitle->i_stop = i_time;
             }
             break;
-        }
-        /* Line is not recognized */
-        else
-        {
-            free( psz_text );
-            continue;
         }
     }
 
