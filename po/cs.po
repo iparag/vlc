@@ -1,23 +1,25 @@
 # Czech tranlation of VLC.
-# Copyright (C) 2006 VideoLAN
+# Copyright (C) 2006,2008 VideoLAN
 # This file is distributed under the same license as the VLC media player package.
-# $Id  $
-# Miroslav Oujeský <oujesky@mail.muni.cz>, 2006.
 #
+# Miroslav Oujeský <oujesky@mail.muni.cz>, 2006.
+# Tomas Chvatal <tomas.chvatal@gmail.com>, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: cs\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-06 20:31+0200\n"
-"PO-Revision-Date: 2006-05-18 19:31+0100\n"
-"Last-Translator: Miroslav Oujeský <oujesky@mail.muni.cz>\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2008-10-10 18:23+0100\n"
+"PO-Revision-Date: 2008-09-10 18:38+0200\n"
+"Last-Translator: Tomas Chvatal <tomas.chvatal@gmail.com>\n"
+"Language-Team: Czech <kde-i18n-doc@lists.kde.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Basepath: C:\\Program Files\\poEdit\\vlc\\vlc-0.8.5\\\n"
 "X-Poedit-Language: Czech\n"
 "X-Poedit-Country: CZECH REPUBLIC\n"
+"X-Generator: Lokalize 0.2\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: include/vlc_common.h:893
 msgid ""
@@ -26,6 +28,10 @@ msgid ""
 "see the file named COPYING for details.\n"
 "Written by the VideoLAN team; see the AUTHORS file.\n"
 msgstr ""
+"Tento program je ABSOLUTNĚ BEZ ZÁRUKY.\n"
+"Můžete jej šířit a modifikovat podle ustanovení GNU General Public License;\n"
+"pro detaily prostudujte soubor COPYING.\n"
+"Napsáno teamem VideoLAN; viz soubor AUTHORS.\n"
 
 #: include/vlc_config_cat.h:32
 msgid "VLC preferences"
@@ -33,7 +39,7 @@ msgstr "Nastavení VLC"
 
 #: include/vlc_config_cat.h:34
 msgid "Select \"Advanced Options\" to see all options."
-msgstr ""
+msgstr "Pro zobrazení všech možností vyberte \"Pokročilá nastavení\"."
 
 #: include/vlc_config_cat.h:36 include/vlc_config_cat.h:127
 #: modules/gui/macosx/playlistinfo.m:76 modules/gui/wince/playlist.cpp:671
@@ -48,33 +54,28 @@ msgid "Interface"
 msgstr "Rozhraní"
 
 #: include/vlc_config_cat.h:40
-#, fuzzy
 msgid "Settings for VLC's interfaces"
-msgstr "Nastavení barev pro barevné terminály."
+msgstr "Nastavení pro rozhraní VLC"
 
 #: include/vlc_config_cat.h:42
-#, fuzzy
 msgid "General interface settings"
-msgstr "Obecná nastavení sdílení Windows"
+msgstr "Obecná nastavení rozhraní"
 
 #: include/vlc_config_cat.h:44
-#, fuzzy
 msgid "Main interfaces"
-msgstr "IDE rozhraní"
+msgstr "Hlavní rozhraní"
 
 #: include/vlc_config_cat.h:45
-#, fuzzy
 msgid "Settings for the main interface"
-msgstr "  -M, --monitor     monitoruje aktivitu na rozhraní\n"
+msgstr "Nastavení pro hlavní rozhraní"
 
 #: include/vlc_config_cat.h:47 src/libvlc-module.c:160
-#, fuzzy
 msgid "Control interfaces"
-msgstr "IDE rozhraní"
+msgstr "Ovládací rozhraní"
 
 #: include/vlc_config_cat.h:48
 msgid "Settings for VLC's control interfaces"
-msgstr ""
+msgstr "Nastavení VLC ovladacích rozhraní"
 
 #: include/vlc_config_cat.h:50 include/vlc_config_cat.h:51
 #: modules/gui/macosx/simple_prefs.m:193
@@ -97,18 +98,18 @@ msgid "Audio settings"
 msgstr "Nastavení zvuku"
 
 #: include/vlc_config_cat.h:57 include/vlc_config_cat.h:58
-#, fuzzy
 msgid "General audio settings"
-msgstr "Nastavení zvukových kodeků"
+msgstr "Obecná nastavení zvuku"
 
 #: include/vlc_config_cat.h:60 include/vlc_config_cat.h:85
-#: src/video_output/video_output.c:486
+#: src/video_output/video_output.c:484
 msgid "Filters"
 msgstr "Filtry"
 
 #: include/vlc_config_cat.h:62
 msgid "Audio filters are used to postprocess the audio stream."
 msgstr ""
+"Zvukové filtry jsou použiti k následnému zpracování (postprocessing) zvuku."
 
 #: include/vlc_config_cat.h:64 src/audio_output/input.c:96
 #: modules/gui/macosx/intf.m:568 modules/gui/macosx/intf.m:569
@@ -116,14 +117,12 @@ msgid "Visualizations"
 msgstr "Vizualizace"
 
 #: include/vlc_config_cat.h:66 src/audio_output/input.c:170
-#, fuzzy
 msgid "Audio visualizations"
-msgstr "Informace o zvuku"
+msgstr "Audio vizualizace"
 
 #: include/vlc_config_cat.h:68 include/vlc_config_cat.h:81
-#, fuzzy
 msgid "Output modules"
-msgstr "Podporované moduly:"
+msgstr "Výstupní moduly"
 
 #: include/vlc_config_cat.h:69
 msgid "These are general settings for audio output modules."
@@ -136,7 +135,7 @@ msgstr "Různé"
 
 #: include/vlc_config_cat.h:72
 msgid "Miscellaneous audio settings and modules."
-msgstr ""
+msgstr "Různá nastavení a moduly pro zvuk"
 
 #: include/vlc_config_cat.h:75 src/input/es_out.c:2091
 #: src/libvlc-module.c:1482 modules/gui/macosx/intf.m:571
@@ -154,9 +153,8 @@ msgid "Video settings"
 msgstr "Nastavení videa"
 
 #: include/vlc_config_cat.h:78 include/vlc_config_cat.h:79
-#, fuzzy
 msgid "General video settings"
-msgstr "Zobrazit nastavení videa"
+msgstr "Obecná  nastavení videa"
 
 #: include/vlc_config_cat.h:83
 msgid "Choose your preferred video output and configure it here."
@@ -165,6 +163,7 @@ msgstr "Vyberte a nastavte si zde váš preferovaný video výstup."
 #: include/vlc_config_cat.h:87
 msgid "Video filters are used to postprocess the video stream."
 msgstr ""
+"Video filtry jsou použiti k následnému zpracování (postprocessing) videa."
 
 #: include/vlc_config_cat.h:89
 msgid "Subtitles/OSD"
@@ -174,7 +173,7 @@ msgstr "Titulky/OSD"
 msgid ""
 "Miscellaneous settings related to On-Screen-Display, subtitles and \"overlay "
 "subpictures\"."
-msgstr ""
+msgstr "Různá nastavení vztahující se k OSD, titulkům a \"překrývání obrazu\"."
 
 #: include/vlc_config_cat.h:99
 msgid "Input / Codecs"
@@ -185,22 +184,25 @@ msgid ""
 "These are the settings for the input, demultiplexing and decoding parts of "
 "VLC. Encoder settings can also be found here."
 msgstr ""
+"Toto je nastavení pro vstup, demultiplex a dekódovací části VLC. Nastavení "
+"enkódování lze též nalézt zde."
 
 #: include/vlc_config_cat.h:103
-#, fuzzy
 msgid "Access modules"
-msgstr "Podporované moduly:"
+msgstr "Přístupové moduly"
 
 #: include/vlc_config_cat.h:105
 msgid ""
 "Settings related to the various access methods used by VLC. Common settings "
 "you may want to alter are HTTP proxy or caching settings."
 msgstr ""
+"Nastavení vztahující se k různým přístupovým metodám užívaným VLC. Obecné "
+"nastavení, které pravděpodobně chcete změnit, je HTTP proxy a nastavení "
+"vyrovnávací paměti."
 
 #: include/vlc_config_cat.h:109
-#, fuzzy
 msgid "Access filters"
-msgstr "Použít _filtry"
+msgstr "Přístupové filtry"
 
 #: include/vlc_config_cat.h:111
 msgid ""
@@ -208,6 +210,9 @@ msgid ""
 "input side of VLC. You should not touch anything here unless you know what "
 "you are doing."
 msgstr ""
+"Přístupové filtry jsou speciální moduly, které umožnují pokročilé operace na "
+"vstupní straně VLC. Neměli byste zde nic nastavovat pokud opravdu netušíte "
+"co děláte."
 
 #: include/vlc_config_cat.h:115
 msgid "Demuxers"
@@ -223,7 +228,7 @@ msgstr "Video kodeky"
 
 #: include/vlc_config_cat.h:119
 msgid "Settings for the video-only decoders and encoders."
-msgstr ""
+msgstr "Nastavení pro video dekodéry a enkodéry."
 
 #: include/vlc_config_cat.h:121
 msgid "Audio codecs"
@@ -231,7 +236,7 @@ msgstr "Audio kodeky"
 
 #: include/vlc_config_cat.h:122
 msgid "Settings for the audio-only decoders and encoders."
-msgstr ""
+msgstr "Nastavení pro zvukové  dekodéry a enkodéry."
 
 #: include/vlc_config_cat.h:124
 msgid "Other codecs"
@@ -239,16 +244,15 @@ msgstr "Ostatní kodeky"
 
 #: include/vlc_config_cat.h:125
 msgid "Settings for audio+video and miscellaneous decoders and encoders."
-msgstr ""
+msgstr "Nastavení pro audio, video a další dekodéry a enkodéry."
 
 #: include/vlc_config_cat.h:128
 msgid "General input settings. Use with care."
-msgstr ""
+msgstr "Obecná nastavení vstupů (používejte opatrně!)."
 
 #: include/vlc_config_cat.h:131 src/libvlc-module.c:1761
-#, fuzzy
 msgid "Stream output"
-msgstr "výstupní soubor"
+msgstr "Výstup streamu"
 
 #: include/vlc_config_cat.h:133
 msgid ""
@@ -262,9 +266,8 @@ msgid ""
 msgstr ""
 
 #: include/vlc_config_cat.h:141
-#, fuzzy
 msgid "General stream output settings"
-msgstr "Obecná nastavení sdílení Windows"
+msgstr "Obecná nastavení výstupu streamu"
 
 #: include/vlc_config_cat.h:143
 msgid "Muxers"
@@ -277,11 +280,15 @@ msgid ""
 "always force a specific muxer. You should probably not do that.\n"
 "You can also set default parameters for each muxer."
 msgstr ""
+"Spojovače vytvoří uzavřené formáty, které jsou určeny k spojování všech "
+"základních streamů (zvuk, video,...) dohromady. Toto nastavení vám umožní "
+"vybrat specifický spojovač. Toto byste asi neměli dělat.\n"
+"Také můžete nastavit výchozí parametry pro jednotlivé spojovače."
 
 #: include/vlc_config_cat.h:151
 #, fuzzy
 msgid "Access output"
-msgstr "výstupní soubor"
+msgstr "Výstupní práva"
 
 #: include/vlc_config_cat.h:153
 msgid ""
@@ -302,29 +309,36 @@ msgid ""
 "not do that.\n"
 "You can also set default parameters for each packetizer."
 msgstr ""
+"Paketizéry jsou určeny k \"předzpracování\" základních streamů před "
+"sloučením. Toto nastavení vám umožní vždy vynucovat paketizaci, což byste "
+"opravdu dělat neměli.\n"
+"Také můžete nastavit výchozí hodnoty pro jednotlivé paketizéry."
 
 #: include/vlc_config_cat.h:166
 #, fuzzy
 msgid "Sout stream"
-msgstr "Inicializuji proud"
+msgstr "Inicializuji stream"
 
 #: include/vlc_config_cat.h:167
+#, fuzzy
 msgid ""
 "Sout stream modules allow to build a sout processing chain. Please refer to "
 "the Streaming Howto for more information. You can configure default options "
 "for each sout stream module here."
-msgstr ""
+msgstr "Inicializuji stream"
 
 #: include/vlc_config_cat.h:172 modules/services_discovery/sap.c:127
 #: modules/services_discovery/sap.c:323
 msgid "SAP"
-msgstr ""
+msgstr "SAP"
 
 #: include/vlc_config_cat.h:174
 msgid ""
 "SAP is a way to publically announce streams that are being sent using "
 "multicast UDP or RTP."
 msgstr ""
+"SAP je metoda jak veřejně oznamovat streamy které jsou odesílány všesměrově "
+"pomocí UDP či RTP."
 
 #: include/vlc_config_cat.h:177
 msgid "VOD"
@@ -332,7 +346,7 @@ msgstr "Video On Demand"
 
 #: include/vlc_config_cat.h:178
 msgid "VLC's implementation of Video On Demand"
-msgstr ""
+msgstr "VLC implementace Video Na Požádání"
 
 #: include/vlc_config_cat.h:182 src/libvlc-module.c:1901
 #: src/playlist/engine.c:113 modules/demux/playlist/playlist.c:66
@@ -351,23 +365,26 @@ msgid ""
 "Settings related to playlist behaviour (e.g. playback mode) and to modules "
 "that automatically add items to the playlist (\"service discovery\" modules)."
 msgstr ""
+"Nastavení vztahující se k chování playlistu (např. přehrávací mód) a k "
+"modulům, které automaticky přidávají položky do seznamu (modul "
+"\"Prohledávání služeb\")."
 
 #: include/vlc_config_cat.h:187
-#, fuzzy
 msgid "General playlist behaviour"
-msgstr "Podle chování Nautilu"
+msgstr "Obecné chování playlistu"
 
 #: include/vlc_config_cat.h:188 modules/gui/macosx/playlist.m:451
 #: modules/gui/macosx/playlist.m:452
-#, fuzzy
 msgid "Services discovery"
-msgstr "Služby online"
+msgstr "Prohledávání služeb"
 
 #: include/vlc_config_cat.h:189
 msgid ""
 "Services discovery modules are facilities that automatically add items to "
 "playlist."
 msgstr ""
+"Moduly \"Prohledávání služeb\" jsou určeny k automatickému přidávání položek "
+"do playlistu."
 
 #: include/vlc_config_cat.h:193 src/libvlc-module.c:1720
 msgid "Advanced"
@@ -375,18 +392,19 @@ msgstr "Rozšířené"
 
 #: include/vlc_config_cat.h:194
 msgid "Advanced settings. Use with care."
-msgstr ""
+msgstr "Pokročilá nastavení (používejte opatrně!)."
 
 #: include/vlc_config_cat.h:196
-#, fuzzy
 msgid "CPU features"
-msgstr "Funkce Groupwise"
+msgstr "Vlastnosti CPU"
 
 #: include/vlc_config_cat.h:197
 msgid ""
 "You can choose to disable some CPU accelerations here. You should probably "
 "not change these settings."
 msgstr ""
+"Zde můžete nastavit některé volby pro CPU. Pravděpodobně je přenastavovat "
+"vůbec nechcete i když si myslíte, že chcete."
 
 #: include/vlc_config_cat.h:200
 msgid "Advanced settings"
@@ -404,7 +422,7 @@ msgstr "Síť"
 
 #: include/vlc_config_cat.h:204
 msgid "These modules provide network functions to all other parts of VLC."
-msgstr ""
+msgstr "Tyto moduly poskytují síťové funkce všem částem VLC."
 
 #: include/vlc_config_cat.h:209
 #, fuzzy
@@ -416,38 +434,36 @@ msgid "These settings affect chroma transformation modules."
 msgstr ""
 
 #: include/vlc_config_cat.h:212
-#, fuzzy
 msgid "Packetizer modules settings"
-msgstr "Zobrazit nastaveni hran"
+msgstr "Nastavení modulů paketizéru"
 
 #: include/vlc_config_cat.h:216
-#, fuzzy
 msgid "Encoders settings"
-msgstr "Nastavení sendmailu"
+msgstr "Nastavení Enkodéru"
 
 #: include/vlc_config_cat.h:218
 msgid "These are general settings for video/audio/subtitles encoding modules."
-msgstr ""
+msgstr "Toto je základní nastavení pro video/audio/titulky enkódující moduly."
 
 #: include/vlc_config_cat.h:221
-#, fuzzy
 msgid "Dialog providers settings"
-msgstr "Nemohu vytvořit dialogové okno s nastavením!"
+msgstr "Nastavení dialogů."
 
 #: include/vlc_config_cat.h:223
 msgid "Dialog providers can be configured here."
-msgstr ""
+msgstr "Poskytovatelé dialogů mohou být nastaveny právě zde."
 
 #: include/vlc_config_cat.h:225
-#, fuzzy
 msgid "Subtitle demuxer settings"
-msgstr "Zobrazit nastaveni hran"
+msgstr "Nastavení titulků a demuxeru"
 
 #: include/vlc_config_cat.h:227
 msgid ""
 "In this section you can force the behavior of the subtitle demuxer, for "
 "example by setting the subtitles type or file name."
 msgstr ""
+"V této sekci můžete vynutit chování demuxeru titulků. Např. nastavení typu "
+"titulků, či názvu souboru."
 
 #: include/vlc_config_cat.h:234
 msgid "No help available"
@@ -463,64 +479,57 @@ msgid ""
 "Warning: if you can't access the GUI anymore, open a command-line window, go "
 "to the directory where you installed VLC and run \"vlc -I qt\"\n"
 msgstr ""
+"\n"
+"Varování: pokud se vám nedaří přistoupit ke grafickému rozhraní, tak spusťe "
+"příkazovou řádku a spusťte z adresáře s vlc příkaz: \"vlc -I qt\"\n"
 
 #: include/vlc_intf_strings.h:34
 msgid "Quick &Open File..."
 msgstr "Rychlé &otevření souboru..."
 
 #: include/vlc_intf_strings.h:35
-#, fuzzy
 msgid "&Advanced Open..."
-msgstr "Pokročilá nastavení..."
+msgstr "&Pokročilé otevírání..."
 
 #: include/vlc_intf_strings.h:36
-#, fuzzy
 msgid "Open &Directory..."
 msgstr "Otevřít &složku..."
 
 #: include/vlc_intf_strings.h:38
-#, fuzzy
 msgid "Select one or more files to open"
-msgstr "Vyberte soubor k uložení"
+msgstr "Vyberte jeden či více souborů k otevření"
 
 #: include/vlc_intf_strings.h:42
-#, fuzzy
 msgid "Media &Information..."
-msgstr "Meta-informace"
+msgstr "Media &Informace"
 
 #: include/vlc_intf_strings.h:43
-#, fuzzy
 msgid "&Codec Information..."
-msgstr "Information"
+msgstr "&Informace o kodeku..."
 
 #: include/vlc_intf_strings.h:44
 msgid "&Messages..."
 msgstr "&Zprávy..."
 
 #: include/vlc_intf_strings.h:45
-#, fuzzy
 msgid "&Extended Settings..."
-msgstr "Nastavení sendmailu"
+msgstr "&Rozšířené nastavení..."
 
 #: include/vlc_intf_strings.h:46
-#, fuzzy
 msgid "Go to Specific &Time..."
-msgstr "Přejít na titul"
+msgstr "Přejít na &Čas..."
 
 #: include/vlc_intf_strings.h:47
-#, fuzzy
 msgid "&Bookmarks..."
-msgstr "Záložky"
+msgstr "&Záložky..."
 
 #: include/vlc_intf_strings.h:48
-#, fuzzy
 msgid "&VLM Configuration..."
-msgstr "Nahrát nastavení"
+msgstr "&VLM Nastavení..."
 
 #: include/vlc_intf_strings.h:50
-#, fuzzy
 msgid "&About..."
-msgstr "O programu..."
+msgstr "&O programu..."
 
 #: include/vlc_intf_strings.h:53 modules/control/rc.c:75
 #: modules/gui/macosx/embeddedwindow.m:51
@@ -536,7 +545,6 @@ msgid "Play"
 msgstr "Přehrát"
 
 #: include/vlc_intf_strings.h:54
-#, fuzzy
 msgid "Fetch Information"
 msgstr "Meta-informace"
 
@@ -549,46 +557,40 @@ msgid "Delete"
 msgstr "Odstranit"
 
 #: include/vlc_intf_strings.h:56
-#, fuzzy
 msgid "Information..."
-msgstr "Information"
+msgstr "Informace..."
 
 #: include/vlc_intf_strings.h:57
-#, fuzzy
 msgid "Sort"
-msgstr "&Třídit"
+msgstr "Setřídit"
 
 #: include/vlc_intf_strings.h:58
 msgid "Add Node"
 msgstr "Přidat uzel"
 
 #: include/vlc_intf_strings.h:59
-#, fuzzy
 msgid "Stream..."
-msgstr "Proud"
+msgstr "Stream..."
 
 #: include/vlc_intf_strings.h:60
-#, fuzzy
 msgid "Save..."
-msgstr "Uložit &jako..."
+msgstr "Uložit..."
 
 #: include/vlc_intf_strings.h:61
-#, fuzzy
 msgid "Open Folder..."
-msgstr "Open File..."
+msgstr "Otevřít složku..."
 
 #: include/vlc_intf_strings.h:65 src/libvlc-module.c:1122
 msgid "Repeat all"
 msgstr "Opakovat vše"
 
 #: include/vlc_intf_strings.h:66
-#, fuzzy
 msgid "Repeat one"
 msgstr "Opakovat aktuální"
 
 #: include/vlc_intf_strings.h:67
 msgid "No repeat"
-msgstr ""
+msgstr "Bez opakování."
 
 #: include/vlc_intf_strings.h:69 src/libvlc-module.c:1323
 #: modules/gui/macosx/controls.m:896 modules/gui/macosx/intf.m:545
@@ -596,121 +598,111 @@ msgid "Random"
 msgstr "Náhodně"
 
 #: include/vlc_intf_strings.h:70
-#, fuzzy
 msgid "Random off"
 msgstr "Náhodné vypnuto"
 
 #: include/vlc_intf_strings.h:72
-#, fuzzy
 msgid "Add to playlist"
-msgstr "Přidat do seznamu skladeb"
+msgstr "Přidat do playlistu"
 
 #: include/vlc_intf_strings.h:73
-#, fuzzy
 msgid "Add to media library"
-msgstr "Knihovna médií"
+msgstr "Přidat do knihovny médií"
 
 #: include/vlc_intf_strings.h:75
-#, fuzzy
 msgid "Add file..."
-msgstr "Uložit soubor..."
+msgstr "Přidat  soubor..."
 
 #: include/vlc_intf_strings.h:76
-#, fuzzy
 msgid "Advanced open..."
-msgstr "Pokročilá nastavení..."
+msgstr "Pokročilé otevření..."
 
 #: include/vlc_intf_strings.h:77
-#, fuzzy
 msgid "Add directory..."
-msgstr "Přidat &složku..."
+msgstr "Přidat složku..."
 
 #: include/vlc_intf_strings.h:79
-#, fuzzy
 msgid "Save Playlist to &File..."
-msgstr "Uložit seznam skladeb..."
+msgstr "Uložit Playlist do &Souboru..."
 
 #: include/vlc_intf_strings.h:80
-#, fuzzy
 msgid "&Load Playlist File..."
-msgstr "Uložit seznam skladeb..."
+msgstr "&Načíst soubor Playlistu..."
 
 #: include/vlc_intf_strings.h:82
 msgid "Search"
 msgstr "Hledat"
 
 #: include/vlc_intf_strings.h:83
-#, fuzzy
 msgid "Search Filter"
-msgstr "Hledat v seznamu skladeb"
+msgstr "Vyhledávací filtr"
 
 #: include/vlc_intf_strings.h:85
-#, fuzzy
 msgid "Additional &Sources"
-msgstr "Doplňující ladící informace"
+msgstr "Doplňující &zdroje"
 
 #: include/vlc_intf_strings.h:89
 msgid ""
 "Some options are available but hidden. Check \"Advanced options\" to see "
 "them."
 msgstr ""
+"Některé volby jsou dostupné ale skryty. Zvolte \"Pokročilé možnosti\", pro "
+"jejich zobrazení."
 
 #: include/vlc_intf_strings.h:94 modules/gui/macosx/extended.m:77
-#, fuzzy
 msgid "Image clone"
-msgstr "Duplikovat obrázek"
+msgstr "Duplikovat obraz"
 
 #: include/vlc_intf_strings.h:95
-#, fuzzy
 msgid "Clone the image"
-msgstr "Všechny obrázky"
+msgstr "Klonovat obraz"
 
 #: include/vlc_intf_strings.h:97 modules/gui/qt4/ui/video_effects.ui:472
-#, fuzzy
 msgid "Magnification"
-msgstr "Cíl"
+msgstr "Zvětšení"
 
 #: include/vlc_intf_strings.h:98
 msgid ""
 "Magnify a part of the video. You can select which part of the image should "
 "be magnified."
 msgstr ""
+"Zvětší část videa. Můžete vybrat část obrazu, která by měla být zvětšena."
 
 #: include/vlc_intf_strings.h:101 modules/gui/qt4/ui/video_effects.ui:591
-#, fuzzy
 msgid "Waves"
-msgstr "Vlna"
+msgstr "Vlny"
 
 #: include/vlc_intf_strings.h:102
-#, fuzzy
 msgid "\"Waves\" video distortion effect"
-msgstr "Efekty se s_klem"
+msgstr "Efekt \"Vlny\""
 
 #: include/vlc_intf_strings.h:104
-#, fuzzy
 msgid "\"Water surface\" video distortion effect"
-msgstr "Efekty se s_klem"
+msgstr "Efekt \"Vodní povrch\""
 
 #: include/vlc_intf_strings.h:106
-#, fuzzy
 msgid "Image colors inversion"
-msgstr "Inverze barev"
+msgstr "Inverze barev obrazu"
 
 #: include/vlc_intf_strings.h:108
 msgid "Split the image to make an image wall"
-msgstr ""
+msgstr "Rozdělí obraz pro vytvoření stěny obrazů"
 
 #: include/vlc_intf_strings.h:110
 msgid ""
 "Create a \"puzzle game\" with the video.\n"
 "The video gets split in parts that you must sort."
 msgstr ""
+"Vytvoří \"Puzzle\" z videa.\n"
+"Video se rozdělí na části, které musíte složit."
 
 #: include/vlc_intf_strings.h:113
 msgid ""
 "\"Edge detection\" video distortion effect.\n"
 "Try changing the various settings for different effects"
 msgstr ""
+"Efekt deformace obrazu \"Detekce hran\"\n"
+"Zkuste měnit různá nastavení pro různé efekty."
 
 #: include/vlc_intf_strings.h:116
 msgid ""
@@ -718,6 +710,8 @@ msgid ""
 "white, except the parts that are of the color that you select in the "
 "settings."
 msgstr ""
+"Efekt \"Detekce barev\". Celý obraz bude převeden do odstínů šedi, vyjma "
+"částí, které mají barvu stejnou jako je nastavena v nastavení."
 
 #: include/vlc_intf_strings.h:120
 msgid ""
@@ -748,43 +742,64 @@ msgid ""
 "also give funds and material to help us. And of course, you can <b>promote</"
 "b> VLC media player.</p></body></html>"
 msgstr ""
+"<html><head><meta http-equiv=\"Content-Type\" content=\"text/html; "
+"charset=utf-8\" /></head><body><h2>Vítejte v nápovědě pro přehrávač VLC</"
+"h2><h3>Dokumentace</h3><p>Dokumentaci lze najít na VideoLAN <a href=\"http://"
+"wiki.videolan.org\">wiki</a> stránkách.</p><p>Pokud jste nováček v používání "
+"vlc, doporučujeme přečíst <br><a href=\"http://wiki.videolan.org/"
+"Documentation:VLC_for_dummies\"><em>Úvod do VLC přehrávače</em></a>.</"
+"p><p>Další informace ohledně užívání lze nalézt v dokumentu <br>\"<a href="
+"\"http://wiki.videolan.org/Documentation:Play_HowTo\"><em>Jak přehrávat "
+"soubory pomocí VLC</em></a>\" .</p><p>Pro všemožná nastavení ohledně "
+"streamování se podívejte do <a href=\"http://wiki.videolan.org/Documentation:"
+"Streaming_HowTo\">Dokumentace streamování</a>.</p><p>Pokud vám unikají "
+"některé termíny doporučujeme prostudovat <a href=\"http://wiki.videolan.org/"
+"Knowledge_Base\">Znalostní základ</a>.</p><p>Pro pochopení základních "
+"klávesových zkratek zkontrolujte stránku se <a href=\"http://wiki.videolan."
+"org/Hotkeys\">zkratkami</a>.</p><h3>Pomoc!</h3><p>Než položíte jakoukoliv "
+"otázku prosím prostudujte <a href=\"http://wiki.videolan.org/"
+"Frequently_Asked_Questions\">FAQ</a>.</p><p>Poté můžete výpomoc nalézt/"
+"nabídnout na <a href=\"http://forum.videolan.org\">Fórech</a>, <a href="
+"\"http://www.videolan.org/vlc/lists.html\">mailing-listech</a> či našem irc "
+"kanále ( <a href=\"http://www.videolan.org/webirc/\"><em>#videolan</em></a> "
+"na irc.freenode.net ).</p><h3>Přispívání do projektu</h3><p>Můžete přispět "
+"tím, že věnujete nějaký čas pomoci komunite s výrobou vzhledů, překlady "
+"dokumentace, testováním a programováním. Samozřejmě také můžete přispět "
+"finančně či materiálně. Samozřejmě také můžete <b>propagovat</b> VLC "
+"přehrávač.</p></body></html>"
 
 #: src/audio_output/filters.c:159 src/audio_output/filters.c:206
 #: src/audio_output/filters.c:229
-#, fuzzy
 msgid "Audio filtering failed"
-msgstr "Použít _filtry"
+msgstr "Filtrace zvuku selhala"
 
 #: src/audio_output/filters.c:160 src/audio_output/filters.c:207
 #: src/audio_output/filters.c:230
 #, c-format
 msgid "The maximum number of filters (%d) was reached."
-msgstr ""
+msgstr "Maximální počet filtrů (%d) byl dosažen."
 
 #: src/audio_output/input.c:98 src/audio_output/input.c:144
 #: src/input/es_out.c:459 src/libvlc-module.c:562
-#: src/video_output/video_output.c:463 modules/video_filter/postproc.c:222
+#: src/video_output/video_output.c:461 modules/video_filter/postproc.c:222
 msgid "Disable"
 msgstr "Vypnout"
 
 #: src/audio_output/input.c:100 modules/visualization/visual/visual.c:132
 msgid "Spectrometer"
-msgstr ""
+msgstr "Spektrometr"
 
 #: src/audio_output/input.c:102
-#, fuzzy
 msgid "Scope"
-msgstr "Rozsah"
+msgstr "Oblast"
 
 #: src/audio_output/input.c:104
-#, fuzzy
 msgid "Spectrum"
-msgstr "Analyzátor spektra"
+msgstr "Spektrum"
 
 #: src/audio_output/input.c:106
-#, fuzzy
 msgid "Vu meter"
-msgstr "Použít _filtry"
+msgstr "Vu metr"
 
 #: src/audio_output/input.c:141 modules/audio_filter/equalizer.c:74
 #: modules/gui/macosx/equalizer.m:156 modules/gui/macosx/equalizer.m:170
@@ -792,19 +807,16 @@ msgid "Equalizer"
 msgstr "Ekvalizér"
 
 #: src/audio_output/input.c:163 src/libvlc-module.c:288
-#, fuzzy
 msgid "Audio filters"
-msgstr "Použít _filtry"
+msgstr "Zvukové filtry"
 
 #: src/audio_output/input.c:185
-#, fuzzy
 msgid "Replay gain"
-msgstr "Neznámá akce: %s"
+msgstr "Síla odpovědi"
 
 #: src/audio_output/output.c:102 src/audio_output/output.c:129
 #: modules/access/vcdx/info.c:121 modules/gui/macosx/intf.m:564
 #: modules/gui/macosx/intf.m:565
-#, fuzzy
 msgid "Audio Channels"
 msgstr "Zvukové kanály"
 
@@ -847,9 +859,8 @@ msgid "Dolby Surround"
 msgstr "Dolby Surround"
 
 #: src/audio_output/output.c:147
-#, fuzzy
 msgid "Reverse stereo"
-msgstr "32 kHz Stereo"
+msgstr "Reverzní stereo (prohodí levý a pravý kanál)"
 
 #: src/config/file.c:584
 msgid "key"
@@ -897,9 +908,9 @@ msgid "%s: option `%s' requires an argument\n"
 msgstr "%s: přepínač `%s' vyžaduje argument\n"
 
 #: src/extras/getopt.c:710 src/extras/getopt.c:716
-#, fuzzy, c-format
+#, c-format
 msgid "%s: unrecognized option `%s%s'\n"
-msgstr "%s: neznámý přepínač `%c%s'\n"
+msgstr "%s: neznámá volba `%s%s'\n"
 
 #: src/extras/getopt.c:743
 #, c-format
@@ -932,9 +943,8 @@ msgid "Bookmark %i"
 msgstr "Záložka %i"
 
 #: src/input/decoder.c:111
-#, fuzzy
 msgid "No suitable decoder module"
-msgstr "nastavit název modulu"
+msgstr "Žádný vhodný dekódovací modul"
 
 #: src/input/decoder.c:112
 #, c-format
@@ -942,23 +952,24 @@ msgid ""
 "VLC does not support the audio or video format \"%4.4s\". Unfortunately "
 "there is no way for you to fix this."
 msgstr ""
+"VLC nepodporuje tento audio/video formát \"%4.4s\". Bohužel není žádná "
+"šance, že byste to opravil."
 
 #: src/input/decoder.c:167 src/input/decoder.c:180 src/input/decoder.c:384
 #: modules/codec/avcodec/encoder.c:228 modules/codec/avcodec/encoder.c:236
 #: modules/codec/avcodec/encoder.c:248 modules/codec/avcodec/encoder.c:667
 #: modules/codec/avcodec/encoder.c:676 modules/stream_out/es.c:373
 #: modules/stream_out/es.c:388
-#, fuzzy
 msgid "Streaming / Transcoding failed"
-msgstr "Spustit průvodce firewallem"
+msgstr "Streamování / Překódování selhalo"
 
 #: src/input/decoder.c:168
 msgid "VLC could not open the packetizer module."
-msgstr ""
+msgstr "VLC se nezdařilo otevřít modul paketizéru."
 
 #: src/input/decoder.c:181 src/input/decoder.c:385
 msgid "VLC could not open the decoder module."
-msgstr ""
+msgstr "Vlc se nezdařilo otevření dekódovacího modulu."
 
 #: src/input/es_out.c:480 src/input/es_out.c:485 src/libvlc-module.c:319
 #: modules/access/cdda/info.c:392 modules/access/vcdx/access.c:477
@@ -970,7 +981,7 @@ msgstr "Stopa"
 #: src/input/es_out.c:676
 #, c-format
 msgid "%s [%s %d]"
-msgstr ""
+msgstr "%s [%s %d]"
 
 #: src/input/es_out.c:676 src/input/es_out.c:681 src/input/var.c:161
 #: src/libvlc-module.c:595 modules/gui/macosx/intf.m:551
@@ -1027,9 +1038,9 @@ msgid "Sample rate"
 msgstr "Vzorkovací kmitočet"
 
 #: src/input/es_out.c:2072
-#, fuzzy, c-format
+#, c-format
 msgid "%u Hz"
-msgstr "%d Hz"
+msgstr "%u Hz"
 
 #: src/input/es_out.c:2078
 msgid "Bits per sample"
@@ -1041,23 +1052,21 @@ msgid "Bitrate"
 msgstr "Bitrate"
 
 #: src/input/es_out.c:2084
-#, fuzzy, c-format
+#, c-format
 msgid "%u kb/s"
-msgstr "%d kb/s"
+msgstr "%u kb/s"
 
 #: src/input/es_out.c:2095
 msgid "Resolution"
 msgstr "Rozlišení"
 
 #: src/input/es_out.c:2101
-#, fuzzy
 msgid "Display resolution"
-msgstr "Zobrazí zkrácený seznam rozlišení"
+msgstr "Rozlišení zobrazovacího zařízení"
 
 #: src/input/es_out.c:2111 modules/access/screen/screen.c:43
-#, fuzzy
 msgid "Frame rate"
-msgstr "frekvence rámců"
+msgstr "Snímkovací frekvence"
 
 #: src/input/es_out.c:2118
 msgid "Subtitle"
@@ -1065,21 +1074,21 @@ msgstr "Titulky"
 
 #: src/input/input.c:2209
 msgid "Your input can't be opened"
-msgstr ""
+msgstr "Váš vstup se nezdařilo otevřít"
 
 #: src/input/input.c:2210
 #, c-format
 msgid "VLC is unable to open the MRL '%s'. Check the log for details."
-msgstr ""
+msgstr "VLC se nepodařilo otevřít MRL '%s'. Zkontrolujte logy pro detaily."
 
 #: src/input/input.c:2309
 msgid "VLC can't recognize the input's format"
-msgstr ""
+msgstr "VLC nedokáže rozpoznat formát vstupu"
 
 #: src/input/input.c:2310
 #, c-format
 msgid "The format of '%s' cannot be detected. Have a look the log for details."
-msgstr ""
+msgstr "Formát pro '%s' se nezdařilo zjistit. Pro detaily zkontrolujte logy."
 
 #: src/input/meta.c:52 src/input/var.c:171
 #: modules/gui/beos/MediaControlView.cpp:1237 modules/gui/macosx/intf.m:553
@@ -1108,9 +1117,8 @@ msgid "Album"
 msgstr "Album"
 
 #: src/input/meta.c:57
-#, fuzzy
 msgid "Track number"
-msgstr "Číslo stopy."
+msgstr "Číslo stopy"
 
 #: src/input/meta.c:58 modules/gui/macosx/bookmarks.m:94
 #: modules/gui/qt4/dialogs/bookmarks.cpp:66
@@ -1126,9 +1134,8 @@ msgid "Date"
 msgstr "Datum"
 
 #: src/input/meta.c:61
-#, fuzzy
 msgid "Setting"
-msgstr "Nastavuji balík %s (%s) ...\n"
+msgstr "Nastavuji"
 
 #: src/input/meta.c:62 modules/gui/macosx/open.m:192
 #: modules/gui/qt4/ui/podcast_configuration.ui:39
@@ -1145,17 +1152,15 @@ msgstr "Vydavatel"
 
 #: src/input/meta.c:66
 msgid "Encoded by"
-msgstr ""
+msgstr "Enkódováno pomocí"
 
 #: src/input/meta.c:67
-#, fuzzy
 msgid "Artwork URL"
-msgstr "URL"
+msgstr "URL Artvorku"
 
 #: src/input/meta.c:68
-#, fuzzy
 msgid "Track ID"
-msgstr "Stopa"
+msgstr "ID Stopy"
 
 #: src/input/var.c:152
 msgid "Bookmark"
@@ -1264,29 +1269,24 @@ msgid "Add Interface"
 msgstr "Přidat rozhraní"
 
 #: src/interface/interface.c:209
-#, fuzzy
 msgid "Console"
-msgstr "Ovladač"
+msgstr "Konzole"
 
 #: src/interface/interface.c:212
-#, fuzzy
 msgid "Telnet Interface"
-msgstr "Rozhraní"
+msgstr "Rozhraní Telnetu"
 
 #: src/interface/interface.c:215
-#, fuzzy
 msgid "Web Interface"
-msgstr "Rozhraní"
+msgstr "Webové rozhraní"
 
 #: src/interface/interface.c:218
-#, fuzzy
 msgid "Debug logging"
-msgstr "Přihlašuji se"
+msgstr "Debug logovaní"
 
 #: src/interface/interface.c:221
-#, fuzzy
 msgid "Mouse Gestures"
-msgstr "Gesta"
+msgstr "Gesta myši"
 
 #: src/libvlc.c:280 src/libvlc.c:413 src/modules/cache.c:213
 #: src/modules/cache.c:532
@@ -1301,26 +1301,24 @@ msgstr ""
 
 #: src/libvlc.c:1282
 msgid "To get exhaustive help, use '-H'."
-msgstr ""
+msgstr "Pro získání vyčerpávající nápovědy užijte '-H'."
 
 #: src/libvlc.c:1618
-#, fuzzy
 msgid " (default enabled)"
-msgstr "Zabezpečení povoleno"
+msgstr "(v základu zapnuto)"
 
 #: src/libvlc.c:1619
-#, fuzzy
 msgid " (default disabled)"
-msgstr "Příkaz zakázán"
+msgstr "(v základu vypnuto)"
 
 #: src/libvlc.c:1778 src/libvlc.c:1781
-#, fuzzy
 msgid "Note:"
-msgstr "Nic"
+msgstr "Poznámka:"
 
 #: src/libvlc.c:1779 src/libvlc.c:1782
 msgid "add --advanced to your command line to see advanced options."
 msgstr ""
+"přidejte --advanced na příkazové řádce pro zobrazení pokročilých možností."
 
 #: src/libvlc.c:1886
 #, c-format
@@ -1338,15 +1336,17 @@ msgid "Compiler: %s\n"
 msgstr "Kompilátor: %s\n"
 
 #: src/libvlc.c:1891
-#, fuzzy, c-format
+#, c-format
 msgid "Based upon Git commit [%s]\n"
-msgstr "Založeno na SVN revizi:"
+msgstr "Založeno na Git commitu  [%s]\n"
 
 #: src/libvlc.c:1927
 msgid ""
 "\n"
 "Dumped content to vlc-help.txt file.\n"
 msgstr ""
+"\n"
+"Obsah vyplyvnut do souboru vlc-help.txt\n"
 
 #: src/libvlc.c:1947
 msgid ""
@@ -1467,7 +1467,7 @@ msgstr "Malajština"
 
 #: src/libvlc-module.c:110
 msgid "Occitan"
-msgstr ""
+msgstr "Okcitánsky"
 
 #: src/libvlc-module.c:111 src/text/iso-639_def.h:146
 msgid "Persian"
@@ -1482,7 +1482,6 @@ msgid "Portuguese"
 msgstr "Portugalština"
 
 #: src/libvlc-module.c:114
-#, fuzzy
 msgid "Punjabi"
 msgstr "Pandžábština"
 
@@ -1528,22 +1527,25 @@ msgid ""
 "select the main interface, additional interface modules, and define various "
 "related options."
 msgstr ""
+"Tyto možnosti vám umožní nastavit rozhraní používaná ve VLC. Můžete vybrat "
+"hlavní rozhraní, přídavné moduly rozhraní a definovat další různe k tomuto "
+"se vztahující možnosti."
 
 #: src/libvlc-module.c:147
-#, fuzzy
 msgid "Interface module"
-msgstr "Adresáře s moduly"
+msgstr "Moduly rozhraní"
 
 #: src/libvlc-module.c:149
 msgid ""
 "This is the main interface used by VLC. The default behavior is to "
 "automatically select the best module available."
 msgstr ""
+"Toto je hlavní rozhraní užívané VLC. Základní chování je automatický výběr "
+"nejlepšího modulu."
 
 #: src/libvlc-module.c:153 modules/control/ntservice.c:57
-#, fuzzy
 msgid "Extra interface modules"
-msgstr "Povolit moduly _zpřístupnění"
+msgstr "Extra moduly rozhraní"
 
 #: src/libvlc-module.c:155
 msgid ""
@@ -1552,10 +1554,14 @@ msgid ""
 "list of interface modules. (common values are \"rc\" (remote control), \"http"
 "\", \"gestures\" ...)"
 msgstr ""
+"Můžete vybrat \"přídavná rozhraní\" pro VLC. Rozhraní budou spuštěna na "
+"pozadí jako další možnosti vůči výchozímu rozhraní. Použijte seznam modulů "
+"rozhraní oddělený čarkami. (běžné hodnoty jsou \"rc\" (dálkové ovládání), "
+"\"http\", \"gesta\" ...)"
 
 #: src/libvlc-module.c:162
 msgid "You can select control interfaces for VLC."
-msgstr ""
+msgstr "Můžete vybrat ovládací rozhraní pro VLC."
 
 #: src/libvlc-module.c:164
 msgid "Verbosity (0,1,2)"
@@ -1578,9 +1584,8 @@ msgid "Turn off all warning and information messages."
 msgstr "Vypnout všechna varování a oznámení."
 
 #: src/libvlc-module.c:173
-#, fuzzy
 msgid "Default stream"
-msgstr "Inicializuji proud"
+msgstr "Základní stream"
 
 #: src/libvlc-module.c:175
 msgid "This stream will always be opened at VLC startup."
@@ -1595,15 +1600,16 @@ msgstr ""
 "\", pak se použije jazyk operačního systému."
 
 #: src/libvlc-module.c:182
-#, fuzzy
 msgid "Color messages"
-msgstr "Barva chybových zpráv"
+msgstr "Barevné zprávy"
 
 #: src/libvlc-module.c:184
 msgid ""
 "This enables colorization of the messages sent to the console Your terminal "
 "needs Linux color support for this to work."
 msgstr ""
+"Toto povoluje barevný výstup odesílaný konzole. Váš terminál tuto vlastnost "
+"musí podporovat."
 
 #: src/libvlc-module.c:187
 msgid "Show advanced options"
@@ -1614,28 +1620,32 @@ msgid ""
 "When this is enabled, the preferences and/or interfaces will show all "
 "available options, including those that most users should never touch."
 msgstr ""
+"Pokud je toto povoleno, nastavení a/nebo rozhraní zobrazí všechny dostupné "
+"vlastnosti včetně těch, které většina uživatelů nikdy nevyužije."
 
 #: src/libvlc-module.c:193 modules/control/showintf.c:72
-#, fuzzy
 msgid "Show interface with mouse"
-msgstr "Spustit umístěním myši"
+msgstr "Zobrazit rozhraní pomocí myši"
 
 #: src/libvlc-module.c:195
 msgid ""
 "When this is enabled, the interface is shown when you move the mouse to the "
 "edge of the screen in fullscreen mode."
 msgstr ""
+"Pokud je toto povoleno, rozhraní je zobrazeno pokud najedete myší k okraji "
+"obrazovky v režimu celé obrazovky."
 
 #: src/libvlc-module.c:198
-#, fuzzy
 msgid "Interface interaction"
-msgstr "_Optimální odhad"
+msgstr "Interakce rozhraní"
 
 #: src/libvlc-module.c:200
 msgid ""
 "When this is enabled, the interface will show a dialog box each time some "
 "user input is required."
 msgstr ""
+"Pokud je toto povoleno, rozraní zobrazí dotazovací dialog pokaždé, když je "
+"vyžadován uživatelský vstup."
 
 #: src/libvlc-module.c:210
 msgid ""
@@ -1644,17 +1654,22 @@ msgid ""
 "(spectrum analyzer, etc.). Enable these filters here, and configure them in "
 "the \"audio filters\" modules section."
 msgstr ""
+"Tyto volby vám umožní upravit chování zvukového podsystému a přidávat "
+"zvukové filtry, které mohou být použity k postprocessingu nebo vizuálním "
+"efektům (spektrální alayzér, ...). Filtry povolíte zde a nastavíte v sekci "
+"\"Zvukové filtry\"."
 
 #: src/libvlc-module.c:216
-#, fuzzy
 msgid "Audio output module"
-msgstr "Zařízení výstupu zvuku"
+msgstr "Modul zvukového výstupu"
 
 #: src/libvlc-module.c:218
 msgid ""
 "This is the audio output method used by VLC. The default behavior is to "
 "automatically select the best method available."
 msgstr ""
+"Toto je metoda zvukového výstupu užívaná VLC. Základní chování je "
+"automatický výběr nejlepšího modulu."
 
 #: src/libvlc-module.c:222 modules/gui/qt4/ui/sprefs_audio.ui:20
 #: modules/stream_out/display.c:41
@@ -1666,63 +1681,66 @@ msgid ""
 "You can completely disable the audio output. The audio decoding stage will "
 "not take place, thus saving some processing power."
 msgstr ""
+"Můžete kompletně vypnout zvukový výstup. Dekódování zvuku vůbec nebude "
+"provedeno a proto bude ušetřeno trochu zátěže CPU."
 
 #: src/libvlc-module.c:228
-#, fuzzy
 msgid "Force mono audio"
-msgstr "Toto vynutí mono zvukový výstup."
+msgstr "Vynutit zvuk v Mono"
 
 #: src/libvlc-module.c:229
 msgid "This will force a mono audio output."
 msgstr "Toto vynutí mono zvukový výstup."
 
 #: src/libvlc-module.c:232
-#, fuzzy
 msgid "Default audio volume"
-msgstr "hlasitost zvuku při startu"
+msgstr "Základní hlasitost zvuku"
 
 #: src/libvlc-module.c:234
 msgid ""
 "You can set the default audio output volume here, in a range from 0 to 1024."
 msgstr ""
+"Zde můžete nastavit výchozí hlasitost zvukového výstupu v rozsahu od 0 po "
+"1024."
 
 #: src/libvlc-module.c:237
-#, fuzzy
 msgid "Audio output saved volume"
-msgstr "Sledování hlasitosti zvukového výstupu"
+msgstr "Uložená hlasitost zvukového výstupu"
 
 #: src/libvlc-module.c:239
 msgid ""
 "This saves the audio output volume when you use the mute function. You "
 "should not change this option manually."
 msgstr ""
+"Tato volba ukládá hlasitost zvuku při použití funkce ztišeni. Toto "
+"pravděpodobně nechcete měnit."
 
 #: src/libvlc-module.c:242
-#, fuzzy
 msgid "Audio output volume step"
-msgstr "Krok hlasitosti v procentech."
+msgstr "Krok hlasitosti zvukového výstupu"
 
 #: src/libvlc-module.c:244
 msgid ""
 "The step size of the volume is adjustable using this option, in a range from "
 "0 to 1024."
 msgstr ""
+"Krok hlasitosti je možno nastavit pomocí této volby v rozsahu od 0 po 1024."
 
 #: src/libvlc-module.c:247
-#, fuzzy
 msgid "Audio output frequency (Hz)"
-msgstr "vyberte prosím zařízení výstupu zvuku:"
+msgstr "Výstupní frekvence zvuku (Hz)"
 
 #: src/libvlc-module.c:249
 msgid ""
 "You can force the audio output frequency here. Common values are -1 "
 "(default), 48000, 44100, 32000, 22050, 16000, 11025, 8000."
 msgstr ""
+"Můžete vynutit výstupní frekvenci zvuku. Běžné hodnoty jsou:  -1 (výchozí), "
+"48000, 44100, 32000, 22050, 16000, 11025, 8000."
 
 #: src/libvlc-module.c:253
-#, fuzzy
 msgid "High quality audio resampling"
-msgstr "1200 DPI vysoká kvalita"
+msgstr "Vysoce kvalitní převzorkování zvuku"
 
 #: src/libvlc-module.c:255
 msgid ""
@@ -1730,23 +1748,24 @@ msgid ""
 "resampling can be processor intensive so you can disable it and a cheaper "
 "resampling algorithm will be used instead."
 msgstr ""
+"Vysoce kvalitní algoritmus převzorkování zvuku. Tento může být velice "
+"náročný na CPU, proto je možno ho vypnout a použít méně náročnou variantu."
 
 #: src/libvlc-module.c:260
-#, fuzzy
 msgid "Audio desynchronization compensation"
-msgstr "_Kompenzace černého bodu"
+msgstr "Kompenzace desynchronizace zvuku"
 
 #: src/libvlc-module.c:262
 msgid ""
 "This delays the audio output. The delay must be given in milliseconds.This "
 "can be handy if you notice a lag between the video and the audio."
 msgstr ""
+"Zpoždění zvukového výstupu. Zpoždění se zadává v ms. Toto je šikovné "
+"udělátko pokud si všimnete posunu mezi zvukem a videem."
 
 #: src/libvlc-module.c:265
-#, fuzzy
 msgid "Audio output channels mode"
-msgstr ""
-"  -A              mód nezarovnaného formátu tabulky (-P format=unaligned)"
+msgstr "Kanály zvukového výstupu"
 
 #: src/libvlc-module.c:267
 msgid ""
@@ -1754,23 +1773,26 @@ msgid ""
 "possible (ie. if your hardware supports it as well as the audio stream being "
 "played)."
 msgstr ""
+"Nastaví kanály zvukového výstupu, které mají být použity jako výchozí (pokud "
+"je podporovaný HW a zvuk je přehráván)."
 
 #: src/libvlc-module.c:271 modules/gui/macosx/simple_prefs.m:230
 #: modules/gui/qt4/ui/sprefs_audio.ui:99
-#, fuzzy
 msgid "Use S/PDIF when available"
-msgstr "Pokud je to možné, použít realtime prioritu"
+msgstr "Použij S/PDIF pokud je dostupný"
 
 #: src/libvlc-module.c:273
 msgid ""
 "S/PDIF can be used by default when your hardware supports it as well as the "
 "audio stream being played."
 msgstr ""
+"S/PDIF může být použit jako výchozí pokud ho váš HW podporuje a pokud je "
+"přehráván nějaký zvuk."
 
 #: src/libvlc-module.c:276 modules/gui/macosx/simple_prefs.m:220
 #: modules/gui/qt4/ui/sprefs_audio.ui:113
 msgid "Force detection of Dolby Surround"
-msgstr ""
+msgstr "Vynutit detekci Dolby Surround."
 
 #: src/libvlc-module.c:278
 msgid ""
@@ -1779,6 +1801,10 @@ msgid ""
 "actually encoded with Dolby Surround, turning on this option might enhance "
 "your experience, especially when combined with the Headphone Channel Mixer."
 msgstr ""
+"Použijte pokud víte váš stream je/není enkódován s Dolby Surround, ale selže "
+"jeho detekce. I když stream Dolby Surround nepodporuje, může zapnutí této "
+"volby zlepšit váš zážitek, zvláště při použití ve spojení s Mixerem kanálu "
+"sluchátek."
 
 #: src/libvlc-module.c:285 modules/access/bda/bda.c:63
 msgid "On"
@@ -1790,16 +1816,15 @@ msgstr "Vypnuto"
 
 #: src/libvlc-module.c:290
 msgid "This adds audio post processing filters, to modify the sound rendering."
-msgstr ""
+msgstr "Přidává podporu zvukových filtru ke změně renderování zvuku."
 
 #: src/libvlc-module.c:293
-#, fuzzy
 msgid "Audio visualizations "
-msgstr "Informace o zvuku"
+msgstr "Vizualizace zvuku"
 
 #: src/libvlc-module.c:295
 msgid "This adds visualization modules (spectrum analyzer, etc.)."
-msgstr ""
+msgstr "Přidává vizualizační moduly (spektrální analyzér, ...)"
 
 #: src/libvlc-module.c:299
 #, fuzzy
@@ -1820,21 +1845,19 @@ msgstr "Neznámá akce: %s"
 msgid ""
 "This allows you to change the default target level (89 dB) for stream with "
 "replay gain information"
-msgstr ""
+msgstr "Umožnuje změnu výchozí požadovanou sílu signálu (89 dB) pro stream"
 
 #: src/libvlc-module.c:308
-#, fuzzy
 msgid "Default replay gain"
-msgstr "Inicializuji proud"
+msgstr "Výchozí požadovaná síla signálu odpovědi"
 
 #: src/libvlc-module.c:310
 msgid "This is the gain used for stream without replay gain information"
 msgstr ""
 
 #: src/libvlc-module.c:312
-#, fuzzy
 msgid "Peak protection"
-msgstr "Redukce šumu"
+msgstr "Ochrana špiček"
 
 #: src/libvlc-module.c:314
 msgid "Protect against sound clipping"
@@ -1857,9 +1880,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:333
-#, fuzzy
 msgid "Video output module"
-msgstr "Šířka video výstupu."
+msgstr "Výstupní modul videa"
 
 #: src/libvlc-module.c:335
 msgid ""
@@ -1903,9 +1925,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:353
-#, fuzzy
 msgid "Video X coordinate"
-msgstr "Maximální souřadnice X"
+msgstr "Video koordináty X"
 
 #: src/libvlc-module.c:355
 msgid ""
@@ -1914,9 +1935,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:358
-#, fuzzy
 msgid "Video Y coordinate"
-msgstr "Maximální souřadnice X"
+msgstr "Video koordináty Y"
 
 #: src/libvlc-module.c:360
 msgid ""
@@ -1925,9 +1945,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:363
-#, fuzzy
 msgid "Video title"
-msgstr "Popiska linku"
+msgstr "Název videa"
 
 #: src/libvlc-module.c:365
 msgid ""
@@ -1936,9 +1955,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:368
-#, fuzzy
 msgid "Video alignment"
-msgstr "Zarovnání textu"
+msgstr "Zarovnání videa"
 
 #: src/libvlc-module.c:370
 msgid ""
@@ -2007,18 +2025,16 @@ msgid "Bottom-Right"
 msgstr "Dole vpravo"
 
 #: src/libvlc-module.c:378
-#, fuzzy
 msgid "Zoom video"
-msgstr "<b>Videokonference</b>"
+msgstr "Přiblížit video"
 
 #: src/libvlc-module.c:380
 msgid "You can zoom the video by the specified factor."
 msgstr ""
 
 #: src/libvlc-module.c:382
-#, fuzzy
 msgid "Grayscale video output"
-msgstr "Šířka video výstupu."
+msgstr "Video výstup ve stupních šedi"
 
 #: src/libvlc-module.c:384
 msgid ""
@@ -2037,14 +2053,12 @@ msgid "Embed the video output in the main interface."
 msgstr "kodek, ve kterém jsou uložena data videa"
 
 #: src/libvlc-module.c:391
-#, fuzzy
 msgid "Fullscreen video output"
-msgstr "Šířka video výstupu."
+msgstr "Video výstup přes celou obrazovku"
 
 #: src/libvlc-module.c:393
-#, fuzzy
 msgid "Start video in fullscreen mode"
-msgstr "Zamkne Epiphany v režimu přes celou obrazovku."
+msgstr "Spustit video v režimu celé obrazovky"
 
 #: src/libvlc-module.c:395
 #, fuzzy
@@ -2067,27 +2081,24 @@ msgid "Always place the video window on top of other windows."
 msgstr ""
 
 #: src/libvlc-module.c:404
-#, fuzzy
 msgid "Show media title on video"
-msgstr "kódování titulků"
+msgstr "Zobrazovat titul média přes video"
 
 #: src/libvlc-module.c:406
 msgid "Display the title of the video on top of the movie."
 msgstr ""
 
 #: src/libvlc-module.c:408
-#, fuzzy
 msgid "Show video title for x miliseconds"
-msgstr "kódování titulků"
+msgstr "Zobrazovat titul videa po X ms"
 
 #: src/libvlc-module.c:410
 msgid "Show the video title for n miliseconds, default is 5000 ms (5 sec.)"
 msgstr ""
 
 #: src/libvlc-module.c:412
-#, fuzzy
 msgid "Position of video title"
-msgstr "Kontrast video vstupu."
+msgstr "Pozice titulu videa"
 
 #: src/libvlc-module.c:414
 msgid "Place on video where to display the title (default bottom center)."
@@ -2104,9 +2115,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:427
-#, fuzzy
 msgid "Disable screensaver"
-msgstr "Spustit šetřič obrazovky"
+msgstr "Vypnout šetřič obrazovky"
 
 #: src/libvlc-module.c:428
 msgid "Disable the screensaver during video playback."
@@ -2123,9 +2133,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:434 modules/gui/qt4/ui/sprefs_video.ui:48
-#, fuzzy
 msgid "Window decorations"
-msgstr "Včetně dekorace"
+msgstr "Okenní dekorace"
 
 #: src/libvlc-module.c:436
 msgid ""
@@ -2134,18 +2143,16 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:439
-#, fuzzy
 msgid "Video output filter module"
-msgstr "Šířka video výstupu."
+msgstr "Modul filtrování video výstupu"
 
 #: src/libvlc-module.c:441
 msgid "This adds video output filters like clone or wall"
 msgstr ""
 
 #: src/libvlc-module.c:443
-#, fuzzy
 msgid "Video filter module"
-msgstr "nastavit název modulu"
+msgstr "Modul video filtru"
 
 #: src/libvlc-module.c:445
 msgid ""
@@ -2154,32 +2161,28 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:449
-#, fuzzy
 msgid "Video snapshot directory (or filename)"
-msgstr "Uložit snímek videa"
+msgstr "Adresář (soubor) se snímky videa"
 
 #: src/libvlc-module.c:451
 msgid "Directory where the video snapshots will be stored."
 msgstr ""
 
 #: src/libvlc-module.c:453 src/libvlc-module.c:455
-#, fuzzy
 msgid "Video snapshot file prefix"
-msgstr "Uložit snímek videa"
+msgstr "Prefix pro soubor se snímkem z videa"
 
 #: src/libvlc-module.c:457
-#, fuzzy
 msgid "Video snapshot format"
-msgstr "Uložit snímek videa"
+msgstr "Formát snímku videa"
 
 #: src/libvlc-module.c:459
 msgid "Image format which will be used to store the video snapshots"
 msgstr ""
 
 #: src/libvlc-module.c:461
-#, fuzzy
 msgid "Display video snapshot preview"
-msgstr "Uložit snímek aktuálního videa"
+msgstr "Zobrazít náhled snímku videa"
 
 #: src/libvlc-module.c:463
 msgid "Display the snapshot preview in the screen's top-left corner."
@@ -2194,9 +2197,8 @@ msgid "Use sequential numbers instead of timestamps for snapshot numbering"
 msgstr ""
 
 #: src/libvlc-module.c:469
-#, fuzzy
 msgid "Video snapshot width"
-msgstr "Uložit snímek videa"
+msgstr "Šířka snímku videa"
 
 #: src/libvlc-module.c:471
 msgid ""
@@ -2205,9 +2207,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:475
-#, fuzzy
 msgid "Video snapshot height"
-msgstr "Výška widgetu videa"
+msgstr "Výška snímku videa"
 
 #: src/libvlc-module.c:477
 msgid ""
@@ -2217,9 +2218,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:481
-#, fuzzy
 msgid "Video cropping"
-msgstr "<b>Videokonference</b>"
+msgstr "Video ořez"
 
 #: src/libvlc-module.c:483
 msgid ""
@@ -2228,9 +2228,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:487
-#, fuzzy
 msgid "Source aspect ratio"
-msgstr "Zachovat poměr stran"
+msgstr "Poměr stran zdroje"
 
 #: src/libvlc-module.c:489
 msgid ""
@@ -2262,9 +2261,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:506
-#, fuzzy
 msgid "Fix HDTV height"
-msgstr "Výška hlavního okna"
+msgstr "Opravit výšku HDTV"
 
 #: src/libvlc-module.c:508
 msgid ""
@@ -2274,9 +2272,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:513
-#, fuzzy
 msgid "Monitor pixel aspect ratio"
-msgstr "Určuje poměr stran stopy"
+msgstr "Poměr stran Výstupního zařízení"
 
 #: src/libvlc-module.c:515
 msgid ""
@@ -2287,9 +2284,8 @@ msgstr ""
 
 #: src/libvlc-module.c:519 modules/gui/macosx/simple_prefs.m:289
 #: modules/gui/qt4/ui/sprefs_video.ui:95
-#, fuzzy
 msgid "Skip frames"
-msgstr "Zobrazovat rámce"
+msgstr "Zahazovat rámce"
 
 #: src/libvlc-module.c:521
 msgid ""
@@ -2298,7 +2294,6 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:524
-#, fuzzy
 msgid "Drop late frames"
 msgstr "Zahazovat video snímky podle potřeby"
 
@@ -2309,9 +2304,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:529
-#, fuzzy
 msgid "Quiet synchro"
-msgstr "Potichu"
+msgstr "Ticha synchronizace"
 
 #: src/libvlc-module.c:531
 msgid ""
@@ -2338,9 +2332,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:549
-#, fuzzy
 msgid "Clock synchronisation"
-msgstr "Tradiční hodiny"
+msgstr "Synchronizace hodin"
 
 #: src/libvlc-module.c:551
 msgid ""
@@ -2349,9 +2342,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:555 modules/control/netsync.c:82
-#, fuzzy
 msgid "Network synchronisation"
-msgstr "Proxy sítě"
+msgstr "Synchronizace sítě"
 
 #: src/libvlc-module.c:556
 msgid ""
@@ -2370,14 +2362,12 @@ msgstr ""
 #: modules/gui/qt4/components/preferences_widgets.cpp:559
 #: modules/video_filter/marq.c:61 modules/video_filter/rss.c:70
 #: modules/video_filter/rss.c:182 modules/video_output/msw/directx.c:161
-#, fuzzy
 msgid "Default"
-msgstr "Implicitní"
+msgstr "Výchozí"
 
 #: src/libvlc-module.c:562 modules/gui/macosx/equalizer.m:160
 #: modules/gui/macosx/extended.m:96 modules/gui/macosx/wizard.m:352
 #: modules/gui/qt4/ui/equalizer.ui:27 modules/gui/qt4/ui/vlm.ui:70
-#, fuzzy
 msgid "Enable"
 msgstr "Zapnout"
 
@@ -2390,9 +2380,8 @@ msgid "This is the default port used for UDP streams. Default is 1234."
 msgstr ""
 
 #: src/libvlc-module.c:568
-#, fuzzy
 msgid "MTU of the network interface"
-msgstr "Nastavit síťové rozhraní."
+msgstr "MTU síťového rozhraní"
 
 #: src/libvlc-module.c:570
 msgid ""
@@ -2401,9 +2390,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:575 modules/stream_out/rtp.c:118
-#, fuzzy
 msgid "Hop limit (TTL)"
-msgstr "       TTL  := { 1..255 | inherit }\n"
+msgstr "Limit skoku (TTL)"
 
 #: src/libvlc-module.c:577
 msgid ""
@@ -2413,17 +2401,16 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:581
-#, fuzzy
 msgid "Multicast output interface"
-msgstr "Minimální rozhraní"
+msgstr "Výstupní rozhraní pro všesměrové vysílání"
 
 #: src/libvlc-module.c:583
 msgid "Default multicast interface. This overrides the routing table."
-msgstr ""
+msgstr "Výchozí rozhraní pro multicast. Přepisuje routovací tabulku."
 
 #: src/libvlc-module.c:585
 msgid "IPv4 multicast output interface address"
-msgstr ""
+msgstr "Adresa IPv4 výstupního rozhraní pro multicast "
 
 #: src/libvlc-module.c:587
 msgid ""
@@ -2507,9 +2494,8 @@ msgid "Stream ID of the subtitle track to use."
 msgstr "ID proudu titulků"
 
 #: src/libvlc-module.c:638
-#, fuzzy
 msgid "Input repetitions"
-msgstr "Neplatný vstup"
+msgstr "Opakování vstupů"
 
 #: src/libvlc-module.c:640
 msgid "Number of time the same input will be repeated"
@@ -2532,19 +2518,16 @@ msgid "The stream will stop at this position (in seconds)."
 msgstr "Tento proud se zastaví na této pozici (v sekundách)."
 
 #: src/libvlc-module.c:650
-#, fuzzy
 msgid "Run time"
-msgstr "Kirundi"
+msgstr "Doba běhu"
 
 #: src/libvlc-module.c:652
-#, fuzzy
 msgid "The stream will run this duration (in seconds)."
-msgstr "Tento proud se spustí od této pozice (v sekundách)."
+msgstr "Tento stream se spustí od této pozice (v sekundách)."
 
 #: src/libvlc-module.c:654
-#, fuzzy
 msgid "Input list"
-msgstr "položka seznamu"
+msgstr "Seznam vstupu"
 
 #: src/libvlc-module.c:656
 msgid ""
@@ -2565,9 +2548,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:665
-#, fuzzy
 msgid "Bookmarks list for a stream"
-msgstr "nelze otevřít `%i' pro proud"
+msgstr "Záložky pro streamy"
 
 #: src/libvlc-module.c:667
 msgid ""
@@ -2585,9 +2567,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:679 modules/gui/qt4/ui/sprefs_subtitles.ui:170
-#, fuzzy
 msgid "Force subtitle position"
-msgstr "Zobrazovat umístění myši"
+msgstr "Vynutit pozici titulků"
 
 #: src/libvlc-module.c:681
 msgid ""
@@ -2608,26 +2589,25 @@ msgstr ""
 #: modules/gui/macosx/simple_prefs.m:278
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:22
 #: modules/stream_out/transcode.c:227
-#, fuzzy
 msgid "On Screen Display"
-msgstr "Displej v horní části obrazovky"
+msgstr "OSD"
 
 #: src/libvlc-module.c:690
 msgid ""
 "VLC can display messages on the video. This is called OSD (On Screen "
 "Display)."
-msgstr ""
+msgstr "VLC umí zobrazovat text přes video. Tato vlastnost se nazývá OSD."
 
 #: src/libvlc-module.c:693
-#, fuzzy
 msgid "Text rendering module"
-msgstr "Uvolňuji modul pro provoz nad textem se značkami."
+msgstr "Modul pro vykresování textu"
 
 #: src/libvlc-module.c:695
 msgid ""
 "VLC normally uses Freetype for rendering, but this allows you to use svg for "
 "instance."
 msgstr ""
+"VLC běžně užívá Freetype pro renderování, ale umožnuje použití např. SVG."
 
 #: src/libvlc-module.c:697
 #, fuzzy
@@ -2641,9 +2621,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:702
-#, fuzzy
 msgid "Autodetect subtitle files"
-msgstr "Kopíruji soubory z '%s'\n"
+msgstr "Autmoaticky detekovat soubory s titulky"
 
 #: src/libvlc-module.c:704
 msgid ""
@@ -2668,9 +2647,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:717
-#, fuzzy
 msgid "Subtitle autodetection paths"
-msgstr "Sloučit viditelné cesty"
+msgstr "Cesty pro autodetekci titullků"
 
 #: src/libvlc-module.c:719
 msgid ""
@@ -2679,9 +2657,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:722
-#, fuzzy
 msgid "Use subtitle file"
-msgstr "Používat bezpečné ukládání souborů"
+msgstr "Použít soubor s titulky"
 
 #: src/libvlc-module.c:724
 msgid ""
@@ -2738,128 +2715,116 @@ msgid "This is the default Audio CD device to use."
 msgstr "Toto je výchozí zařízení pro zvukové CD."
 
 #: src/libvlc-module.c:757
-#, fuzzy
 msgid "Force IPv6"
-msgstr "Tunel IPv6"
+msgstr "Vynutit IPv6"
 
 #: src/libvlc-module.c:759
 msgid "IPv6 will be used by default for all connections."
-msgstr ""
+msgstr "IPvž bude užito jako výchozí pro všechny spojení."
 
 #: src/libvlc-module.c:761
-#, fuzzy
 msgid "Force IPv4"
-msgstr "Lidská síla"
+msgstr "Vynutit IPv4"
 
 #: src/libvlc-module.c:763
 msgid "IPv4 will be used by default for all connections."
-msgstr ""
+msgstr "IPv4 bude užito jako výchozí pro všechny spojení."
 
 #: src/libvlc-module.c:765
-#, fuzzy
 msgid "TCP connection timeout"
-msgstr "<b>Interval dvojitého kliknutí</b>"
+msgstr "Časový limit pro TCP spojení"
 
 #: src/libvlc-module.c:767
 msgid "Default TCP connection timeout (in milliseconds). "
-msgstr ""
+msgstr "Výchozí časový limit pro TCP spojení (v milisekundách)."
 
 #: src/libvlc-module.c:769
-#, fuzzy
 msgid "SOCKS server"
-msgstr "Komunikační server"
+msgstr "SOCKS server"
 
 #: src/libvlc-module.c:771
 msgid ""
 "SOCKS proxy server to use. This must be of the form address:port. It will be "
 "used for all TCP connections"
 msgstr ""
+"SOCKS proxy server, který bude použit. Formát musí být ADRESA:PORT. Bude "
+"použit pro všechna TCP spojení."
 
 #: src/libvlc-module.c:774
-#, fuzzy
 msgid "SOCKS user name"
-msgstr "_Jméno uživatele ve Windows:"
+msgstr "SOCKS uživatelské jméno"
 
 #: src/libvlc-module.c:776
 msgid "User name to be used for connection to the SOCKS proxy."
-msgstr ""
+msgstr "Uživatelské jméno pro spojení se SOCKS proxy."
 
 #: src/libvlc-module.c:778
-#, fuzzy
 msgid "SOCKS password"
-msgstr "text hesla"
+msgstr "SOCKS heslo"
 
 #: src/libvlc-module.c:780
 msgid "Password to be used for connection to the SOCKS proxy."
-msgstr ""
+msgstr "Heslo pro spojení se SOCKS proxy."
 
 #: src/libvlc-module.c:782
-#, fuzzy
 msgid "Title metadata"
-msgstr "<b>Jiná metadata</b>"
+msgstr "Metadata Titulu"
 
 #: src/libvlc-module.c:784
 msgid "Allows you to specify a \"title\" metadata for an input."
 msgstr ""
 
 #: src/libvlc-module.c:786
-#, fuzzy
 msgid "Author metadata"
-msgstr "<b>Jiná metadata</b>"
+msgstr "Metadata Autora"
 
 #: src/libvlc-module.c:788
 msgid "Allows you to specify an \"author\" metadata for an input."
 msgstr ""
 
 #: src/libvlc-module.c:790
-#, fuzzy
 msgid "Artist metadata"
-msgstr "<b>Jiná metadata</b>"
+msgstr "Metadata Umělce"
 
 #: src/libvlc-module.c:792
 msgid "Allows you to specify an \"artist\" metadata for an input."
 msgstr ""
 
 #: src/libvlc-module.c:794
-#, fuzzy
 msgid "Genre metadata"
-msgstr "<b>Jiná metadata</b>"
+msgstr "Metadata žánru"
 
 #: src/libvlc-module.c:796
 msgid "Allows you to specify a \"genre\" metadata for an input."
 msgstr ""
 
 #: src/libvlc-module.c:798
-#, fuzzy
 msgid "Copyright metadata"
-msgstr "<b>Jiná metadata</b>"
+msgstr "Metadata Copyrightu"
 
 #: src/libvlc-module.c:800
 msgid "Allows you to specify a \"copyright\" metadata for an input."
 msgstr ""
 
 #: src/libvlc-module.c:802
-#, fuzzy
 msgid "Description metadata"
-msgstr "<b>Jiná metadata</b>"
+msgstr "Metadata popisku"
 
 #: src/libvlc-module.c:804
 msgid "Allows you to specify a \"description\" metadata for an input."
 msgstr ""
 
 #: src/libvlc-module.c:806
-#, fuzzy
 msgid "Date metadata"
-msgstr "<b>Jiná metadata</b>"
+msgstr "Metadata datumu"
 
 #: src/libvlc-module.c:808
 msgid "Allows you to specify a \"date\" metadata for an input."
 msgstr ""
 
 #: src/libvlc-module.c:810
-#, fuzzy
 msgid "URL metadata"
-msgstr "<b>Jiná metadata</b>"
+msgstr "Metadata URL"
 
 #: src/libvlc-module.c:812
 msgid "Allows you to specify a \"url\" metadata for an input."
@@ -2873,9 +2838,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:820
-#, fuzzy
 msgid "Preferred decoders list"
-msgstr "^Aktualizovat seznam balíků"
+msgstr "Seznam preferovaných dekodérů"
 
 #: src/libvlc-module.c:822
 msgid ""
@@ -2885,9 +2849,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:827
-#, fuzzy
 msgid "Preferred encoders list"
-msgstr "^Aktualizovat seznam balíků"
+msgstr "Seznam preferovaných enkodérů"
 
 #: src/libvlc-module.c:829
 msgid ""
@@ -2932,9 +2895,8 @@ msgid "Stream all elementary streams (video, audio and subtitles)"
 msgstr ""
 
 #: src/libvlc-module.c:856
-#, fuzzy
 msgid "Display while streaming"
-msgstr "Chyba při zpracování %s\n"
+msgstr "Zobrazovat při streamování"
 
 #: src/libvlc-module.c:858
 msgid "Play locally the stream while streaming it."
@@ -2996,9 +2958,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:886
-#, fuzzy
 msgid "Preferred packetizer list"
-msgstr "^Aktualizovat seznam balíků"
+msgstr "Preferovaný seznam paketizérů."
 
 #: src/libvlc-module.c:888
 msgid ""
@@ -3066,11 +3027,11 @@ msgid "Enable CPU MMX support"
 msgstr "Zapnout podporu CPU MMX"
 
 #: src/libvlc-module.c:926
-#, fuzzy
 msgid ""
 "If your processor supports the MMX instructions set, VLC can take advantage "
 "of them."
-msgstr "Pokud váš procesor podporuje MMX EXT instrukce, VLC jich může využít."
+msgstr ""
+"Pokud váš procesor používá MMX instrukční sadu, VLC ji velice rádo využije."
 
 #: src/libvlc-module.c:929
 msgid "Enable CPU 3D Now! support"
@@ -3201,9 +3162,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:996
-#, fuzzy
 msgid "Minimize number of threads"
-msgstr "Spustí POČET vláken"
+msgstr "Minimalizovat počet vláken"
 
 #: src/libvlc-module.c:998
 msgid "This option minimizes the number of threads needed to run VLC."
@@ -3234,21 +3194,16 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:1016
-#, fuzzy
 msgid "VLM configuration file"
-msgstr "hlavní soubor nastavení"
+msgstr "VLM konfigurační soubor"
 
 #: src/libvlc-module.c:1018
 msgid "Read a VLM configuration file as soon as VLM is started."
 msgstr ""
 
 #: src/libvlc-module.c:1020
-#, fuzzy
 msgid "Use a plugins cache"
-msgstr ""
-"%s:\n"
-"Používá se %u%%, z čehož\n"
-"%u%% je cache"
+msgstr "Použít vyrovnávací pamět pro pluginy"
 
 #: src/libvlc-module.c:1022
 msgid "Use a plugins cache which will greatly improve the startup time of VLC."
@@ -3312,7 +3267,6 @@ msgstr ""
 "přehrát soubor v již spuštěné instanci, nebo jej zařadit do fronty."
 
 #: src/libvlc-module.c:1054
-#, fuzzy
 msgid ""
 "Allowing only one running instance of VLC can sometimes be useful, for "
 "example if you associated VLC with some media types and you don't want a new "
@@ -3324,7 +3278,9 @@ msgstr ""
 "Povolení pouze jediné instance VLC může být občas užitečné, například pokud "
 "máte VLC asociováno s některýmy typy médií a nechcete, aby se pokaždé když "
 "nějaký otevřete, spustila nová instance VLC. Toto nastavení vám umožní "
-"přehrát soubor v již spuštěné instanci, nebo jej zařadit do fronty."
+"přehrát soubor v již spuštěné instanci, nebo jej zařadit do fronty. Tato "
+"volba požaduje běžící D-Bus sezení a běžící instanci VLC pro možnost využití "
+"D-Bus ovládacího rozhraní."
 
 #: src/libvlc-module.c:1063
 msgid "VLC is started from file association"
@@ -3339,14 +3295,12 @@ msgid "One instance when started from file"
 msgstr ""
 
 #: src/libvlc-module.c:1070
-#, fuzzy
 msgid "Allow only one running instance when started from file."
-msgstr "Povolit pouze jednu instanci"
+msgstr "Povolit pouze jednu instanci pokud spuštěno ze souboru."
 
 #: src/libvlc-module.c:1072
-#, fuzzy
 msgid "Increase the priority of the process"
-msgstr "Zvýšit prioritu modulu"
+msgstr "Zvýšit prioritu procesu"
 
 #: src/libvlc-module.c:1074
 msgid ""
@@ -3375,9 +3329,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:1096
-#, fuzzy
 msgid "Automatically preparse files"
-msgstr "Kopíruji soubory z '%s'\n"
+msgstr "Automaticky předzpracovat soubory"
 
 #: src/libvlc-module.c:1098
 msgid ""
@@ -3406,9 +3359,8 @@ msgid "As soon as track is added"
 msgstr ""
 
 #: src/libvlc-module.c:1113
-#, fuzzy
 msgid "Services discovery modules"
-msgstr "Povolit moduly _zpřístupnění"
+msgstr "Povolit vyhledávání modulů"
 
 #: src/libvlc-module.c:1115
 msgid ""
@@ -3445,19 +3397,16 @@ msgid "Stop the playlist after each played playlist item."
 msgstr ""
 
 #: src/libvlc-module.c:1134
-#, fuzzy
 msgid "Play and exit"
-msgstr "Hrát a zastavit"
+msgstr "Hrát a skončit"
 
 #: src/libvlc-module.c:1136
-#, fuzzy
 msgid "Exit if there are no more items in the playlist."
-msgstr "Žádné položky v seznamu skladeb"
+msgstr "Skončit, pokud nejsou žádné další veci v playlistu"
 
 #: src/libvlc-module.c:1138
-#, fuzzy
 msgid "Use media library"
-msgstr "Knihovna médií"
+msgstr "Použít knihovnu médií"
 
 #: src/libvlc-module.c:1140
 msgid ""
@@ -3466,9 +3415,8 @@ msgid ""
 msgstr ""
 
 #: src/libvlc-module.c:1143
-#, fuzzy
 msgid "Display playlist tree"
-msgstr "Následující položka seznamu skladeb"
+msgstr "Zobrazit strom playlistu"
 
 #: src/libvlc-module.c:1145
 msgid ""
@@ -3488,21 +3436,19 @@ msgstr ""
 #: modules/gui/macosx/intf.m:632 modules/gui/macosx/simple_prefs.m:286
 #: modules/gui/qt4/ui/sprefs_video.ui:58
 msgid "Fullscreen"
-msgstr "Celoobrazovkový režim"
+msgstr "Režim celé obrazovky"
 
 #: src/libvlc-module.c:1158
 msgid "Select the hotkey to use to swap fullscreen state."
 msgstr "Vyberte klávesovou zkratku pro přepnutí režimu celé obrazovky."
 
 #: src/libvlc-module.c:1159
-#, fuzzy
 msgid "Leave fullscreen"
-msgstr "Celoobrazovkový režim"
+msgstr "Opustit režim celé obrazovky"
 
 #: src/libvlc-module.c:1160
-#, fuzzy
 msgid "Select the hotkey to use to leave fullscreen state."
-msgstr "Vyberte klávesovou zkratku pro přepnutí režimu celé obrazovky."
+msgstr "Vyberte klávesovou zkratku pro opuštění režimu celé obrazovky."
 
 #: src/libvlc-module.c:1161
 msgid "Play/Pause"
@@ -3561,7 +3507,7 @@ msgstr "Další"
 #: src/libvlc-module.c:1172
 msgid "Select the hotkey to use to skip to the next item in the playlist."
 msgstr ""
-"Vyberte klávesovou zkratku pro skok na následující položku seznamu skladeb."
+"Vyberte klávesovou zkratku pro skok na následující položku v playlistu."
 
 #: src/libvlc-module.c:1173 modules/control/hotkeys.c:684
 #: modules/gui/macosx/about.m:191 modules/gui/macosx/controls.m:888
@@ -3573,8 +3519,7 @@ msgstr "Předchozí"
 
 #: src/libvlc-module.c:1174
 msgid "Select the hotkey to use to skip to the previous item in the playlist."
-msgstr ""
-"Vyberte klávesovou zkratku pro skok na předchozí položku seznamu skladeb."
+msgstr "Vyberte klávesovou zkratku pro skok na předchozí položku playlist."
 
 #: src/libvlc-module.c:1175 modules/control/rc.c:77
 #: modules/gui/macosx/controls.m:880 modules/gui/macosx/intf.m:496
@@ -3772,9 +3717,8 @@ msgid "Select the key to choose the next title from the DVD"
 msgstr ""
 
 #: src/libvlc-module.c:1233
-#, fuzzy
 msgid "Select prev DVD chapter"
-msgstr "Vybrat následující kapitolu DVD"
+msgstr "Vybrat předchozí kapitolu DVD"
 
 #: src/libvlc-module.c:1234
 msgid "Select the key to choose the previous chapter from the DVD"
@@ -3812,9 +3756,8 @@ msgid "Mute"
 msgstr "Umlčet"
 
 #: src/libvlc-module.c:1242
-#, fuzzy
 msgid "Select the key to mute audio."
-msgstr "Vyberte zařízení vstupu zvuku, které používat"
+msgstr "Vyberte klávesu pro ztišení zvuku."
 
 #: src/libvlc-module.c:1243
 msgid "Subtitle delay up"
@@ -3885,9 +3828,8 @@ msgid "Play playlist bookmark 9"
 msgstr "Přehrát záložku playlistu 9"
 
 #: src/libvlc-module.c:1266
-#, fuzzy
 msgid "Play playlist bookmark 10"
-msgstr "Nastavit záložku playlistu 10"
+msgstr "Přehrát záložku playlistu 10"
 
 #: src/libvlc-module.c:1267
 msgid "Select the key to play this bookmark."
@@ -4069,7 +4011,7 @@ msgstr "Uložit snímek videa"
 
 #: src/libvlc-module.c:1313
 msgid "Takes a video snapshot and writes it to disk."
-msgstr ""
+msgstr "Vytvoří snímek z videa a uloží ho na disk."
 
 #: src/libvlc-module.c:1315 modules/access_filter/record.c:56
 #: modules/access_filter/record.c:57 modules/gui/macosx/simple_prefs.m:257
@@ -4085,9 +4027,8 @@ msgstr ""
 #: src/libvlc-module.c:1317 modules/access_filter/dump.c:54
 #: modules/access_filter/dump.c:55 modules/gui/macosx/simple_prefs.m:251
 #: modules/gui/qt4/ui/sprefs_input.ui:201
-#, fuzzy
 msgid "Dump"
-msgstr "prázdné"
+msgstr "Vyplivnout"
 
 #: src/libvlc-module.c:1318
 msgid "Media dump access filter trigger."
@@ -4103,7 +4044,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1324
 msgid "Toggle random playlist playback"
-msgstr ""
+msgstr "Přepne na náhodné přehrávání v playlistu."
 
 #: src/libvlc-module.c:1329 src/libvlc-module.c:1330
 msgid "Un-Zoom"
@@ -4142,9 +4083,8 @@ msgid "Uncrop one pixel from the right of the video"
 msgstr ""
 
 #: src/libvlc-module.c:1352
-#, fuzzy
 msgid "Toggle wallpaper mode in video output"
-msgstr "Povolit/zakázat režim kurzoru"
+msgstr "Přepne "
 
 #: src/libvlc-module.c:1354
 msgid ""
@@ -4157,14 +4097,12 @@ msgid "Display OSD menu on top of video output"
 msgstr ""
 
 #: src/libvlc-module.c:1359
-#, fuzzy
 msgid "Do not display OSD menu on video output"
-msgstr "Nezobrazovat další chyby"
+msgstr "Nezobrazovat OSD"
 
 #: src/libvlc-module.c:1360
-#, fuzzy
 msgid "Do not display OSD menu on top of video output"
-msgstr "Nezobrazovat další chyby"
+msgstr "Nezobrazovat OSD"
 
 #: src/libvlc-module.c:1361
 msgid "Highlight widget on the right"
@@ -4284,9 +4222,8 @@ msgid "Track settings"
 msgstr "Nastavení stopy"
 
 #: src/libvlc-module.c:1651
-#, fuzzy
 msgid "Playback control"
-msgstr "Téma ovládacích prvků"
+msgstr "Ovládání přehrávání"
 
 #: src/libvlc-module.c:1672
 msgid "Default devices"
@@ -4297,9 +4234,8 @@ msgid "Network settings"
 msgstr "Nastavení sítě"
 
 #: src/libvlc-module.c:1693
-#, fuzzy
 msgid "Socks proxy"
-msgstr "Port SOCKS proxy"
+msgstr "SOCKS proxy"
 
 #: src/libvlc-module.c:1702
 msgid "Metadata"
@@ -4317,7 +4253,7 @@ msgstr "Vstup"
 
 #: src/libvlc-module.c:1779
 msgid "VLM"
-msgstr ""
+msgstr "VLM"
 
 #: src/libvlc-module.c:1812
 msgid "CPU"
@@ -4332,9 +4268,8 @@ msgid "Plugins"
 msgstr "Zásuvné moduly"
 
 #: src/libvlc-module.c:1849
-#, fuzzy
 msgid "Performance options"
-msgstr "Původní nastavení"
+msgstr "Možnosti výkonu"
 
 #: src/libvlc-module.c:1997
 msgid "Hot keys"
@@ -4350,7 +4285,7 @@ msgstr ""
 
 #: src/libvlc-module.c:2487
 msgid "Exhaustive help for VLC and its modules"
-msgstr ""
+msgstr "Vyčerpávající nápověda pro VLC a jeho moduly"
 
 #: src/libvlc-module.c:2489
 msgid ""
@@ -4367,9 +4302,8 @@ msgid "print a list of available modules"
 msgstr "vypsání seznamu dostupných modulů"
 
 #: src/libvlc-module.c:2496
-#, fuzzy
 msgid "print a list of available modules with extra detail"
-msgstr "vypsání seznamu dostupných modulů"
+msgstr "vypsání seznamu dostupných modulů s extra detaily"
 
 #: src/libvlc-module.c:2498
 msgid ""
@@ -4386,9 +4320,8 @@ msgid "save the current command line options in the config"
 msgstr ""
 
 #: src/libvlc-module.c:2505
-#, fuzzy
 msgid "reset the current config to the default values"
-msgstr "Přenastavit vybraný filtr na implicitní hodnoty"
+msgstr "resetovat současnou konfiguraci k výchozím hodnotám"
 
 #: src/libvlc-module.c:2507
 msgid "use alternate config file"
@@ -4446,9 +4379,8 @@ msgid ""
 msgstr ""
 
 #: src/misc/update.c:1632
-#, fuzzy
 msgid "File could not be verified"
-msgstr "Skrýt rozhraní"
+msgstr "Soubor se nezdařilo verifikovat"
 
 #: src/misc/update.c:1633
 #, c-format
@@ -4458,9 +4390,8 @@ msgid ""
 msgstr ""
 
 #: src/misc/update.c:1644 src/misc/update.c:1656
-#, fuzzy
 msgid "Invalid signature"
-msgstr "Neplatný výběr"
+msgstr "Neplatný podpis"
 
 #: src/misc/update.c:1645 src/misc/update.c:1657
 #, c-format
@@ -4470,9 +4401,8 @@ msgid ""
 msgstr ""
 
 #: src/misc/update.c:1669
-#, fuzzy
 msgid "File not verifiable"
-msgstr "Skrýt rozhraní"
+msgstr "Soubor nelze verifikovat"
 
 #: src/misc/update.c:1670
 #, c-format
@@ -4482,9 +4412,8 @@ msgid ""
 msgstr ""
 
 #: src/misc/update.c:1681 src/misc/update.c:1693
-#, fuzzy
 msgid "File corrupted"
-msgstr "výběr souboru"
+msgstr "Soubor porušen"
 
 #: src/misc/update.c:1682 src/misc/update.c:1694
 #, c-format
@@ -4881,9 +4810,8 @@ msgid "Quechua"
 msgstr "Kečuánština"
 
 #: src/text/iso-639_def.h:152
-#, fuzzy
 msgid "Original audio"
-msgstr "Povolit zvukový výstup"
+msgstr "Orginální zvuk"
 
 #: src/text/iso-639_def.h:153
 msgid "Raeto-Romance"
@@ -5057,28 +4985,28 @@ msgstr ""
 msgid "Zulu"
 msgstr "Zulu"
 
-#: src/video_output/video_output.c:461 modules/gui/macosx/intf.m:589
+#: src/video_output/video_output.c:459 modules/gui/macosx/intf.m:589
 #: modules/gui/macosx/intf.m:590 modules/video_filter/deinterlace.c:127
 msgid "Deinterlace"
 msgstr "Odstranění prokládání"
 
-#: src/video_output/video_output.c:465 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:463 modules/video_filter/deinterlace.c:123
 msgid "Discard"
 msgstr "Zahodit"
 
-#: src/video_output/video_output.c:467 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:465 modules/video_filter/deinterlace.c:123
 msgid "Blend"
 msgstr "Mísení"
 
-#: src/video_output/video_output.c:469 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:467 modules/video_filter/deinterlace.c:123
 msgid "Mean"
 msgstr "Průměr"
 
-#: src/video_output/video_output.c:471 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:469 modules/video_filter/deinterlace.c:123
 msgid "Bob"
 msgstr ""
 
-#: src/video_output/video_output.c:473 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:471 modules/video_filter/deinterlace.c:123
 msgid "Linear"
 msgstr "Lineární"
 
@@ -5106,9 +5034,8 @@ msgstr "Poměr stran"
 #: modules/access/tcp.c:41 modules/access/udp.c:49
 #: modules/access/v4l2/v4l2.c:215 modules/access/v4l.c:77
 #: modules/access/vcd/vcd.c:46
-#, fuzzy
 msgid "Caching value in ms"
-msgstr "ve tvaru \"<název> <hodnota>\""
+msgstr "Hodnota vyrovnávací paměti v ms"
 
 #: modules/access/bda/bda.c:42 modules/access/dvb/access.c:80
 msgid ""
@@ -5147,14 +5074,12 @@ msgid "In kHz for DVB-C/S/T"
 msgstr ""
 
 #: modules/access/bda/bda.c:59 modules/access/dvb/access.c:92
-#, fuzzy
 msgid "Inversion mode"
-msgstr "chyba \"%mode:1\""
+msgstr "Inverzní mód"
 
 #: modules/access/bda/bda.c:60 modules/access/dvb/access.c:93
-#, fuzzy
 msgid "Inversion mode [0=off, 1=on, 2=auto]"
-msgstr "[0=vypnuto, 1=zapnuto, -1=auto]."
+msgstr "Inverzní mód [0=vypnuto, 1=zapnuto, 2=auto]"
 
 #: modules/access/bda/bda.c:65 modules/access/dvb/access.c:95
 msgid "Probe DVB card for capabilities"
@@ -5176,9 +5101,8 @@ msgid "This allows you to stream an entire transponder with a \"budget\" card."
 msgstr ""
 
 #: modules/access/bda/bda.c:76
-#, fuzzy
 msgid "Network Identifier"
-msgstr "Nastavení sítě"
+msgstr "Identifikátor sítě"
 
 #: modules/access/bda/bda.c:79 modules/access/dvb/access.c:102
 msgid "Satellite number in the Diseqc system"
@@ -5190,18 +5114,16 @@ msgid "[0=no diseqc, 1-4=satellite number]."
 msgstr "řádek %d: Špatné číslo %s: %d\n"
 
 #: modules/access/bda/bda.c:83 modules/access/dvb/access.c:105
-#, fuzzy
 msgid "LNB voltage"
-msgstr "Horní propust"
+msgstr "LNB voltáž"
 
 #: modules/access/bda/bda.c:84 modules/access/dvb/access.c:106
 msgid "In Volts [0, 13=vertical, 18=horizontal]."
 msgstr ""
 
 #: modules/access/bda/bda.c:86 modules/access/dvb/access.c:108
-#, fuzzy
 msgid "High LNB voltage"
-msgstr "Horní propust"
+msgstr "Vysoká LNB voltáž"
 
 #: modules/access/bda/bda.c:87 modules/access/dvb/access.c:109
 msgid ""
@@ -5329,19 +5251,16 @@ msgid "Terrestrial bandwidth [0=auto,6,7,8 in MHz]"
 msgstr "Kontrola šířky pásma"
 
 #: modules/access/bda/bda.c:136
-#, fuzzy
 msgid "6 MHz"
-msgstr "%d Hz"
+msgstr "6 MHz"
 
 #: modules/access/bda/bda.c:136
-#, fuzzy
 msgid "7 MHz"
-msgstr "%d Hz"
+msgstr "7 MHz"
 
 #: modules/access/bda/bda.c:136
-#, fuzzy
 msgid "8 MHz"
-msgstr "%d Hz"
+msgstr "8 MHz"
 
 #: modules/access/bda/bda.c:138 modules/access/dvb/access.c:144
 #, fuzzy
@@ -5407,9 +5326,8 @@ msgid "4"
 msgstr ""
 
 #: modules/access/bda/bda.c:157
-#, fuzzy
 msgid "Satellite Azimuth"
-msgstr "Normalizace hlasitosti"
+msgstr "Azimut satelitu "
 
 #: modules/access/bda/bda.c:158
 msgid "Satellite Azimuth in tenths of degree"
@@ -5444,14 +5362,12 @@ msgid "Satellite Polarisation [H/V/L/R]"
 msgstr "Normalizace hlasitosti"
 
 #: modules/access/bda/bda.c:168
-#, fuzzy
 msgid "Horizontal"
-msgstr "Překlopit vodorovně"
+msgstr "Horizontální"
 
 #: modules/access/bda/bda.c:168
-#, fuzzy
 msgid "Vertical"
-msgstr "Vertikální synchronizace"
+msgstr "Vertikální"
 
 #: modules/access/bda/bda.c:169
 msgid "Circular Left"
@@ -5466,14 +5382,12 @@ msgid "DVB"
 msgstr "DVB"
 
 #: modules/access/bda/bda.c:173
-#, fuzzy
 msgid "DirectShow DVB input"
-msgstr "DirectShow vstup"
+msgstr "DirectShow DVB vstup"
 
 #: modules/access/cdda/access.c:285
-#, fuzzy
 msgid "CD reading failed"
-msgstr "zakázat veškeré změny měřítka"
+msgstr "Selhalo čtení CD"
 
 #: modules/access/cdda/access.c:286
 #, c-format
@@ -5493,9 +5407,8 @@ msgid "Audio CD"
 msgstr "Zvukové CD"
 
 #: modules/access/cdda.c:73
-#, fuzzy
 msgid "Audio CD input"
-msgstr "Zařízení vstupu zvuku"
+msgstr "Vstup zvukového CD"
 
 #: modules/access/cdda.c:79
 msgid "[cdda:][device][@[track]]"
@@ -5523,7 +5436,7 @@ msgid "Audio CD - Track %i"
 msgstr "Audio CD - Stopa %i"
 
 #: modules/access/cdda/cdda.c:43 modules/access/directory.c:86
-#: modules/codec/x264.c:392 modules/codec/x264.c:398 modules/codec/x264.c:403
+#: modules/codec/x264.c:397 modules/codec/x264.c:403 modules/codec/x264.c:408
 msgid "none"
 msgstr "nic"
 
@@ -5601,9 +5514,8 @@ msgid ""
 msgstr ""
 
 #: modules/access/cdda/cdda.c:101
-#, fuzzy
 msgid "Enable CD paranoia?"
-msgstr "Přehrávač CD (zastaralý)"
+msgstr "Povolit CD paranoia?"
 
 #: modules/access/cdda/cdda.c:103
 msgid ""
@@ -5622,23 +5534,20 @@ msgid "Compact Disc Digital Audio (CD-DA) input"
 msgstr ""
 
 #: modules/access/cdda/cdda.c:116
-#, fuzzy
 msgid "Audio Compact Disc"
-msgstr "Úprava disku s ID: "
+msgstr "Zvukové CD"
 
 #: modules/access/cdda/cdda.c:125
 msgid "Additional debug"
 msgstr "Doplňující ladící informace"
 
 #: modules/access/cdda/cdda.c:130
-#, fuzzy
 msgid "Caching value in microseconds"
-msgstr "ve tvaru \"<název> <hodnota>\""
+msgstr "Hodnota vyrovnávací paměti v ms"
 
 #: modules/access/cdda/cdda.c:135
-#, fuzzy
 msgid "Number of blocks per CD read"
-msgstr "Neplatný počet bloků ve skupině"
+msgstr ""
 
 #: modules/access/cdda/cdda.c:140
 msgid "Format to use in playlist \"title\" field when no CDDB"
@@ -5654,9 +5563,8 @@ msgid "If set, audio controls and audio jack output are used"
 msgstr ""
 
 #: modules/access/cdda/cdda.c:151
-#, fuzzy
 msgid "Do CD-Text lookups?"
-msgstr "Nečíst text"
+msgstr "Vyhledávat CD-Text?"
 
 #: modules/access/cdda/cdda.c:152
 #, fuzzy
@@ -5705,9 +5613,8 @@ msgid "CDDB server uses this port number to communicate on"
 msgstr ""
 
 #: modules/access/cdda/cdda.c:198 modules/access/cdda/cdda.c:199
-#, fuzzy
 msgid "email address reported to CDDB server"
-msgstr "Adresa serveru CDDB."
+msgstr "emailová adresa oznamovaná serveru CDDB"
 
 #: modules/access/cdda/cdda.c:203
 #, fuzzy
@@ -6050,9 +5957,8 @@ msgid "Select audio input format with the given bits/sample (if non 0)"
 msgstr ""
 
 #: modules/access/dshow/dshow.cpp:186
-#, fuzzy
 msgid "DirectShow"
-msgstr "DirectShow vstup"
+msgstr "DirectShow"
 
 #: modules/access/dshow/dshow.cpp:187 modules/access/dshow/dshow.cpp:255
 msgid "DirectShow input"
@@ -6125,7 +6031,6 @@ msgstr ""
 
 #: modules/access/dvb/access.c:173 modules/access_output/http.c:74
 #: modules/control/http/http.c:55
-#, fuzzy
 msgid "Certificate file"
 msgstr "Soubor s certifikátem"
 
@@ -6135,7 +6040,6 @@ msgstr ""
 
 #: modules/access/dvb/access.c:177 modules/access_output/http.c:77
 #: modules/control/http/http.c:58
-#, fuzzy
 msgid "Private key file"
 msgstr "Soubor soukromého klíče"
 
@@ -6145,9 +6049,8 @@ msgstr ""
 
 #: modules/access/dvb/access.c:180 modules/access_output/http.c:81
 #: modules/control/http/http.c:60
-#, fuzzy
 msgid "Root CA file"
-msgstr "Zařízení _kořenového systému souborů:"
+msgstr "Soubor kořenové CA"
 
 #: modules/access/dvb/access.c:181
 msgid "HTTP interface x509 PEM trusted root CA certificates file"
@@ -6155,9 +6058,8 @@ msgstr ""
 
 #: modules/access/dvb/access.c:184 modules/access_output/http.c:86
 #: modules/control/http/http.c:63
-#, fuzzy
 msgid "CRL file"
-msgstr "výběr souboru"
+msgstr "CRL soubor"
 
 #: modules/access/dvb/access.c:185
 msgid "HTTP interface Certificates Revocation List file"
@@ -6172,9 +6074,8 @@ msgid "HTTP server"
 msgstr "HTTP server"
 
 #: modules/access/dvb/access.c:733
-#, fuzzy
 msgid "Input syntax is deprecated"
-msgstr "Vstup se změnil"
+msgstr "Vstupní syntaxe je zastaralá"
 
 #: modules/access/dvb/access.c:734
 msgid ""
@@ -6201,19 +6102,16 @@ msgid "Digital Video (Firewire/ieee1394)  input"
 msgstr ""
 
 #: modules/access/dv.c:78
-#, fuzzy
 msgid "dv"
-msgstr "Video DV"
+msgstr "dv"
 
 #: modules/access/dvdnav.c:68 modules/access/dvdread.c:72
-#, fuzzy
 msgid "DVD angle"
-msgstr "Úhel střihu"
+msgstr "DVD úhel"
 
 #: modules/access/dvdnav.c:70 modules/access/dvdread.c:74
-#, fuzzy
 msgid "Default DVD angle."
-msgstr "výchozí jazyk pro přehrávání DVD"
+msgstr "Výchozí DVD úhel"
 
 #: modules/access/dvdnav.c:74 modules/access/dvdread.c:78
 msgid "Caching value for DVDs. This value should be set in milliseconds."
@@ -6235,15 +6133,13 @@ msgid "DVD with menus"
 msgstr "DVD s menu"
 
 #: modules/access/dvdnav.c:88
-#, fuzzy
 msgid "DVDnav Input"
-msgstr "Neplatný vstup"
+msgstr "DVDnav vstup"
 
 #: modules/access/dvdnav.c:310 modules/access/dvdread.c:251
 #: modules/access/dvdread.c:511 modules/access/dvdread.c:573
-#, fuzzy
 msgid "Playback failure"
-msgstr "Přehrávání"
+msgstr "Přehrávání selhalo"
 
 #: modules/access/dvdnav.c:311
 msgid ""
@@ -6287,9 +6183,9 @@ msgid "DVDRead Input (DVD without menu support)"
 msgstr ""
 
 #: modules/access/dvdread.c:252
-#, fuzzy, c-format
+#, c-format
 msgid "DVDRead could not open the disk \"%s\"."
-msgstr "Barva video vstupu."
+msgstr "DVDRead nemohl otevřít disk \"%s\"."
 
 #: modules/access/dvdread.c:512
 #, c-format
@@ -6302,9 +6198,8 @@ msgid "DVDRead could not read %d/%d blocks at 0x%02x."
 msgstr ""
 
 #: modules/access/eyetv.m:56
-#, fuzzy
 msgid "Channel number"
-msgstr "Jméno kanálu"
+msgstr "Číslo kanálu"
 
 #: modules/access/eyetv.m:58
 msgid ""
@@ -6385,20 +6280,18 @@ msgid "File"
 msgstr "File"
 
 #: modules/access/file.c:246 modules/access/file.c:365
-#: modules/access/file.c:379 modules/access/mmap.c:221
-#, fuzzy
+#: modules/access/file.c:379 modules/access/mmap.c:224
 msgid "File reading failed"
-msgstr "zakázat veškeré změny měřítka"
+msgstr "Čtení souboru selhalo"
 
-#: modules/access/file.c:247 modules/access/mmap.c:222
-#, fuzzy
+#: modules/access/file.c:247 modules/access/mmap.c:225
 msgid "VLC could not read the file."
-msgstr "Barva video vstupu."
+msgstr "VLC nemohlo otevřít soubor."
 
 #: modules/access/file.c:366 modules/access/file.c:380
-#, fuzzy, c-format
+#, c-format
 msgid "VLC could not open the file \"%s\"."
-msgstr "Barva video vstupu."
+msgstr "VLC nemohlo otevřít soubor \"%s\"."
 
 #: modules/access_filter/bandwidth.c:34
 msgid "Bandwidth limit (bytes/s)"
@@ -6451,14 +6344,12 @@ msgid "Directory where the record will be stored."
 msgstr ""
 
 #: modules/access_filter/record.c:339
-#, fuzzy
 msgid "Recording"
-msgstr "Dekódování"
+msgstr "Nahrávání"
 
 #: modules/access_filter/record.c:341
-#, fuzzy
 msgid "Recording done"
-msgstr "Poměr stran"
+msgstr "Nahrávání dokončeno"
 
 #: modules/access_filter/timeshift.c:53
 #, fuzzy
@@ -6541,9 +6432,8 @@ msgstr "modul zvukového výstupu xine do souboru"
 
 #: modules/access/ftp.c:135 modules/access/ftp.c:145 modules/access/ftp.c:210
 #: modules/access/ftp.c:220 modules/access/ftp.c:228
-#, fuzzy
 msgid "Network interaction failed"
-msgstr "Proxy sítě"
+msgstr "Selhala interakce se sítí"
 
 #: modules/access/ftp.c:136
 msgid "VLC could not connect with the given server."
@@ -6555,15 +6445,15 @@ msgstr ""
 
 #: modules/access/ftp.c:211
 msgid "Your account was rejected."
-msgstr ""
+msgstr "Váš účet byl odmítnut."
 
 #: modules/access/ftp.c:221
 msgid "Your password was rejected."
-msgstr ""
+msgstr "Vaše heslo bylo odmítnuto."
 
 #: modules/access/ftp.c:229
 msgid "Your connection attempt to the server was rejected."
-msgstr ""
+msgstr "Pokus o spojení se serverem byl odmítnut."
 
 #: modules/access/gnomevfs.c:49
 msgid ""
@@ -6586,9 +6476,8 @@ msgid ""
 msgstr ""
 
 #: modules/access/http.c:71
-#, fuzzy
 msgid "HTTP proxy password"
-msgstr "HTTP heslo"
+msgstr "HTTP proxy heslo"
 
 #: modules/access/http.c:73
 msgid "If your HTTP proxy requires a password, set it here."
@@ -6670,9 +6559,8 @@ msgid "Read the audio stream at VLC pace rather than Jack pace."
 msgstr ""
 
 #: modules/access/jack.c:69
-#, fuzzy
 msgid "Auto Connection"
-msgstr "Automaticky obnovit spojení"
+msgstr "Automatické připojení"
 
 #: modules/access/jack.c:71
 #, fuzzy
@@ -6680,14 +6568,12 @@ msgid "Automatically connect VLC input ports to available output ports."
 msgstr "Kopíruji soubory z '%s'\n"
 
 #: modules/access/jack.c:74
-#, fuzzy
 msgid "JACK audio input"
-msgstr "Zařízení výstupu zvuku"
+msgstr "JACK audio vstup"
 
 #: modules/access/jack.c:76
-#, fuzzy
 msgid "JACK Input"
-msgstr "Vstup"
+msgstr "JACK Vstup"
 
 #: modules/access/mmap.c:42
 #, fuzzy
@@ -6724,9 +6610,8 @@ msgid ""
 msgstr ""
 
 #: modules/access/mms/mms.c:59
-#, fuzzy
 msgid "Maximum bitrate"
-msgstr "maximální bitrate"
+msgstr "Maximální bitrate"
 
 #: modules/access/mms/mms.c:61
 msgid "Select the stream with the maximum bitrate under that limit."
@@ -6740,9 +6625,8 @@ msgid ""
 msgstr ""
 
 #: modules/access/mms/mms.c:69
-#, fuzzy
 msgid "TCP/UDP timeout (ms)"
-msgstr "Timeout"
+msgstr "TCP/UDP časový limit (ms)"
 
 #: modules/access/mms/mms.c:70
 msgid ""
@@ -6752,17 +6636,15 @@ msgstr ""
 
 #: modules/access/mms/mms.c:74
 msgid "Microsoft Media Server (MMS) input"
-msgstr ""
+msgstr "MMS vstup"
 
 #: modules/access_output/dummy.c:45 modules/stream_out/dummy.c:51
-#, fuzzy
 msgid "Dummy stream output"
-msgstr "fiktivní modul zvukového výstupu xine"
+msgstr "Fiktivní stream výstup"
 
 #: modules/access_output/dummy.c:46 modules/misc/dummy/dummy.c:61
-#, fuzzy
 msgid "Dummy"
-msgstr "prázdné"
+msgstr "Fiktivní"
 
 #: modules/access_output/file.c:64
 msgid "Append to file"
@@ -6795,14 +6677,12 @@ msgid "Password"
 msgstr "Heslo"
 
 #: modules/access_output/http.c:69
-#, fuzzy
 msgid "Password that will be requested to access the stream."
-msgstr "Heslo, které bude použito pro připojení."
+msgstr "Heslo, které bude použito pro přístup ke streamu."
 
 #: modules/access_output/http.c:71
-#, fuzzy
 msgid "Mime"
-msgstr "MIME"
+msgstr "Mime"
 
 #: modules/access_output/http.c:72
 msgid "MIME returned by the server (autodetected if not specified)."
@@ -6841,14 +6721,12 @@ msgid "Advertise the stream with the Bonjour protocol."
 msgstr "Provzdušňovač s bublinkami"
 
 #: modules/access_output/http.c:95
-#, fuzzy
 msgid "HTTP stream output"
-msgstr "jméno výstupního souboru s psf písmem"
+msgstr "Vystup HTTP streamu"
 
 #: modules/access_output/rtmp.c:44
-#, fuzzy
 msgid "Active TCP connection"
-msgstr "Automaticky obnovit spojení"
+msgstr "Aktivní TCP spojení"
 
 #: modules/access_output/rtmp.c:46
 msgid ""
@@ -6857,37 +6735,32 @@ msgid ""
 msgstr ""
 
 #: modules/access_output/rtmp.c:55
-#, fuzzy
 msgid "RTMP stream output"
-msgstr "jméno výstupního souboru s psf písmem"
+msgstr "Výstup RTMP streamu"
 
 #: modules/access_output/rtmp.c:56 modules/access/rtmp/access.c:53
-#, fuzzy
 msgid "RTMP"
-msgstr "RTP"
+msgstr "RTMP"
 
 #: modules/access_output/shout.c:63
-#, fuzzy
 msgid "Stream name"
-msgstr "Zpřístupněný název"
+msgstr "Název streamu"
 
 #: modules/access_output/shout.c:64
 msgid "Name to give to this stream/channel on the shoutcast/icecast server."
 msgstr ""
 
 #: modules/access_output/shout.c:67
-#, fuzzy
 msgid "Stream description"
-msgstr "Zpřístupněný popis"
+msgstr "Popisek streamu"
 
 #: modules/access_output/shout.c:68
 msgid "Description of the stream content or information about your channel."
 msgstr ""
 
 #: modules/access_output/shout.c:71
-#, fuzzy
 msgid "Stream MP3"
-msgstr "Zvuk MP3"
+msgstr "Streamovat MP3"
 
 #: modules/access_output/shout.c:72
 msgid ""
@@ -6897,18 +6770,16 @@ msgid ""
 msgstr ""
 
 #: modules/access_output/shout.c:81
-#, fuzzy
 msgid "Genre description"
-msgstr "Zpřístupněný popis"
+msgstr "Popis žánru"
 
 #: modules/access_output/shout.c:82
 msgid "Genre of the content. "
-msgstr ""
+msgstr "Žánr obsahu."
 
 #: modules/access_output/shout.c:84
-#, fuzzy
 msgid "URL description"
-msgstr "Popis"
+msgstr "Url popisek"
 
 #: modules/access_output/shout.c:85
 msgid "URL with information about the stream or your channel. "
@@ -6930,9 +6801,8 @@ msgid "Samplerate information of the transcoded stream. "
 msgstr "Zobrazení informací o současné stránce"
 
 #: modules/access_output/shout.c:97
-#, fuzzy
 msgid "Number of channels"
-msgstr "Počet výstupních kanálů"
+msgstr "Počet kanálu"
 
 #: modules/access_output/shout.c:98
 #, fuzzy
@@ -6941,7 +6811,7 @@ msgstr "Zobrazení informací o současné stránce"
 
 #: modules/access_output/shout.c:100
 msgid "Ogg Vorbis Quality"
-msgstr ""
+msgstr "Kvalita Ogg Vorbis"
 
 #: modules/access_output/shout.c:101
 #, fuzzy
@@ -6949,9 +6819,8 @@ msgid "Ogg Vorbis Quality information of the transcoded stream. "
 msgstr "Zobrazení informací o současné stránce"
 
 #: modules/access_output/shout.c:103
-#, fuzzy
 msgid "Stream public"
-msgstr "výstupní soubor"
+msgstr "Veřejný stream"
 
 #: modules/access_output/shout.c:104
 msgid ""
@@ -6961,15 +6830,13 @@ msgid ""
 msgstr ""
 
 #: modules/access_output/shout.c:110
-#, fuzzy
 msgid "IceCAST output"
-msgstr "výstupní soubor"
+msgstr "Výstup pro IceCAST"
 
 #: modules/access_output/udp.c:67 modules/access/rtsp/access.c:46
 #: modules/demux/live555.cpp:74
-#, fuzzy
 msgid "Caching value (ms)"
-msgstr "/SS/df/MS/F/P-hodnota/kritická hodnota F"
+msgstr "Hodnota keše (ms)"
 
 #: modules/access_output/udp.c:69
 msgid ""
@@ -6990,9 +6857,8 @@ msgid ""
 msgstr ""
 
 #: modules/access_output/udp.c:80
-#, fuzzy
 msgid "UDP stream output"
-msgstr "jméno výstupního souboru s psf písmem"
+msgstr "Výstup UDP streamu"
 
 #: modules/access/pvr.c:62
 msgid ""
@@ -7156,14 +7022,12 @@ msgid "NTSC"
 msgstr "NTSC"
 
 #: modules/access/pvr.c:123
-#, fuzzy
 msgid "vbr"
 msgstr "Režim VBR"
 
 #: modules/access/pvr.c:123
-#, fuzzy
 msgid "cbr"
-msgstr "Režim VBR"
+msgstr "Režim CBR"
 
 #: modules/access/pvr.c:128
 msgid "PVR"
@@ -7406,13 +7270,12 @@ msgid "Force height (-1 for autodetect)."
 msgstr ""
 
 #: modules/access/v4l2/v4l2.c:111
-#, fuzzy
 msgid "Reset v4l2 controls"
-msgstr "Rozšířené ovládání"
+msgstr "Vrátit ovládání v4l2 do původního nastavení"
 
 #: modules/access/v4l2/v4l2.c:113
 msgid "Reset controls to defaults provided by the v4l2 driver."
-msgstr ""
+msgstr "Vrátit ovládání do původního nastavení poskytnutého ovladačem v4l2"
 
 #: modules/access/v4l2/v4l2.c:114 modules/access/v4l.c:112
 #: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:205
@@ -7774,9 +7637,8 @@ msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux vstup"
 
 #: modules/access/v4l2/v4l2.c:3147
-#, fuzzy
 msgid "Reset controls to default"
-msgstr "Rozhraní pro dálkové ovládání"
+msgstr "Resetovat ovládání k výchozím hodnotám"
 
 #: modules/access/v4l.c:79
 msgid ""
@@ -8636,9 +8498,8 @@ msgid ""
 msgstr ""
 
 #: modules/audio_output/auhal.c:431
-#, fuzzy
 msgid "Audio device is not configured"
-msgstr "Název zvukového zařízení"
+msgstr "Zvukové zařízení není nastaveno"
 
 #: modules/audio_output/auhal.c:432
 msgid ""
@@ -8834,11 +8695,12 @@ msgid ""
 "Select special Audio device, or let windows decide (default), change needs "
 "VLC restart to apply."
 msgstr ""
+"Vybere speciální zvukové zařízení, nebo nechá aplikaci rozhodnout (výchozí), "
+"změna vyžaduje restart VLC."
 
 #: modules/audio_output/waveout.c:163
-#, fuzzy
 msgid "Default Audio Device"
-msgstr "Výchozí zařízení"
+msgstr "Výchozí zvukové zařízení"
 
 #: modules/audio_output/waveout.c:167
 #, fuzzy
@@ -8979,9 +8841,8 @@ msgstr ""
 
 #: modules/codec/avcodec/avcodec.h:78 modules/codec/avcodec/avcodec.h:174
 #: modules/demux/rawdv.c:40 modules/stream_out/transcode.c:146
-#, fuzzy
 msgid "Hurry up"
-msgstr "Zvýšit jas"
+msgstr "Spěchej"
 
 #: modules/codec/avcodec/avcodec.h:80
 msgid ""
@@ -9011,9 +8872,8 @@ msgid ""
 msgstr ""
 
 #: modules/codec/avcodec/avcodec.h:94
-#, fuzzy
 msgid "Debug mask"
-msgstr "debugovací maska příznaků VCD"
+msgstr "Debugovací maska"
 
 #: modules/codec/avcodec/avcodec.h:95
 #, fuzzy
@@ -9146,7 +9006,7 @@ msgid ""
 "same qscale for I and P frames)."
 msgstr ""
 
-#: modules/codec/avcodec/avcodec.h:158 modules/codec/x264.c:324
+#: modules/codec/avcodec/avcodec.h:158 modules/codec/x264.c:329
 #: modules/demux/mod.c:75
 msgid "Noise reduction"
 msgstr "Redukce šumu"
@@ -10433,75 +10293,82 @@ msgstr ""
 msgid ""
 "This parameter controls quality versus speed tradeoffs involved in the "
 "motion estimation decision process (lower = quicker and higher = better "
-"quality). Range 1 to 7."
+"quality). Range 1 to 9."
 msgstr ""
 
 #: modules/codec/x264.c:279
 msgid ""
 "This parameter controls quality versus speed tradeoffs involved in the "
 "motion estimation decision process (lower = quicker and higher = better "
-"quality). Range 1 to 6."
+"quality). Range 1 to 7."
 msgstr ""
 
 #: modules/codec/x264.c:284
 msgid ""
 "This parameter controls quality versus speed tradeoffs involved in the "
 "motion estimation decision process (lower = quicker and higher = better "
-"quality). Range 1 to 5."
+"quality). Range 1 to 6."
 msgstr ""
 
 #: modules/codec/x264.c:289
+msgid ""
+"This parameter controls quality versus speed tradeoffs involved in the "
+"motion estimation decision process (lower = quicker and higher = better "
+"quality). Range 1 to 5."
+msgstr ""
+
+#: modules/codec/x264.c:294
 #, fuzzy
 msgid "RD based mode decision for B-frames"
 msgstr "Počet rámců pro G.711"
 
-#: modules/codec/x264.c:290
+#: modules/codec/x264.c:295
 #, fuzzy
 msgid "RD based mode decision for B-frames. This requires subme 6 (or higher)."
 msgstr "Počet rámců pro G.711"
 
-#: modules/codec/x264.c:293
+#: modules/codec/x264.c:298
 msgid "Decide references on a per partition basis"
 msgstr ""
 
-#: modules/codec/x264.c:294
+#: modules/codec/x264.c:299
 msgid ""
 "Allows each 8x8 or 16x8 partition to independently select a reference frame, "
 "as opposed to only one ref per macroblock."
 msgstr ""
 
-#: modules/codec/x264.c:298
+#: modules/codec/x264.c:303
 #, fuzzy
 msgid "Chroma in motion estimation"
 msgstr "_Optimální odhad"
 
-#: modules/codec/x264.c:299
+#: modules/codec/x264.c:304
 #, fuzzy
 msgid "Chroma ME for subpel and mode decision in P-frames."
 msgstr "Počet rámců pro G.711"
 
-#: modules/codec/x264.c:302
+#: modules/codec/x264.c:307
 msgid "Jointly optimize both MVs in B-frames"
 msgstr ""
 
-#: modules/codec/x264.c:303
+#: modules/codec/x264.c:308
 msgid "Joint bidirectional motion refinement."
 msgstr ""
 
-#: modules/codec/x264.c:305
+#: modules/codec/x264.c:310
 msgid "Adaptive spatial transform size"
 msgstr ""
 
-#: modules/codec/x264.c:307
+#: modules/codec/x264.c:312
 msgid "SATD-based decision for 8x8 transform in inter-MBs."
 msgstr ""
 
-#: modules/codec/x264.c:309
+#: modules/codec/x264.c:314
 #, fuzzy
 msgid "Trellis RD quantization"
 msgstr "Změnit _heslo..."
 
-#: modules/codec/x264.c:310
+#: modules/codec/x264.c:315
 msgid ""
 "Trellis RD quantization: \n"
 " - 0: disabled\n"
@@ -10510,195 +10377,195 @@ msgid ""
 "This requires CABAC."
 msgstr ""
 
-#: modules/codec/x264.c:316
+#: modules/codec/x264.c:321
 msgid "Early SKIP detection on P-frames"
 msgstr ""
 
-#: modules/codec/x264.c:317
+#: modules/codec/x264.c:322
 msgid "Early SKIP detection on P-frames."
 msgstr ""
 
-#: modules/codec/x264.c:319
+#: modules/codec/x264.c:324
 msgid "Coefficient thresholding on P-frames"
 msgstr ""
 
-#: modules/codec/x264.c:320
+#: modules/codec/x264.c:325
 msgid ""
 "Coefficient thresholding on P-frames.Eliminate dct blocks containing only a "
 "small single coefficient."
 msgstr ""
 
-#: modules/codec/x264.c:325
+#: modules/codec/x264.c:330
 msgid ""
 "Dct-domain noise reduction. Adaptive pseudo-deadzone. 10 to 1000 seems to be "
 "a useful range."
 msgstr ""
 
-#: modules/codec/x264.c:329
+#: modules/codec/x264.c:334
 #, fuzzy
 msgid "Inter luma quantization deadzone"
 msgstr "Poměr přiblížení: %d:1"
 
-#: modules/codec/x264.c:330
+#: modules/codec/x264.c:335
 #, fuzzy
 msgid "Set the size of the inter luma quantization deadzone. Range 0 to 32."
 msgstr "Poměr přiblížení: %d:1"
 
-#: modules/codec/x264.c:333
+#: modules/codec/x264.c:338
 #, fuzzy
 msgid "Intra luma quantization deadzone"
 msgstr "Poměr přiblížení: %d:1"
 
-#: modules/codec/x264.c:334
+#: modules/codec/x264.c:339
 #, fuzzy
 msgid "Set the size of the intra luma quantization deadzone. Range 0 to 32."
 msgstr "Poměr přiblížení: %d:1"
 
-#: modules/codec/x264.c:341
+#: modules/codec/x264.c:346
 msgid "Non-deterministic optimizations when threaded"
 msgstr ""
 
-#: modules/codec/x264.c:342
+#: modules/codec/x264.c:347
 msgid "Slightly improve quality of SMP, at the cost of repeatability."
 msgstr ""
 
-#: modules/codec/x264.c:346
+#: modules/codec/x264.c:351
 #, fuzzy
 msgid "CPU optimizations"
 msgstr ""
 "\n"
 "Hledám procesor...\n"
 
-#: modules/codec/x264.c:347
+#: modules/codec/x264.c:352
 #, fuzzy
 msgid "Use assembler CPU optimizations."
 msgstr ""
 "\n"
 "Hledám procesor...\n"
 
-#: modules/codec/x264.c:349
+#: modules/codec/x264.c:354
 msgid "Filename for 2 pass stats file"
 msgstr ""
 
-#: modules/codec/x264.c:350
+#: modules/codec/x264.c:355
 msgid "Filename for 2 pass stats file for multi-pass encoding."
 msgstr ""
 
-#: modules/codec/x264.c:352
+#: modules/codec/x264.c:357
 #, fuzzy
 msgid "PSNR computation"
 msgstr "Volby kalkulace"
 
-#: modules/codec/x264.c:353
+#: modules/codec/x264.c:358
 msgid ""
 "Compute and print PSNR stats. This has no effect on the actual encoding "
 "quality."
 msgstr ""
 
-#: modules/codec/x264.c:356
+#: modules/codec/x264.c:361
 #, fuzzy
 msgid "SSIM computation"
 msgstr "SMB doména"
 
-#: modules/codec/x264.c:357
+#: modules/codec/x264.c:362
 msgid ""
 "Compute and print SSIM stats. This has no effect on the actual encoding "
 "quality."
 msgstr ""
 
-#: modules/codec/x264.c:360
+#: modules/codec/x264.c:365
 #, fuzzy
 msgid "Quiet mode"
 msgstr "chyba \"%mode:1\""
 
-#: modules/codec/x264.c:361
+#: modules/codec/x264.c:366
 #, fuzzy
 msgid "Quiet mode."
 msgstr "chyba \"%mode:1\""
 
-#: modules/codec/x264.c:363 modules/gui/macosx/playlistinfo.m:78
+#: modules/codec/x264.c:368 modules/gui/macosx/playlistinfo.m:78
 #: modules/gui/qt4/ui/streampanel.ui:28
 msgid "Statistics"
 msgstr "Statistiky"
 
-#: modules/codec/x264.c:364
+#: modules/codec/x264.c:369
 msgid "Print stats for each frame."
 msgstr ""
 
-#: modules/codec/x264.c:367
+#: modules/codec/x264.c:372
 msgid "SPS and PPS id numbers"
 msgstr ""
 
-#: modules/codec/x264.c:368
+#: modules/codec/x264.c:373
 msgid ""
 "Set SPS and PPS id numbers to allow concatenating streams with different "
 "settings."
 msgstr ""
 
-#: modules/codec/x264.c:372
+#: modules/codec/x264.c:377
 #, fuzzy
 msgid "Access unit delimiters"
 msgstr "Použít _filtry"
 
-#: modules/codec/x264.c:373
+#: modules/codec/x264.c:378
 #, fuzzy
 msgid "Generate access unit delimiter NAL units."
 msgstr "Použít _filtry"
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "dia"
 msgstr "dia"
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "hex"
 msgstr "hex"
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "umh"
 msgstr ""
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 #, fuzzy
 msgid "esa"
 msgstr "Ano"
 
-#: modules/codec/x264.c:386
+#: modules/codec/x264.c:391
 #, fuzzy
 msgid "tesa"
 msgstr "Ano"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 msgid "fast"
 msgstr "rychle"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 msgid "normal"
 msgstr "normálně"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 msgid "slow"
 msgstr "pomalu"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 msgid "all"
 msgstr "vše"
 
-#: modules/codec/x264.c:398 modules/codec/x264.c:403
+#: modules/codec/x264.c:403 modules/codec/x264.c:408
 #, fuzzy
 msgid "spatial"
 msgstr "Reprezentace prostoru"
 
-#: modules/codec/x264.c:398 modules/codec/x264.c:403
+#: modules/codec/x264.c:403 modules/codec/x264.c:408
 #, fuzzy
 msgid "temporal"
 msgstr "Posunout vpřed"
 
-#: modules/codec/x264.c:398 modules/gui/pda/pda_interface.c:741
+#: modules/codec/x264.c:403 modules/gui/pda/pda_interface.c:741
 #: modules/video_filter/mosaic.c:168
 msgid "auto"
 msgstr "auto"
 
-#: modules/codec/x264.c:407
+#: modules/codec/x264.c:412
 msgid "H.264/MPEG4 AVC encoder (using x264 library)"
 msgstr ""
 
@@ -10707,9 +10574,8 @@ msgid "MPEG I/II hw video decoder (using libmpeg2)"
 msgstr ""
 
 #: modules/codec/zvbi.c:58
-#, fuzzy
 msgid "Teletext page"
-msgstr "Dekodér titulků"
+msgstr "Teletextová stránka"
 
 #: modules/codec/zvbi.c:59
 msgid "Open the indicated Teletext page.Default page is index 100"
@@ -10724,9 +10590,8 @@ msgid "Setting vbi-opaque to false makes the boxed text transparent."
 msgstr ""
 
 #: modules/codec/zvbi.c:66
-#, fuzzy
 msgid "Teletext alignment"
-msgstr "Zarovnání textu"
+msgstr "Zarovnání teletextu "
 
 #: modules/codec/zvbi.c:68
 msgid ""
@@ -10736,9 +10601,8 @@ msgid ""
 msgstr ""
 
 #: modules/codec/zvbi.c:72
-#, fuzzy
 msgid "Teletext text subtitles"
-msgstr "Dekodér titulků"
+msgstr "Textové titulky teletextu"
 
 #: modules/codec/zvbi.c:73
 msgid "Output teletext subtitles as text instead of as RGBA"
@@ -10750,18 +10614,16 @@ msgid "VBI and Teletext decoder"
 msgstr "Dekodér titulků"
 
 #: modules/codec/zvbi.c:83
-#, fuzzy
 msgid "VBI & Teletext"
-msgstr "Dekodér titulků"
+msgstr "VBI & Teletext"
 
 #: modules/control/dbus.c:111
 msgid "dbus"
-msgstr ""
+msgstr "dbus"
 
 #: modules/control/dbus.c:114
-#, fuzzy
 msgid "D-Bus control interface"
-msgstr "IDE rozhraní"
+msgstr "D-Bus ovládací rozhraní"
 
 #: modules/control/gestures.c:82
 #, fuzzy
@@ -10850,9 +10712,9 @@ msgid "Zoom mode: %s"
 msgstr "Režim zoomu: %s"
 
 #: modules/control/hotkeys.c:736 modules/control/hotkeys.c:746
-#, fuzzy, c-format
+#, c-format
 msgid "Subtitle delay %i ms"
-msgstr "Zvýšit zpoždění titulků"
+msgstr "Zpoždění titulku %i ms"
 
 #: modules/control/hotkeys.c:756 modules/control/hotkeys.c:766
 #, fuzzy, c-format
@@ -10943,7 +10805,7 @@ msgstr ""
 
 #: modules/control/lirc.c:66
 msgid "Infrared"
-msgstr ""
+msgstr "Infračervený"
 
 #: modules/control/lirc.c:69
 #, fuzzy
@@ -11539,9 +11401,8 @@ msgid "| quit . . . . . . . . . . . . . . . . . . .  quit vlc"
 msgstr "Ukončit VLC"
 
 #: modules/control/rc.c:945
-#, fuzzy
 msgid "+----[ end of help ]"
-msgstr "help-cs.txt"
+msgstr "+----[ konec nápovědy ]"
 
 #: modules/control/rc.c:1060
 #, fuzzy
@@ -11668,9 +11529,8 @@ msgid "Height of the zone triggering the interface."
 msgstr "Nastavit síťové rozhraní."
 
 #: modules/control/signals.c:39
-#, fuzzy
 msgid "Signals"
-msgstr "Skiny"
+msgstr "Sígnály"
 
 #: modules/control/signals.c:42
 #, fuzzy
@@ -11678,7 +11538,6 @@ msgid "POSIX signals handling interface"
 msgstr "  -M, --monitor     monitoruje aktivitu na rozhraní\n"
 
 #: modules/control/telnet.c:78
-#, fuzzy
 msgid "Host"
 msgstr "Počítač"
 
@@ -11709,9 +11568,8 @@ msgid ""
 msgstr ""
 
 #: modules/control/telnet.c:102
-#, fuzzy
 msgid "VLM remote control interface"
-msgstr "Rozumí Vzdálenému ovládání _Netscape"
+msgstr "VLM vzdálené ovládací rozhraní"
 
 #: modules/demux/a52.c:49
 #, fuzzy
@@ -11787,14 +11645,12 @@ msgid "Ask"
 msgstr ""
 
 #: modules/demux/avi/avi.c:60
-#, fuzzy
 msgid "Always fix"
-msgstr "Vždy navrchu"
+msgstr "Vždy opravuj"
 
 #: modules/demux/avi/avi.c:61
-#, fuzzy
 msgid "Never fix"
-msgstr "Nová vlna"
+msgstr "Nikdy neopravuj"
 
 #: modules/demux/avi/avi.c:65
 #, fuzzy
@@ -11815,9 +11671,8 @@ msgid ""
 msgstr ""
 
 #: modules/demux/avi/avi.c:678
-#, fuzzy
 msgid "Repair"
-msgstr "Nepálština"
+msgstr "Opravit"
 
 #: modules/demux/avi/avi.c:678
 msgid "Don't repair"
@@ -12470,9 +12325,8 @@ msgid ""
 msgstr ""
 
 #: modules/demux/subtitle_asa.c:64
-#, fuzzy
 msgid "Subtitles (asa demuxer)"
-msgstr "Zobrazit nastaveni hran"
+msgstr "Titulky (asa demuxer)"
 
 #: modules/demux/subtitle_asa.c:65 modules/demux/subtitle.c:75
 #, fuzzy
@@ -12629,75 +12483,74 @@ msgstr ""
 msgid "MPEG Transport Stream demuxer"
 msgstr "Reinicializuji proud"
 
-#: modules/demux/ts.c:3421
+#: modules/demux/ts.c:3419
 #: modules/gui/qt4/components/interface_widgets.cpp:631
 #: modules/gui/qt4/components/interface_widgets.cpp:827
-#, fuzzy
 msgid "Teletext"
-msgstr "Dekodér titulků"
+msgstr "Teletext"
 
-#: modules/demux/ts.c:3431
+#: modules/demux/ts.c:3429
 #, fuzzy
 msgid "Teletext subtitles"
 msgstr "Dekodér titulků"
 
-#: modules/demux/ts.c:3441
+#: modules/demux/ts.c:3439
 #, fuzzy
 msgid "Teletext additional information"
 msgstr "Meta-informace"
 
-#: modules/demux/ts.c:3451
+#: modules/demux/ts.c:3449
 #, fuzzy
 msgid "Teletext programme schedule"
-msgstr "Dekodér titulků"
+msgstr "Teletextová stránka"
 
-#: modules/demux/ts.c:3461
+#: modules/demux/ts.c:3459
 #, fuzzy
 msgid "Teletext hearing impaired subtitles"
 msgstr "Dekodér titulků"
 
-#: modules/demux/ts.c:3556
+#: modules/demux/ts.c:3554
 #, fuzzy
 msgid "subtitles"
 msgstr "Titulky"
 
-#: modules/demux/ts.c:3560
+#: modules/demux/ts.c:3558
 #, fuzzy
 msgid "4:3 subtitles"
 msgstr "SVCD titulky"
 
-#: modules/demux/ts.c:3564
+#: modules/demux/ts.c:3562
 #, fuzzy
 msgid "16:9 subtitles"
 msgstr "SVCD titulky"
 
-#: modules/demux/ts.c:3568
+#: modules/demux/ts.c:3566
 #, fuzzy
 msgid "2.21:1 subtitles"
 msgstr "SVCD titulky"
 
-#: modules/demux/ts.c:3572 modules/demux/ts.c:3753 modules/demux/ts.c:3794
+#: modules/demux/ts.c:3570 modules/demux/ts.c:3751 modules/demux/ts.c:3792
 msgid "hearing impaired"
 msgstr ""
 
-#: modules/demux/ts.c:3576
+#: modules/demux/ts.c:3574
 msgid "4:3 hearing impaired"
 msgstr ""
 
-#: modules/demux/ts.c:3580
+#: modules/demux/ts.c:3578
 msgid "16:9 hearing impaired"
 msgstr ""
 
-#: modules/demux/ts.c:3584
+#: modules/demux/ts.c:3582
 msgid "2.21:1 hearing impaired"
 msgstr ""
 
-#: modules/demux/ts.c:3749 modules/demux/ts.c:3790
+#: modules/demux/ts.c:3747 modules/demux/ts.c:3788
 #, fuzzy
 msgid "clean effects"
 msgstr "Sluchátkový efekt"
 
-#: modules/demux/ts.c:3757 modules/demux/ts.c:3798
+#: modules/demux/ts.c:3755 modules/demux/ts.c:3796
 msgid "visual impaired commentary"
 msgstr ""
 
@@ -12828,14 +12681,12 @@ msgid "Window"
 msgstr "Okno"
 
 #: modules/gui/beos/InterfaceWindow.cpp:413
-#, fuzzy
 msgid "VLC media player: Open Media Files"
-msgstr "VLC media player"
+msgstr "VLC media player: Otevřít soubory"
 
 #: modules/gui/beos/InterfaceWindow.cpp:417
-#, fuzzy
 msgid "VLC media player: Open Subtitle File"
-msgstr "VLC media player"
+msgstr "VLC přehrávač: Otevřít soubor s titulky"
 
 #: modules/gui/beos/MediaControlView.cpp:70
 #, fuzzy
@@ -13223,9 +13074,8 @@ msgid "License"
 msgstr "Licence"
 
 #: modules/gui/macosx/about.m:189
-#, fuzzy
 msgid "VLC media player Help"
-msgstr "VLC media player"
+msgstr "Nápověda přehrávače VLC"
 
 #: modules/gui/macosx/about.m:192 modules/gui/pda/pda.c:285
 msgid "Index"
@@ -13632,7 +13482,7 @@ msgstr "Otevřít disk..."
 
 #: modules/gui/macosx/intf.m:525
 msgid "Open Network..."
-msgstr "Otevřít síť..."
+msgstr "Otevřít ze sítě..."
 
 #: modules/gui/macosx/intf.m:526
 #, fuzzy
@@ -13679,9 +13529,8 @@ msgstr "Snížit hlasitost"
 
 #: modules/gui/macosx/intf.m:585 modules/gui/macosx/intf.m:586
 #: modules/gui/macosx/simple_prefs.m:283 modules/gui/macosx/vout.m:197
-#, fuzzy
 msgid "Fullscreen Video Device"
-msgstr "Šířka video výstupu."
+msgstr "Video zařízení pro režim celé obrazovky"
 
 #: modules/gui/macosx/intf.m:591 modules/gui/macosx/intf.m:592
 #: modules/video_filter/postproc.c:186
@@ -13715,9 +13564,8 @@ msgid "Extended Controls..."
 msgstr "Rozšířené ovládání"
 
 #: modules/gui/macosx/intf.m:600
-#, fuzzy
 msgid "Bookmarks..."
-msgstr "Záložky"
+msgstr "Záložky..."
 
 #: modules/gui/macosx/intf.m:601
 #, fuzzy
@@ -13748,9 +13596,8 @@ msgid "Help"
 msgstr "Nápověda"
 
 #: modules/gui/macosx/intf.m:609
-#, fuzzy
 msgid "VLC media player Help..."
-msgstr "VLC media player"
+msgstr "Nápověda přehrávače VLC..."
 
 #: modules/gui/macosx/intf.m:610
 #, fuzzy
@@ -13852,7 +13699,7 @@ msgstr ""
 #: modules/gui/macosx/intf.m:2249
 #, fuzzy
 msgid "Remove old preferences?"
-msgstr "Nastavit volby"
+msgstr "Resetovat volby"
 
 #: modules/gui/macosx/intf.m:2250
 msgid "We just found an older version of VLC's preferences files."
@@ -13917,7 +13764,7 @@ msgstr ""
 
 #: modules/gui/macosx/macosx.m:74
 msgid "Show Fullscreen controller"
-msgstr ""
+msgstr "Zobrazit ovladač režimu celé obrazovky"
 
 #: modules/gui/macosx/macosx.m:75
 #, fuzzy
@@ -14320,7 +14167,6 @@ msgstr "Ztracené rámce"
 #: modules/gui/macosx/playlistinfo.m:105 modules/gui/macosx/wizard.m:361
 #: modules/gui/qt4/components/info_panels.cpp:510
 #: modules/video_filter/deinterlace.c:142
-#, fuzzy
 msgid "Streaming"
 msgstr "Streamování"
 
@@ -14454,9 +14300,8 @@ msgid "Empty Folder"
 msgstr "Prázdná složka"
 
 #: modules/gui/macosx/prefs.m:127 modules/gui/macosx/simple_prefs.m:301
-#, fuzzy
 msgid "Reset All"
-msgstr "Přenastavit všechny filtry"
+msgstr "Resetovat vše"
 
 #: modules/gui/macosx/prefs.m:128 modules/gui/macosx/simple_prefs.m:298
 #: modules/gui/qt4/ui/video_effects.ui:25
@@ -14466,9 +14311,8 @@ msgstr "Baskirština"
 
 #: modules/gui/macosx/prefs.m:147 modules/gui/macosx/simple_prefs.m:631
 #: modules/gui/qt4/dialogs/preferences.cpp:353
-#, fuzzy
 msgid "Reset Preferences"
-msgstr "Nastavit volby"
+msgstr "Resetovat volby"
 
 #: modules/gui/macosx/prefs.m:150 modules/gui/macosx/simple_prefs.m:634
 msgid ""
@@ -14512,82 +14356,68 @@ msgid "General Video Settings"
 msgstr "Zobrazit nastavení videa"
 
 #: modules/gui/macosx/simple_prefs.m:185
-#, fuzzy
 msgid "Subtitles & OSD"
-msgstr "Titulky/OSD"
+msgstr "Titulky / OSD"
 
 #: modules/gui/macosx/simple_prefs.m:185
 #: modules/gui/qt4/components/simple_preferences.cpp:518
-#, fuzzy
 msgid "Subtitles & On Screen Display Settings"
-msgstr "Zobrazit nastaveni hran"
+msgstr "Titulky / OSD"
 
 #: modules/gui/macosx/simple_prefs.m:189
-#, fuzzy
 msgid "Input & Codecs"
-msgstr "Vstup / Kodeky"
+msgstr "Vstup & Kodeky"
 
 #: modules/gui/macosx/simple_prefs.m:189
-#, fuzzy
 msgid "Input & Codec settings"
-msgstr "Vstup / Kodeky"
+msgstr "Vstup & Nastavení kodeků"
 
 #: modules/gui/macosx/simple_prefs.m:221
 #: modules/gui/qt4/ui/sprefs_audio.ui:250
-#, fuzzy
 msgid "Effects"
-msgstr "Efekt"
+msgstr "Efekty"
 
 #: modules/gui/macosx/simple_prefs.m:222
-#, fuzzy
 msgid "Enable Audio"
-msgstr "Povolit zvukový výstup"
+msgstr "Povolit zvuk"
 
 #: modules/gui/macosx/simple_prefs.m:223 modules/gui/qt4/ui/sprefs_audio.ui:30
-#, fuzzy
 msgid "General Audio"
-msgstr "Obecné"
+msgstr "Obecné zvuk"
 
 #: modules/gui/macosx/simple_prefs.m:224
 #: modules/gui/qt4/ui/sprefs_audio.ui:259
-#, fuzzy
 msgid "Headphone surround effect"
-msgstr "Sluchátkový efekt"
+msgstr "Prostorový efekt pro sluchátka"
 
 #: modules/gui/macosx/simple_prefs.m:225
-#, fuzzy
 msgid "Preferred Audio language"
-msgstr "Jazyk zvukové stopy"
+msgstr "Preferovaný jazyk zvuku"
 
 #: modules/gui/macosx/simple_prefs.m:226
 msgid "Enable Last.fm submissions"
 msgstr ""
 
 #: modules/gui/macosx/simple_prefs.m:228
-#, fuzzy
 msgid "User name"
-msgstr "Uživatel"
+msgstr "Uživatelské jméno"
 
 #: modules/gui/macosx/simple_prefs.m:231
 #: modules/gui/qt4/ui/sprefs_audio.ui:273
-#, fuzzy
 msgid "Visualization"
 msgstr "Vizualizace"
 
 #: modules/gui/macosx/simple_prefs.m:232
-#, fuzzy
 msgid "Default Volume"
-msgstr "hlasitost zvuku při startu"
+msgstr "Výchozí hlasitost"
 
 #: modules/gui/macosx/simple_prefs.m:235
-#, fuzzy
 msgid "Change"
-msgstr "Kanál"
+msgstr "Změnit"
 
 #: modules/gui/macosx/simple_prefs.m:236
-#, fuzzy
 msgid "Change Hotkey"
-msgstr "Nastavit"
+msgstr "Změnit klávesovou zkratku"
 
 #: modules/gui/macosx/simple_prefs.m:240
 msgid "Select an action to change the associated hotkey:"
@@ -14595,25 +14425,22 @@ msgstr ""
 
 #: modules/gui/macosx/simple_prefs.m:241
 #: modules/gui/qt4/components/preferences_widgets.cpp:1127
-#, fuzzy
 msgid "Action"
-msgstr "Aplikace"
+msgstr "Akce"
 
 #: modules/gui/macosx/simple_prefs.m:242
 #: modules/gui/qt4/components/preferences_widgets.cpp:1128
-#, fuzzy
 msgid "Shortcut"
-msgstr "Shoutcast"
+msgstr "Zkratka"
 
 #: modules/gui/macosx/simple_prefs.m:245
 #: modules/gui/qt4/ui/sprefs_input.ui:181
-#, fuzzy
 msgid "Access Filter"
-msgstr "Použít _filtry"
+msgstr "Přístupový filtr"
 
 #: modules/gui/macosx/simple_prefs.m:246
 msgid "Repair AVI Files"
-msgstr ""
+msgstr "Opravit AVI soubory"
 
 #: modules/gui/macosx/simple_prefs.m:248
 #, fuzzy
@@ -14633,14 +14460,12 @@ msgid ""
 msgstr ""
 
 #: modules/gui/macosx/simple_prefs.m:252
-#, fuzzy
 msgid "HTTP Proxy"
-msgstr "HTTP proxy"
+msgstr "HTTP Proxy"
 
 #: modules/gui/macosx/simple_prefs.m:253
-#, fuzzy
 msgid "Password for HTTP Proxy"
-msgstr "HTTP proxy"
+msgstr "Heslo pro HTTP Proxy"
 
 #: modules/gui/macosx/simple_prefs.m:254
 #: modules/gui/qt4/ui/sprefs_input.ui:119
@@ -14653,9 +14478,8 @@ msgid "Post-Processing Quality"
 msgstr "Náhled ve vysoké _kvalitě"
 
 #: modules/gui/macosx/simple_prefs.m:259
-#, fuzzy
 msgid "Default Server Port"
-msgstr "Výchozí zařízení"
+msgstr "Výchozí port serveru"
 
 #: modules/gui/macosx/simple_prefs.m:263
 #: modules/gui/qt4/ui/sprefs_interface.ui:275
@@ -14668,9 +14492,8 @@ msgid "Add controls to the video window"
 msgstr "Kontrast video vstupu."
 
 #: modules/gui/macosx/simple_prefs.m:265
-#, fuzzy
 msgid "Show Fullscreen Controller"
-msgstr "Rozhraní"
+msgstr "Zobrazit ovladač režimu celé obrazovky"
 
 #: modules/gui/macosx/simple_prefs.m:267
 #: modules/gui/qt4/ui/sprefs_interface.ui:269
@@ -14679,15 +14502,13 @@ msgid "Privacy / Network Interaction"
 msgstr "_Optimální odhad"
 
 #: modules/gui/macosx/simple_prefs.m:270
-#, fuzzy
 msgid "Default Encoding"
-msgstr "Dekódování"
+msgstr "Výchozí enkoder"
 
 #: modules/gui/macosx/simple_prefs.m:271
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:89
-#, fuzzy
 msgid "Display Settings"
-msgstr "Zobrazí zkrácený seznam rozlišení"
+msgstr "Nastavení zobrazení"
 
 #: modules/gui/macosx/simple_prefs.m:272 modules/gui/macosx/wizard.m:346
 #: modules/gui/macosx/wizard.m:412
@@ -14695,35 +14516,29 @@ msgid "Choose..."
 msgstr "Vybrat..."
 
 #: modules/gui/macosx/simple_prefs.m:273
-#, fuzzy
 msgid "Font Color"
-msgstr "Barva"
+msgstr "Barva písma"
 
 #: modules/gui/macosx/simple_prefs.m:274
-#, fuzzy
 msgid "Font Size"
 msgstr "Velikost písma"
 
 #: modules/gui/macosx/simple_prefs.m:276
-#, fuzzy
 msgid "Subtitle Languages"
-msgstr "Jazyk titulků"
+msgstr "Jazyky titulků"
 
 #: modules/gui/macosx/simple_prefs.m:277
-#, fuzzy
 msgid "Preferred Subtitle Language"
-msgstr "Jazyk zvukové stopy"
+msgstr "Preferovaný jazyk titulků"
 
 #: modules/gui/macosx/simple_prefs.m:279
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:28
-#, fuzzy
 msgid "Enable OSD"
-msgstr "Zapnout"
+msgstr "Povolit OSD"
 
 #: modules/gui/macosx/simple_prefs.m:282
-#, fuzzy
 msgid "Black screens in Fullscreen mode"
-msgstr "Zamknout v režimu přes celou obrazovku"
+msgstr ""
 
 #: modules/gui/macosx/simple_prefs.m:284 modules/gui/qt4/ui/sprefs_video.ui:36
 #: modules/stream_out/display.c:54 modules/video_filter/deinterlace.c:132
@@ -14732,37 +14547,31 @@ msgid "Display"
 msgstr "Zobrazit"
 
 #: modules/gui/macosx/simple_prefs.m:285
-#, fuzzy
 msgid "Enable Video"
 msgstr "Povolit video"
 
 #: modules/gui/macosx/simple_prefs.m:288
-#, fuzzy
 msgid "Output module"
-msgstr "Podporované moduly:"
+msgstr "Výstupní modul"
 
 #: modules/gui/macosx/simple_prefs.m:290
 #: modules/gui/qt4/ui/sprefs_video.ui:150
-#, fuzzy
 msgid "Video snapshots"
-msgstr "Uložit snímek videa"
+msgstr "Snímky videa"
 
 #: modules/gui/macosx/simple_prefs.m:292 modules/meta_engine/folder.c:58
-#, fuzzy
 msgid "Folder"
-msgstr "Prázdná složka"
+msgstr "Složka"
 
 #: modules/gui/macosx/simple_prefs.m:293
 #: modules/gui/qt4/ui/sprefs_video.ui:199
-#, fuzzy
 msgid "Format"
-msgstr "Varování: Firstzone != Norm_firstzone\n"
+msgstr "Formát"
 
 #: modules/gui/macosx/simple_prefs.m:294
 #: modules/gui/qt4/ui/sprefs_video.ui:182
-#, fuzzy
 msgid "Prefix"
-msgstr "Předchozí"
+msgstr "Prefix"
 
 #: modules/gui/macosx/simple_prefs.m:295
 #: modules/gui/qt4/ui/sprefs_video.ui:212
@@ -14772,9 +14581,8 @@ msgstr ""
 #: modules/gui/macosx/simple_prefs.m:520 modules/gui/macosx/simple_prefs.m:564
 #: modules/gui/macosx/simple_prefs.m:1151
 #: modules/gui/qt4/components/simple_preferences.cpp:408
-#, fuzzy
 msgid "Custom"
-msgstr "Upravit:"
+msgstr "Vlastní"
 
 #: modules/gui/macosx/simple_prefs.m:520
 #: modules/gui/qt4/components/simple_preferences.cpp:409
@@ -14804,9 +14612,8 @@ msgid "Higher latency"
 msgstr ""
 
 #: modules/gui/macosx/simple_prefs.m:736
-#, fuzzy
 msgid "Interface Settings not saved"
-msgstr "Obecná nastavení sdílení Windows"
+msgstr "Nastavení rozrhaní nebyla uložena"
 
 #: modules/gui/macosx/simple_prefs.m:737 modules/gui/macosx/simple_prefs.m:809
 #: modules/gui/macosx/simple_prefs.m:842 modules/gui/macosx/simple_prefs.m:927
@@ -14816,14 +14623,12 @@ msgid "An error occured while saving your settings via SimplePrefs (%i)."
 msgstr ""
 
 #: modules/gui/macosx/simple_prefs.m:808
-#, fuzzy
 msgid "Audio Settings not saved"
-msgstr "Nastavení zvuku"
+msgstr "Nastavení zvuku nebyla uložena"
 
 #: modules/gui/macosx/simple_prefs.m:841
-#, fuzzy
 msgid "Video Settings not saved"
-msgstr "Nastavení videa"
+msgstr "Nastavení videa nebyla uložena"
 
 #: modules/gui/macosx/simple_prefs.m:926
 msgid "Input Settings not saved"
@@ -14831,12 +14636,11 @@ msgstr ""
 
 #: modules/gui/macosx/simple_prefs.m:954
 msgid "On Screen Display/Subtitle Settings not saved"
-msgstr ""
+msgstr "Nastavení OSD/titulků nebylo uloženo"
 
 #: modules/gui/macosx/simple_prefs.m:979
-#, fuzzy
 msgid "Hotkeys not saved"
-msgstr "Klávesové zkratky"
+msgstr "Klávesové zkratky nebyly uloženy"
 
 #: modules/gui/macosx/simple_prefs.m:1078
 msgid "Choose the folder to save your video snapshots to."
@@ -14853,9 +14657,8 @@ msgid ""
 msgstr ""
 
 #: modules/gui/macosx/simple_prefs.m:1243
-#, fuzzy
 msgid "Invalid combination"
-msgstr "Neplatný výběr"
+msgstr "Neplatná kombinace"
 
 #: modules/gui/macosx/simple_prefs.m:1244
 msgid "Regrettably, these keys cannot be assigned as hotkey shortcuts."
@@ -15181,9 +14984,8 @@ msgid "Streaming method"
 msgstr "Přístupová metoda `%s'."
 
 #: modules/gui/macosx/wizard.m:366
-#, fuzzy
 msgid "Address of the computer to stream to."
-msgstr "Uložit stream na disk"
+msgstr "Adresa počítače na který se bude streamovat"
 
 #: modules/gui/macosx/wizard.m:368
 msgid "UDP Unicast"
@@ -15249,9 +15051,8 @@ msgstr ""
 
 #: modules/gui/macosx/wizard.m:399 modules/gui/macosx/wizard.m:1864
 #: modules/gui/qt4/ui/sout.ui:957
-#, fuzzy
 msgid "Time-To-Live (TTL)"
-msgstr "Time To Live (TTL):"
+msgstr "Time To Live (TTL)"
 
 #: modules/gui/macosx/wizard.m:401 modules/gui/macosx/wizard.m:433
 #: modules/gui/macosx/wizard.m:1875
@@ -15266,9 +15067,8 @@ msgid "Local playback"
 msgstr "Přehrání animace:"
 
 #: modules/gui/macosx/wizard.m:405 modules/gui/macosx/wizard.m:414
-#, fuzzy
 msgid "Add Subtitles to transcoded video"
-msgstr "Zvolit Zobrazit více možností"
+msgstr "Přidat titulky do překódovaného videa"
 
 #: modules/gui/macosx/wizard.m:408
 #, fuzzy
@@ -15495,37 +15295,37 @@ msgstr "Smyčka"
 #: modules/gui/ncurses.c:1556
 #, c-format
 msgid " Source   : %s"
-msgstr ""
+msgstr "Zdroj   : %s"
 
 #: modules/gui/ncurses.c:1563
 #, c-format
 msgid " State    : Playing %s"
-msgstr ""
+msgstr "Stav     : Přehrávám %s"
 
 #: modules/gui/ncurses.c:1567
 #, c-format
 msgid " State    : Stopped %s"
-msgstr ""
+msgstr "Stav     : Zastaveno %s"
 
 #: modules/gui/ncurses.c:1571
 #, c-format
 msgid " State    : Opening/Connecting %s"
-msgstr ""
+msgstr "Stav     : Otevírám/Připojuji %s"
 
 #: modules/gui/ncurses.c:1575
 #, c-format
 msgid " State    : Buffering %s"
-msgstr ""
+msgstr "Stav     : Tvorba vyrovnávací paměti %s"
 
 #: modules/gui/ncurses.c:1579
 #, c-format
 msgid " State    : Paused %s"
-msgstr ""
+msgstr "Stav     : Pozastaveno %s"
 
 #: modules/gui/ncurses.c:1593
 #, c-format
 msgid " Position : %s/%s (%.2f%%)"
-msgstr ""
+msgstr "Pozice : %s/%s (%.2f%%)"
 
 #: modules/gui/ncurses.c:1597
 #, fuzzy, c-format
@@ -15535,12 +15335,12 @@ msgstr "Hlasitost: %d%%"
 #: modules/gui/ncurses.c:1605
 #, c-format
 msgid " Title    : %d/%d"
-msgstr ""
+msgstr "Název  : %d/%d"
 
 #: modules/gui/ncurses.c:1616
-#, fuzzy, c-format
+#, c-format
 msgid " Chapter  : %d/%d"
-msgstr "Kapitola %i"
+msgstr " Kapitola  : %d/%d"
 
 #: modules/gui/ncurses.c:1628
 #, c-format
@@ -15553,9 +15353,8 @@ msgid " [ h for help ]"
 msgstr "help-cs.txt"
 
 #: modules/gui/ncurses.c:1652
-#, fuzzy
 msgid " Help "
-msgstr "Nápověda"
+msgstr " Nápověda"
 
 #: modules/gui/ncurses.c:1656
 #, fuzzy
@@ -15610,7 +15409,7 @@ msgstr "Globální zisk"
 
 #: modules/gui/ncurses.c:1676
 msgid "     q, Q, Esc   Quit"
-msgstr ""
+msgstr "     q, Q, Esc   Konec"
 
 #: modules/gui/ncurses.c:1677
 msgid "     s           Stop"
@@ -15753,7 +15552,7 @@ msgstr "Různé"
 
 #: modules/gui/ncurses.c:1739
 msgid "     Ctrl-l          Refresh the screen"
-msgstr ""
+msgstr "     Ctrl-l          Obnovit obrazovku"
 
 #: modules/gui/ncurses.c:1760
 #, fuzzy
@@ -16255,18 +16054,12 @@ msgid ""
 msgstr ""
 
 #: modules/gui/pda/pda_interface.c:1339
-#, fuzzy
 msgid "Authors: the VideoLAN Team, http://www.videolan.org/team/"
-msgstr ""
-"Tým VideoLAN <videolan@videolan.org>\n"
-"http://www.videolan.org/"
+msgstr "Autoři: tým VideoLAN, http://www.videolan.org/team/"
 
 #: modules/gui/pda/pda_interface.c:1347
-#, fuzzy
 msgid "(c) 1996-2004 the the VideoLAN team team"
-msgstr ""
-"(c) 1996-2006 - Tým VideoLAN\n"
-"\n"
+msgstr "(c) 1996-2004 VideoLAN tým"
 
 #: modules/gui/pda/pda_support.c:88 modules/gui/pda/pda_support.c:112
 #, c-format
@@ -16295,9 +16088,8 @@ msgid "Enable spatializer"
 msgstr "Reprezentace prostoru"
 
 #: modules/gui/qt4/components/extended_panels.cpp:1273
-#, fuzzy
 msgid "Audio/Video"
-msgstr "Kodek zvuku:"
+msgstr "Zvuk/Video"
 
 #: modules/gui/qt4/components/extended_panels.cpp:1289
 msgid "Advance of audio over video:"
@@ -16310,9 +16102,8 @@ msgid ""
 msgstr ""
 
 #: modules/gui/qt4/components/extended_panels.cpp:1306
-#, fuzzy
 msgid "Subtitles/Video"
-msgstr "Soubor s titulky"
+msgstr "Titulky/Video"
 
 #: modules/gui/qt4/components/extended_panels.cpp:1322
 #, fuzzy
@@ -16326,9 +16117,8 @@ msgid ""
 msgstr ""
 
 #: modules/gui/qt4/components/extended_panels.cpp:1350
-#, fuzzy
 msgid "Speed of the subtitles:"
-msgstr "Dekodér titulků"
+msgstr "Rychlost titulků:"
 
 #: modules/gui/qt4/components/extended_panels.cpp:1380
 #, fuzzy
@@ -16352,7 +16142,7 @@ msgstr ""
 
 #: modules/gui/qt4/components/info_panels.cpp:483
 msgid "Statistics about the currently playing media or stream."
-msgstr ""
+msgstr "Statistika k přehrávanému médiu či streamu."
 
 #: modules/gui/qt4/components/info_panels.cpp:531
 #, fuzzy
@@ -16366,9 +16156,8 @@ msgid ""
 msgstr ""
 
 #: modules/gui/qt4/components/interface_widgets.cpp:277
-#, fuzzy
 msgid "Current visualization"
-msgstr "Informace o zvuku"
+msgstr "Současná vizualizace"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:341
 msgid ""
@@ -16377,14 +16166,12 @@ msgid ""
 msgstr ""
 
 #: modules/gui/qt4/components/interface_widgets.cpp:359
-#, fuzzy
 msgid "Frame by frame"
-msgstr "frekvence rámců"
+msgstr "Rámec za rámcem"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:374
-#, fuzzy
 msgid "Take a snapshot"
-msgstr "Uložit snímek videa"
+msgstr "Vytvořit snímek"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:453
 msgid ""
@@ -16405,9 +16192,8 @@ msgid "Menu"
 msgstr "Menu"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:619
-#, fuzzy
 msgid "Teletext on"
-msgstr "Dekodér titulků"
+msgstr "Teletext zapnut"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:681
 #, fuzzy
@@ -16430,9 +16216,8 @@ msgid "Toggle the video in fullscreen"
 msgstr "Zamkne Epiphany v režimu přes celou obrazovku."
 
 #: modules/gui/qt4/components/interface_widgets.cpp:703
-#, fuzzy
 msgid "Show playlist"
-msgstr "Uložit seznam skladeb"
+msgstr "Zobrazit playlist"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:709
 #, fuzzy
@@ -16445,14 +16230,12 @@ msgid "Transparent"
 msgstr "Průhlednost"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:902
-#, fuzzy
 msgid "Unmute"
-msgstr "Umlčet"
+msgstr "Vypnout ztišení"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:942
-#, fuzzy
 msgid "Pause the playback"
-msgstr "Přehrání animace:"
+msgstr "Pozastavit přehrávání"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:1478
 msgid "Revert to normal play speed"
@@ -16468,41 +16251,34 @@ msgid "Toggle between elapsed and remaining time"
 msgstr ""
 
 #: modules/gui/qt4/components/open_panels.cpp:48
-#, fuzzy
 msgid "Select the device or the VIDEO_TS directory"
-msgstr "GnomeIconSelection: nemohu otevřít adresář '%s'"
+msgstr "Vyberte zařízení nebo VIDEO_TS adresář"
 
 #: modules/gui/qt4/components/open_panels.cpp:88
-#, fuzzy
 msgid "Select one or multiple files"
-msgstr "Vyberte soubor k uložení"
+msgstr "Vyberte jeden nebo více souborů"
 
 #: modules/gui/qt4/components/open_panels.cpp:107
-#, fuzzy
 msgid "File names:"
-msgstr "Název souboru"
+msgstr "Názvy souborů:"
 
 #: modules/gui/qt4/components/open_panels.cpp:109
-#, fuzzy
 msgid "Filter:"
-msgstr "Filtry"
+msgstr "Filtr:"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
 #: modules/gui/qt4/dialogs_provider.cpp:631
-#, fuzzy
 msgid "Open subtitles file"
-msgstr "Otevřít soubor s titulky:"
+msgstr "Otevřít soubor s titulky"
 
 #: modules/gui/qt4/components/open_panels.cpp:267
-#, fuzzy
 msgid "Eject the disc"
-msgstr "Vyberte soubor"
+msgstr "Vysunout disk"
 
 #: modules/gui/qt4/components/open_panels.cpp:637
 #: modules/gui/qt4/components/open_panels.cpp:893
-#, fuzzy
 msgid "DVB Type:"
-msgstr "Typ disku"
+msgstr "Typ DVB"
 
 #: modules/gui/qt4/components/open_panels.cpp:661
 #: modules/gui/qt4/components/open_panels.cpp:923
@@ -16510,14 +16286,12 @@ msgid "Transponder symbol rate"
 msgstr ""
 
 #: modules/gui/qt4/components/open_panels.cpp:783
-#, fuzzy
 msgid "Channels:"
-msgstr "Kanály"
+msgstr "Kanály:"
 
 #: modules/gui/qt4/components/open_panels.cpp:796
-#, fuzzy
 msgid "Selected ports:"
-msgstr "Neplatný vstup"
+msgstr "Vybrané porty:"
 
 #: modules/gui/qt4/components/open_panels.cpp:799
 msgid ".*"
@@ -16537,17 +16311,14 @@ msgstr ""
 "%u%% je cache"
 
 #: modules/gui/qt4/components/open_panels.cpp:818
-#, fuzzy
 msgid "Auto connnection"
-msgstr "Automaticky obnovit spojení"
+msgstr "Automatické připojení"
 
 #: modules/gui/qt4/components/open_panels.cpp:842
-#, fuzzy
 msgid "Radio device name"
-msgstr "Název zvukového zařízení"
+msgstr ""
 
 #: modules/gui/qt4/components/open_panels.cpp:1138
-#, fuzzy
 msgid "Advanced Options"
 msgstr "Pokročilá nastavení"
 
@@ -16565,7 +16336,6 @@ msgid "Show the current item"
 msgstr "Opakovat aktuální položku"
 
 #: modules/gui/qt4/components/preferences_widgets.cpp:305
-#, fuzzy
 msgid "Select File"
 msgstr "Vyberte soubor"
 
@@ -16608,14 +16378,12 @@ msgid "Key: "
 msgstr "Klíč"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:79
-#, fuzzy
 msgid "Subtitles && OSD"
-msgstr "Titulky/OSD"
+msgstr "Titulky && OSD"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:81
-#, fuzzy
 msgid "Input && Codecs"
-msgstr "Vstup / Kodeky"
+msgstr "Vstup && Kodeky"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:223
 #, fuzzy
@@ -16623,9 +16391,8 @@ msgid "Device:"
 msgstr "Zařízení"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:355
-#, fuzzy
 msgid "Input & Codecs Settings"
-msgstr "Vstup / Kodeky"
+msgstr "Vstup & Nastavení kodeků"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:360
 msgid ""
@@ -16642,26 +16409,22 @@ msgstr "Nastavit"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:759
 #: modules/gui/qt4/dialogs_provider.hpp:55
-#, fuzzy
 msgid "Audio Files"
-msgstr "Použít _filtry"
+msgstr "Audio soubory"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:760
 #: modules/gui/qt4/dialogs_provider.hpp:50
-#, fuzzy
 msgid "Video Files"
-msgstr "Použít _filtry"
+msgstr "Video soubory"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:761
 #: modules/gui/qt4/dialogs_provider.hpp:60
-#, fuzzy
 msgid "Playlist Files"
-msgstr "Sestavuji pohled"
+msgstr "Soubory playlistu"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:808
-#, fuzzy
 msgid "&Apply"
-msgstr "Použít"
+msgstr "&Použít"
 
 #: modules/gui/qt4/components/simple_preferences.cpp:809
 #: modules/gui/qt4/dialogs/gototime.cpp:51
@@ -16673,9 +16436,8 @@ msgid "&Cancel"
 msgstr "&Zrušit"
 
 #: modules/gui/qt4/dialogs/bookmarks.cpp:40
-#, fuzzy
 msgid "Edit Bookmarks"
-msgstr "Editovat záložku"
+msgstr "Editovat záložky"
 
 #: modules/gui/qt4/dialogs/bookmarks.cpp:44
 msgid "Create"
@@ -16768,9 +16530,8 @@ msgid "Go to Time"
 msgstr "Přejít na titul"
 
 #: modules/gui/qt4/dialogs/gototime.cpp:50
-#, fuzzy
 msgid "&Go"
-msgstr "&Ne"
+msgstr "&Přejít"
 
 #: modules/gui/qt4/dialogs/gototime.cpp:61
 #, fuzzy
@@ -16848,7 +16609,7 @@ msgstr "VLC media player"
 
 #: modules/gui/qt4/dialogs/help.cpp:211
 msgid "&Recheck version"
-msgstr ""
+msgstr "&Překontrolovat verzi"
 
 #: modules/gui/qt4/dialogs/help.cpp:218
 #, fuzzy
@@ -16901,29 +16662,24 @@ msgid "Login"
 msgstr "Přihlašovací jméno: "
 
 #: modules/gui/qt4/dialogs/mediainfo.cpp:60
-#, fuzzy
 msgid "&General"
-msgstr "Obecné"
+msgstr "&Obecné"
 
 #: modules/gui/qt4/dialogs/mediainfo.cpp:62
-#, fuzzy
 msgid "&Extra Metadata"
-msgstr "Metadata"
+msgstr "&Extra Metadata"
 
 #: modules/gui/qt4/dialogs/mediainfo.cpp:64
-#, fuzzy
 msgid "&Codec Details"
-msgstr "Zobrazit vše"
+msgstr "&Detaily o kodeku"
 
 #: modules/gui/qt4/dialogs/mediainfo.cpp:68
-#, fuzzy
 msgid "&Statistics"
-msgstr "Statistiky"
+msgstr "&Statistiky"
 
 #: modules/gui/qt4/dialogs/mediainfo.cpp:74
-#, fuzzy
 msgid "&Save Metadata"
-msgstr "Metadata"
+msgstr "&Uložit Metadata"
 
 #: modules/gui/qt4/dialogs/mediainfo.cpp:80
 #, fuzzy
@@ -16936,9 +16692,8 @@ msgid "Modules tree"
 msgstr "Gesta"
 
 #: modules/gui/qt4/dialogs/messages.cpp:85
-#, fuzzy
 msgid "&Save as..."
-msgstr "Uložit &jako..."
+msgstr "&Uložit jako..."
 
 #: modules/gui/qt4/dialogs/messages.cpp:86
 msgid "Save all the displayed logs to a file"
@@ -16950,9 +16705,8 @@ msgid "Verbosity Level"
 msgstr "Výřečnost (0,1,2)"
 
 #: modules/gui/qt4/dialogs/messages.cpp:121
-#, fuzzy
 msgid "&Update"
-msgstr "Aktualizovat"
+msgstr "&Aktualizovat"
 
 #: modules/gui/qt4/dialogs/messages.cpp:249
 #, fuzzy
@@ -16974,49 +16728,41 @@ msgid "&File"
 msgstr "&Soubor"
 
 #: modules/gui/qt4/dialogs/open.cpp:98
-#, fuzzy
 msgid "&Disc"
-msgstr "Disk"
+msgstr "&Disk"
 
 #: modules/gui/qt4/dialogs/open.cpp:99
-#, fuzzy
 msgid "&Network"
-msgstr "Síť"
+msgstr "&Síť"
 
 #: modules/gui/qt4/dialogs/open.cpp:101
-#, fuzzy
 msgid "Capture &Device"
-msgstr "Nemohu otevřít zařízení %s: %s\n"
+msgstr "&Zachycovací zařízení"
 
 #: modules/gui/qt4/dialogs/open.cpp:116
-#, fuzzy
 msgid "&Select"
-msgstr "Vybrat"
+msgstr "&Vybrat"
 
 #: modules/gui/qt4/dialogs/open.cpp:120 modules/gui/qt4/dialogs/open.cpp:205
 msgid "&Enqueue"
-msgstr ""
+msgstr "&Zařadit do fronty"
 
 #: modules/gui/qt4/dialogs/open.cpp:122 modules/gui/qt4/dialogs/open.cpp:209
-#, fuzzy
 msgid "&Play"
-msgstr "Přehrát"
+msgstr "&Přehrát"
 
 #: modules/gui/qt4/dialogs/open.cpp:124 modules/gui/qt4/dialogs/open.cpp:199
 #: modules/gui/qt4/dialogs/sout.cpp:199
-#, fuzzy
 msgid "&Stream"
-msgstr "Proud"
+msgstr "&Stream"
 
 #: modules/gui/qt4/dialogs/open.cpp:126
-#, fuzzy
 msgid "&Convert"
-msgstr "Inverze barev"
+msgstr "&Konvertovat"
 
 #: modules/gui/qt4/dialogs/open.cpp:202
-#, fuzzy
 msgid "&Convert / Save"
-msgstr "Inverze barev"
+msgstr "&Konvertovat / Uložit"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:66
 #, fuzzy
@@ -17042,9 +16788,8 @@ msgid "&Save"
 msgstr "&Uložit"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:88
-#, fuzzy
 msgid "&Reset Preferences"
-msgstr "Nastavit volby"
+msgstr "&Resetovat volby"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:354
 msgid ""
@@ -17077,19 +16822,16 @@ msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr ""
 
 #: modules/gui/qt4/dialogs_provider.hpp:45
-#, fuzzy
 msgid "Media Files"
-msgstr "Médium: %s"
+msgstr "Soubory"
 
 #: modules/gui/qt4/dialogs_provider.hpp:65
-#, fuzzy
 msgid "Subtitles Files"
-msgstr "Soubor s titulky"
+msgstr "Soubory s titulky"
 
 #: modules/gui/qt4/dialogs_provider.hpp:70
-#, fuzzy
 msgid "All Files"
-msgstr "Soubory"
+msgstr "Všechny soubory"
 
 #: modules/gui/qt4/dialogs/sout.cpp:103 modules/gui/qt4/ui/sout.ui:14
 #, fuzzy
@@ -17172,9 +16914,8 @@ msgid "VLM conf (*.vlm) ;; All (*.*)"
 msgstr ""
 
 #: modules/gui/qt4/dialogs/vlm.cpp:335
-#, fuzzy
 msgid "Open a VLM Configuration File"
-msgstr "hlavní soubor nastavení"
+msgstr "Otevřít VLM konfigurační soubor"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:528
 #, fuzzy
@@ -17227,9 +16968,8 @@ msgid "Paused"
 msgstr "Pozastaveno"
 
 #: modules/gui/qt4/menus.cpp:266
-#, fuzzy
 msgid "&Media"
-msgstr "Médium: %s"
+msgstr "&Média"
 
 #: modules/gui/qt4/menus.cpp:268 modules/gui/qt4/menus.cpp:819
 msgid "&Audio"
@@ -17240,71 +16980,61 @@ msgid "&Video"
 msgstr "&Video"
 
 #: modules/gui/qt4/menus.cpp:270
-#, fuzzy
 msgid "P&layback"
-msgstr "Přehrávání"
+msgstr "Pře&hrávání"
 
 #: modules/gui/qt4/menus.cpp:272
-#, fuzzy
 msgid "&Playlist"
-msgstr "Playlist"
+msgstr "&Playlist"
 
 #: modules/gui/qt4/menus.cpp:274
-#, fuzzy
 msgid "&Tools"
-msgstr "Nástroj"
+msgstr "&Nástroje"
 
 #: modules/gui/qt4/menus.cpp:276
 msgid "&Help"
 msgstr "&Nápověda"
 
 #: modules/gui/qt4/menus.cpp:289 modules/gui/qt4/menus.cpp:683
-#, fuzzy
 msgid "&Open File..."
-msgstr "Open File..."
+msgstr "&Otevřít soubor..."
 
 #: modules/gui/qt4/menus.cpp:292
 #, fuzzy
 msgid "Advanced Open File..."
-msgstr "Pokročilá nastavení..."
+msgstr "&Pokročilé otevírání..."
 
 #: modules/gui/qt4/menus.cpp:299 modules/gui/qt4/menus.cpp:687
 msgid "Open &Disc..."
 msgstr "Otevřít &disk..."
 
 #: modules/gui/qt4/menus.cpp:301 modules/gui/qt4/menus.cpp:689
-#, fuzzy
 msgid "Open &Network..."
-msgstr "Otevřít síť..."
+msgstr "Otevřít &síť..."
 
 #: modules/gui/qt4/menus.cpp:303 modules/gui/qt4/menus.cpp:691
-#, fuzzy
 msgid "Open &Capture Device..."
-msgstr "Nemohu otevřít zařízení %s: %s\n"
+msgstr "Otevřít &odchycovací zařízení.."
 
 #: modules/gui/qt4/menus.cpp:308
 msgid "Conve&rt / Save..."
-msgstr ""
+msgstr "Konve&rtovat / Uložit..."
 
 #: modules/gui/qt4/menus.cpp:310
-#, fuzzy
 msgid "&Streaming..."
-msgstr "Proud"
+msgstr "&Streamování"
 
 #: modules/gui/qt4/menus.cpp:315 modules/gui/qt4/menus.cpp:933
-#, fuzzy
 msgid "&Quit"
-msgstr "Konec"
+msgstr "&Konec"
 
 #: modules/gui/qt4/menus.cpp:326
-#, fuzzy
 msgid "Show P&laylist"
-msgstr "Uložit seznam skladeb"
+msgstr "Ukaž p&laylist"
 
 #: modules/gui/qt4/menus.cpp:355
-#, fuzzy
 msgid "Play&list..."
-msgstr "Playlist"
+msgstr "Play&list"
 
 #: modules/gui/qt4/menus.cpp:356
 #, fuzzy
@@ -17312,9 +17042,8 @@ msgid "Ctrl+L"
 msgstr "Ctrl"
 
 #: modules/gui/qt4/menus.cpp:375
-#, fuzzy
 msgid "Mi&nimal View..."
-msgstr "Minimální rozhraní"
+msgstr "Mi&nimalistické zobrazení..."
 
 #: modules/gui/qt4/menus.cpp:376
 #, fuzzy
@@ -17322,14 +17051,12 @@ msgid "Ctrl+H"
 msgstr "Ctrl"
 
 #: modules/gui/qt4/menus.cpp:384
-#, fuzzy
 msgid "&Fullscreen Interface"
-msgstr "Rozhraní"
+msgstr "&Režim celé obrazovky"
 
 #: modules/gui/qt4/menus.cpp:390
-#, fuzzy
 msgid "&Advanced Controls"
-msgstr "Pokročilá nastavení"
+msgstr "&Pokročilá nastavení"
 
 #: modules/gui/qt4/menus.cpp:397
 #, fuzzy
@@ -17341,69 +17068,56 @@ msgid "&Preferences..."
 msgstr "&Nastavení..."
 
 #: modules/gui/qt4/menus.cpp:454
-#, fuzzy
 msgid "Audio &Track"
-msgstr "Zvuková stopa"
+msgstr "Zvuková &stopa"
 
 #: modules/gui/qt4/menus.cpp:455
-#, fuzzy
 msgid "Audio &Device"
-msgstr "Zvukové zařízení"
+msgstr "Zvukové &zařízení"
 
 #: modules/gui/qt4/menus.cpp:456
-#, fuzzy
 msgid "Audio &Channels"
-msgstr "Zvukové kanály"
+msgstr "Zvukové &kanály"
 
 #: modules/gui/qt4/menus.cpp:458
-#, fuzzy
 msgid "&Visualizations"
-msgstr "Vizualizace"
+msgstr "&Vizualizace"
 
 #: modules/gui/qt4/menus.cpp:493
-#, fuzzy
 msgid "Video &Track"
-msgstr "Video stopa"
+msgstr "Video s&topa"
 
 #: modules/gui/qt4/menus.cpp:496
-#, fuzzy
 msgid "&Subtitles Track"
-msgstr "Titulky"
+msgstr "&Stopa titulku"
 
 #: modules/gui/qt4/menus.cpp:499
-#, fuzzy
 msgid "Load File..."
-msgstr "Uložit soubor..."
+msgstr "Načíst soubor..."
 
 #: modules/gui/qt4/menus.cpp:503
-#, fuzzy
 msgid "&Fullscreen"
-msgstr "Celoobrazovkový režim"
+msgstr "&Režim celé obrazovky"
 
 #: modules/gui/qt4/menus.cpp:504
-#, fuzzy
 msgid "&Zoom"
-msgstr "Zvětšit"
+msgstr "&Zvětšit"
 
 #: modules/gui/qt4/menus.cpp:505
-#, fuzzy
 msgid "&Deinterlace"
-msgstr "Odstranění prokládání"
+msgstr "O&dstranění prokládání"
 
 #: modules/gui/qt4/menus.cpp:506
-#, fuzzy
 msgid "&Aspect Ratio"
-msgstr "Poměr stran"
+msgstr "&Poměr stran"
 
 #: modules/gui/qt4/menus.cpp:507
-#, fuzzy
 msgid "&Crop"
-msgstr "Ořez"
+msgstr "&Ořez"
 
 #: modules/gui/qt4/menus.cpp:508
-#, fuzzy
 msgid "Always &On Top"
-msgstr "Vždy navrchu"
+msgstr "Vždy &navrchu"
 
 #: modules/gui/qt4/menus.cpp:510
 #, fuzzy
@@ -17411,29 +17125,24 @@ msgid "DirectX Wallpaper"
 msgstr "Tapeta pracovní plochy"
 
 #: modules/gui/qt4/menus.cpp:512
-#, fuzzy
 msgid "Sna&pshot"
-msgstr "Snímek obrazovky"
+msgstr "S&nímek obrazovky"
 
 #: modules/gui/qt4/menus.cpp:550
-#, fuzzy
 msgid "&Bookmarks"
-msgstr "Záložky"
+msgstr "&Záložky"
 
 #: modules/gui/qt4/menus.cpp:551
-#, fuzzy
 msgid "T&itle"
-msgstr "Titul"
+msgstr "T&itul"
 
 #: modules/gui/qt4/menus.cpp:552
-#, fuzzy
 msgid "&Chapter"
-msgstr "Kapitola"
+msgstr "&Kapitola"
 
 #: modules/gui/qt4/menus.cpp:553
-#, fuzzy
 msgid "&Program"
-msgstr "Program"
+msgstr "&Program"
 
 #: modules/gui/qt4/menus.cpp:554
 msgid "&Navigation"
@@ -17445,29 +17154,24 @@ msgid "Configure podcasts..."
 msgstr "Nastavit"
 
 #: modules/gui/qt4/menus.cpp:616
-#, fuzzy
 msgid "&Help..."
-msgstr "Nápověda"
+msgstr "&Nápověda..."
 
 #: modules/gui/qt4/menus.cpp:619
-#, fuzzy
 msgid "Check for &Updates..."
-msgstr "Kontrolovat aktualizace..."
+msgstr "Kontrolovat akt&ualizace..."
 
 #: modules/gui/qt4/menus.cpp:678
-#, fuzzy
 msgid "Tools"
-msgstr "Nástroj"
+msgstr "Nástroje"
 
 #: modules/gui/qt4/menus.cpp:805
-#, fuzzy
 msgid "Leave Fullscreen"
-msgstr "Celoobrazovkový režim"
+msgstr "Opustit režim celé obrazovky"
 
 #: modules/gui/qt4/menus.cpp:831
-#, fuzzy
 msgid "&Playback"
-msgstr "Přehrávání"
+msgstr "&Přehrávání"
 
 #: modules/gui/qt4/menus.cpp:845
 #, fuzzy
@@ -17480,9 +17184,8 @@ msgid "Minimal View..."
 msgstr "Minimální rozhraní"
 
 #: modules/gui/qt4/menus.cpp:857
-#, fuzzy
 msgid "Toggle Fullscreen Interface"
-msgstr "Rozhraní"
+msgstr "Přepnout režim celé obrazovky"
 
 #: modules/gui/qt4/menus.cpp:917
 #, fuzzy
@@ -17495,14 +17198,12 @@ msgid "Show VLC media player"
 msgstr "VLC media player"
 
 #: modules/gui/qt4/menus.cpp:931
-#, fuzzy
 msgid "&Open Media"
-msgstr "Otevřít soubor"
+msgstr "Otevřít médium"
 
 #: modules/gui/qt4/menus.hpp:36
-#, fuzzy
 msgid "Open &Folder..."
-msgstr "Open File..."
+msgstr "Otevřít &Složku"
 
 #: modules/gui/qt4/menus.hpp:38
 msgid "Open D&irectory..."
@@ -17723,9 +17424,8 @@ msgid "Starting Position"
 msgstr "Pozice kurzoru"
 
 #: modules/gui/qt4/ui/open_disk.ui:232
-#, fuzzy
 msgid "Audio and Subtitles"
-msgstr "Formátované titulky"
+msgstr "Zvuk a titulky"
 
 #: modules/gui/qt4/ui/open_file.ui:26
 #, fuzzy
@@ -17738,9 +17438,8 @@ msgid "Add a subtitles file"
 msgstr "Otevřít soubor s titulky:"
 
 #: modules/gui/qt4/ui/open_file.ui:52
-#, fuzzy
 msgid "Use a sub&titles file"
-msgstr "Otevřít soubor s titulky:"
+msgstr "Použít soubor s &titulky"
 
 #: modules/gui/qt4/ui/open_file.ui:126
 #, fuzzy
@@ -17782,9 +17481,8 @@ msgid "Show extended options"
 msgstr "Zobrazovat rozšířené volby"
 
 #: modules/gui/qt4/ui/open.ui:41
-#, fuzzy
 msgid "Show &more options"
-msgstr "Zobrazovat rozšířené volby"
+msgstr "Zobrazovat &rozšířené volby"
 
 #: modules/gui/qt4/ui/open.ui:61
 #, fuzzy
@@ -17906,9 +17604,8 @@ msgid "Generated stream output string"
 msgstr "Obecná nastavení sdílení Windows"
 
 #: modules/gui/qt4/ui/sprefs_audio.ui:36
-#, fuzzy
 msgid "Default volume"
-msgstr "hlasitost zvuku při startu"
+msgstr "Výchozí hlasitost"
 
 #: modules/gui/qt4/ui/sprefs_audio.ui:77
 msgid "256 corresponds to 100%, 1024 to 400%"
@@ -17919,17 +17616,16 @@ msgid "Save volume on exit"
 msgstr ""
 
 #: modules/gui/qt4/ui/sprefs_audio.ui:142
-#, fuzzy
 msgid "Preferred audio language"
-msgstr "Jazyk zvukové stopy"
+msgstr "Preferovaný jazyk zvukové stopy"
 
 #: modules/gui/qt4/ui/sprefs_audio.ui:293
 msgid "last.fm"
-msgstr ""
+msgstr "last.fm"
 
 #: modules/gui/qt4/ui/sprefs_audio.ui:299
 msgid "Enable last.fm submission"
-msgstr ""
+msgstr "Povolit odesílání na last.fm"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:20
 #, fuzzy
@@ -17937,19 +17633,16 @@ msgid "Disc Devices"
 msgstr "Zařízení"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:26
-#, fuzzy
 msgid "Default disc device"
-msgstr "Výchozí zařízení"
+msgstr "Výchozí zařízení (cd/dvd)"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:55
-#, fuzzy
 msgid "Server default port"
-msgstr "Obnovit výchozí"
+msgstr "Výchozí port serveru"
 
 #: modules/gui/qt4/ui/sprefs_input.ui:103
-#, fuzzy
 msgid "Default caching level"
-msgstr "výchozí jazyk pro přehrávání DVD"
+msgstr ""
 
 #: modules/gui/qt4/ui/sprefs_input.ui:125
 #, fuzzy
@@ -18033,22 +17726,19 @@ msgstr ""
 #: modules/gui/qt4/ui/sprefs_interface.ui:155
 msgid ""
 "This is VLC's skinnable interface. You can download skins at &lt;a href="
-msgstr ""
+msgstr "Toto je skinovatelné rozhraní vlc. Můžete stáhnout skiny z &lt;a href="
 
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:50
-#, fuzzy
 msgid "Subtitles Language"
 msgstr "Jazyk titulků"
 
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:56
-#, fuzzy
 msgid "Preferred subtitles language"
-msgstr "Jazyk zvukové stopy"
+msgstr "Preferovaný jazyk titulků"
 
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:76
-#, fuzzy
 msgid "Default encoding"
-msgstr "Dekódování"
+msgstr "Výchozí enkoder"
 
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:98 modules/video_output/opengl.c:174
 msgid "Effect"
@@ -18346,9 +18036,8 @@ msgid "VLM configurator"
 msgstr "hlavní soubor nastavení"
 
 #: modules/gui/qt4/ui/vlm.ui:34
-#, fuzzy
 msgid "Media Manager Edition"
-msgstr "Meta-informace"
+msgstr "Správce Médií"
 
 #: modules/gui/qt4/ui/vlm.ui:57
 #, fuzzy
@@ -18391,7 +18080,7 @@ msgstr "Smyčka"
 
 #: modules/gui/qt4/ui/vlm.ui:235
 msgid "Media Manager List"
-msgstr ""
+msgstr "Správce Médií"
 
 #: modules/gui/skins2/src/dialogs.cpp:222
 msgid "Open a skin file"
@@ -18842,11 +18531,11 @@ msgstr "Nemohu zapsat parser: %s"
 
 #: modules/misc/audioscrobbler.c:133
 msgid "The username of your last.fm account"
-msgstr ""
+msgstr "Uživatelské jméno pro váš účet na last.fm"
 
 #: modules/misc/audioscrobbler.c:135
 msgid "The password of your last.fm account"
-msgstr ""
+msgstr "Heslo pro váš účet na last.fm"
 
 #: modules/misc/audioscrobbler.c:159
 #, fuzzy
@@ -18855,7 +18544,7 @@ msgstr "verze kodéru"
 
 #: modules/misc/audioscrobbler.c:160
 msgid "Submission of played songs to last.fm"
-msgstr ""
+msgstr "Odesílat přehrané písně na last.fm"
 
 #: modules/misc/audioscrobbler.c:297
 msgid "Last.fm username not set"
@@ -18867,16 +18556,21 @@ msgid ""
 "VLC.\n"
 "Visit http://www.last.fm/join/ to get an account."
 msgstr ""
+"Prosím nastavte uživatelské jméno nebo vypněte last.fm audioscrobbler plugin "
+"a restartujte VLC.\n"
+"Navštivte http://www.last.fm/join/ pro vytvoření účtu."
 
 #: modules/misc/audioscrobbler.c:815
 msgid "last.fm: Authentication failed"
-msgstr ""
+msgstr "last.fm: autentifikace selhala"
 
 #: modules/misc/audioscrobbler.c:816
 msgid ""
 "last.fm username or password is incorrect. Please verify your settings and "
 "relaunch VLC."
 msgstr ""
+"last.fm: uživatelské jméno či heslo je neplatné. Zkontrolujte zadané údaje a "
+"restartujte VLC."
 
 #: modules/misc/dummy/dummy.c:40
 #, fuzzy
@@ -20743,9 +20437,8 @@ msgid ""
 msgstr ""
 
 #: modules/stream_out/transcode.c:93
-#, fuzzy
 msgid "Audio encoder"
-msgstr "verze kodéru"
+msgstr "Zvukový enkodér"
 
 #: modules/stream_out/transcode.c:95
 #, fuzzy
@@ -20789,9 +20482,8 @@ msgid "Number of audio channels in the transcoded streams."
 msgstr "Zobrazení informací o současné stránce"
 
 #: modules/stream_out/transcode.c:109
-#, fuzzy
 msgid "Audio filter"
-msgstr "Použít _filtry"
+msgstr "Audio filtr"
 
 #: modules/stream_out/transcode.c:111
 msgid ""
@@ -20800,9 +20492,8 @@ msgid ""
 msgstr ""
 
 #: modules/stream_out/transcode.c:114
-#, fuzzy
 msgid "Subtitles encoder"
-msgstr "verze kodéru"
+msgstr "Enkodér titulků"
 
 #: modules/stream_out/transcode.c:116
 #, fuzzy
@@ -20830,9 +20521,8 @@ msgid ""
 msgstr ""
 
 #: modules/stream_out/transcode.c:129 modules/video_filter/osdmenu.c:135
-#, fuzzy
 msgid "OSD menu"
-msgstr "lišta menu"
+msgstr "OSD menu"
 
 #: modules/stream_out/transcode.c:131
 msgid ""
@@ -20880,9 +20570,8 @@ msgid "Transcode stream output"
 msgstr "jméno výstupního souboru s psf písmem"
 
 #: modules/stream_out/transcode.c:216
-#, fuzzy
 msgid "Overlays/Subtitles"
-msgstr "kódování titulků"
+msgstr "Vrstvy/Titulky"
 
 #: modules/stream_out/transrate/transrate.c:61
 #, fuzzy
@@ -21000,9 +20689,8 @@ msgid "Alpha mask video filter"
 msgstr "Horní propust"
 
 #: modules/video_filter/alphamask.c:64
-#, fuzzy
 msgid "Alpha mask"
-msgstr "Horní propust"
+msgstr "Alfa maska"
 
 #: modules/video_filter/atmo/atmo.cpp:120
 msgid ""
@@ -21262,9 +20950,8 @@ msgid "kind of filtering which should be use to calcuate the color output"
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:226
-#, fuzzy
 msgid "No Filtering"
-msgstr "Filtry"
+msgstr "Žádné filtrování"
 
 #: modules/video_filter/atmo/atmo.cpp:227
 #, fuzzy
@@ -21272,14 +20959,12 @@ msgid "Combined"
 msgstr "Komedie"
 
 #: modules/video_filter/atmo/atmo.cpp:228
-#, fuzzy
 msgid "Percent"
-msgstr "Portugalština"
+msgstr "Procent"
 
 #: modules/video_filter/atmo/atmo.cpp:231
-#, fuzzy
 msgid "Frame delay"
-msgstr "Snímková frekvence"
+msgstr "Zpoždění rámce"
 
 #: modules/video_filter/atmo/atmo.cpp:232
 msgid ""
@@ -21288,9 +20973,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:237
-#, fuzzy
 msgid "Channel summary"
-msgstr "Kanály"
+msgstr "Souhrn kanálu"
 
 #: modules/video_filter/atmo/atmo.cpp:238
 #, fuzzy
@@ -21318,32 +21002,26 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/atmo/atmo.cpp:254
-#, fuzzy
 msgid "disabled"
-msgstr "Vypnout"
+msgstr "vypnuto"
 
 #: modules/video_filter/atmo/atmo.cpp:255
-#, fuzzy
 msgid "summary"
-msgstr "Shrnutí"
+msgstr "shrnutí"
 
 #: modules/video_filter/atmo/atmo.cpp:256
-#, fuzzy
 msgid "left"
 msgstr "Vlevo"
 
 #: modules/video_filter/atmo/atmo.cpp:257
-#, fuzzy
 msgid "right"
 msgstr "Vpravo"
 
 #: modules/video_filter/atmo/atmo.cpp:258
-#, fuzzy
 msgid "top"
-msgstr "Zastavit"
+msgstr "Nahoře"
 
 #: modules/video_filter/atmo/atmo.cpp:259
-#, fuzzy
 msgid "bottom"
 msgstr "Dole"
 
@@ -21590,9 +21268,8 @@ msgstr "Upravit obraz"
 
 #: modules/video_filter/canvas.c:50 modules/video_filter/canvas.c:52
 #: modules/video_output/image.c:61
-#, fuzzy
 msgid "Image height"
-msgstr "Výška desky: "
+msgstr "Výška obrazu"
 
 #: modules/video_filter/canvas.c:55
 msgid "Set aspect (like 4:3) of the video canvas"
@@ -21612,9 +21289,8 @@ msgid "Number of video windows in which to clone the video."
 msgstr ""
 
 #: modules/video_filter/clone.c:62
-#, fuzzy
 msgid "Video output modules"
-msgstr "Šířka video výstupu."
+msgstr "Moduly video výstupu"
 
 #: modules/video_filter/clone.c:63
 msgid ""
@@ -21662,14 +21338,12 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/crop.c:76
-#, fuzzy
 msgid "Automatic cropping"
-msgstr "Automatická stahování"
+msgstr "Automatický ořez"
 
 #: modules/video_filter/crop.c:77
-#, fuzzy
 msgid "Automatically detect black borders and crop them."
-msgstr "Kontrolovat aktualizace"
+msgstr "Automaticky detekovat černé pruhy a ořezávat je"
 
 #: modules/video_filter/crop.c:80
 msgid "Ratio max (x 1000)"
@@ -21744,51 +21418,44 @@ msgid "Maximum luminance to consider a pixel as black (0-255)."
 msgstr ""
 
 #: modules/video_filter/crop.c:104
-#, fuzzy
 msgid "Crop video filter"
-msgstr "Horní propust"
+msgstr "Video filter ořezu"
 
 #: modules/video_filter/crop.c:378 modules/video_filter/crop.c:474
-#, fuzzy
 msgid "Cropping failed"
-msgstr "Horní propust"
+msgstr "Ořezávání selhalo"
 
 #: modules/video_filter/crop.c:379 modules/video_filter/crop.c:475
-#, fuzzy
 msgid "VLC could not open the video output module."
-msgstr "Barva video vstupu."
+msgstr "VLC se nezdařilo otevřít modul video výstupu"
 
 #: modules/video_filter/croppadd.c:47
-#, fuzzy
 msgid "Pixels to crop from top"
-msgstr "Odspodu nahoru"
+msgstr "Pixelů k oříznutí zezhora"
 
 #: modules/video_filter/croppadd.c:49
 msgid "Number of pixels to crop from the top of the image."
 msgstr ""
 
 #: modules/video_filter/croppadd.c:50
-#, fuzzy
 msgid "Pixels to crop from bottom"
-msgstr "Odspodu nahoru"
+msgstr "Pixelů k oříznutí zezpoda"
 
 #: modules/video_filter/croppadd.c:52
 msgid "Number of pixels to crop from the bottom of the image."
 msgstr ""
 
 #: modules/video_filter/croppadd.c:53
-#, fuzzy
 msgid "Pixels to crop from left"
-msgstr "Myš pro _leváky"
+msgstr "Pixelů k oříznutí zleva"
 
 #: modules/video_filter/croppadd.c:55
 msgid "Number of pixels to crop from the left of the image."
 msgstr ""
 
 #: modules/video_filter/croppadd.c:56
-#, fuzzy
 msgid "Pixels to crop from right"
-msgstr "Zleva doprava"
+msgstr "Pixelů k oříznutí zprava"
 
 #: modules/video_filter/croppadd.c:58
 msgid "Number of pixels to crop from the right of the image."
@@ -21867,18 +21534,16 @@ msgid "Deinterlacing video filter"
 msgstr "Horní propust"
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:58
-#, fuzzy
 msgid "Input FIFO"
-msgstr "Vstup"
+msgstr "Vstupní FIFO"
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:59
 msgid "FIFO which will be read for commands"
 msgstr ""
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:61
-#, fuzzy
 msgid "Output FIFO"
-msgstr "Výstup"
+msgstr "Výstupní FIFO"
 
 #: modules/video_filter/dynamicoverlay/dynamicoverlay.c:62
 msgid "FIFO which will be written to for responses"
@@ -21914,19 +21579,16 @@ msgid "Y coordinate of the mask."
 msgstr "otevřeno MRL titulků '%s'\n"
 
 #: modules/video_filter/erase.c:66
-#, fuzzy
 msgid "Erase video filter"
-msgstr "Horní propust"
+msgstr "Vymazat video filtr"
 
 #: modules/video_filter/erase.c:67
-#, fuzzy
 msgid "Erase"
-msgstr "Pozastavit"
+msgstr "Vymazat"
 
 #: modules/video_filter/extract.c:63
-#, fuzzy
 msgid "RGB component to extract"
-msgstr "Horní propust"
+msgstr "RGB komponenta k extrakci"
 
 #: modules/video_filter/extract.c:64
 msgid "RGB component to extract. 0 for Red, 1 for Green and 2 for Blue."
@@ -22016,9 +21678,8 @@ msgid "Grain"
 msgstr "Přechod"
 
 #: modules/video_filter/imgresample.c:63
-#, fuzzy
 msgid "FFmpeg video filter"
-msgstr "Horní propust"
+msgstr "FFmpeg video filtr"
 
 #: modules/video_filter/invert.c:51
 #, fuzzy
@@ -22134,7 +21795,6 @@ msgid "Y offset, down from the top."
 msgstr "Odshora zleva dolů doprava"
 
 #: modules/video_filter/marq.c:107
-#, fuzzy
 msgid "Timeout"
 msgstr "Timeout"
 
@@ -22145,9 +21805,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/marq.c:111
-#, fuzzy
 msgid "Refresh period in ms"
-msgstr "Aktualizovat seznam"
+msgstr "Obnovovací interval v ms"
 
 #: modules/video_filter/marq.c:112
 msgid ""
@@ -22218,18 +21877,16 @@ msgid "Y Coordinate of the top-left corner of the mosaic."
 msgstr "otevřeno MRL titulků '%s'\n"
 
 #: modules/video_filter/mosaic.c:106
-#, fuzzy
 msgid "Border width"
-msgstr "Šířka videa"
+msgstr "Šířka okraje"
 
 #: modules/video_filter/mosaic.c:108
 msgid "Width in pixels of the border between miniatures."
 msgstr ""
 
 #: modules/video_filter/mosaic.c:109
-#, fuzzy
 msgid "Border height"
-msgstr "Výška videa"
+msgstr "Výška okraje"
 
 #: modules/video_filter/mosaic.c:111
 msgid "Height in pixels of the border between miniatures."
@@ -22248,9 +21905,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/mosaic.c:119
-#, fuzzy
 msgid "Positioning method"
-msgstr "Přístupová metoda `%s'."
+msgstr "Metoda umístění"
 
 #: modules/video_filter/mosaic.c:121
 msgid ""
@@ -22344,18 +22000,16 @@ msgid "Mosaic"
 msgstr "Mozaika"
 
 #: modules/video_filter/motionblur.c:54
-#, fuzzy
 msgid "Blur factor (1-127)"
-msgstr "Konstantní činitel pod -1"
+msgstr "Faktor rozmazání (1-127)"
 
 #: modules/video_filter/motionblur.c:55
 msgid "The degree of blurring from 1 to 127."
 msgstr ""
 
 #: modules/video_filter/motionblur.c:61
-#, fuzzy
 msgid "Motion blur filter"
-msgstr "Horní propust"
+msgstr "Filtr rozmazání monitoru"
 
 #: modules/video_filter/motiondetect.c:49
 #, fuzzy
@@ -22363,14 +22017,12 @@ msgid "Motion detect video filter"
 msgstr "Horní propust"
 
 #: modules/video_filter/motiondetect.c:50
-#, fuzzy
 msgid "Motion Detect"
 msgstr "Detekce pohybu"
 
 #: modules/video_filter/noise.c:53
-#, fuzzy
 msgid "Noise video filter"
-msgstr "Horní propust"
+msgstr "Filtr pro šum ve videu"
 
 #: modules/video_filter/opencv_example.cpp:67
 msgid "OpenCV face detection example filter"
@@ -22403,14 +22055,12 @@ msgid "RGB32"
 msgstr ""
 
 #: modules/video_filter/opencv_wrapper.c:74
-#, fuzzy
 msgid "Don't display any video"
-msgstr "Nezobrazovat další chyby"
+msgstr "Nezobrazovat video"
 
 #: modules/video_filter/opencv_wrapper.c:75
-#, fuzzy
 msgid "Display the input video"
-msgstr "Uložit snímek aktuálního videa"
+msgstr "Zobrazit vstupní video"
 
 #: modules/video_filter/opencv_wrapper.c:75
 #, fuzzy
@@ -22492,9 +22142,8 @@ msgid "Configuration file"
 msgstr "Soubor s nastavením"
 
 #: modules/video_filter/osdmenu.c:45
-#, fuzzy
 msgid "Configuration file for the OSD Menu."
-msgstr "položka menu `%s' již pro soubor `%s' existuje"
+msgstr "Konfigurační soubor pro OSD Menu."
 
 #: modules/video_filter/osdmenu.c:46
 msgid "Path to OSD menu images"
@@ -22511,9 +22160,8 @@ msgid "You can move the OSD menu by left-clicking on it."
 msgstr ""
 
 #: modules/video_filter/osdmenu.c:57
-#, fuzzy
 msgid "Menu position"
-msgstr "Pozice kurzoru"
+msgstr "Pozice menu"
 
 #: modules/video_filter/osdmenu.c:59
 msgid ""
@@ -22535,9 +22183,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/osdmenu.c:69
-#, fuzzy
 msgid "Menu update interval"
-msgstr "Frekvence _aktualizace sledování systému: "
+msgstr "Interval aktualizace menu"
 
 #: modules/video_filter/osdmenu.c:71
 msgid ""
@@ -22560,9 +22207,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_filter/osdmenu.c:134
-#, fuzzy
 msgid "On Screen Display menu"
-msgstr "Displej v horní části obrazovky"
+msgstr "OSD Menu"
 
 #: modules/video_filter/panoramix.c:82
 msgid ""
@@ -22782,18 +22428,16 @@ msgid "Select the White Level of blended zone (Blue or V component)"
 msgstr ""
 
 #: modules/video_filter/panoramix.c:192
-#, fuzzy
 msgid "Xinerama option"
-msgstr "Původní nastavení"
+msgstr "Volby pro Xinerama (více monitorů)"
 
 #: modules/video_filter/panoramix.c:193
 msgid "Uncheck if you have not used xinerama"
 msgstr ""
 
 #: modules/video_filter/postproc.c:59
-#, fuzzy
 msgid "Post processing quality"
-msgstr "Náhled ve vysoké _kvalitě"
+msgstr "Kvalita následného zpracování"
 
 #: modules/video_filter/postproc.c:61
 msgid ""
@@ -22812,12 +22456,10 @@ msgid "Video post processing filter"
 msgstr "zakázat veškeré změny měřítka"
 
 #: modules/video_filter/postproc.c:225
-#, fuzzy
 msgid "Lowest"
 msgstr "Nejnižší"
 
 #: modules/video_filter/postproc.c:228
-#, fuzzy
 msgid "Highest"
 msgstr "Nejvyšší"
 
@@ -22856,33 +22498,28 @@ msgid "Puzzle"
 msgstr "Fialová"
 
 #: modules/video_filter/remoteosd.c:74
-#, fuzzy
 msgid "VNC Host"
-msgstr "Počítač"
+msgstr "VNC Počítač"
 
 #: modules/video_filter/remoteosd.c:76
 msgid "VNC hostname or IP address."
 msgstr ""
 
 #: modules/video_filter/remoteosd.c:78
-#, fuzzy
 msgid "VNC Port"
-msgstr "Formát VCD"
+msgstr "VNC Port"
 
 #: modules/video_filter/remoteosd.c:80
-#, fuzzy
 msgid "VNC portnumber."
-msgstr "číslo mezi 0 a 1"
+msgstr "VNC číslo portu"
 
 #: modules/video_filter/remoteosd.c:82
-#, fuzzy
 msgid "VNC Password"
-msgstr "Heslo"
+msgstr "VNC Heslo"
 
 #: modules/video_filter/remoteosd.c:84
-#, fuzzy
 msgid "VNC password."
-msgstr "text hesla"
+msgstr "VNC heslo."
 
 #: modules/video_filter/remoteosd.c:86
 #, fuzzy
@@ -22904,9 +22541,8 @@ msgid "Activate VNC polling. Do NOT activate for use as VDR ffnetdev client."
 msgstr ""
 
 #: modules/video_filter/remoteosd.c:94
-#, fuzzy
 msgid "Mouse events"
-msgstr "Gesta"
+msgstr "Události myši"
 
 #: modules/video_filter/remoteosd.c:96
 msgid ""
@@ -22934,9 +22570,8 @@ msgid "Remote-OSD over VNC"
 msgstr ""
 
 #: modules/video_filter/remoteosd.c:121
-#, fuzzy
 msgid "Remote-OSD"
-msgstr "Odstranit"
+msgstr "Vzdálené OSD"
 
 #: modules/video_filter/ripple.c:53
 #, fuzzy
@@ -22984,9 +22619,8 @@ msgid "Maximum number of characters displayed on the screen."
 msgstr "Maximální počet paralelních spojení."
 
 #: modules/video_filter/rss.c:136
-#, fuzzy
 msgid "Refresh time"
-msgstr "Čas návrhu: %f\n"
+msgstr "Čas obnovení"
 
 #: modules/video_filter/rss.c:137
 msgid ""
@@ -23036,7 +22670,6 @@ msgid "Don't show"
 msgstr ""
 
 #: modules/video_filter/rss.c:182
-#, fuzzy
 msgid "Always visible"
 msgstr "Vždy navrchu"
 
@@ -23127,9 +22760,8 @@ msgid "Bicubic spline"
 msgstr "Neznámý podtyp křivky: %d\n"
 
 #: modules/video_filter/transform.c:65
-#, fuzzy
 msgid "Transform type"
-msgstr "Typ spojení"
+msgstr "Typ transformace"
 
 #: modules/video_filter/transform.c:66
 msgid "One of '90', '180', '270', 'hflip' and 'vflip'"
@@ -23325,9 +22957,8 @@ msgid "Matrox Graphic Array video output"
 msgstr "Šířka video výstupu."
 
 #: modules/video_output/msw/direct3d.c:112
-#, fuzzy
 msgid "DirectX 3D video output"
-msgstr "DirectX video výstup"
+msgstr "DirectX 3D video výstup"
 
 #: modules/video_output/msw/directx.c:133
 msgid ""
@@ -23369,9 +23000,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_output/msw/directx.c:154
-#, fuzzy
 msgid "Enable wallpaper mode "
-msgstr "Povolit/zakázat režim kurzoru"
+msgstr "Povolit režim obrázku na pozadí"
 
 #: modules/video_output/msw/directx.c:156
 msgid ""
@@ -23615,9 +23245,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_output/vmem.c:63
-#, fuzzy
 msgid "Lock function"
-msgstr "Latina"
+msgstr "Uzamknout funkci"
 
 #: modules/video_output/vmem.c:64
 msgid ""
@@ -23626,9 +23255,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_output/vmem.c:68
-#, fuzzy
 msgid "Unlock function"
-msgstr "Tradiční hodiny"
+msgstr "Odemknout funkci"
 
 #: modules/video_output/vmem.c:69
 msgid "Address of the unlocking callback function"
@@ -23648,9 +23276,8 @@ msgid "Video memory module"
 msgstr "nastavit název modulu"
 
 #: modules/video_output/vmem.c:76
-#, fuzzy
 msgid "Video memory"
-msgstr " (používám port %d)"
+msgstr "Videopaměť"
 
 #: modules/video_output/x11/glx.c:90 modules/video_output/x11/xvideo.c:47
 #, fuzzy
@@ -23665,9 +23292,8 @@ msgstr ""
 
 #: modules/video_output/x11/glx.c:95 modules/video_output/x11/x11.c:46
 #: modules/video_output/x11/xvideo.c:52 modules/video_output/x11/xvmc.c:102
-#, fuzzy
 msgid "Alternate fullscreen method"
-msgstr "Používat metodu HTTP"
+msgstr "Upravit metodu \"celé obrazovky\""
 
 #: modules/video_output/x11/glx.c:97 modules/video_output/x11/x11.c:48
 #: modules/video_output/x11/xvideo.c:54 modules/video_output/x11/xvmc.c:104
@@ -23699,9 +23325,8 @@ msgstr ""
 
 #: modules/video_output/x11/glx.c:113 modules/video_output/x11/x11.c:64
 #: modules/video_output/x11/xvideo.c:75
-#, fuzzy
 msgid "Screen for fullscreen mode."
-msgstr "Zamknout v režimu přes celou obrazovku"
+msgstr "Obrazovka pro režim \"celé obrazovky\""
 
 #: modules/video_output/x11/glx.c:115 modules/video_output/x11/x11.c:66
 #: modules/video_output/x11/xvideo.c:77
@@ -23712,7 +23337,7 @@ msgstr ""
 
 #: modules/video_output/x11/glx.c:122
 msgid "OpenGL(GLX) provider"
-msgstr ""
+msgstr "OpenGL(GLX) poskytovatel"
 
 #: modules/video_output/x11/x11.c:81
 msgid "X11 video output"
@@ -23752,9 +23377,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_output/x11/xvmc.c:111
-#, fuzzy
 msgid "X11 display name"
-msgstr "Display X11 "
+msgstr "Název X11 displaye"
 
 #: modules/video_output/x11/xvmc.c:113
 msgid ""
@@ -23763,9 +23387,8 @@ msgid ""
 msgstr ""
 
 #: modules/video_output/x11/xvmc.c:125
-#, fuzzy
 msgid "Screen to be used for fullscreen mode."
-msgstr "Zamknout v režimu přes celou obrazovku"
+msgstr "Obrazovka pro zobrazení v režimu \"celé obrazovky\""
 
 #: modules/video_output/x11/xvmc.c:127
 msgid ""
@@ -23784,9 +23407,8 @@ msgid "You can choose the crop style to apply."
 msgstr "Cyklí po obrazovkách s informacemi"
 
 #: modules/video_output/x11/xvmc.c:151
-#, fuzzy
 msgid "XVMC extension video output"
-msgstr "ASCII-art video výstup"
+msgstr "XVMC rozšíření pro video výstup"
 
 #: modules/visualization/galaktos/plugin.c:48
 #, fuzzy
@@ -23874,18 +23496,16 @@ msgid "Number of blank pixels between bands."
 msgstr "Počet bodů mezi sloupci ikon"
 
 #: modules/visualization/visual/visual.c:64
-#, fuzzy
 msgid "Amplification"
-msgstr "Aplikace"
+msgstr "Zesílení"
 
 #: modules/visualization/visual/visual.c:66
 msgid "This is a coefficient that modifies the height of the bands."
 msgstr ""
 
 #: modules/visualization/visual/visual.c:68
-#, fuzzy
 msgid "Enable peaks"
-msgstr "Trojité vrcholy"
+msgstr "Povolit špičky"
 
 #: modules/visualization/visual/visual.c:70
 msgid "Draw \"peaks\" in the spectrum analyzer."
@@ -23936,9 +23556,8 @@ msgid "Determines how many sections of spectrum will exist."
 msgstr ""
 
 #: modules/visualization/visual/visual.c:92
-#, fuzzy
 msgid "Peak height"
-msgstr "Výška desky: "
+msgstr "Výška špičky"
 
 #: modules/visualization/visual/visual.c:94
 #, fuzzy
@@ -23964,36 +23583,34 @@ msgid "YUV-Color cube shifting across the V-plane ( 0 - 127 )."
 msgstr ""
 
 #: modules/visualization/visual/visual.c:104
-#, fuzzy
 msgid "Number of stars"
-msgstr "Počet min: "
+msgstr "Počet hvěziček"
 
 #: modules/visualization/visual/visual.c:106
 msgid "Number of stars to draw with random effect."
-msgstr ""
+msgstr "Počet hvězdiček k vykreslení s náhodným efektem."
 
 #: modules/visualization/visual/visual.c:112
-#, fuzzy
 msgid "Visualizer"
-msgstr "režim filtru"
+msgstr "Vizualizer"
 
 #: modules/visualization/visual/visual.c:115
-#, fuzzy
 msgid "Visualizer filter"
-msgstr "režim filtru"
+msgstr "Filtry Vizualizeru"
 
 #: modules/visualization/visual/visual.c:123
-#, fuzzy
 msgid "Spectrum analyser"
-msgstr "Analyzátor spektra"
+msgstr "Spektrální analyzátor"
 
 #, fuzzy
 #~ msgid "Quartz video"
 #~ msgstr "<b>Videokonference</b>"
 
-#, fuzzy
+#~ msgid "Choose the font to display your Subtitles with."
+#~ msgstr "Vyberte font kterým se budou vykreslovat titulky."
+
 #~ msgid "Reset"
-#~ msgstr "Portugalština"
+#~ msgstr "Resetovat"
 
 #, fuzzy
 #~ msgid "MusicBrainz"

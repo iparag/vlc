@@ -246,6 +246,7 @@ Thomas L. Wood <twood at lucent.com> - fixed a bug in QuantMatrixExtension
 Thomas Mühlgrabner <muehltom &t cable d0t vol dot at> - AAC fixes.
 Thomas Parmelan <tom+vlc at ankh.fr.EU.org> - mosaic user-defined offsets for substreams
 Tom Bigelajzen <tombigel at yahoo d0t com> - Interface icons and help with web design
+Tomáš Chvátal <tomas d0t chvatal 4t gmail d0t com> - Czech Localisation
 Tong Ka Man <kmtong at cwbase dot com> - playlist_Clear addition
 Torsten Spindler <spindler at tspindler dot de> - Script to set vlc as default player on GNOME desktops.
 Udo Richter <udo underscore richter at gmx dot de> - Trancode padding / cropping
