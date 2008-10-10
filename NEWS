@@ -1,6 +1,11 @@
 Changes between 0.9.4 and 0.9.5-git:
 ------------------------------------
+Features:
+ * Closed Caption EIA 608/708 parsing enabled for libmpeg2
 
+Various bugfixes:
+ * Fixed various potential crashes and memleaks
+ * Fixed issues with reading from files (especially non-local)
 
 Changes between 0.9.3 and 0.9.4:
 --------------------------------
