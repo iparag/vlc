@@ -13,9 +13,9 @@ Index: src/ifo_types.h
  #endif
 Index: configure.ac
 ===================================================================
---- configure.ac	(revision 1153)
+--- configure.ac	(revision 1157)
 +++ configure.ac	(working copy)
-@@ -137,24 +137,59 @@
+@@ -137,27 +137,59 @@
  dnl ---------------------------------------------
  dnl dynamic linker
  dnl ---------------------------------------------
@@ -26,6 +26,9 @@ Index: configure.ac
 -    ;;
 -  *cygwin*)
 -    LDFLAGS="-no-undefined $LDFLAGS"
+-    ;;
+-  *os2*)
+-    LDFLAGS="-no-undefined -Zbin-files $LDFLAGS"
 -    ;;
 -  *)
 -    AC_CHECK_LIB(c, dlopen,
