@@ -44,6 +44,9 @@
 #ifdef HAVE_SYS_STAT_H
 #   include <sys/stat.h>
 #endif
+#ifdef HAVE_FCNTL_H
+#   include <fcntl.h>
+#endif
 
 #if defined( WIN32 ) && !defined( UNDER_CE )
 #   include <io.h>
@@ -51,10 +54,6 @@
 #else
 #   include <unistd.h>
 #   include <poll.h>
-#endif
-
-#ifdef HAVE_FCNTL_H
-#   include <fcntl.h>
 #endif
 
 #if defined( WIN32 ) && !defined( UNDER_CE )
@@ -382,7 +381,7 @@ static int open_file (access_t *p_access, const char *path)
         return -1;
     }
 
-# if defined(HAVE_FCNTL_H) && !defined( WIN32 )
+# if defined(HAVE_FCNTL_H)
     fcntl (fd, F_SETFD, fcntl (fd, F_GETFD) | FD_CLOEXEC);
 
     /* We'd rather use any available memory for reading ahead
