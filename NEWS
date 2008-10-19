@@ -1,5 +1,8 @@
 Changes between 0.9.4 and 0.9.5-git:
 ------------------------------------
+Security updates:
+ * Fixed buffer overflow in TiVo demuxer (SA-0809)
+
 Features:
  * Closed Caption EIA 608/708 parsing enabled for libmpeg2
 
