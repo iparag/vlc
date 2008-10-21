@@ -2,6 +2,7 @@ Changes between 0.9.4 and 0.9.5-git:
 ------------------------------------
 Security updates:
  * Fixed buffer overflow in TiVo demuxer (SA-0809)
+ * Fixed libpng CVE-2008-3964 in Win32 and MacOS builds
 
 Features:
  * Closed Caption EIA 608/708 parsing enabled for libmpeg2
@@ -17,6 +18,7 @@ Windows port:
 Qt Interface:
  * Fix bug when the resetting of preferences didn't reset the dialog states
  * Right-click menu to select playlist columns reenabled
+ * Various fixed in playlist
 
 Access:
  * MMAP module is now deactivated by default
