@@ -423,11 +423,14 @@ static void openDirectory( intf_thread_t *p_intf, bool pl, bool go )
 
     if (!dir.isEmpty() )
     {
-        msg_Dbg( p_intf, "Directory opening: %s", qtu( dir ) );
-        input_item_t *p_input = input_item_NewExt( THEPL, qtu(
-                dir.endsWith( "VIDEO_TS", Qt::CaseInsensitive ) ? "dvd://"
-                                                                :"directory://"
-                                          + toNativeSeparators(dir) ),
+        QString dir2 ;
+        if( dir.endsWith( "VIDEO_TS", Qt::CaseInsensitive ) )
+            dir2 = "dvd://" + dir;
+        else
+            dir2 = "directory://" + dir;
+
+        msg_Dbg( p_intf, "Directory opening: %s", qtu( dir2 ) );
+        input_item_t *p_input = input_item_NewExt( THEPL, qtu( dir2 ),
                               NULL, 0, NULL, -1 );
 
         /* FIXME: playlist_AddInput() can fail */
