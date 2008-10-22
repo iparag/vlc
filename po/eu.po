@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-06 20:31+0200\n"
+"POT-Creation-Date: 2008-10-22 23:34+0100\n"
 "PO-Revision-Date: 2006-09-28 13:13+0000\n"
 "Last-Translator: julen <julen.ugalde@gmail.com>\n"
 "Language-Team: Basque <eu@li.org>\n"
@@ -98,7 +98,7 @@ msgid "General audio settings"
 msgstr "Audio ezarpen orokorrak"
 
 #: include/vlc_config_cat.h:60 include/vlc_config_cat.h:85
-#: src/video_output/video_output.c:486
+#: src/video_output/video_output.c:484
 msgid "Filters"
 msgstr "Iragazkiak"
 
@@ -782,7 +782,7 @@ msgstr ""
 
 #: src/audio_output/input.c:98 src/audio_output/input.c:144
 #: src/input/es_out.c:459 src/libvlc-module.c:562
-#: src/video_output/video_output.c:463 modules/video_filter/postproc.c:222
+#: src/video_output/video_output.c:461 modules/video_filter/postproc.c:222
 msgid "Disable"
 msgstr "Desgaitu"
 
@@ -823,7 +823,7 @@ msgid "Audio Channels"
 msgstr "Auko kanalak"
 
 #: src/audio_output/output.c:105 src/audio_output/output.c:140
-#: modules/access/v4l2/v4l2.c:208 modules/access/v4l2/v4l2.c:259
+#: modules/access/v4l2/v4l2.c:220 modules/access/v4l2/v4l2.c:271
 #: modules/access/v4l.c:129 modules/audio_output/alsa.c:195
 #: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:519
 #: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:402
@@ -872,15 +872,15 @@ msgstr ""
 msgid "boolean"
 msgstr ""
 
-#: src/config/file.c:593 src/libvlc.c:1574
+#: src/config/file.c:593 src/libvlc.c:1575
 msgid "integer"
 msgstr "osoko"
 
-#: src/config/file.c:602 src/libvlc.c:1603
+#: src/config/file.c:602 src/libvlc.c:1604
 msgid "float"
 msgstr "flotantea"
 
-#: src/config/file.c:625 src/libvlc.c:1553
+#: src/config/file.c:625 src/libvlc.c:1554
 msgid "string"
 msgstr "katea"
 
@@ -958,8 +958,8 @@ msgstr ""
 
 #: src/input/decoder.c:167 src/input/decoder.c:180 src/input/decoder.c:384
 #: modules/codec/avcodec/encoder.c:228 modules/codec/avcodec/encoder.c:236
-#: modules/codec/avcodec/encoder.c:248 modules/codec/avcodec/encoder.c:667
-#: modules/codec/avcodec/encoder.c:676 modules/stream_out/es.c:373
+#: modules/codec/avcodec/encoder.c:252 modules/codec/avcodec/encoder.c:681
+#: modules/codec/avcodec/encoder.c:690 modules/stream_out/es.c:373
 #: modules/stream_out/es.c:388
 msgid "Streaming / Transcoding failed"
 msgstr ""
@@ -1299,54 +1299,54 @@ msgstr ""
 msgid "C"
 msgstr "eu"
 
-#: src/libvlc.c:1137
+#: src/libvlc.c:1138
 msgid ""
 "Running vlc with the default interface. Use 'cvlc' to use vlc without "
 "interface."
 msgstr ""
 
-#: src/libvlc.c:1282
+#: src/libvlc.c:1283
 msgid "To get exhaustive help, use '-H'."
 msgstr ""
 
-#: src/libvlc.c:1618
+#: src/libvlc.c:1619
 msgid " (default enabled)"
 msgstr " (lehentsia gaituta)"
 
-#: src/libvlc.c:1619
+#: src/libvlc.c:1620
 msgid " (default disabled)"
 msgstr " (lehentsia desgaitua)"
 
-#: src/libvlc.c:1778 src/libvlc.c:1781
+#: src/libvlc.c:1779 src/libvlc.c:1782
 #, fuzzy
 msgid "Note:"
 msgstr "UDP ataka"
 
-#: src/libvlc.c:1779 src/libvlc.c:1782
+#: src/libvlc.c:1780 src/libvlc.c:1783
 msgid "add --advanced to your command line to see advanced options."
 msgstr ""
 
-#: src/libvlc.c:1886
+#: src/libvlc.c:1887
 #, c-format
 msgid "VLC version %s\n"
 msgstr "VLC bertsioa %s\n"
 
-#: src/libvlc.c:1887
+#: src/libvlc.c:1888
 #, c-format
 msgid "Compiled by %s@%s.%s\n"
 msgstr "%s@%s.%s-k konpilatuta\n"
 
-#: src/libvlc.c:1889
+#: src/libvlc.c:1890
 #, c-format
 msgid "Compiler: %s\n"
 msgstr "Konpiladorea: %s\n"
 
-#: src/libvlc.c:1891
+#: src/libvlc.c:1892
 #, fuzzy, c-format
 msgid "Based upon Git commit [%s]\n"
 msgstr "svn changeset-ean oinarrituta [%s]\n"
 
-#: src/libvlc.c:1927
+#: src/libvlc.c:1928
 msgid ""
 "\n"
 "Dumped content to vlc-help.txt file.\n"
@@ -1354,7 +1354,7 @@ msgstr ""
 "\n"
 "Edukia vlc-help.txt fitxategian irauli da.\n"
 
-#: src/libvlc.c:1947
+#: src/libvlc.c:1948
 msgid ""
 "\n"
 "Press the RETURN key to continue...\n"
@@ -2421,7 +2421,7 @@ msgstr ""
 #: src/libvlc-module.c:562 src/video_output/vout_intf.c:180
 #: src/video_output/vout_intf.c:198 modules/access/dshow/dshow.cpp:81
 #: modules/access/dshow/dshow.cpp:83 modules/access/dshow/dshow.cpp:86
-#: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:246
+#: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:258
 #: modules/audio_output/alsa.c:105 modules/gui/fbosd.c:173
 #: modules/gui/macosx/prefs_widgets.m:1321
 #: modules/gui/macosx/simple_prefs.m:381 modules/gui/macosx/simple_prefs.m:476
@@ -3802,7 +3802,7 @@ msgstr ""
 msgid "Select the key to decrease audio volume."
 msgstr ""
 
-#: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:195
+#: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:207
 #: modules/gui/macosx/controls.m:928 modules/gui/macosx/intf.m:561
 #: modules/gui/macosx/intf.m:622 modules/gui/macosx/intf.m:631
 #: modules/gui/qt4/components/interface_widgets.cpp:911
@@ -4293,7 +4293,7 @@ msgstr ""
 msgid "Decoders"
 msgstr ""
 
-#: src/libvlc-module.c:1739 modules/access/v4l2/v4l2.c:92
+#: src/libvlc-module.c:1739 modules/access/v4l2/v4l2.c:104
 #: modules/gui/macosx/playlistinfo.m:93
 #: modules/gui/qt4/components/info_panels.cpp:509
 msgid "Input"
@@ -5036,28 +5036,28 @@ msgstr ""
 msgid "Zulu"
 msgstr ""
 
-#: src/video_output/video_output.c:461 modules/gui/macosx/intf.m:589
+#: src/video_output/video_output.c:459 modules/gui/macosx/intf.m:589
 #: modules/gui/macosx/intf.m:590 modules/video_filter/deinterlace.c:127
 msgid "Deinterlace"
 msgstr ""
 
-#: src/video_output/video_output.c:465 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:463 modules/video_filter/deinterlace.c:123
 msgid "Discard"
 msgstr ""
 
-#: src/video_output/video_output.c:467 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:465 modules/video_filter/deinterlace.c:123
 msgid "Blend"
 msgstr ""
 
-#: src/video_output/video_output.c:469 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:467 modules/video_filter/deinterlace.c:123
 msgid "Mean"
 msgstr ""
 
-#: src/video_output/video_output.c:471 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:469 modules/video_filter/deinterlace.c:123
 msgid "Bob"
 msgstr ""
 
-#: src/video_output/video_output.c:473 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:471 modules/video_filter/deinterlace.c:123
 msgid "Linear"
 msgstr ""
 
@@ -5083,7 +5083,7 @@ msgstr ""
 #: modules/access/pvr.c:60 modules/access/rtmp/access.c:43
 #: modules/access/screen/screen.c:39 modules/access/smb.c:64
 #: modules/access/tcp.c:41 modules/access/udp.c:49
-#: modules/access/v4l2/v4l2.c:215 modules/access/v4l.c:77
+#: modules/access/v4l2/v4l2.c:227 modules/access/v4l.c:77
 #: modules/access/vcd/vcd.c:46
 msgid "Caching value in ms"
 msgstr ""
@@ -5484,7 +5484,7 @@ msgid "Audio CD - Track %i"
 msgstr "Audio pista"
 
 #: modules/access/cdda/cdda.c:43 modules/access/directory.c:86
-#: modules/codec/x264.c:392 modules/codec/x264.c:398 modules/codec/x264.c:403
+#: modules/codec/x264.c:397 modules/codec/x264.c:403 modules/codec/x264.c:408
 msgid "none"
 msgstr ""
 
@@ -5832,7 +5832,7 @@ msgid ""
 "don't specify anything, the default device will be used."
 msgstr ""
 
-#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:169
+#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:181
 #: modules/access/v4l.c:85 modules/gui/qt4/components/open_panels.cpp:708
 #: modules/gui/qt4/components/open_panels.cpp:743
 #, fuzzy
@@ -5858,7 +5858,7 @@ msgid ""
 "can specify a standard size (cif, d1, ...) or <width>x<height>."
 msgstr ""
 
-#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:86
+#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:98
 #: modules/access/v4l.c:89
 #, fuzzy
 msgid "Video input chroma format"
@@ -6276,7 +6276,7 @@ msgid ""
 msgstr ""
 
 #: modules/access/fake.c:47 modules/access/pvr.c:86
-#: modules/access/v4l2/v4l2.c:107 modules/access/v4l.c:140
+#: modules/access/v4l2/v4l2.c:119 modules/access/v4l.c:140
 #, fuzzy
 msgid "Framerate"
 msgstr "Fotogramen tasa"
@@ -6337,12 +6337,12 @@ msgid "File"
 msgstr "Iragazkiak"
 
 #: modules/access/file.c:246 modules/access/file.c:365
-#: modules/access/file.c:379 modules/access/mmap.c:221
+#: modules/access/file.c:379 modules/access/mmap.c:223
 #, fuzzy
 msgid "File reading failed"
 msgstr "Audio iragazkiak"
 
-#: modules/access/file.c:247 modules/access/mmap.c:222
+#: modules/access/file.c:247 modules/access/mmap.c:224
 #, fuzzy
 msgid "VLC could not read the file."
 msgstr "Bideo irteera modulua"
@@ -6849,7 +6849,7 @@ msgstr ""
 msgid "Bitrate information of the transcoded stream. "
 msgstr ""
 
-#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:211
+#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:223
 #: modules/access/v4l.c:126
 #, fuzzy
 msgid "Samplerate"
@@ -6956,7 +6956,7 @@ msgstr "Fotogramen tasa"
 msgid "Norm of the stream (Automatic, SECAM, PAL, or NTSC)."
 msgstr ""
 
-#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:101
+#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:113
 #: modules/access/v4l.c:106 modules/demux/rawvid.c:48
 #: modules/video_filter/mosaic.c:96 modules/video_output/vmem.c:50
 msgid "Width"
@@ -6966,7 +6966,7 @@ msgstr ""
 msgid "Width of the stream to capture (-1 for autodetection)."
 msgstr ""
 
-#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:104
+#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:116
 #: modules/access/v4l.c:109 modules/demux/rawvid.c:52
 #: modules/video_filter/mosaic.c:94 modules/video_output/vmem.c:53
 #, fuzzy
@@ -6977,7 +6977,7 @@ msgstr "Eskuin"
 msgid "Height of the stream to capture (-1 for autodetection)."
 msgstr ""
 
-#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:230
+#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:242
 #: modules/access/v4l.c:93 modules/gui/qt4/components/open_panels.cpp:757
 #: modules/gui/qt4/components/open_panels.cpp:856
 #, fuzzy
@@ -6988,7 +6988,7 @@ msgstr "Frantsesez"
 msgid "Frequency to capture (in kHz), if applicable."
 msgstr ""
 
-#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:108
+#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:120
 #: modules/access/v4l.c:141
 msgid "Framerate to capture, if applicable (-1 for autodetect)."
 msgstr ""
@@ -7044,7 +7044,7 @@ msgstr "Audio iragazkiak"
 msgid "Bitmask that will get used by the audio part of the card."
 msgstr ""
 
-#: modules/access/pvr.c:110 modules/access/v4l2/v4l2.c:189
+#: modules/access/pvr.c:110 modules/access/v4l2/v4l2.c:201
 #: modules/access/vcdx/info.c:100 modules/gui/macosx/intf.m:500
 msgid "Volume"
 msgstr ""
@@ -7068,17 +7068,17 @@ msgstr ""
 msgid "Automatic"
 msgstr "Auto"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
 #: modules/access/v4l.c:147
 msgid "SECAM"
 msgstr ""
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
 #: modules/access/v4l.c:147
 msgid "PAL"
 msgstr ""
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
 #: modules/access/v4l.c:147
 msgid "NTSC"
 msgstr ""
@@ -7263,28 +7263,28 @@ msgstr ""
 msgid "UDP input"
 msgstr "UDP ataka"
 
-#: modules/access/v4l2/v4l2.c:79 modules/gui/macosx/open.m:178
+#: modules/access/v4l2/v4l2.c:91 modules/gui/macosx/open.m:178
 #: modules/gui/qt4/components/open_panels.cpp:836
 msgid "Device name"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:81
+#: modules/access/v4l2/v4l2.c:93
 msgid ""
 "Name of the device to use. If you don't specify anything, /dev/video0 will "
 "be used."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:83
+#: modules/access/v4l2/v4l2.c:95
 #: modules/gui/qt4/components/open_panels.cpp:715
 #: modules/stream_out/standard.c:100
 msgid "Standard"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:85
+#: modules/access/v4l2/v4l2.c:97
 msgid "Video standard (Default, SECAM, PAL, or NTSC)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:88
+#: modules/access/v4l2/v4l2.c:100
 msgid ""
 "Force the Video4Linux2 video device to use a specific chroma format (eg. "
 "I420 or I422 for raw images, MJPG for M-JPEG compressed input) (Complete "
@@ -7292,295 +7292,295 @@ msgid ""
 "I420, I411, I410, MJPG)"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:94
+#: modules/access/v4l2/v4l2.c:106
 msgid "Input of the card to use (see debug)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:95 modules/access/v4l2/v4l2.c:301
+#: modules/access/v4l2/v4l2.c:107 modules/access/v4l2/v4l2.c:313
 #, fuzzy
 msgid "Audio input"
 msgstr "Audio iragazkiak"
 
-#: modules/access/v4l2/v4l2.c:97
+#: modules/access/v4l2/v4l2.c:109
 msgid "Audio input of the card to use (see debug)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:98
+#: modules/access/v4l2/v4l2.c:110
 msgid "IO Method"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:100
+#: modules/access/v4l2/v4l2.c:112
 msgid "IO Method (READ, MMAP, USERPTR)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:103
+#: modules/access/v4l2/v4l2.c:115
 msgid "Force width (-1 for autodetect)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:106
+#: modules/access/v4l2/v4l2.c:118
 msgid "Force height (-1 for autodetect)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:111
+#: modules/access/v4l2/v4l2.c:123
 #, fuzzy
 msgid "Reset v4l2 controls"
 msgstr "CDDB Datu Gehiago"
 
-#: modules/access/v4l2/v4l2.c:113
+#: modules/access/v4l2/v4l2.c:125
 msgid "Reset controls to defaults provided by the v4l2 driver."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:114 modules/access/v4l.c:112
+#: modules/access/v4l2/v4l2.c:126 modules/access/v4l.c:112
 #: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:205
 #: modules/video_filter/atmo/atmo.cpp:196
 msgid "Brightness"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:116
+#: modules/access/v4l2/v4l2.c:128
 msgid "Brightness of the video input (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:117 modules/access/v4l.c:121
+#: modules/access/v4l2/v4l2.c:129 modules/access/v4l.c:121
 #: modules/gui/macosx/extended.m:98 modules/gui/qt4/ui/video_effects.ui:198
 #, fuzzy
 msgid "Contrast"
 msgstr "Kontroleko interfazeak"
 
-#: modules/access/v4l2/v4l2.c:119
+#: modules/access/v4l2/v4l2.c:131
 #, fuzzy
 msgid "Contrast of the video input (if supported by the v4l2 driver)."
 msgstr "Bideo X koordenatua"
 
-#: modules/access/v4l2/v4l2.c:120 modules/gui/macosx/extended.m:101
+#: modules/access/v4l2/v4l2.c:132 modules/gui/macosx/extended.m:101
 #: modules/gui/qt4/ui/video_effects.ui:212
 #: modules/gui/qt4/ui/video_effects.ui:320
 #, fuzzy
 msgid "Saturation"
 msgstr "Iraupena"
 
-#: modules/access/v4l2/v4l2.c:122
+#: modules/access/v4l2/v4l2.c:134
 msgid "Saturation of the video input (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:123 modules/access/v4l.c:115
+#: modules/access/v4l2/v4l2.c:135 modules/access/v4l.c:115
 #: modules/gui/macosx/extended.m:100 modules/gui/qt4/ui/video_effects.ui:219
 msgid "Hue"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:125
+#: modules/access/v4l2/v4l2.c:137
 msgid "Hue of the video input (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:126
+#: modules/access/v4l2/v4l2.c:138
 msgid "Black level"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:128
+#: modules/access/v4l2/v4l2.c:140
 msgid "Black level of the video input (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:129
+#: modules/access/v4l2/v4l2.c:141
 msgid "Auto white balance"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:131
+#: modules/access/v4l2/v4l2.c:143
 msgid ""
 "Automatically set the white balance of the video input (if supported by the "
 "v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:133
+#: modules/access/v4l2/v4l2.c:145
 msgid "Do white balance"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:135
+#: modules/access/v4l2/v4l2.c:147
 msgid ""
 "Trigger a white balancing action, useless if auto white balance is activated "
 "(if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:137
+#: modules/access/v4l2/v4l2.c:149
 msgid "Red balance"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:139
+#: modules/access/v4l2/v4l2.c:151
 msgid "Red balance of the video input (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:140
+#: modules/access/v4l2/v4l2.c:152
 msgid "Blue balance"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:142
+#: modules/access/v4l2/v4l2.c:154
 msgid "Blue balance of the video input (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:143 modules/gui/macosx/extended.m:99
+#: modules/access/v4l2/v4l2.c:155 modules/gui/macosx/extended.m:99
 #: modules/gui/qt4/ui/video_effects.ui:191
 msgid "Gamma"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:145
+#: modules/access/v4l2/v4l2.c:157
 msgid "Gamma of the video input (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:146
+#: modules/access/v4l2/v4l2.c:158
 msgid "Exposure"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:148
+#: modules/access/v4l2/v4l2.c:160
 msgid "Exposure of the video input (if supported by the v4L2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:149
+#: modules/access/v4l2/v4l2.c:161
 #, fuzzy
 msgid "Auto gain"
 msgstr "Auto"
 
-#: modules/access/v4l2/v4l2.c:151
+#: modules/access/v4l2/v4l2.c:163
 msgid ""
 "Automatically set the video input's gain (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:153
+#: modules/access/v4l2/v4l2.c:165
 #, fuzzy
 msgid "Gain"
 msgstr "Alemanieraz"
 
-#: modules/access/v4l2/v4l2.c:155
+#: modules/access/v4l2/v4l2.c:167
 msgid "Video input's gain (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:156
+#: modules/access/v4l2/v4l2.c:168
 msgid "Horizontal flip"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:158
+#: modules/access/v4l2/v4l2.c:170
 msgid "Flip the video horizontally (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:159
+#: modules/access/v4l2/v4l2.c:171
 msgid "Vertical flip"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:161
+#: modules/access/v4l2/v4l2.c:173
 msgid "Flip the video vertically (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:162
+#: modules/access/v4l2/v4l2.c:174
 msgid "Horizontal centering"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:164
+#: modules/access/v4l2/v4l2.c:176
 msgid ""
 "Set the camera's horizontal centering (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:165
+#: modules/access/v4l2/v4l2.c:177
 msgid "Vertical centering"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:167
+#: modules/access/v4l2/v4l2.c:179
 msgid "Set the camera's vertical centering (if supported by the v4l2 driver)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:172
+#: modules/access/v4l2/v4l2.c:184
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:176
+#: modules/access/v4l2/v4l2.c:188
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS, \"hw\" for Alsa."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:180
+#: modules/access/v4l2/v4l2.c:192
 #, fuzzy
 msgid "Audio method"
 msgstr "Audio kodekak"
 
-#: modules/access/v4l2/v4l2.c:183
+#: modules/access/v4l2/v4l2.c:195
 msgid "Audio method to use: 0 to disable audio, 1 for OSS."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:186
+#: modules/access/v4l2/v4l2.c:198
 msgid ""
 "Audio method to use: 0 to disable audio, 1 for OSS, 2 for ALSA, 3 for ALSA "
 "or OSS (ALSA is preferred)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:191
+#: modules/access/v4l2/v4l2.c:203
 #, fuzzy
 msgid "Volume of the audio input (if supported by the v4l2 driver)."
 msgstr "Bideo X koordenatua"
 
-#: modules/access/v4l2/v4l2.c:192
+#: modules/access/v4l2/v4l2.c:204
 #, fuzzy
 msgid "Balance"
 msgstr "Frantsesez"
 
-#: modules/access/v4l2/v4l2.c:194
+#: modules/access/v4l2/v4l2.c:206
 #, fuzzy
 msgid "Balance of the audio input (if supported by the v4l2 driver)."
 msgstr "Bideo X koordenatua"
 
-#: modules/access/v4l2/v4l2.c:197
+#: modules/access/v4l2/v4l2.c:209
 #, fuzzy
 msgid "Mute audio input (if supported by the v4l2 driver)."
 msgstr "Bideo X koordenatua"
 
-#: modules/access/v4l2/v4l2.c:198 modules/meta_engine/id3genres.h:69
+#: modules/access/v4l2/v4l2.c:210 modules/meta_engine/id3genres.h:69
 msgid "Bass"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:200
+#: modules/access/v4l2/v4l2.c:212
 #, fuzzy
 msgid "Bass level of the audio input (if supported by the v4l2 driver)."
 msgstr "Bideo X koordenatua"
 
-#: modules/access/v4l2/v4l2.c:201
+#: modules/access/v4l2/v4l2.c:213
 #, fuzzy
 msgid "Treble"
 msgstr "Gaitu"
 
-#: modules/access/v4l2/v4l2.c:203
+#: modules/access/v4l2/v4l2.c:215
 #, fuzzy
 msgid "Treble level of the audio input (if supported by the v4l2 driver)."
 msgstr "Bideo X koordenatua"
 
-#: modules/access/v4l2/v4l2.c:204
+#: modules/access/v4l2/v4l2.c:216
 msgid "Loudness"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:206
+#: modules/access/v4l2/v4l2.c:218
 #, fuzzy
 msgid "Loudness of the audio input (if supported by the v4l2 driver)."
 msgstr "Bideo X koordenatua"
 
-#: modules/access/v4l2/v4l2.c:210 modules/access/v4l.c:131
+#: modules/access/v4l2/v4l2.c:222 modules/access/v4l.c:131
 #, fuzzy
 msgid "Capture the audio stream in stereo."
 msgstr "Erabilitako audio pistaren stream ID."
 
-#: modules/access/v4l2/v4l2.c:213
+#: modules/access/v4l2/v4l2.c:225
 msgid ""
 "Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100, "
 "48000)"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:217
+#: modules/access/v4l2/v4l2.c:229
 msgid ""
 "Caching value for V4L2 captures. This value should be set in milliseconds."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:219
+#: modules/access/v4l2/v4l2.c:231
 #, fuzzy
 msgid "v4l2 driver controls"
 msgstr "Kontroleko interfazeak"
 
-#: modules/access/v4l2/v4l2.c:221
+#: modules/access/v4l2/v4l2.c:233
 msgid ""
 "Set the v4l2 driver controls to the values specified using a comma separated "
 "list optionally encapsulated by curly braces (e.g.: {video_bitrate=6000000,"
@@ -7588,93 +7588,93 @@ msgid ""
 "(-vvv) or use the v4l2-ctl application."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:227
+#: modules/access/v4l2/v4l2.c:239
 msgid "Tuner id"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:229
+#: modules/access/v4l2/v4l2.c:241
 msgid "Tuner id (see debug output)."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:232
+#: modules/access/v4l2/v4l2.c:244
 msgid "Tuner frequency in Hz or kHz (see debug output)"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:233
+#: modules/access/v4l2/v4l2.c:245
 #, fuzzy
 msgid "Audio mode"
 msgstr "Audio kodekak"
 
-#: modules/access/v4l2/v4l2.c:235
+#: modules/access/v4l2/v4l2.c:247
 msgid "Tuner audio mono/stereo and track selection."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:251
+#: modules/access/v4l2/v4l2.c:263
 msgid "READ"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:251
+#: modules/access/v4l2/v4l2.c:263
 msgid "MMAP"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:251
+#: modules/access/v4l2/v4l2.c:263
 msgid "USERPTR"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:258 modules/audio_output/alsa.c:189
+#: modules/access/v4l2/v4l2.c:270 modules/audio_output/alsa.c:189
 #: modules/audio_output/directx.c:537 modules/audio_output/oss.c:227
 #: modules/audio_output/portaudio.c:394 modules/audio_output/sdl.c:185
 #: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:533
 msgid "Mono"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:260
+#: modules/access/v4l2/v4l2.c:272
 msgid "Primary language (Analog TV tuners only)"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:261
+#: modules/access/v4l2/v4l2.c:273
 msgid "Secondary language (Analog TV tuners only)"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:262
+#: modules/access/v4l2/v4l2.c:274
 msgid "Second audio program (Analog TV tuners only)"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:275
 msgid "Primary language left, Secondary language right"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:275
+#: modules/access/v4l2/v4l2.c:287
 msgid "Video4Linux2"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:276
+#: modules/access/v4l2/v4l2.c:288
 msgid "Video4Linux2 input"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:280
+#: modules/access/v4l2/v4l2.c:292
 #, fuzzy
 msgid "Video input"
 msgstr "Bideo ezarpenak"
 
-#: modules/access/v4l2/v4l2.c:313 modules/access/v4l.c:124
+#: modules/access/v4l2/v4l2.c:325 modules/access/v4l.c:124
 msgid "Tuner"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:323
+#: modules/access/v4l2/v4l2.c:335
 #, fuzzy
 msgid "Controls"
 msgstr "Kontroleko interfazeak"
 
-#: modules/access/v4l2/v4l2.c:324
+#: modules/access/v4l2/v4l2.c:336
 msgid "v4l2 driver controls, if supported by your v4l2 driver."
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:382
+#: modules/access/v4l2/v4l2.c:394
 msgid "Video4Linux2 Compressed A/V"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:3147
+#: modules/access/v4l2/v4l2.c:3181
 #, fuzzy
 msgid "Reset controls to default"
 msgstr "Kontroleko interfazeak"
@@ -9013,7 +9013,7 @@ msgid ""
 "same qscale for I and P frames)."
 msgstr ""
 
-#: modules/codec/avcodec/avcodec.h:158 modules/codec/x264.c:324
+#: modules/codec/avcodec/avcodec.h:158 modules/codec/x264.c:329
 #: modules/demux/mod.c:75
 #, fuzzy
 msgid "Noise reduction"
@@ -9177,12 +9177,18 @@ msgstr ""
 msgid "\"%s\" is no audio encoder."
 msgstr ""
 
-#: modules/codec/avcodec/encoder.c:249
+#: modules/codec/avcodec/encoder.c:257
 #, c-format
-msgid "VLC could not find encoder \"%s\"."
+msgid ""
+"It seems your FFMPEG (libavcodec) installation lacks the following encoder:\n"
+"%s.\n"
+"If you don't know how to fix this, ask for support from your distribution.\n"
+"\n"
+"This is not an error inside VLC media player.\n"
+"Do not contact the VideoLAN project about this issue.\n"
 msgstr ""
 
-#: modules/codec/avcodec/encoder.c:668 modules/codec/avcodec/encoder.c:677
+#: modules/codec/avcodec/encoder.c:682 modules/codec/avcodec/encoder.c:691
 #, fuzzy
 msgid "VLC could not open the encoder."
 msgstr "Bideo irteera modulua"
@@ -9484,7 +9490,7 @@ msgstr "Espektrometroa"
 msgid "Subtitle renderers using libass"
 msgstr "Azpititulu demultiplexatzailearen ezarpenak"
 
-#: modules/codec/libmpeg2.c:96
+#: modules/codec/libmpeg2.c:104
 msgid "MPEG I/II video decoder (using libmpeg2)"
 msgstr ""
 
@@ -10229,71 +10235,78 @@ msgstr ""
 msgid ""
 "This parameter controls quality versus speed tradeoffs involved in the "
 "motion estimation decision process (lower = quicker and higher = better "
-"quality). Range 1 to 7."
+"quality). Range 1 to 9."
 msgstr ""
 
 #: modules/codec/x264.c:279
 msgid ""
 "This parameter controls quality versus speed tradeoffs involved in the "
 "motion estimation decision process (lower = quicker and higher = better "
-"quality). Range 1 to 6."
+"quality). Range 1 to 7."
 msgstr ""
 
 #: modules/codec/x264.c:284
 msgid ""
 "This parameter controls quality versus speed tradeoffs involved in the "
 "motion estimation decision process (lower = quicker and higher = better "
-"quality). Range 1 to 5."
+"quality). Range 1 to 6."
 msgstr ""
 
 #: modules/codec/x264.c:289
-msgid "RD based mode decision for B-frames"
-msgstr ""
-
-#: modules/codec/x264.c:290
-msgid "RD based mode decision for B-frames. This requires subme 6 (or higher)."
-msgstr ""
-
-#: modules/codec/x264.c:293
-msgid "Decide references on a per partition basis"
+msgid ""
+"This parameter controls quality versus speed tradeoffs involved in the "
+"motion estimation decision process (lower = quicker and higher = better "
+"quality). Range 1 to 5."
 msgstr ""
 
 #: modules/codec/x264.c:294
+msgid "RD based mode decision for B-frames"
+msgstr ""
+
+#: modules/codec/x264.c:295
+msgid "RD based mode decision for B-frames. This requires subme 6 (or higher)."
+msgstr ""
+
+#: modules/codec/x264.c:298
+msgid "Decide references on a per partition basis"
+msgstr ""
+
+#: modules/codec/x264.c:299
 msgid ""
 "Allows each 8x8 or 16x8 partition to independently select a reference frame, "
 "as opposed to only one ref per macroblock."
 msgstr ""
 
-#: modules/codec/x264.c:298
+#: modules/codec/x264.c:303
 #, fuzzy
 msgid "Chroma in motion estimation"
 msgstr "Chroma moduluen ezarpenak"
 
-#: modules/codec/x264.c:299
+#: modules/codec/x264.c:304
 msgid "Chroma ME for subpel and mode decision in P-frames."
 msgstr ""
 
-#: modules/codec/x264.c:302
+#: modules/codec/x264.c:307
 msgid "Jointly optimize both MVs in B-frames"
 msgstr ""
 
-#: modules/codec/x264.c:303
+#: modules/codec/x264.c:308
 msgid "Joint bidirectional motion refinement."
 msgstr ""
 
-#: modules/codec/x264.c:305
+#: modules/codec/x264.c:310
 msgid "Adaptive spatial transform size"
 msgstr ""
 
-#: modules/codec/x264.c:307
+#: modules/codec/x264.c:312
 msgid "SATD-based decision for 8x8 transform in inter-MBs."
 msgstr ""
 
-#: modules/codec/x264.c:309
+#: modules/codec/x264.c:314
 msgid "Trellis RD quantization"
 msgstr ""
 
-#: modules/codec/x264.c:310
+#: modules/codec/x264.c:315
 msgid ""
 "Trellis RD quantization: \n"
 " - 0: disabled\n"
@@ -10302,184 +10315,184 @@ msgid ""
 "This requires CABAC."
 msgstr ""
 
-#: modules/codec/x264.c:316
+#: modules/codec/x264.c:321
 msgid "Early SKIP detection on P-frames"
 msgstr ""
 
-#: modules/codec/x264.c:317
+#: modules/codec/x264.c:322
 msgid "Early SKIP detection on P-frames."
 msgstr ""
 
-#: modules/codec/x264.c:319
+#: modules/codec/x264.c:324
 msgid "Coefficient thresholding on P-frames"
 msgstr ""
 
-#: modules/codec/x264.c:320
+#: modules/codec/x264.c:325
 msgid ""
 "Coefficient thresholding on P-frames.Eliminate dct blocks containing only a "
 "small single coefficient."
 msgstr ""
 
-#: modules/codec/x264.c:325
+#: modules/codec/x264.c:330
 msgid ""
 "Dct-domain noise reduction. Adaptive pseudo-deadzone. 10 to 1000 seems to be "
 "a useful range."
 msgstr ""
 
-#: modules/codec/x264.c:329
+#: modules/codec/x264.c:334
 msgid "Inter luma quantization deadzone"
 msgstr ""
 
-#: modules/codec/x264.c:330
+#: modules/codec/x264.c:335
 msgid "Set the size of the inter luma quantization deadzone. Range 0 to 32."
 msgstr ""
 
-#: modules/codec/x264.c:333
+#: modules/codec/x264.c:338
 msgid "Intra luma quantization deadzone"
 msgstr ""
 
-#: modules/codec/x264.c:334
+#: modules/codec/x264.c:339
 msgid "Set the size of the intra luma quantization deadzone. Range 0 to 32."
 msgstr ""
 
-#: modules/codec/x264.c:341
+#: modules/codec/x264.c:346
 msgid "Non-deterministic optimizations when threaded"
 msgstr ""
 
-#: modules/codec/x264.c:342
+#: modules/codec/x264.c:347
 msgid "Slightly improve quality of SMP, at the cost of repeatability."
 msgstr ""
 
-#: modules/codec/x264.c:346
+#: modules/codec/x264.c:351
 msgid "CPU optimizations"
 msgstr ""
 
-#: modules/codec/x264.c:347
+#: modules/codec/x264.c:352
 msgid "Use assembler CPU optimizations."
 msgstr ""
 
-#: modules/codec/x264.c:349
+#: modules/codec/x264.c:354
 msgid "Filename for 2 pass stats file"
 msgstr ""
 
-#: modules/codec/x264.c:350
+#: modules/codec/x264.c:355
 msgid "Filename for 2 pass stats file for multi-pass encoding."
 msgstr ""
 
-#: modules/codec/x264.c:352
+#: modules/codec/x264.c:357
 msgid "PSNR computation"
 msgstr ""
 
-#: modules/codec/x264.c:353
+#: modules/codec/x264.c:358
 msgid ""
 "Compute and print PSNR stats. This has no effect on the actual encoding "
 "quality."
 msgstr ""
 
-#: modules/codec/x264.c:356
+#: modules/codec/x264.c:361
 msgid "SSIM computation"
 msgstr ""
 
-#: modules/codec/x264.c:357
+#: modules/codec/x264.c:362
 msgid ""
 "Compute and print SSIM stats. This has no effect on the actual encoding "
 "quality."
 msgstr ""
 
-#: modules/codec/x264.c:360
+#: modules/codec/x264.c:365
 #, fuzzy
 msgid "Quiet mode"
 msgstr "Bit-abiadura"
 
-#: modules/codec/x264.c:361
+#: modules/codec/x264.c:366
 #, fuzzy
 msgid "Quiet mode."
 msgstr "Bit-abiadura"
 
-#: modules/codec/x264.c:363 modules/gui/macosx/playlistinfo.m:78
+#: modules/codec/x264.c:368 modules/gui/macosx/playlistinfo.m:78
 #: modules/gui/qt4/ui/streampanel.ui:28
 #, fuzzy
 msgid "Statistics"
 msgstr "Audio-irteera modulua"
 
-#: modules/codec/x264.c:364
+#: modules/codec/x264.c:369
 msgid "Print stats for each frame."
 msgstr ""
 
-#: modules/codec/x264.c:367
+#: modules/codec/x264.c:372
 msgid "SPS and PPS id numbers"
 msgstr ""
 
-#: modules/codec/x264.c:368
+#: modules/codec/x264.c:373
 msgid ""
 "Set SPS and PPS id numbers to allow concatenating streams with different "
 "settings."
 msgstr ""
 
-#: modules/codec/x264.c:372
+#: modules/codec/x264.c:377
 #, fuzzy
 msgid "Access unit delimiters"
 msgstr "Sarbide iragazkiak"
 
-#: modules/codec/x264.c:373
+#: modules/codec/x264.c:378
 #, fuzzy
 msgid "Generate access unit delimiter NAL units."
 msgstr "Sarbide iragazkiak"
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "dia"
 msgstr ""
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "hex"
 msgstr ""
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "umh"
 msgstr ""
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "esa"
 msgstr ""
 
-#: modules/codec/x264.c:386
+#: modules/codec/x264.c:391
 #, fuzzy
 msgid "tesa"
 msgstr "Stream-a"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 #, fuzzy
 msgid "fast"
 msgstr "flotantea"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 #, fuzzy
 msgid "normal"
 msgstr "Fotogramen tasa"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 msgid "slow"
 msgstr ""
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 msgid "all"
 msgstr ""
 
-#: modules/codec/x264.c:398 modules/codec/x264.c:403
+#: modules/codec/x264.c:403 modules/codec/x264.c:408
 msgid "spatial"
 msgstr ""
 
-#: modules/codec/x264.c:398 modules/codec/x264.c:403
+#: modules/codec/x264.c:403 modules/codec/x264.c:408
 msgid "temporal"
 msgstr ""
 
-#: modules/codec/x264.c:398 modules/gui/pda/pda_interface.c:741
+#: modules/codec/x264.c:403 modules/gui/pda/pda_interface.c:741
 #: modules/video_filter/mosaic.c:168
 #, fuzzy
 msgid "auto"
 msgstr "Auto"
 
-#: modules/codec/x264.c:407
+#: modules/codec/x264.c:412
 msgid "H.264/MPEG4 AVC encoder (using x264 library)"
 msgstr ""
 
@@ -12307,75 +12320,75 @@ msgstr ""
 msgid "MPEG Transport Stream demuxer"
 msgstr ""
 
-#: modules/demux/ts.c:3421
+#: modules/demux/ts.c:3419
 #: modules/gui/qt4/components/interface_widgets.cpp:631
 #: modules/gui/qt4/components/interface_widgets.cpp:827
 #, fuzzy
 msgid "Teletext"
 msgstr "Azpititulua"
 
-#: modules/demux/ts.c:3431
+#: modules/demux/ts.c:3429
 #, fuzzy
 msgid "Teletext subtitles"
 msgstr "Azpititulua"
 
-#: modules/demux/ts.c:3441
+#: modules/demux/ts.c:3439
 #, fuzzy
 msgid "Teletext additional information"
 msgstr "Meta-informazioa"
 
-#: modules/demux/ts.c:3451
+#: modules/demux/ts.c:3449
 #, fuzzy
 msgid "Teletext programme schedule"
 msgstr "Azpititulua"
 
-#: modules/demux/ts.c:3461
+#: modules/demux/ts.c:3459
 #, fuzzy
 msgid "Teletext hearing impaired subtitles"
 msgstr "Azpititulua"
 
-#: modules/demux/ts.c:3556
+#: modules/demux/ts.c:3554
 #, fuzzy
 msgid "subtitles"
 msgstr "Azpititulua"
 
-#: modules/demux/ts.c:3560
+#: modules/demux/ts.c:3558
 #, fuzzy
 msgid "4:3 subtitles"
 msgstr "Azpititulua"
 
-#: modules/demux/ts.c:3564
+#: modules/demux/ts.c:3562
 #, fuzzy
 msgid "16:9 subtitles"
 msgstr "Azpititulua"
 
-#: modules/demux/ts.c:3568
+#: modules/demux/ts.c:3566
 #, fuzzy
 msgid "2.21:1 subtitles"
 msgstr "Azpititulua"
 
-#: modules/demux/ts.c:3572 modules/demux/ts.c:3753 modules/demux/ts.c:3794
+#: modules/demux/ts.c:3570 modules/demux/ts.c:3751 modules/demux/ts.c:3792
 msgid "hearing impaired"
 msgstr ""
 
-#: modules/demux/ts.c:3576
+#: modules/demux/ts.c:3574
 msgid "4:3 hearing impaired"
 msgstr ""
 
-#: modules/demux/ts.c:3580
+#: modules/demux/ts.c:3578
 msgid "16:9 hearing impaired"
 msgstr ""
 
-#: modules/demux/ts.c:3584
+#: modules/demux/ts.c:3582
 msgid "2.21:1 hearing impaired"
 msgstr ""
 
-#: modules/demux/ts.c:3749 modules/demux/ts.c:3790
+#: modules/demux/ts.c:3747 modules/demux/ts.c:3788
 #, fuzzy
 msgid "clean effects"
 msgstr "Bideo kodekak"
 
-#: modules/demux/ts.c:3757 modules/demux/ts.c:3798
+#: modules/demux/ts.c:3755 modules/demux/ts.c:3796
 msgid "visual impaired commentary"
 msgstr ""
 
@@ -16179,7 +16192,7 @@ msgid "Filter:"
 msgstr "Iragazkiak"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:631
+#: modules/gui/qt4/dialogs_provider.cpp:637
 #, fuzzy
 msgid "Open subtitles file"
 msgstr "Azpititulu fitxategiak autodetektatu"
@@ -16725,20 +16738,20 @@ msgstr ""
 msgid "Open Directory"
 msgstr "Sarea"
 
-#: modules/gui/qt4/dialogs_provider.cpp:460
+#: modules/gui/qt4/dialogs_provider.cpp:466
 #, fuzzy
 msgid "Open playlist file"
 msgstr "Erreprodukzio-zerrenda"
 
-#: modules/gui/qt4/dialogs_provider.cpp:471
+#: modules/gui/qt4/dialogs_provider.cpp:477
 msgid "Choose a filename to save playlist"
 msgstr ""
 
-#: modules/gui/qt4/dialogs_provider.cpp:473
+#: modules/gui/qt4/dialogs_provider.cpp:479
 msgid "XSPF playlist (*.xspf);; "
 msgstr ""
 
-#: modules/gui/qt4/dialogs_provider.cpp:474
+#: modules/gui/qt4/dialogs_provider.cpp:480
 msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr ""
 

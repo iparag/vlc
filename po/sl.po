@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.9.0\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-06 20:31+0200\n"
+"POT-Creation-Date: 2008-10-22 23:34+0100\n"
 "PO-Revision-Date: 2008-07-31 16:11+0100\n"
 "Last-Translator: Matej Urbančič <mateju@svn.gnome.org>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
@@ -98,7 +98,7 @@ msgid "General audio settings"
 msgstr "Splošne nastavitve zvoka"
 
 #: include/vlc_config_cat.h:60 include/vlc_config_cat.h:85
-#: src/video_output/video_output.c:486
+#: src/video_output/video_output.c:484
 msgid "Filters"
 msgstr "Filtri"
 
@@ -792,7 +792,7 @@ msgstr "Doseženo je največje dovoljeno število filtrov (%d)."
 
 #: src/audio_output/input.c:98 src/audio_output/input.c:144
 #: src/input/es_out.c:459 src/libvlc-module.c:562
-#: src/video_output/video_output.c:463 modules/video_filter/postproc.c:222
+#: src/video_output/video_output.c:461 modules/video_filter/postproc.c:222
 msgid "Disable"
 msgstr "Onemogoči"
 
@@ -832,7 +832,7 @@ msgid "Audio Channels"
 msgstr "Zvočni kanali"
 
 #: src/audio_output/output.c:105 src/audio_output/output.c:140
-#: modules/access/v4l2/v4l2.c:208 modules/access/v4l2/v4l2.c:259
+#: modules/access/v4l2/v4l2.c:220 modules/access/v4l2/v4l2.c:271
 #: modules/access/v4l.c:129 modules/audio_output/alsa.c:195
 #: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:519
 #: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:402
@@ -881,15 +881,15 @@ msgstr "Ključ"
 msgid "boolean"
 msgstr "boolean"
 
-#: src/config/file.c:593 src/libvlc.c:1574
+#: src/config/file.c:593 src/libvlc.c:1575
 msgid "integer"
 msgstr "celo število"
 
-#: src/config/file.c:602 src/libvlc.c:1603
+#: src/config/file.c:602 src/libvlc.c:1604
 msgid "float"
 msgstr "plavajoče"
 
-#: src/config/file.c:625 src/libvlc.c:1553
+#: src/config/file.c:625 src/libvlc.c:1554
 msgid "string"
 msgstr "niz"
 
@@ -968,8 +968,8 @@ msgstr ""
 
 #: src/input/decoder.c:167 src/input/decoder.c:180 src/input/decoder.c:384
 #: modules/codec/avcodec/encoder.c:228 modules/codec/avcodec/encoder.c:236
-#: modules/codec/avcodec/encoder.c:248 modules/codec/avcodec/encoder.c:667
-#: modules/codec/avcodec/encoder.c:676 modules/stream_out/es.c:373
+#: modules/codec/avcodec/encoder.c:252 modules/codec/avcodec/encoder.c:681
+#: modules/codec/avcodec/encoder.c:690 modules/stream_out/es.c:373
 #: modules/stream_out/es.c:388
 msgid "Streaming / Transcoding failed"
 msgstr "Neuspešno pretakanje oz. prekodiranje"
@@ -1307,7 +1307,7 @@ msgstr "Gibi miške"
 msgid "C"
 msgstr "C"
 
-#: src/libvlc.c:1137
+#: src/libvlc.c:1138
 msgid ""
 "Running vlc with the default interface. Use 'cvlc' to use vlc without "
 "interface."
@@ -1315,47 +1315,47 @@ msgstr ""
 "Zagon predvajalnika s privzetim vmesnikom. Uporabite 'cvlc' za zagon brez "
 "vmesnika.'"
 
-#: src/libvlc.c:1282
+#: src/libvlc.c:1283
 msgid "To get exhaustive help, use '-H'."
 msgstr "Za podrobnejšo pomoč, uporabite zastavico '-H'."
 
-#: src/libvlc.c:1618
+#: src/libvlc.c:1619
 msgid " (default enabled)"
 msgstr " (privzeto omogočeno)"
 
-#: src/libvlc.c:1619
+#: src/libvlc.c:1620
 msgid " (default disabled)"
 msgstr " (privzeto onemogočeno)"
 
-#: src/libvlc.c:1778 src/libvlc.c:1781
+#: src/libvlc.c:1779 src/libvlc.c:1782
 msgid "Note:"
 msgstr "Opomba:"
 
-#: src/libvlc.c:1779 src/libvlc.c:1782
+#: src/libvlc.c:1780 src/libvlc.c:1783
 msgid "add --advanced to your command line to see advanced options."
 msgstr "dodajte --advanced v ukazno vrstico za izpis naprednih možnosti."
 
-#: src/libvlc.c:1886
+#: src/libvlc.c:1887
 #, c-format
 msgid "VLC version %s\n"
 msgstr "VLC različica %s\n"
 
-#: src/libvlc.c:1887
+#: src/libvlc.c:1888
 #, c-format
 msgid "Compiled by %s@%s.%s\n"
 msgstr "Kodno prevedel %s@%s.%s\n"
 
-#: src/libvlc.c:1889
+#: src/libvlc.c:1890
 #, c-format
 msgid "Compiler: %s\n"
 msgstr "Kodni prevajalnik: %s\n"
 
-#: src/libvlc.c:1891
+#: src/libvlc.c:1892
 #, c-format
 msgid "Based upon Git commit [%s]\n"
 msgstr "Na podlagi sprememb Git [%s]\n"
 
-#: src/libvlc.c:1927
+#: src/libvlc.c:1928
 msgid ""
 "\n"
 "Dumped content to vlc-help.txt file.\n"
@@ -1363,7 +1363,7 @@ msgstr ""
 "\n"
 "Odlaganje vsebine v vlc-help.txt datoteko.\n"
 
-#: src/libvlc.c:1947
+#: src/libvlc.c:1948
 msgid ""
 "\n"
 "Press the RETURN key to continue...\n"
@@ -2436,7 +2436,7 @@ msgstr ""
 #: src/libvlc-module.c:562 src/video_output/vout_intf.c:180
 #: src/video_output/vout_intf.c:198 modules/access/dshow/dshow.cpp:81
 #: modules/access/dshow/dshow.cpp:83 modules/access/dshow/dshow.cpp:86
-#: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:246
+#: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:258
 #: modules/audio_output/alsa.c:105 modules/gui/fbosd.c:173
 #: modules/gui/macosx/prefs_widgets.m:1321
 #: modules/gui/macosx/simple_prefs.m:381 modules/gui/macosx/simple_prefs.m:476
@@ -3941,7 +3941,7 @@ msgstr "Zmanjšaj glasnost"
 msgid "Select the key to decrease audio volume."
 msgstr "Izbor tipkovne bližnjice za zmanjšanje glasnosti."
 
-#: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:195
+#: src/libvlc-module.c:1241 modules/access/v4l2/v4l2.c:207
 #: modules/gui/macosx/controls.m:928 modules/gui/macosx/intf.m:561
 #: modules/gui/macosx/intf.m:622 modules/gui/macosx/intf.m:631
 #: modules/gui/qt4/components/interface_widgets.cpp:911
@@ -4464,7 +4464,7 @@ msgstr "Metapodatki"
 msgid "Decoders"
 msgstr "Dekodirniki"
 
-#: src/libvlc-module.c:1739 modules/access/v4l2/v4l2.c:92
+#: src/libvlc-module.c:1739 modules/access/v4l2/v4l2.c:104
 #: modules/gui/macosx/playlistinfo.m:93
 #: modules/gui/qt4/components/info_panels.cpp:509
 msgid "Input"
@@ -5219,28 +5219,28 @@ msgstr "džangščina"
 msgid "Zulu"
 msgstr "zulujščina"
 
-#: src/video_output/video_output.c:461 modules/gui/macosx/intf.m:589
+#: src/video_output/video_output.c:459 modules/gui/macosx/intf.m:589
 #: modules/gui/macosx/intf.m:590 modules/video_filter/deinterlace.c:127
 msgid "Deinterlace"
 msgstr "Razpletanje"
 
-#: src/video_output/video_output.c:465 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:463 modules/video_filter/deinterlace.c:123
 msgid "Discard"
 msgstr "Zavrzi"
 
-#: src/video_output/video_output.c:467 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:465 modules/video_filter/deinterlace.c:123
 msgid "Blend"
 msgstr "Prelivanje"
 
-#: src/video_output/video_output.c:469 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:467 modules/video_filter/deinterlace.c:123
 msgid "Mean"
 msgstr "Sredina"
 
-#: src/video_output/video_output.c:471 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:469 modules/video_filter/deinterlace.c:123
 msgid "Bob"
 msgstr "Bob"
 
-#: src/video_output/video_output.c:473 modules/video_filter/deinterlace.c:123
+#: src/video_output/video_output.c:471 modules/video_filter/deinterlace.c:123
 msgid "Linear"
 msgstr "Linearno"
 
@@ -5266,7 +5266,7 @@ msgstr "R_azmerje velikosti"
 #: modules/access/pvr.c:60 modules/access/rtmp/access.c:43
 #: modules/access/screen/screen.c:39 modules/access/smb.c:64
 #: modules/access/tcp.c:41 modules/access/udp.c:49
-#: modules/access/v4l2/v4l2.c:215 modules/access/v4l.c:77
+#: modules/access/v4l2/v4l2.c:227 modules/access/v4l.c:77
 #: modules/access/vcd/vcd.c:46
 msgid "Caching value in ms"
 msgstr "Predpomnilniška vrednost v ms"
@@ -5665,7 +5665,7 @@ msgid "Audio CD - Track %i"
 msgstr "Zvočni CD - Sled %i"
 
 #: modules/access/cdda/cdda.c:43 modules/access/directory.c:86
-#: modules/codec/x264.c:392 modules/codec/x264.c:398 modules/codec/x264.c:403
+#: modules/codec/x264.c:397 modules/codec/x264.c:403 modules/codec/x264.c:408
 msgid "none"
 msgstr "noben"
 
@@ -6064,7 +6064,7 @@ msgstr ""
 "primeru, da ni nastavljena nobena naprava, bo program uporabil privzeto "
 "vrednost."
 
-#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:169
+#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:181
 #: modules/access/v4l.c:85 modules/gui/qt4/components/open_panels.cpp:708
 #: modules/gui/qt4/components/open_panels.cpp:743
 msgid "Audio device name"
@@ -6094,7 +6094,7 @@ msgstr ""
 "primeru, da ni nastavljena nobena naprava, bo program uporabil privzeto "
 "vrednost."
 
-#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:86
+#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:98
 #: modules/access/v4l.c:89
 msgid "Video input chroma format"
 msgstr "Zapis barv vnosa slike"
@@ -6544,7 +6544,7 @@ msgstr ""
 "Predpomnilna vrednost za lažne pretoke. Vrednost je določena v milisekundah."
 
 #: modules/access/fake.c:47 modules/access/pvr.c:86
-#: modules/access/v4l2/v4l2.c:107 modules/access/v4l.c:140
+#: modules/access/v4l2/v4l2.c:119 modules/access/v4l.c:140
 msgid "Framerate"
 msgstr "Hitrost sličic"
 
@@ -6607,11 +6607,11 @@ msgid "File"
 msgstr "Datoteka"
 
 #: modules/access/file.c:246 modules/access/file.c:365
-#: modules/access/file.c:379 modules/access/mmap.c:221
+#: modules/access/file.c:379 modules/access/mmap.c:223
 msgid "File reading failed"
 msgstr "Neuspešno branje datoteke"
 
-#: modules/access/file.c:247 modules/access/mmap.c:222
+#: modules/access/file.c:247 modules/access/mmap.c:224
 msgid "VLC could not read the file."
 msgstr "Datoteke ni mogoče prebrati."
 
@@ -7131,7 +7131,7 @@ msgstr "Povezava URL s podatki o pretoku ali o uporabljenem kanalu."
 msgid "Bitrate information of the transcoded stream. "
 msgstr "Podrobnosti bitne hitrosti prekodiranega zapisa."
 
-#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:211
+#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:223
 #: modules/access/v4l.c:126
 msgid "Samplerate"
 msgstr "Vzorčna hitrost"
@@ -7238,7 +7238,7 @@ msgstr "Norma"
 msgid "Norm of the stream (Automatic, SECAM, PAL, or NTSC)."
 msgstr "Oblika zapisa (Samodejna, SECAM, PAL, ali NTSC)."
 
-#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:101
+#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:113
 #: modules/access/v4l.c:106 modules/demux/rawvid.c:48
 #: modules/video_filter/mosaic.c:96 modules/video_output/vmem.c:50
 msgid "Width"
@@ -7248,7 +7248,7 @@ msgstr "Širina"
 msgid "Width of the stream to capture (-1 for autodetection)."
 msgstr "Širina zajetega zapisa (-1 za samodejno zaznavanje)."
 
-#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:104
+#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:116
 #: modules/access/v4l.c:109 modules/demux/rawvid.c:52
 #: modules/video_filter/mosaic.c:94 modules/video_output/vmem.c:53
 msgid "Height"
@@ -7258,7 +7258,7 @@ msgstr "Višina"
 msgid "Height of the stream to capture (-1 for autodetection)."
 msgstr "Višina zajetega zapisa (-1 za samodejno zaznavanje)."
 
-#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:230
+#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:242
 #: modules/access/v4l.c:93 modules/gui/qt4/components/open_panels.cpp:757
 #: modules/gui/qt4/components/open_panels.cpp:856
 msgid "Frequency"
@@ -7268,7 +7268,7 @@ msgstr "Frekvenca"
 msgid "Frequency to capture (in kHz), if applicable."
 msgstr "Frekvenca zajemanja (v kHz-1)."
 
-#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:108
+#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:120
 #: modules/access/v4l.c:141
 msgid "Framerate to capture, if applicable (-1 for autodetect)."
 msgstr "Frekvenca zajemanja (-1 za samodejno zaznavanje)."
@@ -7319,7 +7319,7 @@ msgstr "Bitna maska zvoka"
 msgid "Bitmask that will get used by the audio part of the card."
 msgstr "Bitna maska za zvočni del kartice."
 
-#: modules/access/pvr.c:110 modules/access/v4l2/v4l2.c:189
+#: modules/access/pvr.c:110 modules/access/v4l2/v4l2.c:201
 #: modules/access/vcdx/info.c:100 modules/gui/macosx/intf.m:500
 msgid "Volume"
 msgstr "Glasnost"
@@ -7343,17 +7343,17 @@ msgstr ""
 msgid "Automatic"
 msgstr "Samodejno"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
 #: modules/access/v4l.c:147
 msgid "SECAM"
 msgstr "SECAM"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
 #: modules/access/v4l.c:147
 msgid "PAL"
 msgstr "PAL"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:246
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
 #: modules/access/v4l.c:147
 msgid "NTSC"
 msgstr "NTSC"
@@ -7543,12 +7543,12 @@ msgstr "UDP"
 msgid "UDP input"
 msgstr "UDP dovod"
 
-#: modules/access/v4l2/v4l2.c:79 modules/gui/macosx/open.m:178
+#: modules/access/v4l2/v4l2.c:91 modules/gui/macosx/open.m:178
 #: modules/gui/qt4/components/open_panels.cpp:836
 msgid "Device name"
 msgstr "Ime naprave"
 
-#: modules/access/v4l2/v4l2.c:81
+#: modules/access/v4l2/v4l2.c:93
 msgid ""
 "Name of the device to use. If you don't specify anything, /dev/video0 will "
 "be used."
@@ -7556,17 +7556,17 @@ msgstr ""
 "Ime uporabljene naprave. V primeru, da ne določite naprave, bo uporabljena /"
 "dev/video0."
 
-#: modules/access/v4l2/v4l2.c:83
+#: modules/access/v4l2/v4l2.c:95
 #: modules/gui/qt4/components/open_panels.cpp:715
 #: modules/stream_out/standard.c:100
 msgid "Standard"
 msgstr "Standardna"
 
-#: modules/access/v4l2/v4l2.c:85
+#: modules/access/v4l2/v4l2.c:97
 msgid "Video standard (Default, SECAM, PAL, or NTSC)."
 msgstr "Oblika zapisa (Privzeto, SECAM, PAL ali NTSC)."
 
-#: modules/access/v4l2/v4l2.c:88
+#: modules/access/v4l2/v4l2.c:100
 msgid ""
 "Force the Video4Linux2 video device to use a specific chroma format (eg. "
 "I420 or I422 for raw images, MJPG for M-JPEG compressed input) (Complete "
@@ -7578,96 +7578,96 @@ msgstr ""
 "(Celoten seznam: GREY, I240, RV16, RV15, RV24, RV32, YUY2, YUYV, UYVY, I41N, "
 "I422, I420, I411, I410, MJPG)"
 
-#: modules/access/v4l2/v4l2.c:94
+#: modules/access/v4l2/v4l2.c:106
 msgid "Input of the card to use (see debug)."
 msgstr "Dovod kartice za uporabo (razhroščevanje)"
 
-#: modules/access/v4l2/v4l2.c:95 modules/access/v4l2/v4l2.c:301
+#: modules/access/v4l2/v4l2.c:107 modules/access/v4l2/v4l2.c:313
 msgid "Audio input"
 msgstr "Dovod zvoka"
 
-#: modules/access/v4l2/v4l2.c:97
+#: modules/access/v4l2/v4l2.c:109
 msgid "Audio input of the card to use (see debug)."
 msgstr "Dovod zvoka uporabljene kartice (razhroščevanje)."
 
-#: modules/access/v4l2/v4l2.c:98
+#: modules/access/v4l2/v4l2.c:110
 msgid "IO Method"
 msgstr "IO način"
 
-#: modules/access/v4l2/v4l2.c:100
+#: modules/access/v4l2/v4l2.c:112
 msgid "IO Method (READ, MMAP, USERPTR)."
 msgstr "IO način (READ, MMAP, USERPTR)."
 
-#: modules/access/v4l2/v4l2.c:103
+#: modules/access/v4l2/v4l2.c:115
 msgid "Force width (-1 for autodetect)."
 msgstr "Vsiljena širina (-1 za samodejno zaznavo)."
 
-#: modules/access/v4l2/v4l2.c:106
+#: modules/access/v4l2/v4l2.c:118
 msgid "Force height (-1 for autodetect)."
 msgstr "Vsiljena višina (-1 za samodejno zaznavo)"
 
-#: modules/access/v4l2/v4l2.c:111
+#: modules/access/v4l2/v4l2.c:123
 msgid "Reset v4l2 controls"
 msgstr "Počisti v4l2 tipkovne bližnjice"
 
-#: modules/access/v4l2/v4l2.c:113
+#: modules/access/v4l2/v4l2.c:125
 msgid "Reset controls to defaults provided by the v4l2 driver."
 msgstr ""
 "Počisti tipkovne bližnjice na privzete vrednosti, kot jih določa v4l2 "
 "gonilnik."
 
-#: modules/access/v4l2/v4l2.c:114 modules/access/v4l.c:112
+#: modules/access/v4l2/v4l2.c:126 modules/access/v4l.c:112
 #: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:205
 #: modules/video_filter/atmo/atmo.cpp:196
 msgid "Brightness"
 msgstr "Svetlost"
 
-#: modules/access/v4l2/v4l2.c:116
+#: modules/access/v4l2/v4l2.c:128
 msgid "Brightness of the video input (if supported by the v4l2 driver)."
 msgstr "Svetlost dovoda slike posnetka (če je podprto z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:117 modules/access/v4l.c:121
+#: modules/access/v4l2/v4l2.c:129 modules/access/v4l.c:121
 #: modules/gui/macosx/extended.m:98 modules/gui/qt4/ui/video_effects.ui:198
 msgid "Contrast"
 msgstr "Kontrast"
 
-#: modules/access/v4l2/v4l2.c:119
+#: modules/access/v4l2/v4l2.c:131
 msgid "Contrast of the video input (if supported by the v4l2 driver)."
 msgstr "Kontrast dovoda slike posnetka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:120 modules/gui/macosx/extended.m:101
+#: modules/access/v4l2/v4l2.c:132 modules/gui/macosx/extended.m:101
 #: modules/gui/qt4/ui/video_effects.ui:212
 #: modules/gui/qt4/ui/video_effects.ui:320
 msgid "Saturation"
 msgstr "Nasičenost"
 
-#: modules/access/v4l2/v4l2.c:122
+#: modules/access/v4l2/v4l2.c:134
 msgid "Saturation of the video input (if supported by the v4l2 driver)."
 msgstr "Nasičenost dovoda slike posnetka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:123 modules/access/v4l.c:115
+#: modules/access/v4l2/v4l2.c:135 modules/access/v4l.c:115
 #: modules/gui/macosx/extended.m:100 modules/gui/qt4/ui/video_effects.ui:219
 msgid "Hue"
 msgstr "Odtenek"
 
-#: modules/access/v4l2/v4l2.c:125
+#: modules/access/v4l2/v4l2.c:137
 msgid "Hue of the video input (if supported by the v4l2 driver)."
 msgstr "Odtenek dovoda slike posnetka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:126
+#: modules/access/v4l2/v4l2.c:138
 msgid "Black level"
 msgstr "Raven črne barve"
 
-#: modules/access/v4l2/v4l2.c:128
+#: modules/access/v4l2/v4l2.c:140
 msgid "Black level of the video input (if supported by the v4l2 driver)."
 msgstr ""
 "Raven črne barve dovoda slike posnetka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:129
+#: modules/access/v4l2/v4l2.c:141
 msgid "Auto white balance"
 msgstr "Samodejno ravnotežje bele barve"
 
-#: modules/access/v4l2/v4l2.c:131
+#: modules/access/v4l2/v4l2.c:143
 msgid ""
 "Automatically set the white balance of the video input (if supported by the "
 "v4l2 driver)."
@@ -7675,11 +7675,11 @@ msgstr ""
 "Samodejno določi ravnotežje bele barve dovoda slike posnetka (če je podprt z "
 "v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:133
+#: modules/access/v4l2/v4l2.c:145
 msgid "Do white balance"
 msgstr "Preklop ravnotežja bele barve"
 
-#: modules/access/v4l2/v4l2.c:135
+#: modules/access/v4l2/v4l2.c:147
 msgid ""
 "Trigger a white balancing action, useless if auto white balance is activated "
 "(if supported by the v4l2 driver)."
@@ -7687,96 +7687,96 @@ msgstr ""
 "Urejanja beline posnetka. Možnost je neuporabna, če je zagnana možnost "
 "ravnotežja bele barve (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:137
+#: modules/access/v4l2/v4l2.c:149
 msgid "Red balance"
 msgstr "Ravnotežje rdeče barve"
 
-#: modules/access/v4l2/v4l2.c:139
+#: modules/access/v4l2/v4l2.c:151
 msgid "Red balance of the video input (if supported by the v4l2 driver)."
 msgstr ""
 "Raven rdeče barve dovoda slike posnetka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:140
+#: modules/access/v4l2/v4l2.c:152
 msgid "Blue balance"
 msgstr "Ravnotežje modre barve"
 
-#: modules/access/v4l2/v4l2.c:142
+#: modules/access/v4l2/v4l2.c:154
 msgid "Blue balance of the video input (if supported by the v4l2 driver)."
 msgstr ""
 "Raven modre barve dovoda slike posnetka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:143 modules/gui/macosx/extended.m:99
+#: modules/access/v4l2/v4l2.c:155 modules/gui/macosx/extended.m:99
 #: modules/gui/qt4/ui/video_effects.ui:191
 msgid "Gamma"
 msgstr "Barva"
 
-#: modules/access/v4l2/v4l2.c:145
+#: modules/access/v4l2/v4l2.c:157
 msgid "Gamma of the video input (if supported by the v4l2 driver)."
 msgstr "Barva dovoda slike posnetka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:146
+#: modules/access/v4l2/v4l2.c:158
 msgid "Exposure"
 msgstr "Osvetljenost"
 
-#: modules/access/v4l2/v4l2.c:148
+#: modules/access/v4l2/v4l2.c:160
 msgid "Exposure of the video input (if supported by the v4L2 driver)."
 msgstr "Osvetljenost dovoda slike posnetka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:149
+#: modules/access/v4l2/v4l2.c:161
 msgid "Auto gain"
 msgstr "Samodejna okrepitev"
 
-#: modules/access/v4l2/v4l2.c:151
+#: modules/access/v4l2/v4l2.c:163
 msgid ""
 "Automatically set the video input's gain (if supported by the v4l2 driver)."
 msgstr "Samodejna okrepitev dovoda posnetka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:153
+#: modules/access/v4l2/v4l2.c:165
 msgid "Gain"
 msgstr "Okrepitev"
 
-#: modules/access/v4l2/v4l2.c:155
+#: modules/access/v4l2/v4l2.c:167
 msgid "Video input's gain (if supported by the v4l2 driver)."
 msgstr "Okrepitev dovoda slike posnetka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:156
+#: modules/access/v4l2/v4l2.c:168
 msgid "Horizontal flip"
 msgstr "Vodoravno zrcaljenje"
 
-#: modules/access/v4l2/v4l2.c:158
+#: modules/access/v4l2/v4l2.c:170
 msgid "Flip the video horizontally (if supported by the v4l2 driver)."
 msgstr "Vodoravno zrcaljenje slike (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:159
+#: modules/access/v4l2/v4l2.c:171
 msgid "Vertical flip"
 msgstr "Navpično zrcaljenje"
 
-#: modules/access/v4l2/v4l2.c:161
+#: modules/access/v4l2/v4l2.c:173
 msgid "Flip the video vertically (if supported by the v4l2 driver)."
 msgstr "Navpično zrcaljenje slike (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:162
+#: modules/access/v4l2/v4l2.c:174
 msgid "Horizontal centering"
 msgstr "Vodoravna postavitev na sredino"
 
-#: modules/access/v4l2/v4l2.c:164
+#: modules/access/v4l2/v4l2.c:176
 msgid ""
 "Set the camera's horizontal centering (if supported by the v4l2 driver)."
 msgstr ""
 "Določitev vodoravne postavitve kamere na sredino (če je podprt z v4l2 "
 "gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:165
+#: modules/access/v4l2/v4l2.c:177
 msgid "Vertical centering"
 msgstr "Navpična postavitev na sredino"
 
-#: modules/access/v4l2/v4l2.c:167
+#: modules/access/v4l2/v4l2.c:179
 msgid "Set the camera's vertical centering (if supported by the v4l2 driver)."
 msgstr ""
 "Določitev navpične postavitve kamere na sredino (če je podprt z v4l2 "
 "gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:172
+#: modules/access/v4l2/v4l2.c:184
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS."
@@ -7784,7 +7784,7 @@ msgstr ""
 "Ime uporabljene zvočne naprave. V primeru, da ne določite naprave, bo "
 "uporabljena \"/dev/dsp\" naprava za OSS."
 
-#: modules/access/v4l2/v4l2.c:176
+#: modules/access/v4l2/v4l2.c:188
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS, \"hw\" for Alsa."
@@ -7792,15 +7792,15 @@ msgstr ""
 "Ime uporabljene zvočne naprave. V primeru, da ne določite naprave, bo "
 "uporabljena \"/dev/dsp\" naprava za OSS in \"hw\" za Also."
 
-#: modules/access/v4l2/v4l2.c:180
+#: modules/access/v4l2/v4l2.c:192
 msgid "Audio method"
 msgstr "Predvajanje zvoka"
 
-#: modules/access/v4l2/v4l2.c:183
+#: modules/access/v4l2/v4l2.c:195
 msgid "Audio method to use: 0 to disable audio, 1 for OSS."
 msgstr "Predvajanje zvoka: 0 za izklop zvoka, 1 za OSS."
 
-#: modules/access/v4l2/v4l2.c:186
+#: modules/access/v4l2/v4l2.c:198
 msgid ""
 "Audio method to use: 0 to disable audio, 1 for OSS, 2 for ALSA, 3 for ALSA "
 "or OSS (ALSA is preferred)."
@@ -7808,51 +7808,51 @@ msgstr ""
 "Uporabljen zvočni način: 0 onemogoči zvok, 1 za OSS, 2 za ALSA, 3 za ALSA "
 "ali OSS (ALSA ima prednost)."
 
-#: modules/access/v4l2/v4l2.c:191
+#: modules/access/v4l2/v4l2.c:203
 msgid "Volume of the audio input (if supported by the v4l2 driver)."
 msgstr "Glasnost dovoda zvoka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:192
+#: modules/access/v4l2/v4l2.c:204
 msgid "Balance"
 msgstr "Ravnotežje"
 
-#: modules/access/v4l2/v4l2.c:194
+#: modules/access/v4l2/v4l2.c:206
 msgid "Balance of the audio input (if supported by the v4l2 driver)."
 msgstr "Ravnotežje dovoda zvoka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:197
+#: modules/access/v4l2/v4l2.c:209
 msgid "Mute audio input (if supported by the v4l2 driver)."
 msgstr "Utišaj dovod zvoka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:198 modules/meta_engine/id3genres.h:69
+#: modules/access/v4l2/v4l2.c:210 modules/meta_engine/id3genres.h:69
 msgid "Bass"
 msgstr "Bas"
 
-#: modules/access/v4l2/v4l2.c:200
+#: modules/access/v4l2/v4l2.c:212
 msgid "Bass level of the audio input (if supported by the v4l2 driver)."
 msgstr "Raven basovskih tonov dovoda zvoka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:201
+#: modules/access/v4l2/v4l2.c:213
 msgid "Treble"
 msgstr "Visoki toni"
 
-#: modules/access/v4l2/v4l2.c:203
+#: modules/access/v4l2/v4l2.c:215
 msgid "Treble level of the audio input (if supported by the v4l2 driver)."
 msgstr "Raven visokih tonov dovoda zvoka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:204
+#: modules/access/v4l2/v4l2.c:216
 msgid "Loudness"
 msgstr "Glasnost"
 
-#: modules/access/v4l2/v4l2.c:206
+#: modules/access/v4l2/v4l2.c:218
 msgid "Loudness of the audio input (if supported by the v4l2 driver)."
 msgstr "Glasnost dovoda zvoka (če je podprt z v4l2 gonilnikom)."
 
-#: modules/access/v4l2/v4l2.c:210 modules/access/v4l.c:131
+#: modules/access/v4l2/v4l2.c:222 modules/access/v4l.c:131
 msgid "Capture the audio stream in stereo."
 msgstr "Zajem zvoka v stereo načinu."
 
-#: modules/access/v4l2/v4l2.c:213
+#: modules/access/v4l2/v4l2.c:225
 msgid ""
 "Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100, "
 "48000)"
@@ -7860,18 +7860,18 @@ msgstr ""
 "Vzorčna hitrost zajetega zvočnega pretoka v Hz (primer: 11025, 22050, 44100, "
 "48000)"
 
-#: modules/access/v4l2/v4l2.c:217
+#: modules/access/v4l2/v4l2.c:229
 msgid ""
 "Caching value for V4L2 captures. This value should be set in milliseconds."
 msgstr ""
 "Predpomnilna vrednost za v4l2 zajem slike. Vrednost je določena v "
 "milisekundah."
 
-#: modules/access/v4l2/v4l2.c:219
+#: modules/access/v4l2/v4l2.c:231
 msgid "v4l2 driver controls"
 msgstr "v4l2 tipkovne bližnjice gonilnika"
 
-#: modules/access/v4l2/v4l2.c:221
+#: modules/access/v4l2/v4l2.c:233
 msgid ""
 "Set the v4l2 driver controls to the values specified using a comma separated "
 "list optionally encapsulated by curly braces (e.g.: {video_bitrate=6000000,"
@@ -7882,90 +7882,90 @@ msgstr ""
 "seznamu (primer: {video_bitrate=6000000,audio_crc=0,stream_type=3} ). Za "
 "izpis možnosti, ki so na voljo, uporabite (-vvv) ali pa v4l2-ctl program."
 
-#: modules/access/v4l2/v4l2.c:227
+#: modules/access/v4l2/v4l2.c:239
 msgid "Tuner id"
 msgstr "ID uglaševala"
 
-#: modules/access/v4l2/v4l2.c:229
+#: modules/access/v4l2/v4l2.c:241
 msgid "Tuner id (see debug output)."
 msgstr "ID uglaševala (razhroščevanje)"
 
-#: modules/access/v4l2/v4l2.c:232
+#: modules/access/v4l2/v4l2.c:244
 msgid "Tuner frequency in Hz or kHz (see debug output)"
 msgstr "Frekvenca uglaševala v Hz ali kHz (razhroščevanje)"
 
-#: modules/access/v4l2/v4l2.c:233
+#: modules/access/v4l2/v4l2.c:245
 msgid "Audio mode"
 msgstr "Zvočni način"
 
-#: modules/access/v4l2/v4l2.c:235
+#: modules/access/v4l2/v4l2.c:247
 msgid "Tuner audio mono/stereo and track selection."
 msgstr "Uglaševanje mono/stereo in izbor sledi"
 
-#: modules/access/v4l2/v4l2.c:251
+#: modules/access/v4l2/v4l2.c:263
 msgid "READ"
 msgstr "READ"
 
-#: modules/access/v4l2/v4l2.c:251
+#: modules/access/v4l2/v4l2.c:263
 msgid "MMAP"
 msgstr "MMAP"
 
-#: modules/access/v4l2/v4l2.c:251
+#: modules/access/v4l2/v4l2.c:263
 msgid "USERPTR"
 msgstr "USERPTR"
 
-#: modules/access/v4l2/v4l2.c:258 modules/audio_output/alsa.c:189
+#: modules/access/v4l2/v4l2.c:270 modules/audio_output/alsa.c:189
 #: modules/audio_output/directx.c:537 modules/audio_output/oss.c:227
 #: modules/audio_output/portaudio.c:394 modules/audio_output/sdl.c:185
 #: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:533
 msgid "Mono"
 msgstr "Mono"
 
-#: modules/access/v4l2/v4l2.c:260
+#: modules/access/v4l2/v4l2.c:272
 msgid "Primary language (Analog TV tuners only)"
 msgstr "Osnovni jezik (samo analogni TV sprejemniki)"
 
-#: modules/access/v4l2/v4l2.c:261
+#: modules/access/v4l2/v4l2.c:273
 msgid "Secondary language (Analog TV tuners only)"
 msgstr "Drugi jezik (samo analogni TV sprejemniki)"
 
-#: modules/access/v4l2/v4l2.c:262
+#: modules/access/v4l2/v4l2.c:274
 msgid "Second audio program (Analog TV tuners only)"
 msgstr "Drugi zvočni program (samo analogni TV sprejemniki)"
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:275
 msgid "Primary language left, Secondary language right"
 msgstr "Osnovni jezik levo, drugi jezik desno"
 
-#: modules/access/v4l2/v4l2.c:275
+#: modules/access/v4l2/v4l2.c:287
 msgid "Video4Linux2"
 msgstr "Video4Linux2"
 
-#: modules/access/v4l2/v4l2.c:276
+#: modules/access/v4l2/v4l2.c:288
 msgid "Video4Linux2 input"
 msgstr "Video4Linux2 dovod"
 
-#: modules/access/v4l2/v4l2.c:280
+#: modules/access/v4l2/v4l2.c:292
 msgid "Video input"
 msgstr "Dovod slike"
 
-#: modules/access/v4l2/v4l2.c:313 modules/access/v4l.c:124
+#: modules/access/v4l2/v4l2.c:325 modules/access/v4l.c:124
 msgid "Tuner"
 msgstr "Uglaševalo"
 
-#: modules/access/v4l2/v4l2.c:323
+#: modules/access/v4l2/v4l2.c:335
 msgid "Controls"
 msgstr "Tipke"
 
-#: modules/access/v4l2/v4l2.c:324
+#: modules/access/v4l2/v4l2.c:336
 msgid "v4l2 driver controls, if supported by your v4l2 driver."
 msgstr "Možnosti v4l2, če jih podpira vaš v4l2 gonilnik."
 
-#: modules/access/v4l2/v4l2.c:382
+#: modules/access/v4l2/v4l2.c:394
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux2 skrčena dovoda zvoka in slike"
 
-#: modules/access/v4l2/v4l2.c:3147
+#: modules/access/v4l2/v4l2.c:3181
 msgid "Reset controls to default"
 msgstr "Počisti tipkovne bližnjice na privzete vrednosti"
 
@@ -9331,7 +9331,7 @@ msgstr ""
 "Delitveni posrednik I sličic v primerjavi s P sličicami (primer: 1.0 določa "
 "enake vrednosti I in P sličic)."
 
-#: modules/codec/avcodec/avcodec.h:158 modules/codec/x264.c:324
+#: modules/codec/avcodec/avcodec.h:158 modules/codec/x264.c:329
 #: modules/demux/mod.c:75
 msgid "Noise reduction"
 msgstr "Zmanjševanje hrupa"
@@ -9512,12 +9512,18 @@ msgstr "\"%s\" ni kodirnik slike."
 msgid "\"%s\" is no audio encoder."
 msgstr "\"%s\" ni kodirnik zvoka."
 
-#: modules/codec/avcodec/encoder.c:249
+#: modules/codec/avcodec/encoder.c:257
 #, c-format
-msgid "VLC could not find encoder \"%s\"."
-msgstr "Predvajalnik VLC ne najde kodirnika \"%s\"."
+msgid ""
+"It seems your FFMPEG (libavcodec) installation lacks the following encoder:\n"
+"%s.\n"
+"If you don't know how to fix this, ask for support from your distribution.\n"
+"\n"
+"This is not an error inside VLC media player.\n"
+"Do not contact the VideoLAN project about this issue.\n"
+msgstr ""
 
-#: modules/codec/avcodec/encoder.c:668 modules/codec/avcodec/encoder.c:677
+#: modules/codec/avcodec/encoder.c:682 modules/codec/avcodec/encoder.c:691
 msgid "VLC could not open the encoder."
 msgstr "Predvajalnik VLC ne more odpreti kodirnika."
 
@@ -9786,7 +9792,7 @@ msgstr "Kate opomba"
 msgid "Subtitle renderers using libass"
 msgstr "Ovijanje za prikaz podnapisov s CSRI/asa"
 
-#: modules/codec/libmpeg2.c:96
+#: modules/codec/libmpeg2.c:104
 msgid "MPEG I/II video decoder (using libmpeg2)"
 msgstr "MPEG I/II dekodirnik slike (uporaba libmpeg2)"
 
@@ -10604,10 +10610,11 @@ msgid "Subpixel motion estimation and partition decision quality"
 msgstr "Kakovost gibanja podpik in odločanja delitve"
 
 #: modules/codec/x264.c:274
+#, fuzzy
 msgid ""
 "This parameter controls quality versus speed tradeoffs involved in the "
 "motion estimation decision process (lower = quicker and higher = better "
-"quality). Range 1 to 7."
+"quality). Range 1 to 9."
 msgstr ""
 "Parameter nadzira kakovost nad hitrostjo pri predvidevanju procesov "
 "odločanja (nižja vrednost = hitro in več = boljša kakovost). Območje je med "
@@ -10617,13 +10624,23 @@ msgstr ""
 msgid ""
 "This parameter controls quality versus speed tradeoffs involved in the "
 "motion estimation decision process (lower = quicker and higher = better "
+"quality). Range 1 to 7."
+msgstr ""
+"Parameter nadzira kakovost nad hitrostjo pri predvidevanju procesov "
+"odločanja (nižja vrednost = hitro in več = boljša kakovost). Območje je med "
+"1 in 7."
+
+#: modules/codec/x264.c:284
+msgid ""
+"This parameter controls quality versus speed tradeoffs involved in the "
+"motion estimation decision process (lower = quicker and higher = better "
 "quality). Range 1 to 6."
 msgstr ""
 "Parameter nadzira kakovost nad hitrostjo pri predvidevanju procesov "
 "odločanja (nižja vrednost = hitro in več = boljša kakovost). Območje je med "
 "1 in 6."
 
-#: modules/codec/x264.c:284
+#: modules/codec/x264.c:289
 msgid ""
 "This parameter controls quality versus speed tradeoffs involved in the "
 "motion estimation decision process (lower = quicker and higher = better "
@@ -10633,19 +10650,19 @@ msgstr ""
 "odločanja (nižja vrednost = hitro in več = boljša kakovost). Območje je med "
 "1 in 5."
 
-#: modules/codec/x264.c:289
+#: modules/codec/x264.c:294
 msgid "RD based mode decision for B-frames"
 msgstr "Način RD odločanja za B sličice"
 
-#: modules/codec/x264.c:290
+#: modules/codec/x264.c:295
 msgid "RD based mode decision for B-frames. This requires subme 6 (or higher)."
 msgstr "Način RD odločanja za B sličice. Zahteva subme 6 (ali višji)"
 
-#: modules/codec/x264.c:293
+#: modules/codec/x264.c:298
 msgid "Decide references on a per partition basis"
 msgstr "Določanje povezav na osnovi delov."
 
-#: modules/codec/x264.c:294
+#: modules/codec/x264.c:299
 msgid ""
 "Allows each 8x8 or 16x8 partition to independently select a reference frame, "
 "as opposed to only one ref per macroblock."
@@ -10653,35 +10670,35 @@ msgstr ""
 "Dovoli vsakemu delu 8x8 ali 16x8 da ločeno izbere čas sklicevanja v "
 "nasprotju z eno določitvijo na blok."
 
-#: modules/codec/x264.c:298
+#: modules/codec/x264.c:303
 msgid "Chroma in motion estimation"
 msgstr "Barve v predvidevanju gibanja"
 
-#: modules/codec/x264.c:299
+#: modules/codec/x264.c:304
 msgid "Chroma ME for subpel and mode decision in P-frames."
 msgstr "Barva ME za način odločanja o subpel v P sličicah."
 
-#: modules/codec/x264.c:302
+#: modules/codec/x264.c:307
 msgid "Jointly optimize both MVs in B-frames"
 msgstr "Skupna prilagoditev MV in B sličic"
 
-#: modules/codec/x264.c:303
+#: modules/codec/x264.c:308
 msgid "Joint bidirectional motion refinement."
 msgstr "Skupno oboje smerno čiščenje gibanja."
 
-#: modules/codec/x264.c:305
+#: modules/codec/x264.c:310
 msgid "Adaptive spatial transform size"
 msgstr "Prilagodljiva prostorska velikost pretvorbe"
 
-#: modules/codec/x264.c:307
+#: modules/codec/x264.c:312
 msgid "SATD-based decision for 8x8 transform in inter-MBs."
 msgstr "SATD odločanje za pretvorbe 8x8 v inter-MBs."
 
-#: modules/codec/x264.c:309
+#: modules/codec/x264.c:314
 msgid "Trellis RD quantization"
 msgstr "Trellis RD deljenje"
 
-#: modules/codec/x264.c:310
+#: modules/codec/x264.c:315
 msgid ""
 "Trellis RD quantization: \n"
 " - 0: disabled\n"
@@ -10695,19 +10712,19 @@ msgstr ""
 " - 2: popolnoma omogočeno\n"
 "Zahteva CABAC."
 
-#: modules/codec/x264.c:316
+#: modules/codec/x264.c:321
 msgid "Early SKIP detection on P-frames"
 msgstr "Zgodnje SKIP zaznavanje P sličic"
 
-#: modules/codec/x264.c:317
+#: modules/codec/x264.c:322
 msgid "Early SKIP detection on P-frames."
 msgstr "Zgodnje SKIP zaznavanje P sličic."
 
-#: modules/codec/x264.c:319
+#: modules/codec/x264.c:324
 msgid "Coefficient thresholding on P-frames"
 msgstr "Pražni koeficient P sličic"
 
-#: modules/codec/x264.c:320
+#: modules/codec/x264.c:325
 msgid ""
 "Coefficient thresholding on P-frames.Eliminate dct blocks containing only a "
 "small single coefficient."
@@ -10715,7 +10732,7 @@ msgstr ""
 "Pražni koeficient P sličic. Odstrani DCT bloke, ki vsebujejo semo en majhen "
 "koeficient."
 
-#: modules/codec/x264.c:325
+#: modules/codec/x264.c:330
 msgid ""
 "Dct-domain noise reduction. Adaptive pseudo-deadzone. 10 to 1000 seems to be "
 "a useful range."
@@ -10723,52 +10740,52 @@ msgstr ""
 "Zmanjšanje hrupa DCT domene. Prilagodljivo navidezno nedejavno območje. "
 "Najkoristnejše območje je od 10 do 1000."
 
-#: modules/codec/x264.c:329
+#: modules/codec/x264.c:334
 msgid "Inter luma quantization deadzone"
 msgstr "Mrtvo območje inter luma deljenja"
 
-#: modules/codec/x264.c:330
+#: modules/codec/x264.c:335
 msgid "Set the size of the inter luma quantization deadzone. Range 0 to 32."
 msgstr "Določitev mrtvega območja deljenja inter lume. Območje je med 0 in 32."
 
-#: modules/codec/x264.c:333
+#: modules/codec/x264.c:338
 msgid "Intra luma quantization deadzone"
 msgstr "Mrtvo območje intra luma deljenja"
 
-#: modules/codec/x264.c:334
+#: modules/codec/x264.c:339
 msgid "Set the size of the intra luma quantization deadzone. Range 0 to 32."
 msgstr "Določitev mrtvega območja deljenja intra lume. Območje je med 0 in 32."
 
-#: modules/codec/x264.c:341
+#: modules/codec/x264.c:346
 msgid "Non-deterministic optimizations when threaded"
 msgstr "Ne-determinirana optimizacija ob nitenju."
 
-#: modules/codec/x264.c:342
+#: modules/codec/x264.c:347
 msgid "Slightly improve quality of SMP, at the cost of repeatability."
 msgstr "Delno izboljšanje kakovosti SMP na račun ponovljivosti."
 
-#: modules/codec/x264.c:346
+#: modules/codec/x264.c:351
 msgid "CPU optimizations"
 msgstr "Prilagajanje CPE"
 
-#: modules/codec/x264.c:347
+#: modules/codec/x264.c:352
 msgid "Use assembler CPU optimizations."
 msgstr "Uporaba optimizacije CPE preko asemblerja"
 
-#: modules/codec/x264.c:349
+#: modules/codec/x264.c:354
 msgid "Filename for 2 pass stats file"
 msgstr "Ime datoteke za drugi (2) prehod"
 
-#: modules/codec/x264.c:350
+#: modules/codec/x264.c:355
 msgid "Filename for 2 pass stats file for multi-pass encoding."
 msgstr ""
 "Ime datoteke za drugi (2) prehod stats datoteke pri večpasovnem kodiranju."
 
-#: modules/codec/x264.c:352
+#: modules/codec/x264.c:357
 msgid "PSNR computation"
 msgstr "PSNR izračunavanje"
 
-#: modules/codec/x264.c:353
+#: modules/codec/x264.c:358
 msgid ""
 "Compute and print PSNR stats. This has no effect on the actual encoding "
 "quality."
@@ -10776,11 +10793,11 @@ msgstr ""
 "Izračun in izpis PSNR podrobnosti. Možnost ne vpliva na dejansko kakovost "
 "kodiranja."
 
-#: modules/codec/x264.c:356
+#: modules/codec/x264.c:361
 msgid "SSIM computation"
 msgstr "SSIM izračunavanje"
 
-#: modules/codec/x264.c:357
+#: modules/codec/x264.c:362
 msgid ""
 "Compute and print SSIM stats. This has no effect on the actual encoding "
 "quality."
@@ -10788,28 +10805,28 @@ msgstr ""
 "Izračun in izpis SSIM podrobnosti. Možnost ne vpliva na dejansko kakovost "
 "kodiranja."
 
-#: modules/codec/x264.c:360
+#: modules/codec/x264.c:365
 msgid "Quiet mode"
 msgstr "Tihi način"
 
-#: modules/codec/x264.c:361
+#: modules/codec/x264.c:366
 msgid "Quiet mode."
 msgstr "Tihi način."
 
-#: modules/codec/x264.c:363 modules/gui/macosx/playlistinfo.m:78
+#: modules/codec/x264.c:368 modules/gui/macosx/playlistinfo.m:78
 #: modules/gui/qt4/ui/streampanel.ui:28
 msgid "Statistics"
 msgstr "Statistika"
 
-#: modules/codec/x264.c:364
+#: modules/codec/x264.c:369
 msgid "Print stats for each frame."
 msgstr "Izpiši podrobnosti vsake sličice."
 
-#: modules/codec/x264.c:367
+#: modules/codec/x264.c:372
 msgid "SPS and PPS id numbers"
 msgstr "SPS in PPS ID vrednosti"
 
-#: modules/codec/x264.c:368
+#: modules/codec/x264.c:373
 msgid ""
 "Set SPS and PPS id numbers to allow concatenating streams with different "
 "settings."
@@ -10817,64 +10834,64 @@ msgstr ""
 "Določitev SPS in PPS ID vrednosti za spajanje pretokov z različnimi "
 "nastavitvami."
 
-#: modules/codec/x264.c:372
+#: modules/codec/x264.c:377
 msgid "Access unit delimiters"
 msgstr "Ločila enot dostopa"
 
-#: modules/codec/x264.c:373
+#: modules/codec/x264.c:378
 msgid "Generate access unit delimiter NAL units."
 msgstr "Ustvari ločilo NAL enot dostopa."
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "dia"
 msgstr "dia"
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "hex"
 msgstr "hex"
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "umh"
 msgstr "umh"
 
-#: modules/codec/x264.c:379 modules/codec/x264.c:386
+#: modules/codec/x264.c:384 modules/codec/x264.c:391
 msgid "esa"
 msgstr "esa"
 
-#: modules/codec/x264.c:386
+#: modules/codec/x264.c:391
 msgid "tesa"
 msgstr "tesa"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 msgid "fast"
 msgstr "hitro"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 msgid "normal"
 msgstr "normalno"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 msgid "slow"
 msgstr "počasi"
 
-#: modules/codec/x264.c:392
+#: modules/codec/x264.c:397
 msgid "all"
 msgstr "vse"
 
-#: modules/codec/x264.c:398 modules/codec/x264.c:403
+#: modules/codec/x264.c:403 modules/codec/x264.c:408
 msgid "spatial"
 msgstr "prostorsko"
 
-#: modules/codec/x264.c:398 modules/codec/x264.c:403
+#: modules/codec/x264.c:403 modules/codec/x264.c:408
 msgid "temporal"
 msgstr "začasno"
 
-#: modules/codec/x264.c:398 modules/gui/pda/pda_interface.c:741
+#: modules/codec/x264.c:403 modules/gui/pda/pda_interface.c:741
 #: modules/video_filter/mosaic.c:168
 msgid "auto"
 msgstr "samodejno"
 
-#: modules/codec/x264.c:407
+#: modules/codec/x264.c:412
 msgid "H.264/MPEG4 AVC encoder (using x264 library)"
 msgstr "H.264/MPEG4 AVC kodirnik (uporablja knjižnico x264)"
 
@@ -12691,67 +12708,67 @@ msgstr ""
 msgid "MPEG Transport Stream demuxer"
 msgstr "MPEG Transport Stream odvijalec"
 
-#: modules/demux/ts.c:3421
+#: modules/demux/ts.c:3419
 #: modules/gui/qt4/components/interface_widgets.cpp:631
 #: modules/gui/qt4/components/interface_widgets.cpp:827
 msgid "Teletext"
 msgstr "Teletekst"
 
-#: modules/demux/ts.c:3431
+#: modules/demux/ts.c:3429
 msgid "Teletext subtitles"
 msgstr "Teletekst podnapisi"
 
-#: modules/demux/ts.c:3441
+#: modules/demux/ts.c:3439
 #, fuzzy
 msgid "Teletext additional information"
 msgstr "Podrobnosti medija"
 
-#: modules/demux/ts.c:3451
+#: modules/demux/ts.c:3449
 #, fuzzy
 msgid "Teletext programme schedule"
 msgstr "Teletekst stran"
 
-#: modules/demux/ts.c:3461
+#: modules/demux/ts.c:3459
 msgid "Teletext hearing impaired subtitles"
 msgstr "Teletekst podnapisi za slušno omejene"
 
-#: modules/demux/ts.c:3556
+#: modules/demux/ts.c:3554
 msgid "subtitles"
 msgstr "podnapisi"
 
-#: modules/demux/ts.c:3560
+#: modules/demux/ts.c:3558
 msgid "4:3 subtitles"
 msgstr "4:3 podnapisi"
 
-#: modules/demux/ts.c:3564
+#: modules/demux/ts.c:3562
 msgid "16:9 subtitles"
 msgstr "16:9 podnapisi"
 
-#: modules/demux/ts.c:3568
+#: modules/demux/ts.c:3566
 msgid "2.21:1 subtitles"
 msgstr "2.21:1 podnapisi"
 
-#: modules/demux/ts.c:3572 modules/demux/ts.c:3753 modules/demux/ts.c:3794
+#: modules/demux/ts.c:3570 modules/demux/ts.c:3751 modules/demux/ts.c:3792
 msgid "hearing impaired"
 msgstr "slušno omejeni"
 
-#: modules/demux/ts.c:3576
+#: modules/demux/ts.c:3574
 msgid "4:3 hearing impaired"
 msgstr "4:3 slušno omejeni"
 
-#: modules/demux/ts.c:3580
+#: modules/demux/ts.c:3578
 msgid "16:9 hearing impaired"
 msgstr "16:9 slušno omejeni"
 
-#: modules/demux/ts.c:3584
+#: modules/demux/ts.c:3582
 msgid "2.21:1 hearing impaired"
 msgstr "2.21:1 slušno omejeni"
 
-#: modules/demux/ts.c:3749 modules/demux/ts.c:3790
+#: modules/demux/ts.c:3747 modules/demux/ts.c:3788
 msgid "clean effects"
 msgstr "počisti učinke"
 
-#: modules/demux/ts.c:3757 modules/demux/ts.c:3798
+#: modules/demux/ts.c:3755 modules/demux/ts.c:3796
 msgid "visual impaired commentary"
 msgstr "vidno omejeni"
 
@@ -16422,7 +16439,7 @@ msgid "Filter:"
 msgstr "Filter:"
 
 #: modules/gui/qt4/components/open_panels.cpp:155
-#: modules/gui/qt4/dialogs_provider.cpp:631
+#: modules/gui/qt4/dialogs_provider.cpp:637
 msgid "Open subtitles file"
 msgstr "Odpri datoteko s podnapisi"
 
@@ -16932,19 +16949,19 @@ msgstr ""
 msgid "Open Directory"
 msgstr "Odpri mapo"
 
-#: modules/gui/qt4/dialogs_provider.cpp:460
+#: modules/gui/qt4/dialogs_provider.cpp:466
 msgid "Open playlist file"
 msgstr "Odpri seznam predvajanja"
 
-#: modules/gui/qt4/dialogs_provider.cpp:471
+#: modules/gui/qt4/dialogs_provider.cpp:477
 msgid "Choose a filename to save playlist"
 msgstr "Izbor datoteke za shranjevanje seznama predvajanja"
 
-#: modules/gui/qt4/dialogs_provider.cpp:473
+#: modules/gui/qt4/dialogs_provider.cpp:479
 msgid "XSPF playlist (*.xspf);; "
 msgstr "XSPF seznam predvajanja (*.xspf);; "
 
-#: modules/gui/qt4/dialogs_provider.cpp:474
+#: modules/gui/qt4/dialogs_provider.cpp:480
 msgid "M3U playlist (*.m3u);; Any (*.*) "
 msgstr "M3U seznam predvajanja (*.m3u);; Vse datoteke (*.*) "
 
@@ -23616,6 +23633,9 @@ msgstr "Filter ponazoritev"
 #: modules/visualization/visual/visual.c:123
 msgid "Spectrum analyser"
 msgstr "Spektralna analiza"
+
+#~ msgid "VLC could not find encoder \"%s\"."
+#~ msgstr "Predvajalnik VLC ne najde kodirnika \"%s\"."
 
 #~ msgid "Quartz video"
 #~ msgstr "Quartz slika"
