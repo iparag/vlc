@@ -1,7 +1,7 @@
-Changes between 0.9.4 and 0.9.5-git:
+Changes between 0.9.4 and 0.9.5-rc1:
 ------------------------------------
 Security updates:
- * Fixed buffer overflow in TiVo demuxer (SA-0809)
+ * Fixed buffer overflow in TiVo demuxer (SA-0809, CVE-2008-4686, CVE-2008-4654)
  * Fixed libpng CVE-2008-3964 in Win32 and MacOS builds
 
 Features:
