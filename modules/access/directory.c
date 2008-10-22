@@ -149,7 +149,7 @@ static int Open( vlc_object_t *p_this )
 {
     access_t *p_access = (access_t*)p_this;
 
-    if( !p_access->psz_path )
+    if( !p_access->psz_path || !strcmp( p_access->psz_path, "-" ) )
         return VLC_EGENERIC;
 
     DIR *handle = OpenDir (p_this, p_access->psz_path);
