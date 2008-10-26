@@ -22831,9 +22831,6 @@ msgstr "Filtro do Visualizador"
 msgid "Spectrum analyser"
 msgstr "Analizador de espectro"
 
-#~ msgid "VLC could not find encoder \"%s\"."
-#~ msgstr "O VLC não pôde encontrar o codificador \"%s\"."
-
 #~ msgid ""
 #~ "This adds post-processing filters to enhance the picture quality, for "
 #~ "instance deinterlacing, or to clone or distort the video window."
@@ -22844,6 +22841,9 @@ msgstr "Analizador de espectro"
 
 #~ msgid "Audio CD - Track "
 #~ msgstr "CD de Áudio - Trilha "
+
+#~ msgid "VLC could not find encoder \"%s\"."
+#~ msgstr "O VLC não pôde encontrar o codificador \"%s\"."
 
 #~ msgid ""
 #~ "failed to convert subtitle encoding.\n"
