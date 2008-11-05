@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the VLC package.
 # Alexey Lugin, 2008
 #
-
 msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-26 20:31+0000\n"
+"POT-Creation-Date: 2008-11-05 22:00+0200\n"
 "PO-Revision-Date: 2008-10-07 04:34+0200\n"
 "Last-Translator: Alexey Lugin <alex@ukrlocal.info>\n"
 "Language-Team: Ukrainin <alex@ukrlocal.info>\n"
@@ -1536,9 +1535,8 @@ msgstr "Шведська"
 msgid "Turkish"
 msgstr "Турецька"
 
-#: src/libvlc-module.c:125
-#, fuzzy
-msgid "Ukranian"
+#: src/libvlc-module.c:125 src/text/iso-639_def.h:192
+msgid "Ukrainian"
 msgstr "Українська"
 
 #: src/libvlc-module.c:145
@@ -5197,10 +5195,6 @@ msgstr "Тві"
 #: src/text/iso-639_def.h:191
 msgid "Uighur"
 msgstr "Уйгурська"
-
-#: src/text/iso-639_def.h:192
-msgid "Ukrainian"
-msgstr "Українська"
 
 #: src/text/iso-639_def.h:193
 msgid "Urdu"
@@ -24132,6 +24126,10 @@ msgstr "Фільтр візуалізатора"
 #: modules/visualization/visual/visual.c:123
 msgid "Spectrum analyser"
 msgstr "Аналізатор спектра"
+
+#, fuzzy
+#~ msgid "Ukranian"
+#~ msgstr "Українська"
 
 #~ msgid ""
 #~ "\n"

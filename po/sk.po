@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Slovak translation for VLC Media Player\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-10-28 23:14+0000\n"
+"POT-Creation-Date: 2008-11-05 22:00+0200\n"
 "PO-Revision-Date: 2008-11-01 21:58+0100\n"
 "Last-Translator: Marián Hikaník <podnety-at-mojepreklady.net>\n"
 "Language-Team: Marián Hikaník, translation controlled by: Pavel Kříž\n"
@@ -18195,7 +18195,8 @@ msgstr "Aktivovať upozornenie na aktualizácie"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:155
 #, fuzzy
-msgid "This is VLC's skinnable interface. You can download skins at <a href="
+msgid ""
+"This is VLC's skinnable interface. You can download skins at &lt;a href="
 msgstr ""
 "Toto je skinovateľné rozhranie programu VLC. Súbory s novým vzhľadom si "
 "môžete stiahnuť na adrese &lt;a href="
