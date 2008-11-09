@@ -2339,6 +2339,8 @@ end:
 {
     int i_start, i_stop;
 
+    if(![o_msgs_panel isVisible]) return;
+
     vlc_mutex_lock( p_intf->p_sys->p_sub->p_lock );
     i_stop = *p_intf->p_sys->p_sub->pi_stop;
     vlc_mutex_unlock( p_intf->p_sys->p_sub->p_lock );
