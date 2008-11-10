@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-11-05 22:00+0200\n"
-"PO-Revision-Date: 2008-11-02 11:37+0100\n"
+"POT-Creation-Date: 2008-11-04 22:04+0000\n"
+"PO-Revision-Date: 2008-11-09 09:49+0100\n"
 "Last-Translator: Myckel Habets <myckel@sdf.lonestar.org>\n"
 "Language-Team: De Vrije CD <leiden@losc.nl>\n"
 "MIME-Version: 1.0\n"
@@ -18055,11 +18055,9 @@ msgid "Activate update notifier"
 msgstr "Melding van nieuwere versie activeren"
 
 #: modules/gui/qt4/ui/sprefs_interface.ui:155
-#, fuzzy
 msgid ""
 "This is VLC's skinnable interface. You can download skins at &lt;a href="
-msgstr ""
-"Dit is VLC's aanpasbare interface. U kan themas downloaden van &lt;a href="
+msgstr "Dit is VLC's thema interface. U kan thema's downloaden van &lt;a href="
 
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:50
 msgid "Subtitles Language"
