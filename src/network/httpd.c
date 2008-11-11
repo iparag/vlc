@@ -2465,10 +2465,11 @@ retry:
         /* Handle client sockets */
         vlc_mutex_lock( &host->lock );
         now = mdate();
+        nfd = host->nfd;
         for( int i_client = 0; i_client < host->i_client; i_client++ )
         {
             httpd_client_t *cl = host->client[i_client];
-            const struct pollfd *pufd = &ufd[host->nfd + i_client];
+            const struct pollfd *pufd = &ufd[nfd];
 
             assert( pufd < &ufd[sizeof(ufd) / sizeof(ufd[0])] );
 
@@ -2502,6 +2503,8 @@ retry:
             {
                 cl->b_read_waiting = true;
             }
+
+            ++nfd;
         }
         vlc_mutex_unlock( &host->lock );
 
