@@ -664,7 +664,7 @@ msgstr "&Sources supplémentaires"
 msgid ""
 "Some options are available but hidden. Check \"Advanced options\" to see "
 "them."
-msgstr "Des options sont cachés. Cochez « Options avancées » pour les voir."
+msgstr "Des options sont cachées. Cochez « Options avancées » pour les voir."
 
 #: include/vlc_intf_strings.h:94 modules/gui/macosx/extended.m:77
 msgid "Image clone"
@@ -1573,7 +1573,7 @@ msgid ""
 "automatically select the best module available."
 msgstr ""
 "Cette option permet de choisir l’interface utilisée par VLC. Le comportement "
-"par défaut est de choisir automatiquement la meilleure interfa ce."
+"par défaut est de choisir automatiquement la meilleure interface."
 
 #: src/libvlc-module.c:155 modules/control/ntservice.c:57
 msgid "Extra interface modules"
@@ -6487,7 +6487,7 @@ msgstr "Taille du cache pour les flux DV, en millisecondes."
 
 #: modules/access/dv.c:77
 msgid "Digital Video (Firewire/ieee1394)  input"
-msgstr "Entrée Digital Video (Firewire/ieee1394)"
+msgstr "Entrée Digitale Vidéo (Firewire/ieee1394)"
 
 #: modules/access/dv.c:78
 msgid "dv"
@@ -6727,7 +6727,7 @@ msgstr "Limiteur de bande passante"
 
 #: modules/access_filter/dump.c:42
 msgid "Force use of dump module"
-msgstr "Imposer l’utilisation de module «dump»"
+msgstr "Imposer l’utilisation de module « dump »"
 
 #: modules/access_filter/dump.c:43
 msgid "Activate the dump module even for media with fast seeking."
@@ -6782,7 +6782,7 @@ msgstr "Répertoire utilisé pour stocker les fichiers temporaires du différé"
 
 #: modules/access_filter/timeshift.c:60
 msgid "Force use of the timeshift module"
-msgstr "Imposer l’utilisation de module «timeshift»"
+msgstr "Imposer l’utilisation de module « timeshift »"
 
 #: modules/access_filter/timeshift.c:61
 msgid ""
@@ -7059,11 +7059,11 @@ msgstr "Microsoft Media Server (MMS)"
 
 #: modules/access_output/dummy.c:45 modules/stream_out/dummy.c:51
 msgid "Dummy stream output"
-msgstr "Flux de sortie inutile"
+msgstr "Flux de sortie bidon"
 
 #: modules/access_output/dummy.c:46 modules/misc/dummy/dummy.c:61
 msgid "Dummy"
-msgstr "Inutile"
+msgstr "Bidon"
 
 #: modules/access_output/file.c:64
 msgid "Append to file"
@@ -7071,7 +7071,7 @@ msgstr "Ajouter au fichier"
 
 #: modules/access_output/file.c:65
 msgid "Append to file if it exists instead of replacing it."
-msgstr "Ecrit à la fin du fichier au lieu de le remplacer."
+msgstr "Ecrire à la fin du fichier au lieu de le remplacer."
 
 #: modules/access_output/file.c:69
 msgid "File stream output"
@@ -17029,9 +17029,8 @@ msgid "Audio Port:"
 msgstr "Port audio :"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:75
-#, fuzzy
 msgid "Broadcast"
-msgstr "Diffusion :"
+msgstr "Diffusion"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:76
 msgid "Schedule"
@@ -21267,17 +21266,16 @@ msgid "Clone video filter"
 msgstr "Filtre vidéo de duplication d’image"
 
 #: modules/video_filter/colorthres.c:55
-#, fuzzy
 msgid ""
 "Colors similar to this will be kept, others will be grayscaled. This must be "
 "an hexadecimal (like HTML colors). The first two chars are for red, then "
 "green, then blue. #000000 = black, #FF0000 = red, #00FF00 = green, #FFFF00 = "
 "yellow (red + green), #FFFFFF = white"
 msgstr ""
-"Couleur du texte à afficher. Ceci doit être un hexadécimal, comme pour les "
-"couleurs HTML. Les deux premiers caractères correspondent au rouge, pius "
-"vert puis bleu. #000000 = noir, #FF0000 = rouge, #00FF00 = vert, #FFFF00 = "
-"jaune (rouge + bleu), #FFFFFF = blanc."
+"Couleurs à afficher, les autres seront en niveaux de gris. Ceci doit être un "
+"hexadécimal, comme pour les couleurs HTML. Les deux premiers caractères "
+"correspondent au rouge, puis vert puis bleu. #000000 = noir, #FF0000 = "
+"rouge, #00FF00 = vert, #FFFF00 = jaune (rouge + bleu), #FFFFFF = blanc."
 
 #: modules/video_filter/colorthres.c:68
 msgid "Color threshold filter"
@@ -23552,12 +23550,6 @@ msgstr "Filtre de visualisation"
 msgid "Spectrum analyser"
 msgstr "Analyseur de spectre"
 
-#~ msgid "Diffusion"
-#~ msgstr "Podcasts"
-
-# msgid ""
-# "This is VLC's skinnable interface. You can download skins at &lt;a href="
-# msgstr ""
 # WARNING: update-po process generates '&lt;' for the needed '<' in msgid + sentence is cut after href="
 #~ msgid ""
 #~ "This is VLC's skinnable interface. You can download skins at <a href="
