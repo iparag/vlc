@@ -50,6 +50,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <inttypes.h>
+#include <stddef.h>
 
 #ifndef __cplusplus
 # include <stdbool.h>
