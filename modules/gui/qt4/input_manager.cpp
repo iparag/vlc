@@ -543,6 +543,15 @@ void InputManager::telexSetTransparency()
     emit toggleTelexTransparency();
 }
 
+void InputManager::reverse()
+{
+    if( hasInput() )
+    {
+        int i_rate = var_GetInteger( p_input, "rate" );
+        var_SetInteger( p_input, "rate", -i_rate );
+    }
+}
+
 void InputManager::slower()
 {
     if( hasInput() )
@@ -675,6 +684,11 @@ void MainInputManager::customEvent( QEvent *event )
 }
 
 /* Playlist Control functions */
+void MainInputManager::reverse()
+{
+    getIM()->reverse();
+}
+
 void MainInputManager::stop()
 {
    playlist_Stop( THEPL );

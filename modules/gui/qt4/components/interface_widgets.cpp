@@ -57,6 +57,7 @@
 #include <math.h>
 
 #define I_PLAY_TOOLTIP N_("Play\nIf the playlist is empty, open a media")
+#define I_REVERSE_TOOLTIP N_("Reverse\nRevert playback direction")
 
 /**********************************************************************
  * Video Widget. A simple frame on which video is drawn
@@ -641,6 +642,14 @@ ControlsWidget::ControlsWidget( intf_thread_t *_p_i,
     sizePolicy.setHorizontalStretch( 0 );
     sizePolicy.setVerticalStretch( 0 );
 
+    /* Reverse */
+    reverseButton = new QPushButton;
+    reverseButton->setSizePolicy( sizePolicy );
+    reverseButton->setMaximumSize( QSize( 32, 32 ) );
+    reverseButton->setMinimumSize( QSize( 32, 32 ) );
+    reverseButton->setIconSize( QSize( 26, 26 ) );
+    reverseButton->setFocusPolicy( Qt::NoFocus );
+
     /* Play */
     playButton = new QPushButton;
     playButton->setSizePolicy( sizePolicy );
@@ -676,6 +685,7 @@ ControlsWidget::ControlsWidget( intf_thread_t *_p_i,
 
     /* Add this block to the main layout */
 
+    BUTTON_SET_ACT_I( reverseButton, "", reverse_b, qtr( I_REVERSE_TOOLTIP ), reverse() );
     BUTTON_SET_ACT_I( playButton, "", play_b, qtr( I_PLAY_TOOLTIP ), play() );
     BUTTON_SET_ACT_I( prevButton, "" , previous_b,
                       qtr( "Previous media in the playlist" ), prev() );
@@ -758,6 +768,10 @@ ControlsWidget::ControlsWidget( intf_thread_t *_p_i,
         controlLayout->addWidget( discFrame, 1, 8, 2, 3, Qt::AlignBottom );
         controlLayout->addWidget( telexFrame, 1, 8, 2, 5, Qt::AlignBottom );
 
+        controlLayout->addWidget( reverseButton, 2, 0, 2, 2, Qt::AlignBottom );
+        controlLayout->setColumnMinimumWidth( 2, 10 );
+        controlLayout->setColumnStretch( 2, 0 );
+
         controlLayout->addWidget( playButton, 2, 0, 2, 2, Qt::AlignBottom );
         controlLayout->setColumnMinimumWidth( 2, 10 );
         controlLayout->setColumnStretch( 2, 0 );
@@ -838,6 +852,11 @@ void ControlsWidget::toggleTeletextTransparency()
 void ControlsWidget::stop()
 {
     THEMIM->stop();
+}
+
+void ControlsWidget::reverse()
+{
+    THEMIM->reverse();
 }
 
 void ControlsWidget::play()
@@ -1045,8 +1064,9 @@ FullscreenControllerWidget::FullscreenControllerWidget( intf_thread_t *_p_i,
     fsLayout->addWidget( fasterButton, 0, 12 );
 
     /* Second line */
-    fsLayout->addWidget( playButton, 1, 0, 1, 2 );
-    fsLayout->addLayout( controlButLayout, 1, 2 );
+    fsLayout->addWidget( reverseButton, 1, 0, 1, 2);
+    fsLayout->addWidget( playButton, 1, 0, 1, 3 );
+    fsLayout->addLayout( controlButLayout, 1, 3 );
 
     fsLayout->addWidget( discFrame, 1, 3 );
     fsLayout->addWidget( telexFrame, 1, 4 );
