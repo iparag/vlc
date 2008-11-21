@@ -473,6 +473,9 @@ void input_ConfigVarInit ( input_thread_t *p_input )
     val.b_bool = true; /* Fixed later*/
     var_Change( p_input, "can-pause", VLC_VAR_SETVALUE, &val, NULL );
 
+    var_Create( p_input, "can-rate", VLC_VAR_BOOL );
+    var_SetBool( p_input, "can-rate", false );
+
     var_Create( p_input, "can-rewind", VLC_VAR_BOOL );
     val.b_bool = false;
     var_Change( p_input, "can-rewind", VLC_VAR_SETVALUE, &val, NULL );
