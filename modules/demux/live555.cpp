@@ -1276,14 +1276,9 @@ static int Control( demux_t *p_demux, int i_query, va_list args )
 
                 /* Retrieve the starttime if possible */
                 p_sys->i_npt_start = (int64_t)( p_sys->ms->playStartTime() * (double)1000000.0 );
-                if( p_sys->i_npt_start < 0 )
-                    p_sys->i_npt_start = -1;
-                else p_sys->i_npt = p_sys->i_npt_start;
 
                 /* Retrieve the duration if possible */
                 p_sys->i_npt_length = (int64_t)( p_sys->ms->playEndTime() * (double)1000000.0 );
-                if( p_sys->i_npt_length < 0 )
-                    p_sys->i_npt_length = -1;
 
                 msg_Dbg( p_demux, "seek start: %lld stop:%lld", p_sys->i_npt_start, p_sys->i_npt_length );
                 return VLC_SUCCESS;
