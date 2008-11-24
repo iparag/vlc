@@ -2475,6 +2475,7 @@ retry:
 
             if( cl->fd != pufd->fd )
                 continue; // we were not waiting for this client
+            ++nfd;
             if( pufd->revents == 0 )
                 continue; // no event received
 
@@ -2503,8 +2504,6 @@ retry:
             {
                 cl->b_read_waiting = true;
             }
-
-            ++nfd;
         }
         vlc_mutex_unlock( &host->lock );
 
