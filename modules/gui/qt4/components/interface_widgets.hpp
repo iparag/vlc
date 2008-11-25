@@ -186,7 +186,7 @@ protected:
     QGridLayout         *controlLayout;
     InputSlider         *slider;
     QPushButton         *prevSectionButton, *nextSectionButton, *menuButton;
-    QPushButton         *playButton, *reverseButton, *fullscreenButton, *extSettingsButton;
+    QPushButton         *playButton, *fullscreenButton, *extSettingsButton;
     QPushButton         *telexTransparent, *telexOn;
     QSpinBox            *telexPage;
     QToolButton         *slowerButton, *fasterButton;
@@ -200,7 +200,6 @@ protected:
     bool                 b_telexTransparent;
     bool                 b_telexEnabled;
 protected slots:
-    void reverse();
     void play();
     void stop();
     void prev();

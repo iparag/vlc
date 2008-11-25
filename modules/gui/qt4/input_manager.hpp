@@ -103,7 +103,6 @@ public slots:
     void setInput( input_thread_t * ); ///< Our controlled input changed
     void sliderUpdate( float ); ///< User dragged the slider. We get new pos
     void togglePlayPause();
-    void reverse();
     void slower();
     void faster();
     void normalRate();
@@ -168,7 +167,6 @@ private:
 public slots:
     bool teletextState();
     void togglePlayPause();
-    void reverse();
     void stop();
     void next();
     void prev();
