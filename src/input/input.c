@@ -1599,13 +1599,10 @@ static bool Control( input_thread_t *p_input, int i_type,
         case INPUT_CONTROL_SET_RATE_FASTER:
         {
             int i_rate;
-            int i_rate_sign;
 
-            /* Get rate and direction */
             if( i_type == INPUT_CONTROL_SET_RATE )
             {
-                i_rate = abs( val.i_int );
-                i_rate_sign = val.i_int < 0 ? -1 : 1;
+                i_rate = val.i_int;
             }
             else
             {
@@ -1619,14 +1616,12 @@ static bool Control( input_thread_t *p_input, int i_type,
                 int i_idx;
                 int i;
 
-                i_rate_sign = p_input->p->i_rate < 0 ? -1 : 1;
-
                 i_error = INT_MAX;
                 i_idx = -1;
                 for( i = 0; ppi_factor[i][0] != 0; i++ )
                 {
                     const int i_test_r = INPUT_RATE_DEFAULT * ppi_factor[i][0] / ppi_factor[i][1];
-                    const int i_test_e = abs( abs( p_input->p->i_rate ) - i_test_r );
+                    const int i_test_e = abs(p_input->p->i_rate - i_test_r);
                     if( i_test_e < i_error )
                     {
                         i_idx = i;
@@ -1653,8 +1648,12 @@ static bool Control( input_thread_t *p_input, int i_type,
                 }
             }
 
-            /* Check rate bound */
-            if( i_rate < INPUT_RATE_MIN )
+            if( (i_rate < 0) && p_input->p->input.b_rescale_ts )
+            {
+                msg_Dbg( p_input, "cannot set negative rate" );
+                i_rate = INPUT_RATE_MIN;
+            }
+            else if( (i_rate > 0) && (i_rate < INPUT_RATE_MIN) )
             {
                 msg_Dbg( p_input, "cannot set rate faster" );
                 i_rate = INPUT_RATE_MIN;
@@ -1664,22 +1663,6 @@ static bool Control( input_thread_t *p_input, int i_type,
                 msg_Dbg( p_input, "cannot set rate slower" );
                 i_rate = INPUT_RATE_MAX;
             }
-
-            /* Apply direction */
-            if( i_rate_sign < 0 )
-            {
-                if( p_input->p->input.b_rescale_ts )
-                {
-                    msg_Dbg( p_input, "cannot set negative rate" );
-                    i_rate = p_input->p->i_rate;
-                    assert( i_rate > 0 );
-                }
-                else
-                {
-                    i_rate *= i_rate_sign;
-                }
-            }
-
             if( i_rate != INPUT_RATE_DEFAULT &&
                 ( ( !p_input->b_can_pace_control && !p_input->p->b_can_rate_control ) ||
                   ( p_input->p->p_sout && !p_input->p->b_out_pace_control ) ) )
@@ -1692,17 +1675,10 @@ static bool Control( input_thread_t *p_input, int i_type,
             {
                 int i_ret;
                 if( p_input->p->input.p_access )
-                {
                     i_ret = VLC_EGENERIC;
-                }
                 else
-                {
-                    if( !p_input->p->input.b_rescale_ts )
-                        es_out_Control( p_input->p->p_es_out, ES_OUT_RESET_PCR );
-
                     i_ret = demux_Control( p_input->p->input.p_demux,
                                             DEMUX_SET_RATE, &i_rate );
-                }
                 if( i_ret )
                 {
                     msg_Warn( p_input, "ACCESS/DEMUX_SET_RATE failed" );
@@ -1719,6 +1695,7 @@ static bool Control( input_thread_t *p_input, int i_type,
 
                 p_input->p->i_rate = i_rate;
 
+                /* FIXME do we need a RESET_PCR when !p_input->p->input.b_rescale_ts ? */
                 if( p_input->p->input.b_rescale_ts )
                     input_EsOutChangeRate( p_input->p->p_es_out, i_rate );
 
