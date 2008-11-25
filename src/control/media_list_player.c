@@ -47,11 +47,11 @@ get_next_path( libvlc_media_list_player_t * p_mlp )
             return NULL;
         return libvlc_media_list_path_with_root_index(0);
     }
-
+    
     p_sublist_of_playing_item = libvlc_media_list_sublist_at_path(
                             p_mlp->p_mlist,
                             p_mlp->current_playing_item_path );
-
+ 
     /* If item just gained a sublist just play it */
     if( p_sublist_of_playing_item )
     {
@@ -229,7 +229,7 @@ set_current_playing_item( libvlc_media_list_player_t * p_mlp,
     {
         p_mlp->p_mi = libvlc_media_player_new_from_media(p_md, p_e);
     }
-
+    
     if( p_md->p_subitems && libvlc_media_list_count( p_md->p_subitems, NULL ) > 0 )
     {
         libvlc_media_t * p_submd;
@@ -334,7 +334,7 @@ void libvlc_media_list_player_set_media_list(
     }
     libvlc_media_list_retain( p_mlist );
     p_mlp->p_mlist = p_mlist;
-
+ 
     install_playlist_observer( p_mlp );
 
     vlc_mutex_unlock( &p_mlp->object_lock );

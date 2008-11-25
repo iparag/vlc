@@ -66,7 +66,6 @@ typedef struct
     const char *psz_name;
     vlc_callback_t callback;
 } vlc_input_callback_t;
-
 static void InputAddCallbacks( input_thread_t *, const vlc_input_callback_t * );
 static void InputDelCallbacks( input_thread_t *, const vlc_input_callback_t * );
 
@@ -472,11 +471,6 @@ void input_ConfigVarInit ( input_thread_t *p_input )
     var_Create( p_input, "can-pause", VLC_VAR_BOOL );
     val.b_bool = true; /* Fixed later*/
     var_Change( p_input, "can-pause", VLC_VAR_SETVALUE, &val, NULL );
-
-    var_Create( p_input, "can-rewind", VLC_VAR_BOOL );
-    val.b_bool = false;
-    var_Change( p_input, "can-rewind", VLC_VAR_SETVALUE, &val, NULL );
-
     var_Create( p_input, "teletext-es", VLC_VAR_INTEGER );
     var_SetInteger( p_input, "teletext-es", -1 );
 
@@ -508,7 +502,6 @@ static void InputAddCallbacks( input_thread_t *p_input,
                          p_callbacks[i].psz_name,
                          p_callbacks[i].callback, NULL );
 }
-
 static void InputDelCallbacks( input_thread_t *p_input,
                                const vlc_input_callback_t *p_callbacks )
 {
@@ -518,7 +511,6 @@ static void InputDelCallbacks( input_thread_t *p_input,
                          p_callbacks[i].psz_name,
                          p_callbacks[i].callback, NULL );
 }
-
 /*****************************************************************************
  * All Callbacks:
  *****************************************************************************/
@@ -557,6 +549,7 @@ static int RateCallback( vlc_object_t *p_this, char const *psz_cmd,
     {
         input_ControlPush( p_input, INPUT_CONTROL_SET_RATE, &newval );
     }
+
     return VLC_SUCCESS;
 }
 

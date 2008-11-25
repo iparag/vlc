@@ -180,18 +180,18 @@ static input_thread_t *Create( vlc_object_t *p_parent, input_item_t *p_item,
     p_input->b_eof = false;
     p_input->b_can_pace_control = true;
     p_input->p->i_start = 0;
-    p_input->i_time     = 0;
+    p_input->i_time  = 0;
     p_input->p->i_stop  = 0;
-    p_input->p->i_run   = 0;
+    p_input->p->i_run  = 0;
     p_input->p->i_title = 0;
-    p_input->p->title = NULL;
+    p_input->p->title   = NULL;
     p_input->p->i_title_offset = p_input->p->i_seekpoint_offset = 0;
     p_input->i_state = INIT_S;
     p_input->p->i_rate  = INPUT_RATE_DEFAULT;
     TAB_INIT( p_input->p->i_bookmark, p_input->p->bookmark );
     TAB_INIT( p_input->p->i_attachment, p_input->p->attachment );
     p_input->p->p_es_out = NULL;
-    p_input->p->p_sout   = NULL;
+    p_input->p->p_sout  = NULL;
     p_input->p->b_out_pace_control = false;
     p_input->i_pts_delay = 0;
 
@@ -1628,7 +1628,6 @@ static bool Control( input_thread_t *p_input, int i_type,
                         i_error = i_test_e;
                     }
                 }
-
                 assert( i_idx >= 0 && ppi_factor[i_idx][0] != 0 );
 
                 if( i_type == INPUT_CONTROL_SET_RATE_SLOWER )
@@ -1693,7 +1692,7 @@ static bool Control( input_thread_t *p_input, int i_type,
                 var_Change( p_input, "rate", VLC_VAR_SETVALUE, &val, NULL );
                 var_SetBool( p_input, "rate-change", true );
 
-                p_input->p->i_rate = i_rate;
+                p_input->p->i_rate  = i_rate;
 
                 /* FIXME do we need a RESET_PCR when !p_input->p->input.b_rescale_ts ? */
                 if( p_input->p->input.b_rescale_ts )
@@ -2180,7 +2179,6 @@ static int InputSourceInit( input_thread_t *p_input,
                             &in->b_can_pause ) )
             in->b_can_pause = false;
         var_SetBool( p_input, "can-pause", in->b_can_pause );
-        var_SetBool( p_input, "can-rewind", !in->b_rescale_ts );
 
         int ret = demux_Control( in->p_demux, DEMUX_CAN_SEEK,
                         &val.b_bool );
@@ -2265,10 +2263,7 @@ static int InputSourceInit( input_thread_t *p_input,
 
             access_Control( in->p_access, ACCESS_CAN_PAUSE,
                              &in->b_can_pause );
-
             var_SetBool( p_input, "can-pause", in->b_can_pause );
-            var_SetBool( p_input, "can-rewind", !in->b_rescale_ts );
-
             access_Control( in->p_access, ACCESS_CAN_SEEK,
                              &val.b_bool );
             var_Set( p_input, "seekable", val );
