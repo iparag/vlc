@@ -1,5 +1,5 @@
-Changes between 0.9.6 and 0.9.8:
---------------------------------
+Changes between 0.9.6 and 0.9.8a:
+---------------------------------
 
 Security update:
  * Fixed buffer overflow in Real demuxer (SA-0811, CVE-2008-5276)
