@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
 "POT-Creation-Date: 2008-12-07 17:24+0000\n"
-"PO-Revision-Date: 2008-12-11 22:51+0100\n"
+"PO-Revision-Date: 2008-12-15 21:53+0100\n"
 "Last-Translator: Myckel Habets <myckel@sdf.lonestar.org>\n"
 "Language-Team: De Vrije CD <leiden@losc.nl>\n"
 "MIME-Version: 1.0\n"
@@ -149,7 +149,7 @@ msgstr "Video"
 
 #: include/vlc_config_cat.h:76
 msgid "Video settings"
-msgstr "Video instellingen"
+msgstr "Video-instellingen"
 
 #: include/vlc_config_cat.h:78 include/vlc_config_cat.h:79
 msgid "General video settings"
@@ -588,7 +588,7 @@ msgstr "Subgroep toevoegen"
 
 #: include/vlc_intf_strings.h:59
 msgid "Stream..."
-msgstr "Stream..."
+msgstr "Streamen..."
 
 #: include/vlc_intf_strings.h:60
 msgid "Save..."
@@ -649,7 +649,7 @@ msgstr "Afspeellijstbestand &laden..."
 
 #: include/vlc_intf_strings.h:82
 msgid "Search"
-msgstr "Zoek"
+msgstr "Zoeken"
 
 #: include/vlc_intf_strings.h:83
 msgid "Search Filter"
@@ -973,7 +973,7 @@ msgid ""
 "VLC does not support the audio or video format \"%4.4s\". Unfortunately "
 "there is no way for you to fix this."
 msgstr ""
-"VLC ondersteunt het \"%4.4s\" audio of video formaat niet. Helaas kunt u "
+"VLC ondersteunt het \"%4.4s\" audio- of videoformaat niet. Helaas kunt u "
 "hier weinig aan doen om dit op te lossen."
 
 #: src/input/decoder.c:167 src/input/decoder.c:180 src/input/decoder.c:384
@@ -1288,7 +1288,7 @@ msgstr "OK"
 #: src/interface/interface.c:205 modules/gui/macosx/intf.m:513
 #: modules/gui/macosx/intf.m:514
 msgid "Add Interface"
-msgstr "Voeg interface toe"
+msgstr "Interface toevoegen"
 
 #: src/interface/interface.c:209
 msgid "Console"
@@ -1378,7 +1378,7 @@ msgid ""
 "Press the RETURN key to continue...\n"
 msgstr ""
 "\n"
-"Druk op RETURN om verder te gaan...\n"
+"Druk op ENTER om verder te gaan...\n"
 
 #: src/libvlc.h:199 src/libvlc-module.c:1330 src/libvlc-module.c:1331
 #: src/libvlc-module.c:2401 src/video_output/vout_intf.c:274
@@ -1709,7 +1709,7 @@ msgstr ""
 #: src/libvlc-module.c:226 modules/gui/qt4/ui/sprefs_audio.ui:20
 #: modules/stream_out/display.c:41
 msgid "Enable audio"
-msgstr "Schakel geluid in"
+msgstr "Audio activeren"
 
 #: src/libvlc-module.c:228
 msgid ""
@@ -1936,7 +1936,7 @@ msgstr ""
 #: src/libvlc-module.c:342 modules/gui/qt4/ui/sprefs_video.ui:26
 #: modules/stream_out/display.c:43
 msgid "Enable video"
-msgstr "Schakel video in"
+msgstr "Video activeren"
 
 #: src/libvlc-module.c:344
 msgid ""
@@ -2000,7 +2000,7 @@ msgstr ""
 
 #: src/libvlc-module.c:367
 msgid "Video title"
-msgstr "Video-titel"
+msgstr "Videotitel"
 
 #: src/libvlc-module.c:369
 msgid ""
@@ -2194,16 +2194,15 @@ msgstr "Deactiveer de screensaver tijdens het afspelen van video."
 
 #: src/libvlc-module.c:434
 msgid "Inhibit the power management daemon during playback"
-msgstr "Deactiveer de power management daemon tijdens het afspelen"
+msgstr "Deactiveer de energiebeheer-daemon tijdens het afspelen"
 
 #: src/libvlc-module.c:435
 msgid ""
 "Inhibits the power management daemon during any playback, to avoid the "
 "computer being suspended because of inactivity."
 msgstr ""
-"Deactiveer de power management daemon tijdens het afspelen, om te voorkomen "
-"dat de computer in slaapstand gezet wordt doordat er geen activiteit "
-"plaatsvindt."
+"Deactiveer de energiebeheer-daemon tijdens het afspelen, om te voorkomen dat "
+"de computer in slaapstand gezet wordt doordat er geen activiteit plaatsvindt."
 
 #: src/libvlc-module.c:438 modules/gui/qt4/ui/sprefs_video.ui:48
 msgid "Window decorations"
@@ -2643,7 +2642,7 @@ msgstr "Aantal keer dat dezelfde invoer herhaald wordt"
 
 #: src/libvlc-module.c:646
 msgid "Start time"
-msgstr "Start tijd"
+msgstr "Starttijd"
 
 #: src/libvlc-module.c:648
 msgid "The stream will start at this position (in seconds)."
@@ -2651,7 +2650,7 @@ msgstr "De stream zal op deze positie starten (in seconden)."
 
 #: src/libvlc-module.c:650
 msgid "Stop time"
-msgstr "Stop tijd"
+msgstr "Stoptijd"
 
 #: src/libvlc-module.c:652
 msgid "The stream will stop at this position (in seconds)."
@@ -2718,7 +2717,7 @@ msgstr ""
 
 #: src/libvlc-module.c:683 modules/gui/qt4/ui/sprefs_subtitles.ui:170
 msgid "Force subtitle position"
-msgstr "Forceer ondertiteling positie"
+msgstr "Forceer ondertitelingspositie"
 
 #: src/libvlc-module.c:685
 msgid ""
@@ -2741,7 +2740,7 @@ msgstr "U kan sub-picture verwerking compleet uitschakelen."
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:22
 #: modules/stream_out/transcode.c:227
 msgid "On Screen Display"
-msgstr "Berichten op het scherm"
+msgstr "On Screen Display"
 
 #: src/libvlc-module.c:694
 msgid ""
@@ -2822,7 +2821,7 @@ msgstr "Zoek ook naar ondertitelingsbestanden in deze mappen"
 
 #: src/libvlc-module.c:726
 msgid "Use subtitle file"
-msgstr "Gebruik bestand met ondertiteling"
+msgstr "Gebruik ondertitelingsbestand"
 
 #: src/libvlc-module.c:728
 msgid ""
@@ -3324,7 +3323,7 @@ msgstr ""
 
 #: src/libvlc-module.c:974
 msgid "Access filter module"
-msgstr "Toegangsfilter module"
+msgstr "Toegangsfiltermodule"
 
 #: src/libvlc-module.c:976
 msgid ""
@@ -3363,11 +3362,11 @@ msgid ""
 msgstr ""
 "Indien VLC met real-time prioriteit draait is het in staat to veel beter te "
 "presteren vooral bij het streamen. Het kan echter ook de hele machine laten "
-"vastlopen of hem erg traag maken. Activeer dit enkel als je weet wat je doet."
+"vastlopen of hem erg traag maken. Activeer dit enkel als u weet wat u doet."
 
 #: src/libvlc-module.c:994
 msgid "Adjust VLC priority"
-msgstr "Pas VLCs prioriteit aan"
+msgstr "Pas VLC's prioriteit aan"
 
 #: src/libvlc-module.c:996
 msgid ""
@@ -3416,7 +3415,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1020
 msgid "VLM configuration file"
-msgstr "VLM configuratie bestand"
+msgstr "VLM configuratiebestand"
 
 #: src/libvlc-module.c:1022
 msgid "Read a VLM configuration file as soon as VLM is started."
@@ -3424,12 +3423,12 @@ msgstr "Lees een VLM configuratiebestand zodra VLM opgestart is."
 
 #: src/libvlc-module.c:1024
 msgid "Use a plugins cache"
-msgstr "Gebruik een plugin cache"
+msgstr "Gebruik een pluginbuffer"
 
 #: src/libvlc-module.c:1026
 msgid "Use a plugins cache which will greatly improve the startup time of VLC."
 msgstr ""
-"Gebruik een plugins cache waardoor VLC aanzienlijk sneller kan starten."
+"Gebruik een plugin buffer waardoor VLC aanzienlijk sneller kan starten."
 
 #: src/libvlc-module.c:1028
 msgid "Collect statistics"
@@ -3514,7 +3513,7 @@ msgstr "VLC is gestart vanuit een bestandsassociatie"
 #: src/libvlc-module.c:1069
 msgid "Tell VLC that it is being launched due to a file association in the OS"
 msgstr ""
-"Vertel VLC dat het is opgestart vanwege een bestands-associatie in het "
+"Vertel VLC dat het is opgestart vanwege een bestandsassociatie in het "
 "besturingssysteem."
 
 #: src/libvlc-module.c:1072
@@ -3583,7 +3582,7 @@ msgstr ""
 
 #: src/libvlc-module.c:1105
 msgid "Album art policy"
-msgstr "Album kunst beleid"
+msgstr "Albumkunst beleid"
 
 #: src/libvlc-module.c:1107
 msgid "Choose how album art will be downloaded."
@@ -20451,7 +20450,7 @@ msgstr "Hier kunt u de basispoort voor de RTP streaming opgeven."
 
 #: modules/stream_out/rtp.c:111
 msgid "Audio port"
-msgstr "Audio poort"
+msgstr "Audiopoort"
 
 #: modules/stream_out/rtp.c:113
 msgid ""
@@ -20460,7 +20459,7 @@ msgstr "Hier kunt u de standaard audiopoort voor RTP streaming opgeven."
 
 #: modules/stream_out/rtp.c:114
 msgid "Video port"
-msgstr "Video poort"
+msgstr "Videopoort"
 
 #: modules/stream_out/rtp.c:116
 msgid ""
@@ -20642,7 +20641,7 @@ msgstr "MPEG2 video switcher stream uitvoer"
 
 #: modules/stream_out/transcode.c:54
 msgid "Video encoder"
-msgstr "Video encoder"
+msgstr "Video-encoder"
 
 #: modules/stream_out/transcode.c:56
 msgid ""
@@ -20694,19 +20693,19 @@ msgstr "Geeft de deïnterlace-module om te gebruiken op."
 
 #: modules/stream_out/transcode.c:82
 msgid "Maximum video width"
-msgstr "Maximale video breedte"
+msgstr "Maximale videobreedte"
 
 #: modules/stream_out/transcode.c:84
 msgid "Maximum output video width."
-msgstr "Maximale uitvoer video breedte."
+msgstr "Maximale uitvoer videobreedte."
 
 #: modules/stream_out/transcode.c:85
 msgid "Maximum video height"
-msgstr "Maximale video hoogte"
+msgstr "Maximale videohoogte"
 
 #: modules/stream_out/transcode.c:87
 msgid "Maximum output video height."
-msgstr "Maximale uitvoer video hoogte."
+msgstr "Maximale uitvoer videohoogte."
 
 #: modules/stream_out/transcode.c:90
 msgid ""
@@ -21801,7 +21800,7 @@ msgstr "Vullen"
 
 #: modules/video_filter/deinterlace.c:112 modules/video_output/x11/xvmc.c:130
 msgid "Deinterlace mode"
-msgstr "Deïnterlace-methode"
+msgstr "Deïnterlace-modus"
 
 #: modules/video_filter/deinterlace.c:113
 msgid "Deinterlace method to use for local playback."
@@ -21809,7 +21808,7 @@ msgstr "Deïnterlace-methode om te gebruiken bij lokaal afspelen."
 
 #: modules/video_filter/deinterlace.c:115
 msgid "Streaming deinterlace mode"
-msgstr "Streaming deïnterlacemodus"
+msgstr "Streaming deïnterlace-modus"
 
 #: modules/video_filter/deinterlace.c:116
 msgid "Deinterlace method to use for streaming."
@@ -21854,11 +21853,11 @@ msgstr ""
 
 #: modules/video_filter/erase.c:59
 msgid "X coordinate of the mask."
-msgstr "X-coordinaat van het masker."
+msgstr "X-coördinaat van het masker."
 
 #: modules/video_filter/erase.c:61
 msgid "Y coordinate of the mask."
-msgstr "DebugY-coordinaat van het masker."
+msgstr "Y-coördinaat van het masker."
 
 #: modules/video_filter/erase.c:66
 msgid "Erase video filter"
@@ -21887,7 +21886,7 @@ msgstr "video-filter-gebeurtenis"
 
 #: modules/video_filter/gaussianblur.c:47
 msgid "Gaussian's std deviation"
-msgstr "Gaussiaan's standaarddeviatie"
+msgstr "Gaussiaanse standaarddeviatie"
 
 #: modules/video_filter/gaussianblur.c:49
 msgid ""
@@ -21915,15 +21914,15 @@ msgstr "Vervormingsmodus, een van \"gradiënt\", \"edge\" en \"hough\"."
 
 #: modules/video_filter/gradient.c:66
 msgid "Gradient image type"
-msgstr "Gradiënt-beeldtype"
+msgstr "Gradiëntafbeeldingstype"
 
 #: modules/video_filter/gradient.c:67
 msgid ""
 "Gradient image type (0 or 1). 0 will turn the image to white while 1 will "
 "keep colors."
 msgstr ""
-"Gradiënt beeldtype (0 of 1). 0 zal het beeld naar wit omzetten, terwijl 1 "
-"kleuren zal behouden."
+"Gradiëntafbeeldingstype (0 of 1). 0 zal het beeld naar wit omzetten, terwijl "
+"1 kleuren zal behouden."
 
 #: modules/video_filter/gradient.c:70
 msgid "Apply cartoon effect"
@@ -21932,8 +21931,8 @@ msgstr "Tekenfilmeffect toepassen"
 #: modules/video_filter/gradient.c:71
 msgid "Apply cartoon effect. It is only used by \"gradient\" and \"edge\"."
 msgstr ""
-"Pas tekenfilm-effect toe. Het wordt alleen gebruikt bij \"gradient\" en "
-"\"edge\"."
+"Pas tekenfilmeffect toe. Het wordt alleen gebruikt bij \"gradient\" en \"edge"
+"\"."
 
 #: modules/video_filter/gradient.c:75
 msgid "Edge"
@@ -22155,7 +22154,7 @@ msgstr "Totale breedte van de mozaiek, in pixels."
 
 #: modules/video_filter/mosaic.c:99
 msgid "Top left corner X coordinate"
-msgstr "Boven-links hoek X-coordinaat"
+msgstr "Boven-links hoek X-coördinaat"
 
 #: modules/video_filter/mosaic.c:101
 msgid "X Coordinate of the top-left corner of the mosaic."
@@ -22163,7 +22162,7 @@ msgstr "X-coördinaat van de linkerbovenhoek van de mozaïek."
 
 #: modules/video_filter/mosaic.c:102
 msgid "Top left corner Y coordinate"
-msgstr "Boven-links hoek Y-coordinaat"
+msgstr "Boven-links hoek Y-coördinaat"
 
 #: modules/video_filter/mosaic.c:104
 msgid "Y Coordinate of the top-left corner of the mosaic."
@@ -22333,7 +22332,7 @@ msgstr "Ruis videofilter"
 
 #: modules/video_filter/opencv_example.cpp:67
 msgid "OpenCV face detection example filter"
-msgstr "OpenCV gezichtsdetectie voorbeeld filter"
+msgstr "OpenCV gezichtsdetectie voorbeeldfilter"
 
 #: modules/video_filter/opencv_example.cpp:68
 msgid "OpenCV example"
@@ -22405,7 +22404,7 @@ msgstr ""
 
 #: modules/video_filter/opencv_wrapper.c:94
 msgid "OpenCV filter chroma"
-msgstr "OpenCV-filter chroma"
+msgstr "OpenCV-filterchroma"
 
 #: modules/video_filter/opencv_wrapper.c:95
 msgid ""
@@ -22450,14 +22449,14 @@ msgstr "Configuratiebestand voor het OSD Menu."
 
 #: modules/video_filter/osdmenu.c:46
 msgid "Path to OSD menu images"
-msgstr "Pad naar OSD menu afbeeldingen"
+msgstr "Pad naar OSD menuafbeeldingen"
 
 #: modules/video_filter/osdmenu.c:48
 msgid ""
 "Path to the OSD menu images. This will override the path defined in the OSD "
 "configuration file."
 msgstr ""
-"Pad naar de OSD menu afbeeldingen. Dit zal het pad in het OSD "
+"Pad naar de OSD menuafbeeldingen. Dit zal het pad in het OSD "
 "configuratiebestand vervangen."
 
 #: modules/video_filter/osdmenu.c:52 modules/video_filter/osdmenu.c:55
@@ -22466,7 +22465,7 @@ msgstr "U kan het OSD menu verplaatsen door erop te links-klikken."
 
 #: modules/video_filter/osdmenu.c:57
 msgid "Menu position"
-msgstr "Menu positie"
+msgstr "Menupositie"
 
 #: modules/video_filter/osdmenu.c:59
 msgid ""
@@ -22480,7 +22479,7 @@ msgstr ""
 
 #: modules/video_filter/osdmenu.c:63
 msgid "Menu timeout"
-msgstr "Menu timeout"
+msgstr "Menu-timeout"
 
 #: modules/video_filter/osdmenu.c:65
 msgid ""
@@ -22494,7 +22493,7 @@ msgstr ""
 
 #: modules/video_filter/osdmenu.c:69
 msgid "Menu update interval"
-msgstr "Menu verversingsinterval"
+msgstr "Menuverversingsinterval"
 
 #: modules/video_filter/osdmenu.c:71
 msgid ""
@@ -22527,7 +22526,7 @@ msgstr ""
 
 #: modules/video_filter/osdmenu.c:134
 msgid "On Screen Display menu"
-msgstr "Op Scherm Weergave menu"
+msgstr "On Screen Display menu"
 
 #: modules/video_filter/panoramix.c:82
 msgid ""
@@ -22601,7 +22600,7 @@ msgstr ""
 
 #: modules/video_filter/panoramix.c:124
 msgid "Attenuation, begin (in %)"
-msgstr "Demping, behin (in %)"
+msgstr "Demping, begin (in %)"
 
 #: modules/video_filter/panoramix.c:125
 msgid "Select in percent the Lagrange coeff of the beginning blended zone"
@@ -22995,7 +22994,7 @@ msgstr ""
 
 #: modules/video_filter/rss.c:160
 msgid "Text position"
-msgstr "Tekst positie"
+msgstr "Tekstpositie"
 
 #: modules/video_filter/rss.c:162
 msgid ""
@@ -23162,7 +23161,7 @@ msgstr ""
 
 #: modules/video_filter/wall.c:75
 msgid "Wall video filter"
-msgstr "Video-muurfilter"
+msgstr "Videomuurfilter"
 
 #: modules/video_filter/wall.c:76
 msgid "Image wall"
@@ -23202,7 +23201,7 @@ msgstr ""
 
 #: modules/video_output/fb.c:95
 msgid "Framebuffer resolution to use."
-msgstr "Framebuffer resolutie om te gebruiken."
+msgstr "Framebufferresolutie om te gebruiken."
 
 #: modules/video_output/fb.c:97
 msgid ""
@@ -23214,7 +23213,7 @@ msgstr ""
 
 #: modules/video_output/fb.c:100
 msgid "Framebuffer uses hw acceleration."
-msgstr "Framebuffer gebruikt hw versnelling"
+msgstr "Framebuffer gebruikt hw versnelling."
 
 #: modules/video_output/fb.c:102
 msgid ""
@@ -23273,7 +23272,7 @@ msgstr ""
 
 #: modules/video_output/image.c:66
 msgid "Recording ratio"
-msgstr "Opname ratio"
+msgstr "Opnameratio"
 
 #: modules/video_output/image.c:67
 msgid ""
@@ -23359,7 +23358,7 @@ msgstr ""
 
 #: modules/video_output/msw/directx.c:148
 msgid "Name of desired display device"
-msgstr "Naam van gewenst weergave-apparaat"
+msgstr "Naam van gewenst weergaveapparaat"
 
 #: modules/video_output/msw/directx.c:149
 msgid ""
@@ -23373,7 +23372,7 @@ msgstr ""
 
 #: modules/video_output/msw/directx.c:154
 msgid "Enable wallpaper mode "
-msgstr "Bureaubladachtergrond modus activeren"
+msgstr "Bureaubladachtergrondmodus activeren"
 
 #: modules/video_output/msw/directx.c:156
 msgid ""
@@ -23381,7 +23380,7 @@ msgid ""
 "background. Note that this feature only works in overlay mode and the "
 "desktop must not already have a wallpaper."
 msgstr ""
-"Met deze mode kan de video worden afgebeeld als bureaubladachtergrond. Dit "
+"Met deze modus kan de video worden afgebeeld als bureaubladachtergrond. Dit "
 "werkt enkel in overlay modus en als het bureaublad nog geen andere "
 "achtergrond heeft."
 
@@ -23536,7 +23535,7 @@ msgstr "QT Embedded video-uitvoer"
 
 #: modules/video_output/sdl.c:115
 msgid "SDL chroma format"
-msgstr "SDL chroma formaat"
+msgstr "SDL chromaformaat"
 
 #: modules/video_output/sdl.c:117
 msgid ""
@@ -23618,7 +23617,7 @@ msgstr ""
 
 #: modules/video_output/vmem.c:63
 msgid "Lock function"
-msgstr "Sluit functie"
+msgstr "Sluitfunctie"
 
 #: modules/video_output/vmem.c:64
 #, fuzzy
@@ -23631,7 +23630,7 @@ msgstr ""
 
 #: modules/video_output/vmem.c:68
 msgid "Unlock function"
-msgstr "Ontsluit functie"
+msgstr "Ontsluitfunctie"
 
 #: modules/video_output/vmem.c:69
 msgid "Address of the unlocking callback function"
@@ -23740,14 +23739,14 @@ msgstr ""
 
 #: modules/video_output/x11/xvideo.c:66 modules/video_output/x11/xvmc.c:116
 msgid "XVimage chroma format"
-msgstr "XVimage chroma formaat"
+msgstr "XVimage chromaformaat"
 
 #: modules/video_output/x11/xvideo.c:68 modules/video_output/x11/xvmc.c:118
 msgid ""
 "Force the XVideo renderer to use a specific chroma format instead of trying "
 "to improve performances by using the most efficient one."
 msgstr ""
-"Forceer de XVideo renderer om een specifiek chroma formaat te gebruiken in "
+"Forceer de XVideo renderer om een specifiek chromaformaat te gebruiken in "
 "plaats van de meest efficiënte."
 
 #: modules/video_output/x11/xvideo.c:95
@@ -23808,11 +23807,11 @@ msgstr "GaLaktos visualizatie plugin"
 
 #: modules/visualization/goom.c:61
 msgid "Goom display width"
-msgstr "Breedte Goomvideo"
+msgstr "Breedte goomvideo"
 
 #: modules/visualization/goom.c:62
 msgid "Goom display height"
-msgstr "Hoogte Goomvideo"
+msgstr "Hoogte goomvideo"
 
 #: modules/visualization/goom.c:63
 msgid ""
@@ -23975,7 +23974,7 @@ msgstr "Visuele effecten"
 
 #: modules/visualization/visual/visual.c:115
 msgid "Visualizer filter"
-msgstr "Visuele effecten filter"
+msgstr "Visuele effectenfilter"
 
 #: modules/visualization/visual/visual.c:123
 msgid "Spectrum analyser"
@@ -24407,7 +24406,7 @@ msgstr "Spectrum analyser"
 #~ msgstr "YUV uitvoer"
 
 #~ msgid "YUV video output"
-#~ msgstr "YUV video uitvoer"
+#~ msgstr "YUV video-uitvoer"
 
 #~ msgid "VLC could not find encoder \"%s\"."
 #~ msgstr "VLC kon encoder \"%s\" niet vinden."
