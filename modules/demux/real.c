@@ -31,8 +31,8 @@
  *               - cook is ok.
  *               - raac, racp are ok.
  *               - dnet is twisted "The byte order of the data is reversed
- *                                  from standard AC3"
- *               - 28_8 seem problematic.
+ *                                  from standard AC3" but ok
+ *               - 28_8 is ok.
  *               - sipr should be fine, but our decoder suxx :)
  *               - ralf is unsupported, but hardly any sample exist.
  *               - mp3 is unsupported, one sample exists...
@@ -58,21 +58,23 @@
 #include <vlc_charset.h>
 #include <vlc_meta.h>
 
+#include "assert.h"
+
 /*****************************************************************************
  * Module descriptor
  *****************************************************************************/
 static int  Open    ( vlc_object_t * );
 static void Close  ( vlc_object_t * );
 
-vlc_module_begin();
-    set_description( N_("Real demuxer" ) );
-    set_capability( "demux", 50 );
-    set_category( CAT_INPUT );
-    set_subcategory( SUBCAT_INPUT_DEMUX );
-    set_callbacks( Open, Close );
-    add_shortcut( "real" );
-    add_shortcut( "rm" );
-vlc_module_end();
+vlc_module_begin ()
+    set_description( N_("Real demuxer" ) )
+    set_capability( "demux", 50 )
+    set_category( CAT_INPUT )
+    set_subcategory( SUBCAT_INPUT_DEMUX )
+    set_callbacks( Open, Close )
+    add_shortcut( "real" )
+    add_shortcut( "rm" )
+vlc_module_end ()
 
 /*****************************************************************************
  * Local prototypes
@@ -111,7 +113,7 @@ typedef struct
     uint32_t i_file_offset;
     uint32_t i_time_offset;
     uint32_t i_frame_index;
-} rm_index_t;
+} real_index_t;
 
 struct demux_sys_t
 {
@@ -137,21 +139,24 @@ struct demux_sys_t
     uint8_t buffer[65536];
 
     int64_t     i_pcr;
-    vlc_meta_t *p_meta;
 
     int64_t     i_index_offset;
     bool        b_seek;
-    rm_index_t *p_index;
+    real_index_t *p_index;
 };
 
-static int Demux( demux_t *p_demux );
-static int Control( demux_t *p_demux, int i_query, va_list args );
+static int Demux( demux_t * );
+static int Control( demux_t *, int i_query, va_list args );
+
+
+static void DemuxVideo( demux_t *, real_track_t *tk, mtime_t i_dts, unsigned i_flags );
+static void DemuxAudio( demux_t *, real_track_t *tk, mtime_t i_pts, unsigned i_flags );
+
+static int ControlSeekByte( demux_t *, int64_t i_bytes );
+static int ControlSeekTime( demux_t *, mtime_t i_time );
 
 static int HeaderRead( demux_t *p_demux );
 static int CodecParse( demux_t *p_demux, int i_len, int i_num );
-
-static char *StreamReadString2( stream_t *s );
-static char *MemoryReadString1( const uint8_t **pp_data, int *pi_data );
 
 static void     RVoid( const uint8_t **pp_data, int *pi_data, int i_size );
 static int      RLength( const uint8_t **pp_data, int *pi_data );
@@ -212,20 +217,8 @@ static int Open( vlc_object_t *p_this )
     /* RMF files */
     else if( HeaderRead( p_demux ) )
     {
-        int i;
         msg_Err( p_demux, "invalid header" );
-        for( i = 0; i < p_sys->i_track; i++ )
-        {
-            real_track_t *tk = p_sys->track[i];
-
-            if( tk->p_es )
-                es_out_Del( p_demux->out, tk->p_es );
-
-            free( tk );
-        }
-        if( p_sys->i_track > 0 )
-            free( p_sys->track );
-        free( p_sys );
+        Close( p_this );
         return VLC_EGENERIC;
     }
 
@@ -276,6 +269,208 @@ static void Close( vlc_object_t *p_this )
 
 /*****************************************************************************
  * Demux:
+ *****************************************************************************/
+static int Demux( demux_t *p_demux )
+{
+    demux_sys_t *p_sys = p_demux->p_sys;
+    uint8_t     header[18];
+
+    if( p_sys->i_data_packets >= p_sys->i_data_packets_count &&
+        p_sys->i_data_packets_count )
+    {
+        if( stream_Read( p_demux->s, header, 18 ) < 18 )
+            return 0;
+
+        if( memcmp( header, "DATA", 4 ) )
+            return 0;
+
+        p_sys->i_data_offset = stream_Tell( p_demux->s ) - 18;
+        p_sys->i_data_size   = GetDWBE( &header[4] );
+        p_sys->i_data_packets_count = GetDWBE( &header[10] );
+        p_sys->i_data_packets = 0;
+        p_sys->i_data_offset_next = GetDWBE( &header[14] );
+
+        msg_Dbg( p_demux, "entering new DATA packets=%d next=%u",
+                 p_sys->i_data_packets_count,
+                 (unsigned int)p_sys->i_data_offset_next );
+    }
+
+    /* Read Packet Header */
+    if( stream_Read( p_demux->s, header, 12 ) < 12 )
+        return 0;
+    //const int i_version = GetWBE( &header[0] );
+    const int     i_size = GetWBE( &header[2] ) - 12;
+    const int     i_id   = GetWBE( &header[4] );
+    const int64_t i_pts  = 1 + 1000 * GetDWBE( &header[6] );
+    const int     i_flags= header[11]; /* flags 0x02 -> keyframe */
+
+    p_sys->i_data_packets++;
+
+    if( i_size <= 0 )
+    {
+        msg_Err( p_demux, "Got a NUKK size to read. (Invalid format?)" );
+        return 1;
+    }
+
+    assert( i_size <= sizeof(p_sys->buffer) );
+
+    p_sys->i_buffer = stream_Read( p_demux->s, p_sys->buffer, i_size );
+    if( p_sys->i_buffer < i_size )
+        return 0;
+
+    real_track_t *tk = NULL;
+    for( int i = 0; i < p_sys->i_track; i++ )
+    {
+        if( p_sys->track[i]->i_id == i_id )
+            tk = p_sys->track[i];
+    }
+
+    if( !tk )
+    {
+        msg_Warn( p_demux, "unknown track id(0x%x)", i_id );
+        return 1;
+    }
+
+    if( tk->fmt.i_cat == VIDEO_ES )
+    {
+        DemuxVideo( p_demux, tk, i_pts, i_flags );
+    }
+    else
+    {
+        assert( tk->fmt.i_cat == AUDIO_ES );
+        DemuxAudio( p_demux, tk, i_pts, i_flags );
+    }
+
+    /* Update PCR */
+    mtime_t i_pcr = 0;
+    for( int i = 0; i < p_sys->i_track; i++ )
+    {
+        real_track_t *tk = p_sys->track[i];
+
+        if( i_pcr <= 0 || ( tk->i_last_dts > 0 && tk->i_last_dts < i_pcr ) )
+            i_pcr = tk->i_last_dts;
+    }
+    if( i_pcr > 0 && i_pcr != p_sys->i_pcr )
+    {
+        p_sys->i_pcr = i_pcr;
+        es_out_Control( p_demux->out, ES_OUT_SET_PCR, p_sys->i_pcr );
+    }
+    return 1;
+}
+
+/*****************************************************************************
+ * Control:
+ *****************************************************************************/
+static int Control( demux_t *p_demux, int i_query, va_list args )
+{
+    demux_sys_t *p_sys = p_demux->p_sys;
+    double f, *pf;
+    int64_t i64;
+    int64_t *pi64;
+
+    switch( i_query )
+    {
+        case DEMUX_GET_POSITION:
+            pf = (double*) va_arg( args, double* );
+
+            /* read stream size maybe failed in rtsp streaming, 
+               so use duration to determin the position at first  */
+            if( p_sys->i_our_duration > 0 )
+            {
+                *pf = (double)p_sys->i_pcr / 1000.0 / p_sys->i_our_duration;
+                return VLC_SUCCESS;
+            }
+
+            *pf = 0.0;
+            i64 = stream_Size( p_demux->s );
+            if( i64 > 0 )
+                *pf = (double)1.0*stream_Tell( p_demux->s ) / (double)i64;
+            return VLC_SUCCESS;
+
+        case DEMUX_GET_TIME:
+            pi64 = (int64_t*)va_arg( args, int64_t * );
+
+            if( p_sys->i_our_duration > 0 )
+            {
+                *pi64 = p_sys->i_pcr;
+                return VLC_SUCCESS;
+            }
+
+            /* same as GET_POSTION */
+            i64 = stream_Size( p_demux->s );
+            if( p_sys->i_our_duration > 0 && i64 > 0 )
+            {
+                *pi64 = (int64_t)( 1000.0 * p_sys->i_our_duration * stream_Tell( p_demux->s ) / i64 );
+                return VLC_SUCCESS;
+            }
+
+            *pi64 = 0;
+            return VLC_EGENERIC;
+
+        case DEMUX_SET_POSITION:
+            f = (double) va_arg( args, double );
+            i64 = (int64_t) ( stream_Size( p_demux->s ) * f );
+
+            if( !p_sys->p_index && i64 != 0 )
+            {
+                /* TODO seek */
+                msg_Err( p_demux,"Seek No Index Real File failed!" );
+                return VLC_EGENERIC; // no index!
+            }
+            else if( i64 == 0 )
+            {
+                /* it is a rtsp stream , it is specials in access/rtsp/... */
+                msg_Dbg(p_demux, "Seek in real rtsp stream!");
+                p_sys->i_pcr = INT64_C(1000) * ( p_sys->i_our_duration * f  );
+                p_sys->b_seek = true;
+                return stream_Seek( p_demux->s, p_sys->i_pcr );
+            }
+            return ControlSeekByte( p_demux, i64 );
+
+        case DEMUX_SET_TIME:
+            if( !p_sys->p_index )
+                return VLC_EGENERIC;
+
+            i64 = (int64_t) va_arg( args, int64_t );
+            return ControlSeekTime( p_demux, i64 );
+
+        case DEMUX_GET_LENGTH:
+            pi64 = (int64_t*)va_arg( args, int64_t * );
+ 
+            *pi64 = 0;
+            if( p_sys->i_our_duration <= 0 )
+                return VLC_EGENERIC;
+
+            /* our stored duration is in ms, so... */
+            *pi64 = INT64_C(1000) * p_sys->i_our_duration;
+            return VLC_SUCCESS;
+
+        case DEMUX_GET_META:
+        {
+            vlc_meta_t *p_meta = (vlc_meta_t*)va_arg( args, vlc_meta_t* );
+
+            /* the core will crash if we provide NULL strings, so check
+             * every string first */
+            if( p_sys->psz_title )
+                vlc_meta_SetTitle( p_meta, p_sys->psz_title );
+            if( p_sys->psz_artist )
+                vlc_meta_SetArtist( p_meta, p_sys->psz_artist );
+            if( p_sys->psz_copyright )
+                vlc_meta_SetCopyright( p_meta, p_sys->psz_copyright );
+            if( p_sys->psz_description )
+                vlc_meta_SetDescription( p_meta, p_sys->psz_description );
+            return VLC_SUCCESS;
+        }
+
+        case DEMUX_GET_FPS:
+        default:
+            return VLC_EGENERIC;
+    }
+    return VLC_EGENERIC;
+}
+
+/*****************************************************************************
+ * Helpers: demux
  *****************************************************************************/
 static void CheckPcr( demux_t *p_demux, real_track_t *tk, mtime_t i_dts )
 {
@@ -349,8 +544,7 @@ static void DemuxVideo( demux_t *p_demux, real_track_t *tk, mtime_t i_dts, unsig
             tk->p_frame = block_New( p_demux, tk->i_frame_size );
             if( !tk->p_frame )
             {
-                tk->i_frame_slice = 0;
-                tk->i_frame_slice_count = 0;
+                tk->i_frame_size = 0;
                 return;
             }
 
@@ -373,10 +567,12 @@ static void DemuxVideo( demux_t *p_demux, real_track_t *tk, mtime_t i_dts, unsig
             if( i_type == 2 && i_frame_data > i_pos )
                 i_frame_data = i_pos;
         }
+        if( i_frame_data > i_data )
+            break;
 
         /* */
         tk->i_frame_slice++;
-        if( tk->i_frame_slice > tk->i_frame_slice_count )
+        if( tk->i_frame_slice > tk->i_frame_slice_count || !tk->p_frame )
             break;
 
         /* */
@@ -413,22 +609,23 @@ static void DemuxVideo( demux_t *p_demux, real_track_t *tk, mtime_t i_dts, unsig
 static void DemuxAudioMethod1( demux_t *p_demux, real_track_t *tk, mtime_t i_pts, unsigned int i_flags )
 {
     demux_sys_t *p_sys = p_demux->p_sys;
-
     uint8_t *p_buf = p_sys->buffer;
-    int y = tk->i_subpacket / ( tk->i_frame_size / tk->i_subpacket_size );
 
     /* Sanity check */
     if( (i_flags & 2) || p_sys->b_seek )
     {
-        y = tk->i_subpacket = 0;
+        tk->i_subpacket = 0;
         tk->i_out_subpacket = 0;
         p_sys->b_seek = false;
     }
 
     if( tk->fmt.i_codec == VLC_FOURCC( 'c', 'o', 'o', 'k' ) ||
-        tk->fmt.i_codec == VLC_FOURCC( 'a', 't', 'r', 'c' ) )
+        tk->fmt.i_codec == VLC_FOURCC( 'a', 't', 'r', 'c' ) ||
+        tk->fmt.i_codec == VLC_FOURCC( 's', 'i', 'p', 'r' ) )
     {
         const int i_num = tk->i_frame_size / tk->i_subpacket_size;
+        const int y = tk->i_subpacket / ( tk->i_frame_size / tk->i_subpacket_size );
+
         for( int i = 0; i < i_num; i++ )
         {
             block_t *p_block = block_New( p_demux, tk->i_subpacket_size );
@@ -460,19 +657,18 @@ static void DemuxAudioMethod1( demux_t *p_demux, real_track_t *tk, mtime_t i_pts
     }
     else
     {
-        assert( tk->fmt.i_codec == VLC_FOURCC( '2', '8', '_', '8' ) ||
-                tk->fmt.i_codec == VLC_FOURCC( 's', 'i', 'p', 'r' ) );
+        const int y = tk->i_subpacket / (tk->i_subpacket_h / 2);
+        assert( tk->fmt.i_codec == VLC_FOURCC( '2', '8', '_', '8' ) );
 
         for( int i = 0; i < tk->i_subpacket_h / 2; i++ )
         {
             block_t *p_block = block_New( p_demux, tk->i_coded_frame_size);
             if( !p_block )
                 return;
-            if( &p_buf[tk->i_subpacket_size] > &p_sys->buffer[p_sys->i_buffer] )
+            if( &p_buf[tk->i_coded_frame_size] > &p_sys->buffer[p_sys->i_buffer] )
                 return;
 
-            int i_index = (i * 2 * tk->i_frame_size) /
-                          tk->i_coded_frame_size + y;
+            int i_index = (i * 2 * tk->i_frame_size / tk->i_coded_frame_size) + y;
 
             memcpy( p_block->p_buffer, p_buf, tk->i_coded_frame_size );
             p_block->i_dts =
@@ -495,7 +691,8 @@ static void DemuxAudioMethod1( demux_t *p_demux, real_track_t *tk, mtime_t i_pts
            tk->p_subpackets[tk->i_out_subpacket] )
     {
         block_t *p_block = tk->p_subpackets[tk->i_out_subpacket];
-        tk->p_subpackets[tk->i_out_subpacket] = 0;
+        tk->p_subpackets[tk->i_out_subpacket] = NULL;
+
         if( tk->p_subpackets_timecode[tk->i_out_subpacket] )
         {
             p_block->i_dts =
@@ -591,7 +788,7 @@ static void DemuxAudioMethod3( demux_t *p_demux, real_track_t *tk, mtime_t i_pts
     es_out_Send( p_demux->out, tk->p_es, p_block );
 }
 
-static void DemuxAudio( demux_t *p_demux, real_track_t *tk, mtime_t i_pts, unsigned int i_flags )
+static void DemuxAudio( demux_t *p_demux, real_track_t *tk, mtime_t i_pts, unsigned i_flags )
 {
     switch( tk->fmt.i_codec )
     {
@@ -610,98 +807,10 @@ static void DemuxAudio( demux_t *p_demux, real_track_t *tk, mtime_t i_pts, unsig
     }
 }
 
-static int Demux( demux_t *p_demux )
-{
-    demux_sys_t *p_sys = p_demux->p_sys;
-    uint8_t     header[18];
-
-    if( p_sys->i_data_packets >= p_sys->i_data_packets_count &&
-        p_sys->i_data_packets_count )
-    {
-        if( stream_Read( p_demux->s, header, 18 ) < 18 )
-            return 0;
-
-        if( memcmp( header, "DATA", 4 ) )
-            return 0;
-
-        p_sys->i_data_offset = stream_Tell( p_demux->s ) - 18;
-        p_sys->i_data_size   = GetDWBE( &header[4] );
-        p_sys->i_data_packets_count = GetDWBE( &header[10] );
-        p_sys->i_data_packets = 0;
-        p_sys->i_data_offset_next = GetDWBE( &header[14] );
-
-        msg_Dbg( p_demux, "entering new DATA packets=%d next=%u",
-                 p_sys->i_data_packets_count,
-                 (unsigned int)p_sys->i_data_offset_next );
-    }
-
-    /* Read Packet Header */
-    if( stream_Read( p_demux->s, header, 12 ) < 12 )
-        return 0;
-    //const int i_version = GetWBE( &header[0] );
-    const int     i_size = GetWBE( &header[2] ) - 12;
-    const int     i_id   = GetWBE( &header[4] );
-    const int64_t i_pts  = 1 + 1000 * GetDWBE( &header[6] );
-    const int     i_flags= header[11]; /* flags 0x02 -> keyframe */
-
-    p_sys->i_data_packets++;
-
-    if( i_size <= 0 )
-    {
-        msg_Err( p_demux, "Got a NUKK size to read. (Invalid format?)" );
-        return 1;
-    }
-
-    assert( i_size <= sizeof(p_sys->buffer) );
-
-    p_sys->i_buffer = stream_Read( p_demux->s, p_sys->buffer, i_size );
-    if( p_sys->i_buffer < i_size )
-        return 0;
-
-    real_track_t *tk = NULL;
-    for( int i = 0; i < p_sys->i_track; i++ )
-    {
-        if( p_sys->track[i]->i_id == i_id )
-            tk = p_sys->track[i];
-    }
-
-    if( !tk )
-    {
-        msg_Warn( p_demux, "unknown track id(0x%x)", i_id );
-        return 1;
-    }
-
-    if( tk->fmt.i_cat == VIDEO_ES )
-    {
-        DemuxVideo( p_demux, tk, i_pts, i_flags );
-    }
-    else
-    {
-        assert( tk->fmt.i_cat == AUDIO_ES );
-        DemuxAudio( p_demux, tk, i_pts, i_flags );
-    }
-
-    /* Update PCR */
-    mtime_t i_pcr = 0;
-    for( int i = 0; i < p_sys->i_track; i++ )
-    {
-        real_track_t *tk = p_sys->track[i];
-
-        if( i_pcr <= 0 || ( tk->i_last_dts > 0 && tk->i_last_dts > i_pcr ) )
-            i_pcr = tk->i_last_dts;
-    }
-    if( i_pcr > 0 && i_pcr != p_sys->i_pcr )
-    {
-        p_sys->i_pcr = i_pcr;
-        es_out_Control( p_demux->out, ES_OUT_SET_PCR, p_sys->i_pcr );
-    }
-    return 1;
-}
-
 /*****************************************************************************
- * Control:
+ * Helpers: seek/control
  *****************************************************************************/
-static int ControlGoToIndex( demux_t *p_demux, rm_index_t *p_index )
+static int ControlGoToIndex( demux_t *p_demux, real_index_t *p_index )
 {
     demux_sys_t *p_sys = p_demux->p_sys;
 
@@ -714,7 +823,7 @@ static int ControlGoToIndex( demux_t *p_demux, rm_index_t *p_index )
 static int ControlSeekTime( demux_t *p_demux, mtime_t i_time )
 {
     demux_sys_t *p_sys = p_demux->p_sys;
-    rm_index_t *p_index = p_sys->p_index;
+    real_index_t *p_index = p_sys->p_index;
 
     while( p_index->i_file_offset != 0 )
     {
@@ -733,7 +842,7 @@ static int ControlSeekTime( demux_t *p_demux, mtime_t i_time )
 static int ControlSeekByte( demux_t *p_demux, int64_t i_bytes )
 {
     demux_sys_t *p_sys = p_demux->p_sys;
-    rm_index_t *p_index = p_sys->p_index;
+    real_index_t *p_index = p_sys->p_index;
 
     while( p_index->i_file_offset != 0 )
     {
@@ -750,216 +859,75 @@ static int ControlSeekByte( demux_t *p_demux, int64_t i_bytes )
     return ControlGoToIndex( p_demux, p_index );
 }
 
-static int Control( demux_t *p_demux, int i_query, va_list args )
+/*****************************************************************************
+ * Helpers: header reading
+ *****************************************************************************/
+
+/**
+ * This function will read a pascal string with size stored in 2 bytes from
+ * a stream_t.
+ *
+ * FIXME what is the right charset ?
+ */
+static char *StreamReadString2( stream_t *s )
 {
-    demux_sys_t *p_sys = p_demux->p_sys;
-    double f, *pf;
-    int64_t i64;
-    int64_t *pi64;
+    uint8_t p_tmp[2];
 
-    switch( i_query )
-    {
-        case DEMUX_GET_POSITION:
-            pf = (double*) va_arg( args, double* );
+    if( stream_Read( s, p_tmp, 2 ) < 2 )
+        return NULL;
 
-            /* read stream size maybe failed in rtsp streaming, 
-               so use duration to determin the position at first  */
-            if( p_sys->i_our_duration > 0 )
-            {
-                *pf = (double)p_sys->i_pcr / 1000.0 / p_sys->i_our_duration;
-                return VLC_SUCCESS;
-            }
+    const int i_length = GetWBE( p_tmp );
+    if( i_length <= 0 )
+        return NULL;
 
-            *pf = 0.0;
-            i64 = stream_Size( p_demux->s );
-            if( i64 > 0 )
-                *pf = (double)1.0*stream_Tell( p_demux->s ) / (double)i64;
-            return VLC_SUCCESS;
+    char *psz_string = calloc( 1, i_length + 1 );
 
-        case DEMUX_GET_TIME:
-            pi64 = (int64_t*)va_arg( args, int64_t * );
+    stream_Read( s, psz_string, i_length ); /* Valid even if !psz_string */
 
-            if( p_sys->i_our_duration > 0 )
-            {
-                *pi64 = p_sys->i_pcr;
-                return VLC_SUCCESS;
-            }
-
-            /* same as GET_POSTION */
-            i64 = stream_Size( p_demux->s );
-            if( p_sys->i_our_duration > 0 && i64 > 0 )
-            {
-                *pi64 = (int64_t)( 1000.0 * p_sys->i_our_duration * stream_Tell( p_demux->s ) / i64 );
-                return VLC_SUCCESS;
-            }
-
-            *pi64 = 0;
-            return VLC_EGENERIC;
-
-        case DEMUX_SET_POSITION:
-            f = (double) va_arg( args, double );
-            i64 = (int64_t) ( stream_Size( p_demux->s ) * f );
-
-            if( !p_sys->p_index && i64 != 0 )
-            {
-                /* TODO seek */
-                msg_Err( p_demux,"Seek No Index Real File failed!" );
-                return VLC_EGENERIC; // no index!
-            }
-            else if( i64 == 0 )
-            {
-                /* it is a rtsp stream , it is specials in access/rtsp/... */
-                msg_Dbg(p_demux, "Seek in real rtsp stream!");
-                p_sys->i_pcr = (int64_t)1000 * ( p_sys->i_our_duration * f  );
-                p_sys->b_seek = 1;
-
-                return stream_Seek( p_demux->s, p_sys->i_pcr );
-            }
-            return ControlSeekByte( p_demux, i64 );
-
-<<<<<<< HEAD:modules/demux/real.c
-            if ( p_sys->i_index_offset > 0 )
-            {
-                p_index = p_sys->p_index;
-                while( p_index->file_offset !=0 )
-                {
-                    if ( p_index->file_offset > i64 )
-                    {
-                        msg_Dbg( p_demux, "Seek Real find! %d %d %d",
-                                 p_index->time_offset, p_index->file_offset,
-                                 (uint32_t) i64 );
-                        if ( p_index != p_sys->p_index ) p_index --;
-                        i64 = p_index->file_offset;
-                        break;
-                    }
-                    p_index++;
-                }
-
-                p_sys->i_pcr = 1000 * (int64_t) p_index->time_offset;
-
-                es_out_Control( p_demux->out, ES_OUT_RESET_PCR , p_sys->i_pcr );
-
-                return stream_Seek( p_demux->s, i64 );
-            }
-       case DEMUX_SET_TIME:
-            if( !p_sys->p_index )
-                return VLC_EGENERIC;
-
-            i64 = (int64_t) va_arg( args, int64_t );
-            return ControlSeekTime( p_demux, i64 );
-
-        case DEMUX_GET_LENGTH:
-            pi64 = (int64_t*)va_arg( args, int64_t * );
- 
-            *pi64 = 0;
-            if( p_sys->i_our_duration <= 0 )
-                return VLC_EGENERIC;
-
-            /* our stored duration is in ms, so... */
-            *pi64 = INT64_C(1000) * p_sys->i_our_duration;
-            return VLC_SUCCESS;
-
-        case DEMUX_GET_META:
-        {
-            vlc_meta_t *p_meta = (vlc_meta_t*)va_arg( args, vlc_meta_t* );
-
-            /* the core will crash if we provide NULL strings, so check
-             * every string first */
-            if( p_sys->psz_title )
-                vlc_meta_SetTitle( p_meta, p_sys->psz_title );
-            if( p_sys->psz_artist )
-                vlc_meta_SetArtist( p_meta, p_sys->psz_artist );
-            if( p_sys->psz_copyright )
-                vlc_meta_SetCopyright( p_meta, p_sys->psz_copyright );
-            if( p_sys->psz_description )
-                vlc_meta_SetDescription( p_meta, p_sys->psz_description );
-            return VLC_SUCCESS;
-        }
-
-        case DEMUX_GET_FPS:
-        default:
-            return VLC_EGENERIC;
-    }
-    return VLC_EGENERIC;
+    if( psz_string )
+        EnsureUTF8( psz_string );
+    return psz_string;
 }
 
-/*****************************************************************************
- * ReadRealIndex:
- *****************************************************************************/
-static void ReadRealIndex( demux_t *p_demux )
+/**
+ * This function will read a pascal string with size stored in 1 byte from a
+ * memory buffer.
+ *
+ * FIXME what is the right charset ?
+ */
+static char *MemoryReadString1( const uint8_t **pp_data, int *pi_data )
 {
-    demux_sys_t *p_sys = p_demux->p_sys;
-    uint8_t       buffer[100];
-    uint32_t      i_id;
-    uint32_t      i_size;
-    int           i_version;
-    unsigned int  i;
+    const uint8_t *p_data = *pp_data;
+    int           i_data = *pi_data;
 
-    uint32_t      i_index_count;
+    char *psz_string = NULL;
 
-    if ( p_sys->i_index_offset == 0 )
-        return;
+    if( i_data < 1 )
+        goto exit;
 
-    stream_Seek( p_demux->s, p_sys->i_index_offset );
+    int i_length = *p_data++; i_data--;
+    if( i_length > i_data )
+        i_length = i_data;
 
-    if ( stream_Read( p_demux->s, buffer, 20 ) < 20 )
-        return ;
-
-    i_id = VLC_FOURCC( buffer[0], buffer[1], buffer[2], buffer[3] );
-    i_size      = GetDWBE( &buffer[4] );
-    i_version   = GetWBE( &buffer[8] );
-
-    msg_Dbg( p_demux, "Real index %4.4s size=%d version=%d",
-                 (char*)&i_id, i_size, i_version );
-
-    if( (i_size < 20) && (i_id != VLC_FOURCC('I','N','D','X')) )
-        return;
-
-    i_index_count = GetDWBE( &buffer[10] );
-
-    msg_Dbg( p_demux, "Real Index : num : %d ", i_index_count );
-
-    if( i_index_count >= ( 0xffffffff / sizeof( rm_index_t ) ) )
-        return;
-
-    if( GetDWBE( &buffer[16] ) > 0 )
-        msg_Dbg( p_demux, "Real Index: Does next index exist? %d ",
-                        GetDWBE( &buffer[16] )  );
-
-    p_sys->p_index = malloc( ( i_index_count + 1 ) * sizeof( rm_index_t ) );
-    if( p_sys->p_index == NULL )
+    if( i_length > 0 )
     {
-        msg_Err( p_demux, "Memory allocation error" ); 
-        return;
+        psz_string = strndup( (const char*)p_data, i_length );
+        if( psz_string )
+            EnsureUTF8( psz_string );
+
+        p_data += i_length;
+        i_data -= i_length;
     }
 
-    for( i = 0; i < i_index_count; i++ )
-    {
-        if( stream_Read( p_demux->s, buffer, 14 ) < 14 )
-            return ;
-
-        if( GetWBE( &buffer[0] ) != 0 )
-        {
-            msg_Dbg( p_demux, "Real Index: invaild version of index entry %d ",
-                              GetWBE( &buffer[0] ) );
-            return;
-        }
-
-        p_sys->p_index[i].i_time_offset = GetDWBE( &buffer[2] );
-        p_sys->p_index[i].i_file_offset = GetDWBE( &buffer[6] );
-        p_sys->p_index[i].i_frame_index = GetDWBE( &buffer[10] );
-        msg_Dbg( p_demux,
-                 "Real Index: time %"PRIu32" file %"PRIu32" frame %"PRIu32,
-                 p_sys->p_index[i].i_time_offset,
-                 p_sys->p_index[i].i_file_offset,
-                 p_sys->p_index[i].i_frame_index );
-    }
-    memset( p_sys->p_index + i_index_count, 0, sizeof( rm_index_t ) );
+exit:
+    *pp_data = p_data;
+    *pi_data = i_data;
+    return psz_string;
 }
 
-/*****************************************************************************
- * HeaderRead:
- *****************************************************************************/
+/**
+ * This function parses(skip) the .RMF identification chunk.
+ */
 static int HeaderRMF( demux_t *p_demux )
 {
     uint8_t p_buffer[8];
@@ -971,6 +939,9 @@ static int HeaderRMF( demux_t *p_demux )
              GetDWBE( &p_buffer[0] ), GetDWBE( &p_buffer[4] ) );
     return VLC_SUCCESS;
 }
+/**
+ * This function parses the PROP properties chunk.
+ */
 static int HeaderPROP( demux_t *p_demux )
 {
     demux_sys_t *p_sys = p_demux->p_sys;
@@ -1006,6 +977,9 @@ static int HeaderPROP( demux_t *p_demux )
 
     return VLC_SUCCESS;
 }
+/**
+ * This functions parses the CONT commentairs chunk.
+ */
 static int HeaderCONT( demux_t *p_demux )
 {
     demux_sys_t *p_sys = p_demux->p_sys;
@@ -1032,11 +1006,13 @@ static int HeaderCONT( demux_t *p_demux )
 
     return VLC_SUCCESS;
 }
+/**
+ * This function parses the MDPR (Media properties) chunk.
+ */
 static int HeaderMDPR( demux_t *p_demux )
 {
     uint8_t p_buffer[30];
 
-    /* Media properties header */
     if( stream_Read( p_demux->s, p_buffer, 30 ) < 30 )
         return VLC_EGENERIC;
 
@@ -1086,6 +1062,9 @@ static int HeaderMDPR( demux_t *p_demux )
     }
     return VLC_SUCCESS;
 }
+/**
+ * This function parses DATA chunk (it contains the actual movie data).
+ */
 static int HeaderDATA( demux_t *p_demux, uint32_t i_size )
 {
     demux_sys_t *p_sys = p_demux->p_sys;
@@ -1105,12 +1084,91 @@ static int HeaderDATA( demux_t *p_demux, uint32_t i_size )
              (unsigned int)p_sys->i_data_offset_next );
     return VLC_SUCCESS;
 }
+/**
+ * This function parses the INDX (movie index chunk).
+ * It is optional but seeking without it is ... hard.
+ */
+static void HeaderINDX( demux_t *p_demux )
+{
+    demux_sys_t *p_sys = p_demux->p_sys;
+    uint8_t       buffer[20];
 
+    uint32_t      i_index_count;
+
+    if( p_sys->i_index_offset == 0 )
+        return;
+
+    stream_Seek( p_demux->s, p_sys->i_index_offset );
+
+    if( stream_Read( p_demux->s, buffer, 20 ) < 20 )
+        return ;
+
+    const uint32_t i_id = VLC_FOURCC( buffer[0], buffer[1], buffer[2], buffer[3] );
+    const uint32_t i_size      = GetDWBE( &buffer[4] );
+    int i_version   = GetWBE( &buffer[8] );
+
+    msg_Dbg( p_demux, "Real index %4.4s size=%d version=%d",
+                 (char*)&i_id, i_size, i_version );
+
+    if( (i_size < 20) && (i_id != VLC_FOURCC('I','N','D','X')) )
+        return;
+
+    i_index_count = GetDWBE( &buffer[10] );
+
+    msg_Dbg( p_demux, "Real Index : num : %d ", i_index_count );
+
+    if( i_index_count >= ( 0xffffffff / sizeof(*p_sys->p_index) ) )
+        return;
+
+    if( GetDWBE( &buffer[16] ) > 0 )
+        msg_Dbg( p_demux, "Real Index: Does next index exist? %d ",
+                        GetDWBE( &buffer[16] )  );
+
+    /* One extra entry is allocated (that MUST be set to 0) to identify the
+     * end of the index.
+     * TODO add a clean entry count (easier to build index on the fly) */
+    p_sys->p_index = calloc( i_index_count + 1, sizeof(*p_sys->p_index) );
+    if( !p_sys->p_index )
+        return;
+
+    for( unsigned int i = 0; i < i_index_count; i++ )
+    {
+        uint8_t p_entry[14];
+
+        if( stream_Read( p_demux->s, p_entry, 14 ) < 14 )
+            return ;
+
+        if( GetWBE( &p_entry[0] ) != 0 )
+        {
+            msg_Dbg( p_demux, "Real Index: invaild version of index entry %d ",
+                              GetWBE( &p_entry[0] ) );
+            return;
+        }
+
+        real_index_t *p_idx = &p_sys->p_index[i];
+        
+        p_idx->i_time_offset = GetDWBE( &p_entry[2] );
+        p_idx->i_file_offset = GetDWBE( &p_entry[6] );
+        p_idx->i_frame_index = GetDWBE( &p_entry[10] );
+
+#if 0
+        msg_Dbg( p_demux,
+                 "Real Index: time %"PRIu32" file %"PRIu32" frame %"PRIu32,
+                 p_idx->i_time_offset,
+                 p_idx->i_file_offset,
+                 p_idx->i_frame_index );
+#endif
+    }
+}
+
+
+/**
+ * This function parses the complete RM headers and move the
+ * stream pointer to the data to be read.
+ */
 static int HeaderRead( demux_t *p_demux )
 {
     demux_sys_t *p_sys = p_demux->p_sys;
-
-    p_sys->p_meta = vlc_meta_New();
 
     for( ;; )
     {
@@ -1186,73 +1244,12 @@ static int HeaderRead( demux_t *p_demux )
     {
         const int64_t i_position = stream_Tell( p_demux->s );
 
-        ReadRealIndex( p_demux );
+        HeaderINDX( p_demux );
 
         if( stream_Seek( p_demux->s, i_position ) )
             return VLC_EGENERIC;
     }
     return VLC_SUCCESS;
-}
-
-/**
- * This function will read a pascal string with size stored in 1 byte from a
- * memory buffer.
- *
- * FIXME what is the right charset ?
- */
-static char *MemoryReadString1( const uint8_t **pp_data, int *pi_data )
-{
-    const uint8_t *p_data = *pp_data;
-    int           i_data = *pi_data;
-
-    char *psz_string = NULL;
-
-    if( i_data < 1 )
-        goto exit;
-
-    int i_length = *p_data++; i_data--;
-    if( i_length > i_data )
-        i_length = i_data;
-
-    if( i_length > 0 )
-    {
-        psz_string = strndup( (const char*)p_data, i_length );
-        if( psz_string )
-            EnsureUTF8( psz_string );
-
-        p_data += i_length;
-        i_data -= i_length;
-    }
-
-exit:
-    *pp_data = p_data;
-    *pi_data = i_data;
-    return psz_string;
-}
-/**
- * This function will read a pascal string with size stored in 2 bytes from
- * a stream_t.
- *
- * FIXME what is the right charset ?
- */
-static char *StreamReadString2( stream_t *s )
-{
-    uint8_t p_tmp[2];
-
-    if( stream_Read( s, p_tmp, 2 ) < 2 )
-        return NULL;
-
-    const int i_length = GetWBE( p_tmp );
-    if( i_length <= 0 )
-        return NULL;
-
-    char *psz_string = calloc( 1, i_length + 1 );
-
-    stream_Read( s, psz_string, i_length ); /* Valid even if !psz_string */
-
-    if( psz_string )
-        EnsureUTF8( psz_string );
-    return psz_string;
 }
 
 static void CodecMetaRead( demux_t *p_demux, const uint8_t **pp_data, int *pi_data )
@@ -1399,9 +1396,9 @@ static int CodecAudioParse( demux_t *p_demux, int i_tk_id, const uint8_t *p_data
         i_subpacket_h = R16( &p_data, &i_data );
         i_frame_size = R16( &p_data, &i_data );
         i_subpacket_size = R16( &p_data, &i_data );
-        if( (!i_subpacket_size && !p_sys->b_real_audio ) ||
-            !i_frame_size || !i_coded_frame_size )
-             return VLC_EGENERIC;
+        if( !i_frame_size || !i_coded_frame_size )
+            return VLC_EGENERIC;
+
         RVoid( &p_data, &i_data, 2 + (i_version == 5 ? 6 : 0 ) );
 
         fmt.audio.i_rate = R16( &p_data, &i_data );
@@ -1473,8 +1470,8 @@ static int CodecAudioParse( demux_t *p_demux, int i_tk_id, const uint8_t *p_data
         }
         if( i_extra_codec > 0 )
         {
-            fmt.p_extra = malloc( fmt.i_extra );
-            if( !fmt.p_extra || fmt.i_extra > i_data )
+            fmt.p_extra = malloc( i_extra_codec );
+            if( !fmt.p_extra || i_extra_codec > i_data )
                 return VLC_ENOMEM;
 
             fmt.i_extra = i_extra_codec;
@@ -1486,6 +1483,12 @@ static int CodecAudioParse( demux_t *p_demux, int i_tk_id, const uint8_t *p_data
         fmt.audio.i_flavor = i_flavor;
     case VLC_FOURCC('c','o','o','k'):
     case VLC_FOURCC('a','t','r','c'):
+        if( i_subpacket_size <= 0 ||
+            i_frame_size / i_subpacket_size <= 0 )
+        {
+            es_format_Clean( &fmt );
+            return VLC_EGENERIC;
+        }
         if( !memcmp( p_genr, "genr", 4 ) )
             fmt.audio.i_blockalign = i_subpacket_size;
         else
@@ -1493,8 +1496,8 @@ static int CodecAudioParse( demux_t *p_demux, int i_tk_id, const uint8_t *p_data
 
         if( i_extra_codec > 0 )
         {
-            fmt.p_extra = malloc( fmt.i_extra );
-            if( !fmt.p_extra || fmt.i_extra > i_data )
+            fmt.p_extra = malloc( i_extra_codec );
+            if( !fmt.p_extra || i_extra_codec > i_data )
                 return VLC_ENOMEM;
 
             fmt.i_extra = i_extra_codec;
@@ -1538,7 +1541,8 @@ static int CodecAudioParse( demux_t *p_demux, int i_tk_id, const uint8_t *p_data
     tk->p_subpackets = NULL;
     tk->p_subpackets_timecode = NULL;
     if( fmt.i_codec == VLC_FOURCC('c','o','o','k') ||
-        fmt.i_codec == VLC_FOURCC('a','t','r','c') )
+        fmt.i_codec == VLC_FOURCC('a','t','r','c') ||
+        fmt.i_codec == VLC_FOURCC('s','i','p','r') )
     {
         tk->i_subpackets =
             i_subpacket_h * i_frame_size / tk->i_subpacket_size;
@@ -1558,7 +1562,7 @@ static int CodecAudioParse( demux_t *p_demux, int i_tk_id, const uint8_t *p_data
     }
 
     /* Check if the calloc went correctly */
-    if( !tk->p_subpackets && !tk->p_subpackets_timecode)
+    if( tk->i_subpacket > 0 && ( !tk->p_subpackets || !tk->p_subpackets_timecode ) )
     {
         free( tk->p_subpackets_timecode );
         free( tk->p_subpackets );
@@ -1594,7 +1598,10 @@ static int CodecParse( demux_t *p_demux, int i_len, int i_num )
     }
     return VLC_SUCCESS;
 }
-/* Small memory buffer helpers */
+
+/*****************************************************************************
+ * Helpers: memory buffer fct.
+ *****************************************************************************/
 static void RVoid( const uint8_t **pp_data, int *pi_data, int i_size )
 {
     if( i_size > *pi_data )
