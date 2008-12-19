@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-12-07 17:24+0000\n"
-"PO-Revision-Date: 2008-12-15 21:53+0100\n"
+"POT-Creation-Date: 2008-12-19 16:01+0100\n"
+"PO-Revision-Date: 2008-12-18 21:04+0100\n"
 "Last-Translator: Myckel Habets <myckel@sdf.lonestar.org>\n"
 "Language-Team: De Vrije CD <leiden@losc.nl>\n"
 "MIME-Version: 1.0\n"
@@ -978,8 +978,8 @@ msgstr ""
 
 #: src/input/decoder.c:167 src/input/decoder.c:180 src/input/decoder.c:384
 #: modules/codec/avcodec/encoder.c:228 modules/codec/avcodec/encoder.c:236
-#: modules/codec/avcodec/encoder.c:252 modules/codec/avcodec/encoder.c:681
-#: modules/codec/avcodec/encoder.c:690 modules/stream_out/es.c:373
+#: modules/codec/avcodec/encoder.c:252 modules/codec/avcodec/encoder.c:683
+#: modules/codec/avcodec/encoder.c:692 modules/stream_out/es.c:373
 #: modules/stream_out/es.c:388
 msgid "Streaming / Transcoding failed"
 msgstr "Streamen / Transcoden mislukt"
@@ -1106,7 +1106,7 @@ msgid "VLC can't recognize the input's format"
 msgstr "VLC is niet in staat het invoersformaat te herkennen"
 
 #: src/input/input.c:2310
-#, fuzzy, c-format
+#, c-format
 msgid "The format of '%s' cannot be detected. Have a look the log for details."
 msgstr ""
 "Het formaat van '%s' kon niet worden gedetecteerd. Zie het logboek voor "
@@ -2151,15 +2151,14 @@ msgid "Display the title of the video on top of the movie."
 msgstr "Plaats de titel van de video bovenop de film."
 
 #: src/libvlc-module.c:412
-#, fuzzy
 msgid "Show video title for x miliseconds"
 msgstr "Geef video titel gedurende x milliseconden weer"
 
 #: src/libvlc-module.c:414
-#, fuzzy
 msgid "Show the video title for n miliseconds, default is 5000 ms (5 sec.)"
 msgstr ""
-"Geef de videotitel gedurende n seconden weer, standaard is 5000 ms (5 sec.)"
+"Geef de videotitel gedurende n miliseconden weer, standaard is 5000 ms (5 "
+"seconden)."
 
 #: src/libvlc-module.c:416
 msgid "Position of video title"
@@ -2171,12 +2170,10 @@ msgstr ""
 "Plaats op de video om de titel weer te geven (standaard beneden midden)."
 
 #: src/libvlc-module.c:420
-#, fuzzy
 msgid "Hide cursor and fullscreen controller after x miliseconds"
-msgstr "Verberg cursor en schermvullende modus aansturing na x milliseconden"
+msgstr "Verberg cursor en schermvullende modus aansturing na x miliseconden"
 
 #: src/libvlc-module.c:423
-#, fuzzy
 msgid ""
 "Hide mouse cursor and fullscreen controller after n miliseconds, default is "
 "3000 ms (3 sec.)"
@@ -2767,13 +2764,12 @@ msgid "Subpictures filter module"
 msgstr "Subpictures-filtermodule"
 
 #: src/libvlc-module.c:703
-#, fuzzy
 msgid ""
 "This adds so-called \"subpicture filters\". These filters overlay some "
 "images or text over the video (like a logo, arbitrary text...)."
 msgstr ""
-"Dit voegt zogenaamde \"subpicture filters\" toe. Deze filters leggen "
-"plaatjes of tekst over de video (zoals een logo, arbitraire tekst, ...)."
+"Dit zijn zogenaamde \"subpicture filters\". Deze filters leggen plaatjes of "
+"tekst over de video (zoals een logo, arbitraire tekst, ...)."
 
 #: src/libvlc-module.c:706
 msgid "Autodetect subtitle files"
@@ -3489,7 +3485,6 @@ msgstr ""
 "reeds geopende versie van VLC opgenomen."
 
 #: src/libvlc-module.c:1058
-#, fuzzy
 msgid ""
 "Allowing only one running instance of VLC can sometimes be useful, for "
 "example if you associated VLC with some media types and you don't want a new "
@@ -3501,10 +3496,10 @@ msgstr ""
 "Het kan handig zijn om maar een enkele instantie van VLC te laten draaien. "
 "Bijvoorbeeld indien u bestanden met bepaalde extensies hebt verbonden aan "
 "VLC en u geen nieuwe instantie van VLC wilt als u dubbelklikt op een bestand "
-"in de bestandsverkenner. Met deze optie wordt het bestand dan in de reeds "
+"in de bestandsmanager. Met deze optie wordt het bestand dan in de reeds "
 "geopende versie van VLC geopend en toegevoegd aan de afspeellijst. Deze "
 "optie vereist dat de D-Bus sessie daemon actief is en dat de lopende "
-"instantie van VLC de D-Bus besturingsinterface gebruikt."
+"instantie van VLC de D-Bus controle interface gebruikt."
 
 #: src/libvlc-module.c:1067
 msgid "VLC is started from file association"
@@ -4603,13 +4598,12 @@ msgid "print a list of available modules with extra detail"
 msgstr "toon een lijst van beschikbare modules met extra details"
 
 #: src/libvlc-module.c:2502
-#, fuzzy
 msgid ""
 "print help on a specific module (can be combined with --advanced and --help-"
 "verbose)"
 msgstr ""
-"geef help voor VLC en al zijn modules weer (kan worden gecombineerd met --"
-"advanced en --help-verbose)"
+"toon help voor een specifieke module (kan worden gecombineerd met --advanced "
+"en --help-verbose)"
 
 #: src/libvlc-module.c:2505
 msgid "no configuration option will be loaded nor saved to config file"
@@ -4715,13 +4709,13 @@ msgid "File not verifiable"
 msgstr "Bestand niet verifieerbaar"
 
 #: src/misc/update.c:1670
-#, fuzzy, c-format
+#, c-format
 msgid ""
 "It was not possible to securely verify the downloaded file \"%s\". Thus, it "
 "was VLC deleted."
 msgstr ""
 "Het was niet mogelijk om de veiligheid van het gedownloade bestand \"%s\" te "
-"verifiëren, dus is het verwijderd."
+"verifieren, dus heeft VLC het verwijderd."
 
 #: src/misc/update.c:1681 src/misc/update.c:1693
 msgid "File corrupted"
@@ -5465,27 +5459,24 @@ msgid "Antenna lnb_lof1 (kHz)"
 msgstr "Antenne lnb_lof1 (kHz)"
 
 #: modules/access/bda/bda.c:100
-#, fuzzy
 msgid "Low Band Local Osc Freq in kHz usually 9.75GHz"
-msgstr "Lage Band Lokaal Osc Freq in kHz (meestal 9.75GHz)"
+msgstr "Lage Band Lokaal Osc Freq in kHz meestal 9.75GHz"
 
 #: modules/access/bda/bda.c:102 modules/access/dvb/access.c:124
 msgid "Antenna lnb_lof2 (kHz)"
 msgstr "Antenne lnb_lof2 (kHz)"
 
 #: modules/access/bda/bda.c:103
-#, fuzzy
 msgid "High Band Local Osc Freq in kHz usually 10.6GHz"
-msgstr "Hoge Band Lokaal Osc Freq in kHz (meestal 10.6GHz)"
+msgstr "Hoge Band Lokaal Osc Freq in kHz meestal 10.6GHz"
 
 #: modules/access/bda/bda.c:105 modules/access/dvb/access.c:127
 msgid "Antenna lnb_slof (kHz)"
 msgstr "Antenne lnb_slof (kHz)"
 
 #: modules/access/bda/bda.c:107
-#, fuzzy
 msgid "Low Noise Block switch freq in kHz usually 11.7GHz"
-msgstr "Lage Ruis Blok switch freq in kHz meestal (11.7GHz)"
+msgstr "Lage Ruis Blok switch freq in kHz meestal 11.7GHz"
 
 #: modules/access/bda/bda.c:110 modules/access/dvb/access.c:131
 msgid "Modulation type"
@@ -6119,7 +6110,6 @@ msgid "DSS"
 msgstr "DSS"
 
 #: modules/access/dshow/dshow.cpp:100
-#, fuzzy
 msgid ""
 "Caching value for DirectShow streams. This value should be set in "
 "millisecondss."
@@ -6750,9 +6740,8 @@ msgid "Record directory"
 msgstr "Opnamedirectory"
 
 #: modules/access_filter/record.c:50
-#, fuzzy
 msgid "Directory where the record will be stored."
-msgstr "De directory of bestandsnaam waar de opnames zullen worden opgeslagen."
+msgstr "Directory waarin de opnames zullen worden opgeslagen."
 
 #: modules/access_filter/record.c:339
 msgid "Recording"
@@ -6942,9 +6931,8 @@ msgid "Forward Cookies"
 msgstr "Cookies doorsturen"
 
 #: modules/access/http.c:96
-#, fuzzy
 msgid "Forward Cookies Across http redirections "
-msgstr "Cookies over http redirecties doorsturen"
+msgstr "Cookies over http herleidingen doorsturen"
 
 #: modules/access/http.c:99
 msgid "HTTP input"
@@ -6965,7 +6953,6 @@ msgid "HTTP authentication"
 msgstr "HTTP authentificatie"
 
 #: modules/access/jack.c:64
-#, fuzzy
 msgid ""
 "Make VLC buffer audio data capturer from jack for the specified length in "
 "milliseconds."
@@ -7101,7 +7088,7 @@ msgstr "Gebruikersnaam"
 msgid "User name that will be requested to access the stream."
 msgstr "Gebruikersnaam wat gevraagd zal worden om de stream te bereiken."
 
-#: modules/access_output/http.c:68 modules/control/telnet.c:87
+#: modules/access_output/http.c:68 modules/control/telnet.c:91
 #: modules/gui/macosx/simple_prefs.m:227
 #: modules/gui/qt4/dialogs/interaction.cpp:99
 #: modules/gui/qt4/ui/sprefs_audio.ui:319 modules/misc/audioscrobbler.c:134
@@ -9670,7 +9657,7 @@ msgstr ""
 "Dit is geen fout in VLC mediaspeler.\n"
 "Neem hierover geen contact met het VideoLAN project op.\n"
 
-#: modules/codec/avcodec/encoder.c:682 modules/codec/avcodec/encoder.c:691
+#: modules/codec/avcodec/encoder.c:684 modules/codec/avcodec/encoder.c:693
 msgid "VLC could not open the encoder."
 msgstr "VLC kon de encoder niet openen."
 
@@ -11949,11 +11936,11 @@ msgstr "Singnalen"
 msgid "POSIX signals handling interface"
 msgstr "POSIX signalen handelingsinterface"
 
-#: modules/control/telnet.c:78
+#: modules/control/telnet.c:82
 msgid "Host"
 msgstr "Adres"
 
-#: modules/control/telnet.c:79
+#: modules/control/telnet.c:83
 msgid ""
 "This is the host on which the interface will listen. It defaults to all "
 "network interfaces (0.0.0.0). If you want this interface to be available "
@@ -11963,21 +11950,21 @@ msgstr ""
 "netwerken (0.0.0.0) geluisterd worden. Als u wilt dat deze interface alleen "
 "op de lokale machine beschikbaar moet zijn, geef \"127.0.0.1\" op."
 
-#: modules/control/telnet.c:83 modules/gui/macosx/open.m:189
+#: modules/control/telnet.c:87 modules/gui/macosx/open.m:189
 #: modules/gui/macosx/open.m:191 modules/gui/macosx/output.m:147
 #: modules/gui/qt4/ui/open_net.ui:75 modules/gui/qt4/ui/sout.ui:297
 #: modules/stream_out/rtp.c:108
 msgid "Port"
 msgstr "Poort"
 
-#: modules/control/telnet.c:84
+#: modules/control/telnet.c:88
 msgid ""
 "This is the TCP port on which this interface will listen. It defaults to "
 "4212."
 msgstr ""
 "Dit is de TCP poort waar de besturing aan zal luisteren. Standaard is 4212."
 
-#: modules/control/telnet.c:88
+#: modules/control/telnet.c:92
 msgid ""
 "A single administration password is used to protect this interface. The "
 "default value is \"admin\"."
@@ -11985,7 +11972,7 @@ msgstr ""
 "Een enkel administratief wachtwoord wordt gebruikt om deze besturing te "
 "beschermen. De standaard waarde is \"admin\"."
 
-#: modules/control/telnet.c:102
+#: modules/control/telnet.c:106
 msgid "VLM remote control interface"
 msgstr "VLM afstandsbedieningsinterface"
 
@@ -12610,7 +12597,7 @@ msgstr "beeldverhouding (4:3, 16:9). Standaard is vierkante pixels."
 msgid "Raw video demuxer"
 msgstr "Raw video demuxer"
 
-#: modules/demux/real.c:68
+#: modules/demux/real.c:70
 msgid "Real demuxer"
 msgstr "Real demuxer"
 
@@ -12899,24 +12886,20 @@ msgid "Teletext subtitles"
 msgstr "Teletext ondertiteling"
 
 #: modules/demux/ts.c:3441
-#, fuzzy
 msgid "Teletext additional information"
-msgstr "Teletekst: additionele informatie"
+msgstr "Teletekst additionele informatie"
 
 #: modules/demux/ts.c:3451
-#, fuzzy
 msgid "Teletext programme schedule"
-msgstr "Teletekst: programmering"
+msgstr "Teletekst programmering"
 
 #: modules/demux/ts.c:3461
-#, fuzzy
 msgid "Teletext hearing impaired subtitles"
-msgstr "Teletekst ondertiteling: slechthorend"
+msgstr "Teletekst ondertiteling voor slechthorenden"
 
 #: modules/demux/ts.c:3556
-#, fuzzy
 msgid "subtitles"
-msgstr "Ondertiteling"
+msgstr "ondertitelingen"
 
 #: modules/demux/ts.c:3560
 msgid "4:3 subtitles"
@@ -12935,9 +12918,8 @@ msgid "hearing impaired"
 msgstr "slechthorend"
 
 #: modules/demux/ts.c:3576
-#, fuzzy
 msgid "4:3 hearing impaired"
-msgstr "slechthorend"
+msgstr "4:3 slechthorend"
 
 #: modules/demux/ts.c:3580
 msgid "16:9 hearing impaired"
@@ -15056,9 +15038,8 @@ msgid "No"
 msgstr "Nee"
 
 #: modules/gui/macosx/update.m:138
-#, fuzzy
 msgid "Save As:"
-msgstr " Opslaan "
+msgstr "Opslaan als:"
 
 #: modules/gui/macosx/update.m:178
 msgid "This version of VLC is the latest available."
@@ -15496,7 +15477,6 @@ msgstr ""
 "onderdeel van de afbeelding worden."
 
 #: modules/gui/macosx/wizard.m:422
-#, fuzzy
 msgid ""
 "This page lists all the settings.Click \"Finish\" to start streaming or "
 "transcoding."
@@ -16615,9 +16595,8 @@ msgid "Menu"
 msgstr "Menu"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:619
-#, fuzzy
 msgid "Teletext on"
-msgstr "Teletekst"
+msgstr "Teletekst aan"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:681
 msgid "Previous media in the playlist"
@@ -16633,7 +16612,7 @@ msgstr "Afspelen stoppen"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:695
 msgid "Toggle the video in fullscreen"
-msgstr "Wissel video in volledig scherm-modus"
+msgstr "Wissel video in schermvullende modus"
 
 #: modules/gui/qt4/components/interface_widgets.cpp:703
 msgid "Show playlist"
@@ -16815,26 +16794,26 @@ msgstr ""
 msgid "Configure Hotkeys"
 msgstr "Sneltoetsen configureren"
 
-#: modules/gui/qt4/components/simple_preferences.cpp:759
+#: modules/gui/qt4/components/simple_preferences.cpp:756
 #: modules/gui/qt4/dialogs_provider.hpp:55
 msgid "Audio Files"
 msgstr "Geluidsbestanden"
 
-#: modules/gui/qt4/components/simple_preferences.cpp:760
+#: modules/gui/qt4/components/simple_preferences.cpp:757
 #: modules/gui/qt4/dialogs_provider.hpp:50
 msgid "Video Files"
 msgstr "Videobestanden"
 
-#: modules/gui/qt4/components/simple_preferences.cpp:761
+#: modules/gui/qt4/components/simple_preferences.cpp:758
 #: modules/gui/qt4/dialogs_provider.hpp:60
 msgid "Playlist Files"
 msgstr "Afspeellijstbestanden"
 
-#: modules/gui/qt4/components/simple_preferences.cpp:808
+#: modules/gui/qt4/components/simple_preferences.cpp:805
 msgid "&Apply"
 msgstr "Toep&assen"
 
-#: modules/gui/qt4/components/simple_preferences.cpp:809
+#: modules/gui/qt4/components/simple_preferences.cpp:806
 #: modules/gui/qt4/dialogs/gototime.cpp:51
 #: modules/gui/qt4/dialogs/help.cpp:210 modules/gui/qt4/dialogs/open.cpp:113
 #: modules/gui/qt4/dialogs/podcast_configuration.cpp:39
@@ -17087,9 +17066,8 @@ msgid "&Save as..."
 msgstr "&Opslaan als..."
 
 #: modules/gui/qt4/dialogs/messages.cpp:86
-#, fuzzy
 msgid "Save all the displayed logs to a file"
-msgstr "Schrijft alle weergegeven logboeken naar een bestand weg"
+msgstr "Alle weergegeven logboeken naar bestand opslaan"
 
 #: modules/gui/qt4/dialogs/messages.cpp:94
 msgid "Verbosity Level"
@@ -17108,12 +17086,11 @@ msgid "Texts / Logs (*.log *.txt);; All (*.*) "
 msgstr "Teksten / Logboeken (*.log *.txt);; Alles (*.*) "
 
 #: modules/gui/qt4/dialogs/messages.cpp:258
-#, fuzzy
 msgid ""
 "Cannot write file %1:\n"
 "%2."
 msgstr ""
-"Kan niet naar bestand %1 schrijven:\n"
+"Kan niet schrijven naar bestand %1:\n"
 "%2."
 
 #: modules/gui/qt4/dialogs/open.cpp:97
@@ -17166,9 +17143,8 @@ msgid "Simple"
 msgstr "Eenvoudig"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:71
-#, fuzzy
 msgid "Switch to simple preferences"
-msgstr "Ga naar eenvoudige voorkeurenweergave"
+msgstr "Ga naar eenvoudige voorkeuren"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:74
 msgid "Switch to complete preferences"
@@ -17227,7 +17203,6 @@ msgid "Stream Output"
 msgstr "Stream uitvoer"
 
 #: modules/gui/qt4/dialogs/sout.cpp:162
-#, fuzzy
 msgid ""
 "Stream output string.\n"
 "This is automatically generated when you change the above settings,\n"
@@ -17239,7 +17214,6 @@ msgstr ""
 "maar u kan het ook handmatig aanpassen."
 
 #: modules/gui/qt4/dialogs/sout.cpp:217
-#, fuzzy
 msgid "Save file"
 msgstr "Bestand opslaan"
 
@@ -17251,7 +17225,7 @@ msgstr ""
 
 #: modules/gui/qt4/dialogs/sout.cpp:345
 msgid "Audio Port:"
-msgstr "Audio poort:"
+msgstr "Audiopoort:"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:75
 msgid "Broadcast"
@@ -17286,14 +17260,12 @@ msgid " days"
 msgstr " dagen"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:132
-#, fuzzy
 msgid "Import"
-msgstr "I&mporteren"
+msgstr "Importeren"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:135
-#, fuzzy
 msgid "Export"
-msgstr "E&xporteren"
+msgstr "Exporteren"
 
 #: modules/gui/qt4/dialogs/vlm.cpp:265
 msgid "Choose a filename to save the VLM configuration..."
@@ -17329,14 +17301,13 @@ msgstr ""
 
 #: modules/gui/qt4/main_interface.cpp:478
 msgid "Privacy and Network Policies"
-msgstr "Privacy- en Netwerkbeleiden"
+msgstr "Privacy- en netwerkbeleiden"
 
 #: modules/gui/qt4/main_interface.cpp:482
 msgid "Privacy and Network Warning"
-msgstr "Privacy- en Netwerkwaarschuwing"
+msgstr "Privacy- en netwerkwaarschuwing"
 
 #: modules/gui/qt4/main_interface.cpp:485
-#, fuzzy
 msgid ""
 "<p>The <i>VideoLAN Team</i> doesn't like when an application goes online "
 "without authorization.</p>\n"
@@ -17349,12 +17320,12 @@ msgid ""
 msgstr ""
 "<p>Het <i>VideoLAN Team</i> houdt er niet van als een toepassing zonder "
 "toestemming verbinding maakt met het internet.</p>\n"
-" <p><i>VLC mediaspeler</i> kan beperkt informatie ophalen van internet, "
+" <p><i>VLC media player</i> kan beperkt informatie ophalen van internet, "
 "voornamelijk om CD hoesjes of om te kijken of er nieuwere versies van VLC "
 "zijn.</p>\n"
-"<p><i>VLC mediaspeler</i> verzamelt of zendt <b>GEEN</b> informatie, zelfs "
+"<p><i>VLC media player</i> verzamelt of zendt <b>GEEN</b> informatie, zelfs "
 "niet anoniem, over uw gebruik van VLC.</p>\n"
-"<p>Daarom, controleer de volgende opties. Standaard zal er bijna geen "
+"<p>Daarom, controleer de volgende opties, standaard zal er bijna geen "
 "verbinding met internet gemaakt worden.</p>\n"
 
 #: modules/gui/qt4/main_interface.cpp:996
@@ -17438,9 +17409,8 @@ msgid "Ctrl+L"
 msgstr "Ctrl+L"
 
 #: modules/gui/qt4/menus.cpp:375
-#, fuzzy
 msgid "Mi&nimal View..."
-msgstr "Mi&nimale weergave"
+msgstr "Mi&nimale weergave..."
 
 #: modules/gui/qt4/menus.cpp:376
 msgid "Ctrl+H"
@@ -17571,9 +17541,8 @@ msgid "Show Playlist"
 msgstr "Afspeellijst weergeven"
 
 #: modules/gui/qt4/menus.cpp:852
-#, fuzzy
 msgid "Minimal View..."
-msgstr "Minimale weergave"
+msgstr "Minimale weergave..."
 
 #: modules/gui/qt4/menus.cpp:857
 msgid "Toggle Fullscreen Interface"
@@ -17834,9 +17803,8 @@ msgid "Add a subtitles file"
 msgstr "Ondertitelingsbestand toevoegen"
 
 #: modules/gui/qt4/ui/open_file.ui:52
-#, fuzzy
 msgid "Use a sub&titles file"
-msgstr "Gebruik een onder&amp;titelingsbestand"
+msgstr "Gebruik een onder&titelingsbestand"
 
 #: modules/gui/qt4/ui/open_file.ui:126
 msgid "Alignment:"
@@ -17871,9 +17839,8 @@ msgid "Show extended options"
 msgstr "Uitgebreide opties weergeven"
 
 #: modules/gui/qt4/ui/open.ui:41
-#, fuzzy
 msgid "Show &more options"
-msgstr "&amp;Meer opties weergeven"
+msgstr "&Meer opties weergeven"
 
 #: modules/gui/qt4/ui/open.ui:61
 msgid "Change the caching for the media"
@@ -18131,7 +18098,7 @@ msgstr "DirectX"
 
 #: modules/gui/qt4/ui/sprefs_video.ui:130
 msgid "Display device"
-msgstr "Weergave-apparaat"
+msgstr "Weergaveapparaat"
 
 #: modules/gui/qt4/ui/sprefs_video.ui:140
 msgid "Enable wallpaper mode"
@@ -18496,12 +18463,11 @@ msgstr ""
 "\n"
 
 #: modules/gui/wince/interface.cpp:504
-#, fuzzy
 msgid ""
 "(c) 1996-2006 - the VideoLAN Team\n"
 "\n"
 msgstr ""
-"(c) 1996-2008 - het VideoLAN team\n"
+"(C) 1996-2006 - Het VideoLAN team\n"
 "\n"
 
 #: modules/gui/wince/interface.cpp:505
@@ -21474,7 +21440,6 @@ msgid "Video pictures blending"
 msgstr "Video afbeeldingen mengen"
 
 #: modules/video_filter/bluescreen.c:39
-#, fuzzy
 msgid ""
 "This effect, also known as \"greenscreen\" or \"chroma key\" blends the "
 "\"blue parts\" of the foreground image of the mosaic on the background (like "
@@ -23286,13 +23251,12 @@ msgid "Filename prefix"
 msgstr "Bestandsnaam prefix"
 
 #: modules/video_output/image.c:71
-#, fuzzy
 msgid ""
 "Prefix of the output images filenames. Output filenames will have the "
 "\"prefixNUMBER.format\" form."
 msgstr ""
 "Prefix van de bestandsnamen van de uitvoerafbeeldingen. Uitvoerbestandsnamen "
-"hebben de \"prefixNUMMER.formaat\"-vorm als vervangen niet waar is."
+"hebben de \"prefixNUMMER.formaat\"-vorm ."
 
 #: modules/video_output/image.c:75
 msgid "Always write to the same file"
@@ -23620,13 +23584,12 @@ msgid "Lock function"
 msgstr "Sluitfunctie"
 
 #: modules/video_output/vmem.c:64
-#, fuzzy
 msgid ""
 "Address of the locking callback function. This function must return a valid "
 "memory address for use by the video renderer."
 msgstr ""
 "Adres van de locking terugroepfunctie. Deze functie moet een geldig "
-"geheugenadres weergeven voor gebruik door de videorenderer."
+"geheugenadres teruggeven voor gebruik door de videorenderer."
 
 #: modules/video_output/vmem.c:68
 msgid "Unlock function"
