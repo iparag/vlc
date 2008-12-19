@@ -30,6 +30,10 @@
 # include "config.h"
 #endif
 
+#ifdef WIN32
+# include "winsock2.h"
+#endif
+
 #include <vlc_common.h>
 #include <vlc_plugin.h>
 #include <vlc_interface.h>
@@ -370,6 +374,13 @@ static void Run( intf_thread_t *p_intf )
                     Write_message( cl, NULL, "Line too long\r\n",
                                    cl->i_mode + 2 );
                 }
+
+#ifdef WIN32
+                if( i_recv <= 0 && WSAGetLastError() == WSAEWOULDBLOCK )
+                {
+                    errno=EAGAIN;
+                }
+#endif
 
                 if (i_recv <= 0 && ( end || errno != EAGAIN ) )
                     goto drop;
