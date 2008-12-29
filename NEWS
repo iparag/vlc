@@ -1,8 +1,12 @@
-Changes between 0.9.8a and 0.9.9:
----------------------------------
+Changes between 0.9.8a and 0.9.9 (not-yet-released):
+----------------------------------------------------
+
+Mac OS X Interface:
+ * Fixed multiple UTF8 issues in the Streaming / Exporting Wizard
 
 New Localizations:
  * Indonesian
+
 
 Changes between 0.9.6 and 0.9.8a:
 ---------------------------------
