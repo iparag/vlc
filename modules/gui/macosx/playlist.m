@@ -522,8 +522,27 @@
 
     if( p_item )
     {
-        /* update our info-panel to reflect the new item */
-        [[[VLCMain sharedInstance] getInfo] updatePanelWithItem:p_item->p_input];
+        /* update the state of our Reveal-in-Finder menu items */
+        NSMutableString *o_mrl;
+        char *psz_uri = input_item_GetURI( p_item->p_input );
+        if( psz_uri )
+        {
+            o_mrl = [NSMutableString stringWithUTF8String: psz_uri];
+        
+            /* perform some checks whether it is a file and if it is local at all... */
+            NSRange prefix_range = [o_mrl rangeOfString: @"file:"];
+            if( prefix_range.location != NSNotFound )
+                [o_mrl deleteCharactersInRange: prefix_range];
+            
+            if( [o_mrl characterAtIndex:0] == '/' )
+            {
+                [o_mi_revealInFinder setEnabled: YES];
+                [o_mm_mi_revealInFinder setEnabled: YES];
+                return;
+            }
+        }
+        [o_mi_revealInFinder setEnabled: NO];
+        [o_mm_mi_revealInFinder setEnabled: NO];
     }
 }
 
@@ -1289,10 +1308,10 @@
     return( o_ctx_menu );
 }
 
-- (void)outlineView: (NSTableView*)o_tv
+- (void)outlineView: (NSTableView *)o_tv
                   didClickTableColumn:(NSTableColumn *)o_tc
 {
-    int i_mode = 0, i_type;
+    int i_mode, i_type = 0;
     intf_thread_t *p_intf = VLCIntf;
 
     playlist_t *p_playlist = pl_Yield( p_intf );

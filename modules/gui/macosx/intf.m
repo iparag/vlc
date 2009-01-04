@@ -1482,7 +1482,12 @@ static void * ManageThread( void *user_data )
             {
                 b_buffering = YES;
             }
-                 
+
+            /* update our info-panel to reflect the new item */
+            [[[VLCMain sharedInstance] getInfo]
+                updatePanelWithItem: 
+                    playlist_CurrentPlayingItem( p_playlist )->p_input];
+
             /* seekable streams */
             b_seekable = var_GetBool( p_input, "seekable" );
 

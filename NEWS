@@ -2,6 +2,7 @@ Changes between 0.9.8a and 0.9.9 (not-yet-released):
 ----------------------------------------------------
 
 Mac OS X Interface:
+ * Fixed circumstances, which lead to an empty Information panel
  * Fixed multiple UTF8 issues in the Streaming / Exporting Wizard
 
 New Localizations:
