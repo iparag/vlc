@@ -493,8 +493,6 @@
             [o_status_field setStringValue: _NS("1 item")];
     }
     vlc_object_release( p_playlist );
-
-    [self outlineViewSelectionDidChange: nil];
 }
 
 - (void)playModeUpdated
