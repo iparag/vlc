@@ -515,37 +515,6 @@
     vlc_object_release( p_playlist );
 }
 
-- (void)outlineViewSelectionDidChange:(NSNotification *)notification
-{
-    // FIXME: unsafe
-    playlist_item_t * p_item = [[o_outline_view itemAtRow:[o_outline_view selectedRow]] pointerValue];
-
-    if( p_item )
-    {
-        /* update the state of our Reveal-in-Finder menu items */
-        NSMutableString *o_mrl;
-        char *psz_uri = input_item_GetURI( p_item->p_input );
-        if( psz_uri )
-        {
-            o_mrl = [NSMutableString stringWithUTF8String: psz_uri];
-        
-            /* perform some checks whether it is a file and if it is local at all... */
-            NSRange prefix_range = [o_mrl rangeOfString: @"file:"];
-            if( prefix_range.location != NSNotFound )
-                [o_mrl deleteCharactersInRange: prefix_range];
-            
-            if( [o_mrl characterAtIndex:0] == '/' )
-            {
-                [o_mi_revealInFinder setEnabled: YES];
-                [o_mm_mi_revealInFinder setEnabled: YES];
-                return;
-            }
-        }
-        [o_mi_revealInFinder setEnabled: NO];
-        [o_mm_mi_revealInFinder setEnabled: NO];
-    }
-}
-
 - (BOOL)isSelectionEmpty
 {
     return [o_outline_view selectedRow] == -1;

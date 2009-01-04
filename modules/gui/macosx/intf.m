@@ -1485,8 +1485,7 @@ static void * ManageThread( void *user_data )
 
             /* update our info-panel to reflect the new item */
             [[[VLCMain sharedInstance] getInfo]
-                updatePanelWithItem: 
-                    playlist_CurrentPlayingItem( p_playlist )->p_input];
+                updatePanelWithItem: p_playlist->status.p_item->p_input];
 
             /* seekable streams */
             b_seekable = var_GetBool( p_input, "seekable" );
@@ -1579,6 +1578,7 @@ static void * ManageThread( void *user_data )
  
             [o_playlist updateRowSelection];
             p_intf->p_sys->b_current_title_update = FALSE;
+            p_intf->p_sys->b_intf_update = true;
         }
 
         if( [o_timeslider isEnabled] )
@@ -1601,6 +1601,9 @@ static void * ManageThread( void *user_data )
             [o_timefield setStringValue: o_time];
             [[[self getControls] getFSPanel] setStreamPos: f_updated andTime: o_time];
             [o_embedded_window setTime: o_time position: f_updated];
+
+            [o_main_pgbar stopAnimation:self];
+            [o_main_pgbar setHidden:YES];
         }
 
         /* Manage Playing status */
