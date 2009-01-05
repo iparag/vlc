@@ -4,16 +4,16 @@
 # $Id: vlc_nl.po,v 1.5 2007/11/08 17:02:28 myckel Exp $
 #
 # Derk-Jan Hartman <hartman at videolan dot org>, 2004-2005.
-# Myckel Habets <myckel at sdf dot lonestar dot org>, 2007, 2008.
-# Thomas de Rocker <thomasderocker at yahoo dot com>, 2008.
+# Myckel Habets <myckel at sdf dot lonestar dot org>, 2007, 2008, 2009.
+# Thomas de Rocker <thomasderocker at yahoo dot com>, 2008, 2009.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2008-12-19 16:01+0100\n"
-"PO-Revision-Date: 2008-12-18 21:04+0100\n"
-"Last-Translator: Myckel Habets <myckel@sdf.lonestar.org>\n"
+"POT-Creation-Date: 2009-01-05 23:39+0000\n"
+"PO-Revision-Date: 2009-01-03 16:35+0100\n"
+"Last-Translator: Thomas De Rocker <thomasderocker@yahoo.com>\n"
 "Language-Team: De Vrije CD <leiden@losc.nl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -553,9 +553,9 @@ msgstr "&Over..."
 #: modules/gui/macosx/embeddedwindow.m:51
 #: modules/gui/macosx/embeddedwindow.m:141 modules/gui/macosx/intf.m:495
 #: modules/gui/macosx/intf.m:539 modules/gui/macosx/intf.m:618
-#: modules/gui/macosx/intf.m:625 modules/gui/macosx/intf.m:1809
-#: modules/gui/macosx/intf.m:1810 modules/gui/macosx/intf.m:1811
-#: modules/gui/macosx/intf.m:1812 modules/gui/macosx/playlist.m:442
+#: modules/gui/macosx/intf.m:625 modules/gui/macosx/intf.m:1817
+#: modules/gui/macosx/intf.m:1818 modules/gui/macosx/intf.m:1819
+#: modules/gui/macosx/intf.m:1820 modules/gui/macosx/playlist.m:442
 #: modules/gui/pda/pda_interface.c:260 modules/gui/pda/pda_interface.c:261
 #: modules/gui/qt4/menus.cpp:656 modules/gui/qt4/menus.cpp:660
 #: modules/gui/qt4/menus.cpp:663
@@ -637,7 +637,7 @@ msgstr "Geavanceerd openen..."
 
 #: include/vlc_intf_strings.h:77
 msgid "Add directory..."
-msgstr "Directorie toevoegen..."
+msgstr "Directory toevoegen..."
 
 #: include/vlc_intf_strings.h:79
 msgid "Save Playlist to &File..."
@@ -712,8 +712,8 @@ msgid ""
 "Create a \"puzzle game\" with the video.\n"
 "The video gets split in parts that you must sort."
 msgstr ""
-"Maak een \"puzzel spel\" met behulp van de video.\n"
-"De video wordt in stukken opgesplits die u moet sorteren."
+"Maak een \"puzzelspel\" met behulp van de video.\n"
+"De video wordt in stukken opgesplitst die u moet sorteren."
 
 #: include/vlc_intf_strings.h:113
 msgid ""
@@ -792,7 +792,7 @@ msgstr ""
 #: src/audio_output/filters.c:159 src/audio_output/filters.c:206
 #: src/audio_output/filters.c:229
 msgid "Audio filtering failed"
-msgstr "Audiofilteren faalde"
+msgstr "Audiofilteren mislukt"
 
 #: src/audio_output/filters.c:160 src/audio_output/filters.c:207
 #: src/audio_output/filters.c:230
@@ -893,7 +893,7 @@ msgstr "boolean"
 
 #: src/config/file.c:593 src/libvlc.c:1575
 msgid "integer"
-msgstr "heel getal"
+msgstr "geheel getal"
 
 #: src/config/file.c:602 src/libvlc.c:1604
 msgid "float"
@@ -965,7 +965,7 @@ msgstr "Bladwijzer %i"
 
 #: src/input/decoder.c:111
 msgid "No suitable decoder module"
-msgstr "Geen bruikbare decoder module"
+msgstr "Geen bruikbare decodermodule"
 
 #: src/input/decoder.c:112
 #, c-format
@@ -1122,7 +1122,7 @@ msgid "Title"
 msgstr "Titel"
 
 #: src/input/meta.c:53 modules/gui/macosx/playlistinfo.m:73
-#: modules/gui/macosx/playlist.m:1156
+#: modules/gui/macosx/playlist.m:1142
 msgid "Artist"
 msgstr "Artiest"
 
@@ -1182,7 +1182,7 @@ msgstr "Kunstwerk URL"
 
 #: src/input/meta.c:68
 msgid "Track ID"
-msgstr "Spoor ID"
+msgstr "Spoor-ID"
 
 #: src/input/var.c:152
 msgid "Bookmark"
@@ -1270,15 +1270,15 @@ msgstr "Annuleren"
 #: modules/gui/macosx/bookmarks.m:279 modules/gui/macosx/controls.m:59
 #: modules/gui/macosx/extended.m:519 modules/gui/macosx/interaction.m:134
 #: modules/gui/macosx/interaction.m:135 modules/gui/macosx/interaction.m:175
-#: modules/gui/macosx/intf.m:2124 modules/gui/macosx/open.m:167
+#: modules/gui/macosx/intf.m:2132 modules/gui/macosx/open.m:167
 #: modules/gui/macosx/open.m:300 modules/gui/macosx/output.m:138
 #: modules/gui/macosx/playlistinfo.m:425 modules/gui/macosx/simple_prefs.m:238
-#: modules/gui/macosx/update.m:65 modules/gui/macosx/wizard.m:599
-#: modules/gui/macosx/wizard.m:663 modules/gui/macosx/wizard.m:1055
-#: modules/gui/macosx/wizard.m:1140 modules/gui/macosx/wizard.m:1147
-#: modules/gui/macosx/wizard.m:1676 modules/gui/macosx/wizard.m:1684
-#: modules/gui/macosx/wizard.m:1865 modules/gui/macosx/wizard.m:1876
-#: modules/gui/macosx/wizard.m:1889
+#: modules/gui/macosx/update.m:65 modules/gui/macosx/wizard.m:598
+#: modules/gui/macosx/wizard.m:662 modules/gui/macosx/wizard.m:1061
+#: modules/gui/macosx/wizard.m:1146 modules/gui/macosx/wizard.m:1153
+#: modules/gui/macosx/wizard.m:1675 modules/gui/macosx/wizard.m:1683
+#: modules/gui/macosx/wizard.m:1864 modules/gui/macosx/wizard.m:1875
+#: modules/gui/macosx/wizard.m:1888
 #: modules/gui/qt4/components/open_panels.cpp:1163
 #: modules/gui/qt4/components/preferences_widgets.cpp:1293
 #: modules/gui/qt4/main_interface.cpp:532
@@ -1304,7 +1304,7 @@ msgstr "Web interface"
 
 #: src/interface/interface.c:218
 msgid "Debug logging"
-msgstr "Debuglogboek"
+msgstr "Debug-logboek"
 
 #: src/interface/interface.c:221
 msgid "Mouse Gestures"
@@ -1551,7 +1551,7 @@ msgstr "Turks"
 
 #: src/libvlc-module.c:127 src/text/iso-639_def.h:192
 msgid "Ukrainian"
-msgstr "Oekrains"
+msgstr "Oekraïens"
 
 #: src/libvlc-module.c:147
 msgid ""
@@ -2152,7 +2152,7 @@ msgstr "Plaats de titel van de video bovenop de film."
 
 #: src/libvlc-module.c:412
 msgid "Show video title for x miliseconds"
-msgstr "Geef video titel gedurende x milliseconden weer"
+msgstr "Geef videotitel gedurende x milliseconden weer"
 
 #: src/libvlc-module.c:414
 msgid "Show the video title for n miliseconds, default is 5000 ms (5 sec.)"
@@ -2171,14 +2171,14 @@ msgstr ""
 
 #: src/libvlc-module.c:420
 msgid "Hide cursor and fullscreen controller after x miliseconds"
-msgstr "Verberg cursor en schermvullende modus aansturing na x miliseconden"
+msgstr "Verberg cursor en schermvullende modus aansturing na x milliseconden"
 
 #: src/libvlc-module.c:423
 msgid ""
 "Hide mouse cursor and fullscreen controller after n miliseconds, default is "
 "3000 ms (3 sec.)"
 msgstr ""
-"Verberg muiscursor en schermvullende besturing na n miliseconden, standaard "
+"Verberg muiscursor en schermvullende besturing na n milliseconden, standaard "
 "is 3000 ms (3 sec.)"
 
 #: src/libvlc-module.c:431
@@ -2569,7 +2569,7 @@ msgid ""
 "(like DVB streams for example)."
 msgstr ""
 "Kies de programma's om te selecteren door een lijst van Service ID's (SIDs), "
-"gescheiden door een comma, op te geven. Gebruik deze optie alleen als u "
+"gescheiden door een komma, op te geven. Gebruik deze optie alleen als u "
 "multi-programma streams wilt lezen (zoals DVB streams bijvoorbeeld)."
 
 #: src/libvlc-module.c:613 modules/gui/qt4/ui/open_disk.ui:238
@@ -2586,8 +2586,7 @@ msgstr "Ondertitelingsspoor"
 
 #: src/libvlc-module.c:620
 msgid "Stream number of the subtitle track to use (from 0 to n)."
-msgstr ""
-"Stream nummer van het ondertitelingsspoor om te gebruiken (van 0 tot n)."
+msgstr "Streamnummer van het te gebruiken ondertitelingsspoor (van 0 tot n)."
 
 #: src/libvlc-module.c:623
 msgid "Audio language"
@@ -2615,19 +2614,19 @@ msgstr ""
 
 #: src/libvlc-module.c:634
 msgid "Audio track ID"
-msgstr "Audiospoor ID"
+msgstr "Audiospoor-ID"
 
 #: src/libvlc-module.c:636
 msgid "Stream ID of the audio track to use."
-msgstr "Stream ID van het audiospoor om te gebruiken."
+msgstr "Stream-ID van het te gebruiken audiospoor"
 
 #: src/libvlc-module.c:638
 msgid "Subtitles track ID"
-msgstr "Ondertitelingsspoor ID"
+msgstr "Ondertitelingsspoor-ID"
 
 #: src/libvlc-module.c:640
 msgid "Stream ID of the subtitle track to use."
-msgstr "Stream ID van het ondertitelingsspoor om te gebruiken."
+msgstr "Stream-ID van het te gebruiken ondertitelingsspoor."
 
 #: src/libvlc-module.c:642
 msgid "Input repetitions"
@@ -2721,7 +2720,7 @@ msgid ""
 "You can use this option to place the subtitles under the movie, instead of "
 "over the movie. Try several positions."
 msgstr ""
-"Plaats ondertiteling onder de film, in plaats van eroverheen. Probeer "
+"Plaats ondertiteling onder de film in plaats van eroverheen. Probeer "
 "verschillende waarden uit om het beste resultaat te bereiken."
 
 #: src/libvlc-module.c:688
@@ -2768,8 +2767,8 @@ msgid ""
 "This adds so-called \"subpicture filters\". These filters overlay some "
 "images or text over the video (like a logo, arbitrary text...)."
 msgstr ""
-"Dit zijn zogenaamde \"subpicture filters\". Deze filters leggen plaatjes of "
-"tekst over de video (zoals een logo, arbitraire tekst, ...)."
+"Dit voegt zogenaamde \"subpicture filters\" toe. Deze filters leggen "
+"afbeeldingen of tekst over de video (zoals een logo, arbitraire tekst, ...)."
 
 #: src/libvlc-module.c:706
 msgid "Autodetect subtitle files"
@@ -3356,13 +3355,13 @@ msgid ""
 "however lock up your whole machine, or make it very very slow. You should "
 "only activate this if you know what you're doing."
 msgstr ""
-"Indien VLC met real-time prioriteit draait is het in staat to veel beter te "
-"presteren vooral bij het streamen. Het kan echter ook de hele machine laten "
+"Indien VLC met real-time prioriteit draait is het in staat om veel beter te "
+"presteren, vooral bij het streamen. Het kan echter ook de hele machine laten "
 "vastlopen of hem erg traag maken. Activeer dit enkel als u weet wat u doet."
 
 #: src/libvlc-module.c:994
 msgid "Adjust VLC priority"
-msgstr "Pas VLC's prioriteit aan"
+msgstr "Pas VLCs prioriteit aan"
 
 #: src/libvlc-module.c:996
 msgid ""
@@ -3444,11 +3443,11 @@ msgstr "Draait VLC als een server process op de achtergrond."
 
 #: src/libvlc-module.c:1036
 msgid "Write process id to file"
-msgstr "Schrijf proces id naar bestand."
+msgstr "Schrijf proces-id naar bestand."
 
 #: src/libvlc-module.c:1038
 msgid "Writes process id into specified file."
-msgstr "Schrijf proces id naar gespecificeerd bestand."
+msgstr "Schrijf proces-id naar gespecificeerd bestand."
 
 #: src/libvlc-module.c:1040
 msgid "Log to file"
@@ -3496,7 +3495,7 @@ msgstr ""
 "Het kan handig zijn om maar een enkele instantie van VLC te laten draaien. "
 "Bijvoorbeeld indien u bestanden met bepaalde extensies hebt verbonden aan "
 "VLC en u geen nieuwe instantie van VLC wilt als u dubbelklikt op een bestand "
-"in de bestandsmanager. Met deze optie wordt het bestand dan in de reeds "
+"in de bestandsverkenner. Met deze optie wordt het bestand dan in de reeds "
 "geopende versie van VLC geopend en toegevoegd aan de afspeellijst. Deze "
 "optie vereist dat de D-Bus sessie daemon actief is en dat de lopende "
 "instantie van VLC de D-Bus controle interface gebruikt."
@@ -3669,7 +3668,7 @@ msgid ""
 "The playlist can use a tree to categorize some items, like the contents of a "
 "directory."
 msgstr ""
-"De afspeellijst kan een boom-weergave gebruiken om items te categorizeren, "
+"De afspeellijst kan een boom-weergave gebruiken om items te categoriseren, "
 "zoals de inhoud van een directory."
 
 #: src/libvlc-module.c:1158
@@ -3749,7 +3748,7 @@ msgstr "Selecteer de sneltoets om op lager snelheid af te spelen"
 #: modules/gui/macosx/intf.m:498 modules/gui/macosx/intf.m:544
 #: modules/gui/macosx/intf.m:620 modules/gui/macosx/intf.m:628
 #: modules/gui/macosx/wizard.m:309 modules/gui/macosx/wizard.m:321
-#: modules/gui/macosx/wizard.m:1621 modules/gui/qt4/menus.cpp:670
+#: modules/gui/macosx/wizard.m:1620 modules/gui/qt4/menus.cpp:670
 #: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:302
 msgid "Next"
 msgstr "Volgende"
@@ -4602,8 +4601,8 @@ msgid ""
 "print help on a specific module (can be combined with --advanced and --help-"
 "verbose)"
 msgstr ""
-"toon help voor een specifieke module (kan worden gecombineerd met --advanced "
-"en --help-verbose)"
+"geef help voor een specifiek modules weer (kan worden gecombineerd met --"
+"advanced en --help-verbose)"
 
 #: src/libvlc-module.c:2505
 msgid "no configuration option will be loaded nor saved to config file"
@@ -4715,7 +4714,7 @@ msgid ""
 "was VLC deleted."
 msgstr ""
 "Het was niet mogelijk om de veiligheid van het gedownloade bestand \"%s\" te "
-"verifieren, dus heeft VLC het verwijderd."
+"verifiëren, dus heeft VLC het verwijderd."
 
 #: src/misc/update.c:1681 src/misc/update.c:1693
 msgid "File corrupted"
@@ -5352,7 +5351,7 @@ msgid ""
 "Adapter cards have a device file in directory named /dev/dvb/adapter[n] with "
 "n>=0."
 msgstr ""
-"Adapter kaarten gebruiken een apparaat bestand in de map genaamd /dev/dvb/"
+"Adapterkaarten gebruiken een apparaat bestand in de map genaamd /dev/dvb/"
 "adapter[n] met n>=0"
 
 #: modules/access/bda/bda.c:49 modules/access/dvb/access.c:86
@@ -6038,7 +6037,7 @@ msgstr "dc1394 invoer"
 
 #: modules/access/directory.c:77
 msgid "Subdirectory behavior"
-msgstr "Subdirectory gedrag"
+msgstr "Subdirectory-gedrag"
 
 #: modules/access/directory.c:79
 msgid ""
@@ -6075,7 +6074,7 @@ msgstr ""
 "Bestanden met deze extensies zullen niet aan de afspeellijst toegevoegd "
 "worden als een directory geopend wordt.\n"
 "Dit is handig als u directories toe wilt voegen die bijvoorbeeld "
-"afspeellijsten bevatten. Gebruik een comma-gescheiden lijst met extensies."
+"afspeellijsten bevatten. Gebruik een komma-gescheiden lijst met extensies."
 
 #: modules/access/directory.c:97 modules/gui/qt4/ui/sprefs_video.ui:172
 msgid "Directory"
@@ -6635,7 +6634,7 @@ msgid ""
 "Set the ID of the fake elementary stream for use in #duplicate{} constructs "
 "(default 0)."
 msgstr ""
-"Zet de ID voor de fake-elementaire-stream om te gebruiken in #duplicate{} "
+"Zet de ID voor de fake-elementaire-stream om te gebruiken in #duplicate{}-"
 "constructies (standaard 0)."
 
 #: modules/access/fake.c:54
@@ -8382,7 +8381,7 @@ msgstr "Formaat om te gebruiken in het \"titel\" veld van de afspeellijst."
 
 #: modules/audio_filter/channel_mixer/dolby.c:49
 msgid "Simple decoder for Dolby Surround encoded streams"
-msgstr "Eenvoudige decoder voor Dolby Surround geencodeerde streams"
+msgstr "Eenvoudige decoder voor Dolby Surround geëncodeerde streams"
 
 #: modules/audio_filter/channel_mixer/dolby.c:50
 msgid "Dolby Surround decoder"
@@ -8433,7 +8432,7 @@ msgid ""
 "Dolby Surround encoded streams won't be decoded before being processed by "
 "this filter. Enabling this setting is not recommended."
 msgstr ""
-"Dolby Surround geencodeerde streams worden niet gedecodeerd voordat ze door "
+"Dolby Surround geëncodeerde streams worden niet gedecodeerd voordat ze door "
 "deze filter verwerkt zijn. Activeren van deze optie wordt niet geadviseerd."
 
 #: modules/audio_filter/channel_mixer/headphone.c:82
@@ -9096,7 +9095,7 @@ msgid "PORTAUDIO audio output"
 msgstr "PORTAUDIO audio-uitvoer"
 
 #: modules/audio_output/pulse.c:61 modules/gui/macosx/intf.m:489
-#: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:1789
+#: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:1797
 #: modules/gui/pda/pda_interface.c:210 modules/gui/pda/pda_interface.c:1353
 #: modules/gui/qt4/main_interface.cpp:363
 #: modules/gui/qt4/main_interface.cpp:367
@@ -11398,8 +11397,8 @@ msgid "Buffer"
 msgstr "Buffer"
 
 #: modules/control/rc.c:76 modules/gui/macosx/embeddedwindow.m:135
-#: modules/gui/macosx/intf.m:1799 modules/gui/macosx/intf.m:1800
-#: modules/gui/macosx/intf.m:1801 modules/gui/macosx/intf.m:1802
+#: modules/gui/macosx/intf.m:1807 modules/gui/macosx/intf.m:1808
+#: modules/gui/macosx/intf.m:1809 modules/gui/macosx/intf.m:1810
 #: modules/gui/pda/pda_interface.c:248 modules/gui/pda/pda_interface.c:249
 #: modules/gui/qt4/menus.cpp:653 modules/misc/notify/xosd.c:243
 msgid "Pause"
@@ -12122,8 +12121,8 @@ msgid ""
 "Allows you to modify the default caching value for RTSP streams. This value "
 "should be set in millisecond units."
 msgstr ""
-"Wijzig de standaard buffer grootte voor RTSP stromen. Deze waarde wordt in "
-"miliseconden opgegeven."
+"Wijzig de standaard buffergrootte voor RTSP-streams. Deze waarde wordt in "
+"milliseconden opgegeven."
 
 #: modules/demux/live555.cpp:79
 msgid "Kasenna RTSP dialect"
@@ -12135,7 +12134,7 @@ msgid ""
 "parameter, VLC will try this dialect for communication. In this mode you "
 "cannot connect to normal RTSP servers."
 msgstr ""
-"Kasenna server gebruiken een oud en niet-standaard dialect van RTSP. Als u "
+"Kasenna servers gebruiken een oud en niet-standaard dialect van RTSP. Als u "
 "deze parameter activeert zal VLC proberen dit dialect te gebruiken voor "
 "communicatie. In deze modus kunt u niet met normale RTSP servers verbinden."
 
@@ -12255,7 +12254,7 @@ msgid ""
 "for broken files)."
 msgstr ""
 "Matroska-bestanden van dezelfde familie in dezelfde directory voorladen "
-"(niet goef voor defecte bestanden)."
+"(niet goed voor defecte bestanden)."
 
 #: modules/demux/mkv.cpp:137
 msgid "Seek based on percent not time"
@@ -13129,7 +13128,7 @@ msgid "Apply"
 msgstr "Toepassen"
 
 #: modules/gui/beos/PreferencesWindow.cpp:257 modules/gui/macosx/output.m:526
-#: modules/gui/macosx/playlist.m:683 modules/gui/macosx/prefs.m:125
+#: modules/gui/macosx/playlist.m:669 modules/gui/macosx/prefs.m:125
 #: modules/gui/macosx/simple_prefs.m:302 modules/gui/macosx/update.m:137
 #: modules/gui/qt4/ui/vlm.ui:209
 msgid "Save"
@@ -13270,8 +13269,8 @@ msgstr "Lettergrootte, pixels"
 #: modules/video_filter/rss.c:151
 msgid "Font size, in pixels. Default is -1 (use default font size)."
 msgstr ""
-"Lettertype grootte, in pixels. Standaard is -1 (gebruik standaard lettertype "
-"grootte)."
+"Lettertypegrootte, in pixels. Standaard is -1 (gebruik standaard "
+"lettertypegrootte)."
 
 #: modules/gui/fbosd.c:144 modules/video_filter/marq.c:123
 #: modules/video_filter/rss.c:155
@@ -13496,7 +13495,7 @@ msgstr "Uitlezen"
 msgid "Time"
 msgstr "Tijd"
 
-#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:679
+#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:665
 msgid "Untitled"
 msgstr "Zonder titel"
 
@@ -13524,7 +13523,7 @@ msgstr ""
 "afspelen terwijl u bladwijzers bewerkt om er zeker van te zijn dat dezelfde "
 "invoer gebruikt wordt."
 
-#: modules/gui/macosx/bookmarks.m:271 modules/gui/macosx/wizard.m:1055
+#: modules/gui/macosx/bookmarks.m:271 modules/gui/macosx/wizard.m:1061
 msgid "Invalid selection"
 msgstr "Incorrecte selectie"
 
@@ -13871,7 +13870,7 @@ msgstr "Opnameapparaat openen..."
 msgid "Open Recent"
 msgstr "Open laatste"
 
-#: modules/gui/macosx/intf.m:528 modules/gui/macosx/intf.m:2530
+#: modules/gui/macosx/intf.m:528 modules/gui/macosx/intf.m:2538
 msgid "Clear Menu"
 msgstr "Wis menu"
 
@@ -14026,57 +14025,57 @@ msgstr ""
 "Alleen uw standaard e-mailadres zal opgestuurd worden, inclusief geen "
 "verdere informatie."
 
-#: modules/gui/macosx/intf.m:1627
+#: modules/gui/macosx/intf.m:1635
 #, c-format
 msgid "Volume: %d%%"
 msgstr "Volume: %d%%"
 
-#: modules/gui/macosx/intf.m:2015
+#: modules/gui/macosx/intf.m:2023
 msgid "Update check failed"
 msgstr "Controle voor nieuwere versie is mislukt"
 
-#: modules/gui/macosx/intf.m:2015
+#: modules/gui/macosx/intf.m:2023
 msgid "Checking for updates was not enabled in this build."
 msgstr "Controleren op nieuwere versies was niet geactiveert in deze versie."
 
-#: modules/gui/macosx/intf.m:2122
+#: modules/gui/macosx/intf.m:2130
 msgid "Crash Report successfully sent"
 msgstr "Crash-rapport succesvol verzonden"
 
-#: modules/gui/macosx/intf.m:2123
+#: modules/gui/macosx/intf.m:2131
 msgid "Thanks for your report!"
 msgstr "Bedankt voor uw rapport!"
 
-#: modules/gui/macosx/intf.m:2131
+#: modules/gui/macosx/intf.m:2139
 msgid "Error when sending the Crash Report"
 msgstr "Fout tijdens het aanmaken van een crash-rapport"
 
-#: modules/gui/macosx/intf.m:2222
+#: modules/gui/macosx/intf.m:2230
 msgid "No CrashLog found"
 msgstr "Geen CrashLog gevonden"
 
-#: modules/gui/macosx/intf.m:2222 modules/gui/macosx/prefs.m:148
+#: modules/gui/macosx/intf.m:2230 modules/gui/macosx/prefs.m:148
 #: modules/gui/macosx/simple_prefs.m:632
 msgid "Continue"
 msgstr "Doorgaan"
 
-#: modules/gui/macosx/intf.m:2222
+#: modules/gui/macosx/intf.m:2230
 msgid "Couldn't find any trace of a previous crash."
 msgstr "Kan geen trace-bestand van een vorige crash vinden."
 
-#: modules/gui/macosx/intf.m:2249
+#: modules/gui/macosx/intf.m:2257
 msgid "Remove old preferences?"
 msgstr "Oude voorkeuren verwijderen?"
 
-#: modules/gui/macosx/intf.m:2250
+#: modules/gui/macosx/intf.m:2258
 msgid "We just found an older version of VLC's preferences files."
 msgstr "We vonden net een oudere versie van VLC's voorkeurenbestanden."
 
-#: modules/gui/macosx/intf.m:2251
+#: modules/gui/macosx/intf.m:2259
 msgid "Move To Trash and Relaunch VLC"
 msgstr "Verplaats naar Prullenbak en herstart VLC"
 
-#: modules/gui/macosx/intf.m:2251
+#: modules/gui/macosx/intf.m:2259
 msgid "Ignore"
 msgstr "Negeren"
 
@@ -14590,7 +14589,7 @@ msgid "Sort Node by Author"
 msgstr "Sorteer subgroep op auteur"
 
 #: modules/gui/macosx/playlist.m:453 modules/gui/macosx/playlist.m:491
-#: modules/gui/macosx/playlist.m:1444
+#: modules/gui/macosx/playlist.m:1430
 msgid "No items in the playlist"
 msgstr "Geen items in de afspeellijst"
 
@@ -14614,33 +14613,33 @@ msgstr "Uitgebreid M3U bestand"
 msgid "XML Shareable Playlist Format (XSPF)"
 msgstr "XML Uitwisselbare Afspeellijst Formaat (XSPF)"
 
-#: modules/gui/macosx/playlist.m:485 modules/gui/macosx/playlist.m:1437
-#: modules/gui/macosx/wizard.m:1356
+#: modules/gui/macosx/playlist.m:485 modules/gui/macosx/playlist.m:1423
+#: modules/gui/macosx/wizard.m:1362
 #, c-format
 msgid "%i items"
 msgstr "%i items"
 
-#: modules/gui/macosx/playlist.m:493 modules/gui/macosx/playlist.m:1448
+#: modules/gui/macosx/playlist.m:493 modules/gui/macosx/playlist.m:1434
 msgid "1 item"
 msgstr "1 item"
 
-#: modules/gui/macosx/playlist.m:682
+#: modules/gui/macosx/playlist.m:668
 msgid "Save Playlist"
 msgstr "Afspeellijst opslaan"
 
-#: modules/gui/macosx/playlist.m:1156 modules/gui/ncurses.c:1808
+#: modules/gui/macosx/playlist.m:1142 modules/gui/ncurses.c:1808
 msgid "Meta-information"
 msgstr "Metadata"
 
-#: modules/gui/macosx/playlist.m:1403
+#: modules/gui/macosx/playlist.m:1389
 msgid "New Node"
 msgstr "Nieuwe subgroep"
 
-#: modules/gui/macosx/playlist.m:1404
+#: modules/gui/macosx/playlist.m:1390
 msgid "Please enter a name for the new node."
 msgstr "Geef een naam op voor de nieuwe subgroep"
 
-#: modules/gui/macosx/playlist.m:1415
+#: modules/gui/macosx/playlist.m:1401
 msgid "Empty Folder"
 msgstr "Lege map"
 
@@ -15272,7 +15271,7 @@ msgid "Back"
 msgstr "Terug"
 
 #: modules/gui/macosx/wizard.m:322 modules/gui/macosx/wizard.m:325
-#: modules/gui/macosx/wizard.m:1266
+#: modules/gui/macosx/wizard.m:1272
 msgid "Streaming/Transcoding Wizard"
 msgstr "Streaming/Transcoding wizard"
 
@@ -15299,11 +15298,11 @@ msgstr ""
 "dialogen geven u toegang tot meer mogelijkheden."
 
 #: modules/gui/macosx/wizard.m:335 modules/gui/macosx/wizard.m:491
-#: modules/gui/macosx/wizard.m:1675
+#: modules/gui/macosx/wizard.m:1674
 msgid "Stream to network"
 msgstr "Stream naar netwerk"
 
-#: modules/gui/macosx/wizard.m:337 modules/gui/macosx/wizard.m:1683
+#: modules/gui/macosx/wizard.m:337 modules/gui/macosx/wizard.m:1682
 msgid "Transcode/Save to file"
 msgstr "Transcodeer/Opslaan naar bestand"
 
@@ -15316,7 +15315,7 @@ msgid "Choose here your input stream."
 msgstr "Kies hier uw invoer stream."
 
 #: modules/gui/macosx/wizard.m:343 modules/gui/macosx/wizard.m:529
-#: modules/gui/macosx/wizard.m:1717
+#: modules/gui/macosx/wizard.m:1716
 msgid "Select a stream"
 msgstr "Selecteer een stream"
 
@@ -15395,7 +15394,7 @@ msgstr "Transcodeer audio"
 msgid "Transcode video"
 msgstr "Transcodeer video"
 
-#: modules/gui/macosx/wizard.m:384 modules/gui/macosx/wizard.m:1819
+#: modules/gui/macosx/wizard.m:384 modules/gui/macosx/wizard.m:1818
 msgid ""
 "Enabling this allows to transcode the audio track if one is present in the "
 "stream."
@@ -15403,7 +15402,7 @@ msgstr ""
 "Dit activeren stelt u in staat het audio spoor te transcoden, indien er een "
 "beschikbaar is in de stream."
 
-#: modules/gui/macosx/wizard.m:386 modules/gui/macosx/wizard.m:1836
+#: modules/gui/macosx/wizard.m:386 modules/gui/macosx/wizard.m:1835
 msgid ""
 "Enabling this allows to transcode the video track if one is present in the "
 "stream."
@@ -15434,18 +15433,18 @@ msgstr ""
 "Op deze pagina kunnen een aantal additionele streaming parameters ingesteld "
 "worden."
 
-#: modules/gui/macosx/wizard.m:399 modules/gui/macosx/wizard.m:1864
+#: modules/gui/macosx/wizard.m:399 modules/gui/macosx/wizard.m:1863
 #: modules/gui/qt4/ui/sout.ui:957
 msgid "Time-To-Live (TTL)"
 msgstr "Time-To-Live (TTL)"
 
 #: modules/gui/macosx/wizard.m:401 modules/gui/macosx/wizard.m:433
-#: modules/gui/macosx/wizard.m:1875
+#: modules/gui/macosx/wizard.m:1874
 msgid "SAP Announce"
 msgstr "SAP Aankondigingen"
 
 #: modules/gui/macosx/wizard.m:403 modules/gui/macosx/wizard.m:413
-#: modules/gui/macosx/wizard.m:445 modules/gui/macosx/wizard.m:1888
+#: modules/gui/macosx/wizard.m:445 modules/gui/macosx/wizard.m:1887
 msgid "Local playback"
 msgstr "Lokaal afspelen"
 
@@ -15463,7 +15462,7 @@ msgstr ""
 "Op deze pagina kunnen een aantal additionele transcoding parameters "
 "ingesteld worden."
 
-#: modules/gui/macosx/wizard.m:411 modules/gui/macosx/wizard.m:1088
+#: modules/gui/macosx/wizard.m:411 modules/gui/macosx/wizard.m:1094
 msgid "Select the file to save to"
 msgstr "Selecteer het bestand om in op te slaan"
 
@@ -15504,11 +15503,11 @@ msgstr "Bestand opslaan naar"
 msgid "Include subtitles"
 msgstr "Ondertiteling toevoegen"
 
-#: modules/gui/macosx/wizard.m:598
+#: modules/gui/macosx/wizard.m:597
 msgid "No input selected"
 msgstr "Geen invoer geselecteerd"
 
-#: modules/gui/macosx/wizard.m:600
+#: modules/gui/macosx/wizard.m:599
 msgid ""
 "No new stream or valid playlist item has been selected.\n"
 "\n"
@@ -15518,11 +15517,11 @@ msgstr ""
 "\n"
 "Kies er een voordat u doorgaat naar de volgende pagina."
 
-#: modules/gui/macosx/wizard.m:662
+#: modules/gui/macosx/wizard.m:661
 msgid "No valid destination"
 msgstr "Geen geldig doel"
 
-#: modules/gui/macosx/wizard.m:664
+#: modules/gui/macosx/wizard.m:663
 msgid ""
 "A valid destination has to be selected Enter either a Unicast-IP or a "
 "Multicast-IP.\n"
@@ -15536,7 +15535,7 @@ msgstr ""
 "Als u niet weet wat dit betekend, kijk in de VLC Streaming HOWTO en de "
 "helpteksten in dit venster."
 
-#: modules/gui/macosx/wizard.m:1056
+#: modules/gui/macosx/wizard.m:1062
 msgid ""
 "The chosen codecs are not compatible with each other. For example: It is "
 "impossibleto  mix uncompressed audio with any video codec.\n"
@@ -15549,21 +15548,21 @@ msgstr ""
 "\n"
 "Pas uw selectie aan en probeer opnieuw."
 
-#: modules/gui/macosx/wizard.m:1083
+#: modules/gui/macosx/wizard.m:1089
 msgid "Select the directory to save to"
 msgstr "Selecteer de directory om naartoe op te slaan"
 
-#: modules/gui/macosx/wizard.m:1139
+#: modules/gui/macosx/wizard.m:1145
 msgid "No folder selected"
 msgstr "Geen map geselecteerd"
 
-#: modules/gui/macosx/wizard.m:1141
+#: modules/gui/macosx/wizard.m:1147
 msgid "A directory where to save the files has to be selected."
 msgstr ""
 "De directory waarin de gemaakte snapshots zullen worden opgeslagen moet "
 "geselecteerd zijn."
 
-#: modules/gui/macosx/wizard.m:1143
+#: modules/gui/macosx/wizard.m:1149
 msgid ""
 "Enter either a valid path or use the \"Choose...\" button to select a "
 "location."
@@ -15571,51 +15570,51 @@ msgstr ""
 "Voer een geldig pad in of gebruik de \"Kiezen...\" knop om een lokatie te "
 "selecteren."
 
-#: modules/gui/macosx/wizard.m:1146
+#: modules/gui/macosx/wizard.m:1152
 msgid "No file selected"
 msgstr "Geen bestand geselecteerd"
 
-#: modules/gui/macosx/wizard.m:1148
+#: modules/gui/macosx/wizard.m:1154
 msgid "A file where to save the stream has to be selected."
 msgstr ""
 "Een bestand waar de stream naartoe moet worden opgeslagen moet geselecteerd "
 "zijn."
 
-#: modules/gui/macosx/wizard.m:1150
+#: modules/gui/macosx/wizard.m:1156
 msgid ""
 "Enter either a valid path or use the \"Choose\" button to select a location."
 msgstr ""
 "Voer een geldig pad in of gebruik de \"Kiezen\" knop om een lokatie te "
 "selecteren."
 
-#: modules/gui/macosx/wizard.m:1351
+#: modules/gui/macosx/wizard.m:1357
 msgid "Finish"
 msgstr "Voltooien"
 
-#: modules/gui/macosx/wizard.m:1364 modules/gui/macosx/wizard.m:1393
-#: modules/gui/macosx/wizard.m:1423
+#: modules/gui/macosx/wizard.m:1370 modules/gui/macosx/wizard.m:1399
+#: modules/gui/macosx/wizard.m:1429
 msgid "yes"
 msgstr "ja"
 
-#: modules/gui/macosx/wizard.m:1366 modules/gui/macosx/wizard.m:1376
-#: modules/gui/macosx/wizard.m:1389 modules/gui/macosx/wizard.m:1395
-#: modules/gui/macosx/wizard.m:1407 modules/gui/macosx/wizard.m:1426
+#: modules/gui/macosx/wizard.m:1372 modules/gui/macosx/wizard.m:1382
+#: modules/gui/macosx/wizard.m:1395 modules/gui/macosx/wizard.m:1401
+#: modules/gui/macosx/wizard.m:1413 modules/gui/macosx/wizard.m:1432
 msgid "no"
 msgstr "nee"
 
-#: modules/gui/macosx/wizard.m:1372
+#: modules/gui/macosx/wizard.m:1378
 msgid "yes: from %@ to %@ secs"
 msgstr "ja: van %@ tot %@ seconden"
 
-#: modules/gui/macosx/wizard.m:1382 modules/gui/macosx/wizard.m:1400
+#: modules/gui/macosx/wizard.m:1388 modules/gui/macosx/wizard.m:1406
 msgid "yes: %@ @ %@ kb/s"
 msgstr "ja: %@ @ %@ kb/s"
 
-#: modules/gui/macosx/wizard.m:1677
+#: modules/gui/macosx/wizard.m:1676
 msgid "This allows to stream on a network."
 msgstr "Gebruik dit om naar een netwerk te streamen."
 
-#: modules/gui/macosx/wizard.m:1685
+#: modules/gui/macosx/wizard.m:1684
 msgid ""
 "This allows to save a stream to a file. The can be reencoded on the fly. "
 "Whatever VLC can read can be saved.\n"
@@ -15628,17 +15627,17 @@ msgstr ""
 "transcodingmogelijkheden zijn echter wel bijvoorbeeld geschikt om "
 "netwerkstreams op te slaan."
 
-#: modules/gui/macosx/wizard.m:1814
+#: modules/gui/macosx/wizard.m:1813
 msgid "Select your audio codec. Click one to get more information."
 msgstr ""
 "Selecteer uw audio codec. Klik op een om er meer informatie over te krijgen."
 
-#: modules/gui/macosx/wizard.m:1831
+#: modules/gui/macosx/wizard.m:1830
 msgid "Select your video codec. Click one to get more information."
 msgstr ""
 "Selecteer uw video codec. Klik op een om er meer informatie over te krijgen."
 
-#: modules/gui/macosx/wizard.m:1866
+#: modules/gui/macosx/wizard.m:1865
 msgid ""
 "This allows to define the TTL (Time-To-Live) of the stream. This parameter "
 "is the maximum number of routers your stream can go through. If you don't "
@@ -15650,7 +15649,7 @@ msgstr ""
 "betekend, of u wilt alleen naar het lokale netwerk streamen, laat deze "
 "instelling op 1 staan."
 
-#: modules/gui/macosx/wizard.m:1877
+#: modules/gui/macosx/wizard.m:1876
 msgid ""
 "When streaming using UDP, the streams can be announced using the SAP/SDP "
 "announcing protocol. This way, the clients won't have to type in the "
@@ -15666,7 +15665,7 @@ msgstr ""
 "Als u uw stream een naam wilt geven, voer die hier in, anders zal een "
 "standaard naam gebruikt worden."
 
-#: modules/gui/macosx/wizard.m:1890
+#: modules/gui/macosx/wizard.m:1889
 msgid ""
 "When this option is enabled, the stream will be both played and transcoded/"
 "streamed.\n"
@@ -15932,7 +15931,7 @@ msgstr ""
 #: modules/gui/ncurses.c:1713
 msgid "     <space>     Add the selected directory to the playlist"
 msgstr ""
-"     <space>     De geselecteerde directory aan de afspeellijst toevoegen"
+"     <spatie>     De geselecteerde directory aan de afspeellijst toevoegen"
 
 #: modules/gui/ncurses.c:1714
 msgid "     .           Show/Hide hidden files"
@@ -16715,7 +16714,7 @@ msgstr "Geavanceerde opties"
 
 #: modules/gui/qt4/components/playlist/playlist.cpp:66
 msgid "Double click to get media information"
-msgstr "Dubbel-klik om media-informatie op te halen"
+msgstr "Dubbelklik om media-informatie op te halen"
 
 #: modules/gui/qt4/components/playlist/sorting.h:57
 msgid "URI"
@@ -16887,11 +16886,11 @@ msgstr "Spatializer"
 
 #: modules/gui/qt4/dialogs/extended.cpp:63
 msgid "Audio Effects"
-msgstr "Audio effecten"
+msgstr "Audio-effecten"
 
 #: modules/gui/qt4/dialogs/extended.cpp:74
 msgid "Video Effects"
-msgstr "Video effecten"
+msgstr "Video-effecten"
 
 #: modules/gui/qt4/dialogs/extended.cpp:77
 msgid "Synchronization"
@@ -17090,7 +17089,7 @@ msgid ""
 "Cannot write file %1:\n"
 "%2."
 msgstr ""
-"Kan niet schrijven naar bestand %1:\n"
+"Kan niet naar bestand %1 schrijven:\n"
 "%2."
 
 #: modules/gui/qt4/dialogs/open.cpp:97
@@ -17144,11 +17143,11 @@ msgstr "Eenvoudig"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:71
 msgid "Switch to simple preferences"
-msgstr "Ga naar eenvoudige voorkeuren"
+msgstr "Ga naar eenvoudige voorkeurenweergave"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:74
 msgid "Switch to complete preferences"
-msgstr "Ga naar volledige voorkeuren"
+msgstr "Ga naar volledige voorkeurenweergave"
 
 #: modules/gui/qt4/dialogs/preferences.cpp:86
 msgid "&Save"
@@ -17325,7 +17324,7 @@ msgstr ""
 "zijn.</p>\n"
 "<p><i>VLC media player</i> verzamelt of zendt <b>GEEN</b> informatie, zelfs "
 "niet anoniem, over uw gebruik van VLC.</p>\n"
-"<p>Daarom, controleer de volgende opties, standaard zal er bijna geen "
+"<p>Daarom, controleer de volgende opties. Standaard zal er bijna geen "
 "verbinding met internet gemaakt worden.</p>\n"
 
 #: modules/gui/qt4/main_interface.cpp:996
@@ -18056,8 +18055,7 @@ msgstr "Melding van nieuwere versie activeren"
 #: modules/gui/qt4/ui/sprefs_interface.ui:155
 msgid ""
 "This is VLC's skinnable interface. You can download skins at &lt;a href="
-msgstr ""
-"Dit is VLC's aanpasbare interface. U kan themas downloaden van &lt;a href="
+msgstr "Dit is VLCs thema interface. U kan thema's downloaden van &lt;a href="
 
 #: modules/gui/qt4/ui/sprefs_subtitles.ui:50
 msgid "Subtitles Language"
@@ -20108,7 +20106,7 @@ msgstr ""
 
 #: modules/stream_out/bridge.c:50
 msgid "ID Offset"
-msgstr "ID verschuiving"
+msgstr "ID-verschuiving"
 
 #: modules/stream_out/bridge.c:51
 msgid ""
@@ -20184,7 +20182,7 @@ msgstr "Dit is de uitvoer-toegangs methode dat voor video gebruikt zal worden."
 
 #: modules/stream_out/es.c:52 modules/stream_out/standard.c:48
 msgid "Output muxer"
-msgstr "Uitvoer muxer"
+msgstr "Uitvoermuxer"
 
 #: modules/stream_out/es.c:54
 msgid "This is the default muxer method that will be used."
@@ -20192,7 +20190,7 @@ msgstr "Dit is de standaard muxer die gebruikt zal worden."
 
 #: modules/stream_out/es.c:55
 msgid "Audio output muxer"
-msgstr "Audio uitvoer muxer"
+msgstr "Audio-uitvoermuxer"
 
 #: modules/stream_out/es.c:57
 msgid "This is the muxer that will be used for audio."
@@ -20200,7 +20198,7 @@ msgstr "Dit is de muxer die voor de audio gebruikt zal worden."
 
 #: modules/stream_out/es.c:58
 msgid "Video output muxer"
-msgstr "Video-uitvoer muxer"
+msgstr "Video-uitvoermuxer"
 
 #: modules/stream_out/es.c:60
 msgid "This is the muxer that will be used for video."
@@ -20216,7 +20214,7 @@ msgstr "Dit is de standaard uitvoer URI."
 
 #: modules/stream_out/es.c:65
 msgid "Audio output URL"
-msgstr "Audio uitvoer URL"
+msgstr "Audio-uitvoer URL"
 
 #: modules/stream_out/es.c:67
 msgid "This is the output URI that will be used for audio."
@@ -23256,7 +23254,7 @@ msgid ""
 "\"prefixNUMBER.format\" form."
 msgstr ""
 "Prefix van de bestandsnamen van de uitvoerafbeeldingen. Uitvoerbestandsnamen "
-"hebben de \"prefixNUMMER.formaat\"-vorm ."
+"hebben de \"prefixNUMMER.formaat\"-vorm."
 
 #: modules/video_output/image.c:75
 msgid "Always write to the same file"
