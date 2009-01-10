@@ -1,7 +1,7 @@
 /*****************************************************************************
  * controls.m: MacOS X interface module
  *****************************************************************************
- * Copyright (C) 2002-2007 the VideoLAN team
+ * Copyright (C) 2002-2009 the VideoLAN team
  * $Id$
  *
  * Authors: Jon Lech Johansen <jon-vl@nanocrew.net>
@@ -154,7 +154,6 @@
         /* We have a detached vout */
         else if( [[o_window className] isEqualToString: @"VLCVoutWindow"] )
         {
-            msg_Dbg( VLCIntf, "detached vout controls.m call getVoutView" );
             o_vout_view = [o_window getVoutView];
         }
     }

@@ -1,7 +1,7 @@
 /*****************************************************************************
  * fspanel.m: MacOS X full screen panel
  *****************************************************************************
- * Copyright (C) 2006-2008 the VideoLAN team
+ * Copyright (C) 2006-2009 the VideoLAN team
  * $Id$
  *
  * Authors: Jérôme Decoodt <djc at videolan dot org>
@@ -178,10 +178,13 @@
 
 - (void)setActive:(id)noData
 {
-    if( [[[[VLCMain sharedInstance] getControls] getVoutView] isFullscreen] )
+    if( [[[VLCMain sharedInstance] getControls] getVoutView] != nil )
     {
-        b_nonActive = NO;
-        [self fadeIn];
+        if( [[[[VLCMain sharedInstance] getControls] getVoutView] isFullscreen] )
+        {
+            b_nonActive = NO;
+            [self fadeIn];
+        }
     }
 }
 

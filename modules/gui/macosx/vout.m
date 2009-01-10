@@ -1,7 +1,7 @@
 /*****************************************************************************
  * vout.m: MacOS X video output module
  *****************************************************************************
- * Copyright (C) 2001-2008 the VideoLAN team
+ * Copyright (C) 2001-2009 the VideoLAN team
  * $Id$
  *
  * Authors: Colin Delacroix <colin@zoy.org>
@@ -123,14 +123,19 @@ int DeviceCallback( vlc_object_t *p_this, const char *psz_variable,
 
 - (id)getViewForWindow: (id)o_window
 {
-    id o_enumerator = [o_embedded_array objectEnumerator];
-    id o_current_embedded;
-
-    while( (o_current_embedded = [o_enumerator nextObject]) )
+    if( o_embedded_array != nil )
     {
-        if( [o_current_embedded getWindow] == o_window )
+        id o_enumerator = [o_embedded_array objectEnumerator];
+        id o_current_embedded;
+        if( o_window != nil )
         {
-            return o_current_embedded;
+            while( (o_current_embedded = [o_enumerator nextObject]) )
+            {
+                if( [o_current_embedded getWindow] == o_window )
+                {
+                    return o_current_embedded;
+                }
+            }
         }
     }
     return nil;

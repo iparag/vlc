@@ -1,7 +1,7 @@
 /*****************************************************************************
  * intf.m: MacOS X interface module
  *****************************************************************************
- * Copyright (C) 2002-2008 the VideoLAN team
+ * Copyright (C) 2002-2009 the VideoLAN team
  * $Id$
  *
  * Authors: Jon Lech Johansen <jon-vl@nanocrew.net>
@@ -471,7 +471,7 @@ static VLCMain *_o_sharedMainInstance = nil;
 #ifdef UPDATE_CHECK
     /* Check for update silently on startup */
     if( !nib_update_loaded )
-        nib_update_loaded = [NSBundle loadNibNamed:@"Update" owner:self];
+        nib_update_loaded = [NSBundle loadNibNamed:@"Update" owner: NSApp];
 
     if([o_update shouldCheckForUpdate])
         [NSThread detachNewThreadSelector:@selector(checkForUpdate) toTarget:o_update withObject:nil];
@@ -1247,7 +1247,7 @@ static unsigned int VLCModifiersToCocoa( unsigned int i_key )
         return nil;
 
     if( !nib_prefs_loaded )
-        nib_prefs_loaded = [NSBundle loadNibNamed:@"Preferences" owner: self];
+        nib_prefs_loaded = [NSBundle loadNibNamed:@"Preferences" owner: NSApp];
 
     return o_sprefs;
 }
@@ -1258,7 +1258,7 @@ static unsigned int VLCModifiersToCocoa( unsigned int i_key )
         return nil;
 
     if( !nib_prefs_loaded )
-        nib_prefs_loaded = [NSBundle loadNibNamed:@"Preferences" owner: self];
+        nib_prefs_loaded = [NSBundle loadNibNamed:@"Preferences" owner: NSApp];
 
     return o_prefs;
 }
@@ -1901,7 +1901,7 @@ end:
 {
     if( !nib_open_loaded )
     {
-        nib_open_loaded = [NSBundle loadNibNamed:@"Open" owner:self];
+        nib_open_loaded = [NSBundle loadNibNamed:@"Open" owner: NSApp];
         [o_open awakeFromNib];
         [o_open openFile];
     } else {
@@ -1913,7 +1913,7 @@ end:
 {
     if( !nib_open_loaded )
     {
-        nib_open_loaded = [NSBundle loadNibNamed:@"Open" owner:self];
+        nib_open_loaded = [NSBundle loadNibNamed:@"Open" owner: NSApp];
         [o_open awakeFromNib];
         [o_open openFileGeneric];
     } else {
@@ -1925,7 +1925,7 @@ end:
 {
     if( !nib_open_loaded )
     {
-        nib_open_loaded = [NSBundle loadNibNamed:@"Open" owner:self];
+        nib_open_loaded = [NSBundle loadNibNamed:@"Open" owner: NSApp];
         [o_open awakeFromNib];
         [o_open openDisc];
     } else {
@@ -1937,7 +1937,7 @@ end:
 {
     if( !nib_open_loaded )
     {
-        nib_open_loaded = [NSBundle loadNibNamed:@"Open" owner:self];
+        nib_open_loaded = [NSBundle loadNibNamed:@"Open" owner: NSApp];
         [o_open awakeFromNib];
         [o_open openNet];
     } else {
@@ -1949,7 +1949,7 @@ end:
 {
     if( !nib_open_loaded )
     {
-        nib_open_loaded = [NSBundle loadNibNamed:@"Open" owner:self];
+        nib_open_loaded = [NSBundle loadNibNamed:@"Open" owner: NSApp];
         [o_open awakeFromNib];
         [o_open openCapture];
     } else {
@@ -1961,7 +1961,7 @@ end:
 {
     if( !nib_wizard_loaded )
     {
-        nib_wizard_loaded = [NSBundle loadNibNamed:@"Wizard" owner:self];
+        nib_wizard_loaded = [NSBundle loadNibNamed:@"Wizard" owner: NSApp];
         [o_wizard initStrings];
         [o_wizard resetWizard];
         [o_wizard showWizard];
@@ -1977,7 +1977,7 @@ end:
         o_extended = [[VLCExtended alloc] init];
 
     if( !nib_extended_loaded )
-        nib_extended_loaded = [NSBundle loadNibNamed:@"Extended" owner:self];
+        nib_extended_loaded = [NSBundle loadNibNamed:@"Extended" owner: NSApp];
 
     [o_extended showPanel];
 }
@@ -1987,12 +1987,12 @@ end:
     /* we need the wizard-nib for the bookmarks's extract functionality */
     if( !nib_wizard_loaded )
     {
-        nib_wizard_loaded = [NSBundle loadNibNamed:@"Wizard" owner:self];
+        nib_wizard_loaded = [NSBundle loadNibNamed:@"Wizard" owner: NSApp];
         [o_wizard initStrings];
     }
  
     if( !nib_bookmarks_loaded )
-        nib_bookmarks_loaded = [NSBundle loadNibNamed:@"Bookmarks" owner:self];
+        nib_bookmarks_loaded = [NSBundle loadNibNamed:@"Bookmarks" owner: NSApp];
 
     [o_bookmarks showBookmarks];
 }
@@ -2001,7 +2001,7 @@ end:
 {
     if( !nib_prefs_loaded )
     {
-        nib_prefs_loaded = [NSBundle loadNibNamed:@"Preferences" owner: self];
+        nib_prefs_loaded = [NSBundle loadNibNamed:@"Preferences" owner: NSApp];
         o_sprefs = [[VLCSimplePrefs alloc] init];
         o_prefs= [[VLCPrefs alloc] init];
     }
@@ -2016,7 +2016,7 @@ end:
 {
 #ifdef UPDATE_CHECK
     if( !nib_update_loaded )
-        nib_update_loaded = [NSBundle loadNibNamed:@"Update" owner:self];
+        nib_update_loaded = [NSBundle loadNibNamed:@"Update" owner: NSApp];
     [o_update showUpdateWindow];
 #else
     msg_Err( VLCIntf, "Update checker wasn't enabled in this build" );
@@ -2030,7 +2030,7 @@ end:
 - (IBAction)viewAbout:(id)sender
 {
     if( !nib_about_loaded )
-        nib_about_loaded = [NSBundle loadNibNamed:@"About" owner:self];
+        nib_about_loaded = [NSBundle loadNibNamed:@"About" owner: NSApp];
 
     [o_about showAbout];
 }
@@ -2038,7 +2038,7 @@ end:
 - (IBAction)showLicense:(id)sender
 {
     if( !nib_about_loaded )
-        nib_about_loaded = [NSBundle loadNibNamed:@"About" owner:self];
+        nib_about_loaded = [NSBundle loadNibNamed:@"About" owner: NSApp];
 
     [o_about showGPL: sender];
 }
@@ -2047,7 +2047,7 @@ end:
 {
     if( !nib_about_loaded )
     {
-        nib_about_loaded = [NSBundle loadNibNamed:@"About" owner:self];
+        nib_about_loaded = [NSBundle loadNibNamed:@"About" owner: NSApp];
         [o_about showHelp];
     }
     else
@@ -2302,7 +2302,7 @@ end:
 - (IBAction)showInformationPanel:(id)sender
 {
     if(! nib_info_loaded )
-        nib_info_loaded = [NSBundle loadNibNamed:@"MediaInfo" owner: self];
+        nib_info_loaded = [NSBundle loadNibNamed:@"MediaInfo" owner: NSApp];
     
     [o_info initPanel];
 }
