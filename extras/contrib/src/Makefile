@@ -1,7 +1,7 @@
 #***************************************************************************
 # src/Makefile : Dearchive and compile all files necessary
 # ***************************************************************************
-# Copyright (C) 2003 - 2008 the VideoLAN team
+# Copyright (C) 2003 - 2009 the VideoLAN team
 # $Id$
 #
 # Authors: Christophe Massiot <massiot@via.ecp.fr>
@@ -1872,7 +1872,7 @@ CIPHDIG= --enable-ciphers=aes,des,rfc2268,arcfour --enable-digests=sha1,md5,rmd1
 
 .gcrypt: libgcrypt .gpg-error
 ifdef HAVE_WIN32
-	(cd $<; ./autogen.sh && $(HOSTCC) ./configure $(HOSTCONF) --target=i586-mingw32msvc --prefix=$(PREFIX) CFLAGS="$(CFLAGS)" $(CIPHDIG) --disable-shared --enable-static --disable-nls && sed -i 46s@sys/times.h@sys/time.h@ cipher/random.c && make && make install)
+	(cd $<; ./autogen.sh && $(HOSTCC) ./configure $(HOSTCONF) --target=i586-mingw32msvc --prefix=$(PREFIX) CFLAGS="$(CFLAGS)" $(CIPHDIG) --disable-shared --enable-static --disable-nls && sed -i.orig '46s@sys/times.h@sys/time.h@' "cipher/random.c" && make && make install)
 else
 	(cd $<; $(HOSTCC) ./configure $(HOSTCONF) --prefix=$(PREFIX) CFLAGS="$(CFLAGS)" $(CIPHDIG) && make && make install)
 endif
@@ -2276,7 +2276,7 @@ yasm: yasm-$(YASM_VERSION).tar.gz
 	$(EXTRACT_GZ)
 
 .yasm: yasm
-	(cd $< && $(HOSTCC) ./configure --prefix=$(PREFIX) && make && make install)
+	(cd $< && $(HOSTCC) ./configure --prefix=$(PREFIX) --host=$(HOST) && make && make install)
 	touch $@
 
 CLEAN_FILE += .yasm
