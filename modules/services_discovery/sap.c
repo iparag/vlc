@@ -1004,6 +1004,12 @@ static int ParseConnection( vlc_object_t *p_obj, sdp_t *p_sdp )
         return VLC_EGENERIC;
     }
 
+    if (strcmp (vlc_proto, "udp")
+     && (port & 1) /* odd media port? */
+     && !FindAttribute (p_sdp, 0, "rtcp-mux")
+     && !FindAttribute (p_sdp, 0, "rtcp"))
+        port++; /* RTP on next even port */
+
     if (flags & 1)
     {
         /* Connection-oriented media */
