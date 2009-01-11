@@ -8,6 +8,10 @@ Mac OS X Interface:
 New Localizations:
  * Indonesian
 
+Various bugfixes:
+ * Support for receiving RTP packets on odd port numbers.
+ * Lots of small bugfixes.
+
 
 Changes between 0.9.6 and 0.9.8a:
 ---------------------------------
