@@ -495,6 +495,8 @@
     }
     PL_UNLOCK;
     vlc_object_release( p_playlist );
+
+    [self outlineViewSelectionDidChange: nil];
 }
 
 - (void)playModeUpdated
@@ -513,6 +515,18 @@
     [[[VLCMain sharedInstance] getControls] shuffle];
 
     vlc_object_release( p_playlist );
+}
+
+- (void)outlineViewSelectionDidChange:(NSNotification *)notification
+{
+    // FIXME: unsafe
+    playlist_item_t * p_item = [[o_outline_view itemAtRow:[o_outline_view selectedRow]] pointerValue];
+
+    if( p_item && [[VLCMain sharedInstance] isPlaylistCollapsed] == NO )
+    {
+        /* update our info-panel to reflect the new item, if we aren't collapsed */
+        [[[VLCMain sharedInstance] getInfo] updatePanelWithItem:p_item->p_input];
+    }
 }
 
 - (BOOL)isSelectionEmpty
@@ -557,7 +571,6 @@
     }
 
     vlc_object_release( p_playlist );
-
 }
 
 /* Check if p_item is a child of p_node recursively. We need to check the item
