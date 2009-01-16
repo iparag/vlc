@@ -333,6 +333,7 @@ struct intf_sys_t
 - (id)getSimplePreferences;
 - (id)getPreferences;
 - (id)getPlaylist;
+- (BOOL)isPlaylistCollapsed;
 - (id)getInfo;
 - (id)getWizard;
 - (id)getBookmarks;
