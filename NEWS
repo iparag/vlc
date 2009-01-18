@@ -1,6 +1,12 @@
 Changes between 0.9.8a and 0.9.9 (not-yet-released):
 ----------------------------------------------------
 
+Decoders:
+ * Experimental new decoder for Real Video 3.0 & 4.0
+
+Demuxers:
+ * Various fixes related to real demuxer
+
 Mac OS X Interface:
  * Fixed circumstances, which lead to an empty Information panel
  * Fixed multiple UTF8 issues in the Streaming / Exporting Wizard
@@ -8,10 +14,13 @@ Mac OS X Interface:
 New Localizations:
  * Indonesian
  * Bengali
+ * Updates of other localizations
 
 Various bugfixes:
  * Support for receiving RTP packets on odd port numbers.
  * Lots of small bugfixes.
+ * Correct Fullscreen behaviour on Multi-Screens on Windows
+ * Telnet fixing on Windows
 
 
 Changes between 0.9.6 and 0.9.8a:
