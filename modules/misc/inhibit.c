@@ -243,7 +243,7 @@ static void Run( intf_thread_t *p_intf )
         p_input = vlc_object_find( p_intf, VLC_OBJECT_INPUT, FIND_ANYWHERE );
         if( p_input )
         {
-            if( PLAYING_S == i_state )
+            if( PLAYING_S == p_input->i_state )
             {
                if( !p_intf->p_sys->i_cookie )
                {
