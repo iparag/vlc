@@ -846,6 +846,8 @@ void QVLCMenu::PopupMenu( intf_thread_t *p_intf, bool show )
             }
             addDPStaticEntry( submenu, qtr( I_MENU_EXT ), "",
                 ":/settings", SLOT( extendedDialog() ) );
+            addDPStaticEntry( submenu, qtr( I_MENU_EXT ), "",
+                ":/settings", SLOT( extendedDialog() ) );
             if( mi )
             {
                 action = submenu->addAction( QIcon( "" ),
@@ -862,6 +864,8 @@ void QVLCMenu::PopupMenu( intf_thread_t *p_intf, bool show )
             else /* We are using the skins interface.
                     If not, this entry will not show. */
             {
+                addDPStaticEntry( submenu, qtr( "&Preferences..." ),
+                    ":/preferences", SLOT( prefsDialog() ), "Ctrl+P" );
                 objects.clear();
                 varnames.clear();
                 vlc_object_t *p_object = ( vlc_object_t* )
