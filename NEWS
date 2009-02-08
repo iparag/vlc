@@ -8,8 +8,12 @@ Demuxers:
  * Various fixes related to real demuxer
 
 Mac OS X Interface:
- * Fixed circumstances, which lead to an empty Information panel
+ * Fixed circumstances, which could lead to an empty Information panel
  * Fixed multiple UTF8 issues in the Streaming / Exporting Wizard
+
+Mac OS X Port:
+ * Improved video playback performance
+ * The Safari/Mozilla web browser plugin is distributed again.
 
 New Localizations:
  * Indonesian
@@ -19,8 +23,8 @@ New Localizations:
 Various bugfixes:
  * Support for receiving RTP packets on odd port numbers.
  * Lots of small bugfixes.
- * Correct Fullscreen behaviour on Multi-Screens on Windows
- * Telnet fixing on Windows
+ * Correct Fullscreen behaviour on Multi-Screen setups on Windows
+ * Telnet fixes on Windows
 
 
 Changes between 0.9.6 and 0.9.8a:
