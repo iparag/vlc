@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2009-01-26 22:05+0000\n"
+"POT-Creation-Date: 2009-02-08 17:43+0000\n"
 "PO-Revision-Date: 2009-01-18 12:37+0300\n"
 "Last-Translator: Andrey Wolk <andywolk@gmail.com>\n"
 "Language-Team: Russian\n"
@@ -13970,7 +13970,7 @@ msgstr "Открыть устройство..."
 msgid "Open Recent"
 msgstr "Открыть недавние"
 
-#: modules/gui/macosx/intf.m:528 modules/gui/macosx/intf.m:2542
+#: modules/gui/macosx/intf.m:528 modules/gui/macosx/intf.m:2544
 msgid "Clear Menu"
 msgstr "Очистить меню"
 
@@ -17593,7 +17593,7 @@ msgstr "&Конвертировать / Сохранить..."
 msgid "&Streaming..."
 msgstr "&Потоковое Вещание"
 
-#: modules/gui/qt4/menus.cpp:315 modules/gui/qt4/menus.cpp:933
+#: modules/gui/qt4/menus.cpp:315 modules/gui/qt4/menus.cpp:937
 msgid "&Quit"
 msgstr "&Выход"
 
@@ -17631,7 +17631,7 @@ msgstr "Дополнительные элементы управления"
 msgid "Visualizations selector"
 msgstr "Выбор визуализатора"
 
-#: modules/gui/qt4/menus.cpp:421
+#: modules/gui/qt4/menus.cpp:421 modules/gui/qt4/menus.cpp:867
 msgid "&Preferences..."
 msgstr "&Настройки..."
 
@@ -17745,24 +17745,24 @@ msgstr "Вос&произведение"
 msgid "Show Playlist"
 msgstr "Показать Плейлист"
 
-#: modules/gui/qt4/menus.cpp:852
+#: modules/gui/qt4/menus.cpp:854
 msgid "Minimal View..."
 msgstr "Минимальный Интерфейс..."
 
-#: modules/gui/qt4/menus.cpp:857
+#: modules/gui/qt4/menus.cpp:859
 #, fuzzy
 msgid "Toggle Fullscreen Interface"
 msgstr "Открыть окно списка для воспроизведения"
 
-#: modules/gui/qt4/menus.cpp:917
+#: modules/gui/qt4/menus.cpp:921
 msgid "Hide VLC media player in taskbar"
 msgstr "Скрыть VLC медиа плеер в панели задач"
 
-#: modules/gui/qt4/menus.cpp:923
+#: modules/gui/qt4/menus.cpp:927
 msgid "Show VLC media player"
 msgstr "Показать VLC медиа плеер"
 
-#: modules/gui/qt4/menus.cpp:931
+#: modules/gui/qt4/menus.cpp:935
 msgid "&Open Media"
 msgstr "&Открыть Медиа"
 
