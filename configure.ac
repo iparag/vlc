@@ -4,7 +4,7 @@ AC_INIT(vlc, 0.9.9)
 VERSION_MAJOR="0"
 VERSION_MINOR="9"
 VERSION_REVISION="9"
-VERSION_EXTRA="-git"
+VERSION_EXTRA="-rc"
 
 CONFIGURE_LINE="`echo "$0 $ac_configure_args" | sed -e 's/\\\/\\\\\\\/g'`"
 CODENAME="Grishenko"
