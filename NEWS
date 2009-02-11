@@ -1,5 +1,5 @@
-Changes between 0.9.8a and 0.9.9 (not-yet-released):
-----------------------------------------------------
+Changes between 0.9.8a and 0.9.9-rc:
+------------------------------------
 
 Decoders:
  * Experimental new decoder for Real Video 3.0 & 4.0
