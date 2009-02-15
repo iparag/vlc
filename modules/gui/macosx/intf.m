@@ -2317,6 +2317,8 @@ end:
 {
     if( [o_notification object] == o_msgs_panel )
     {
+        [self updateMessageArray];
+
         id o_msg;
         NSEnumerator * o_enum;
 
@@ -2333,6 +2335,12 @@ end:
 
         [o_msg_lock unlock];
     }
+}
+
+- (void)windowDidUpdate:(NSNotification *)o_notification
+{
+    if( [o_notification object] == o_msgs_panel )
+        [self updateMessageArray];
 }
 
 - (void)updateMessageArray
