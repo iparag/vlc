@@ -1149,15 +1149,6 @@ static WINDOWPLACEMENT getWindowState(HWND hwnd)
     return window_placement;
 }
 
-/* Internal wrapper over SetWindowPlacement */
-static void SetWindowState(HWND hwnd, int nShowCmd,WINDOWPLACEMENT window_placement)
-{
-    window_placement.showCmd = nShowCmd;
-    SetWindowPlacement( hwnd, &window_placement );
-    SetWindowPos( hwnd, 0, 0, 0, 0, 0,
-        SWP_NOMOVE|SWP_NOSIZE|SWP_NOZORDER|SWP_FRAMECHANGED);
-}
-
 /* Internal wrapper to call vout_ControlWindow for hparent */
 static void ControlParentWindow( vout_thread_t *p_vout, int i_query, ... )
 {
@@ -1203,9 +1194,11 @@ void Win32ToggleFullscreen( vout_thread_t *p_vout )
                             mi.rcMonitor.bottom - mi.rcMonitor.top,
                             SWP_NOZORDER|SWP_FRAMECHANGED );
         }
-
-        /* Maximize window */
-        SetWindowState( hwnd, SW_SHOWMAXIMIZED, window_placement );
+        else
+        {
+            /* Maximize non embedded window */
+            ShowWindow( hwnd, SW_SHOWMAXIMIZED );
+        }
 
         if( p_vout->p_sys->hparent )
         {
@@ -1233,9 +1226,6 @@ void Win32ToggleFullscreen( vout_thread_t *p_vout )
         /* Change window style, no borders and no title bar */
         SetWindowLong( hwnd, GWL_STYLE, p_vout->p_sys->i_window_style );
 
-        /* Normal window */
-        SetWindowState( hwnd, SW_SHOWNORMAL, window_placement );
-
         if( p_vout->p_sys->hparent )
         {
             RECT rect;
@@ -1253,6 +1243,12 @@ void Win32ToggleFullscreen( vout_thread_t *p_vout )
             ShowWindow( topLevelParent, SW_SHOW );
             SetForegroundWindow( p_vout->p_sys->hparent );
             ShowWindow( hwnd, SW_HIDE );
+        }
+        else
+        {
+            /* return to normal window for non embedded vout */
+            SetWindowPlacement( hwnd, &window_placement );
+            ShowWindow( hwnd, SW_SHOWNORMAL );
         }
 
         /* Make sure the mouse cursor is displayed */
