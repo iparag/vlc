@@ -67,6 +67,31 @@ static void CatalogLoad( xml_t *, const char * );
 static void CatalogAdd( xml_t *, const char *, const char *, const char * );
 static int StreamRead( void *p_context, char *p_buffer, int i_buffer );
 
+static unsigned refs = 0;
+#if defined (LIBVLC_USE_PTHREAD)
+static vlc_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+#elif defined (WIN32)
+BOOL WINAPI DllMain (HINSTANCE hinstDll, DWORD fdwReason, LPVOID lpvReserved)
+{
+    (void) hinstDll;
+    (void) lpvReserved;
+
+    switch (fdwReason)
+    {
+        case DLL_PROCESS_ATTACH:
+            vlc_mutex_init (&lock);
+            break;
+
+        case DLL_PROCESS_DETACH:
+            vlc_mutex_destroy (&lock);
+            break;
+    }
+    return TRUE;
+}
+#else
+# error FIXME
+#endif
+
 /*****************************************************************************
  * Module initialization
  *****************************************************************************/
@@ -74,7 +99,13 @@ static int Open( vlc_object_t *p_this )
 {
     xml_t *p_xml = (xml_t *)p_this;
 
-    xmlInitParser();
+    if( !xmlHasFeature( XML_WITH_THREAD ) )
+        return VLC_EGENERIC;
+
+    vlc_mutex_lock( &lock );
+    if( refs++ == 0 )
+        xmlInitParser();
+    vlc_mutex_unlock( &lock );
 
     p_xml->pf_reader_create = ReaderCreate;
     p_xml->pf_reader_delete = ReaderDelete;
@@ -90,7 +121,11 @@ static int Open( vlc_object_t *p_this )
  *****************************************************************************/
 static void Close( vlc_object_t *p_this )
 {
-    xmlCleanupParser();
+    vlc_mutex_lock( &lock );
+    if( --refs == 0 )
+        xmlCleanupParser();
+    vlc_mutex_unlock( &lock );
+
     VLC_UNUSED(p_this);
     return;
 }
