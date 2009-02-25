@@ -382,7 +382,7 @@ static void Run( intf_thread_t *p_intf )
                 }
 #endif
 
-                if (i_recv <= 0 && ( end || errno != EAGAIN ) )
+                if( i_recv == 0 || ( i_recv == -1 && ( end || errno != EAGAIN ) ) )
                     goto drop;
             }
         }
