@@ -71,6 +71,8 @@ static unsigned refs = 0;
 #if defined (LIBVLC_USE_PTHREAD)
 static vlc_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
 #elif defined (WIN32)
+static vlc_mutex_t lock;
+
 BOOL WINAPI DllMain (HINSTANCE hinstDll, DWORD fdwReason, LPVOID lpvReserved)
 {
     (void) hinstDll;
