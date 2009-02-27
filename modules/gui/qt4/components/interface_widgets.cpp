@@ -916,7 +916,7 @@ void ControlsWidget::updateVolume()
     /* Audio part */
     audio_volume_t i_volume;
     aout_VolumeGet( p_intf, &i_volume );
-    i_volume = ( i_volume *  VOLUME_MAX )/ (AOUT_VOLUME_MAX/2);
+    i_volume = ( (i_volume + 1)*  VOLUME_MAX )/ (AOUT_VOLUME_MAX/2);
     int i_gauge = volumeSlider->value();
     b_my_volume = false;
     if( i_volume - i_gauge > 1 || i_gauge - i_volume > 1 )
