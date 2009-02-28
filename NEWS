@@ -24,6 +24,7 @@ Various bugfixes:
  * Lots of small bugfixes.
  * Correct Fullscreen behaviour on Multi-Screen setups on Windows
  * Telnet fixes on Windows
+ * Resampling fixes when transcoding
 
 
 Changes between 0.9.6 and 0.9.8a:
