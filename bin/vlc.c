@@ -33,7 +33,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-
+#ifdef HAVE_X11_XLIB_H
+# include <X11/Xlib.h>
+#endif
 
 /* Explicit HACK */
 extern void LocaleFree (const char *);
@@ -84,6 +86,15 @@ int main( int i_argc, const char *ppsz_argv[] )
 
 #if defined (HAVE_GETEUID) && !defined (SYS_BEOS)
     /* FIXME: rootwrap (); */
+#endif
+
+#ifdef HAVE_X11_XLIB_H
+    /* Initialize Xlib thread support. */
+    if (!XInitThreads ())
+    {
+        fputs ("VLC requires a thread-safe Xlib. Sorry.\n", stderr);
+        return 1;
+    }
 #endif
 
     /* Synchronously intercepted POSIX signals.
