@@ -569,8 +569,7 @@ static bool parse_track_node COMPLEX_INTERFACE
                            free( psz_uri );
                            psz_uri = psz_tmp;
                         }
-                        p_new_input = input_item_NewExt( p_demux, psz_uri,
-                                                        NULL, 0, NULL, -1 );
+                        input_item_SetURI( p_new_input, psz_uri );
                         free( psz_uri );
                         input_item_CopyOptions( p_input_item, p_new_input );
                         psz_uri = NULL;
@@ -582,12 +581,6 @@ static bool parse_track_node COMPLEX_INTERFACE
                         FREE_ATT();
                         return false;
                     }
-                    input_item_SetURI( p_new_input, psz_uri );
-                    free( psz_uri );
-                    input_item_CopyOptions( p_input_item, p_new_input );
-                    psz_uri = NULL;
-                    FREE_ATT();
-                    p_handler = NULL;
                 }
                 else
                 {
