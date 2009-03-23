@@ -359,7 +359,7 @@ static inline void __vlc_cond_wait( const char * psz_file, int i_line,
 #define vlc_cond_timedwait( P_COND, P_MUTEX, DEADLINE )                      \
     __vlc_cond_timedwait( __FILE__, __LINE__, P_COND, P_MUTEX, DEADLINE  )
 
-#ifdef __APPLE__
+#if defined(__APPLE__) && !defined(__powerpc__) 
 # include <sys/time.h> /* gettimeofday in vlc_cond_timedwait */
 #endif
 
@@ -369,7 +369,7 @@ static inline int __vlc_cond_timedwait( const char * psz_file, int i_line,
                                         mtime_t deadline )
 {
 #if defined(LIBVLC_USE_PTHREAD)
-#ifdef __APPLE__
+#if defined(__APPLE__) && !defined(__powerpc__)
     /* mdate() is mac_absolute_time on osx, which we must convert to do
      * the same base than gettimeofday() on which pthread_cond_timedwait
      * counts on. */
