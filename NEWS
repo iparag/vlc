@@ -9,10 +9,13 @@ Demuxers:
 
 Mac OS X Interface:
  * Fixed circumstances, which could lead to an empty Information panel
+   - Note that VLC will show information on the currently _selected_ item 
+     instead of the currently _playing_ item, if the playlist is visible in the 
+     main controller window.
  * Fixed multiple UTF8 issues in the Streaming / Exporting Wizard
 
 Mac OS X Port:
- * Improved video playback performance
+ * Improved video playback performance on Intel-based Macs
 
 New Localizations:
  * Indonesian
