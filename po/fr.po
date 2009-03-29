@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: fr\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2009-01-26 22:05+0000\n"
+"POT-Creation-Date: 2009-03-29 20:34+0100\n"
 "PO-Revision-Date: 2009-02-02 13:30+0200\n"
 "Last-Translator: Eric Lassauge <lassauge@users.sf.net>\n"
 "Language-Team: French <fr@li.org>\n"
@@ -344,7 +344,7 @@ msgstr ""
 "pour chaque module de flux de sortie ici."
 
 #: include/vlc_config_cat.h:172 modules/services_discovery/sap.c:127
-#: modules/services_discovery/sap.c:323
+#: modules/services_discovery/sap.c:339
 msgid "SAP"
 msgstr "SAP"
 
@@ -844,7 +844,7 @@ msgid "Audio Channels"
 msgstr "Canaux audio"
 
 #: src/audio_output/output.c:105 src/audio_output/output.c:140
-#: modules/access/v4l2/v4l2.c:220 modules/access/v4l2/v4l2.c:271
+#: modules/access/v4l2/v4l2.c:218 modules/access/v4l2/v4l2.c:269
 #: modules/access/v4l.c:129 modules/audio_output/alsa.c:195
 #: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:519
 #: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:402
@@ -1094,21 +1094,21 @@ msgstr "Débit d’images "
 msgid "Subtitle"
 msgstr "Sous-titres "
 
-#: src/input/input.c:2209
+#: src/input/input.c:2210
 msgid "Your input can't be opened"
 msgstr "Votre média d'entrée ne peut être ouvert"
 
-#: src/input/input.c:2210
+#: src/input/input.c:2211
 #, c-format
 msgid "VLC is unable to open the MRL '%s'. Check the log for details."
 msgstr ""
 "VLC ne peut pas ouvrir « %s ». Vérifiez les messages pour plus de détails."
 
-#: src/input/input.c:2309
+#: src/input/input.c:2310
 msgid "VLC can't recognize the input's format"
 msgstr "Impossible de reconnaitre le format du média d'entrée"
 
-#: src/input/input.c:2310
+#: src/input/input.c:2311
 #, c-format
 msgid "The format of '%s' cannot be detected. Have a look the log for details."
 msgstr ""
@@ -1167,7 +1167,7 @@ msgstr "Paramètre"
 msgid "URL"
 msgstr "URL"
 
-#: src/input/meta.c:64 modules/misc/notify/notify.c:288
+#: src/input/meta.c:64 modules/misc/notify/notify.c:317
 msgid "Now Playing"
 msgstr "Actuellement"
 
@@ -2471,7 +2471,7 @@ msgstr ""
 #: src/libvlc-module.c:568 src/video_output/vout_intf.c:180
 #: src/video_output/vout_intf.c:198 modules/access/dshow/dshow.cpp:81
 #: modules/access/dshow/dshow.cpp:83 modules/access/dshow/dshow.cpp:86
-#: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:258
+#: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:256
 #: modules/audio_output/alsa.c:105 modules/gui/fbosd.c:173
 #: modules/gui/macosx/prefs_widgets.m:1321
 #: modules/gui/macosx/simple_prefs.m:381 modules/gui/macosx/simple_prefs.m:476
@@ -3750,7 +3750,7 @@ msgstr "Sélectionnez la combinaison de touches à utiliser pour le ralenti."
 #: modules/gui/macosx/intf.m:620 modules/gui/macosx/intf.m:628
 #: modules/gui/macosx/wizard.m:309 modules/gui/macosx/wizard.m:321
 #: modules/gui/macosx/wizard.m:1620 modules/gui/qt4/menus.cpp:670
-#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:302
+#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:332
 msgid "Next"
 msgstr "Suivant"
 
@@ -3764,7 +3764,7 @@ msgstr ""
 #: modules/gui/macosx/about.m:191 modules/gui/macosx/controls.m:887
 #: modules/gui/macosx/intf.m:493 modules/gui/macosx/intf.m:543
 #: modules/gui/macosx/intf.m:621 modules/gui/macosx/intf.m:627
-#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:300
+#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:330
 msgid "Previous"
 msgstr "Précédent"
 
@@ -4036,7 +4036,7 @@ msgid "Select the key to decrease audio volume."
 msgstr ""
 "Sélectionnez la combinaison de touches à utiliser pour diminuer le volume."
 
-#: src/libvlc-module.c:1247 modules/access/v4l2/v4l2.c:207
+#: src/libvlc-module.c:1247 modules/access/v4l2/v4l2.c:205
 #: modules/gui/macosx/controls.m:927 modules/gui/macosx/intf.m:561
 #: modules/gui/macosx/intf.m:622 modules/gui/macosx/intf.m:631
 #: modules/gui/qt4/components/interface_widgets.cpp:911
@@ -4572,7 +4572,7 @@ msgstr "Métadonnées"
 msgid "Decoders"
 msgstr "Décodeurs"
 
-#: src/libvlc-module.c:1745 modules/access/v4l2/v4l2.c:104
+#: src/libvlc-module.c:1745 modules/access/v4l2/v4l2.c:96
 #: modules/gui/macosx/playlistinfo.m:93
 #: modules/gui/qt4/components/info_panels.cpp:509
 msgid "Input"
@@ -5366,7 +5366,7 @@ msgstr "Aspect"
 #: modules/access/pvr.c:60 modules/access/rtmp/access.c:43
 #: modules/access/screen/screen.c:39 modules/access/smb.c:64
 #: modules/access/tcp.c:41 modules/access/udp.c:49
-#: modules/access/v4l2/v4l2.c:227 modules/access/v4l.c:77
+#: modules/access/v4l2/v4l2.c:225 modules/access/v4l.c:77
 #: modules/access/vcd/vcd.c:46
 msgid "Caching value in ms"
 msgstr "Taille du cache en ms"
@@ -6157,7 +6157,7 @@ msgstr ""
 "Nom du périphérique vidéo qui sera utilisé pour le plugin DirectShow. Si "
 "vous ne spécifiez rien, le périphérique par défaut sera utilisé."
 
-#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:181
+#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:179
 #: modules/access/v4l.c:85 modules/gui/qt4/components/open_panels.cpp:708
 #: modules/gui/qt4/components/open_panels.cpp:743
 msgid "Audio device name"
@@ -6185,7 +6185,7 @@ msgstr ""
 "Taille de la vidéo qui sera affiché par le plugin DirectShow. Si vous ne "
 "spécifiez rien, la taille par défaut sera utilisée."
 
-#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:98
+#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:90
 #: modules/access/v4l.c:89
 msgid "Video input chroma format"
 msgstr "Chroma vidéo"
@@ -6636,7 +6636,7 @@ msgid ""
 msgstr "Taille du cache pour les flux factices, en millisecondes."
 
 #: modules/access/fake.c:47 modules/access/pvr.c:86
-#: modules/access/v4l2/v4l2.c:119 modules/access/v4l.c:140
+#: modules/access/v4l2/v4l2.c:111 modules/access/v4l.c:140
 msgid "Framerate"
 msgstr "Débit d’images"
 
@@ -7224,7 +7224,7 @@ msgstr "URL avec des informations sur votre flux ou canal. "
 msgid "Bitrate information of the transcoded stream. "
 msgstr "Information sur le débit du le flux transcodé."
 
-#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:223
+#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:221
 #: modules/access/v4l.c:126
 msgid "Samplerate"
 msgstr "Fréquence d’échantillonage"
@@ -7329,7 +7329,7 @@ msgstr "Norme"
 msgid "Norm of the stream (Automatic, SECAM, PAL, or NTSC)."
 msgstr "Norme du flux (Automatique, SECAM, PAL ou NTSC)"
 
-#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:113
+#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:105
 #: modules/access/v4l.c:106 modules/demux/rawvid.c:48
 #: modules/video_filter/mosaic.c:96 modules/video_output/vmem.c:50
 msgid "Width"
@@ -7339,7 +7339,7 @@ msgstr "Largeur"
 msgid "Width of the stream to capture (-1 for autodetection)."
 msgstr "Largeur de la vidéo à capturer (-1 pour autodétecter)."
 
-#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:116
+#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:108
 #: modules/access/v4l.c:109 modules/demux/rawvid.c:52
 #: modules/video_filter/mosaic.c:94 modules/video_output/vmem.c:53
 msgid "Height"
@@ -7349,7 +7349,7 @@ msgstr "Hauteur"
 msgid "Height of the stream to capture (-1 for autodetection)."
 msgstr "Hauteur de la vidéo à capturer (-1 pour autodétecter)."
 
-#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:242
+#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:240
 #: modules/access/v4l.c:93 modules/gui/qt4/components/open_panels.cpp:757
 #: modules/gui/qt4/components/open_panels.cpp:856
 msgid "Frequency"
@@ -7359,7 +7359,7 @@ msgstr "Fréquence"
 msgid "Frequency to capture (in kHz), if applicable."
 msgstr "Fréquence de capture, en kHz, si possible."
 
-#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:120
+#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:112
 #: modules/access/v4l.c:141
 msgid "Framerate to capture, if applicable (-1 for autodetect)."
 msgstr "Débit d’images à capturer, si possible (-1 pour automatique)."
@@ -7414,7 +7414,7 @@ msgstr ""
 "Cette option vous permet de régler des masques de bits qui seront utilisés "
 "par la partie audio de la carte."
 
-#: modules/access/pvr.c:110 modules/access/v4l2/v4l2.c:201
+#: modules/access/pvr.c:110 modules/access/v4l2/v4l2.c:199
 #: modules/access/vcdx/info.c:100 modules/gui/macosx/intf.m:500
 msgid "Volume"
 msgstr "Volume"
@@ -7438,17 +7438,17 @@ msgstr ""
 msgid "Automatic"
 msgstr "Automatique"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:256
 #: modules/access/v4l.c:147
 msgid "SECAM"
 msgstr "SECAM"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:256
 #: modules/access/v4l.c:147
 msgid "PAL"
 msgstr "PAL"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:256
 #: modules/access/v4l.c:147
 msgid "NTSC"
 msgstr "NTSC"
@@ -7632,12 +7632,12 @@ msgstr "UDP"
 msgid "UDP input"
 msgstr "Entrée UDP"
 
-#: modules/access/v4l2/v4l2.c:91 modules/gui/macosx/open.m:178
+#: modules/access/v4l2/v4l2.c:83 modules/gui/macosx/open.m:178
 #: modules/gui/qt4/components/open_panels.cpp:836
 msgid "Device name"
 msgstr "Nom du périphérique"
 
-#: modules/access/v4l2/v4l2.c:93
+#: modules/access/v4l2/v4l2.c:85
 msgid ""
 "Name of the device to use. If you don't specify anything, /dev/video0 will "
 "be used."
@@ -7645,17 +7645,17 @@ msgstr ""
 "Nom du périphérique vidéo à utiliser. Si vous n’entrez rien, /dev/video0 "
 "sera utilisé."
 
-#: modules/access/v4l2/v4l2.c:95
+#: modules/access/v4l2/v4l2.c:87
 #: modules/gui/qt4/components/open_panels.cpp:715
 #: modules/stream_out/standard.c:100
 msgid "Standard"
 msgstr "Standard"
 
-#: modules/access/v4l2/v4l2.c:97
+#: modules/access/v4l2/v4l2.c:89
 msgid "Video standard (Default, SECAM, PAL, or NTSC)."
 msgstr "Norme vidéo (Automatique, SECAM, PAL ou NTSC)"
 
-#: modules/access/v4l2/v4l2.c:100
+#: modules/access/v4l2/v4l2.c:92
 msgid ""
 "Force the Video4Linux2 video device to use a specific chroma format (eg. "
 "I420 or I422 for raw images, MJPG for M-JPEG compressed input) (Complete "
@@ -7668,93 +7668,101 @@ msgstr ""
 "GREY, I240, RV16, RV15, RV24, RV32, YUY2, YUYV, UYVY, I41N, I422, I420, "
 "I411, I410, MJPG)"
 
-#: modules/access/v4l2/v4l2.c:106
+#: modules/access/v4l2/v4l2.c:98
 msgid "Input of the card to use (see debug)."
 msgstr "Entré de la carte à utiliser (voir les messages)."
 
-#: modules/access/v4l2/v4l2.c:107 modules/access/v4l2/v4l2.c:313
+#: modules/access/v4l2/v4l2.c:99 modules/access/v4l2/v4l2.c:314
 msgid "Audio input"
 msgstr "Entrée audio"
 
-#: modules/access/v4l2/v4l2.c:109
+#: modules/access/v4l2/v4l2.c:101
 msgid "Audio input of the card to use (see debug)."
 msgstr "Entrée audio de la carte à utiliser (voir les messages)."
 
-#: modules/access/v4l2/v4l2.c:110
+#: modules/access/v4l2/v4l2.c:102
 msgid "IO Method"
 msgstr "Méthode d’entrée/sortie"
 
-#: modules/access/v4l2/v4l2.c:112
+#: modules/access/v4l2/v4l2.c:104
 msgid "IO Method (READ, MMAP, USERPTR)."
 msgstr "Méthode d’entrée/sortie (READ, MMAP, USERPTR)."
 
-#: modules/access/v4l2/v4l2.c:115
+#: modules/access/v4l2/v4l2.c:107
 msgid "Force width (-1 for autodetect)."
 msgstr "Largeur de la vidéo à capturer (-1 pour autodétecter)."
 
-#: modules/access/v4l2/v4l2.c:118
+#: modules/access/v4l2/v4l2.c:110
 msgid "Force height (-1 for autodetect)."
 msgstr "Hauteur de la vidéo à capturer (-1 pour autodétecter)."
 
-#: modules/access/v4l2/v4l2.c:123
+#: modules/access/v4l2/v4l2.c:116
+msgid "Use libv4l2"
+msgstr ""
+
+#: modules/access/v4l2/v4l2.c:118
+msgid "Force usage of the libv4l2 wrapper."
+msgstr ""
+
+#: modules/access/v4l2/v4l2.c:121
 msgid "Reset v4l2 controls"
 msgstr "Mettre à zéro les contrôles v4l2"
 
-#: modules/access/v4l2/v4l2.c:125
+#: modules/access/v4l2/v4l2.c:123
 msgid "Reset controls to defaults provided by the v4l2 driver."
 msgstr "Réinitialiser les contrôles aux valeurs fournies par le driver."
 
-#: modules/access/v4l2/v4l2.c:126 modules/access/v4l.c:112
+#: modules/access/v4l2/v4l2.c:124 modules/access/v4l.c:112
 #: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:205
 #: modules/video_filter/atmo/atmo.cpp:196
 msgid "Brightness"
 msgstr "Brillance"
 
-#: modules/access/v4l2/v4l2.c:128
+#: modules/access/v4l2/v4l2.c:126
 msgid "Brightness of the video input (if supported by the v4l2 driver)."
 msgstr "Brillance de l’image de l'entrée (si supporté par le pilote v4l2)"
 
-#: modules/access/v4l2/v4l2.c:129 modules/access/v4l.c:121
+#: modules/access/v4l2/v4l2.c:127 modules/access/v4l.c:121
 #: modules/gui/macosx/extended.m:98 modules/gui/qt4/ui/video_effects.ui:198
 msgid "Contrast"
 msgstr "Contraste"
 
-#: modules/access/v4l2/v4l2.c:131
+#: modules/access/v4l2/v4l2.c:129
 msgid "Contrast of the video input (if supported by the v4l2 driver)."
 msgstr "Contraste de l’image de l'entrée (si supporté par le pilote v4l2)"
 
-#: modules/access/v4l2/v4l2.c:132 modules/gui/macosx/extended.m:101
+#: modules/access/v4l2/v4l2.c:130 modules/gui/macosx/extended.m:101
 #: modules/gui/qt4/ui/video_effects.ui:212
 #: modules/gui/qt4/ui/video_effects.ui:320
 msgid "Saturation"
 msgstr "Saturation"
 
-#: modules/access/v4l2/v4l2.c:134
+#: modules/access/v4l2/v4l2.c:132
 msgid "Saturation of the video input (if supported by the v4l2 driver)."
 msgstr "Saturation de l’image de l'entrée (si supporté par le pilote v4l2)"
 
-#: modules/access/v4l2/v4l2.c:135 modules/access/v4l.c:115
+#: modules/access/v4l2/v4l2.c:133 modules/access/v4l.c:115
 #: modules/gui/macosx/extended.m:100 modules/gui/qt4/ui/video_effects.ui:219
 msgid "Hue"
 msgstr "Teinte"
 
-#: modules/access/v4l2/v4l2.c:137
+#: modules/access/v4l2/v4l2.c:135
 msgid "Hue of the video input (if supported by the v4l2 driver)."
 msgstr "Teinte de l'entrée vidéo (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:138
+#: modules/access/v4l2/v4l2.c:136
 msgid "Black level"
 msgstr "Niveau de noir"
 
-#: modules/access/v4l2/v4l2.c:140
+#: modules/access/v4l2/v4l2.c:138
 msgid "Black level of the video input (if supported by the v4l2 driver)."
 msgstr "Niveau de noir de l'entrée vidéo (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:141
+#: modules/access/v4l2/v4l2.c:139
 msgid "Auto white balance"
 msgstr "Balance automatique des blancs"
 
-#: modules/access/v4l2/v4l2.c:143
+#: modules/access/v4l2/v4l2.c:141
 msgid ""
 "Automatically set the white balance of the video input (if supported by the "
 "v4l2 driver)."
@@ -7762,11 +7770,11 @@ msgstr ""
 "Gérer automatiquement la balance des blancs de l'entrée vidéo (si supporté "
 "par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:145
+#: modules/access/v4l2/v4l2.c:143
 msgid "Do white balance"
 msgstr "Faire la balance des blancs"
 
-#: modules/access/v4l2/v4l2.c:147
+#: modules/access/v4l2/v4l2.c:145
 msgid ""
 "Trigger a white balancing action, useless if auto white balance is activated "
 "(if supported by the v4l2 driver)."
@@ -7774,94 +7782,94 @@ msgstr ""
 "Déclencher la balance des blancs, inutile si la balance automatique des "
 "blancs est activée (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:149
+#: modules/access/v4l2/v4l2.c:147
 msgid "Red balance"
 msgstr "Balance des rouges"
 
-#: modules/access/v4l2/v4l2.c:151
+#: modules/access/v4l2/v4l2.c:149
 msgid "Red balance of the video input (if supported by the v4l2 driver)."
 msgstr "Balance des rouges de l'entrée vidéo (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:152
+#: modules/access/v4l2/v4l2.c:150
 msgid "Blue balance"
 msgstr "Balance des bleus"
 
-#: modules/access/v4l2/v4l2.c:154
+#: modules/access/v4l2/v4l2.c:152
 msgid "Blue balance of the video input (if supported by the v4l2 driver)."
 msgstr "Balance des bleus de l'entrée vidéo (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:155 modules/gui/macosx/extended.m:99
+#: modules/access/v4l2/v4l2.c:153 modules/gui/macosx/extended.m:99
 #: modules/gui/qt4/ui/video_effects.ui:191
 msgid "Gamma"
 msgstr "Gamma"
 
-#: modules/access/v4l2/v4l2.c:157
+#: modules/access/v4l2/v4l2.c:155
 msgid "Gamma of the video input (if supported by the v4l2 driver)."
 msgstr "Gamma de l'entrée vidéo (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:158
+#: modules/access/v4l2/v4l2.c:156
 msgid "Exposure"
 msgstr "Exposition"
 
-#: modules/access/v4l2/v4l2.c:160
+#: modules/access/v4l2/v4l2.c:158
 msgid "Exposure of the video input (if supported by the v4L2 driver)."
 msgstr "Exposition de l'entrée vidéo (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:161
+#: modules/access/v4l2/v4l2.c:159
 msgid "Auto gain"
 msgstr "Gain automatique"
 
-#: modules/access/v4l2/v4l2.c:163
+#: modules/access/v4l2/v4l2.c:161
 msgid ""
 "Automatically set the video input's gain (if supported by the v4l2 driver)."
 msgstr ""
 "Mettre le gain automatique de l'entrée vidéo (si supporté par le driver "
 "v4l2)."
 
-#: modules/access/v4l2/v4l2.c:165
+#: modules/access/v4l2/v4l2.c:163
 msgid "Gain"
 msgstr "Gain"
 
-#: modules/access/v4l2/v4l2.c:167
+#: modules/access/v4l2/v4l2.c:165
 msgid "Video input's gain (if supported by the v4l2 driver)."
 msgstr "Gain de l'entrée vidéo (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:168
+#: modules/access/v4l2/v4l2.c:166
 msgid "Horizontal flip"
 msgstr "Retournement horizontal"
 
-#: modules/access/v4l2/v4l2.c:170
+#: modules/access/v4l2/v4l2.c:168
 msgid "Flip the video horizontally (if supported by the v4l2 driver)."
 msgstr "Retourner horizontalement la vidéo (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:171
+#: modules/access/v4l2/v4l2.c:169
 msgid "Vertical flip"
 msgstr "Retournement vertical"
 
-#: modules/access/v4l2/v4l2.c:173
+#: modules/access/v4l2/v4l2.c:171
 msgid "Flip the video vertically (if supported by the v4l2 driver)."
 msgstr "Retourner verticalement la vidéo (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:174
+#: modules/access/v4l2/v4l2.c:172
 msgid "Horizontal centering"
 msgstr "Centrage horizontal"
 
-#: modules/access/v4l2/v4l2.c:176
+#: modules/access/v4l2/v4l2.c:174
 msgid ""
 "Set the camera's horizontal centering (if supported by the v4l2 driver)."
 msgstr ""
 "Activer le centrage horizontal de la caméra (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:177
+#: modules/access/v4l2/v4l2.c:175
 msgid "Vertical centering"
 msgstr "Centrage vertical"
 
-#: modules/access/v4l2/v4l2.c:179
+#: modules/access/v4l2/v4l2.c:177
 msgid "Set the camera's vertical centering (if supported by the v4l2 driver)."
 msgstr ""
 "Activer le centrage vertical de la caméra (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:184
+#: modules/access/v4l2/v4l2.c:182
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS."
@@ -7869,7 +7877,7 @@ msgstr ""
 "Nom du périphérique audio à utiliser. Si vous n’entrez rien, \"/dev/dsp\" "
 "sera utilisé pour OSS"
 
-#: modules/access/v4l2/v4l2.c:188
+#: modules/access/v4l2/v4l2.c:186
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS, \"hw\" for Alsa."
@@ -7877,15 +7885,15 @@ msgstr ""
 "Nom du périphérique audio à utiliser. Si vous n’entrez rien, « /dev/ » sera "
 "utilisé pour OSS, « hw » pour Alsa."
 
-#: modules/access/v4l2/v4l2.c:192
+#: modules/access/v4l2/v4l2.c:190
 msgid "Audio method"
 msgstr "Méthode audio"
 
-#: modules/access/v4l2/v4l2.c:195
+#: modules/access/v4l2/v4l2.c:193
 msgid "Audio method to use: 0 to disable audio, 1 for OSS."
 msgstr "Méthode audio à utiliser : 0 pour désactiver l'audio, 1 pour OSS."
 
-#: modules/access/v4l2/v4l2.c:198
+#: modules/access/v4l2/v4l2.c:196
 msgid ""
 "Audio method to use: 0 to disable audio, 1 for OSS, 2 for ALSA, 3 for ALSA "
 "or OSS (ALSA is preferred)."
@@ -7893,52 +7901,52 @@ msgstr ""
 "Méthode audio à utiliser : 0 pour désactiver l'audio, 1 pour OSS, 2 pour "
 "ALSA, 3 pour ALSA ou OSS (ALSA est préféré)."
 
-#: modules/access/v4l2/v4l2.c:203
+#: modules/access/v4l2/v4l2.c:201
 msgid "Volume of the audio input (if supported by the v4l2 driver)."
 msgstr "Volume de l'entrée audio (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:204
+#: modules/access/v4l2/v4l2.c:202
 msgid "Balance"
 msgstr "Balance"
 
-#: modules/access/v4l2/v4l2.c:206
+#: modules/access/v4l2/v4l2.c:204
 msgid "Balance of the audio input (if supported by the v4l2 driver)."
 msgstr "Volume de l'entrée audio (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:209
+#: modules/access/v4l2/v4l2.c:207
 msgid "Mute audio input (if supported by the v4l2 driver)."
 msgstr "Rendre muette l'entrée audio (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:210 modules/meta_engine/id3genres.h:69
+#: modules/access/v4l2/v4l2.c:208 modules/meta_engine/id3genres.h:69
 msgid "Bass"
 msgstr "Basse"
 
-#: modules/access/v4l2/v4l2.c:212
+#: modules/access/v4l2/v4l2.c:210
 msgid "Bass level of the audio input (if supported by the v4l2 driver)."
 msgstr "Niveau de basse de l'entrée audio (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:213
+#: modules/access/v4l2/v4l2.c:211
 msgid "Treble"
 msgstr "Aiguës"
 
-#: modules/access/v4l2/v4l2.c:215
+#: modules/access/v4l2/v4l2.c:213
 msgid "Treble level of the audio input (if supported by the v4l2 driver)."
 msgstr "Niveau d'aiguës de l'entrée audio (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:216
+#: modules/access/v4l2/v4l2.c:214
 msgid "Loudness"
 msgstr "Correcteur physiologique (Loudness)"
 
-#: modules/access/v4l2/v4l2.c:218
+#: modules/access/v4l2/v4l2.c:216
 msgid "Loudness of the audio input (if supported by the v4l2 driver)."
 msgstr ""
 "Correcteur physiologique de l'entrée audio (si supporté par le driver v4l2)."
 
-#: modules/access/v4l2/v4l2.c:222 modules/access/v4l.c:131
+#: modules/access/v4l2/v4l2.c:220 modules/access/v4l.c:131
 msgid "Capture the audio stream in stereo."
 msgstr "Capture audio en stéréo."
 
-#: modules/access/v4l2/v4l2.c:225
+#: modules/access/v4l2/v4l2.c:223
 msgid ""
 "Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100, "
 "48000)"
@@ -7946,16 +7954,16 @@ msgstr ""
 "Fréquence d’échantillonnage audio, en Hz (par exemple : 11025, 22050, 44100, "
 "48000)."
 
-#: modules/access/v4l2/v4l2.c:229
+#: modules/access/v4l2/v4l2.c:227
 msgid ""
 "Caching value for V4L2 captures. This value should be set in milliseconds."
 msgstr "Taille du cache pour la capture V4L2, en millisecondes."
 
-#: modules/access/v4l2/v4l2.c:231
+#: modules/access/v4l2/v4l2.c:229
 msgid "v4l2 driver controls"
 msgstr "Contrôles du pilote v4l2"
 
-#: modules/access/v4l2/v4l2.c:233
+#: modules/access/v4l2/v4l2.c:231
 msgid ""
 "Set the v4l2 driver controls to the values specified using a comma separated "
 "list optionally encapsulated by curly braces (e.g.: {video_bitrate=6000000,"
@@ -7968,90 +7976,90 @@ msgstr ""
 "liste de ces options, augmentez la verbosité (« -vvv ») ou utilisez "
 "l'application « v4l2-ctl »."
 
-#: modules/access/v4l2/v4l2.c:239
+#: modules/access/v4l2/v4l2.c:237
 msgid "Tuner id"
 msgstr "Id du tuner"
 
-#: modules/access/v4l2/v4l2.c:241
+#: modules/access/v4l2/v4l2.c:239
 msgid "Tuner id (see debug output)."
 msgstr "Id du tuner (voir la sortie de débogage)"
 
-#: modules/access/v4l2/v4l2.c:244
+#: modules/access/v4l2/v4l2.c:242
 msgid "Tuner frequency in Hz or kHz (see debug output)"
 msgstr "Fréquence du tuner en Hz ou kHz (voir la sortie de débogage)"
 
-#: modules/access/v4l2/v4l2.c:245
+#: modules/access/v4l2/v4l2.c:243
 msgid "Audio mode"
 msgstr "Mode audio"
 
-#: modules/access/v4l2/v4l2.c:247
+#: modules/access/v4l2/v4l2.c:245
 msgid "Tuner audio mono/stereo and track selection."
 msgstr "Tuner audio mono/stéréo et sélection des pistes"
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:261
 msgid "READ"
 msgstr "READ"
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:261
 msgid "MMAP"
 msgstr "MMAP"
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:261
 msgid "USERPTR"
 msgstr "USERPTR"
 
-#: modules/access/v4l2/v4l2.c:270 modules/audio_output/alsa.c:189
+#: modules/access/v4l2/v4l2.c:268 modules/audio_output/alsa.c:189
 #: modules/audio_output/directx.c:537 modules/audio_output/oss.c:227
 #: modules/audio_output/portaudio.c:394 modules/audio_output/sdl.c:185
 #: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:533
 msgid "Mono"
 msgstr "Mono"
 
-#: modules/access/v4l2/v4l2.c:272
+#: modules/access/v4l2/v4l2.c:270
 msgid "Primary language (Analog TV tuners only)"
 msgstr "Langue principale (tuner TV analogique uniquement)"
 
-#: modules/access/v4l2/v4l2.c:273
+#: modules/access/v4l2/v4l2.c:271
 msgid "Secondary language (Analog TV tuners only)"
 msgstr "Langue secondaire (tuner TV analogique uniquement)"
 
-#: modules/access/v4l2/v4l2.c:274
+#: modules/access/v4l2/v4l2.c:272
 msgid "Second audio program (Analog TV tuners only)"
 msgstr "Second programme audio (tuner TV analogique uniquement)"
 
-#: modules/access/v4l2/v4l2.c:275
+#: modules/access/v4l2/v4l2.c:273
 msgid "Primary language left, Secondary language right"
 msgstr "Langure principale à gauche, secondaire à droite"
 
-#: modules/access/v4l2/v4l2.c:287
+#: modules/access/v4l2/v4l2.c:285
 msgid "Video4Linux2"
 msgstr "Video4Linux2"
 
-#: modules/access/v4l2/v4l2.c:288
+#: modules/access/v4l2/v4l2.c:286
 msgid "Video4Linux2 input"
 msgstr "Entrée Video4Linux2"
 
-#: modules/access/v4l2/v4l2.c:292
+#: modules/access/v4l2/v4l2.c:290
 msgid "Video input"
 msgstr "Entrée vidéo"
 
-#: modules/access/v4l2/v4l2.c:325 modules/access/v4l.c:124
+#: modules/access/v4l2/v4l2.c:326 modules/access/v4l.c:124
 msgid "Tuner"
 msgstr "Tuner"
 
-#: modules/access/v4l2/v4l2.c:335
+#: modules/access/v4l2/v4l2.c:336
 msgid "Controls"
 msgstr "Contrôles"
 
-#: modules/access/v4l2/v4l2.c:336
+#: modules/access/v4l2/v4l2.c:337
 msgid "v4l2 driver controls, if supported by your v4l2 driver."
 msgstr "Options du driver v412, si supportées par votre driver v412."
 
-#: modules/access/v4l2/v4l2.c:394
+#: modules/access/v4l2/v4l2.c:395
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Audio/Vidéo compressés Video4Linux2"
 
-#: modules/access/v4l2/v4l2.c:3181
+#: modules/access/v4l2/v4l2.c:3268
 msgid "Reset controls to default"
 msgstr "Remise aux valeurs par défaut"
 
@@ -8212,7 +8220,7 @@ msgstr "Segments"
 
 #: modules/access/vcdx/access.c:433 modules/access/vcdx/access.c:715
 #: modules/access/vcdx/info.c:298 modules/access/vcdx/info.c:299
-#: modules/demux/mkv.cpp:5416
+#: modules/demux/mkv.cpp:5420
 msgid "Segment"
 msgstr "Segment"
 
@@ -12251,19 +12259,19 @@ msgstr ""
 "Lis et ignore les éléments EBML inconnus (mauvais pour les fichiers "
 "endommagés)"
 
-#: modules/demux/mkv.cpp:3369
+#: modules/demux/mkv.cpp:3373
 msgid "---  DVD Menu"
 msgstr "---  Menu DVD"
 
-#: modules/demux/mkv.cpp:3375
+#: modules/demux/mkv.cpp:3379
 msgid "First Played"
 msgstr "Premier Lu"
 
-#: modules/demux/mkv.cpp:3377
+#: modules/demux/mkv.cpp:3381
 msgid "Video Manager"
 msgstr "Gestionaire vidéo"
 
-#: modules/demux/mkv.cpp:3383
+#: modules/demux/mkv.cpp:3387
 msgid "----- Title"
 msgstr "----- Titre"
 
@@ -13813,7 +13821,7 @@ msgstr "Ouvrir un périphérique de capture…"
 msgid "Open Recent"
 msgstr "Ouvrir un flux récent"
 
-#: modules/gui/macosx/intf.m:528 modules/gui/macosx/intf.m:2542
+#: modules/gui/macosx/intf.m:528 modules/gui/macosx/intf.m:2552
 msgid "Clear Menu"
 msgstr "Tout effacer"
 
@@ -17302,7 +17310,7 @@ msgstr "&Convertir / Enregistrer…"
 msgid "&Streaming..."
 msgstr "Diffu&sion…"
 
-#: modules/gui/qt4/menus.cpp:315 modules/gui/qt4/menus.cpp:933
+#: modules/gui/qt4/menus.cpp:315 modules/gui/qt4/menus.cpp:937
 msgid "&Quit"
 msgstr "&Quitter"
 
@@ -17338,7 +17346,7 @@ msgstr "Contrôles &avancés"
 msgid "Visualizations selector"
 msgstr "Sélecteur de visualisations"
 
-#: modules/gui/qt4/menus.cpp:421
+#: modules/gui/qt4/menus.cpp:421 modules/gui/qt4/menus.cpp:867
 msgid "&Preferences..."
 msgstr "&Préférences…"
 
@@ -17450,23 +17458,23 @@ msgstr "&Lecture"
 msgid "Show Playlist"
 msgstr "&Montrer la liste de lecture"
 
-#: modules/gui/qt4/menus.cpp:852
+#: modules/gui/qt4/menus.cpp:854
 msgid "Minimal View..."
 msgstr "Interface minimale…"
 
-#: modules/gui/qt4/menus.cpp:857
+#: modules/gui/qt4/menus.cpp:859
 msgid "Toggle Fullscreen Interface"
 msgstr "Interface plein écran"
 
-#: modules/gui/qt4/menus.cpp:917
+#: modules/gui/qt4/menus.cpp:921
 msgid "Hide VLC media player in taskbar"
 msgstr "Cacher le lecteur multimédia VLC dans la barre des tâches"
 
-#: modules/gui/qt4/menus.cpp:923
+#: modules/gui/qt4/menus.cpp:927
 msgid "Show VLC media player"
 msgstr "Afficher le lecteur multimédia VLC"
 
-#: modules/gui/qt4/menus.cpp:931
+#: modules/gui/qt4/menus.cpp:935
 msgid "&Open Media"
 msgstr "&Ouvrir un média"
 
@@ -19905,15 +19913,15 @@ msgstr "Annonces SAP"
 msgid "SDP Descriptions parser"
 msgstr ""
 
-#: modules/services_discovery/sap.c:875 modules/services_discovery/sap.c:879
+#: modules/services_discovery/sap.c:877 modules/services_discovery/sap.c:881
 msgid "Session"
 msgstr "Session"
 
-#: modules/services_discovery/sap.c:875
+#: modules/services_discovery/sap.c:877
 msgid "Tool"
 msgstr "Outil"
 
-#: modules/services_discovery/sap.c:879
+#: modules/services_discovery/sap.c:881
 msgid "User"
 msgstr "Utilisateur"
 

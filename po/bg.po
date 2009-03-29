@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.9.0-test2\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2009-03-22 19:31+0000\n"
+"POT-Creation-Date: 2009-03-29 20:34+0100\n"
 "PO-Revision-Date: 2009-03-19 16:52+0200\n"
 "Last-Translator: Ivo Ivanov\n"
 "Language-Team: Bulgarian <bestran@mail.bg>\n"
@@ -803,7 +803,7 @@ msgid "Audio Channels"
 msgstr "Аудио канали"
 
 #: src/audio_output/output.c:105 src/audio_output/output.c:140
-#: modules/access/v4l2/v4l2.c:220 modules/access/v4l2/v4l2.c:271
+#: modules/access/v4l2/v4l2.c:218 modules/access/v4l2/v4l2.c:269
 #: modules/access/v4l.c:129 modules/audio_output/alsa.c:195
 #: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:519
 #: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:402
@@ -2429,7 +2429,7 @@ msgstr ""
 #: src/libvlc-module.c:568 src/video_output/vout_intf.c:180
 #: src/video_output/vout_intf.c:198 modules/access/dshow/dshow.cpp:81
 #: modules/access/dshow/dshow.cpp:83 modules/access/dshow/dshow.cpp:86
-#: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:258
+#: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:256
 #: modules/audio_output/alsa.c:105 modules/gui/fbosd.c:173
 #: modules/gui/macosx/prefs_widgets.m:1321
 #: modules/gui/macosx/simple_prefs.m:381 modules/gui/macosx/simple_prefs.m:476
@@ -3958,7 +3958,7 @@ msgstr "Звук - Намаляване"
 msgid "Select the key to decrease audio volume."
 msgstr "Избор на клавишна комбинация за намаляване на нивото на звука."
 
-#: src/libvlc-module.c:1247 modules/access/v4l2/v4l2.c:207
+#: src/libvlc-module.c:1247 modules/access/v4l2/v4l2.c:205
 #: modules/gui/macosx/controls.m:927 modules/gui/macosx/intf.m:561
 #: modules/gui/macosx/intf.m:622 modules/gui/macosx/intf.m:631
 #: modules/gui/qt4/components/interface_widgets.cpp:911
@@ -4455,7 +4455,7 @@ msgstr "Мета-данни"
 msgid "Decoders"
 msgstr "Декодери"
 
-#: src/libvlc-module.c:1745 modules/access/v4l2/v4l2.c:104
+#: src/libvlc-module.c:1745 modules/access/v4l2/v4l2.c:96
 #: modules/gui/macosx/playlistinfo.m:93
 #: modules/gui/qt4/components/info_panels.cpp:509
 msgid "Input"
@@ -5242,7 +5242,7 @@ msgstr "Пропорция"
 #: modules/access/pvr.c:60 modules/access/rtmp/access.c:43
 #: modules/access/screen/screen.c:39 modules/access/smb.c:64
 #: modules/access/tcp.c:41 modules/access/udp.c:49
-#: modules/access/v4l2/v4l2.c:227 modules/access/v4l.c:77
+#: modules/access/v4l2/v4l2.c:225 modules/access/v4l.c:77
 #: modules/access/vcd/vcd.c:46
 msgid "Caching value in ms"
 msgstr "Стойност на кеширане в ms"
@@ -6054,7 +6054,7 @@ msgstr ""
 "Име на видео устройството, което ще бъде използвано от плъгина DirectShow. "
 "Ако не определите нищо, ще бъде използвано устройството по подразбиране."
 
-#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:181
+#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:179
 #: modules/access/v4l.c:85 modules/gui/qt4/components/open_panels.cpp:708
 #: modules/gui/qt4/components/open_panels.cpp:743
 msgid "Audio device name"
@@ -6084,7 +6084,7 @@ msgstr ""
 "определите нищо, ще бъде използван размера по подразбиране за вашето "
 "устройство."
 
-#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:98
+#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:90
 #: modules/access/v4l.c:89
 msgid "Video input chroma format"
 msgstr "Формат на цветността"
@@ -6540,7 +6540,7 @@ msgstr ""
 "настроена в милисекунди."
 
 #: modules/access/fake.c:47 modules/access/pvr.c:86
-#: modules/access/v4l2/v4l2.c:119 modules/access/v4l.c:140
+#: modules/access/v4l2/v4l2.c:111 modules/access/v4l.c:140
 msgid "Framerate"
 msgstr "Честота на кадрите"
 
@@ -7139,7 +7139,7 @@ msgstr "URL с информация за потока или вашия кана
 msgid "Bitrate information of the transcoded stream. "
 msgstr "Информация за битрейта на кодирания поток"
 
-#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:223
+#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:221
 #: modules/access/v4l.c:126
 msgid "Samplerate"
 msgstr "Честота на дискретизация"
@@ -7248,7 +7248,7 @@ msgstr "Стандарт"
 msgid "Norm of the stream (Automatic, SECAM, PAL, or NTSC)."
 msgstr "Стандарт на потока (Automatic, SECAM, PAL, или NTSC)."
 
-#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:113
+#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:105
 #: modules/access/v4l.c:106 modules/demux/rawvid.c:48
 #: modules/video_filter/mosaic.c:96 modules/video_output/vmem.c:50
 msgid "Width"
@@ -7258,7 +7258,7 @@ msgstr "Широчина"
 msgid "Width of the stream to capture (-1 for autodetection)."
 msgstr "Широчина на потока за захващане (-1 за автоматично намиране)."
 
-#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:116
+#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:108
 #: modules/access/v4l.c:109 modules/demux/rawvid.c:52
 #: modules/video_filter/mosaic.c:94 modules/video_output/vmem.c:53
 msgid "Height"
@@ -7268,7 +7268,7 @@ msgstr "Височина"
 msgid "Height of the stream to capture (-1 for autodetection)."
 msgstr "Височина на потока за захващане (-1 за автоматично намиране)."
 
-#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:242
+#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:240
 #: modules/access/v4l.c:93 modules/gui/qt4/components/open_panels.cpp:757
 #: modules/gui/qt4/components/open_panels.cpp:856
 msgid "Frequency"
@@ -7278,7 +7278,7 @@ msgstr "Честота"
 msgid "Frequency to capture (in kHz), if applicable."
 msgstr "Честота на захващане (в kHz), ако е възможно."
 
-#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:120
+#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:112
 #: modules/access/v4l.c:141
 msgid "Framerate to capture, if applicable (-1 for autodetect)."
 msgstr ""
@@ -7332,7 +7332,7 @@ msgstr "Битова маска на звука"
 msgid "Bitmask that will get used by the audio part of the card."
 msgstr "Битова маска, която ще се използва от аудио част на карта"
 
-#: modules/access/pvr.c:110 modules/access/v4l2/v4l2.c:201
+#: modules/access/pvr.c:110 modules/access/v4l2/v4l2.c:199
 #: modules/access/vcdx/info.c:100 modules/gui/macosx/intf.m:500
 msgid "Volume"
 msgstr "Ниво на звука"
@@ -7356,17 +7356,17 @@ msgstr ""
 msgid "Automatic"
 msgstr "Автоматично"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:256
 #: modules/access/v4l.c:147
 msgid "SECAM"
 msgstr ""
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:256
 #: modules/access/v4l.c:147
 msgid "PAL"
 msgstr ""
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:256
 #: modules/access/v4l.c:147
 msgid "NTSC"
 msgstr ""
@@ -7561,12 +7561,12 @@ msgstr ""
 msgid "UDP input"
 msgstr "Въвеждане от UDP"
 
-#: modules/access/v4l2/v4l2.c:91 modules/gui/macosx/open.m:178
+#: modules/access/v4l2/v4l2.c:83 modules/gui/macosx/open.m:178
 #: modules/gui/qt4/components/open_panels.cpp:836
 msgid "Device name"
 msgstr "Име на устройството"
 
-#: modules/access/v4l2/v4l2.c:93
+#: modules/access/v4l2/v4l2.c:85
 msgid ""
 "Name of the device to use. If you don't specify anything, /dev/video0 will "
 "be used."
@@ -7574,17 +7574,17 @@ msgstr ""
 "Име на устройството, което да се използва. Ако не определите нищо, ще бъде "
 "използвано /dev/video0."
 
-#: modules/access/v4l2/v4l2.c:95
+#: modules/access/v4l2/v4l2.c:87
 #: modules/gui/qt4/components/open_panels.cpp:715
 #: modules/stream_out/standard.c:100
 msgid "Standard"
 msgstr "Стандарт"
 
-#: modules/access/v4l2/v4l2.c:97
+#: modules/access/v4l2/v4l2.c:89
 msgid "Video standard (Default, SECAM, PAL, or NTSC)."
 msgstr "Видео стандарт (По подразбиране, SECAM, PAL, или NTSC)."
 
-#: modules/access/v4l2/v4l2.c:100
+#: modules/access/v4l2/v4l2.c:92
 msgid ""
 "Force the Video4Linux2 video device to use a specific chroma format (eg. "
 "I420 or I422 for raw images, MJPG for M-JPEG compressed input) (Complete "
@@ -7596,95 +7596,103 @@ msgstr ""
 "JPEG компресирано въвеждане) (Пълен списък: GREY, I240, RV16, RV15, RV24, "
 "RV32, YUY2, YUYV, UYVY, I41N, I422, I420, I411, I410, MJPG)"
 
-#: modules/access/v4l2/v4l2.c:106
+#: modules/access/v4l2/v4l2.c:98
 msgid "Input of the card to use (see debug)."
 msgstr "Вход на картата, който да се използва (вижте дебъг)."
 
-#: modules/access/v4l2/v4l2.c:107 modules/access/v4l2/v4l2.c:313
+#: modules/access/v4l2/v4l2.c:99 modules/access/v4l2/v4l2.c:314
 msgid "Audio input"
 msgstr "Въвеждане на аудио"
 
-#: modules/access/v4l2/v4l2.c:109
+#: modules/access/v4l2/v4l2.c:101
 msgid "Audio input of the card to use (see debug)."
 msgstr "Аудио въвеждане от карта, която да се използва (вижте дебъг)."
 
-#: modules/access/v4l2/v4l2.c:110
+#: modules/access/v4l2/v4l2.c:102
 msgid "IO Method"
 msgstr "IO Метод"
 
-#: modules/access/v4l2/v4l2.c:112
+#: modules/access/v4l2/v4l2.c:104
 msgid "IO Method (READ, MMAP, USERPTR)."
 msgstr "IO Метод (READ, MMAP, USERPTR)."
 
-#: modules/access/v4l2/v4l2.c:115
+#: modules/access/v4l2/v4l2.c:107
 msgid "Force width (-1 for autodetect)."
 msgstr "Задаване на широчина (-1 за автоматично откриване)."
 
-#: modules/access/v4l2/v4l2.c:118
+#: modules/access/v4l2/v4l2.c:110
 msgid "Force height (-1 for autodetect)."
 msgstr "Задаване на височина (-1 за автоматично откриване)."
 
-#: modules/access/v4l2/v4l2.c:123
+#: modules/access/v4l2/v4l2.c:116
+msgid "Use libv4l2"
+msgstr ""
+
+#: modules/access/v4l2/v4l2.c:118
+msgid "Force usage of the libv4l2 wrapper."
+msgstr ""
+
+#: modules/access/v4l2/v4l2.c:121
 msgid "Reset v4l2 controls"
 msgstr "Нулиране регулаторите на v4l2."
 
-#: modules/access/v4l2/v4l2.c:125
+#: modules/access/v4l2/v4l2.c:123
 msgid "Reset controls to defaults provided by the v4l2 driver."
 msgstr ""
 "Нулиране на регулаторите до настройките по подразбиране, осигурени от "
 "драйвера v4l2."
 
-#: modules/access/v4l2/v4l2.c:126 modules/access/v4l.c:112
+#: modules/access/v4l2/v4l2.c:124 modules/access/v4l.c:112
 #: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:205
 #: modules/video_filter/atmo/atmo.cpp:196
 msgid "Brightness"
 msgstr "Яркост"
 
-#: modules/access/v4l2/v4l2.c:128
+#: modules/access/v4l2/v4l2.c:126
 msgid "Brightness of the video input (if supported by the v4l2 driver)."
 msgstr "Яркост на входното видео (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:129 modules/access/v4l.c:121
+#: modules/access/v4l2/v4l2.c:127 modules/access/v4l.c:121
 #: modules/gui/macosx/extended.m:98 modules/gui/qt4/ui/video_effects.ui:198
 msgid "Contrast"
 msgstr "Контраст"
 
-#: modules/access/v4l2/v4l2.c:131
+#: modules/access/v4l2/v4l2.c:129
 msgid "Contrast of the video input (if supported by the v4l2 driver)."
 msgstr "Контраст на входното видео (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:132 modules/gui/macosx/extended.m:101
+#: modules/access/v4l2/v4l2.c:130 modules/gui/macosx/extended.m:101
 #: modules/gui/qt4/ui/video_effects.ui:212
 #: modules/gui/qt4/ui/video_effects.ui:320
 msgid "Saturation"
 msgstr "Наситеност"
 
-#: modules/access/v4l2/v4l2.c:134
+#: modules/access/v4l2/v4l2.c:132
 msgid "Saturation of the video input (if supported by the v4l2 driver)."
 msgstr "Наситеност на входното видео (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:135 modules/access/v4l.c:115
+#: modules/access/v4l2/v4l2.c:133 modules/access/v4l.c:115
 #: modules/gui/macosx/extended.m:100 modules/gui/qt4/ui/video_effects.ui:219
 msgid "Hue"
 msgstr "Нюанс"
 
-#: modules/access/v4l2/v4l2.c:137
+#: modules/access/v4l2/v4l2.c:135
 msgid "Hue of the video input (if supported by the v4l2 driver)."
 msgstr "Нюанс на входното видео (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:138
+#: modules/access/v4l2/v4l2.c:136
 msgid "Black level"
 msgstr "Ниво на черно"
 
-#: modules/access/v4l2/v4l2.c:140
+#: modules/access/v4l2/v4l2.c:138
 msgid "Black level of the video input (if supported by the v4l2 driver)."
 msgstr "Ниво на черно на входното видео (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:141
+#: modules/access/v4l2/v4l2.c:139
 msgid "Auto white balance"
 msgstr "Автоматичен баланс на бялото"
 
-#: modules/access/v4l2/v4l2.c:143
+#: modules/access/v4l2/v4l2.c:141
 msgid ""
 "Automatically set the white balance of the video input (if supported by the "
 "v4l2 driver)."
@@ -7692,11 +7700,11 @@ msgstr ""
 "Автоматична настройка на баланса на бялото на входното видео (ако се "
 "поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:145
+#: modules/access/v4l2/v4l2.c:143
 msgid "Do white balance"
 msgstr "Баланс на бялото"
 
-#: modules/access/v4l2/v4l2.c:147
+#: modules/access/v4l2/v4l2.c:145
 msgid ""
 "Trigger a white balancing action, useless if auto white balance is activated "
 "(if supported by the v4l2 driver)."
@@ -7704,95 +7712,95 @@ msgstr ""
 "Стартиране на действието за баланс на бялото, това е безполезно, ако е "
 "активиран автоматичния баланс на бялото (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:149
+#: modules/access/v4l2/v4l2.c:147
 msgid "Red balance"
 msgstr "Баланс на червеното"
 
-#: modules/access/v4l2/v4l2.c:151
+#: modules/access/v4l2/v4l2.c:149
 msgid "Red balance of the video input (if supported by the v4l2 driver)."
 msgstr ""
 "Баланс на червеното на входното видео (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:152
+#: modules/access/v4l2/v4l2.c:150
 msgid "Blue balance"
 msgstr "Баланс на синьото"
 
-#: modules/access/v4l2/v4l2.c:154
+#: modules/access/v4l2/v4l2.c:152
 msgid "Blue balance of the video input (if supported by the v4l2 driver)."
 msgstr ""
 "Баланс на синьото на входното видео (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:155 modules/gui/macosx/extended.m:99
+#: modules/access/v4l2/v4l2.c:153 modules/gui/macosx/extended.m:99
 #: modules/gui/qt4/ui/video_effects.ui:191
 msgid "Gamma"
 msgstr "Гама"
 
-#: modules/access/v4l2/v4l2.c:157
+#: modules/access/v4l2/v4l2.c:155
 msgid "Gamma of the video input (if supported by the v4l2 driver)."
 msgstr "Гама на входното видео (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:158
+#: modules/access/v4l2/v4l2.c:156
 msgid "Exposure"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:160
+#: modules/access/v4l2/v4l2.c:158
 msgid "Exposure of the video input (if supported by the v4L2 driver)."
 msgstr "Представяне на входното видео (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:161
+#: modules/access/v4l2/v4l2.c:159
 msgid "Auto gain"
 msgstr "Автоматично усилване"
 
-#: modules/access/v4l2/v4l2.c:163
+#: modules/access/v4l2/v4l2.c:161
 msgid ""
 "Automatically set the video input's gain (if supported by the v4l2 driver)."
 msgstr ""
 "Автоматична настройка на усилването на входното видео (ако се поддържа от "
 "драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:165
+#: modules/access/v4l2/v4l2.c:163
 msgid "Gain"
 msgstr "Усилване"
 
-#: modules/access/v4l2/v4l2.c:167
+#: modules/access/v4l2/v4l2.c:165
 msgid "Video input's gain (if supported by the v4l2 driver)."
 msgstr "Усилване на входното видео (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:168
+#: modules/access/v4l2/v4l2.c:166
 msgid "Horizontal flip"
 msgstr "Обръщане хоризонтално"
 
-#: modules/access/v4l2/v4l2.c:170
+#: modules/access/v4l2/v4l2.c:168
 msgid "Flip the video horizontally (if supported by the v4l2 driver)."
 msgstr "Обръщане на видеото хоризонтално (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:171
+#: modules/access/v4l2/v4l2.c:169
 msgid "Vertical flip"
 msgstr "Обръщане вертикално"
 
-#: modules/access/v4l2/v4l2.c:173
+#: modules/access/v4l2/v4l2.c:171
 msgid "Flip the video vertically (if supported by the v4l2 driver)."
 msgstr "Обръщане на видеото вертикално (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:174
+#: modules/access/v4l2/v4l2.c:172
 msgid "Horizontal centering"
 msgstr "Центриране хоризонтално"
 
-#: modules/access/v4l2/v4l2.c:176
+#: modules/access/v4l2/v4l2.c:174
 msgid ""
 "Set the camera's horizontal centering (if supported by the v4l2 driver)."
 msgstr ""
 "Хоризонтално центриране на камерата (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:177
+#: modules/access/v4l2/v4l2.c:175
 msgid "Vertical centering"
 msgstr "Вертикално центриране"
 
-#: modules/access/v4l2/v4l2.c:179
+#: modules/access/v4l2/v4l2.c:177
 msgid "Set the camera's vertical centering (if supported by the v4l2 driver)."
 msgstr "Вертикално центриране на камерата (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:184
+#: modules/access/v4l2/v4l2.c:182
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS."
@@ -7800,7 +7808,7 @@ msgstr ""
 "Име на аудио устройството, което да се използва. Ако не зададете нищо за OSS "
 "ще бъде използвано \"/dev/dsp\"."
 
-#: modules/access/v4l2/v4l2.c:188
+#: modules/access/v4l2/v4l2.c:186
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS, \"hw\" for Alsa."
@@ -7808,16 +7816,16 @@ msgstr ""
 "Име на аудио устройството, което да се използва. Ако не зададете нищо за "
 "OSS,  \"hw\" за Азия ще бъде използвано \"/dev/dsp\"."
 
-#: modules/access/v4l2/v4l2.c:192
+#: modules/access/v4l2/v4l2.c:190
 msgid "Audio method"
 msgstr "Метод за аудиото"
 
-#: modules/access/v4l2/v4l2.c:195
+#: modules/access/v4l2/v4l2.c:193
 msgid "Audio method to use: 0 to disable audio, 1 for OSS."
 msgstr ""
 "Метод за аудиото, който да се използва: 0 за изключване на аудиото, 1 за OSS."
 
-#: modules/access/v4l2/v4l2.c:198
+#: modules/access/v4l2/v4l2.c:196
 msgid ""
 "Audio method to use: 0 to disable audio, 1 for OSS, 2 for ALSA, 3 for ALSA "
 "or OSS (ALSA is preferred)."
@@ -7825,53 +7833,53 @@ msgstr ""
 "Метод за аудиото, който да се използва: 0 за изключване на аудиото, 1 за "
 "OSS, 2 за ALSA, 3 за ALSA или OSS (ALSA се предпочита)."
 
-#: modules/access/v4l2/v4l2.c:203
+#: modules/access/v4l2/v4l2.c:201
 msgid "Volume of the audio input (if supported by the v4l2 driver)."
 msgstr "Ниво на звука при въвеждане (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:204
+#: modules/access/v4l2/v4l2.c:202
 msgid "Balance"
 msgstr "Баланс"
 
-#: modules/access/v4l2/v4l2.c:206
+#: modules/access/v4l2/v4l2.c:204
 msgid "Balance of the audio input (if supported by the v4l2 driver)."
 msgstr "Баланс на аудиото при въвеждане (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:209
+#: modules/access/v4l2/v4l2.c:207
 msgid "Mute audio input (if supported by the v4l2 driver)."
 msgstr "Изключване на звука при въвеждане (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:210 modules/meta_engine/id3genres.h:69
+#: modules/access/v4l2/v4l2.c:208 modules/meta_engine/id3genres.h:69
 msgid "Bass"
 msgstr "Бас"
 
-#: modules/access/v4l2/v4l2.c:212
+#: modules/access/v4l2/v4l2.c:210
 msgid "Bass level of the audio input (if supported by the v4l2 driver)."
 msgstr ""
 "Ниво на баса на аудиото при въвеждане (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:213
+#: modules/access/v4l2/v4l2.c:211
 msgid "Treble"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:215
+#: modules/access/v4l2/v4l2.c:213
 msgid "Treble level of the audio input (if supported by the v4l2 driver)."
 msgstr ""
 "Ниво на treble на аудиото при въвеждане (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:216
+#: modules/access/v4l2/v4l2.c:214
 msgid "Loudness"
 msgstr "Гръмкост"
 
-#: modules/access/v4l2/v4l2.c:218
+#: modules/access/v4l2/v4l2.c:216
 msgid "Loudness of the audio input (if supported by the v4l2 driver)."
 msgstr "Гръмкост на аудио въвеждането (ако се поддържа от драйвера v4l2)."
 
-#: modules/access/v4l2/v4l2.c:222 modules/access/v4l.c:131
+#: modules/access/v4l2/v4l2.c:220 modules/access/v4l.c:131
 msgid "Capture the audio stream in stereo."
 msgstr "Захващане на аудио потока в стереото"
 
-#: modules/access/v4l2/v4l2.c:225
+#: modules/access/v4l2/v4l2.c:223
 msgid ""
 "Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100, "
 "48000)"
@@ -7879,18 +7887,18 @@ msgstr ""
 "Честота на дискретизация на захванатия аудио поток, в Хц (например: 11025, "
 "22050, 44100, 48000)"
 
-#: modules/access/v4l2/v4l2.c:229
+#: modules/access/v4l2/v4l2.c:227
 msgid ""
 "Caching value for V4L2 captures. This value should be set in milliseconds."
 msgstr ""
 "Стойност на кеширане за V4L2 захващания. Тази стойност трябва да бъде "
 "настроена в милисекунди."
 
-#: modules/access/v4l2/v4l2.c:231
+#: modules/access/v4l2/v4l2.c:229
 msgid "v4l2 driver controls"
 msgstr "Регулатори за драйвера v4l2"
 
-#: modules/access/v4l2/v4l2.c:233
+#: modules/access/v4l2/v4l2.c:231
 msgid ""
 "Set the v4l2 driver controls to the values specified using a comma separated "
 "list optionally encapsulated by curly braces (e.g.: {video_bitrate=6000000,"
@@ -7903,90 +7911,90 @@ msgstr ""
 "задаване на списък с наличните регулатори, increase verbosity (-vvv) или да "
 "се използва v4l2-ctl програма."
 
-#: modules/access/v4l2/v4l2.c:239
+#: modules/access/v4l2/v4l2.c:237
 msgid "Tuner id"
 msgstr "ID на тунера"
 
-#: modules/access/v4l2/v4l2.c:241
+#: modules/access/v4l2/v4l2.c:239
 msgid "Tuner id (see debug output)."
 msgstr "ID на тунера (вижте дебъг при извеждане)."
 
-#: modules/access/v4l2/v4l2.c:244
+#: modules/access/v4l2/v4l2.c:242
 msgid "Tuner frequency in Hz or kHz (see debug output)"
 msgstr "Честота на тунера в Хц или кХц (вижте дебъг при извеждане)."
 
-#: modules/access/v4l2/v4l2.c:245
+#: modules/access/v4l2/v4l2.c:243
 msgid "Audio mode"
 msgstr "Режим на аудиото"
 
-#: modules/access/v4l2/v4l2.c:247
+#: modules/access/v4l2/v4l2.c:245
 msgid "Tuner audio mono/stereo and track selection."
 msgstr "Аудио на тунера моно/стерео и избор на пътека."
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:261
 msgid "READ"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:261
 msgid "MMAP"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:261
 msgid "USERPTR"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:270 modules/audio_output/alsa.c:189
+#: modules/access/v4l2/v4l2.c:268 modules/audio_output/alsa.c:189
 #: modules/audio_output/directx.c:537 modules/audio_output/oss.c:227
 #: modules/audio_output/portaudio.c:394 modules/audio_output/sdl.c:185
 #: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:533
 msgid "Mono"
 msgstr "Моно"
 
-#: modules/access/v4l2/v4l2.c:272
+#: modules/access/v4l2/v4l2.c:270
 msgid "Primary language (Analog TV tuners only)"
 msgstr "Първи език (Само за аналогови ТВ тунери)"
 
-#: modules/access/v4l2/v4l2.c:273
+#: modules/access/v4l2/v4l2.c:271
 msgid "Secondary language (Analog TV tuners only)"
 msgstr "Втори език (Само за аналогови ТВ тунери)"
 
-#: modules/access/v4l2/v4l2.c:274
+#: modules/access/v4l2/v4l2.c:272
 msgid "Second audio program (Analog TV tuners only)"
 msgstr "Втора аудио програма (Само за аналогови ТВ тунери)"
 
-#: modules/access/v4l2/v4l2.c:275
+#: modules/access/v4l2/v4l2.c:273
 msgid "Primary language left, Secondary language right"
 msgstr "Първи език отляво, Втори език отдясно"
 
-#: modules/access/v4l2/v4l2.c:287
+#: modules/access/v4l2/v4l2.c:285
 msgid "Video4Linux2"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:288
+#: modules/access/v4l2/v4l2.c:286
 msgid "Video4Linux2 input"
 msgstr "Въвеждане от Video4Linux2"
 
-#: modules/access/v4l2/v4l2.c:292
+#: modules/access/v4l2/v4l2.c:290
 msgid "Video input"
 msgstr "Въвеждане на видео"
 
-#: modules/access/v4l2/v4l2.c:325 modules/access/v4l.c:124
+#: modules/access/v4l2/v4l2.c:326 modules/access/v4l.c:124
 msgid "Tuner"
 msgstr "Тунер"
 
-#: modules/access/v4l2/v4l2.c:335
+#: modules/access/v4l2/v4l2.c:336
 msgid "Controls"
 msgstr "Управление"
 
-#: modules/access/v4l2/v4l2.c:336
+#: modules/access/v4l2/v4l2.c:337
 msgid "v4l2 driver controls, if supported by your v4l2 driver."
 msgstr "v4l2 управление на драйвера, ако се поддържа от вашия драйвер v4l2."
 
-#: modules/access/v4l2/v4l2.c:394
+#: modules/access/v4l2/v4l2.c:395
 msgid "Video4Linux2 Compressed A/V"
 msgstr ""
 
-#: modules/access/v4l2/v4l2.c:3181
+#: modules/access/v4l2/v4l2.c:3268
 msgid "Reset controls to default"
 msgstr "Нулиране на регулаторите към настройките по подразбиране"
 

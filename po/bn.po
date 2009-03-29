@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.8.2-svn\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2009-01-15 23:45+0000\n"
+"POT-Creation-Date: 2009-03-29 20:34+0100\n"
 "PO-Revision-Date: 2008-12-31 18:09+0600\n"
 "Last-Translator: Md. Rezwan Shahid <rezwan@ankur.org.bd>\n"
 "Language-Team: Bengali <ankur-bd-l10n@googlegroups.com>\n"
@@ -332,7 +332,7 @@ msgstr ""
 "মডিউলের জন্য ডিফল্ট বিকল্পগুলো কনফিগার করতে পারেন।"
 
 #: include/vlc_config_cat.h:172 modules/services_discovery/sap.c:127
-#: modules/services_discovery/sap.c:323
+#: modules/services_discovery/sap.c:339
 msgid "SAP"
 msgstr "SAP"
 
@@ -538,9 +538,9 @@ msgstr "পরিচিতি... (&A)"
 #: modules/gui/macosx/embeddedwindow.m:51
 #: modules/gui/macosx/embeddedwindow.m:141 modules/gui/macosx/intf.m:495
 #: modules/gui/macosx/intf.m:539 modules/gui/macosx/intf.m:618
-#: modules/gui/macosx/intf.m:625 modules/gui/macosx/intf.m:1817
-#: modules/gui/macosx/intf.m:1818 modules/gui/macosx/intf.m:1819
-#: modules/gui/macosx/intf.m:1820 modules/gui/macosx/playlist.m:442
+#: modules/gui/macosx/intf.m:625 modules/gui/macosx/intf.m:1823
+#: modules/gui/macosx/intf.m:1824 modules/gui/macosx/intf.m:1825
+#: modules/gui/macosx/intf.m:1826 modules/gui/macosx/playlist.m:442
 #: modules/gui/pda/pda_interface.c:260 modules/gui/pda/pda_interface.c:261
 #: modules/gui/qt4/menus.cpp:656 modules/gui/qt4/menus.cpp:660
 #: modules/gui/qt4/menus.cpp:663
@@ -823,7 +823,7 @@ msgid "Audio Channels"
 msgstr "অডিও চ্যানেলসমূহ"
 
 #: src/audio_output/output.c:105 src/audio_output/output.c:140
-#: modules/access/v4l2/v4l2.c:220 modules/access/v4l2/v4l2.c:271
+#: modules/access/v4l2/v4l2.c:218 modules/access/v4l2/v4l2.c:269
 #: modules/access/v4l.c:129 modules/audio_output/alsa.c:195
 #: modules/audio_output/alsa.c:226 modules/audio_output/directx.c:519
 #: modules/audio_output/oss.c:207 modules/audio_output/portaudio.c:402
@@ -1073,20 +1073,20 @@ msgstr "ফ্রেমের হার"
 msgid "Subtitle"
 msgstr "সাবটাইটেল"
 
-#: src/input/input.c:2209
+#: src/input/input.c:2210
 msgid "Your input can't be opened"
 msgstr "আপনার ইনপুট খোলা যাবেনা"
 
-#: src/input/input.c:2210
+#: src/input/input.c:2211
 #, c-format
 msgid "VLC is unable to open the MRL '%s'. Check the log for details."
 msgstr "ভিএলসি '%s' MRL টি খুলবে ব্যর্থ। বিস্তারিত জানার জন্য লগ পরীক্ষা করুন।"
 
-#: src/input/input.c:2309
+#: src/input/input.c:2310
 msgid "VLC can't recognize the input's format"
 msgstr "ভিএলসি ইনপুটের ফরম্যাট চিনতে পারেনি"
 
-#: src/input/input.c:2310
+#: src/input/input.c:2311
 #, c-format
 msgid "The format of '%s' cannot be detected. Have a look the log for details."
 msgstr "'%s' ফরম্যাটটি সনাক্ত করা যায়নি। বিস্তারিত জানার জন্য লগ পরীক্ষা করুন।"
@@ -1101,7 +1101,7 @@ msgid "Title"
 msgstr "শিরোনাম"
 
 #: src/input/meta.c:53 modules/gui/macosx/playlistinfo.m:73
-#: modules/gui/macosx/playlist.m:1144
+#: modules/gui/macosx/playlist.m:1157
 msgid "Artist"
 msgstr "শিল্পি"
 
@@ -1143,7 +1143,7 @@ msgstr "সেটিং"
 msgid "URL"
 msgstr "URL"
 
-#: src/input/meta.c:64 modules/misc/notify/notify.c:288
+#: src/input/meta.c:64 modules/misc/notify/notify.c:317
 msgid "Now Playing"
 msgstr "এখন চালানো হচ্ছে"
 
@@ -1249,7 +1249,7 @@ msgstr "বাতিল"
 #: modules/gui/macosx/bookmarks.m:279 modules/gui/macosx/controls.m:59
 #: modules/gui/macosx/extended.m:519 modules/gui/macosx/interaction.m:134
 #: modules/gui/macosx/interaction.m:135 modules/gui/macosx/interaction.m:175
-#: modules/gui/macosx/intf.m:2132 modules/gui/macosx/open.m:167
+#: modules/gui/macosx/intf.m:2138 modules/gui/macosx/open.m:167
 #: modules/gui/macosx/open.m:300 modules/gui/macosx/output.m:138
 #: modules/gui/macosx/playlistinfo.m:425 modules/gui/macosx/simple_prefs.m:238
 #: modules/gui/macosx/update.m:65 modules/gui/macosx/wizard.m:598
@@ -2433,7 +2433,7 @@ msgstr ""
 #: src/libvlc-module.c:568 src/video_output/vout_intf.c:180
 #: src/video_output/vout_intf.c:198 modules/access/dshow/dshow.cpp:81
 #: modules/access/dshow/dshow.cpp:83 modules/access/dshow/dshow.cpp:86
-#: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:258
+#: modules/access/dshow/dshow.cpp:92 modules/access/v4l2/v4l2.c:256
 #: modules/audio_output/alsa.c:105 modules/gui/fbosd.c:173
 #: modules/gui/macosx/prefs_widgets.m:1321
 #: modules/gui/macosx/simple_prefs.m:381 modules/gui/macosx/simple_prefs.m:476
@@ -3701,7 +3701,7 @@ msgstr "প্লেব্যাক ধীরগতিতে করার জন
 #: modules/gui/macosx/intf.m:620 modules/gui/macosx/intf.m:628
 #: modules/gui/macosx/wizard.m:309 modules/gui/macosx/wizard.m:321
 #: modules/gui/macosx/wizard.m:1620 modules/gui/qt4/menus.cpp:670
-#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:302
+#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:332
 msgid "Next"
 msgstr "পরবর্তী"
 
@@ -3713,7 +3713,7 @@ msgstr "চালানোর তালিকার পরবর্তী আই
 #: modules/gui/macosx/about.m:191 modules/gui/macosx/controls.m:887
 #: modules/gui/macosx/intf.m:493 modules/gui/macosx/intf.m:543
 #: modules/gui/macosx/intf.m:621 modules/gui/macosx/intf.m:627
-#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:300
+#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:330
 msgid "Previous"
 msgstr "পূর্ববর্তী"
 
@@ -3948,7 +3948,7 @@ msgstr "ভলিয়ুম কমান"
 msgid "Select the key to decrease audio volume."
 msgstr "অডিও ভলিয়ুম কমানোর জন্য কী (key) নির্বাচন করুন।"
 
-#: src/libvlc-module.c:1247 modules/access/v4l2/v4l2.c:207
+#: src/libvlc-module.c:1247 modules/access/v4l2/v4l2.c:205
 #: modules/gui/macosx/controls.m:927 modules/gui/macosx/intf.m:561
 #: modules/gui/macosx/intf.m:622 modules/gui/macosx/intf.m:631
 #: modules/gui/qt4/components/interface_widgets.cpp:911
@@ -4473,7 +4473,7 @@ msgstr "মেটাডেটা"
 msgid "Decoders"
 msgstr "ডিকোডারসমূহ"
 
-#: src/libvlc-module.c:1745 modules/access/v4l2/v4l2.c:104
+#: src/libvlc-module.c:1745 modules/access/v4l2/v4l2.c:96
 #: modules/gui/macosx/playlistinfo.m:93
 #: modules/gui/qt4/components/info_panels.cpp:509
 msgid "Input"
@@ -5263,7 +5263,7 @@ msgstr "অ্যাসপেক্ট-অনুপাত"
 #: modules/access/pvr.c:60 modules/access/rtmp/access.c:43
 #: modules/access/screen/screen.c:39 modules/access/smb.c:64
 #: modules/access/tcp.c:41 modules/access/udp.c:49
-#: modules/access/v4l2/v4l2.c:227 modules/access/v4l.c:77
+#: modules/access/v4l2/v4l2.c:225 modules/access/v4l.c:77
 #: modules/access/vcd/vcd.c:46
 msgid "Caching value in ms"
 msgstr "মিলিসেকেন্ডে ক্যাশিং মান"
@@ -5656,8 +5656,8 @@ msgid "CDDB Server port to use."
 msgstr "ব্যবহারের জন্য CDDB সার্ভারের নাম।"
 
 #: modules/access/cdda.c:468
-#, c-format
-msgid "Audio CD - Track %i"
+#, fuzzy, c-format
+msgid "Audio CD - Track %02i"
 msgstr "অডিও সিডি - ট্র্যাক %i"
 
 #: modules/access/cdda/cdda.c:43 modules/access/directory.c:86
@@ -6055,7 +6055,7 @@ msgstr ""
 "DirectShow প্লাগিন দ্বারা যে ভিডিও যন্ত্রটি ব্যবহার করা হবে তার নাম। আপনি যটি কিছু "
 "উল্লেখ না করেন, ডিফল্ট যন্ত্রটি ব্যবহার করা হবে।"
 
-#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:181
+#: modules/access/dshow/dshow.cpp:107 modules/access/v4l2/v4l2.c:179
 #: modules/access/v4l.c:85 modules/gui/qt4/components/open_panels.cpp:708
 #: modules/gui/qt4/components/open_panels.cpp:743
 msgid "Audio device name"
@@ -6084,7 +6084,7 @@ msgstr ""
 "উল্লেখ না করেন, আপনার যন্ত্রের জন্য ডিফল্ট আকার ব্যবহার করা হবে। আপনি একটি "
 "স্ট্যান্ডার্ড আকার (cif, d1, ...) বা <width>x<height> উল্লেখ করতে পারেন ।"
 
-#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:98
+#: modules/access/dshow/dshow.cpp:117 modules/access/v4l2/v4l2.c:90
 #: modules/access/v4l.c:89
 msgid "Video input chroma format"
 msgstr "ভিডিও ইনপুট ক্রমা ফরম্যাট"
@@ -6519,7 +6519,7 @@ msgid ""
 msgstr "নকল স্ট্রিমের জন্য ক্যাশিং মান। এই মানটি মিলিসেকেন্ডে সেট করতে হবে।"
 
 #: modules/access/fake.c:47 modules/access/pvr.c:86
-#: modules/access/v4l2/v4l2.c:119 modules/access/v4l.c:140
+#: modules/access/v4l2/v4l2.c:111 modules/access/v4l.c:140
 msgid "Framerate"
 msgstr "ফ্রেমের হার"
 
@@ -6579,8 +6579,8 @@ msgstr "ফাইল ইনপুট"
 msgid "File"
 msgstr "ফাইল"
 
-#: modules/access/file.c:246 modules/access/file.c:365
-#: modules/access/file.c:379 modules/access/mmap.c:223
+#: modules/access/file.c:246 modules/access/file.c:366
+#: modules/access/file.c:380 modules/access/mmap.c:223
 msgid "File reading failed"
 msgstr "ফাইল পড়তে ব্যর্থ"
 
@@ -6588,7 +6588,7 @@ msgstr "ফাইল পড়তে ব্যর্থ"
 msgid "VLC could not read the file."
 msgstr "ভিএলসি ফাইল পড়তে ব্যর্থ।"
 
-#: modules/access/file.c:366 modules/access/file.c:380
+#: modules/access/file.c:367 modules/access/file.c:381
 #, c-format
 msgid "VLC could not open the file \"%s\"."
 msgstr "ভিএলসি ফাইল খুলতে ব্যর্থ \"%s\"।"
@@ -7102,7 +7102,7 @@ msgstr "স্ট্রিম বা আপনার চ্যানেল স�
 msgid "Bitrate information of the transcoded stream. "
 msgstr "ট্রান্সকোড করা স্ট্রিমের বিটের হারের তথ্য।"
 
-#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:223
+#: modules/access_output/shout.c:94 modules/access/v4l2/v4l2.c:221
 #: modules/access/v4l.c:126
 msgid "Samplerate"
 msgstr "স্যাম্পলের হার"
@@ -7207,7 +7207,7 @@ msgstr "নর্ম"
 msgid "Norm of the stream (Automatic, SECAM, PAL, or NTSC)."
 msgstr "স্ট্রিমের নর্ম (স্বয়ংক্রিয়, সিকাম, পাল, বা এনটিএসসি)।"
 
-#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:113
+#: modules/access/pvr.c:75 modules/access/v4l2/v4l2.c:105
 #: modules/access/v4l.c:106 modules/demux/rawvid.c:48
 #: modules/video_filter/mosaic.c:96 modules/video_output/vmem.c:50
 msgid "Width"
@@ -7218,7 +7218,7 @@ msgid "Width of the stream to capture (-1 for autodetection)."
 msgstr ""
 "যেই স্ট্রিমটি ক্যাপচার করতে হবে তার প্রস্থ (স্বয়ংক্রিয়ভাবে সনাক্ত করার জন্য -১)।"
 
-#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:116
+#: modules/access/pvr.c:79 modules/access/v4l2/v4l2.c:108
 #: modules/access/v4l.c:109 modules/demux/rawvid.c:52
 #: modules/video_filter/mosaic.c:94 modules/video_output/vmem.c:53
 msgid "Height"
@@ -7229,7 +7229,7 @@ msgid "Height of the stream to capture (-1 for autodetection)."
 msgstr ""
 "যেই স্ট্রিমটি ক্যাপচার করতে হবে তার উচ্চতা (স্বয়ংক্রিয়ভাবে সনাক্ত করার জন্য -১)।"
 
-#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:242
+#: modules/access/pvr.c:83 modules/access/v4l2/v4l2.c:240
 #: modules/access/v4l.c:93 modules/gui/qt4/components/open_panels.cpp:757
 #: modules/gui/qt4/components/open_panels.cpp:856
 msgid "Frequency"
@@ -7239,7 +7239,7 @@ msgstr "কম্পাঙ্ক"
 msgid "Frequency to capture (in kHz), if applicable."
 msgstr "যেই কম্পাঙ্ক ক্যাপচার করতে হবে (কিলোহার্জে), যদি প্রযোজ্য হয়।"
 
-#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:120
+#: modules/access/pvr.c:87 modules/access/v4l2/v4l2.c:112
 #: modules/access/v4l.c:141
 msgid "Framerate to capture, if applicable (-1 for autodetect)."
 msgstr ""
@@ -7294,7 +7294,7 @@ msgstr "অডিও বিটমাস্ক"
 msgid "Bitmask that will get used by the audio part of the card."
 msgstr "কার্ডের অডিও অংশ দ্বারা ব্যবহৃতব্য বিটমাস্ক।"
 
-#: modules/access/pvr.c:110 modules/access/v4l2/v4l2.c:201
+#: modules/access/pvr.c:110 modules/access/v4l2/v4l2.c:199
 #: modules/access/vcdx/info.c:100 modules/gui/macosx/intf.m:500
 msgid "Volume"
 msgstr "ভলিউম"
@@ -7316,17 +7316,17 @@ msgstr "ব্যবহারের জন্য কার্ডের চ্য
 msgid "Automatic"
 msgstr "স্বয়ংক্রিয়"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:256
 #: modules/access/v4l.c:147
 msgid "SECAM"
 msgstr "সিকাম"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:256
 #: modules/access/v4l.c:147
 msgid "PAL"
 msgstr "পাল"
 
-#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:258
+#: modules/access/pvr.c:120 modules/access/v4l2/v4l2.c:256
 #: modules/access/v4l.c:147
 msgid "NTSC"
 msgstr "এনটিএসসি"
@@ -7509,12 +7509,12 @@ msgstr "UDP"
 msgid "UDP input"
 msgstr "UDP ইনপুট"
 
-#: modules/access/v4l2/v4l2.c:91 modules/gui/macosx/open.m:178
+#: modules/access/v4l2/v4l2.c:83 modules/gui/macosx/open.m:178
 #: modules/gui/qt4/components/open_panels.cpp:836
 msgid "Device name"
 msgstr "যন্ত্রের নাম"
 
-#: modules/access/v4l2/v4l2.c:93
+#: modules/access/v4l2/v4l2.c:85
 msgid ""
 "Name of the device to use. If you don't specify anything, /dev/video0 will "
 "be used."
@@ -7522,17 +7522,17 @@ msgstr ""
 "যে যন্ত্রটি ব্যবহার করা হবে সেটির নাম। যদি আপনি কিছু উল্লেখ না করেন, /dev/video0 "
 "ব্যবহার করা হবে।"
 
-#: modules/access/v4l2/v4l2.c:95
+#: modules/access/v4l2/v4l2.c:87
 #: modules/gui/qt4/components/open_panels.cpp:715
 #: modules/stream_out/standard.c:100
 msgid "Standard"
 msgstr "স্ট্যান্ডার্ড"
 
-#: modules/access/v4l2/v4l2.c:97
+#: modules/access/v4l2/v4l2.c:89
 msgid "Video standard (Default, SECAM, PAL, or NTSC)."
 msgstr "ভিডিও স্ট্যান্ডার্ড (ডিফল্ট, সিকাম, পাল, বা এনটিএসসি)।"
 
-#: modules/access/v4l2/v4l2.c:100
+#: modules/access/v4l2/v4l2.c:92
 msgid ""
 "Force the Video4Linux2 video device to use a specific chroma format (eg. "
 "I420 or I422 for raw images, MJPG for M-JPEG compressed input) (Complete "
@@ -7544,93 +7544,101 @@ msgstr ""
 "তালিকা: GREY, I240, RV16, RV15, RV24, RV32, YUY2, YUYV, UYVY, I41N, I422, "
 "I420, I411, I410, MJPG)"
 
-#: modules/access/v4l2/v4l2.c:106
+#: modules/access/v4l2/v4l2.c:98
 msgid "Input of the card to use (see debug)."
 msgstr "যে কার্ডটি ব্যবহার করা হবে তার ইনপুট (ডিবাগ দেখুন)।"
 
-#: modules/access/v4l2/v4l2.c:107 modules/access/v4l2/v4l2.c:313
+#: modules/access/v4l2/v4l2.c:99 modules/access/v4l2/v4l2.c:314
 msgid "Audio input"
 msgstr "অডিও ইনপুট"
 
-#: modules/access/v4l2/v4l2.c:109
+#: modules/access/v4l2/v4l2.c:101
 msgid "Audio input of the card to use (see debug)."
 msgstr "যে কার্ডটি ব্যবহার করা হবে তার অডিও ইনপুট (ডিবাগ দেখুন)।"
 
-#: modules/access/v4l2/v4l2.c:110
+#: modules/access/v4l2/v4l2.c:102
 msgid "IO Method"
 msgstr "ইনপুট/আউটপুট মেথড"
 
-#: modules/access/v4l2/v4l2.c:112
+#: modules/access/v4l2/v4l2.c:104
 msgid "IO Method (READ, MMAP, USERPTR)."
 msgstr "ইনপুট/আউটপুট মেথড (READ, MMAP, USERPTR)."
 
-#: modules/access/v4l2/v4l2.c:115
+#: modules/access/v4l2/v4l2.c:107
 msgid "Force width (-1 for autodetect)."
 msgstr "প্রস্থ কার্যকর করুন (-১ হল স্বয়ংক্রিয়ভাবে সনাক্ত করার জন্য)।"
 
-#: modules/access/v4l2/v4l2.c:118
+#: modules/access/v4l2/v4l2.c:110
 msgid "Force height (-1 for autodetect)."
 msgstr "উচ্চতা কার্যকর করুন (-১ হল স্বয়ংক্রিয়ভাবে সনাক্ত করার জন্য)।"
 
-#: modules/access/v4l2/v4l2.c:123
+#: modules/access/v4l2/v4l2.c:116
+msgid "Use libv4l2"
+msgstr ""
+
+#: modules/access/v4l2/v4l2.c:118
+msgid "Force usage of the libv4l2 wrapper."
+msgstr ""
+
+#: modules/access/v4l2/v4l2.c:121
 msgid "Reset v4l2 controls"
 msgstr "v4l2 কন্ট্রোল রিসেট করুন"
 
-#: modules/access/v4l2/v4l2.c:125
+#: modules/access/v4l2/v4l2.c:123
 msgid "Reset controls to defaults provided by the v4l2 driver."
 msgstr "v4l2 ড্রাইভার দ্বারা প্রদত্ত ডিফল্ট কন্ট্রোল রিসেট করুন।"
 
-#: modules/access/v4l2/v4l2.c:126 modules/access/v4l.c:112
+#: modules/access/v4l2/v4l2.c:124 modules/access/v4l.c:112
 #: modules/gui/macosx/extended.m:97 modules/gui/qt4/ui/video_effects.ui:205
 #: modules/video_filter/atmo/atmo.cpp:196
 msgid "Brightness"
 msgstr "উজ্জ্বলতা"
 
-#: modules/access/v4l2/v4l2.c:128
+#: modules/access/v4l2/v4l2.c:126
 msgid "Brightness of the video input (if supported by the v4l2 driver)."
 msgstr "ভিডিও ইনপুটের উজ্জ্বলতা (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:129 modules/access/v4l.c:121
+#: modules/access/v4l2/v4l2.c:127 modules/access/v4l.c:121
 #: modules/gui/macosx/extended.m:98 modules/gui/qt4/ui/video_effects.ui:198
 msgid "Contrast"
 msgstr "কন্ট্রাস্ট"
 
-#: modules/access/v4l2/v4l2.c:131
+#: modules/access/v4l2/v4l2.c:129
 msgid "Contrast of the video input (if supported by the v4l2 driver)."
 msgstr "ভিডিও ইনপুটের কন্ট্রাস্ট (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:132 modules/gui/macosx/extended.m:101
+#: modules/access/v4l2/v4l2.c:130 modules/gui/macosx/extended.m:101
 #: modules/gui/qt4/ui/video_effects.ui:212
 #: modules/gui/qt4/ui/video_effects.ui:320
 msgid "Saturation"
 msgstr "স্যাচুরেশন"
 
-#: modules/access/v4l2/v4l2.c:134
+#: modules/access/v4l2/v4l2.c:132
 msgid "Saturation of the video input (if supported by the v4l2 driver)."
 msgstr "ভিডিও ইনপুটের স্যাচুরেশন (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:135 modules/access/v4l.c:115
+#: modules/access/v4l2/v4l2.c:133 modules/access/v4l.c:115
 #: modules/gui/macosx/extended.m:100 modules/gui/qt4/ui/video_effects.ui:219
 msgid "Hue"
 msgstr "বর্ন"
 
-#: modules/access/v4l2/v4l2.c:137
+#: modules/access/v4l2/v4l2.c:135
 msgid "Hue of the video input (if supported by the v4l2 driver)."
 msgstr "ভিডিও ইনপুটের বর্ন (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:138
+#: modules/access/v4l2/v4l2.c:136
 msgid "Black level"
 msgstr "কালোর লেভেল"
 
-#: modules/access/v4l2/v4l2.c:140
+#: modules/access/v4l2/v4l2.c:138
 msgid "Black level of the video input (if supported by the v4l2 driver)."
 msgstr "ভিডিও ইনপুটের কালো লেভেল (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:141
+#: modules/access/v4l2/v4l2.c:139
 msgid "Auto white balance"
 msgstr "স্বয়ংক্রিয় সাদা ভারসাম্য"
 
-#: modules/access/v4l2/v4l2.c:143
+#: modules/access/v4l2/v4l2.c:141
 msgid ""
 "Automatically set the white balance of the video input (if supported by the "
 "v4l2 driver)."
@@ -7638,11 +7646,11 @@ msgstr ""
 "ভিডিও ইনপুটের সাদা ভারসাম্য স্বয়ংক্রিয়ভাবে সেট করুন (v4l2 ড্রাইভার দ্বারা সমর্থিত "
 "হলে)।"
 
-#: modules/access/v4l2/v4l2.c:145
+#: modules/access/v4l2/v4l2.c:143
 msgid "Do white balance"
 msgstr "সাদা ভারসাম্য করুন"
 
-#: modules/access/v4l2/v4l2.c:147
+#: modules/access/v4l2/v4l2.c:145
 msgid ""
 "Trigger a white balancing action, useless if auto white balance is activated "
 "(if supported by the v4l2 driver)."
@@ -7650,91 +7658,91 @@ msgstr ""
 "একটি সাদা ভারসাম্য কর্ম ট্রিগার করুন, যদি স্বয়ংক্রিয় সাদা ভারসাম্য সক্রিয় থাকে তাহলে "
 "এটি কাজে আসবে না (যদি v412 ড্রাইভার দ্বারা সমর্থিত হয়)।"
 
-#: modules/access/v4l2/v4l2.c:149
+#: modules/access/v4l2/v4l2.c:147
 msgid "Red balance"
 msgstr "লাল ভারসাম্য"
 
-#: modules/access/v4l2/v4l2.c:151
+#: modules/access/v4l2/v4l2.c:149
 msgid "Red balance of the video input (if supported by the v4l2 driver)."
 msgstr "ভিডিও ইনপুটের লাল ভারসাম্য (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:152
+#: modules/access/v4l2/v4l2.c:150
 msgid "Blue balance"
 msgstr "নীল ভারসাম্য"
 
-#: modules/access/v4l2/v4l2.c:154
+#: modules/access/v4l2/v4l2.c:152
 msgid "Blue balance of the video input (if supported by the v4l2 driver)."
 msgstr "ভিডিও ইনপুটের নীল ভারসাম্য (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:155 modules/gui/macosx/extended.m:99
+#: modules/access/v4l2/v4l2.c:153 modules/gui/macosx/extended.m:99
 #: modules/gui/qt4/ui/video_effects.ui:191
 msgid "Gamma"
 msgstr "গামা"
 
-#: modules/access/v4l2/v4l2.c:157
+#: modules/access/v4l2/v4l2.c:155
 msgid "Gamma of the video input (if supported by the v4l2 driver)."
 msgstr "ভিডিও ইনপুটের গামা (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:158
+#: modules/access/v4l2/v4l2.c:156
 msgid "Exposure"
 msgstr "এক্সপোজার"
 
-#: modules/access/v4l2/v4l2.c:160
+#: modules/access/v4l2/v4l2.c:158
 msgid "Exposure of the video input (if supported by the v4L2 driver)."
 msgstr "ভিডিও ইনপুটের এক্সপোজার (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:161
+#: modules/access/v4l2/v4l2.c:159
 msgid "Auto gain"
 msgstr "স্বয়ংক্রিয় গেইন"
 
-#: modules/access/v4l2/v4l2.c:163
+#: modules/access/v4l2/v4l2.c:161
 msgid ""
 "Automatically set the video input's gain (if supported by the v4l2 driver)."
 msgstr ""
 "ভিডিও ইনপুটের গেইন স্বয়ংক্রিয়ভাবে সেট করুন (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:165
+#: modules/access/v4l2/v4l2.c:163
 msgid "Gain"
 msgstr "গেইন"
 
-#: modules/access/v4l2/v4l2.c:167
+#: modules/access/v4l2/v4l2.c:165
 msgid "Video input's gain (if supported by the v4l2 driver)."
 msgstr "ভিডিও ইনপুটের গেইন (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:168
+#: modules/access/v4l2/v4l2.c:166
 msgid "Horizontal flip"
 msgstr "অনুভূমিক ওল্টানো"
 
-#: modules/access/v4l2/v4l2.c:170
+#: modules/access/v4l2/v4l2.c:168
 msgid "Flip the video horizontally (if supported by the v4l2 driver)."
 msgstr "ভিডিওটি অনুভূমিকভাবে ওল্টানো হবে (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:171
+#: modules/access/v4l2/v4l2.c:169
 msgid "Vertical flip"
 msgstr "উলম্ব ওল্টানো"
 
-#: modules/access/v4l2/v4l2.c:173
+#: modules/access/v4l2/v4l2.c:171
 msgid "Flip the video vertically (if supported by the v4l2 driver)."
 msgstr "ভিডিওটি উলম্বভাবে ওল্টানো হবে (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:174
+#: modules/access/v4l2/v4l2.c:172
 msgid "Horizontal centering"
 msgstr "অনুভূমিকভাবে কেন্দ্রীয়করন"
 
-#: modules/access/v4l2/v4l2.c:176
+#: modules/access/v4l2/v4l2.c:174
 msgid ""
 "Set the camera's horizontal centering (if supported by the v4l2 driver)."
 msgstr "ক্যামেরার অনুভূমিক কেন্দ্রীয়করন সেট করুন (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:177
+#: modules/access/v4l2/v4l2.c:175
 msgid "Vertical centering"
 msgstr "উলম্বভাবে কেন্দ্রীয়করন"
 
-#: modules/access/v4l2/v4l2.c:179
+#: modules/access/v4l2/v4l2.c:177
 msgid "Set the camera's vertical centering (if supported by the v4l2 driver)."
 msgstr "ক্যামেরার উলম্ব কেন্দ্রীয়করন সেট করুন (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:184
+#: modules/access/v4l2/v4l2.c:182
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS."
@@ -7742,7 +7750,7 @@ msgstr ""
 "যে অডিও ডিভাইসটি ব্যবহার করা হবে। আপনি যদি কোনো কিছু উল্লেখ না করেন, OSS এর "
 "জন্য  \"/dev/dsp\" ব্যবহৃত হবে।"
 
-#: modules/access/v4l2/v4l2.c:188
+#: modules/access/v4l2/v4l2.c:186
 msgid ""
 "Name of the audio device to use. If you don't specify anything, \"/dev/dsp\" "
 "will be used for OSS, \"hw\" for Alsa."
@@ -7750,15 +7758,15 @@ msgstr ""
 "যে অডিও ডিভাইসটি ব্যবহার করা হবে। আপনি যদি কোনো কিছু উল্লেখ না করেন, OSS এর "
 "জন্য  \"/dev/dsp\" ব্যবহৃত হবে। Alsa এর জন্য \"hw\"।"
 
-#: modules/access/v4l2/v4l2.c:192
+#: modules/access/v4l2/v4l2.c:190
 msgid "Audio method"
 msgstr "অডিও মেথড"
 
-#: modules/access/v4l2/v4l2.c:195
+#: modules/access/v4l2/v4l2.c:193
 msgid "Audio method to use: 0 to disable audio, 1 for OSS."
 msgstr "যে অডিও মেথডটি ব্যবহার করা হবে, OSS এর জন্য ১।"
 
-#: modules/access/v4l2/v4l2.c:198
+#: modules/access/v4l2/v4l2.c:196
 msgid ""
 "Audio method to use: 0 to disable audio, 1 for OSS, 2 for ALSA, 3 for ALSA "
 "or OSS (ALSA is preferred)."
@@ -7766,67 +7774,67 @@ msgstr ""
 "যে অডিও মেথডটি ব্যবহার করা হবে, OSS এর জন্য ১, ALSA এর জন্য ২, ALSA বা OSS এর "
 "জন্য ৩ (ALSA সুপারিশকৃত)।"
 
-#: modules/access/v4l2/v4l2.c:203
+#: modules/access/v4l2/v4l2.c:201
 msgid "Volume of the audio input (if supported by the v4l2 driver)."
 msgstr "অডিও ইনপুটের ভলিউম (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:204
+#: modules/access/v4l2/v4l2.c:202
 msgid "Balance"
 msgstr "ভারসাম্য"
 
-#: modules/access/v4l2/v4l2.c:206
+#: modules/access/v4l2/v4l2.c:204
 msgid "Balance of the audio input (if supported by the v4l2 driver)."
 msgstr "অডিও ইনপুটের ভারসাম্য (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:209
+#: modules/access/v4l2/v4l2.c:207
 msgid "Mute audio input (if supported by the v4l2 driver)."
 msgstr "অডিও ইনপুট মিউট করুন (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:210 modules/meta_engine/id3genres.h:69
+#: modules/access/v4l2/v4l2.c:208 modules/meta_engine/id3genres.h:69
 msgid "Bass"
 msgstr "ব্যাজ্"
 
-#: modules/access/v4l2/v4l2.c:212
+#: modules/access/v4l2/v4l2.c:210
 msgid "Bass level of the audio input (if supported by the v4l2 driver)."
 msgstr "অডিও ইনপুটের ব্যাজ্ লেভেল (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:213
+#: modules/access/v4l2/v4l2.c:211
 msgid "Treble"
 msgstr "ট্রেবল"
 
-#: modules/access/v4l2/v4l2.c:215
+#: modules/access/v4l2/v4l2.c:213
 msgid "Treble level of the audio input (if supported by the v4l2 driver)."
 msgstr "অডিও ইনপুটের ট্রেবল লেভেল (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:216
+#: modules/access/v4l2/v4l2.c:214
 msgid "Loudness"
 msgstr "লাউডনেস"
 
-#: modules/access/v4l2/v4l2.c:218
+#: modules/access/v4l2/v4l2.c:216
 msgid "Loudness of the audio input (if supported by the v4l2 driver)."
 msgstr "অডিও ইনপুটের লাউডনেস (v4l2 ড্রাইভার দ্বারা সমর্থিত হলে)।"
 
-#: modules/access/v4l2/v4l2.c:222 modules/access/v4l.c:131
+#: modules/access/v4l2/v4l2.c:220 modules/access/v4l.c:131
 msgid "Capture the audio stream in stereo."
 msgstr "স্টেরিওতে অডিও স্ট্রিম ক্যাপচার করুন।"
 
-#: modules/access/v4l2/v4l2.c:225
+#: modules/access/v4l2/v4l2.c:223
 msgid ""
 "Samplerate of the captured audio stream, in Hz (eg: 11025, 22050, 44100, "
 "48000)"
 msgstr ""
 "ক্যাপচার করা অডিও স্ট্রিমের স্যাম্পল হার, হার্জে (যেমন: ১১০২৫, ২২০৫০, ৪৪১০০, ৪৮০০০)"
 
-#: modules/access/v4l2/v4l2.c:229
+#: modules/access/v4l2/v4l2.c:227
 msgid ""
 "Caching value for V4L2 captures. This value should be set in milliseconds."
 msgstr "V4L2 ক্যাপচারের জন্য ক্যাশিং মান। এই মানটি মিলিসেকেন্ডে সেট করতে হবে।"
 
-#: modules/access/v4l2/v4l2.c:231
+#: modules/access/v4l2/v4l2.c:229
 msgid "v4l2 driver controls"
 msgstr "v4l2 ড্রাইভার নিয়ন্ত্রন"
 
-#: modules/access/v4l2/v4l2.c:233
+#: modules/access/v4l2/v4l2.c:231
 msgid ""
 "Set the v4l2 driver controls to the values specified using a comma separated "
 "list optionally encapsulated by curly braces (e.g.: {video_bitrate=6000000,"
@@ -7838,90 +7846,90 @@ msgstr ""
 "audio_crc=0,stream_type=3} )। উপস্থিত নিয়ন্ত্রনসমূহ তালিকাভুক্ত করতে ভার্বোসিটি "
 "বাড়ান (-vvv) বা v4l2-ctl অ্যাপ্লিকেশন ব্যবহার করুন।"
 
-#: modules/access/v4l2/v4l2.c:239
+#: modules/access/v4l2/v4l2.c:237
 msgid "Tuner id"
 msgstr "টিউনার আইডি"
 
-#: modules/access/v4l2/v4l2.c:241
+#: modules/access/v4l2/v4l2.c:239
 msgid "Tuner id (see debug output)."
 msgstr "টিউনার আইডি (ডিবাগ আউটপুট দেখুন)।"
 
-#: modules/access/v4l2/v4l2.c:244
+#: modules/access/v4l2/v4l2.c:242
 msgid "Tuner frequency in Hz or kHz (see debug output)"
 msgstr "হার্জ বা কিলোহার্জে টিউনার কম্পাঙ্ক (ডিবাগ আউটপুট দেখুন)"
 
-#: modules/access/v4l2/v4l2.c:245
+#: modules/access/v4l2/v4l2.c:243
 msgid "Audio mode"
 msgstr "অডিও মোড"
 
-#: modules/access/v4l2/v4l2.c:247
+#: modules/access/v4l2/v4l2.c:245
 msgid "Tuner audio mono/stereo and track selection."
 msgstr "টিউনার অডিও মোনো/স্টেরিও এবং ট্র্যাক নির্বাচন।"
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:261
 msgid "READ"
 msgstr "READ"
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:261
 msgid "MMAP"
 msgstr "MMAP"
 
-#: modules/access/v4l2/v4l2.c:263
+#: modules/access/v4l2/v4l2.c:261
 msgid "USERPTR"
 msgstr "USERPTR"
 
-#: modules/access/v4l2/v4l2.c:270 modules/audio_output/alsa.c:189
+#: modules/access/v4l2/v4l2.c:268 modules/audio_output/alsa.c:189
 #: modules/audio_output/directx.c:537 modules/audio_output/oss.c:227
 #: modules/audio_output/portaudio.c:394 modules/audio_output/sdl.c:185
 #: modules/audio_output/sdl.c:204 modules/audio_output/waveout.c:533
 msgid "Mono"
 msgstr "Mono"
 
-#: modules/access/v4l2/v4l2.c:272
+#: modules/access/v4l2/v4l2.c:270
 msgid "Primary language (Analog TV tuners only)"
 msgstr "প্রাথমিক ভাষা (শুধুমাত্র অ্যানালগ টিভি টিউনার)"
 
-#: modules/access/v4l2/v4l2.c:273
+#: modules/access/v4l2/v4l2.c:271
 msgid "Secondary language (Analog TV tuners only)"
 msgstr "দ্বিতীয় ভাষা (শুধুমাত্র অ্যানালগ টিভি টিউনার)"
 
-#: modules/access/v4l2/v4l2.c:274
+#: modules/access/v4l2/v4l2.c:272
 msgid "Second audio program (Analog TV tuners only)"
 msgstr "দ্বিতীয় অডিও প্রোগ্রাম (শুধুমাত্র অ্যানালগ টিভি টিউনার)"
 
-#: modules/access/v4l2/v4l2.c:275
+#: modules/access/v4l2/v4l2.c:273
 msgid "Primary language left, Secondary language right"
 msgstr "প্রাথমিক ভাষা বামে, দ্বিতীয় ভাষা ডানে"
 
-#: modules/access/v4l2/v4l2.c:287
+#: modules/access/v4l2/v4l2.c:285
 msgid "Video4Linux2"
 msgstr "Video4Linux2"
 
-#: modules/access/v4l2/v4l2.c:288
+#: modules/access/v4l2/v4l2.c:286
 msgid "Video4Linux2 input"
 msgstr "Video4Linux2 ইনপুট"
 
-#: modules/access/v4l2/v4l2.c:292
+#: modules/access/v4l2/v4l2.c:290
 msgid "Video input"
 msgstr "ভিডিও ইনপুট"
 
-#: modules/access/v4l2/v4l2.c:325 modules/access/v4l.c:124
+#: modules/access/v4l2/v4l2.c:326 modules/access/v4l.c:124
 msgid "Tuner"
 msgstr "টিউনার"
 
-#: modules/access/v4l2/v4l2.c:335
+#: modules/access/v4l2/v4l2.c:336
 msgid "Controls"
 msgstr "নিয়ন্ত্রনসমূহ"
 
-#: modules/access/v4l2/v4l2.c:336
+#: modules/access/v4l2/v4l2.c:337
 msgid "v4l2 driver controls, if supported by your v4l2 driver."
 msgstr "v4l2 ড্রাইভার নিয়ন্ত্রনসমূহ, v4l2 ড্রাইভার দ্বারা সমর্থিত হলে।"
 
-#: modules/access/v4l2/v4l2.c:394
+#: modules/access/v4l2/v4l2.c:395
 msgid "Video4Linux2 Compressed A/V"
 msgstr "Video4Linux2 A/V কে কম্প্রেস করেছে"
 
-#: modules/access/v4l2/v4l2.c:3181
+#: modules/access/v4l2/v4l2.c:3268
 msgid "Reset controls to default"
 msgstr "নিয়ন্ত্রন ডিফল্টে রিসেট করুন"
 
@@ -8080,7 +8088,7 @@ msgstr "সেগমেন্টসমূহ"
 
 #: modules/access/vcdx/access.c:433 modules/access/vcdx/access.c:715
 #: modules/access/vcdx/info.c:298 modules/access/vcdx/info.c:299
-#: modules/demux/mkv.cpp:5416
+#: modules/demux/mkv.cpp:5420
 msgid "Segment"
 msgstr "সেগমেন্ট"
 
@@ -8930,7 +8938,7 @@ msgid "PORTAUDIO audio output"
 msgstr "PORTAUDIO অডিও আউটপুট"
 
 #: modules/audio_output/pulse.c:61 modules/gui/macosx/intf.m:489
-#: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:1797
+#: modules/gui/macosx/intf.m:490 modules/gui/macosx/intf.m:1803
 #: modules/gui/pda/pda_interface.c:210 modules/gui/pda/pda_interface.c:1353
 #: modules/gui/qt4/main_interface.cpp:363
 #: modules/gui/qt4/main_interface.cpp:367
@@ -9503,7 +9511,7 @@ msgstr "Cinepak ভিডিও ডিকোডার"
 msgid "CMML annotations decoder"
 msgstr "CMML অ্যানোটেশন ডিকোডার"
 
-#: modules/codec/csri.c:52 modules/codec/libass.c:53
+#: modules/codec/csri.c:52 modules/codec/libass.c:57
 msgid "Subtitles (advanced)"
 msgstr "সাবটাইটেল (উন্নত)"
 
@@ -9741,7 +9749,7 @@ msgstr "কেট টেক্সট সাবটাইটেল প্যাক
 msgid "Kate comment"
 msgstr "কেট মন্তব্য"
 
-#: modules/codec/libass.c:54
+#: modules/codec/libass.c:58
 msgid "Subtitle renderers using libass"
 msgstr "libass ব্যবহার করে সাবটাইটেল রেন্ডার করে"
 
@@ -11185,8 +11193,8 @@ msgid "Buffer"
 msgstr "বাফার"
 
 #: modules/control/rc.c:76 modules/gui/macosx/embeddedwindow.m:135
-#: modules/gui/macosx/intf.m:1807 modules/gui/macosx/intf.m:1808
-#: modules/gui/macosx/intf.m:1809 modules/gui/macosx/intf.m:1810
+#: modules/gui/macosx/intf.m:1813 modules/gui/macosx/intf.m:1814
+#: modules/gui/macosx/intf.m:1815 modules/gui/macosx/intf.m:1816
 #: modules/gui/pda/pda_interface.c:248 modules/gui/pda/pda_interface.c:249
 #: modules/gui/qt4/menus.cpp:653 modules/misc/notify/xosd.c:243
 msgid "Pause"
@@ -12058,19 +12066,19 @@ msgstr "ডামি উপাদানসমূহ"
 msgid "Read and discard unknown EBML elements (not good for broken files)."
 msgstr "অজানা EBML উপাদানসমূহ পড়ে মুছে ফেলা হবে (ভাঙ্গা ফাইলের জন্য ভালো নয়)।"
 
-#: modules/demux/mkv.cpp:3369
+#: modules/demux/mkv.cpp:3373
 msgid "---  DVD Menu"
 msgstr "---  ডিভিডি মেনু"
 
-#: modules/demux/mkv.cpp:3375
+#: modules/demux/mkv.cpp:3379
 msgid "First Played"
 msgstr "প্রথমে চালানো"
 
-#: modules/demux/mkv.cpp:3377
+#: modules/demux/mkv.cpp:3381
 msgid "Video Manager"
 msgstr "ভিডিও ম্যানেজার"
 
-#: modules/demux/mkv.cpp:3383
+#: modules/demux/mkv.cpp:3387
 msgid "----- Title"
 msgstr "----- শিরোনাম"
 
@@ -12906,7 +12914,7 @@ msgid "Apply"
 msgstr "কার্যকর করুন"
 
 #: modules/gui/beos/PreferencesWindow.cpp:257 modules/gui/macosx/output.m:526
-#: modules/gui/macosx/playlist.m:671 modules/gui/macosx/prefs.m:125
+#: modules/gui/macosx/playlist.m:684 modules/gui/macosx/prefs.m:125
 #: modules/gui/macosx/simple_prefs.m:302 modules/gui/macosx/update.m:137
 #: modules/gui/qt4/ui/vlm.ui:209
 msgid "Save"
@@ -13257,7 +13265,7 @@ msgstr "এক্সট্রাক্ট করুন"
 msgid "Time"
 msgstr "সময়"
 
-#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:667
+#: modules/gui/macosx/bookmarks.m:129 modules/gui/macosx/playlist.m:680
 msgid "Untitled"
 msgstr "শিরোনামহীন"
 
@@ -13625,7 +13633,7 @@ msgstr "ক্যাপচার যন্ত্র খুলুন..."
 msgid "Open Recent"
 msgstr "সাম্প্রতিক খুলুন"
 
-#: modules/gui/macosx/intf.m:528 modules/gui/macosx/intf.m:2538
+#: modules/gui/macosx/intf.m:528 modules/gui/macosx/intf.m:2552
 msgid "Clear Menu"
 msgstr "মেনু পরিষ্কার করুন"
 
@@ -13777,57 +13785,57 @@ msgid ""
 msgstr ""
 "শুধুমাত্র আপনার ডিফল্ট ই-মেইল ঠিকানা জমা দেয়া হবে, আর কোনো তথ্য দেয়া হবে না।"
 
-#: modules/gui/macosx/intf.m:1635
+#: modules/gui/macosx/intf.m:1641
 #, c-format
 msgid "Volume: %d%%"
 msgstr "ভলিউম: %d%%"
 
-#: modules/gui/macosx/intf.m:2023
+#: modules/gui/macosx/intf.m:2029
 msgid "Update check failed"
 msgstr "আপডেট পরীক্ষা ব্যর্থ"
 
-#: modules/gui/macosx/intf.m:2023
+#: modules/gui/macosx/intf.m:2029
 msgid "Checking for updates was not enabled in this build."
 msgstr "এই বিল্ড-এ আপডেট পরীক্ষা সক্রিয় করা নেই।"
 
-#: modules/gui/macosx/intf.m:2130
+#: modules/gui/macosx/intf.m:2136
 msgid "Crash Report successfully sent"
 msgstr "ক্র্যাশ রিপোর্ট সফলভাবে পাঠানো হয়েছে"
 
-#: modules/gui/macosx/intf.m:2131
+#: modules/gui/macosx/intf.m:2137
 msgid "Thanks for your report!"
 msgstr "আপনার রিপোর্টের জন্য ধন্যবাদ!"
 
-#: modules/gui/macosx/intf.m:2139
+#: modules/gui/macosx/intf.m:2145
 msgid "Error when sending the Crash Report"
 msgstr "ক্র্যাশ রিপোর্ট প্রেরনের সময় সমস্যা দেখা দিয়েছে"
 
-#: modules/gui/macosx/intf.m:2230
+#: modules/gui/macosx/intf.m:2236
 msgid "No CrashLog found"
 msgstr "কোনো CrashLog পাওয়া যায়নি"
 
-#: modules/gui/macosx/intf.m:2230 modules/gui/macosx/prefs.m:148
+#: modules/gui/macosx/intf.m:2236 modules/gui/macosx/prefs.m:148
 #: modules/gui/macosx/simple_prefs.m:632
 msgid "Continue"
 msgstr "চালিয়ে যান"
 
-#: modules/gui/macosx/intf.m:2230
+#: modules/gui/macosx/intf.m:2236
 msgid "Couldn't find any trace of a previous crash."
 msgstr "পূর্ববর্তী ক্র্যাশের কোনো আলামত পাওয়া যায়নি।"
 
-#: modules/gui/macosx/intf.m:2257
+#: modules/gui/macosx/intf.m:2263
 msgid "Remove old preferences?"
 msgstr "পুরনো পছন্দসমূহ মুছে ফেলা হবে?"
 
-#: modules/gui/macosx/intf.m:2258
+#: modules/gui/macosx/intf.m:2264
 msgid "We just found an older version of VLC's preferences files."
 msgstr "আমরা এইমাত্র ভিএলসি এর পছন্দসমূহ ফাইলের একটি পুরাতন সংস্করন খুজে পেয়েছি।"
 
-#: modules/gui/macosx/intf.m:2259
+#: modules/gui/macosx/intf.m:2265
 msgid "Move To Trash and Relaunch VLC"
 msgstr "ট্র্যাশে পাঠান এবং ভিএলসি পুনরায় চালু করুন"
 
-#: modules/gui/macosx/intf.m:2259
+#: modules/gui/macosx/intf.m:2265
 msgid "Ignore"
 msgstr "উপেক্ষা করা হবে"
 
@@ -14335,7 +14343,7 @@ msgid "Sort Node by Author"
 msgstr "লেখক অনুসারে নোড সাজান"
 
 #: modules/gui/macosx/playlist.m:453 modules/gui/macosx/playlist.m:492
-#: modules/gui/macosx/playlist.m:1433
+#: modules/gui/macosx/playlist.m:1446
 msgid "No items in the playlist"
 msgstr "চালানোর তালিকায় কোনো আইটেম নেই"
 
@@ -14359,33 +14367,33 @@ msgstr "এক্সটেনডেড M3U"
 msgid "XML Shareable Playlist Format (XSPF)"
 msgstr "XML শেয়ারযোগ্য চালানোর তালিকা ফরম্যাট (XSPF)"
 
-#: modules/gui/macosx/playlist.m:486 modules/gui/macosx/playlist.m:1426
+#: modules/gui/macosx/playlist.m:486 modules/gui/macosx/playlist.m:1439
 #: modules/gui/macosx/wizard.m:1362
 #, c-format
 msgid "%i items"
 msgstr "%i আইটেম"
 
-#: modules/gui/macosx/playlist.m:494 modules/gui/macosx/playlist.m:1437
+#: modules/gui/macosx/playlist.m:494 modules/gui/macosx/playlist.m:1450
 msgid "1 item"
 msgstr "১টি আইটেম"
 
-#: modules/gui/macosx/playlist.m:670
+#: modules/gui/macosx/playlist.m:683
 msgid "Save Playlist"
 msgstr "চালানোর তালিকা সংরক্ষন করুন"
 
-#: modules/gui/macosx/playlist.m:1144 modules/gui/ncurses.c:1808
+#: modules/gui/macosx/playlist.m:1157 modules/gui/ncurses.c:1808
 msgid "Meta-information"
 msgstr "মেটা-তথ্য"
 
-#: modules/gui/macosx/playlist.m:1391
+#: modules/gui/macosx/playlist.m:1404
 msgid "New Node"
 msgstr "নতুন নোড"
 
-#: modules/gui/macosx/playlist.m:1392
+#: modules/gui/macosx/playlist.m:1405
 msgid "Please enter a name for the new node."
 msgstr "অনুগ্রহ করে নতুন নোডের জন্য একটি নাম এন্টার করুন।"
 
-#: modules/gui/macosx/playlist.m:1403
+#: modules/gui/macosx/playlist.m:1416
 msgid "Empty Folder"
 msgstr "খালি ফোল্ডার"
 
@@ -16197,29 +16205,29 @@ msgstr "পিক্সম্যাপ ফাইল পাওয়া যায়ন
 msgid "QNX RTOS video and audio output"
 msgstr "QNX RTOS ভিডিও এবং অডিও আউটপুট"
 
-#: modules/gui/qt4/components/extended_panels.cpp:978
-#: modules/gui/qt4/components/extended_panels.cpp:1043
+#: modules/gui/qt4/components/extended_panels.cpp:977
+#: modules/gui/qt4/components/extended_panels.cpp:1042
 msgid "Preamp\n"
 msgstr "প্রিঅ্যাম্প\n"
 
-#: modules/gui/qt4/components/extended_panels.cpp:979
-#: modules/gui/qt4/components/extended_panels.cpp:1044
+#: modules/gui/qt4/components/extended_panels.cpp:978
+#: modules/gui/qt4/components/extended_panels.cpp:1043
 msgid "dB"
 msgstr "ডেসিবল"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1132
+#: modules/gui/qt4/components/extended_panels.cpp:1131
 msgid "Enable spatializer"
 msgstr "স্পেশালাইজেশন সক্রিয় করুন"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1273
+#: modules/gui/qt4/components/extended_panels.cpp:1272
 msgid "Audio/Video"
 msgstr "অডিও/ভিডিও"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1289
+#: modules/gui/qt4/components/extended_panels.cpp:1288
 msgid "Advance of audio over video:"
 msgstr "ভিডিও এর চেয়ে অডিও এগিয়ে দিন:"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1298
+#: modules/gui/qt4/components/extended_panels.cpp:1297
 msgid ""
 "A positive value means that\n"
 "the audio is ahead of the video"
@@ -16227,15 +16235,15 @@ msgstr ""
 "একটি ধনাত্মক মান বুঝায় যে\n"
 "অডিওটি ভিডিও এর আগে আছে"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1306
+#: modules/gui/qt4/components/extended_panels.cpp:1305
 msgid "Subtitles/Video"
 msgstr "সাবটাইটেল/ভিডিও"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1322
+#: modules/gui/qt4/components/extended_panels.cpp:1321
 msgid "Advance of subtitles over video:"
 msgstr "ভিডিও এর চেয়ে সাবটাইটেল এগিয়ে দিন:"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1331
+#: modules/gui/qt4/components/extended_panels.cpp:1330
 msgid ""
 "A positive value means that\n"
 "the subtitles are ahead of the video"
@@ -16243,11 +16251,11 @@ msgstr ""
 "একটি ধনাত্মক মান বুঝায় যে\n"
 "সাবটাইটেলটি ভিডিও এর আগে আছে"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1350
+#: modules/gui/qt4/components/extended_panels.cpp:1349
 msgid "Speed of the subtitles:"
 msgstr "সাবটাইটেলের গতি:"
 
-#: modules/gui/qt4/components/extended_panels.cpp:1380
+#: modules/gui/qt4/components/extended_panels.cpp:1379
 msgid "Force update of this dialog's values"
 msgstr "এই ডায়লগের মানের আপডেট কার্যকর করুন"
 
@@ -17113,7 +17121,7 @@ msgstr "রুপান্তর/সংরক্ষন করুন... (&r)"
 msgid "&Streaming..."
 msgstr "স্ট্রিমিং... (&S)"
 
-#: modules/gui/qt4/menus.cpp:315 modules/gui/qt4/menus.cpp:933
+#: modules/gui/qt4/menus.cpp:315 modules/gui/qt4/menus.cpp:937
 msgid "&Quit"
 msgstr "প্রস্থান (&Q)"
 
@@ -17149,7 +17157,7 @@ msgstr "উন্নত নিয়ন্ত্রন (&A)"
 msgid "Visualizations selector"
 msgstr "দৃশ্যায়ণ নির্বাচক"
 
-#: modules/gui/qt4/menus.cpp:421
+#: modules/gui/qt4/menus.cpp:421 modules/gui/qt4/menus.cpp:867
 msgid "&Preferences..."
 msgstr "পছন্দসমূহ... (&P)"
 
@@ -17261,23 +17269,23 @@ msgstr "প্লেব্যাক (&P)"
 msgid "Show Playlist"
 msgstr "চালানোর তালিকা প্রদর্শন করা হবে"
 
-#: modules/gui/qt4/menus.cpp:852
+#: modules/gui/qt4/menus.cpp:854
 msgid "Minimal View..."
 msgstr "সংক্ষেপ প্রদর্শন..."
 
-#: modules/gui/qt4/menus.cpp:857
+#: modules/gui/qt4/menus.cpp:859
 msgid "Toggle Fullscreen Interface"
 msgstr "পূর্ণপর্দা ইন্টারফেস পরিবর্তন করুন"
 
-#: modules/gui/qt4/menus.cpp:917
+#: modules/gui/qt4/menus.cpp:921
 msgid "Hide VLC media player in taskbar"
 msgstr "ভিএলসি মিডিয়া প্লেয়ার টাস্কবারে লুকানো হবে"
 
-#: modules/gui/qt4/menus.cpp:923
+#: modules/gui/qt4/menus.cpp:927
 msgid "Show VLC media player"
 msgstr "ভিএলসি মিডিয়া প্লেয়ার প্রদর্শন করা হবে"
 
-#: modules/gui/qt4/menus.cpp:931
+#: modules/gui/qt4/menus.cpp:935
 msgid "&Open Media"
 msgstr "মিডিয়া খুলুন (&O)"
 
@@ -18795,7 +18803,7 @@ msgstr "GnuTLS সার্ভার"
 msgid "Gtk+ GUI helper"
 msgstr "Gtk+ GUI সহায়িকা"
 
-#: modules/misc/inhibit.c:66
+#: modules/misc/inhibit.c:69
 msgid "Power Management Inhibitor"
 msgstr "পাওয়ার ম্যানেজমেন্ট ইনহিবিটর"
 
@@ -19705,15 +19713,15 @@ msgstr "SAP ঘোষনাসমূহ"
 msgid "SDP Descriptions parser"
 msgstr "SDP বিবরন পার্সার"
 
-#: modules/services_discovery/sap.c:875 modules/services_discovery/sap.c:879
+#: modules/services_discovery/sap.c:877 modules/services_discovery/sap.c:881
 msgid "Session"
 msgstr "সেশন"
 
-#: modules/services_discovery/sap.c:875
+#: modules/services_discovery/sap.c:877
 msgid "Tool"
 msgstr "টুল"
 
-#: modules/services_discovery/sap.c:879
+#: modules/services_discovery/sap.c:881
 msgid "User"
 msgstr "ব্যবহারকারী"
 

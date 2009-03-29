@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: vlc 0.9.9\n"
 "Report-Msgid-Bugs-To: vlc-devel@videolan.org\n"
-"POT-Creation-Date: 2009-01-26 22:05+0000\n"
+"POT-Creation-Date: 2009-03-22 19:31+0000\n"
 "PO-Revision-Date: 2009-01-23 14:45+0300\n"
 "Last-Translator: Ara Bextiyar <arastein@gmail.com>\n"
 "Language-Team: Soranî <arastein@gmail.com>\n"
@@ -299,7 +299,7 @@ msgid ""
 msgstr ""
 
 #: include/vlc_config_cat.h:172 modules/services_discovery/sap.c:127
-#: modules/services_discovery/sap.c:323
+#: modules/services_discovery/sap.c:339
 msgid "SAP"
 msgstr "SAP"
 
@@ -993,20 +993,20 @@ msgstr "ڕێژەی چوارچێوە"
 msgid "Subtitle"
 msgstr "ژێرنووس"
 
-#: src/input/input.c:2209
+#: src/input/input.c:2210
 msgid "Your input can't be opened"
 msgstr ""
 
-#: src/input/input.c:2210
+#: src/input/input.c:2211
 #, c-format
 msgid "VLC is unable to open the MRL '%s'. Check the log for details."
 msgstr ""
 
-#: src/input/input.c:2309
+#: src/input/input.c:2310
 msgid "VLC can't recognize the input's format"
 msgstr ""
 
-#: src/input/input.c:2310
+#: src/input/input.c:2311
 #, c-format
 msgid "The format of '%s' cannot be detected. Have a look the log for details."
 msgstr ""
@@ -1063,7 +1063,7 @@ msgstr "ڕێکخستن"
 msgid "URL"
 msgstr "URL"
 
-#: src/input/meta.c:64 modules/misc/notify/notify.c:288
+#: src/input/meta.c:64 modules/misc/notify/notify.c:317
 msgid "Now Playing"
 msgstr "ئێستا لێ دەدرێت"
 
@@ -3332,7 +3332,7 @@ msgstr ""
 #: modules/gui/macosx/intf.m:620 modules/gui/macosx/intf.m:628
 #: modules/gui/macosx/wizard.m:309 modules/gui/macosx/wizard.m:321
 #: modules/gui/macosx/wizard.m:1620 modules/gui/qt4/menus.cpp:670
-#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:302
+#: modules/gui/qt4/ui/streampanel.ui:108 modules/misc/notify/notify.c:332
 msgid "Next"
 msgstr "داهاتوو"
 
@@ -3344,7 +3344,7 @@ msgstr ""
 #: modules/gui/macosx/about.m:191 modules/gui/macosx/controls.m:887
 #: modules/gui/macosx/intf.m:493 modules/gui/macosx/intf.m:543
 #: modules/gui/macosx/intf.m:621 modules/gui/macosx/intf.m:627
-#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:300
+#: modules/gui/qt4/menus.cpp:668 modules/misc/notify/notify.c:330
 msgid "Previous"
 msgstr "پێشوو"
 
@@ -7458,7 +7458,7 @@ msgstr ""
 
 #: modules/access/vcdx/access.c:433 modules/access/vcdx/access.c:715
 #: modules/access/vcdx/info.c:298 modules/access/vcdx/info.c:299
-#: modules/demux/mkv.cpp:5416
+#: modules/demux/mkv.cpp:5420
 msgid "Segment"
 msgstr ""
 
@@ -11138,19 +11138,19 @@ msgstr ""
 msgid "Read and discard unknown EBML elements (not good for broken files)."
 msgstr ""
 
-#: modules/demux/mkv.cpp:3369
+#: modules/demux/mkv.cpp:3373
 msgid "---  DVD Menu"
 msgstr ""
 
-#: modules/demux/mkv.cpp:3375
+#: modules/demux/mkv.cpp:3379
 msgid "First Played"
 msgstr ""
 
-#: modules/demux/mkv.cpp:3377
+#: modules/demux/mkv.cpp:3381
 msgid "Video Manager"
 msgstr ""
 
-#: modules/demux/mkv.cpp:3383
+#: modules/demux/mkv.cpp:3387
 msgid "----- Title"
 msgstr ""
 
@@ -12640,7 +12640,7 @@ msgstr ""
 msgid "Open Recent"
 msgstr "کردنەوەی دوایینەکان"
 
-#: modules/gui/macosx/intf.m:528 modules/gui/macosx/intf.m:2542
+#: modules/gui/macosx/intf.m:528 modules/gui/macosx/intf.m:2552
 msgid "Clear Menu"
 msgstr "پاککردنەوەی مێنیو"
 
@@ -15943,7 +15943,7 @@ msgstr ""
 msgid "&Streaming..."
 msgstr ""
 
-#: modules/gui/qt4/menus.cpp:315 modules/gui/qt4/menus.cpp:933
+#: modules/gui/qt4/menus.cpp:315 modules/gui/qt4/menus.cpp:937
 msgid "&Quit"
 msgstr ""
 
@@ -15979,7 +15979,7 @@ msgstr ""
 msgid "Visualizations selector"
 msgstr ""
 
-#: modules/gui/qt4/menus.cpp:421
+#: modules/gui/qt4/menus.cpp:421 modules/gui/qt4/menus.cpp:867
 msgid "&Preferences..."
 msgstr ""
 
@@ -16091,23 +16091,23 @@ msgstr ""
 msgid "Show Playlist"
 msgstr "پیشاندانی لیستی لێدان"
 
-#: modules/gui/qt4/menus.cpp:852
+#: modules/gui/qt4/menus.cpp:854
 msgid "Minimal View..."
 msgstr "بینینی بچووک..."
 
-#: modules/gui/qt4/menus.cpp:857
+#: modules/gui/qt4/menus.cpp:859
 msgid "Toggle Fullscreen Interface"
 msgstr ""
 
-#: modules/gui/qt4/menus.cpp:917
+#: modules/gui/qt4/menus.cpp:921
 msgid "Hide VLC media player in taskbar"
 msgstr ""
 
-#: modules/gui/qt4/menus.cpp:923
+#: modules/gui/qt4/menus.cpp:927
 msgid "Show VLC media player"
 msgstr ""
 
-#: modules/gui/qt4/menus.cpp:931
+#: modules/gui/qt4/menus.cpp:935
 msgid "&Open Media"
 msgstr "&کردنەوەی ڕەنگاڵە"
 
@@ -18399,15 +18399,15 @@ msgstr ""
 msgid "SDP Descriptions parser"
 msgstr ""
 
-#: modules/services_discovery/sap.c:875 modules/services_discovery/sap.c:879
+#: modules/services_discovery/sap.c:877 modules/services_discovery/sap.c:881
 msgid "Session"
 msgstr "وەرز"
 
-#: modules/services_discovery/sap.c:875
+#: modules/services_discovery/sap.c:877
 msgid "Tool"
 msgstr "ئامێر"
 
-#: modules/services_discovery/sap.c:879
+#: modules/services_discovery/sap.c:881
 msgid "User"
 msgstr "بەکارهێنەر"
 
