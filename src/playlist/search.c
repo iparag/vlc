@@ -171,7 +171,7 @@ static bool playlist_LiveSearchUpdateInternal( playlist_item_t *p_root,
         }
         else
         {
-            if( input_item_MetaMatch( p_item->p_input, vlc_meta_Title, psz_string ) ||
+            if( strcasestr( p_item->p_input->psz_name, psz_string ) || /* Soon to be replaced by vlc_meta_Title */
                 input_item_MetaMatch( p_item->p_input, vlc_meta_Album, psz_string ) ||
                 input_item_MetaMatch( p_item->p_input, vlc_meta_Artist, psz_string ) )
             {
