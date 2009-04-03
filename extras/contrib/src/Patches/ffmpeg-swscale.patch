@@ -1,6 +1,7 @@
---- ffmpeg/libswscale/swscale.c	(revision 29136)
-+++ ffmpeg/libswscale/swscale.c	(working copy)
- -1101,8 +1101,7 @@
+diff -ruN libswscale/swscale.c libswscale/swscale.c
+--- libswscale/swscale.c	2009-04-03 19:36:49.000000000 +0200
++++ libswscale/swscale.c	2009-04-03 19:40:06.000000000 +0200
+@@ -1101,8 +1101,7 @@
  #endif
  
  #if ARCH_PPC
@@ -10,7 +11,7 @@
  #define COMPILE_ALTIVEC
  #endif
  #endif //ARCH_PPC
- -1778,8 +1777,8 @@
+@@ -1778,8 +1777,8 @@
  
  static SwsFunc getSwsFunc(int flags){
  
