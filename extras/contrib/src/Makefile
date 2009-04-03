@@ -886,7 +886,7 @@ faad2-$(FAAD2_VERSION).tar.gz:
 
 faad2: faad2-$(FAAD2_VERSION).tar.gz
 	$(EXTRACT_GZ)
-	(cd $@; ./bootstrap)
+	(cd $@; sh bootstrap)
 
 .faad: faad2
 	(cd $< && $(HOSTCC) ./configure $(HOSTCONF) --disable-shared --prefix=$(PREFIX) CFLAGS="-O3" && sed -i.orig "s/shrext_cmds/shrext/g" libtool && make -C libfaad && make -C libfaad install)
@@ -923,7 +923,9 @@ lame-$(LAME_VERSION).tar.gz:
 
 lame: lame-$(LAME_VERSION).tar.gz
 	$(EXTRACT_GZ)
+ifdef HAVE_WIN32
 	patch -p0 < Patches/libmp3lame-mingw32.patch
+endif
 
 .lame: lame
 	(cd $<; $(HOSTCC) ./configure $(HOSTCONF) --prefix=$(PREFIX) --disable-analyser-hooks --disable-decoder --disable-shared --disable-gtktest --disable-frontend && make && make install)
