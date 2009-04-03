@@ -1058,7 +1058,7 @@ DISTCLEAN_PKG += amrwb-$(LIBAMR_WB_VERSION).tar.bz2
 
 ifdef SVN
 ffmpeg:
-	$(SVN) co $(FFMPEG_SVN) ffmpeg -r 18254
+	$(SVN) co $(FFMPEG_SVN) ffmpeg -r 18328
 ifeq ($(HOST),i586-pc-beos)
 	(cd $@; patch -p0 < ../Patches/ffmpeg-svn-beos.patch)
 endif
@@ -1067,6 +1067,9 @@ ifdef HAVE_WINCE
 endif
 ifdef HAVE_BEOS
 	(cd $@; patch -p0 < ../Patches/ffmpeg-alignment.patch)
+endif
+ifdef HAVE_DARWIN_OS
+        (cd $@; patch -p0 < ../Patches/ffmpeg-swscale.patch)
 endif
 ifdef HAVE_DARWIN_OS_ON_INTEL
 	(cd $@; patch -p0 < ../Patches/ffmpeg-macosx-intel-mmx.patch)
