@@ -1069,7 +1069,7 @@ ifdef HAVE_BEOS
 	(cd $@; patch -p0 < ../Patches/ffmpeg-alignment.patch)
 endif
 ifdef HAVE_DARWIN_OS
-        (cd $@; patch -p0 < ../Patches/ffmpeg-swscale.patch)
+	(cd $@; patch -p0 < ../Patches/ffmpeg-swscale.patch)
 endif
 ifdef HAVE_DARWIN_OS_ON_INTEL
 	(cd $@; patch -p0 < ../Patches/ffmpeg-macosx-intel-mmx.patch)
