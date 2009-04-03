@@ -431,14 +431,11 @@ vlc_module_begin();
 #if X264_BUILD >= 55 /* r607 */
 #  if X264_BUILD < 67 /* r1117 */
     add_bool( SOUT_CFG_PREFIX "pre-scenecut", 0, NULL, PRESCENE_TEXT,
-<<<<<<< HEAD:modules/codec/x264.c
               PRESCENE_LONGTEXT, false );
-=======
               PRESCENE_LONGTEXT, false )
 #  else
     add_obsolete_bool( "pre-scenecut" )
 #  endif
->>>>>>> d46728d... x264: obsolete pre-scenecut option.:modules/codec/x264.c
 #endif
 
     add_integer( SOUT_CFG_PREFIX "bframes", 0, NULL, BFRAMES_TEXT,
