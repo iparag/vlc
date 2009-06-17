@@ -97,12 +97,12 @@ static void held_objects_destroy (void *);
 static vlc_mutex_t structure_lock;
 static unsigned    object_counter = 0;
 
+
 void *__vlc_custom_create( vlc_object_t *p_this, size_t i_size,
                            int i_type, const char *psz_type )
 {
     vlc_object_t *p_new;
     vlc_object_internals_t *p_priv;
-
     /* NOTE:
      * VLC objects are laid out as follow:
      * - first the LibVLC-private per-object data,
@@ -487,6 +487,7 @@ int __vlc_object_waitpipe( vlc_object_t *obj )
         {
             internals->pipes[0] = pfd[0];
             internals->pipes[1] = pfd[1];
+
             pfd[0] = pfd[1] = -1;
         }
         killed = obj->b_die;
@@ -505,14 +506,14 @@ int __vlc_object_waitpipe( vlc_object_t *obj )
 
         msg_Dbg (obj, "waitpipe: object already dying");
         if (fd != -1)
-            close (fd);
+         close (fd);
     }
 
     /* Race condition: two threads call pipe() - unlikely */
     if (pfd[0] != -1)
-        close (pfd[0]);
+     close (pfd[0]);
     if (pfd[1] != -1)
-        close (pfd[1]);
+     close (pfd[1]);
 
     return internals->pipes[0];
 }
@@ -568,6 +569,23 @@ void __vlc_object_signal_unlocked( vlc_object_t *obj )
  * Requests termination of an object.
  * If the object is LibVLC, also request to terminate all its children.
  */
+void __vlc_close_pipe( vlc_object_t *p_this, int i_number)
+{
+ vlc_object_internals_t *priv = vlc_internals( p_this );
+ int fd; 
+
+ vlc_spin_lock (&priv->spin);
+ fd = priv->pipes[i_number];
+ priv->pipes[i_number] = -1;
+ vlc_spin_unlock (&priv->spin);
+
+ if( fd != -1 )
+ {
+  msg_Dbg (p_this, "waitpipe[%d]: object killed",fd);
+  close (fd);
+ }
+}
+
 void __vlc_object_kill( vlc_object_t *p_this )
 {
     vlc_object_internals_t *priv = vlc_internals( p_this );
@@ -575,17 +593,10 @@ void __vlc_object_kill( vlc_object_t *p_this )
 
     vlc_object_lock( p_this );
     p_this->b_die = true;
+   
+    __vlc_close_pipe( p_this, 1);
+    __vlc_close_pipe( p_this, 0);
 
-    vlc_spin_lock (&priv->spin);
-    fd = priv->pipes[1];
-    priv->pipes[1] = -1;
-    vlc_spin_unlock (&priv->spin);
-
-    if( fd != -1 )
-    {
-        msg_Dbg (p_this, "waitpipe: object killed");
-        close (fd);
-    }
 
     vlc_object_signal_unlocked( p_this );
     /* This also serves as a memory barrier toward vlc_object_alive(): */
