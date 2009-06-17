@@ -61,6 +61,8 @@
 
 #include "vout.h"
 
+#include "../../../src/libvlc.h"
+
 /*****************************************************************************
  * picture_sys_t: direct buffer method descriptor
  *****************************************************************************
@@ -815,6 +817,15 @@ static void FirstDisplay( vout_thread_t *p_vout, picture_t *p_pic )
 
     /* use and restores proper display function for further pictures */
     p_vout->pf_display = Display;
+
+    vlc_event_t event;
+    libvlc_priv_t *p_priv;
+    if(vlc_object_alive( p_vout ) && !p_vout->b_error)
+    {
+     p_priv=libvlc_priv(p_vout->p_libvlc);
+     event.type=vlc_OutputThreadStarted;
+     vlc_event_send(&p_priv->p_event_manager,&event);
+    }
 }
 
 /* following functions are local */

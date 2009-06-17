@@ -48,6 +48,10 @@
 #   include <sys/stat.h>
 #endif
 
+#include <vlc_events.h>
+#include <vlc/libvlc_structures.h>
+#include <vlc/libvlc_events.h>
+#include "../control/libvlc_internal.h"
 /*****************************************************************************
  * Local prototypes
  *****************************************************************************/
@@ -92,6 +96,9 @@ static void AppendAttachment( int *pi_attachment, input_attachment_t ***ppp_atta
                               int i_new, input_attachment_t **pp_new );
 
 static void SubtitleAdd( input_thread_t *p_input, char *psz_subtitle, bool b_forced );
+
+static void* WaitDemuxThread( vlc_object_t *p_this );
+static void WaitDemuxDestructor( vlc_object_t * p_this );
 
 /*****************************************************************************
  * This function creates a new input, and returns a pointer
@@ -316,6 +323,7 @@ static input_thread_t *Create( vlc_object_t *p_parent, input_item_t *p_item,
  */
 static void Destructor( input_thread_t * p_input )
 {
+  vlc_event_t event;
     input_thread_private_t *priv = p_input->p;
 
 #ifndef NDEBUG
@@ -323,7 +331,6 @@ static void Destructor( input_thread_t * p_input )
     msg_Dbg( p_input, "Destroying the input for '%s'", psz_name);
     free( psz_name );
 #endif
-
     vlc_event_manager_fini( &p_input->p->event_manager );
 
     stats_TimerDump( p_input, STATS_TIMER_INPUT_LAUNCHING );
@@ -338,6 +345,10 @@ static void Destructor( input_thread_t * p_input )
 
     vlc_mutex_destroy( &priv->lock_control );
     free( priv );
+
+    libvlc_priv_t *p_priv=libvlc_priv(p_input->p_libvlc);
+    event.type=vlc_InputThreadFinished;
+    vlc_event_send(&p_priv->p_event_manager,&event);
 }
 
 /**
@@ -585,17 +596,27 @@ static void MainLoop( input_thread_t *p_input )
     int64_t i_start_mdate = mdate();
     int64_t i_intf_update = 0;
     int i_updates = 0;
+    vlc_object_t *p_wait_demux = NULL;
+    vlc_value_t value;
 
     /* Stop the timer */
     stats_TimerStop( p_input, STATS_TIMER_INPUT_LAUNCHING );
+    p_wait_demux = vlc_custom_create( p_input, sizeof( *p_wait_demux ),
+                                 VLC_OBJECT_GENERIC, "wait_demux" );
+    vlc_object_set_destructor( p_wait_demux, (vlc_destructor_t)WaitDemuxDestructor );
 
+    if( vlc_thread_create( p_wait_demux, "waitdemux", WaitDemuxThread,
+                           VLC_THREAD_PRIORITY_LOW, false ) )
+    {
+     msg_Err( p_input, "cannot create wait demux thread" );
+    }
+    var_Create( p_wait_demux, "demuxing", VLC_VAR_TIME );
     while( !p_input->b_die && !p_input->b_error && !p_input->p->input.b_eof )
     {
         bool b_force_update = false;
         int i_ret;
         int i_type;
         vlc_value_t val;
-
         /* Do the read */
         if( p_input->i_state != PAUSE_S )
         {
@@ -603,8 +624,13 @@ static void MainLoop( input_thread_t *p_input )
                 ( p_input->p->i_run > 0 && i_start_mdate+p_input->p->i_run < mdate() ) )
                 i_ret = 0; /* EOF */
             else
+            {
+                value.i_time = mdate();
+                var_Set( p_wait_demux, "demuxing", value );
                 i_ret = p_input->p->input.p_demux->pf_demux(p_input->p->input.p_demux);
-
+                value.i_time = 0;
+                var_Set( p_wait_demux, "demuxing", value );
+            }
             if( i_ret > 0 )
             {
                 /* TODO */
@@ -722,6 +748,7 @@ static void MainLoop( input_thread_t *p_input )
                 p_input->i_time = i_time;
                 val.i_time = i_time;
                 var_Change( p_input, "time", VLC_VAR_SETVALUE, &val, NULL );
+
             }
             if( !demux_Control( p_input->p->input.p_demux,
                                  DEMUX_GET_LENGTH, &i_length ) )
@@ -752,6 +779,10 @@ static void MainLoop( input_thread_t *p_input )
             }
         }
     }
+    vlc_object_detach( p_wait_demux );
+    value.i_time = -1;
+    var_Set( p_wait_demux, "demuxing", value );
+    vlc_object_release( p_wait_demux );
 }
 
 static void InitStatistics( input_thread_t * p_input )
@@ -2891,4 +2922,40 @@ bool input_AddSubtitles( input_thread_t *p_input, char *psz_subtitle,
 vlc_event_manager_t *input_get_event_manager( input_thread_t *p_input )
 {
     return &p_input->p->event_manager;
+}
+
+#define DEMUX_STOP_RESPONDING 5*1000000
+static void* WaitDemuxThread( vlc_object_t *p_this )
+{
+ vlc_event_t event;
+ libvlc_priv_t *p_priv;
+ vlc_value_t value;
+ bool b_stop_responding = FALSE;
+
+ p_priv = libvlc_priv( p_this->p_libvlc );
+ while(TRUE)
+ {
+  var_Get( p_this, "demuxing", &value  );
+  if( value.i_time == -1) break;
+  else if( value.i_time ==0 && b_stop_responding)
+  {
+   event.type=vlc_InputThreadResumeResponding;
+   vlc_event_send(&p_priv->p_event_manager,&event);
+   b_stop_responding = FALSE;
+  }
+  else if( value.i_time && mdate() - value.i_time > DEMUX_STOP_RESPONDING )
+  {
+   event.type=vlc_InputThreadStopResponding;
+   vlc_event_send(&p_priv->p_event_manager,&event);
+   value.i_time = mdate();
+   var_Set( p_this, "demuxing", value  );
+   b_stop_responding = TRUE;
+  }
+  msleep( 1*1000000 );
+ }
+ return NULL;
+}
+
+static void WaitDemuxDestructor( vlc_object_t * p_this )
+{
 }

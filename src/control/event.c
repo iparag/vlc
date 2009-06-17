@@ -2,7 +2,7 @@
  * event.c: New libvlc event control API
  *****************************************************************************
  * Copyright (C) 2007 the VideoLAN team
- * $Id $
+ * $Id$
  *
  * Authors: Filippo Carone <filippo@carone.org>
  *          Pierre d'Herbemont <pdherbemont # videolan.org>
@@ -76,7 +76,8 @@ libvlc_event_manager_new( void * p_obj, libvlc_instance_t * p_libvlc_inst,
 
     p_em->p_obj = p_obj;
     p_em->p_libvlc_instance = p_libvlc_inst;
-    libvlc_retain( p_libvlc_inst );
+    if(p_libvlc_inst)
+     libvlc_retain( p_libvlc_inst );
     vlc_array_init( &p_em->listeners_groups );
     vlc_mutex_init( &p_em->object_lock );
     vlc_mutex_init_recursive( &p_em->event_sending_lock );
@@ -107,7 +108,8 @@ void libvlc_event_manager_release( libvlc_event_manager_t * p_em )
         free( p_lg );
     }
     vlc_array_clear( &p_em->listeners_groups );
-    libvlc_release( p_em->p_libvlc_instance );
+    if(p_em->p_libvlc_instance)
+     libvlc_release( p_em->p_libvlc_instance );
     free( p_em );
 }
 
@@ -269,6 +271,8 @@ static const char event_type_to_name[][35] =
 
     EVENT(libvlc_MediaDiscovererStarted),
     EVENT(libvlc_MediaDiscovererEnded)
+
+
 #undef EVENT
 };
 
@@ -302,7 +306,6 @@ void libvlc_event_attach( libvlc_event_manager_t * p_event_manager,
         libvlc_exception_raise( p_e, "No Memory left" );
         return;
     }
-
     listener->event_type = event_type;
     listener->p_user_data = p_user_data;
     listener->pf_callback = pf_callback;
@@ -376,4 +379,36 @@ void libvlc_event_detach( libvlc_event_manager_t *p_event_manager,
     libvlc_exception_raise( p_e,
             "This object event manager doesn't know about '%s,%p,%p' event observer",
             libvlc_event_type_name(event_type), pf_callback, p_user_data );
+}
+
+#include "../libvlc.h"
+#include <vlc_events.h>
+void libvlc_instance_event_attach( libvlc_instance_t * p_instance,
+                          vlc_event_type_t event_type,
+                          vlc_event_callback_t pf_callback,
+                          void *p_user_data,
+                          libvlc_exception_t *p_e )
+{
+ libvlc_priv_t *p_priv;
+ if(p_instance) 
+ {
+  p_priv=libvlc_priv(p_instance->p_libvlc_int);
+  vlc_event_attach( &p_priv->p_event_manager, 
+   event_type, pf_callback, p_user_data ); 
+ }
+}
+
+void libvlc_instance_event_detach( libvlc_instance_t * p_instance,
+                          vlc_event_type_t event_type,
+                          vlc_event_callback_t pf_callback,
+                          void *p_user_data,
+                          libvlc_exception_t *p_e )
+{
+ libvlc_priv_t *p_priv;
+ if(p_instance)
+ {
+  p_priv=libvlc_priv(p_instance->p_libvlc_int);
+  vlc_event_detach( &p_priv->p_event_manager, 
+   event_type, pf_callback, p_user_data); 
+ }
 }

@@ -130,6 +130,20 @@ typedef enum vlc_event_type_t {
     vlc_ServicesDiscoveryItemRemoved,
     vlc_ServicesDiscoveryStarted,
     vlc_ServicesDiscoveryEnded
+
+    ,vlc_InputThreadFinished
+    ,vlc_OutputThreadStarted
+    ,vlc_InputThreadStopResponding
+    ,vlc_InputThreadResumeResponding
+    ,vlc_MouseMove
+    ,vlc_NCMouseMove
+    ,vlc_LButtonDown
+    ,vlc_LButtonUp
+    ,vlc_MButtonDown
+    ,vlc_MButtonUp
+    ,vlc_RButtonDown
+    ,vlc_RButtonUp
+    ,vlc_LButtonDblClk
 } vlc_event_type_t;
 
 /* Event definition */
@@ -197,6 +211,10 @@ typedef struct vlc_event_t
         {
             void * unused;
         } services_discovery_ended;
+        struct vlc_mouse_movements
+        {
+            int x, y;
+        } mouse_position_changed;
 
     } u;
 } vlc_event_t;
@@ -256,4 +274,17 @@ VLC_EXPORT(int, vlc_event_detach, ( vlc_event_manager_t *p_event_manager,
                                     vlc_event_callback_t pf_callback,
                                     void *p_user_data ));
 
+struct libvlc_instance_t;
+struct libvlc_exception_t;
+VLC_EXPORT(void, libvlc_instance_event_attach,( struct libvlc_instance_t * p_instance,
+                          vlc_event_type_t event_type,
+                          vlc_event_callback_t pf_callback,
+                          void *p_user_data,
+                          struct libvlc_exception_t *p_e ));
+
+VLC_EXPORT(void,libvlc_instance_event_detach,( struct libvlc_instance_t * p_instance,
+                          vlc_event_type_t event_type,
+                          vlc_event_callback_t pf_callback,
+                          void *p_user_data,
+                          struct libvlc_exception_t *p_e ));
 #endif /* VLC_EVENTS_H */

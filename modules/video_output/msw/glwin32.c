@@ -47,6 +47,8 @@
 
 #include "vout.h"
 
+#include "../../../src/libvlc.h"
+
 /*****************************************************************************
  * Local prototypes.
  *****************************************************************************/
@@ -436,4 +438,13 @@ static void FirstSwap( vout_thread_t *p_vout )
 
     /* use and restores proper swap function for further pictures */
     p_vout->pf_swap = GLSwapBuffers;
+
+    vlc_event_t event;
+    libvlc_priv_t *p_priv;
+    if(vlc_object_alive( p_vout ) && !p_vout->b_error)
+    {
+     p_priv=libvlc_priv(p_vout->p_libvlc);
+     event.type=vlc_OutputThreadStarted;
+     vlc_event_send(&p_priv->p_event_manager,&event);
+    }
 }

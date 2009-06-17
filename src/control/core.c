@@ -30,6 +30,7 @@
 #include <limits.h>
 #include <assert.h>
 
+#include "../libvlc.h"
 static const char nomemstr[] = "Insufficient memory";
 
 /*************************************************************************
@@ -103,6 +104,7 @@ void libvlc_exception_raise( libvlc_exception_t *p_exception,
 libvlc_instance_t * libvlc_new( int argc, const char *const *argv,
                                 libvlc_exception_t *p_e )
 {
+    libvlc_priv_t *p_priv;
     libvlc_instance_t *p_new;
     int i_ret;
     libvlc_int_t *p_libvlc_int = libvlc_InternalCreate();
@@ -133,6 +135,7 @@ libvlc_instance_t * libvlc_new( int argc, const char *const *argv,
         RAISENULL( "VLC initialization failed" );
     }
 
+
     p_new->p_libvlc_int = p_libvlc_int;
     p_new->p_vlm = NULL;
     p_new->b_playlist_locked = 0;
@@ -140,6 +143,36 @@ libvlc_instance_t * libvlc_new( int argc, const char *const *argv,
     p_new->p_callback_list = NULL;
     vlc_mutex_init(&p_new->instance_lock);
     vlc_mutex_init(&p_new->event_callback_lock);
+
+    p_priv=libvlc_priv(p_new->p_libvlc_int);
+    __vlc_event_manager_init( &p_priv->p_event_manager, p_new , p_new);
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_InputThreadFinished );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_OutputThreadStarted );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_InputThreadStopResponding );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_InputThreadResumeResponding );
+
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_MouseMove );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_NCMouseMove );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_LButtonDown );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_LButtonUp );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_MButtonDown );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_MButtonUp );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_RButtonDown );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_RButtonUp );
+    vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
+     vlc_LButtonDblClk );
 
     return p_new;
 }
@@ -156,6 +189,7 @@ void libvlc_retain( libvlc_instance_t *p_instance )
 
 void libvlc_release( libvlc_instance_t *p_instance )
 {
+    libvlc_priv_t *p_priv;
     vlc_mutex_t *lock = &p_instance->instance_lock;
     int refs;
 
@@ -167,6 +201,8 @@ void libvlc_release( libvlc_instance_t *p_instance )
 
     if( refs == 0 )
     {
+        p_priv=libvlc_priv(p_instance->p_libvlc_int);
+        vlc_event_manager_fini(&p_priv->p_event_manager);
         vlc_mutex_destroy( lock );
         vlc_mutex_destroy( &p_instance->event_callback_lock );
         libvlc_InternalCleanup( p_instance->p_libvlc_int );

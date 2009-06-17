@@ -48,7 +48,8 @@
 #include <wininet.h>
 
 using namespace std;
-
+#define WM_VLC_TRANSLATE_MESSAGE WM_USER+0x100
+#define _D_SYNCHRONIZE
 ////////////////////////////////////////////////////////////////////////
 //class factory
 
@@ -57,6 +58,8 @@ static LRESULT CALLBACK VLCInPlaceClassWndProc(HWND hWnd, UINT uMsg, WPARAM wPar
 
     switch( uMsg )
     {
+        case WM_DESTROY:
+         if(p_instance) p_instance->onDestroy();
         case WM_ERASEBKGND:
             return 1L;
 
@@ -72,10 +75,22 @@ static LRESULT CALLBACK VLCInPlaceClassWndProc(HWND hWnd, UINT uMsg, WPARAM wPar
                 EndPaint(hWnd, &ps);
             }
             return 0L;
-
+//        case WM_TIMER:
+        case WM_MOUSEMOVE:
+         if( p_instance && p_instance->isUserMode() ) 
+          p_instance->fireMouseMove(LOWORD(lParam),HIWORD(lParam));
+         break;
+        case WM_NCMOUSEMOVE:
+         if( p_instance && p_instance->isUserMode() ) 
+          p_instance->fireNCMouseMove(LOWORD(lParam),HIWORD(lParam));
+         break;
+        case WM_VLC_TRANSLATE_MESSAGE:
+          if(p_instance) p_instance->onTimer();
+          return 0L;
         default:
-            return DefWindowProc(hWnd, uMsg, wParam, lParam);
+          break;
     }
+    return DefWindowProc(hWnd, uMsg, wParam, lParam);
 };
 
 VLCPluginClass::VLCPluginClass(LONG *p_class_ref, HINSTANCE hInstance, REFCLSID rclsid) :
@@ -230,8 +245,9 @@ VLCPlugin::VLCPlugin(VLCPluginClass *p_class, LPUNKNOWN pUnkOuter) :
     this->pUnkOuter = (NULL != pUnkOuter) ? pUnkOuter : dynamic_cast<LPUNKNOWN>(this);
 
     // default picure
-    _p_pict = p_class->getInPlacePict();
-
+//    _p_pict = p_class->getInPlacePict();
+    _p_pict = NULL;
+    
     // make sure that persistable properties are initialized
     onInit();
 };
@@ -267,6 +283,7 @@ VLCPlugin::~VLCPlugin()
     SysFreeString(_bstr_baseurl);
 
     _p_class->Release();
+   
 };
 
 STDMETHODIMP VLCPlugin::QueryInterface(REFIID riid, void **ppv)
@@ -365,11 +382,39 @@ HRESULT VLCPlugin::onInit(void)
         _extent.cy = 240;
         HimetricFromDP(hDC, (LPPOINT)&_extent, 1);
         DeleteDC(hDC);
-
         return S_OK;
     }
     return CO_E_ALREADYINITIALIZED;
 };
+
+void VLCPlugin::pushMessage( _s_message_t message )
+{
+ if( !isInPlaceActive() ) return;
+ _s_message_t *p_message=new _s_message_t();
+ *p_message = message;
+ _q_events.push(p_message); 
+ PostMessage( _inplacewnd, WM_VLC_TRANSLATE_MESSAGE, 0, 0L );
+}
+
+_s_message_t VLCPlugin::popMessage()
+{
+ _s_message_t message,*p_message;
+
+ message._i_type = (vlc_event_type_t)0;
+ if( !_q_events.empty() )
+ {
+  p_message = _q_events.front();
+  message = *p_message;
+  _q_events.pop();
+  delete p_message;
+ }
+ return message;
+}
+
+BOOL VLCPlugin::findMessage( _s_message_t message )
+{
+ return FALSE;
+}
 
 HRESULT VLCPlugin::onLoad(void)
 {
@@ -409,6 +454,30 @@ HRESULT VLCPlugin::onLoad(void)
     setDirty(FALSE);
     return S_OK;
 };
+
+struct s_event_t
+{
+ vlc_event_type_t _i_event;
+ vlc_event_callback_t _pf_callback;
+};
+
+s_event_t p_event_callbacks[]=
+{
+ { vlc_InputThreadFinished, (vlc_event_callback_t)VLCPlugin::onInputThreadFinished },
+ { vlc_OutputThreadStarted, (vlc_event_callback_t)VLCPlugin::onOutputThreadStarted },
+ { vlc_InputThreadStopResponding, (vlc_event_callback_t)VLCPlugin::onInputThreadStopResponding },
+ { vlc_InputThreadResumeResponding, (vlc_event_callback_t)VLCPlugin::onInputThreadResumeResponding },
+ { vlc_MouseMove, (vlc_event_callback_t)VLCPlugin::onMouseMove },
+ { vlc_NCMouseMove, (vlc_event_callback_t)VLCPlugin::onNCMouseMove },
+ { vlc_LButtonDown, (vlc_event_callback_t)VLCPlugin::onLButtonDown },
+ { vlc_LButtonUp, (vlc_event_callback_t)VLCPlugin::onLButtonUp },
+ { vlc_MButtonDown, (vlc_event_callback_t)VLCPlugin::onMButtonDown },
+ { vlc_MButtonUp, (vlc_event_callback_t)VLCPlugin::onMButtonUp },
+ { vlc_RButtonDown, (vlc_event_callback_t)VLCPlugin::onRButtonDown },
+ { vlc_RButtonUp, (vlc_event_callback_t)VLCPlugin::onRButtonUp },
+ { vlc_LButtonDblClk, (vlc_event_callback_t)VLCPlugin::onLButtonDblClk },
+};
+int i_callbacks_length = sizeof(p_event_callbacks) / sizeof(s_event_t);
 
 HRESULT VLCPlugin::getVLC(libvlc_instance_t** pp_libvlc)
 {
@@ -477,6 +546,7 @@ HRESULT VLCPlugin::getVLC(libvlc_instance_t** pp_libvlc)
         if( _b_autoloop )
             ppsz_argv[ppsz_argc++] = "--loop";
 
+
         libvlc_exception_t ex;
         libvlc_exception_init(&ex);
 
@@ -486,6 +556,20 @@ HRESULT VLCPlugin::getVLC(libvlc_instance_t** pp_libvlc)
             *pp_libvlc = NULL;
             libvlc_exception_clear(&ex);
             return E_FAIL;
+        }
+        
+        for( int i_counter = 0; i_counter < i_callbacks_length ; i_counter++ )
+        {
+         libvlc_exception_init(&ex);
+         libvlc_instance_event_attach(_p_libvlc,
+          p_event_callbacks[i_counter]._i_event,
+          p_event_callbacks[i_counter]._pf_callback, this, &ex);
+     
+         if( libvlc_exception_raised(&ex) )
+         {
+          libvlc_exception_clear(&ex);
+          return E_FAIL;
+         }
         }
 
         // initial volume setting
@@ -659,7 +743,26 @@ HRESULT VLCPlugin::onClose(DWORD dwSaveOption)
         vlcDataObject->onClose();
 
         if( p_libvlc )
-            libvlc_release(p_libvlc);
+        {
+         libvlc_exception_t ex;
+         libvlc_exception_init(&ex);
+ 
+         for( int i_counter = 0; i_counter < i_callbacks_length ; i_counter++ )
+         {
+          libvlc_exception_init(&ex);
+          libvlc_instance_event_detach(_p_libvlc,
+           p_event_callbacks[i_counter]._i_event,
+           p_event_callbacks[i_counter]._pf_callback, this, &ex);
+      
+          if( libvlc_exception_raised(&ex) )
+          {
+           libvlc_exception_clear(&ex);
+           return E_FAIL;
+          }
+         }
+
+         libvlc_release(p_libvlc);
+        }
     }
     return S_OK;
 };
@@ -699,12 +802,10 @@ HRESULT VLCPlugin::onActivateInPlace(LPMSG lpMesg, HWND hwndParent, LPCRECT lprc
 
     if( NULL == _inplacewnd )
         return E_FAIL;
-
     SetWindowLongPtr(_inplacewnd, GWLP_USERDATA, reinterpret_cast<LONG_PTR>(this));
 
     /* change cliprect coordinates system relative to window bounding rect */
     OffsetRect(&clipRect, -lprcPosRect->left, -lprcPosRect->top);
-
     HRGN clipRgn = CreateRectRgnIndirect(&clipRect);
     SetWindowRgn(_inplacewnd, clipRgn, TRUE);
 
@@ -739,6 +840,17 @@ HRESULT VLCPlugin::onActivateInPlace(LPMSG lpMesg, HWND hwndParent, LPCRECT lprc
     return S_OK;
 };
 
+void VLCPlugin::onDestroy()
+{
+//    SetWindowLongPtr(_inplacewnd, GWLP_USERDATA, NULL);
+ while( !_q_events.empty() )
+ {
+  _s_message_t *p_message = _q_events.front();
+  _q_events.pop();
+  delete p_message;
+ }
+}
+
 HRESULT VLCPlugin::onInPlaceDeactivate(void)
 {
     if( isRunning() )
@@ -749,7 +861,6 @@ HRESULT VLCPlugin::onInPlaceDeactivate(void)
 
     DestroyWindow(_inplacewnd);
     _inplacewnd = NULL;
-
     return S_OK;
 };
 
@@ -800,6 +911,7 @@ void VLCPlugin::setBackColor(OLE_COLOR backcolor)
     }
 };
 
+
 void VLCPlugin::setTime(int seconds)
 {
     if( seconds < 0 )
@@ -841,7 +953,7 @@ void VLCPlugin::onDraw(DVTARGETDEVICE * ptd, HDC hicTargetDev,
 
         RECT bounds = { lprcBounds->left, lprcBounds->top, lprcBounds->right, lprcBounds->bottom };
 
-        if( isUserMode() )
+        if( _p_pict == NULL && isUserMode() )
         {
             /* VLC is in user mode, just draw background color */
             COLORREF colorref = RGB(0, 0, 0);
@@ -862,9 +974,13 @@ void VLCPlugin::onDraw(DVTARGETDEVICE * ptd, HDC hicTargetDev,
         else
         {
             /* VLC is in design mode, draw the VLC logo */
-            FillRect(hdcDraw, &bounds, (HBRUSH)GetStockObject(WHITE_BRUSH));
-
-            LPPICTURE pict = getPicture();
+            LPPICTURE pict;
+            if(!isUserMode())
+            {
+             FillRect(hdcDraw, &bounds, (HBRUSH)GetStockObject(WHITE_BRUSH));
+             pict = _p_class->getInPlacePict();
+            }
+            else pict = getPicture();
             if( NULL != pict )
             {
                 OLE_XSIZE_HIMETRIC picWidth;
@@ -900,12 +1016,28 @@ void VLCPlugin::onDraw(DVTARGETDEVICE * ptd, HDC hicTargetDev,
                             0L, picHeight, picWidth, -picHeight, &wBounds);
                 }
                 else
-                    pict->Render(hdcDraw, dstX, dstY, picSize.cx, picSize.cy,
-                            0L, picHeight, picWidth, -picHeight, NULL);
-
+                {
+                  if(isUserMode())
+                  {
+                   HDC hdc = CreateCompatibleDC( hicTargetDev );
+                   HBITMAP hbitmap = CreateCompatibleBitmap( hicTargetDev, picSize.cx, picSize.cy );
+                   hbitmap = (HBITMAP) SelectObject( hdc, hbitmap );
+                   pict->Render(hdc, 0, 0, picSize.cx, picSize.cy,
+                        0L, picHeight, picWidth, -picHeight, NULL);
+                   StretchBlt( hdcDraw, 0, 0, width, height, hdc, 0, 0,
+                    picSize.cx, picSize.cy, SRCCOPY );
+                   hbitmap = (HBITMAP) SelectObject( hdc, hbitmap );
+                   if( hbitmap ) DeleteObject( hbitmap );
+                   DeleteDC( hdc );
+                  }
+                  else
+                   pict->Render(hdcDraw, dstX, dstY, picSize.cx, picSize.cy,
+                        0L, picHeight, picWidth, -picHeight, NULL);
+                }
                 pict->Release();
             }
-
+            if(!isUserMode())
+            {
             SelectObject(hdcDraw, GetStockObject(BLACK_BRUSH));
 
             MoveToEx(hdcDraw, bounds.left, bounds.top, NULL);
@@ -913,6 +1045,7 @@ void VLCPlugin::onDraw(DVTARGETDEVICE * ptd, HDC hicTargetDev,
             LineTo(hdcDraw, bounds.left+width-1, bounds.top+height-1);
             LineTo(hdcDraw, bounds.left, bounds.top+height-1);
             LineTo(hdcDraw, bounds.left, bounds.top);
+            }
         }
     }
 };
@@ -964,7 +1097,6 @@ void VLCPlugin::onPaint(HDC hdc, const RECT &bounds, const RECT &clipRect)
 void VLCPlugin::onPositionChange(LPCRECT lprcPosRect, LPCRECT lprcClipRect)
 {
     RECT clipRect = *lprcClipRect;
-
     //RedrawWindow(GetParent(_inplacewnd), &_posRect, NULL, RDW_INVALIDATE|RDW_ERASE|RDW_ALLCHILDREN);
 
     /*
@@ -1000,6 +1132,69 @@ void VLCPlugin::onPositionChange(LPCRECT lprcPosRect, LPCRECT lprcClipRect)
     }
 };
 
+void VLCPlugin::onTimer()
+{
+ _s_message_t message = popMessage();
+ switch( message._i_type )
+ {
+  case vlc_InputThreadFinished:
+   fireInputThreadFinished();
+  break;
+  
+  case vlc_OutputThreadStarted:
+   fireOutputThreadStarted();
+  break;
+
+  case vlc_InputThreadStopResponding:
+   fireInputThreadStopResponding();
+  break;
+
+  case vlc_InputThreadResumeResponding:
+   fireInputThreadResumeResponding();
+  break;
+
+  case vlc_MouseMove:
+   fireMouseMove( message.u.mouse_position_changed.x,
+    message.u.mouse_position_changed.y );
+  break;
+
+  case vlc_NCMouseMove:
+   fireNCMouseMove( message.u.mouse_position_changed.x,
+    message.u.mouse_position_changed.y );
+  break;
+
+  case vlc_LButtonDown:
+   fireLButtonDown();
+  break;
+
+  case vlc_LButtonUp:
+   fireLButtonUp();
+  break;
+
+  case vlc_MButtonDown:
+   fireMButtonDown();
+  break;
+
+  case vlc_MButtonUp:
+   fireMButtonUp();
+  break;
+
+  case vlc_RButtonDown:
+   fireRButtonDown();
+  break;
+
+  case vlc_RButtonUp:
+   fireRButtonUp();
+  break;
+
+  case vlc_LButtonDblClk:
+   fireLButtonDblClk();
+  break;
+
+ }
+
+}
+
 void VLCPlugin::freezeEvents(BOOL freeze)
 {
     vlcConnectionPointContainer->freezeEvents(freeze);
@@ -1027,3 +1222,273 @@ void VLCPlugin::fireOnStopEvent(void)
     DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
     vlcConnectionPointContainer->fireEvent(DISPID_StopEvent, &dispparamsNoArgs);
 };
+
+void VLCPlugin::fireInputThreadFinished(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_InputThreadFinished, &dispparamsNoArgs);
+};
+
+void VLCPlugin::fireOutputThreadStarted(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_OutputThreadStarted, &dispparamsNoArgs);
+};
+
+void VLCPlugin::fireInputThreadStopResponding(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_InputThreadStopResponding, &dispparamsNoArgs);
+};
+
+void VLCPlugin::fireInputThreadResumeResponding(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_InputThreadResumeResponding, &dispparamsNoArgs);
+};
+
+void VLCPlugin::fireMouseMove(int x, int y)
+{
+    VARIANTARG args[2];
+    memset( args, 0, sizeof(VARIANTARG)*2 );
+    args[0].vt = VT_INT;
+    args[0].intVal = x;
+    args[1].vt = VT_INT;
+    args[1].intVal = y;
+    DISPPARAMS dispparamsArgs = {args, NULL, 2, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_MouseMove, &dispparamsArgs);
+};
+
+void VLCPlugin::fireNCMouseMove(int x, int y)
+{
+    VARIANTARG args[2];
+    memset( args, 0, sizeof(VARIANTARG)*2 );
+    args[0].vt = VT_INT;
+    args[0].intVal = x;
+    args[1].vt = VT_INT;
+    args[1].intVal = y;
+    DISPPARAMS dispparamsArgs = {args, NULL, 2, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_NCMouseMove, &dispparamsArgs);
+};
+
+void VLCPlugin::fireLButtonDown(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_LButtonDown, &dispparamsNoArgs);
+};
+
+void VLCPlugin::fireLButtonUp(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_LButtonUp, &dispparamsNoArgs);
+};
+
+void VLCPlugin::fireMButtonDown(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_MButtonDown, &dispparamsNoArgs);
+};
+
+void VLCPlugin::fireMButtonUp(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_MButtonUp, &dispparamsNoArgs);
+};
+
+void VLCPlugin::fireRButtonDown(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_RButtonDown, &dispparamsNoArgs);
+};
+
+void VLCPlugin::fireRButtonUp(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_RButtonUp, &dispparamsNoArgs);
+};
+
+void VLCPlugin::fireLButtonDblClk(void)
+{
+    DISPPARAMS dispparamsNoArgs = {NULL, NULL, 0, 0};
+    vlcConnectionPointContainer->fireEvent(DISPID_LButtonDblClk, &dispparamsNoArgs);
+};
+
+
+
+void VLCPlugin::onInputThreadFinished(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+  _s_message_t message;
+  message._i_type = vlc_InputThreadFinished;
+  p_this->pushMessage( message );
+ #else
+  p_this->fireInputThreadFinished();
+ #endif
+};
+
+void VLCPlugin::onOutputThreadStarted(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+  _s_message_t message;
+  message._i_type = vlc_OutputThreadStarted;
+  p_this->pushMessage( message );
+ #else
+  p_this->fireOutputThreadStarted();
+ #endif
+};
+
+void VLCPlugin::onInputThreadStopResponding(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+  _s_message_t message;
+  message._i_type = vlc_InputThreadStopResponding;
+  p_this->pushMessage( message );
+ #else
+  p_this->fireInputThreadStopResponding();
+ #endif
+};
+
+void VLCPlugin::onInputThreadResumeResponding(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+  _s_message_t message;
+  message._i_type = vlc_InputThreadResumeResponding;
+  p_this->pushMessage( message );
+ #else
+  p_this->fireInputThreadResumeResponding();
+ #endif
+};
+
+void VLCPlugin::onMouseMove(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+  _s_message_t message;
+  message._i_type = vlc_MouseMove;
+  message.u.mouse_position_changed.x = p_event->u.mouse_position_changed.x;
+  message.u.mouse_position_changed.y = p_event->u.mouse_position_changed.y;
+  if( !p_this->findMessage( message ))
+   p_this->pushMessage( message );
+ #else
+  p_this->fireMouseMove(p_event->u.mouse_position_changed.x,
+   p_event->u.mouse_position_changed.y);
+ #endif
+}
+
+void VLCPlugin::onNCMouseMove(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+  _s_message_t message;
+  message._i_type = vlc_NCMouseMove;
+  message.u.mouse_position_changed.x = p_event->u.mouse_position_changed.x;
+  message.u.mouse_position_changed.y = p_event->u.mouse_position_changed.y;
+  if( !p_this->findMessage( message ))
+   p_this->pushMessage( message );
+ #else
+  p_this->fireNCMouseMove(p_event->u.mouse_position_changed.x,
+   p_event->u.mouse_position_changed.y);
+ #endif
+}
+
+void VLCPlugin::onLButtonDown(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+  _s_message_t message;
+  message._i_type = vlc_LButtonDown;
+  p_this->pushMessage( message );
+ #else
+  p_this->fireLButtonDown();
+ #endif
+}
+
+void VLCPlugin::onLButtonUp(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+ _s_message_t message;
+ message._i_type = vlc_LButtonUp;
+ p_this->pushMessage( message );
+ #else
+  p_this->fireLButtonUp();
+ #endif
+}
+
+void VLCPlugin::onMButtonDown(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+ _s_message_t message;
+ message._i_type = vlc_MButtonDown;
+ p_this->pushMessage( message );
+ #else
+  p_this->fireMButtonDown();
+ #endif
+}
+
+void VLCPlugin::onMButtonUp(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+ _s_message_t message;
+ message._i_type = vlc_MButtonUp;
+ p_this->pushMessage( message );
+ #else
+  p_this->fireMButtonUp();
+ #endif
+}
+
+void VLCPlugin::onRButtonDown(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+ _s_message_t message;
+ message._i_type = vlc_RButtonDown;
+ p_this->pushMessage( message );
+ #else
+  p_this->fireRButtonDown();
+ #endif
+}
+
+void VLCPlugin::onRButtonUp(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+ _s_message_t message;
+ message._i_type = vlc_RButtonUp;
+ p_this->pushMessage( message );
+ #else
+  p_this->fireRButtonUp();
+ #endif
+}
+
+void VLCPlugin::onLButtonDblClk(
+ vlc_event_t *p_event,void *p_data)
+{
+ VLCPlugin *p_this=(VLCPlugin*) p_data;
+ #ifdef _D_SYNCHRONIZE
+ _s_message_t message;
+ message._i_type = vlc_LButtonDblClk;
+ p_this->pushMessage( message );
+ #else
+  p_this->fireLButtonDblClk();
+ #endif
+}
+

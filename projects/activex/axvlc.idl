@@ -45,6 +45,7 @@ library AXVLC
     interface IVLCVideo;
     interface IVLCControl2;
     dispinterface DVLCEvents;
+    dispinterface DVLCEvents2;
 
     importlib("stdole2.tlb");
 
@@ -164,6 +165,19 @@ library AXVLC
     const int DISPID_PlayEvent  = 100;
     const int DISPID_PauseEvent = 101;
     const int DISPID_StopEvent  = 102;
+    const int DISPID_InputThreadFinished  = 103;
+    const int DISPID_OutputThreadStarted  = 104;
+    const int DISPID_InputThreadStopResponding = 105;
+    const int DISPID_InputThreadResumeResponding = 106;
+    const int DISPID_MouseMove = 107;
+    const int DISPID_NCMouseMove = 108;
+    const int DISPID_LButtonDown = 109;
+    const int DISPID_LButtonUp = 110;
+    const int DISPID_MButtonDown = 111;
+    const int DISPID_MButtonUp = 112;
+    const int DISPID_RButtonDown = 113;
+    const int DISPID_RButtonUp = 114;
+    const int DISPID_LButtonDblClk = 115;
 
     [
       uuid(DF48072F-5EF8-434e-9B40-E2F3AE759B5F),
@@ -181,6 +195,54 @@ library AXVLC
             void stop();
     };
 
+    [
+      uuid(99CCD983-13F4-4bbb-8F21-FBB8C701FED9),
+      helpstring("Event interface for VLC control2"),
+    ]
+    dispinterface DVLCEvents2
+    {
+        properties:
+        methods:
+            [id(DISPID_InputThreadFinished), helpstring("Player stopped")]
+            void InputThreadFinished();
+
+            [id(DISPID_OutputThreadStarted ), helpstring("Player started")]
+            void OutputThreadStarted();
+
+            [id(DISPID_InputThreadStopResponding ), helpstring("Player stopped because of unknown cause")]
+            void InputThreadStopResponding();
+
+            [id(DISPID_InputThreadResumeResponding ), helpstring("Player resumed without intrusion after stop")]
+            void InputThreadResumeResponding();
+
+            [id(DISPID_MouseMove ), helpstring("")]
+            void MouseMove([in] int x, [in] int y);
+
+            [id(DISPID_NCMouseMove ), helpstring("")]
+            void NCMouseMove([in] int x, [in] int y);
+
+            [id(DISPID_LButtonDown ), helpstring("")]
+            void LButtonDown();
+
+            [id(DISPID_LButtonUp ), helpstring("Left mouse button up")]
+            void LButtonUp();
+
+            [id(DISPID_MButtonDown ), helpstring("")]
+            void MButtonDown();
+
+            [id(DISPID_MButtonUp ), helpstring("")]
+            void MButtonUp();
+
+            [id(DISPID_RButtonDown ), helpstring("")]
+            void RButtonDown();
+
+            [id(DISPID_RButtonUp ), helpstring("")]
+            void RButtonUp();
+
+            [id(DISPID_LButtonDblClk ), helpstring("")]
+            void LButtonDblClk();
+
+    };
     [
       odl,
       uuid(9E0BD17B-2D3C-4656-B94D-03084F3FD9D4),
@@ -527,7 +589,9 @@ library AXVLC
 
         [propget, helpstring("Returns the audio object.")]
         HRESULT video([out, retval] IVLCVideo** obj);
+
     };
+
 
     [
       uuid(E23FE9C6-778E-49D4-B537-38FCDE4887D8),
@@ -550,5 +614,6 @@ library AXVLC
     {
         [default] interface IVLCControl2;
         interface IVLCControl;
+        [default, source] dispinterface DVLCEvents2;
     };
 };
