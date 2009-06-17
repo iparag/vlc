@@ -140,11 +140,11 @@ void __module_InitBank( vlc_object_t *p_this )
          * library just as another module, and for instance the configuration
          * options of main will be available in the module bank structure just
          * as for every other module. */
-        AllocateBuiltinModule( p_this, vlc_entry__main );
+//        AllocateBuiltinModule( p_this, vlc_entry__main );
     }
     else
         p_libvlc_global->p_module_bank->i_usage++;
-
+    AllocateBuiltinModule( p_this, vlc_entry__main );
     vlc_mutex_unlock( lock );
 }
 

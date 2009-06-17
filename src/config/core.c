@@ -143,7 +143,6 @@ int __config_GetType( vlc_object_t *p_this, const char *psz_name )
 int __config_GetInt( vlc_object_t *p_this, const char *psz_name )
 {
     module_config_t *p_config;
-
     p_config = config_FindConfig( p_this, psz_name );
 
     /* sanity checks */
@@ -407,12 +406,22 @@ void __config_PutFloat( vlc_object_t *p_this,
  * FIXME: This function really needs to be optimized.
  * FIXME: And now even more.
  *****************************************************************************/
+char *p_libvlc_names[]=
+{
+ "volume"
+};
+int i_libvlc_names_count=sizeof(p_libvlc_names)/sizeof(char*);
 module_config_t *config_FindConfig( vlc_object_t *p_this, const char *psz_name )
 {
     vlc_list_t *p_list;
-    int i_index;
+    int i_index,i_number;
 
     if( !psz_name ) return NULL;
+    for( i_number=0; i_number < i_libvlc_names_count; i_number++)
+    {
+     if(strcmp(p_libvlc_names[i_number],psz_name)==0)
+      break;
+    }
 
     p_list = vlc_list_find( p_this, VLC_OBJECT_MODULE, FIND_ANYWHERE );
 
@@ -421,6 +430,8 @@ module_config_t *config_FindConfig( vlc_object_t *p_this, const char *psz_name )
         module_config_t *p_item, *p_end;
         module_t *p_parser = (module_t *)p_list->p_values[i_index].p_object;
 
+        if(i_number<i_libvlc_names_count && p_parser->p_libvlc!=p_this->p_libvlc)
+         continue;
         if( !p_parser->i_config_items )
             continue;
 
