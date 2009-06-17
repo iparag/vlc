@@ -951,6 +951,7 @@ static int DeleteInner( playlist_t * p_playlist, playlist_item_t *p_item,
         /* Hack we don't call playlist_Control for lock reasons */
         if( b_stop )
         {
+set_current_status_item( p_playlist, NULL );
             p_playlist->request.i_status = PLAYLIST_STOPPED;
             p_playlist->request.b_request = true;
             p_playlist->request.p_item = NULL;
