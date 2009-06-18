@@ -195,6 +195,13 @@ STDMETHODIMP VLCPersistPropertyBag::Load(LPPROPERTYBAG pPropBag, LPERRORLOG pErr
         _p_instance->setBackColor(V_I4(&value));
         VariantClear(&value);
     }
+
+    V_VT(&value) = VT_I4;
+    if( S_OK == pPropBag->Read(OLESTR("deinterlacemode"), &value, pErrorLog) )
+    {
+        _p_instance->setDeinterlaceMode((enum VLCDeinterlaceMode)V_I4(&value));
+        VariantClear(&value);
+    }
     else
     {
         /*
@@ -278,6 +285,10 @@ STDMETHODIMP VLCPersistPropertyBag::Save(LPPROPERTYBAG pPropBag, BOOL fClearDirt
     pPropBag->Write(OLESTR("BackColor"), &value);
     VariantClear(&value);
 
+    V_VT(&value) = VT_I4;
+    V_I4(&value) = (long) _p_instance->getDeinterlaceMode();
+    pPropBag->Write(OLESTR("deinterlacemode"), &value);
+    VariantClear(&value);
     if( fClearDirty )
         _p_instance->setDirty(FALSE);
 

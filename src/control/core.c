@@ -146,10 +146,6 @@ libvlc_instance_t * libvlc_new( int argc, const char *const *argv,
 
     p_priv=libvlc_priv(p_new->p_libvlc_int);
     __vlc_event_manager_init( &p_priv->p_event_manager, p_new , p_new);
-/*
-    p_priv->p_event_manager = libvlc_event_manager_new( p_new ,
-     NULL ,NULL );
-*/
     vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
      vlc_InputThreadFinished );
     vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
@@ -178,10 +174,6 @@ libvlc_instance_t * libvlc_new( int argc, const char *const *argv,
     vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
      vlc_LButtonDblClk );
 
-/*
-    libvlc_event_manager_register_event_type( ,
-     libvlc_InputThreadFinished, NULL );
-*/
     return p_new;
 }
 
@@ -211,11 +203,6 @@ void libvlc_release( libvlc_instance_t *p_instance )
     {
         p_priv=libvlc_priv(p_instance->p_libvlc_int);
         vlc_event_manager_fini(&p_priv->p_event_manager);
-/*
-        if( p_priv->p_event_manager )
-         libvlc_event_manager_release( p_priv->p_event_manager );
-        p_priv->p_event_manager = NULL;
-*/
         vlc_mutex_destroy( lock );
         vlc_mutex_destroy( &p_instance->event_callback_lock );
         libvlc_InternalCleanup( p_instance->p_libvlc_int );
@@ -285,3 +272,80 @@ int libvlc_get_paused_bitmap( libvlc_instance_t *p_instance)
  return var_GetInteger( p_instance->p_libvlc_int, "paused-bitmap" );
 }
 
+char* deinterlace_modes[] =
+{
+ "disabled",
+ "discard",
+ "blend",
+ "mean",
+ "bob",
+ "linear",
+ "x"
+};
+int length_deinterlace_modes=sizeof(deinterlace_modes)/sizeof(char*);
+
+void libvlc_set_deinterlace_mode( libvlc_instance_t *p_instance , int i_mode )
+{
+ char *psz_filter, *psz_deinterlace, *psz_value;
+
+ if( i_mode >= 0 && i_mode < length_deinterlace_modes )
+ {
+  config_PutPsz( p_instance->p_libvlc_int, "deinterlace", 
+   deinterlace_modes[i_mode] );
+  psz_filter = config_GetPsz( p_instance->p_libvlc_int, "vout-filter" );
+  if( !psz_filter ) psz_filter = strdup("");
+  psz_deinterlace = strstr( psz_filter, "deinterlace" ); 
+  if( psz_deinterlace && !i_mode ) 
+  {
+   psz_value = malloc( strlen( psz_filter ) - strlen("deinterlace") + 1 );
+   if( psz_value )
+   {
+    if( psz_deinterlace != psz_filter && psz_deinterlace[-1] == ':')
+     psz_deinterlace[-1] = 0;
+    else *psz_deinterlace = 0;
+    strcpy( psz_value, psz_filter );
+    strcat( psz_value, psz_deinterlace + strlen( "deinterlace" ) );
+   }
+  }
+  else if( !psz_deinterlace && i_mode )
+  {
+   psz_value = malloc( strlen( psz_filter ) + strlen(":deinterlace") + 1 );
+   if( psz_value )
+   {
+    if( strlen(psz_filter) ) 
+    {
+     strcpy( psz_value, psz_filter );
+     strcat( psz_value,":");
+    }
+    else *psz_value=0;
+    strcat( psz_value, "deinterlace");
+   }
+  }
+  else psz_value = NULL;
+  if( psz_value )
+  {
+   config_PutPsz( p_instance->p_libvlc_int, "vout-filter", psz_value );
+   free( psz_value );
+  }
+  if( psz_filter ) free( psz_filter );
+ }
+}
+
+int libvlc_get_deinterlace_mode( libvlc_instance_t *p_instance )
+{
+ int i_counter;
+ char *psz_value;
+
+ psz_value = config_GetPsz( p_instance->p_libvlc_int, "deinterlace" );
+ if( !psz_value ) return 0;
+ for( i_counter = 0 ; i_counter< length_deinterlace_modes ; i_counter++ )
+ {
+  if( strcmp( psz_value, deinterlace_modes[i_counter] ) == 0 ) 
+  {
+   free( psz_value );
+   return i_counter;
+  }
+ }
+ free( psz_value );
+ return 0;
+}

@@ -2965,3 +2965,17 @@ STDMETHODIMP VLCControl2::put_PausedBitmap(int hbitmap)
     return NOERROR;
 };
 
+STDMETHODIMP VLCControl2::get_DeinterlaceMode(enum VLCDeinterlaceMode *mode)
+{
+    if( NULL == mode )
+        return E_POINTER;
+
+    *mode  = _p_instance->getDeinterlaceMode();
+    return NOERROR;
+};
+
+STDMETHODIMP VLCControl2::put_DeinterlaceMode(enum VLCDeinterlaceMode mode)
+{
+    _p_instance->setDeinterlaceMode( mode );
+    return NOERROR;
+};

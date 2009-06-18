@@ -602,6 +602,8 @@ public:
 
     STDMETHODIMP get_PausedBitmap(int *hbitmap);
     STDMETHODIMP put_PausedBitmap(int hbitmap);
+    STDMETHODIMP get_DeinterlaceMode(enum VLCDeinterlaceMode *mode);
+    STDMETHODIMP put_DeinterlaceMode(enum VLCDeinterlaceMode mode);
 
 protected:
     HRESULT loadTypeInfo();
