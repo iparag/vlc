@@ -364,6 +364,17 @@ vout_thread_t * __vout_Create( vlc_object_t *p_parent, video_format_t *p_fmt )
     p_vout->p_window = NULL;
     p_vout->i_par_num = p_vout->i_par_den = 1;
 
+    p_vout->_i_paused_bitmap = 
+     var_GetInteger( p_vout->p_libvlc, "paused-bitmap" );
+    p_vout->_i_paused_bitmap_width = 
+     var_GetInteger( p_vout->p_libvlc, "paused-bitmap-width" );
+    p_vout->_i_paused_bitmap_height = 
+     var_GetInteger( p_vout->p_libvlc, "paused-bitmap-height" );
+
+    p_vout->_i_render_bitmap = 0;
+    p_vout->_i_render_bitmap_width = 0;
+    p_vout->_i_render_bitmap_height = 0;
+
     /* Initialize locks */
     vlc_mutex_init( &p_vout->picture_lock );
     vlc_mutex_init( &p_vout->change_lock );
@@ -791,7 +802,10 @@ static void* RunThread( vlc_object_t *p_this )
     bool            b_drop_late;
 
     int             i_displayed = 0, i_lost = 0;
-
+/*
+    vlc_event_t event;
+    libvlc_priv_t *p_priv;
+*/
     /*
      * Initialize thread
      */
@@ -819,6 +833,15 @@ static void* RunThread( vlc_object_t *p_this )
      * Main loop - it is not executed if an error occurred during
      * initialization
      */
+
+/*
+    if(vlc_object_alive( p_vout ) && !p_vout->b_error)
+    {
+     p_priv=libvlc_priv(p_vout->p_libvlc);
+     event.type=vlc_OutputThreadStarted;
+     vlc_event_send(&p_priv->p_event_manager,&event);
+    }
+*/
     while( vlc_object_alive( p_vout ) && !p_vout->b_error )
     {
         /* Initialize loop variables */
@@ -1170,7 +1193,6 @@ static void* RunThread( vlc_object_t *p_this )
         }
         vlc_mutex_unlock( &p_vout->vfilter_lock );
     }
-
     /*
      * Error loop - wait until the thread destruction is requested
      */

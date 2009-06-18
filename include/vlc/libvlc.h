@@ -1288,6 +1288,8 @@ VLC_PUBLIC_API libvlc_log_message_t *libvlc_log_iterator_next( libvlc_log_iterat
                                                                libvlc_exception_t *p_e );
 
 /** @} */
+VLC_PUBLIC_API void libvlc_set_paused_bitmap( libvlc_instance_t *p_instance, int i_bitmap , int i_width, int i_height);
+VLC_PUBLIC_API int libvlc_get_paused_bitmap( libvlc_instance_t *p_instance );
 
 # ifdef __cplusplus
 }

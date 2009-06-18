@@ -146,6 +146,10 @@ libvlc_instance_t * libvlc_new( int argc, const char *const *argv,
 
     p_priv=libvlc_priv(p_new->p_libvlc_int);
     __vlc_event_manager_init( &p_priv->p_event_manager, p_new , p_new);
+/*
+    p_priv->p_event_manager = libvlc_event_manager_new( p_new ,
+     NULL ,NULL );
+*/
     vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
      vlc_InputThreadFinished );
     vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
@@ -174,6 +178,10 @@ libvlc_instance_t * libvlc_new( int argc, const char *const *argv,
     vlc_event_manager_register_event_type( &p_priv->p_event_manager, 
      vlc_LButtonDblClk );
 
+/*
+    libvlc_event_manager_register_event_type( ,
+     libvlc_InputThreadFinished, NULL );
+*/
     return p_new;
 }
 
@@ -203,6 +211,11 @@ void libvlc_release( libvlc_instance_t *p_instance )
     {
         p_priv=libvlc_priv(p_instance->p_libvlc_int);
         vlc_event_manager_fini(&p_priv->p_event_manager);
+/*
+        if( p_priv->p_event_manager )
+         libvlc_event_manager_release( p_priv->p_event_manager );
+        p_priv->p_event_manager = NULL;
+*/
         vlc_mutex_destroy( lock );
         vlc_mutex_destroy( &p_instance->event_callback_lock );
         libvlc_InternalCleanup( p_instance->p_libvlc_int );
@@ -246,3 +259,29 @@ const char * libvlc_get_changeset(void)
 {
     return VLC_Changeset();
 }
+
+
+void libvlc_set_paused_bitmap( libvlc_instance_t *p_instance, int i_bitmap, int i_width, int i_height)
+{
+ vlc_value_t val;
+
+ var_SetInteger( p_instance->p_libvlc_int, "paused-bitmap", i_bitmap );
+
+ val.i_int = var_GetInteger( p_instance->p_libvlc_int, "paused-bitmap" );
+ if( !val.i_int )
+ {
+  var_Create( p_instance->p_libvlc_int, "paused-bitmap", VLC_VAR_INTEGER );
+  var_Create( p_instance->p_libvlc_int, "paused-bitmap-width", VLC_VAR_INTEGER );
+  var_Create( p_instance->p_libvlc_int, "paused-bitmap-height", VLC_VAR_INTEGER );
+  var_SetInteger( p_instance->p_libvlc_int, "paused-bitmap", i_bitmap );
+ }
+ var_SetInteger( p_instance->p_libvlc_int, "paused-bitmap-width", i_width );
+ var_SetInteger( p_instance->p_libvlc_int, "paused-bitmap-height", i_height );
+
+}
+
+int libvlc_get_paused_bitmap( libvlc_instance_t *p_instance)
+{
+ return var_GetInteger( p_instance->p_libvlc_int, "paused-bitmap" );
+}
+

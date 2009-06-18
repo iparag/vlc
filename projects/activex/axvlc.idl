@@ -60,6 +60,7 @@ library AXVLC
         VLCPlayListCheckInsert  = 16
     } eVLCPlaylistMode;
 
+
     // playlist target position
     const int VLCPlayListEnd    = -666;
 
@@ -79,6 +80,7 @@ library AXVLC
     const int DISPID_BaseURL    = 110;
     const int DISPID_Toolbar     = 111;
 
+    const int DISPID_PausedBitmap = 112;
     [
       odl,
       uuid(C2FA41D0-B113-476e-AC8C-9BD14999C1C1),
@@ -590,6 +592,10 @@ library AXVLC
         [propget, helpstring("Returns the audio object.")]
         HRESULT video([out, retval] IVLCVideo** obj);
 
+        [id(DISPID_PausedBitmap), propget, helpstring("Returns/sets bitmap for not playing state.")]
+        HRESULT PausedBitmap([out, retval] int* hbitmap);
+        [id(DISPID_PausedBitmap), propput, helpstring("Returns/sets bitmap for not playing state.")]
+        HRESULT PausedBitmap([in] int hbitmap);
     };
 
 

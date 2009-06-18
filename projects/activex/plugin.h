@@ -143,6 +143,8 @@ public:
     void setBackColor(OLE_COLOR backcolor);
     OLE_COLOR getBackColor(void) { return _i_backcolor; };
 
+    void setPausedBitmap(int hbitmap);
+    int getPausedBitmap(void);
 
 
     void setVisible(BOOL fVisible);
@@ -345,6 +347,10 @@ private:
 
    std::queue<_s_message_t*> _q_events;
    
+   HBITMAP _paused_bitmap;
+   SIZEL _paused_bitmap_size;
+   HBITMAP _render_bitmap;
+   SIZEL _render_bitmap_size; 
    
 };
 

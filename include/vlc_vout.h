@@ -546,6 +546,13 @@ struct vout_thread_t
     bool            b_title_show;
     mtime_t         i_title_timeout;
     int             i_title_position;
+    /* Bitmap for show when player is not active */
+    int             _i_paused_bitmap;
+    int             _i_paused_bitmap_width;
+    int             _i_paused_bitmap_height;
+    int             _i_render_bitmap;
+    int             _i_render_bitmap_width;
+    int             _i_render_bitmap_height;
 };
 
 #define I_OUTPUTPICTURES p_vout->output.i_pictures

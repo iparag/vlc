@@ -48,6 +48,7 @@
 #include <wininet.h>
 
 using namespace std;
+extern "C" void f_write_log(char*,...);
 #define WM_VLC_TRANSLATE_MESSAGE WM_USER+0x100
 #define _D_SYNCHRONIZE
 ////////////////////////////////////////////////////////////////////////
@@ -248,6 +249,13 @@ VLCPlugin::VLCPlugin(VLCPluginClass *p_class, LPUNKNOWN pUnkOuter) :
 //    _p_pict = p_class->getInPlacePict();
     _p_pict = NULL;
     
+    _paused_bitmap = NULL;
+    _paused_bitmap_size.cx = 0;
+    _paused_bitmap_size.cy = 0;
+    _render_bitmap = NULL;
+    _render_bitmap_size.cx = 0;
+    _render_bitmap_size.cy = 0;
+
     // make sure that persistable properties are initialized
     onInit();
 };
@@ -284,6 +292,8 @@ VLCPlugin::~VLCPlugin()
 
     _p_class->Release();
    
+    if( _paused_bitmap ) DeleteObject( _paused_bitmap );
+    if( _render_bitmap ) DeleteObject( _render_bitmap );
 };
 
 STDMETHODIMP VLCPlugin::QueryInterface(REFIID riid, void **ppv)
@@ -455,6 +465,7 @@ HRESULT VLCPlugin::onLoad(void)
     return S_OK;
 };
 
+extern "C" void f_write_log(char*,...);
 struct s_event_t
 {
  vlc_event_type_t _i_event;
@@ -806,8 +817,10 @@ HRESULT VLCPlugin::onActivateInPlace(LPMSG lpMesg, HWND hwndParent, LPCRECT lprc
 
     /* change cliprect coordinates system relative to window bounding rect */
     OffsetRect(&clipRect, -lprcPosRect->left, -lprcPosRect->top);
+/*
     HRGN clipRgn = CreateRectRgnIndirect(&clipRect);
     SetWindowRgn(_inplacewnd, clipRgn, TRUE);
+*/
 
     if( _b_usermode )
     {
@@ -911,6 +924,54 @@ void VLCPlugin::setBackColor(OLE_COLOR backcolor)
     }
 };
 
+void VLCPlugin::setPausedBitmap(int hbitmap)
+{
+ if( NULL != hbitmap )
+ {
+  BITMAPINFO info;
+  HWND hwnd=( _inplacewnd )? _inplacewnd : GetDesktopWindow();
+  HDC hicTargetDev = GetDC( hwnd );
+
+  memset( &info, 0 ,sizeof(BITMAPINFO) );
+  info.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
+ 
+  if( GetDIBits( hicTargetDev, (HBITMAP)hbitmap, 0, 0, NULL, &info, DIB_RGB_COLORS ) )
+  {
+   SIZEL picSize = { info.bmiHeader.biWidth, info.bmiHeader.biHeight };
+
+   HDC hDC = CreateCompatibleDC( hicTargetDev );
+   HBITMAP hTmpBmp = (HBITMAP) SelectObject( hDC, (HBITMAP)hbitmap );
+   HDC hDrawDC = CreateCompatibleDC( hicTargetDev );
+   HBITMAP hDuplicate = CreateCompatibleBitmap( hicTargetDev, picSize.cx, picSize.cy );
+   hDuplicate = (HBITMAP) SelectObject( hDrawDC, hDuplicate );
+   BitBlt( hDrawDC, 0, 0, picSize.cx, picSize.cy, hDC, 0, 0, SRCCOPY);
+   SelectObject( hDC, hTmpBmp );
+   hDuplicate = (HBITMAP) SelectObject( hDrawDC, hDuplicate );
+   DeleteDC( hDC );
+   DeleteDC( hDrawDC );
+
+  
+   if( hDuplicate )
+   {
+    _paused_bitmap = hDuplicate;
+    _paused_bitmap_size = picSize;
+ 
+    if( isRunning() )
+     libvlc_set_paused_bitmap( _p_libvlc, (int)hDuplicate, 
+      (int)picSize.cx, (int)picSize.cy );
+   }
+  }
+  ReleaseDC( hwnd, hicTargetDev );
+ }
+}
+
+int VLCPlugin::getPausedBitmap(void)
+{
+ if( isRunning() )
+  return libvlc_get_paused_bitmap( _p_libvlc );
+ return 0;
+}
+
 
 void VLCPlugin::setTime(int seconds)
 {
@@ -943,6 +1004,7 @@ BOOL VLCPlugin::hasFocus(void)
     return GetActiveWindow() == _inplacewnd;
 };
 
+extern "C" void f_write_log(char *,...);
 void VLCPlugin::onDraw(DVTARGETDEVICE * ptd, HDC hicTargetDev,
         HDC hdcDraw, LPCRECTL lprcBounds, LPCRECTL lprcWBounds)
 {
@@ -955,6 +1017,27 @@ void VLCPlugin::onDraw(DVTARGETDEVICE * ptd, HDC hicTargetDev,
 
         if( _p_pict == NULL && isUserMode() )
         {
+          if(_paused_bitmap)
+          {
+            HDC hdc = CreateCompatibleDC( hicTargetDev );
+            HBITMAP hbitmap;
+            if( width != _render_bitmap_size.cx || 
+             height != _render_bitmap_size.cy )
+            {
+             hbitmap = (HBITMAP) SelectObject( hdc, _paused_bitmap );
+             StretchBlt( hdcDraw, 0, 0, width, height, hdc, 0, 0,
+              _paused_bitmap_size.cx, _paused_bitmap_size.cy, SRCCOPY );
+            }
+            else 
+            {
+             hbitmap = (HBITMAP) SelectObject( hdc, _render_bitmap );
+             BitBlt( hdcDraw, 0, 0, width, height, hdc, 0, 0, SRCCOPY );
+            }
+            SelectObject( hdc, hbitmap );
+            DeleteDC( hdc );
+          }  
+          else
+          {
             /* VLC is in user mode, just draw background color */
             COLORREF colorref = RGB(0, 0, 0);
             OleTranslateColor(_i_backcolor, (HPALETTE)GetStockObject(DEFAULT_PALETTE), &colorref);
@@ -970,6 +1053,7 @@ void VLCPlugin::onDraw(DVTARGETDEVICE * ptd, HDC hicTargetDev,
                 /* black background */
                 FillRect(hdcDraw, &bounds, (HBRUSH)GetStockObject(BLACK_BRUSH));
             }
+          }
         }
         else
         {
@@ -1087,7 +1171,17 @@ void VLCPlugin::onPaint(HDC hdc, const RECT &bounds, const RECT &clipRect)
                         SRCCOPY);
 
                 SelectObject(hdcDraw, oldBmp);
-                DeleteObject(hBitmap);
+                if( _p_pict == NULL && isUserMode() && _paused_bitmap &&
+                 ( width != _render_bitmap_size.cx || 
+                   height != _render_bitmap_size.cy )
+                 )
+                {
+                 if( _render_bitmap ) DeleteObject( _render_bitmap );
+                 _render_bitmap = hBitmap;
+                 _render_bitmap_size.cx = width;
+                 _render_bitmap_size.cy = height;
+                }
+                else DeleteObject(hBitmap);
             }
             DeleteDC(hdcDraw);
         }
@@ -1119,8 +1213,10 @@ void VLCPlugin::onPositionChange(LPCRECT lprcPosRect, LPCRECT lprcClipRect)
 
     /* change cliprect coordinates system relative to window bounding rect */
     OffsetRect(&clipRect, -lprcPosRect->left, -lprcPosRect->top);
+/*
     HRGN clipRgn = CreateRectRgnIndirect(&clipRect);
     SetWindowRgn(_inplacewnd, clipRgn, FALSE);
+*/
 
     //RedrawWindow(_videownd, &posRect, NULL, RDW_INVALIDATE|RDW_ERASE|RDW_ALLCHILDREN);
     if( isRunning() )

@@ -4,7 +4,7 @@
 
 
  /* File created by MIDL compiler version 7.00.0500 */
-/* at Wed Jun 17 18:25:58 2009
+/* at Thu Jun 18 11:39:40 2009
  */
 /* Compiler settings for axvlc.idl:
     Oicf, W1, Zp8, env=Win32 (32b run)
@@ -208,6 +208,8 @@ enum VLCPlaylistMode
 #define	DISPID_BaseURL	( 110 )
 
 #define	DISPID_Toolbar	( 111 )
+
+#define	DISPID_PausedBitmap	( 112 )
 
 #define	DISPID_PlayEvent	( 100 )
 
@@ -2246,6 +2248,12 @@ EXTERN_C const IID IID_IVLCControl2;
         virtual /* [helpstring][propget] */ HRESULT STDMETHODCALLTYPE get_video( 
             /* [retval][out] */ IVLCVideo **obj) = 0;
         
+        virtual /* [helpstring][propget][id] */ HRESULT STDMETHODCALLTYPE get_PausedBitmap( 
+            /* [retval][out] */ int *hbitmap) = 0;
+        
+        virtual /* [helpstring][propput][id] */ HRESULT STDMETHODCALLTYPE put_PausedBitmap( 
+            /* [in] */ int hbitmap) = 0;
+        
     };
     
 #else 	/* C style interface */
@@ -2391,6 +2399,14 @@ EXTERN_C const IID IID_IVLCControl2;
             IVLCControl2 * This,
             /* [retval][out] */ IVLCVideo **obj);
         
+        /* [helpstring][propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_PausedBitmap )( 
+            IVLCControl2 * This,
+            /* [retval][out] */ int *hbitmap);
+        
+        /* [helpstring][propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_PausedBitmap )( 
+            IVLCControl2 * This,
+            /* [in] */ int hbitmap);
+        
         END_INTERFACE
     } IVLCControl2Vtbl;
 
@@ -2498,6 +2514,12 @@ EXTERN_C const IID IID_IVLCControl2;
 
 #define IVLCControl2_get_video(This,obj)	\
     ( (This)->lpVtbl -> get_video(This,obj) ) 
+
+#define IVLCControl2_get_PausedBitmap(This,hbitmap)	\
+    ( (This)->lpVtbl -> get_PausedBitmap(This,hbitmap) ) 
+
+#define IVLCControl2_put_PausedBitmap(This,hbitmap)	\
+    ( (This)->lpVtbl -> put_PausedBitmap(This,hbitmap) ) 
 
 #endif /* COBJMACROS */
 
