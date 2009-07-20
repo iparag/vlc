@@ -408,7 +408,7 @@ void __config_PutFloat( vlc_object_t *p_this,
  *****************************************************************************/
 char *p_libvlc_names[]=
 {
- "volume"
+ "volume","vout-filter","deinterlace"
 };
 int i_libvlc_names_count=sizeof(p_libvlc_names)/sizeof(char*);
 module_config_t *config_FindConfig( vlc_object_t *p_this, const char *psz_name )

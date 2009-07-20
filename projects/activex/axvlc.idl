@@ -60,6 +60,17 @@ library AXVLC
         VLCPlayListCheckInsert  = 16
     } eVLCPlaylistMode;
 
+    typedef [public] enum VLCDeinterlaceMode
+    {
+        VLCDeinterlaceDisabled  =  0,
+        VLCDeinterlaceDiscard   =  1,
+        VLCDeinterlaceBlend     =  2,
+        VLCDeinterlaceMean      =  3,
+        VLCDeinterlaceBob       =  4,
+        VLCDeinterlaceLinear    =  5,
+        VLCDeinterlaceX         =  6
+    } eVLCDeinterlaceMode;
+
     // playlist target position
     const int VLCPlayListEnd    = -666;
 
@@ -80,6 +91,7 @@ library AXVLC
     const int DISPID_Toolbar     = 111;
 
     const int DISPID_PausedBitmap = 112;
+    const int DISPID_DeinterlaceMode = 113;
     [
       odl,
       uuid(C2FA41D0-B113-476e-AC8C-9BD14999C1C1),
@@ -595,6 +607,10 @@ library AXVLC
         HRESULT PausedBitmap([out, retval] int* hbitmap);
         [id(DISPID_PausedBitmap), propput, helpstring("Returns/sets bitmap for not playing state.")]
         HRESULT PausedBitmap([in] int hbitmap);
+        [id(DISPID_DeinterlaceMode), propget, helpstring("Returns/sets deinterlace mode.")]
+        HRESULT DeinterlaceMode([out, retval] enum VLCDeinterlaceMode *mode);
+        [id(DISPID_DeinterlaceMode), propput, helpstring("Returns/sets deinterlace mode.")]
+        HRESULT DeinterlaceMode([in] enum VLCDeinterlaceMode mode);
     };
 
     [

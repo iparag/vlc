@@ -271,3 +271,80 @@ int libvlc_get_paused_bitmap( libvlc_instance_t *p_instance)
  return var_GetInteger( p_instance->p_libvlc_int, "paused-bitmap" );
 }
 
+char* deinterlace_modes[] =
+{
+ "disabled",
+ "discard",
+ "blend",
+ "mean",
+ "bob",
+ "linear",
+ "x"
+};
+int length_deinterlace_modes=sizeof(deinterlace_modes)/sizeof(char*);
+
+void libvlc_set_deinterlace_mode( libvlc_instance_t *p_instance , int i_mode )
+{
+ char *psz_filter, *psz_deinterlace, *psz_value;
+
+ if( i_mode >= 0 && i_mode < length_deinterlace_modes )
+ {
+  config_PutPsz( p_instance->p_libvlc_int, "deinterlace", 
+   deinterlace_modes[i_mode] );
+  psz_filter = config_GetPsz( p_instance->p_libvlc_int, "vout-filter" );
+  if( !psz_filter ) psz_filter = strdup("");
+  psz_deinterlace = strstr( psz_filter, "deinterlace" ); 
+  if( psz_deinterlace && !i_mode ) 
+  {
+   psz_value = malloc( strlen( psz_filter ) - strlen("deinterlace") + 1 );
+   if( psz_value )
+   {
+    if( psz_deinterlace != psz_filter && psz_deinterlace[-1] == ':')
+     psz_deinterlace[-1] = 0;
+    else *psz_deinterlace = 0;
+    strcpy( psz_value, psz_filter );
+    strcat( psz_value, psz_deinterlace + strlen( "deinterlace" ) );
+   }
+  }
+  else if( !psz_deinterlace && i_mode )
+  {
+   psz_value = malloc( strlen( psz_filter ) + strlen(":deinterlace") + 1 );
+   if( psz_value )
+   {
+    if( strlen(psz_filter) ) 
+    {
+     strcpy( psz_value, psz_filter );
+     strcat( psz_value,":");
+    }
+    else *psz_value=0;
+    strcat( psz_value, "deinterlace");
+   }
+  }
+  else psz_value = NULL;
+  if( psz_value )
+  {
+   config_PutPsz( p_instance->p_libvlc_int, "vout-filter", psz_value );
+   free( psz_value );
+  }
+  if( psz_filter ) free( psz_filter );
+ }
+}
+
+int libvlc_get_deinterlace_mode( libvlc_instance_t *p_instance )
+{
+ int i_counter;
+ char *psz_value;
+
+ psz_value = config_GetPsz( p_instance->p_libvlc_int, "deinterlace" );
+ if( !psz_value ) return 0;
+ for( i_counter = 0 ; i_counter< length_deinterlace_modes ; i_counter++ )
+ {
+  if( strcmp( psz_value, deinterlace_modes[i_counter] ) == 0 ) 
+  {
+   free( psz_value );
+   return i_counter;
+  }
+ }
+ free( psz_value );
+ return 0;
+}

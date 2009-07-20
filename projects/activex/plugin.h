@@ -145,6 +145,8 @@ public:
 
     void setPausedBitmap(int hbitmap);
     int getPausedBitmap(void);
+    void setDeinterlaceMode(enum VLCDeinterlaceMode mode);
+    enum VLCDeinterlaceMode getDeinterlaceMode();
 
     void setVisible(BOOL fVisible);
     BOOL getVisible(void) { return _b_visible; };
@@ -351,6 +353,7 @@ private:
    HBITMAP _render_bitmap;
    SIZEL _render_bitmap_size; 
    
+   enum VLCDeinterlaceMode _deinterlace_mode;
 };
 
 #endif

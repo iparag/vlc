@@ -4,7 +4,7 @@
 
 
  /* File created by MIDL compiler version 7.00.0500 */
-/* at Thu Jun 18 11:39:40 2009
+/* at Thu Jun 04 16:05:34 2009
  */
 /* Compiler settings for axvlc.idl:
     Oicf, W1, Zp8, env=Win32 (32b run)
@@ -181,6 +181,17 @@ enum VLCPlaylistMode
 	VLCPlayListCheckInsert	= 16
     } 	eVLCPlaylistMode;
 
+typedef /* [public] */ 
+enum VLCDeinterlaceMode
+    {	VLCDeinterlaceDisabled	= 0,
+	VLCDeinterlaceDiscard	= 1,
+	VLCDeinterlaceBlend	= 2,
+	VLCDeinterlaceMean	= 3,
+	VLCDeinterlaceBob	= 4,
+	VLCDeinterlaceLinear	= 5,
+	VLCDeinterlaceX	= 6
+    } 	eVLCDeinterlaceMode;
+
 #define	VLCPlayListEnd	( -666 )
 
 #define	DISPID_BackColor	( -501 )
@@ -210,6 +221,8 @@ enum VLCPlaylistMode
 #define	DISPID_Toolbar	( 111 )
 
 #define	DISPID_PausedBitmap	( 112 )
+
+#define	DISPID_DeinterlaceMode	( 113 )
 
 #define	DISPID_PlayEvent	( 100 )
 
@@ -2254,6 +2267,12 @@ EXTERN_C const IID IID_IVLCControl2;
         virtual /* [helpstring][propput][id] */ HRESULT STDMETHODCALLTYPE put_PausedBitmap( 
             /* [in] */ int hbitmap) = 0;
         
+        virtual /* [helpstring][propget][id] */ HRESULT STDMETHODCALLTYPE get_DeinterlaceMode( 
+            /* [retval][out] */ enum VLCDeinterlaceMode *mode) = 0;
+        
+        virtual /* [helpstring][propput][id] */ HRESULT STDMETHODCALLTYPE put_DeinterlaceMode( 
+            /* [in] */ enum VLCDeinterlaceMode mode) = 0;
+        
     };
     
 #else 	/* C style interface */
@@ -2407,6 +2426,14 @@ EXTERN_C const IID IID_IVLCControl2;
             IVLCControl2 * This,
             /* [in] */ int hbitmap);
         
+        /* [helpstring][propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_DeinterlaceMode )( 
+            IVLCControl2 * This,
+            /* [retval][out] */ enum VLCDeinterlaceMode *mode);
+        
+        /* [helpstring][propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_DeinterlaceMode )( 
+            IVLCControl2 * This,
+            /* [in] */ enum VLCDeinterlaceMode mode);
+        
         END_INTERFACE
     } IVLCControl2Vtbl;
 
@@ -2520,6 +2547,12 @@ EXTERN_C const IID IID_IVLCControl2;
 
 #define IVLCControl2_put_PausedBitmap(This,hbitmap)	\
     ( (This)->lpVtbl -> put_PausedBitmap(This,hbitmap) ) 
+
+#define IVLCControl2_get_DeinterlaceMode(This,mode)	\
+    ( (This)->lpVtbl -> get_DeinterlaceMode(This,mode) ) 
+
+#define IVLCControl2_put_DeinterlaceMode(This,mode)	\
+    ( (This)->lpVtbl -> put_DeinterlaceMode(This,mode) ) 
 
 #endif /* COBJMACROS */
 

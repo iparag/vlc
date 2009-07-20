@@ -394,6 +394,7 @@ HRESULT VLCPlugin::onInit(void)
         HimetricFromDP(hDC, (LPPOINT)&_extent, 1);
         DeleteDC(hDC);
 
+        _deinterlace_mode = VLCDeinterlaceDisabled;
         return S_OK;
     }
     return CO_E_ALREADYINITIALIZED;
@@ -558,6 +559,34 @@ HRESULT VLCPlugin::getVLC(libvlc_instance_t** pp_libvlc)
         // loop mode is a configuration option only
         if( _b_autoloop )
             ppsz_argv[ppsz_argc++] = "--loop";
+
+        switch( _deinterlace_mode )
+        {
+         case VLCDeinterlaceDiscard:
+          ppsz_argv[ppsz_argc++] = "--vout-filter=deinterlace";
+          ppsz_argv[ppsz_argc++] = "--deinterlace=discard";
+          break;
+         case VLCDeinterlaceBlend:
+          ppsz_argv[ppsz_argc++] = "--vout-filter=deinterlace";
+          ppsz_argv[ppsz_argc++] = "--deinterlace=blend";
+          break;
+         case VLCDeinterlaceMean:
+          ppsz_argv[ppsz_argc++] = "--vout-filter=deinterlace";
+          ppsz_argv[ppsz_argc++] = "--deinterlace=mean";
+          break;
+         case VLCDeinterlaceBob:
+          ppsz_argv[ppsz_argc++] = "--vout-filter=deinterlace";
+          ppsz_argv[ppsz_argc++] = "--deinterlace=bob";
+          break;
+         case VLCDeinterlaceLinear:
+          ppsz_argv[ppsz_argc++] = "--vout-filter=deinterlace";
+          ppsz_argv[ppsz_argc++] = "--deinterlace=linear";
+          break;
+         case VLCDeinterlaceX:
+          ppsz_argv[ppsz_argc++] = "--vout-filter=deinterlace";
+          ppsz_argv[ppsz_argc++] = "--deinterlace=x";
+          break;
+        }
 
         libvlc_exception_t ex;
         libvlc_exception_init(&ex);
@@ -976,6 +1005,23 @@ int VLCPlugin::getPausedBitmap(void)
  return 0;
 }
 
+void VLCPlugin::setDeinterlaceMode(enum VLCDeinterlaceMode mode)
+{
+ if( isRunning() )
+  libvlc_set_deinterlace_mode( _p_libvlc, (int)mode );
+ _deinterlace_mode = mode;
+ setDirty(TRUE);
+}
+
+enum VLCDeinterlaceMode VLCPlugin::getDeinterlaceMode()
+{
+ if( isRunning() )
+ {
+  _deinterlace_mode = (enum VLCDeinterlaceMode)
+   libvlc_get_deinterlace_mode( _p_libvlc );
+ }
+ return _deinterlace_mode;
+}
 
 void VLCPlugin::setTime(int seconds)
 {
