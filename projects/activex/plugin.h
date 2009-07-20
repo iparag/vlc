@@ -27,11 +27,27 @@
 #include <olectl.h>
 
 #include <vlc/vlc.h>
+#include <vlc_events.h>
+
+#include <queue>
 
 extern "C" const GUID CLSID_VLCPlugin;
 extern "C" const GUID CLSID_VLCPlugin2;
 extern "C" const GUID LIBID_AXVLC;
 extern "C" const GUID DIID_DVLCEvents;
+extern "C" const GUID DIID_DVLCEvents2;
+
+struct _s_message_t
+{
+ vlc_event_type_t _i_type;
+ union
+ {
+  struct vlc_mousemovements
+  {
+   int x, y;
+  } mouse_position_changed;
+ } u;
+};
 
 class VLCPluginClass : public IClassFactory
 {
@@ -69,6 +85,8 @@ private:
     LPPICTURE   _inplace_picture;
 };
 
+#include "axvlc_idl.h"
+
 class VLCPlugin : public IUnknown
 {
 
@@ -84,7 +102,8 @@ public:
     /* custom methods */
     HRESULT getTypeLib(LCID lcid, ITypeLib **pTL) { return LoadRegTypeLib(LIBID_AXVLC, 1, 0, lcid, pTL); };
     REFCLSID getClassID(void) { return _p_class->getClassID(); };
-    REFIID getDispEventID(void) { return (REFIID)DIID_DVLCEvents; };
+    REFIID getDispEventID(void) { return (getClassID() == CLSID_VLCPlugin2)?
+     (REFIID)DIID_DVLCEvents2:(REFIID)DIID_DVLCEvents; };
 
     /*
     ** persistant properties
@@ -162,7 +181,7 @@ public:
         if( NULL != _p_pict )
             _p_pict->Release();
         if( NULL != pict )
-            _p_pict->AddRef();
+            pict->AddRef();
         _p_pict = pict;
     };
 
@@ -214,6 +233,8 @@ public:
     void onDraw(DVTARGETDEVICE * ptd, HDC hicTargetDev,
             HDC hdcDraw, LPCRECTL lprcBounds, LPCRECTL lprcWBounds);
     void onPaint(HDC hdc, const RECT &bounds, const RECT &pr);
+    void onTimer();
+    void onDestroy();
 
     /*
     ** control events
@@ -224,12 +245,55 @@ public:
     void fireOnPauseEvent(void);
     void fireOnStopEvent(void);
 
+    void fireInputThreadFinished(void);
+    void fireOutputThreadStarted(void);
+    void fireInputThreadStopResponding(void);
+    void fireInputThreadResumeResponding(void);
+    void fireMouseMove(int x,int y);
+    void fireNCMouseMove(int x,int y);
+    void fireLButtonDown(void);
+    void fireLButtonUp(void);
+    void fireMButtonDown(void);
+    void fireMButtonUp(void);
+    void fireRButtonDown(void);
+    void fireRButtonUp(void);
+    void fireLButtonDblClk(void);
     // controlling IUnknown interface
     LPUNKNOWN pUnkOuter;
 
+    static void VLCPlugin::onInputThreadFinished(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onOutputThreadStarted(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onInputThreadStopResponding(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onInputThreadResumeResponding(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onMouseMove(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onNCMouseMove(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onLButtonDown(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onLButtonUp(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onMButtonDown(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onMButtonUp(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onRButtonDown(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onRButtonUp(
+     vlc_event_t *p_event,void *p_data);
+    static void VLCPlugin::onLButtonDblClk(
+     vlc_event_t *p_event,void *p_data);
 protected:
 
     virtual ~VLCPlugin();
+    
+    void pushMessage( _s_message_t message );
+    _s_message_t popMessage( );
+    BOOL findMessage( _s_message_t message );
 
 private:
 
@@ -276,6 +340,10 @@ private:
     OLE_COLOR _i_backcolor;
     // indicates whether properties needs persisting
     BOOL _b_dirty;
+
+   std::queue<_s_message_t*> _q_events;
+   
+   
 };
 
 #endif

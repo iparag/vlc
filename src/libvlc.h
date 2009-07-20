@@ -204,6 +204,7 @@ struct vlc_object_internals_t
 
 #define vlc_internals( obj ) (((vlc_object_internals_t*)(VLC_OBJECT(obj)))-1)
 
+#include <vlc_events.h>
 /**
  * Private LibVLC instance data.
  */
@@ -243,6 +244,8 @@ typedef struct libvlc_priv_t
 
     /* Private playlist data (FIXME - playlist_t is too public...) */
     sout_instance_t   *p_sout; ///< kept sout instance (for playlist)
+
+    vlc_event_manager_t p_event_manager;
 } libvlc_priv_t;
 
 static inline libvlc_priv_t *libvlc_priv (libvlc_int_t *libvlc)

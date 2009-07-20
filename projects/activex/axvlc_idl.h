@@ -4,7 +4,7 @@
 
 
  /* File created by MIDL compiler version 7.00.0500 */
-/* at Fri Apr 25 11:37:37 2008
+/* at Wed Jun 17 18:25:58 2009
  */
 /* Compiler settings for axvlc.idl:
     Oicf, W1, Zp8, env=Win32 (32b run)
@@ -107,6 +107,12 @@ typedef interface DVLCEvents DVLCEvents;
 #endif 	/* __DVLCEvents_FWD_DEFINED__ */
 
 
+#ifndef __DVLCEvents2_FWD_DEFINED__
+#define __DVLCEvents2_FWD_DEFINED__
+typedef interface DVLCEvents2 DVLCEvents2;
+#endif 	/* __DVLCEvents2_FWD_DEFINED__ */
+
+
 #ifndef __IVLCPlaylistItems_FWD_DEFINED__
 #define __IVLCPlaylistItems_FWD_DEFINED__
 typedef interface IVLCPlaylistItems IVLCPlaylistItems;
@@ -163,6 +169,7 @@ extern "C"{
 
 
 
+
 typedef /* [public] */ 
 enum VLCPlaylistMode
     {	VLCPlayListInsert	= 1,
@@ -207,6 +214,32 @@ enum VLCPlaylistMode
 #define	DISPID_PauseEvent	( 101 )
 
 #define	DISPID_StopEvent	( 102 )
+
+#define	DISPID_InputThreadFinished	( 103 )
+
+#define	DISPID_OutputThreadStarted	( 104 )
+
+#define	DISPID_InputThreadStopResponding	( 105 )
+
+#define	DISPID_InputThreadResumeResponding	( 106 )
+
+#define	DISPID_MouseMove	( 107 )
+
+#define	DISPID_NCMouseMove	( 108 )
+
+#define	DISPID_LButtonDown	( 109 )
+
+#define	DISPID_LButtonUp	( 110 )
+
+#define	DISPID_MButtonDown	( 111 )
+
+#define	DISPID_MButtonUp	( 112 )
+
+#define	DISPID_RButtonDown	( 113 )
+
+#define	DISPID_RButtonUp	( 114 )
+
+#define	DISPID_LButtonDblClk	( 115 )
 
 
 EXTERN_C const IID LIBID_AXVLC;
@@ -2171,12 +2204,6 @@ EXTERN_C const IID IID_IVLCControl2;
         virtual /* [helpstring][propput][id] */ HRESULT STDMETHODCALLTYPE put_MRL( 
             /* [in] */ BSTR mrl) = 0;
         
-        virtual /* [helpstring][propget][id] */ HRESULT STDMETHODCALLTYPE get_Toolbar( 
-            /* [retval][out] */ VARIANT_BOOL *visible) = 0;
-        
-        virtual /* [helpstring][propput][id] */ HRESULT STDMETHODCALLTYPE put_Toolbar( 
-            /* [in] */ VARIANT_BOOL visible) = 0;
-        
         virtual /* [helpstring][propget] */ HRESULT STDMETHODCALLTYPE get_VersionInfo( 
             /* [retval][out] */ BSTR *version) = 0;
         
@@ -2197,6 +2224,12 @@ EXTERN_C const IID IID_IVLCControl2;
         
         virtual /* [helpstring][propput][id] */ HRESULT STDMETHODCALLTYPE put_BackColor( 
             /* [in] */ OLE_COLOR backcolor) = 0;
+        
+        virtual /* [helpstring][propget][id] */ HRESULT STDMETHODCALLTYPE get_Toolbar( 
+            /* [retval][out] */ VARIANT_BOOL *visible) = 0;
+        
+        virtual /* [helpstring][propput][id] */ HRESULT STDMETHODCALLTYPE put_Toolbar( 
+            /* [in] */ VARIANT_BOOL visible) = 0;
         
         virtual /* [helpstring][propget] */ HRESULT STDMETHODCALLTYPE get_audio( 
             /* [retval][out] */ IVLCAudio **obj) = 0;
@@ -2302,14 +2335,6 @@ EXTERN_C const IID IID_IVLCControl2;
             IVLCControl2 * This,
             /* [in] */ BSTR mrl);
         
-        /* [helpstring][propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_Toolbar )( 
-            IVLCControl2 * This,
-            /* [retval][out] */ VARIANT_BOOL *visible);
-        
-        /* [helpstring][propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_Toolbar )( 
-            IVLCControl2 * This,
-            /* [in] */ VARIANT_BOOL visible);
-        
         /* [helpstring][propget] */ HRESULT ( STDMETHODCALLTYPE *get_VersionInfo )( 
             IVLCControl2 * This,
             /* [retval][out] */ BSTR *version);
@@ -2337,6 +2362,14 @@ EXTERN_C const IID IID_IVLCControl2;
         /* [helpstring][propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_BackColor )( 
             IVLCControl2 * This,
             /* [in] */ OLE_COLOR backcolor);
+        
+        /* [helpstring][propget][id] */ HRESULT ( STDMETHODCALLTYPE *get_Toolbar )( 
+            IVLCControl2 * This,
+            /* [retval][out] */ VARIANT_BOOL *visible);
+        
+        /* [helpstring][propput][id] */ HRESULT ( STDMETHODCALLTYPE *put_Toolbar )( 
+            IVLCControl2 * This,
+            /* [in] */ VARIANT_BOOL visible);
         
         /* [helpstring][propget] */ HRESULT ( STDMETHODCALLTYPE *get_audio )( 
             IVLCControl2 * This,
@@ -2424,12 +2457,6 @@ EXTERN_C const IID IID_IVLCControl2;
 #define IVLCControl2_put_MRL(This,mrl)	\
     ( (This)->lpVtbl -> put_MRL(This,mrl) ) 
 
-#define IVLCControl2_get_Toolbar(This,visible)	\
-    ( (This)->lpVtbl -> get_Toolbar(This,visible) ) 
-
-#define IVLCControl2_put_Toolbar(This,visible)	\
-    ( (This)->lpVtbl -> put_Toolbar(This,visible) ) 
-
 #define IVLCControl2_get_VersionInfo(This,version)	\
     ( (This)->lpVtbl -> get_VersionInfo(This,version) ) 
 
@@ -2450,6 +2477,12 @@ EXTERN_C const IID IID_IVLCControl2;
 
 #define IVLCControl2_put_BackColor(This,backcolor)	\
     ( (This)->lpVtbl -> put_BackColor(This,backcolor) ) 
+
+#define IVLCControl2_get_Toolbar(This,visible)	\
+    ( (This)->lpVtbl -> get_Toolbar(This,visible) ) 
+
+#define IVLCControl2_put_Toolbar(This,visible)	\
+    ( (This)->lpVtbl -> put_Toolbar(This,visible) ) 
 
 #define IVLCControl2_get_audio(This,obj)	\
     ( (This)->lpVtbl -> get_audio(This,obj) ) 
@@ -2582,6 +2615,113 @@ EXTERN_C const IID DIID_DVLCEvents;
 
 
 #endif 	/* __DVLCEvents_DISPINTERFACE_DEFINED__ */
+
+
+#ifndef __DVLCEvents2_DISPINTERFACE_DEFINED__
+#define __DVLCEvents2_DISPINTERFACE_DEFINED__
+
+/* dispinterface DVLCEvents2 */
+/* [helpstring][uuid] */ 
+
+
+EXTERN_C const IID DIID_DVLCEvents2;
+
+#if defined(__cplusplus) && !defined(CINTERFACE)
+
+    MIDL_INTERFACE("99CCD983-13F4-4bbb-8F21-FBB8C701FED9")
+    DVLCEvents2 : public IDispatch
+    {
+    };
+    
+#else 	/* C style interface */
+
+    typedef struct DVLCEvents2Vtbl
+    {
+        BEGIN_INTERFACE
+        
+        HRESULT ( STDMETHODCALLTYPE *QueryInterface )( 
+            DVLCEvents2 * This,
+            /* [in] */ REFIID riid,
+            /* [iid_is][out] */ 
+            __RPC__deref_out  void **ppvObject);
+        
+        ULONG ( STDMETHODCALLTYPE *AddRef )( 
+            DVLCEvents2 * This);
+        
+        ULONG ( STDMETHODCALLTYPE *Release )( 
+            DVLCEvents2 * This);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetTypeInfoCount )( 
+            DVLCEvents2 * This,
+            /* [out] */ UINT *pctinfo);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetTypeInfo )( 
+            DVLCEvents2 * This,
+            /* [in] */ UINT iTInfo,
+            /* [in] */ LCID lcid,
+            /* [out] */ ITypeInfo **ppTInfo);
+        
+        HRESULT ( STDMETHODCALLTYPE *GetIDsOfNames )( 
+            DVLCEvents2 * This,
+            /* [in] */ REFIID riid,
+            /* [size_is][in] */ LPOLESTR *rgszNames,
+            /* [range][in] */ UINT cNames,
+            /* [in] */ LCID lcid,
+            /* [size_is][out] */ DISPID *rgDispId);
+        
+        /* [local] */ HRESULT ( STDMETHODCALLTYPE *Invoke )( 
+            DVLCEvents2 * This,
+            /* [in] */ DISPID dispIdMember,
+            /* [in] */ REFIID riid,
+            /* [in] */ LCID lcid,
+            /* [in] */ WORD wFlags,
+            /* [out][in] */ DISPPARAMS *pDispParams,
+            /* [out] */ VARIANT *pVarResult,
+            /* [out] */ EXCEPINFO *pExcepInfo,
+            /* [out] */ UINT *puArgErr);
+        
+        END_INTERFACE
+    } DVLCEvents2Vtbl;
+
+    interface DVLCEvents2
+    {
+        CONST_VTBL struct DVLCEvents2Vtbl *lpVtbl;
+    };
+
+    
+
+#ifdef COBJMACROS
+
+
+#define DVLCEvents2_QueryInterface(This,riid,ppvObject)	\
+    ( (This)->lpVtbl -> QueryInterface(This,riid,ppvObject) ) 
+
+#define DVLCEvents2_AddRef(This)	\
+    ( (This)->lpVtbl -> AddRef(This) ) 
+
+#define DVLCEvents2_Release(This)	\
+    ( (This)->lpVtbl -> Release(This) ) 
+
+
+#define DVLCEvents2_GetTypeInfoCount(This,pctinfo)	\
+    ( (This)->lpVtbl -> GetTypeInfoCount(This,pctinfo) ) 
+
+#define DVLCEvents2_GetTypeInfo(This,iTInfo,lcid,ppTInfo)	\
+    ( (This)->lpVtbl -> GetTypeInfo(This,iTInfo,lcid,ppTInfo) ) 
+
+#define DVLCEvents2_GetIDsOfNames(This,riid,rgszNames,cNames,lcid,rgDispId)	\
+    ( (This)->lpVtbl -> GetIDsOfNames(This,riid,rgszNames,cNames,lcid,rgDispId) ) 
+
+#define DVLCEvents2_Invoke(This,dispIdMember,riid,lcid,wFlags,pDispParams,pVarResult,pExcepInfo,puArgErr)	\
+    ( (This)->lpVtbl -> Invoke(This,dispIdMember,riid,lcid,wFlags,pDispParams,pVarResult,pExcepInfo,puArgErr) ) 
+
+#endif /* COBJMACROS */
+
+
+#endif 	/* C style interface */
+
+
+#endif 	/* __DVLCEvents2_DISPINTERFACE_DEFINED__ */
 
 
 #ifndef __IVLCPlaylistItems_INTERFACE_DEFINED__

@@ -71,6 +71,7 @@
     BOOL SHFullScreen(HWND hwndRequester, DWORD dwState);
 #endif*/
 
+#include "../../../src/libvlc.h"
 
 /*****************************************************************************
  * Local prototypes.
@@ -106,6 +107,10 @@ void* EventThread( vlc_object_t *p_this )
     vlc_value_t val;
     unsigned int i_width, i_height, i_x, i_y;
     HMODULE hkernel32;
+    vlc_event_t event;
+    libvlc_priv_t *p_priv;
+
+    p_priv=libvlc_priv( p_event->p_vout->p_libvlc );
 
     /* Initialisation */
     p_event->p_vout->pf_control = Control;
@@ -165,13 +170,17 @@ void* EventThread( vlc_object_t *p_this )
                     p_event->p_vout->fmt_in.i_visible_width / i_width +
                     p_event->p_vout->fmt_in.i_x_offset;
                 var_Set( p_event->p_vout, "mouse-x", val );
+                event.u.mouse_position_changed.x = val.i_int;
                 val.i_int = ( GET_Y_LPARAM(msg.lParam) - i_y ) *
                     p_event->p_vout->fmt_in.i_visible_height / i_height +
                     p_event->p_vout->fmt_in.i_y_offset;
                 var_Set( p_event->p_vout, "mouse-y", val );
+                event.u.mouse_position_changed.y = val.i_int;
 
                 val.b_bool = true;
                 var_Set( p_event->p_vout, "mouse-moved", val );
+                event.type=vlc_MouseMove;
+                vlc_event_send(&p_priv->p_event_manager,&event);
             }
 
         case WM_NCMOUSEMOVE:
@@ -187,6 +196,10 @@ void* EventThread( vlc_object_t *p_this )
                     p_event->p_vout->p_sys->b_cursor_hidden = 0;
                     ShowCursor( TRUE );
                 }
+                event.type=vlc_NCMouseMove;
+                event.u.mouse_position_changed.x = mouse_pos.x;
+                event.u.mouse_position_changed.y = mouse_pos.y;
+                vlc_event_send(&p_priv->p_event_manager,&event);
             }
             break;
 
@@ -209,6 +222,8 @@ void* EventThread( vlc_object_t *p_this )
             val.i_int |= 1;
             var_Set( p_event->p_vout, "mouse-button-down", val );
             DirectXPopupMenu( p_event, false );
+            event.type=vlc_LButtonDown;
+            vlc_event_send(&p_priv->p_event_manager,&event);
             break;
 
         case WM_LBUTTONUP:
@@ -218,10 +233,14 @@ void* EventThread( vlc_object_t *p_this )
 
             val.b_bool = true;
             var_Set( p_event->p_vout, "mouse-clicked", val );
+            event.type=vlc_LButtonUp;
+            vlc_event_send(&p_priv->p_event_manager,&event);
             break;
 
         case WM_LBUTTONDBLCLK:
             p_event->p_vout->p_sys->i_changes |= VOUT_FULLSCREEN_CHANGE;
+            event.type=vlc_LButtonDblClk;
+            vlc_event_send(&p_priv->p_event_manager,&event);
             break;
 
         case WM_MBUTTONDOWN:
@@ -229,12 +248,16 @@ void* EventThread( vlc_object_t *p_this )
             val.i_int |= 2;
             var_Set( p_event->p_vout, "mouse-button-down", val );
             DirectXPopupMenu( p_event, false );
+            event.type=vlc_MButtonDown;
+            vlc_event_send(&p_priv->p_event_manager,&event);
             break;
 
         case WM_MBUTTONUP:
             var_Get( p_event->p_vout, "mouse-button-down", &val );
             val.i_int &= ~2;
             var_Set( p_event->p_vout, "mouse-button-down", val );
+            event.type=vlc_MButtonUp;
+            vlc_event_send(&p_priv->p_event_manager,&event);
             break;
 
         case WM_RBUTTONDOWN:
@@ -242,6 +265,8 @@ void* EventThread( vlc_object_t *p_this )
             val.i_int |= 4;
             var_Set( p_event->p_vout, "mouse-button-down", val );
             DirectXPopupMenu( p_event, false );
+            event.type=vlc_RButtonDown;
+            vlc_event_send(&p_priv->p_event_manager,&event);
             break;
 
         case WM_RBUTTONUP:
@@ -249,6 +274,8 @@ void* EventThread( vlc_object_t *p_this )
             val.i_int &= ~4;
             var_Set( p_event->p_vout, "mouse-button-down", val );
             DirectXPopupMenu( p_event, true );
+            event.type=vlc_RButtonUp;
+            vlc_event_send(&p_priv->p_event_manager,&event);
             break;
 
         case WM_KEYDOWN:
@@ -502,6 +529,7 @@ static int DirectXCreateWindow( vout_thread_t *p_vout )
     {
         i_style = WS_VISIBLE|WS_CLIPCHILDREN|WS_CHILD;
         i_stylex = 0;
+        GetWindowRect(p_vout->p_sys->hparent,&rect_window);
     }
 
     p_vout->p_sys->i_window_style = i_style;
@@ -601,6 +629,8 @@ static void DirectXCloseWindow( vout_thread_t *p_vout )
     /* We don't unregister the Window Class because it could lead to race
      * conditions and it will be done anyway by the system when the app will
      * exit */
+   if( p_vout->_i_render_bitmap ) 
+    DeleteObject( (HBITMAP)p_vout->_i_render_bitmap );
 }
 
 /*****************************************************************************
@@ -910,10 +940,10 @@ static long FAR PASCAL DirectXEventProc( HWND hwnd, UINT message,
         }
         break;
 
-    case WM_PAINT:
     case WM_NCPAINT:
     case WM_ERASEBKGND:
-        return DefWindowProc(hwnd, message, wParam, lParam);
+    case WM_PAINT:
+      return DefWindowProc(hwnd, message, wParam, lParam);
 
     case WM_KILLFOCUS:
 #ifdef MODULE_NAME_IS_wingapi
