@@ -655,9 +655,17 @@ void UpdateRects( vout_thread_t *p_vout, bool b_force )
                        &i_x, &i_y, &i_width, &i_height );
 
     if( p_vout->p_sys->hvideownd )
+    {
+     if(GetWindowThreadProcessId(p_vout->p_sys->hvideownd,NULL)!=
+      GetWindowThreadProcessId(p_vout->p_sys->hwnd,NULL))
         SetWindowPos( p_vout->p_sys->hvideownd, 0,
                       i_x, i_y, i_width, i_height,
                       SWP_NOCOPYBITS|SWP_NOZORDER|SWP_ASYNCWINDOWPOS );
+     else
+      SetWindowPos( p_vout->p_sys->hvideownd, 0,
+                    i_x, i_y, i_width, i_height,
+                    SWP_NOCOPYBITS|SWP_NOZORDER );
+    }
 
     /* Destination image position and dimensions */
     rect_dest.left = point.x + i_x;
