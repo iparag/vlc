@@ -2949,3 +2949,19 @@ STDMETHODIMP VLCControl2::get_video(IVLCVideo** obj)
     }
     return E_OUTOFMEMORY;
 };
+
+STDMETHODIMP VLCControl2::get_PausedBitmap(int *hbitmap)
+{
+    if( NULL == hbitmap )
+        return E_POINTER;
+
+    *hbitmap  = _p_instance->getPausedBitmap();
+    return NOERROR;
+};
+
+STDMETHODIMP VLCControl2::put_PausedBitmap(int hbitmap)
+{
+    _p_instance->setPausedBitmap( hbitmap );
+    return NOERROR;
+};
+

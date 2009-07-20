@@ -600,6 +600,9 @@ public:
     STDMETHODIMP get_playlist(IVLCPlaylist**);
     STDMETHODIMP get_video(IVLCVideo**);
 
+    STDMETHODIMP get_PausedBitmap(int *hbitmap);
+    STDMETHODIMP put_PausedBitmap(int hbitmap);
+
 protected:
     HRESULT loadTypeInfo();
 

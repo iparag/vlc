@@ -245,3 +245,29 @@ const char * libvlc_get_changeset(void)
 {
     return VLC_Changeset();
 }
+
+
+void libvlc_set_paused_bitmap( libvlc_instance_t *p_instance, int i_bitmap, int i_width, int i_height)
+{
+ vlc_value_t val;
+
+ var_SetInteger( p_instance->p_libvlc_int, "paused-bitmap", i_bitmap );
+
+ val.i_int = var_GetInteger( p_instance->p_libvlc_int, "paused-bitmap" );
+ if( !val.i_int )
+ {
+  var_Create( p_instance->p_libvlc_int, "paused-bitmap", VLC_VAR_INTEGER );
+  var_Create( p_instance->p_libvlc_int, "paused-bitmap-width", VLC_VAR_INTEGER );
+  var_Create( p_instance->p_libvlc_int, "paused-bitmap-height", VLC_VAR_INTEGER );
+  var_SetInteger( p_instance->p_libvlc_int, "paused-bitmap", i_bitmap );
+ }
+ var_SetInteger( p_instance->p_libvlc_int, "paused-bitmap-width", i_width );
+ var_SetInteger( p_instance->p_libvlc_int, "paused-bitmap-height", i_height );
+
+}
+
+int libvlc_get_paused_bitmap( libvlc_instance_t *p_instance)
+{
+ return var_GetInteger( p_instance->p_libvlc_int, "paused-bitmap" );
+}
+

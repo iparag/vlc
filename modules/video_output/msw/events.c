@@ -823,6 +823,63 @@ void UpdateRects( vout_thread_t *p_vout, bool b_force )
  * Nonqueued Messages are those that Windows will send directly to this
  * procedure (like WM_DESTROY, WM_WINDOWPOSCHANGED...)
  *****************************************************************************/
+BOOL DrawPicture( vout_thread_t *p_vout, HWND hwnd );
+
+BOOL DrawPicture( vout_thread_t *p_vout, HWND hwnd )
+{
+ HBITMAP htmp,hbitmap ;
+ HDC hicTargetDev, hdcDraw, hdcRender;
+ RECT bounds, parent;
+ LONG width, height;
+ 
+ if( !p_vout->_i_paused_bitmap ) return FALSE;
+
+ GetWindowRect( hwnd, &bounds );
+ GetWindowRect( GetParent(hwnd), &parent );
+// if( abs(bounds.left - parent.left) < 10 && abs(bounds.top - parent.top) < 10) return TRUE;
+ OffsetRect( &bounds, -bounds.left, -bounds.top );
+ hicTargetDev = GetDC( hwnd );
+ width = bounds.right-bounds.left;
+ height = bounds.bottom-bounds.top;
+
+ hdcDraw = CreateCompatibleDC( hicTargetDev );
+ if( width != p_vout->_i_render_bitmap_width || 
+  height != p_vout->_i_render_bitmap_height || 
+  !p_vout->_i_render_bitmap )
+ {
+  hdcRender = CreateCompatibleDC( hicTargetDev );
+  hbitmap = CreateCompatibleBitmap(  hicTargetDev, width, height );  
+
+  if( p_vout->_i_render_bitmap )
+   DeleteObject( (HBITMAP)p_vout->_i_render_bitmap );
+  p_vout->_i_render_bitmap = (int)hbitmap;
+  p_vout->_i_render_bitmap_width = width;
+  p_vout->_i_render_bitmap_height = height;
+
+  hbitmap = (HBITMAP) SelectObject( hdcRender, hbitmap );
+  htmp = (HBITMAP) SelectObject( hdcDraw, (HBITMAP)p_vout->_i_paused_bitmap );
+  StretchBlt( hdcRender, 0, 0, width, height,
+   hdcDraw, 0, 0, p_vout->_i_paused_bitmap_width, 
+   p_vout->_i_paused_bitmap_height, SRCCOPY);
+  SelectObject( hdcDraw, htmp );
+  DeleteDC( hdcDraw );
+  hdcDraw = hdcRender;
+ }
+ else
+  hbitmap = (HBITMAP) SelectObject( hdcDraw, 
+   (HBITMAP)p_vout->_i_render_bitmap );
+
+ BitBlt( hicTargetDev, bounds.left, bounds.top, width, height,
+  hdcDraw, 0, 0, SRCCOPY);
+
+ SelectObject( hdcDraw, hbitmap );
+
+ DeleteDC( hdcDraw );
+ ReleaseDC( hwnd, hicTargetDev );
+
+ return TRUE;
+}
+
 static long FAR PASCAL DirectXEventProc( HWND hwnd, UINT message,
                                          WPARAM wParam, LPARAM lParam )
 {
@@ -941,8 +998,13 @@ static long FAR PASCAL DirectXEventProc( HWND hwnd, UINT message,
         break;
 
     case WM_NCPAINT:
+      return DefWindowProc(hwnd, message, wParam, lParam);
     case WM_ERASEBKGND:
+      return 1L;
     case WM_PAINT:
+     if( p_vout->_i_paused_bitmap && DrawPicture( p_vout, hwnd ) ) 
+      return 0L;
+     else 
       return DefWindowProc(hwnd, message, wParam, lParam);
 
     case WM_KILLFOCUS:
