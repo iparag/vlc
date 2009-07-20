@@ -142,7 +142,6 @@ int __config_GetType( vlc_object_t *p_this, const char *psz_name )
 int __config_GetInt( vlc_object_t *p_this, const char *psz_name )
 {
     module_config_t *p_config;
-
     p_config = config_FindConfig( p_this, psz_name );
 
     /* sanity checks */
@@ -407,11 +406,22 @@ void __config_PutFloat( vlc_object_t *p_this,
  * FIXME: And now even more.
  * FIXME: remove p_this pointer parameter (or use it)
  *****************************************************************************/
+char *p_libvlc_names[]=
+{
+ "volume"
+};
+int i_libvlc_names_count=sizeof(p_libvlc_names)/sizeof(char*);
 module_config_t *config_FindConfig( vlc_object_t *p_this, const char *psz_name )
 {
     module_t *p_parser;
+    int i_number;
 
     if( !psz_name ) return NULL;
+    for( i_number=0; i_number < i_libvlc_names_count; i_number++)
+    {
+     if(strcmp(p_libvlc_names[i_number],psz_name)==0)
+      break;
+    }
 
     module_t **list = module_list_get (NULL);
     if (list == NULL)
@@ -421,6 +431,8 @@ module_config_t *config_FindConfig( vlc_object_t *p_this, const char *psz_name )
     {
         module_config_t *p_item, *p_end;
 
+        if(i_number<i_libvlc_names_count && p_parser->p_libvlc!=p_this->p_libvlc)
+         continue;
         if( !p_parser->i_config_items )
             continue;
 

@@ -137,16 +137,16 @@ void __module_InitBank( vlc_object_t *p_this )
 
         /* Everything worked, attach the object */
         p_module_bank = p_bank;
-
-        /* Fills the module bank structure with the main module infos.
-         * This is very useful as it will allow us to consider the main
-         * library just as another module, and for instance the configuration
-         * options of main will be available in the module bank structure just
-         * as for every other module. */
-        AllocateBuiltinModule( p_this, vlc_entry__main );
     }
     else
         p_module_bank->i_usage++;
+
+    /* Fills the module bank structure with the main module infos.
+     * This is very useful as it will allow us to consider the main
+     * library just as another module, and for instance the configuration
+     * options of main will be available in the module bank structure just
+     * as for every other module. */
+    AllocateBuiltinModule( p_this, vlc_entry__main );
 
     /* We do retain the module bank lock until the plugins are loaded as well.
      * This is ugly, this staged loading approach is needed: LibVLC gets
