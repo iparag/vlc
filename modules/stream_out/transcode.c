@@ -42,6 +42,7 @@
 #include <vlc_block.h>
 #include <vlc_filter.h>
 #include <vlc_osd.h>
+#include <vlc_es.h>
 
 #include <math.h>
 
@@ -1110,7 +1111,6 @@ static int transcode_audio_filter_chain_build( sout_stream_t *p_stream, filter_c
             current.audio.i_channels < 6 )
             current.audio.i_physical_channels =
             current.audio.i_original_channels = pi_channels_maps[current.audio.i_channels];
-
         if( !filter_chain_AppendFilter( p_chain, NULL, NULL, NULL, &current ) )
         {
             msg_Err( p_stream, "Failed to find conversion filter for channel mixing" );
@@ -1219,6 +1219,16 @@ static int transcode_audio_new( sout_stream_t *p_stream,
         es_format_t fmt_fl32 = fmt_last;
         fmt_fl32.i_codec =
         fmt_fl32.audio.i_format = VLC_CODEC_FL32;
+
+        id->p_uf_chain = filter_chain_New( p_stream, "audio filter2", false,
+                                           transcode_audio_filter_allocation_init, NULL, NULL );
+        
+        es_format_t fmt_s16l = fmt_last;
+        fmt_s16l.i_codec =
+        fmt_s16l.audio.i_format = VLC_FOURCC('s','1','6','l');
+        fmt_s16l.audio.i_physical_channels=1;
+        fmt_s16l.audio.i_bitspersample=16;
+        filter_chain_Reset( id->p_uf_chain, &fmt_last, &fmt_s16l );
         if( transcode_audio_filter_chain_build( p_stream, id->p_uf_chain,
                                                 &fmt_fl32, &fmt_last ) )
         {
@@ -1227,9 +1237,16 @@ static int transcode_audio_new( sout_stream_t *p_stream,
         }
         fmt_last = fmt_fl32;
 
-        id->p_uf_chain = filter_chain_New( p_stream, "audio filter2", false,
-                                           transcode_audio_filter_allocation_init, NULL, NULL );
-        filter_chain_Reset( id->p_uf_chain, &fmt_last, &fmt_fl32 );
+        fmt_last.i_codec =
+        fmt_last.audio.i_format = VLC_FOURCC('s','1','6','l');
+        fmt_last.audio.i_physical_channels=2;
+        fmt_last.audio.i_bitspersample=16;
+        if( !filter_chain_AppendFilter( id->p_uf_chain, NULL, NULL, NULL, &fmt_last ) )
+        {
+            msg_Err( p_stream, "Failed to find conversion filter from fl32 to s16l" );
+            transcode_audio_close( id );
+            return VLC_EGENERIC;
+        }
         if( filter_chain_AppendFromString( id->p_uf_chain, p_sys->psz_af2 ) > 0 )
             fmt_last = *filter_chain_GetFmtOut( id->p_uf_chain );
     }
